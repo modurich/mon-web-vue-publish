@@ -1,31 +1,8 @@
 <template>
     <div>
-        <m-tabs :items="[
-            {'label':'Tab1', 'value':'Tab1', 'to':'#aa'},
-            {'label':'Tab2', 'value':'Tab2', 'to':'#bb'}]"
-        />
-        <!--
-        <m-alert :content="내용" :button-label="확인">
-        </m-alert>
-
-        <m-header />
-
-        <m-dialog />
-        -->
-        <div>
-            <h1>메뉴</h1> 
-        <m-menu :items="[
-            {'label':'Menu1', 'value':'Menu1', 'to':'#aa'},
-            {'label':'Menu2', 'value':'Menu2', 'to':'#bb'}]"/>
-
-        </div>
-        <div>
-            <h1>버튼</h1>
-        <m-button-3 >
-            버튼테스트
-        </m-button-3>
-        </div>
-        <m-input />
+        <router-link to="/publish">
+            uiguide
+        </router-link>
     </div>
 </template>
 

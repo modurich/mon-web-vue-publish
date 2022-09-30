@@ -34,7 +34,8 @@ module.exports = function(/* ctx */) {
         css: [
             'app.sass',
             'app_legacy.sass',
-            'mbadge.css'
+            'mbadge.css',
+            'modu_layout.scss'
         ],
 
         // https://github.com/quasarframework/quasar/tree/dev/extras
