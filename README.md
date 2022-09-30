@@ -3,7 +3,7 @@
 몬스탁
 
 ## Install the dependencies
-( first of all, install node.js v14.6.0 )
+( first of all, install node.js v14.16.0 )
 npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
