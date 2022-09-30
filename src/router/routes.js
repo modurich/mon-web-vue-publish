@@ -3,6 +3,7 @@ const routes = [
     {
         path: '/',
         component: () => import('layouts/MonstockLayout.vue'),
+        // component: () => import('layouts/MonstockLayout_legacy.vue'),
         children: [
             { path: '', component: () => import('pages/Index.vue') },
             { path: '/publish', component: () => import('pages/publish/Index.vue') },
