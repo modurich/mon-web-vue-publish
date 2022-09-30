@@ -1,9 +1,5 @@
 <template>
-    <div>
-        <h1>publish list</h1>
-        <div>uiguide</div>
-
-    </div>
+    <div>uiguide</div>
 </template>
 
 <script>
