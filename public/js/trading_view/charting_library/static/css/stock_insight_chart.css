@@ -1,0 +1,30 @@
+html, body {
+    font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR", sans-serif;
+}
+
+.pane-controls {
+    display: none;
+}
+
+.pane-legend .pane-legend-minbtn.apply-common-tooltip.apply {
+    display: none;
+}
+
+.pane-legend-line.pane-legend-wrap.study .pane-legend-icon-container {
+    display: none;
+}
+
+.pane-legend-line.pane-legend-wrap.study .pane-legend-line.apply-overflow-tooltip {
+    display: none;
+}
+
+.chart-status-picture {
+    display: none;
+}
+
+.pane-legend-line__wrap-description {
+    display: none;
+}
+.pane-legend-item-value-wrap .pane-legend-item-value:not([style]) {
+    display: none;
+}

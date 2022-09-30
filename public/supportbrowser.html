@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+
+    <meta name="naver-site-verification" content="dbed4b6749913bde6df95cae9a65223c6228df98" />
+    <meta name="google-site-verification" content="ynx4phKyNzc3NQ13wq2c4krgl7IJSYjjYBAF6vzQOWU" />
+    <meta name="msvalidate.01" content="FA1A5E96A5A472299037441B1108E182" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="/app-logo-128x128.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/ico" href="/icons/favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155906940-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-155906940-2');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+    <style>
+        body {
+            font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR", sans-serif;
+            font-weight: 500;
+            background-color: white;
+            position: relative;
+            line-height: 150%;
+            min-height: 100vh;
+            background-color: #F2F2F2;
+        }
+        a {
+            text-decoration: none;
+        }
+        .body-wrap {
+            width: 692px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .body-center-wrap {
+            width: 332px;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+        .f-16-500-gt {
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            color: #616161 !important;
+        }
+        .f-16-b-mg {
+            font-size: 16px !important;
+            font-weight: bold !important;
+            color: #2C2C2C, 100% !important;
+        }
+        .f-16-b-gt {
+            font-size: 16px !important;
+            font-weight: bold !important;
+            color: #616161 !important;
+        }
+        .f-14-b-lg {
+            font-size: 14px !important;
+            font-weight: bold !important;
+            color: #a8a8a8 !important;
+        }
+        .f-14-500-gt {
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            color: #616161 !important;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .shadowed-box {
+            padding: 16px;
+            background: #FFFFFF;
+            border: 1px solid #A8A8A8;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 16px rgba(236, 236, 237, 0.8);
+            border-radius: 2px;
+        }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: white;">
+        <div style="text-align: center;padding: 13px 0px 16px 0px;border-bottom: 1px solid #ECECED;">
+            <img src="/logo/logo.png" width="158px;" alt="몬스탁 로고" />
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="body-center-wrap">
+            <div style="height: 32px;"></div>
+            <div class="f-16-b-mg" style="text-align: center;">브라우저 호환성 알림</div>
+            <div style="height: 32px;"></div>
+            <div class="f-14-500-gt">현재 접속하신 브라우저는 <span id="browser-name"></span>입니다. 몬스탁은 아래 브라우저들을 지원하고 있습니다. 아래의 브라우저 중 원하는 브라우저를 설치하신 후 이용해주시길 바랍니다.</div>
+            <div style="height: 32px;"></div>
+            <div class="shadowed-box">
+                <a class="row" href="https://www.google.com/intl/ko/chrome/" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/chrome.png" width="40px" height="40px" alt="크롬 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Chrome (추천 브라우저)</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+            </div>
+            <div style="height: 16px;"></div>
+            <div class="shadowed-box">
+                <a class="row" href="https://www.mozilla.org/ko/firefox/" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/firefox.png" width="40px" height="40px" alt="파이어폭스 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Firefox</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+                <div style="height: 16px;"></div>
+                <div style="height: 0px;border-bottom: 1px solid #ECECED;"></div>
+                <div style="height: 16px;"></div>
+                <a class="row" href="https://support.apple.com/ko_KR/downloads/safari" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/safari.png" width="40px" height="40px" alt="사파리 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Safari (macOS 지원)</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+                <div style="height: 16px;"></div>
+                <div style="height: 0px;border-bottom: 1px solid #ECECED;"></div>
+                <div style="height: 16px;"></div>
+                <a class="row" href="https://www.microsoft.com/ko-kr/edge" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/edge.png" width="40px" height="40px" alt="edge 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Edge (Windows 지원)</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+                <div style="height: 16px;"></div>
+                <div style="height: 0px;border-bottom: 1px solid #ECECED;"></div>
+                <div style="height: 16px;"></div>
+                <a class="row" href="https://whale.naver.com/ko/download" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/whale.png" width="40px" height="40px" alt="웨일 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Whale</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+                <div style="height: 16px;"></div>
+                <div style="height: 0px;border-bottom: 1px solid #ECECED;"></div>
+                <div style="height: 16px;"></div>
+                <a class="row" href="https://www.opera.com/ko" target="_blank">
+                    <div style="margin: 6px 32px 0px 16px;">
+                        <img src="/img/browser/opera.png" width="40px" height="40px" alt="오페라 아이콘" />
+                    </div>
+                    <div>
+                        <div class="f-16-b-gt">Opera</div>
+                        <div style="height: 8px;"></div>
+                        <div class="f-14-b-lg">다운로드 바로가기</div>
+                    </div>
+                </a>
+            </div>
+            <div style="height: 120px;"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var browser = null;
+        var agent = navigator.userAgent.match(/(Opera|Chrome|Safari|Firefox|Msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+        if (navigator.userAgent.match(/Edge/i)) {
+            browser = "Edge";
+        } else if (navigator.userAgent.match(/Trident.*rv[ :]*11./i)) {
+            browser = "Msie 11";
+        } else if (navigator.userAgent.match(/Whale/i)) {
+            browser = "Whale";
+        } else {
+            browser = agent[1];
+        }
+        if (document.getElementsByClassName(browser).length > 0)
+            document.getElementsByClassName(browser)[0].classList.add('active');
+
+        document.querySelector('#browser-name').innerHTML = browser || '<확인안됨>';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js"></script>
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+            // IE 의 경우 webfontloader 에서 woff v1 파일을 받는것까진 제대로 되어있는데 문제는 그 받아진 폰트파일 자체에 문제가 있다. 떄문에 자체서버에 내장한 폰트로 별도로 분기한다.
+            WebFont.load({
+                custom: {
+                    families: ['Noto Sans'],
+                    urls: ['/css/font.css']
+                },
+                timeout: 2000 // Set the timeout to two seconds
+            });
+        } else {
+            WebFont.load({
+                google: {
+                    families: ['Noto Sans KR:300,400,500,600,700,900']
+                },
+                active: function() { },
+                inactive: function() { },
+                timeout: 2000 // Set the timeout to two seconds
+            });
+        }
+    </script>
+  </body>
+</html>

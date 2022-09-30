@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- www.check-domains.com sitemap generator -->
+
+    <url>
+        <loc>https://monstock.app/</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Blash</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Insight</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Post</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Governance</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Intro</loc>
+        <changefreq>always</changefreq>
+        <priority>1.0000</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/Event</loc>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://monstock.app/CustomerCenter</loc>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

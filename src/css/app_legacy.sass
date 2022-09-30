@@ -1,0 +1,570 @@
+@import '~csshake/scss/_tools.scss'
+@import '~csshake/scss/csshake-horizontal.scss'
+
+// vue-slider-component
+$themeColor: $orange
+@import '~vue-slider-component/lib/theme/default.scss'
+
+@font-face
+    font-family: "Noto Sans KR"
+    font-weight: 300
+    font-style: normal
+    src: url(/fonts/NotoSans-DemiLight.eot?) format("eot"), url(/fonts/NotoSans-DemiLight.otf) format("opentype"), url(/fonts/NotoSans-DemiLight.woff) format("woff"), url(/fonts/NotoSans-DemiLight.woff2) format("woff2")
+    font-display: swap
+
+@font-face
+    font-family: "Noto Sans KR"
+    font-weight: 500
+    font-style: normal
+    src: url(/fonts/NotoSans-Medium.eot?) format("eot"), url(/fonts/NotoSans-Medium.otf) format("opentype"), url(/fonts/NotoSans-Medium.woff) format("woff"), url(/fonts/NotoSans-Medium.woff2) format("woff2")
+    font-display: swap
+
+@font-face
+    font-family: "Noto Sans KR"
+    font-weight: 700
+    font-style: normal
+    src: url(/fonts/NotoSans-Bold.eot?) format("eot"), url(/fonts/NotoSans-Bold.otf) format("opentype"), url(/fonts/NotoSans-Bold.woff) format("woff"), url(/fonts/NotoSans-Bold.woff2) format("woff2")
+    font-display: swap
+
+.shake-crazy
+    @include do-shake('shake-crazy', $q: 3, $h: 2px, $v: 2px, $r: 2deg)
+
+.shake-text
+    animation: shake 0.5s
+    animation-iteration-count: infinite
+    
+    @keyframes shake
+        0%
+            transform: translate(1px, 1px) rotate(0deg)
+        10%
+            transform: translate(-1px, -1px) rotate(-0.2deg)
+        20%
+            transform: translate(-1px, 0px) rotate(0.2deg)
+        30%
+            transform: translate(1px, 1px) rotate(0deg)
+        40%
+            transform: translate(1px, -1px) rotate(0.2deg)
+        50%
+            transform: translate(-1px, 1px) rotate(-0.2deg)
+        60%
+            transform: translate(-1px, 1px) rotate(0deg)
+        70%
+            transform: translate(1px, 1px) rotate(-0.2deg)
+        80%
+            transform: translate(-1px, -1px) rotate(0.2deg)
+        90%
+            transform: translate(1px, 1px) rotate(0deg)
+        100%
+            transform: translate(1px, -1px) rotate(-0.2deg)
+        
+// app global css in Sass form
+body
+    // 윈도우 한글 기본폰트는 맑은고딕 - "Malgun Gothic"
+    // 맥의 한글 기본폰트는 "Apple SD Gothic Neo"
+    // 안드로이드의 한글 기본폰트를 확인할 수가 없음
+    // IE11 에서 맨 뒤에 sans-serif 가 오지 않으면 폰트가 적용되지 않는 버그가 있음.
+    font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR", sans-serif
+    color: $grey-tabby
+    font-weight: 500
+    background-color: $olympus-white
+    position: relative
+    overflow-y: scroll
+    letter-spacing: -0.2px
+    // -webkit-overflow-scrolling: touch
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+div:focus
+    outline: none
+
+pre
+    margin: 0
+    padding: 0
+    font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR", sans-serif
+    white-space: pre-wrap
+
+.gpu-layer
+    transform: translateZ(0)
+    -webkit-transform: translateZ(0)
+
+.cb
+    clear: both
+
+.blind
+    position: absolute
+    clip: rect(0 0 0 0)
+    width: 1px
+    height: 1px
+    margin: -1px
+    overflow: hidden
+
+// 양쪽 사이드에 줄을 표시 (ex: ------TEXT------)
+.both-side-line
+    display: flex
+    flex-basis: 100%
+    align-items: center
+    color: $ghost-white
+    margin: 0
+    &::before
+        content: ''
+        flex-grow: 1
+        margin: 0 4px 0 0
+        height: 1px
+        font-size: 0px
+        line-height: 0px
+        background: $ghost-white
+    &::after
+        content: ''
+        flex-grow: 1
+        margin: 0 0 0 4px
+        height: 1px
+        font-size: 0px
+        line-height: 0px
+        background: $ghost-white
+
+
+input::placeholder
+    color: $grey-tabby !important
+
+textarea::placeholder
+    font-size: 14px
+    font-weight: 500
+    color: $grey-tabby !important
+
+.q-field.q-field--borderless .q-field__counter
+    font-size: 14px
+    font-weight: 500
+    color: $grey-tabby !important
+
+.q-field.q-field--borderless .q-field__counter::after
+    content: '자'
+
+// 화면 덮는 로딩
+.q-loading
+    &:before
+        background: transparent
+    .q-spinner
+        color: $medium-grey !important
+        opacity: .5
+
+
+button
+    background-color: transparent
+    border: none
+    border-radius: $generic-border-radius
+    // outline: none
+    outline-color: $slate-blue-20
+    cursor: pointer !important
+    padding: 0
+    color: inherit
+    letter-spacing: -0.2px
+
+img, svg
+    vertical-align: top
+
+// a 
+//     background-color: transparent
+//     text-decoration: none
+
+a, a:active, a:hover, a:visited
+    background-color: transparent
+    // outline: 0
+    outline-color: $slate-blue-20
+    color: inherit
+    text-decoration: none
+
+    
+dl, dt, dd, ol, ul, li
+    list-style: none
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+// #q-app header
+//     margin: 0 auto
+
+// #q-app
+//     background-color: $white
+//     min-width: 356px
+//     color: $grey-tabby
+//     max-width: 692px
+//     margin: 0 auto
+//     position: initial !important
+
+b
+    font-weight: 700
+
+.flex-1
+    flex: 1
+
+.ws-nowrap
+    white-space: nowrap
+
+.inline-flex
+    display: inline-flex
+
+.lh-24
+    line-height: 24px
+
+.align-center
+    align-items: center
+
+.pre-wrap
+    white-space: pre-wrap
+
+.flex-no-wrap
+    flex-wrap: nowrap
+
+.horizontal-scroll
+    overflow-x: auto
+    overflow-y: hidden
+    white-space: nowrap
+
+.vertial-scroll
+    overflow-x: hidden
+    overflow-y: auto
+
+// Font-size-weight-color
+$f-weight: ("b": bold, "500": 500, "300": 300)
+$f-color: ("gt": $grey-tabby, "lg": $light-grey, "mg": $medium-grey, "rr": $rubine-red, 'cfp': $crayola-flamingo-pink, 'drb': $duron-resonant-blue, 'yg': $yellow-gold, 'og': $orange, 'vr': $vivid-raseberry, 'wt': $white, 'cl': $clover, 'cy': $chrome-yellow, 'sb': $slate-blue, 'gw': $ghost-white, 'br': $bronze, 'cb': $cornflower-blue)
+@for $i from 10 through 22
+    @each $j, $weight in $f-weight
+        .f-#{$i}-#{$j}
+            font-size: #{$i}px !important
+            font-weight: $weight !important
+        @each $k, $color in $f-color
+            .f-#{$i}-#{$j}-#{$k}
+                font-size: #{$i}px !important
+                font-weight: $weight !important
+                color: $color !important
+
+.info-icon
+    background-image: url(/img/information_filled.png)
+    background-size: cover
+    height: 24px
+    width: 24px
+
+.info-icon-red
+    background-image: url(/img/information_filled_red.png)
+    background-size: cover
+    height: 24px
+    width: 24px
+
+.red-line
+    background-color: $crayola-flamingo-pink
+    color: $white
+    font-size: 12px
+    font-weight: bold
+
+// 공통적으로 사용되는 빈 영역
+.empty-item
+    margin: 0 12px
+    font-size: 14px
+    font-weight: 500
+    color: $grey-tabby
+
+.lined-border
+    border: 1px solid $ghost-white
+    box-sizing: border-box
+    border-radius: 2px
+
+// 공통 다이어로그 영역
+.dialog-content
+    min-width: 308px
+    background: $white
+    word-break: break-all
+    // max-height: 100vh !important
+.q-dialog__inner--minimized
+    padding: inherit
+
+// 공통적으로 사용되는 OG Link 영역
+.og-link-box
+    // width: 280px
+    // height: 88px
+    border: 1px solid $ghost-white
+    padding: 4px 8px 4px 4px
+    background: transparent
+
+    .og-link-image
+        display: block
+        width: 80px
+        height: 80px
+    .og-link-title
+        display: block
+        color: $medium-grey !important
+        height: 21px
+        line-height: 150%
+        margin: 12px 0px 17px 8px
+        // white-space: pre-wrap
+        // display: block
+        // display: -webkit-box
+        // position: relative
+        // -webkit-line-clamp: 2
+        // -webkit-box-orient: vertical
+    .og-link-url
+        display: block
+        color: $cornflower-blue !important
+        height: 18px
+        line-height: 18px
+        margin: 0px 0px 4px 8px
+
+.clickable
+    cursor: pointer
+    color: $cornflower-blue !important
+    text-decoration: underline
+    &:hover
+        text-decoration: underline
+
+
+// 공통 상단 헤더영역
+.header-menu
+    font-size: 16px
+    font-weight: 500
+    line-height: 24px
+    border-bottom: 1px solid $ghost-white
+    padding: 8px 12px
+    div
+        cursor: pointer !important
+    div:not(:first-child)
+        margin-left: 24px
+
+// Q-Notify 랩핑 class 설정
+.m-notify
+    min-height: 45px
+    min-width: 180px
+    margin: 0 auto
+    text-align: center
+    padding: 0
+    background: $grey-tabby
+    border-radius: 2px
+
+.m-dialog, .m-confirm, .m-alert, .m-full-alert, .m-full-confirm
+    // z-index: 1000000001 !important
+// 우측 사이드바가 채널톡 아이콘에 가려지지 않도록
+.q-drawer--on-top
+    z-index: 1000000000 !important
+
+// 탭스 설정
+.q-tabs
+    transform: translateZ(0)
+    -webkit-transform: translateZ(0)
+    min-height: 40px
+    .q-tab__label, .q-tab__content a
+        white-space: nowrap
+        font-size: 16px
+        font-weight: 500
+    .pre-wrap .q-tab__label
+        white-space: pre-wrap
+    .q-tab--active .q-tab__label, .q-tab--active .q-tab__content a
+        font-weight: bold
+        color: $medium-grey !important
+    .q-tab--inactive
+        opacity: 1
+        color: $grey-tabby !important
+    .q-tab__indicator
+        height: 4px
+        background: $medium-grey !important
+    .q-tab
+        padding: 0
+        outline: none
+    .q-tab:not(:first-child)
+        margin-left: 16px
+.q-tab-panel
+    padding: 0
+.q-header .q-tab__content, .q-footer .q-tab__content
+    min-width: 40px
+
+// quasar Notify 토스트
+.q-notification__wrapper
+    padding: 0 10px
+
+// quasar dropbox icon
+.q-icon
+    font-size: 1.2em
+    top: 4px
+
+// Froala Viewer
+.fr-view
+    word-break: break-all
+    color: $grey-tabby
+    line-height: 25.2px
+    letter-spacing: -0.4px
+
+// Froala Editor 기본 글꼴세팅
+.fr-box.fr-basic .fr-element.fr-view 
+    font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR"
+    color: $grey-tabby
+    line-height: 25.2px
+    letter-spacing: -0.4px
+
+.noborder tbody td
+    border: none !important
+
+// 종목태그
+.stock-tag
+    color: $orange
+    font-weight: bold
+    font-size: 14px
+// 멘션태그
+.mention-tag
+    color: $orange
+    font-weight: bold
+    font-size: 14px
+
+// 종목태그 입력시 자동완성
+.tribute-container
+    max-height: 212px !important
+    border: 2px solid $grey-tabby
+    background: $white
+.tribute-container > ul
+    box-sizing: border-box
+    border-radius: 2px
+.tribute-container > ul > li
+    align-items: center
+    padding: 0
+    border-bottom: 1px solid $ghost-white
+    &.tribute-highlight > .stock-tag-list-item
+        background: $guyabano
+
+.stock-tag-list-item
+    padding: 8px 22px 12px 8px
+    min-width: 332px
+    font-size: 16px
+    color: $grey-tabby
+    height: 40px
+    align-items: center
+    background-color: $white
+    .code
+        font-size: 12px
+        font-weight: 500
+        color: $grey-tabby
+
+.fr-wrapper.show-placeholder .fr-placeholder
+    white-space: normal !important
+    text-overflow: initial !important
+
+.m-tooltip
+    z-index: 1000000000
+    background-color: $medium-grey
+    color: $white
+    font-size: 12px
+    font-weight: 500
+    white-space: pre-wrap
+    word-break: break-all
+    word-wrap: break-word
+    text-align: center
+
+.shadowed-box
+    background: $white
+    border: 1px solid $ghost-white
+    box-sizing: border-box
+    box-shadow: 0px 0px 16px rgba(236, 236, 237, 0.8)
+    border-radius: 2px
+    
+.shadowed-bottom:after
+    content: ''
+    width: 100%
+    height: 8px
+    margin-top: -8px
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06)
+
+
+// 종목추천
+.editor__content .ProseMirror
+    p
+        margin: 0
+    a
+        text-decoration: underline
+
+
+// 퀘이사 커스텀 컬러 정의 quasar color palette
+// https://quasar.dev/style/color-palette#Using-Sass%2FSCSS%2FStylus-Variables
+// color="mg"
+.text-mg
+    color: $medium-grey !important
+.bg-mg
+    background: $medium-grey !important
+// color="gt"
+.text-gt
+    color: $medium-grey !important
+.bg-gt
+    background: $medium-grey !important
+
+// 댓글영역에 공통적으로 사용되는 별점
+.comment-star-rating
+    display: inline-block
+    border: 1px solid $ghost-white
+    box-sizing: border-box
+    border-radius: 16px
+    padding: 5px 16px 6px
+    font-weight: bold
+    font-size: 12px
+    line-height: 150%
+    color: $medium-grey
+
+// 사이드메뉴에 쓰이는 버튼 리스트
+.side-menu-list
+    section
+        h3
+            background: $guyabano
+            padding: 4px
+            font-size: 12px
+            font-weight: bold
+            color: $light-grey
+            margin-bottom: 16px
+        ul
+            display: grid
+            column-gap: 16px
+            row-gap: 16px
+            grid-template-columns: 1fr 1fr
+            li
+                display: flex
+                height: 28px
+                flex: 1
+                .side-menu-button
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+                    align-items: center
+                    background: $white
+                    box-sizing: border-box
+                    cursor: pointer
+                    flex: 1
+
+                    .m-icon
+                        margin-right: 8px
+
+                    .notable-icon
+                        position: relative
+                        &.on::after
+                            content: ' '
+                            display: inline-block
+                            position: absolute
+                            top: 0
+                            right: -10px
+                            width: 6px
+                            height: 6px
+                            border-radius: 50%
+                            background: $orange
+                    // .new-icon
+                    //     height: 24px
+                    //     position: relative
+                    //     &::after
+                    //         content: ' '
+                    //         display: inline-block
+                    //         position: absolute
+                    //         color: $orange
+                    //         top: 0
+                    //         margin-left: 4px
+                    //         width: 20px
+                    //         height: 7px
+                    //         background-image: url("data:image/svg+xml,%3Csvg width='20' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.02h1.52V1.975c.424-.42.723-.651 1.199-.651.558 0 .817.304.817 1.229V6.02h1.52V2.353C5.055.883 4.506 0 3.265 0c-.785 0-1.384.42-1.88.924h-.032L1.23.147H0V6.02ZM8.973 6.167c.713 0 1.437-.242 2.006-.641l-.507-.956c-.424.262-.837.41-1.302.41-.859 0-1.479-.494-1.613-1.46h3.577a3.85 3.85 0 0 0 .062-.715c0-1.628-.817-2.805-2.42-2.805C7.413 0 6.09 1.177 6.09 3.089c0 1.943 1.261 3.078 2.884 3.078ZM7.536 2.49c.124-.862.662-1.303 1.272-1.303.744 0 1.096.504 1.096 1.303H7.536ZM13.136 6.02h1.736l.59-2.553c.124-.557.217-1.093.32-1.723h.052c.113.63.207 1.166.33 1.712l.61 2.564h1.789L20 .147h-1.416l-.62 2.9c-.114.577-.187 1.134-.29 1.712h-.052c-.124-.578-.238-1.135-.372-1.712l-.724-2.9h-1.344l-.703 2.9a23.938 23.938 0 0 0-.351 1.712h-.052c-.103-.578-.176-1.135-.279-1.712l-.64-2.9h-1.51l1.489 5.873Z' fill='orange'/%3E%3C/svg%3E")

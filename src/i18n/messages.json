@@ -1,0 +1,36 @@
+{
+  "ko": {
+    "App": {
+      "meta": {
+        "description": "클레이튼 블록체인 기반 투자예측플랫폼, 몬스탁(monstock)",
+        "keywords": "몬스탁, 주식, 주식전문가, 주식초보, 주식정보, 주식투자, 핀테크, 인사이트, 모두리치, 블록체인, 몬스탁토큰, 코인, 가상화폐, 클레이, 클레이튼, 앱테크, 무료채굴, 에어드랍, 리워드앱, klay, klaytn, monstock, blockchain, stock, fintech"
+      }
+    },
+    "pages": {
+      "parts": {
+        "gnb": {
+          "A2HS": {
+            "installMonstockApp": "몬스탁 앱 설치"
+          }
+        }
+      }
+    }
+  },
+  "en": {
+    "App": {
+      "meta": {
+        "description": "Klaytn blockchain-based investment prediction platform, Monstock",
+        "keywords": "monstock, stock, stock expert, stock beginner, stock information, stock investment, fintech, insight, all rich, block chain, monstock token, coin, virtual currency, clay, clayton, apptech, free mining, airdrop, Rewards app, klay, klaytn, monstock, blockchain, stock, fintech"
+      }
+    },
+    "pages": {
+      "parts": {
+        "gnb": {
+          "A2HS": {
+            "installMonstockApp": "Install Monstock app"
+          }
+        }
+      }
+    }
+  }
+}
