@@ -49,7 +49,8 @@
     "vue-textarea-autosize": "^1.1.1",
     "vuedraggable": "^2.23.2",
     "vuex-multi-tab-state": "^1.0.17",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "qrcode":"^1.5.1"
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^1.1.0",
