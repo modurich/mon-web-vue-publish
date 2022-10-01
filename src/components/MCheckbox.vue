@@ -59,10 +59,10 @@ div[aria-checked="false"] .q-checkbox__label {
     padding: 0px;
 }
 .q-checkbox__inner--truthy .q-checkbox__bg, .q-checkbox__inner--indeterminate .q-checkbox__bg {
-    background-color: $orange;
+    background-color: $primary;
 }
 .q-checkbox__inner--truthy, .q-checkbox__inner--indeterminate {
-    color: $orange;
+    color: $primary;
 }
 svg > .q-checkbox__indet {
     display: none;

@@ -1,10 +1,31 @@
 // app global css in Scss form
+body{
+    background-color: #f8f9fd !important;
+    color: #9ca8ba !important;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Noto Sans KR", "Noto Sans", "Noto Serif KR", sans-serif;
+}
+.centerarea_box{
+    width:332px;
+    margin:0 auto;
+    //700보다 작아질때
+    @media (max-width: $breakpoint-xs-max) {
+        width:100%;padding:0 12px;
+    }
+}
+
 .login_wrap{
     .monstock_logo{text-align: center;margin:32px 0;}
     .login_area{
         .l_row + .l_row{margin-bottom:26px}
         .btn_wrap{
             margin:10px 0 10px 0
+        }
+        .check_wrap{display:flex;justify-content: space-between;align-items: center;
+            .link_area{
+                a + a{border-left:1px solid #d4d9ea;padding-left:10px;margin-left:10px}
+            }
         }
     }
 }
