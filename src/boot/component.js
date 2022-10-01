@@ -41,6 +41,8 @@ import MFloatBottom from 'components/MFloatBottom.vue';
 import MFoldableShadowedBox from 'components/MFoldableShadowedBox.vue';
 import MHighchart from 'components/MHighchart.vue';
 
+import TextareaAutosize from 'vue-textarea-autosize';
+
 Vue.component('MIcon', MIcon);
 Vue.component('MButton3', MButton3);
 Vue.component('MInputStyleButton', MInputStyleButton);
@@ -82,6 +84,9 @@ Vue.component('MFloatInput', MFloatInput);
 Vue.component('MFloatBottom', MFloatBottom);
 Vue.component('MFoldableShadowedBox', MFoldableShadowedBox);
 Vue.component('highcharts', MHighchart);
+
+
+Vue.use(TextareaAutosize);
 
 // leave the export, even if you don't use it
 export default async({ Vue, ssrContext }) => {
