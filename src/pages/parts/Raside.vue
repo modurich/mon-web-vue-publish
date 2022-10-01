@@ -1,16 +1,14 @@
 
 
 <template>
-    <header>
-        header
-    </header>
+    <aside class="right_aside">오른쪽영역</aside>
 </template>
 
 <script>
 
 
 export default {
-    name: 'header',
+    name: 'Raside',
    
 };
 </script>
