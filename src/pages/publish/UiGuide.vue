@@ -39,6 +39,53 @@
                 </div>
             </div>
         </div>
+        <div id="group05" class="group_wrap">
+            <p class="h1_type">Button</p>
+            <div class="box_wrap">
+                <p class="h2">Big Button</p>
+                <div class="type_view">
+                    <p class="sbt">basic</p>
+                    <m-button-3>TYPE01</m-button-3>
+                    <m-button-3>TYPE02</m-button-3>
+                    <m-button-3>TYPE03</m-button-3>
+                    <m-button-3>TYPE04</m-button-3>
+                    <p class="sbt">disabled</p>
+                    <m-button-3 disabled>TYPE01</m-button-3>
+                    <m-button-3 disabled>TYPE02</m-button-3>
+                    <m-button-3 disabled>TYPE03</m-button-3>
+                    <m-button-3 disabled>TYPE04</m-button-3>
+                </div>
+                <p class="h2">Button Size [medium[default], large]</p>
+                <div class="type_view">
+                    <m-button-3 size="medium">medium</m-button-3>
+                    <m-button-3 size="large">large</m-button-3>
+                </div>
+                <p class="h2">Color Button [mediumGrey[default], orange, crayolaFlamingoPink, slateBlue, vividRaseberry, duronResonantBlue]</p>
+                <div class="type_view">
+                    <m-button-3 color="mediumGrey">mediumGrey</m-button-3>
+                    <m-button-3 color="orange">orange</m-button-3>
+                    <m-button-3 color="crayolaFlamingoPink">crayolaFlamingoPink</m-button-3>
+                    <m-button-3 color="slateBlue">slateBlue</m-button-3>
+                    <m-button-3 colro="vividRaseberry">vividRaseberry</m-button-3>
+                    <m-button-3 colro="duronResonantBlue">duronResonantBlue</m-button-3>
+                </div>
+                <p class="h2">Button Lined [true[default], false]</p>
+                <div class="type_view">
+                    <m-button-3 lined>True</m-button-3>
+                    <m-button-3>False</m-button-3>
+                </div>
+                <p class="h2">Button round [true[default], false]</p>
+                <div class="type_view">
+                    <m-button-3 round>True</m-button-3>
+                    <m-button-3 v-vind:round="false">False</m-button-3>
+                </div>
+                <p class="h2">Button To/Href</p>
+                <div class="type_view">
+                    <m-button-3 to="/A_10000_P">A_10000_P</m-button-3>
+                    <m-button-3 href="http://google.com">To Google</m-button-3>
+                </div> 
+            </div>
+        </div>        
     </div>
 </template>
 

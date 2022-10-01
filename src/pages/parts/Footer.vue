@@ -69,7 +69,7 @@
             <div class="f-12-500-gt">{{ $t('template.label6') }}</div>
             <div class="f-12-500-gt">{{ $t('template.label7') }}</div>
             <div class="f-12-500-gt">{{ $t('template.label8') }}</div>
-            <div class="f-12-500-gt">{{ $t('template.label9') }} {{version}}{{BUILD_TIME}}<!-- {{moment(BUILD_TIME).format('YYYY.MM.DD HH:mm:ss z')}} --></div>
+            <div class="f-12-500-gt">{{ $t('template.label9') }} {{version}} {{BUILD_TIME}}<!-- {{moment(BUILD_TIME).format('YYYY.MM.DD HH:mm:ss z')}} --></div>
         </div>
         <m-space-h size="100" />
     </footer>

@@ -35,9 +35,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <router-link to="/publish/UiGuide">
-                            uiguide
-                        </router-link>
+                        <!-- <router-link to="/UiGuide">uiguide</router-link> -->
+                        <m-button-3 to="/UiGuide">UiGuide</m-button-3>
                     </td>
                     <td></td>
                     <td></td>
@@ -49,9 +48,7 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <router-link to="/publish/A_10000_P">
-                            A_10000_P
-                        </router-link>
+                        <router-link to="/A_10000_P">A_10000_P</router-link>
                     </td>
                     <td></td>
                     <td></td>
