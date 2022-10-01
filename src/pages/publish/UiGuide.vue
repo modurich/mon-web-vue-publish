@@ -57,9 +57,9 @@
                     <m-date-range-picker v-model="date1" />
                 </div>
 
-                <p class="h2">Checkbox</p>
+                <p class="h2">TextArea</p>
                 <div class="type_view">
-                    <m-textarea />
+                    <m-textarea v-bind:value="text1" minHeight="50px" maxlength="500"/>
                 </div>
                 <p class="h2">M Select</p>
                 <div class="type_view">
