@@ -51,12 +51,16 @@
                     <m-input-style-button />
                     
                 </div>
-                <p class="h2">Input</p>
+                <p class="h2">DateRangePicker</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
-                    <m-date-range-picker v-model="date1"/>
+                    <m-date-range-picker v-model="date1" />
                 </div>
 
+                <p class="h2">Checkbox</p>
+                <div class="type_view">
+                    <m-textarea />
+                </div>
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
@@ -177,7 +181,16 @@
                     <m-button-3 href="http://google.com">To Google</m-button-3>
                 </div> 
             </div>
-        </div>        
+        </div>
+        <div id="group06" class="group_wrap">
+            <p class="h1_type">Slide</p>
+            <div class="box_wrap">
+                <p class="h2">Slide</p>
+                <div class="type_view">
+                    <m-slide-dialog v-bind:title="slide1.title" v-bind:list="slide1.list" class="dialog"/>
+                </div>
+            </div>
+        </div>                
     </div>
 </template>
 
@@ -187,14 +200,15 @@ import MAlert from 'src/components/MAlert.vue';
 import MHeader from 'src/components/MHeader.vue';
 import MMenu from 'src/components/MMenu.vue';
 import MButton3 from 'src/components/MButton3.vue';
-import MInput from 'src/components/MInput.vue';
 import MSelect from 'src/components/MSelect.vue';
 import MRadio from 'src/components/MRadio.vue';
 import MSpaceV from 'src/components/MSpaceV.vue';
 import { ref } from 'vue';
+import MSlideDialog from 'src/components/MSlideDialog.vue';
+import MTextarea from 'src/components/MTextarea.vue';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea },
     setup() {
         return {
             text1:ref(''),
@@ -207,7 +221,14 @@ export default {
             options:[
                 'Google', 'Facebook'
             ],
-            date1:ref(null)
+            date1: {
+                from:ref(''),
+                to:ref('')
+            },
+            slide1: {
+                title:'슬라이드쇼',
+                list:['A', 'B', 'C']
+            }
         }
     }
 };

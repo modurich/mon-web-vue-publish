@@ -22,7 +22,7 @@
             <router-view />
         </q-page-container>
 
-        <Footer />
+        <!-- <Footer /> -->
     </q-layout>
 </template>
 
