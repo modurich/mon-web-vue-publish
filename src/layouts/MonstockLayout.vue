@@ -1,6 +1,6 @@
 <template>
     <q-layout view="lHh Lpr lFf">
-        <Header/>
+        <!-- <Header/> -->
         <div class="contents_wrap">
             <div class="contents_area">
                 <Laside/>
@@ -8,7 +8,7 @@
                     <router-view />
                     <Footer />
                 </div>
-                <Raside/>
+                <!-- <Raside/> -->
             </div>
         </div>
     </q-layout>
@@ -40,12 +40,12 @@ export default {
             margin:0 auto;
             display: flex;
             justify-content: space-between;
-            .left_aside,.right_aside{width:280px;border:1px solid red;}
+            .left_aside,.right_aside{width:280px;}
             .centerarea_wrap{width:692px;min-width: 320px;background:#fff;margin:0 auto;}
         }
         //700보다 작아질때
         @media (max-width: $breakpoint-xs-max) {
-            border:1px solid red;
+            // border:1px solid red;
         }
         //1308보다 작아질때
         @media (max-width: 1000px) {
