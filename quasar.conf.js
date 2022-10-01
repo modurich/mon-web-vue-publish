@@ -31,13 +31,14 @@ module.exports = function(/* ctx */) {
         ],
 
         // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
+        /*
         css: [
             'app.sass',
             'app_legacy.sass',
             'mbadge.css',
             'modu_layout.scss'
         ],
-
+        */
         // https://github.com/quasarframework/quasar/tree/dev/extras
         extras: [
             // 'ionicons-v4',

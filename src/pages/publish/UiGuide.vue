@@ -59,12 +59,14 @@
 
                 <p class="h2">TextArea</p>
                 <div class="type_view">
-                    <m-textarea v-bind:value="text1" minHeight="50px" maxlength="500"/>
+                    <m-textarea :minHeight="1000" :maxlength="500">
+                        테스트
+                    </m-textarea>
                 </div>
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
-                    <m-select v-model="select1" :options="options" label="Standard"/>
+                    <m-select v-model="select1" :options="options"/>
                 </div>
                 <p class="h2">Radio</p>
                 <div class="type_view">
