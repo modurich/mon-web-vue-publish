@@ -14,7 +14,39 @@
                 <p class="h2">Input</p>
                 <div class="type_view">
                     <p class="sbt">basic type</p>
-                    <m-input />
+                    <m-input v-model="text1" label="basic"/>
+                    <m-input filled v-model="text1" label="filled"/>
+                    <m-input outlined v-model="text1" label="outlined"/>
+                    <m-input standout v-model="text1" label="standout"/>
+                    <m-input standout="bg-teal text-orange" v-model="text1" label="custom standout"/>
+                    <m-input borderless v-model="text1" label="borderless"/>
+                    <m-input rounded filled v-model="text1" label="rounded filled"/>
+                    <m-input rounded outlined v-model="text1" label="Rounded outlined" />
+                    <m-input rounded standout v-model="text1" label="Rounded standout" />
+                    <m-input square filled v-model="text1" label="Square filled" />
+                    <m-input square outlined v-model="text1" label="Square outlined" />
+                    <m-input square standout v-model="text1" label="Square standout" />   
+                    <p class="sbt">color and icon</p>
+                    <m-input color="purple-12" v-model="text1" label="purple-12">
+                        <template v-slot:prepend>
+                            <m-icon name="event"/>
+                        </template>
+                    </m-input>
+                    <m-input color="teal" filled v-model="text1" label="teal">
+                        <template v-slot:prepend>
+                            <m-icon name="event"/>
+                        </template>
+                    </m-input>
+                    <m-input color="gray-3" label-color="orange" v-model="text1" label="purple-12">
+                        <template v-slot:append>
+                            <m-icon name="event" color="orange"/>
+                        </template>
+                    </m-input> 
+                    <m-input color="lime-11" borderColor="greed" bg-color="greed" filled v-model="text1" label="purple-12">
+                        <template v-slot:prepend>
+                            <m-icon name="event"/>
+                        </template>
+                    </m-input>                                                             
                     <p class="sbt">style type</p>
                     <m-input-style-button />
                     
@@ -22,20 +54,74 @@
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
-                    <m-select v-model="model" label="Standard"/>
+                    <m-select v-model="model" :options="options" label="Standard"/>
                 </div>
                 <p class="h2">Radio</p>
                 <div class="type_view">
                     <p class="sbt">basic</p>
-                    <m-radio val="line1" label="Line1"/>
-                    <m-radio val="line2" label="Line2"/>
-                    <m-radio val="line3" label="Line3"/>
-                    <m-radio val="line4" label="Line4"/>
+                    <m-radio v-model="rad1" val="A" label="A"/>
+                    <m-radio v-model="rad1" val="B" label="B"/>
+                    <m-radio v-model="rad1" val="C" label="C"/>
+                    <m-radio v-model="rad1" val="D" label="D"/>
+                    <p class="sbt">size</p>
+                    <m-radio v-model="rad1" val="A" label="xs" size="xs" />
+                    <m-radio v-model="rad1" val="B" label="sm" size="sm"/>
+                    <m-radio v-model="rad1" val="C" label="md" size="md"/>
+                    <m-radio v-model="rad1" val="D" label="lg" size="lg"/>
+                    <m-radio v-model="rad1" val="E" label="xl" size="lg"/>
+                    <m-radio v-model="rad1" val="F" label="30px" size="30px"/>
+                    <p class="sbt">icon</p>
+                    <m-radio v-model="rad1" val="A" label="A" size="15px" checked-icon="task_alt" unchecked-icon="panorama_fish_eye"/>
+                    <m-radio v-model="rad1" val="B" label="B" size="15px" checked-icon="task_alt" unchecked-icon="panorama_fish_eye"/>
+                    <m-radio v-model="rad1" val="C" label="C" size="15px" checked-icon="task_alt" unchecked-icon="panorama_fish_eye"/>
+                    <m-radio v-model="rad1" val="D" label="D" size="15px" checked-icon="task_alt" unchecked-icon="panorama_fish_eye"/>                    
+                    <p class="sbt">disable</p>
+                    <m-radio disable v-model="rad1" val="A" label="A"/>
+                    <m-radio disable v-model="rad1" val="B" label="B"/>
+                    <m-radio disable v-model="rad1" val="C" label="C"/>
+                    <m-radio disable v-model="rad1" val="D" label="D"/>    
+                    <p class="sbt">label</p>
+                    <m-radio v-model="rad1" val="A" label="Label on Right" right-label/>
+                    <m-radio v-model="rad1" val="B" label="Label on Left" left-label/>                                    
                 </div>  
                 <p class="h2">Checkbox</p>
                 <div class="type_view">
                     <p class="sbt">basic</p>
-                    <m-checkbox val="" label="chk1"/>
+                    <m-checkbox v-model="check1" label="chk1"/>
+                    <m-checkbox v-model="check2" label="chk2"/>
+                    <m-checkbox v-model="check1" label="chk3"/>
+                    <m-checkbox v-model="check2" label="chk4"/>
+                    <p class="sbt">color</p>
+                    <m-checkbox v-model="check1" label="teal" color="teal"/>
+                    <m-checkbox v-model="check2" label="orange" color="orange"/>
+                    <m-checkbox v-model="check1" label="red" color="red"/>
+                    <m-checkbox v-model="check2" label="cyan" color="cyan"/>                    
+                    <p class="sbt">label</p>
+                    <m-checkbox v-model="check1" label="Label on Right" right-label/>
+                    <m-checkbox v-model="check2" label="Label on Left" left-label/>
+                    <p class="sbt">disable</p>
+                    <m-checkbox disable v-model="check1" label="chk1"/>
+                    <m-checkbox disable v-model="check2" label="chk2"/>
+                    <m-checkbox v-model="check1" label="chk3"/>
+                    <m-checkbox v-model="check2" label="chk4"/>                    
+                    <p class="sbt">Icon</p>
+                    <m-checkbox v-model="check4" val="A" size="xs" checked-icon="swipe_left"  unchecked-icon="swipe_right"/>
+                    <m-space-v size="50"/>
+                    <m-checkbox v-model="check4" val="B" size="xs" checked-icon="task_alt"    unchecked-icon="highlight_off"/>
+                    <m-space-v size="50"/>
+                    <m-checkbox v-model="check4" val="C" size="xs" checked-icon="star"        unchecked-icon="star_border"/>  
+                    <p class="sbt">ArrayAsModel</p>
+                    <m-checkbox v-model="check3" label="A" val="A"/>
+                    <m-checkbox v-model="check3" label="B" val="B"/>
+                    <m-checkbox v-model="check3" label="C" val="C"/>
+                    <m-checkbox v-model="check3" label="D" val="D"/>
+                    <p class="sbt">size</p>
+                    <m-checkbox size="xs" v-model="check1" label="Size 'xs'"/>
+                    <m-checkbox size="sm" v-model="check2" label="Size 'sm'"/>
+                    <m-checkbox size="md" v-model="check1" label="Size 'md'"/>
+                    <m-checkbox size="lg" v-model="check2" label="Size 'lg'" />
+                    <m-checkbox size="xl" v-model="check1" label="Size 'xl'" />
+                    <m-checkbox size="30px" v-model="check2" label="Size '30px'" />
                 </div>
             </div>
         </div>
@@ -98,11 +184,18 @@ import MButton3 from 'src/components/MButton3.vue';
 import MInput from 'src/components/MInput.vue';
 import MSelect from 'src/components/MSelect.vue';
 import MRadio from 'src/components/MRadio.vue';
+import { ref } from 'vue';
+import MSpaceV from 'src/components/MSpaceV.vue';
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio },
-    MInputname: 'publish',
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV },
     setup() {
         return {
+            text1:ref(''),
+            check1:ref(true),
+            check2:ref(false),
+            check3:ref(['A', 'C']),
+            check4:ref(['A', 'B', 'C']),
+            rad1:ref('B'),
             model:ref(null),
             options:[
                 'Google', 'Facebook'
