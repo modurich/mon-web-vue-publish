@@ -59,10 +59,27 @@
 
                 <p class="h2">TextArea</p>
                 <div class="type_view">
-                    <m-textarea :minHeight="1000" :maxlength="500">
-                        테스트
-                    </m-textarea>
+                    <m-textarea 
+                        :maxlength="1000"
+                        :showError="true"
+                        :minHeight="textarea1.minHeight" 
+                        :counter="textarea1.counter" 
+                        :value="textarea1.value" 
+                        :bottomMessage="textarea1.bottomMessage"
+                        :height="50"
+                        />
+                        <!--
+                        :maxlength="1000"
+                        :height="100"
+                        :showError="true"
+                        :minHeight="textarea1.minHeight" 
+                        :counter="textarea1.counter" 
+                        :value="textarea1.value" 
+                        :bottomMessage="textarea1.bottomMessage"
+                        -->
+                        
                 </div>
+        
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
@@ -112,28 +129,40 @@
                     <m-checkbox v-model="check1" label="Label on Right" right-label/>
                     <m-checkbox v-model="check2" label="Label on Left" left-label/>
                     <p class="sbt">disable</p>
-                    <m-checkbox disable v-model="check1" label="chk1"/>
-                    <m-checkbox disable v-model="check2" label="chk2"/>
-                    <m-checkbox v-model="check1" label="chk3"/>
-                    <m-checkbox v-model="check2" label="chk4"/>                    
+                    <div class="type_view">
+                        <m-checkbox disable v-model="check1" label="chk1"/>
+                        <m-checkbox disable v-model="check2" label="chk2"/>
+                        <m-checkbox v-model="check1" label="chk3"/>
+                        <m-checkbox v-model="check2" label="chk4"/>                    
+                    </div>
                     <p class="sbt">Icon</p>
-                    <m-checkbox v-model="check4" val="A" size="xs" checked-icon="swipe_left"  unchecked-icon="swipe_right"/>
-                    <m-space-v size="50"/>
-                    <m-checkbox v-model="check4" val="B" size="xs" checked-icon="task_alt"    unchecked-icon="highlight_off"/>
-                    <m-space-v size="50"/>
-                    <m-checkbox v-model="check4" val="C" size="xs" checked-icon="star"        unchecked-icon="star_border"/>  
+                    <div class="type_view">
+                        <m-checkbox v-model="check4" val="A" size="xs" checked-icon="swipe_left"  unchecked-icon="swipe_right"/>
+                        <m-space-v size="50"/>
+                        <m-checkbox v-model="check4" val="B" size="xs" checked-icon="task_alt"    unchecked-icon="highlight_off"/>
+                        <m-space-v size="50"/>
+                        <m-checkbox v-model="check4" val="C" size="xs" checked-icon="star"        unchecked-icon="star_border"/>  
+                    </div>
                     <p class="sbt">ArrayAsModel</p>
-                    <m-checkbox v-model="check3" label="A" val="A"/>
-                    <m-checkbox v-model="check3" label="B" val="B"/>
-                    <m-checkbox v-model="check3" label="C" val="C"/>
-                    <m-checkbox v-model="check3" label="D" val="D"/>
+                    <div class="type_view">
+                        <m-checkbox v-model="check3" label="A" val="A"/>
+                        <m-checkbox v-model="check3" label="B" val="B"/>
+                        <m-checkbox v-model="check3" label="C" val="C"/>
+                        <m-checkbox v-model="check3" label="D" val="D"/>
+                    </div>
                     <p class="sbt">size</p>
-                    <m-checkbox size="xs" v-model="check1" label="Size 'xs'"/>
-                    <m-checkbox size="sm" v-model="check2" label="Size 'sm'"/>
-                    <m-checkbox size="md" v-model="check1" label="Size 'md'"/>
-                    <m-checkbox size="lg" v-model="check2" label="Size 'lg'" />
-                    <m-checkbox size="xl" v-model="check1" label="Size 'xl'" />
-                    <m-checkbox size="30px" v-model="check2" label="Size '30px'" />
+                    <div class="type_view">
+                        <m-checkbox size="xs" v-model="check1" label="Size 'xs'"/>
+                        <m-checkbox size="sm" v-model="check2" label="Size 'sm'"/>
+                        <m-checkbox size="md" v-model="check1" label="Size 'md'"/>
+                        <m-checkbox size="lg" v-model="check2" label="Size 'lg'" />
+                        <m-checkbox size="xl" v-model="check1" label="Size 'xl'" />
+                        <m-checkbox size="30px" v-model="check2" label="Size '30px'" />
+                    </div>
+                    <p class="sbt">Toggle</p>
+                    <div class="type_view">
+                        <m-toggle v-model="toggle1"/>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -192,7 +221,32 @@
                     <m-slide-dialog v-bind:title="slide1.title" v-bind:list="slide1.list" class="dialog"/>
                 </div>
             </div>
-        </div>                
+        </div> 
+        <div id="group07" class="group_wrap">
+            <p class="h1_type">Dialog</p>
+            <div class="box_wrap">
+                <p class="h2">Dialog</p>
+                <div class="type_view">
+                    <m-button-3 @click="alert = true">alert</m-button-3>
+                    <m-button-3 @click="confirm = true">confirm</m-button-3>
+                    <m-button-3 @click="dailog1 = true">dailog1</m-button-3>
+                    <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지"/>
+                    <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지"/>
+                    <m-dialog v-model="dailog1">
+                        <q-card>
+                            <q-card-section class="row items-center q-pb-none">
+                                <div class="text-h6">Close icon</div>
+                                <q-space />
+                                <q-btn icon="close" flat round dense v-close-popup />
+                            </q-card-section>
+                            <q-card-section>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis perferendis totam, ea at omnis vel numquam exercitationem aut, natus minima, porro labore.
+                            </q-card-section>
+                        </q-card>
+                    </m-dialog>
+                </div>
+            </div>
+        </div>                         
     </div>
 </template>
 
@@ -208,11 +262,13 @@ import MSpaceV from 'src/components/MSpaceV.vue';
 import { ref } from 'vue';
 import MSlideDialog from 'src/components/MSlideDialog.vue';
 import MTextarea from 'src/components/MTextarea.vue';
+import MToggle from 'src/components/MToggle.vue';
+import MConfirm from 'src/components/MConfirm.vue';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle },
     setup() {
-        return {
+    return {
             text1:ref(''),
             check1:ref(true),
             check2:ref(false),
@@ -230,7 +286,18 @@ export default {
             slide1: {
                 title:'슬라이드쇼',
                 list:['A', 'B', 'C']
-            }
+            },
+            textarea1 : {
+                value: "abcdedfdf",
+                counter: true,
+                minHeight: 100,
+                showError: true,
+                bottomMessage: "바닥메시지"
+            },
+            toggle1: ref(false),
+            alert: ref(false),
+            confirm:ref(false),
+            dailog1:ref(false)
         }
     }
 };
