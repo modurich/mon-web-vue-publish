@@ -252,12 +252,12 @@
             <div class="box_wrap">
                 <p class="h2">Tab</p>
                 <div class="type_view">
-                    <m-tabs v-model="tab1" :items="tabs" class="bg-purple text-white shadow-2"/>
-                    <div v-if="tab1 == 'G'" style="height:200px; background-color:green;">
-
+                    <m-tabs v-model="tab1" :items="tabs" />
+                    <div v-if="tab1 == 'G'">
+                        contents1
                     </div>
-                    <div v-if="tab1 == 'F'" style="height:200px; background-color:orange;">
-
+                    <div v-if="tab1 == 'F'">
+                        contents2
                     </div>                    
                 </div>
 
