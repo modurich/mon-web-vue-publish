@@ -1,28 +1,11 @@
 <template>
     <q-layout view="lHh Lpr lFf">
-        <q-header elevated>
-            <q-toolbar>
-                <q-btn
-                    flat
-                    dense
-                    round
-                    icon="menu"
-                    aria-label="Menu"
-                    @click="leftDrawerOpen = !leftDrawerOpen"
-                />
-
-                <q-toolbar-title>
-                    Quasar App
-                </q-toolbar-title>
-
-                <div>Quasar v{{ $q.version }}</div>
-            </q-toolbar>
-        </q-header>
-        <q-page-container>
-            <router-view />
-        </q-page-container>
-
-        <!-- <Footer /> -->
+        <div class="layout_full">
+            <h1><a href="publish"><img src="~assets/logo.svg" width="30px" height="30px" alt="monstock logo"/> Monstock</a></h1>
+            <q-page-container>
+                <router-view />
+            </q-page-container>
+        </div>
     </q-layout>
 </template>
 
@@ -39,3 +22,14 @@ export default {
     }
 };
 </script>
+<style lang="scss" scoped>
+.layout_full{
+    background: #e4e4e4;
+    height: 100vh;
+    h1{color:#000;font-size:24px;font-weight:700;letter-spacing: -.05em;padding:10px;
+     a{ display: flex;align-items: center;
+        img{margin-right:5px}
+    }
+    }
+}
+</style>

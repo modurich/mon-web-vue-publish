@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="publish_wrap">
         <table>
             <caption>publish List</caption>
             <colgroup>
@@ -36,7 +36,7 @@
                     <td></td>
                     <td>
                         <!-- <router-link to="/UiGuide">uiguide</router-link> -->
-                        <m-button-3 to="/UiGuide">UiGuide</m-button-3>
+                        <router-link  to="/UiGuide">UiGuide</router-link >
                     </td>
                     <td></td>
                     <td></td>
@@ -63,9 +63,8 @@ export default {
     name: 'publish'
 };
 </script>
-<style>
-    body {margin: 0;background-color: #fcfcfc;color:#333;font-size:12px;font-family:"맑은 고딕", "돋움", Dotum, AppleSDGothicNeo ,Droid Sans, arial, sans-serif}
-    a:hover {color:#e60012;text-decoration:underline}
+<style lang="scss" scoped>
+   .publish_wrap{
     a, img {border:none}
     .list_box_wrap {min-width:1280px}
     .information {position:absolute;right:10px;top:-28px;margin-left:100px;color:#666;font-size:14px;font-weight:bold}
@@ -81,11 +80,12 @@ export default {
     .tab_view {display:none;position:relative}
     table {width:100%;border-collapse:collapse;border-spacing:0;background-color: #fff;border-bottom:1px solid #ccc;table-layout:fixed}
     caption {display: none}
-    th {padding:5px 0;color:#fff;background:#46675c;border-top:1px solid #ccc;border-left:1px solid #ccc}
+    th,td{color:#333}
+    th {padding:5px 0;color:#fff;background:#5a56ae;border-top:1px solid #ccc;border-left:1px solid #ccc}
     th.co01 {background:#000}
-    th.co02 {background:#3ca66b}
-    td {padding:7px 5px;border-top:1px solid #e1e1e1;border-left:1px solid #ccc;line-height:16px}
-    .guide tr th, .guide tr td {background-color:#dcf6e7/*rgba(70,103,92,.4);border-color:#999*/}
+    th.co02 {background:#5a56ae}
+    td {padding:7px 5px;border-top:1px solid #d5d5d5;border-left:1px solid #ccc;line-height:16px}
+    .guide tr th, .guide tr td {background-color:#fff/*rgba(70,103,92,.4);border-color:#999*/}
     tr:first-child td {border-top:1px solid #e1e1e1}
     th:first-child, td:first-child {border-left:0}
     td:first-child {font-weight:bold}
@@ -96,4 +96,6 @@ export default {
     table tbody tr.on td {background-color:#f1f1f1 !important}
     table tbody.guide tr.on th,
     table tbody.guide tr.on td {background-color:rgba(70,103,92,.5) !important}
+   }
+   
 </style>

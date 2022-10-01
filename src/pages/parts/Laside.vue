@@ -60,6 +60,9 @@
                     <span>고객센터</span>
                 </a>
             </div>
+            <div class="info_wrap">
+                <m-button-3 lined class="full">로그아웃</m-button-3>
+            </div>
         </div>
     </aside>
 </template>
