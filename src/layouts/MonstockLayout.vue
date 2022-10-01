@@ -1,27 +1,17 @@
 <template>
     <q-layout view="lHh Lpr lFf">
-        <q-header elevated>
-            <q-toolbar>
-                <q-btn
-                    flat
-                    dense
-                    round
-                    icon="menu"
-                    aria-label="Menu"
-                    @click="leftDrawerOpen = !leftDrawerOpen"
-                />
-
-                <q-toolbar-title>
-                    Quasar App
-                </q-toolbar-title>
-
-                <div>Quasar v{{ $q.version }}</div>
-            </q-toolbar>
-        </q-header>
-        <q-page-container>
-            <router-view />
-        </q-page-container>
-
+        <header>
+           121212121212
+        </header>
+        <div class="contents_wrap">
+            <div class="contents_area">
+                <aside class="left_aside">왼쪽영역</aside>
+                <div class="centerarea_wrap">
+                    <router-view />
+                </div>
+                <aside class="right_aside">오른쪽영역</aside>
+            </div>
+        </div>
         <Footer />
     </q-layout>
 </template>
@@ -40,3 +30,21 @@ export default {
     }
 };
 </script>
+
+<style lang="scss" scoped>
+    .contents_wrap{
+        width:100%;
+        margin:0 auto;
+        .contents_area{
+            display: flex;
+            .left_aside,.right_aside{width:280px}
+            .centerarea_wrap{width:692px}
+        }
+        @media (max-width: $breakpoint-xs-max) {
+            border:1px solid red;
+        }
+    }
+    
+   
+</style>
+    
