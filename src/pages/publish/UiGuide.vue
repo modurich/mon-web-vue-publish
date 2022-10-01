@@ -262,14 +262,13 @@
                 </div>
 
 
-                    <q-tabs
-                        v-model="select1"
-                        no-caps
-                        class="bg-orange text-white shadow-2"
-                    >
-                        <q-tab name="Facebook" label="Facebook1" />
-                        <q-tab name="Google" label="Google2" />
-                    </q-tabs>                    
+                <q-tabs
+                    v-model="select1"
+                    no-caps
+                >
+                    <q-tab name="Facebook" label="Facebook1" />
+                    <q-tab name="Google" label="Google2" />
+                </q-tabs>                    
 
                 </div>
             </div>            
