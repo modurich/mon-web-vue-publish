@@ -36,7 +36,7 @@
                     <td></td>
                     <td>
                         <!-- <router-link to="/UiGuide">uiguide</router-link> -->
-                        <router-link  to="/UiGuide">UiGuide</router-link >
+                        <router-link to="/UiGuide">UiGuide</router-link >
                     </td>
                     <td></td>
                     <td></td>
