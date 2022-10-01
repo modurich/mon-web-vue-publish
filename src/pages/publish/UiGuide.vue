@@ -51,6 +51,9 @@
                     <m-input-style-button />
                     
                 </div>
+                <p class="h2">Input</p>
+
+
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
@@ -184,8 +187,9 @@ import MButton3 from 'src/components/MButton3.vue';
 import MInput from 'src/components/MInput.vue';
 import MSelect from 'src/components/MSelect.vue';
 import MRadio from 'src/components/MRadio.vue';
-import { ref } from 'vue';
 import MSpaceV from 'src/components/MSpaceV.vue';
+import { ref } from 'vue';
+
 export default {
     components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV },
     setup() {
