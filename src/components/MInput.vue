@@ -3,12 +3,12 @@
         ref="input"
         :class="`m-input ${!isFocus && $attrs.value !== '' ? 'blur' : ''} border-${borderColor} ${$attrs.class || ''}`"
         style="min-width: 200px;width: 100%;"
-        :color="color"
+        color="deep-purple"
         v-bind="$attrs"
         dense
         :outlined="!_.has($attrs, 'borderless')"
         :hint="$attrs.hint && $attrs.value && !isFocus ? $attrs.hint : undefined"
-        :input-style="{ height: '44px', fontSize: '14px', fontWeight: 500, padding: 0, ...$attrs.inputStyle }"
+        :input-style="{ height: '46px', fontSize: '14px', fontWeight: 500, padding: 0, ...$attrs.inputStyle }"
         v-on="$listeners"
         @focus="function(evt){ isFocus = true; }"
         @blur="function(evt){ isFocus = false; }"
@@ -72,11 +72,11 @@ export default {
         font-weight: 500;
     }
     &.q-field--dense .q-field__control, .q-field--dense .q-field__marginal {
-        height: 44px;
+        height: 46px;
     }
     &.q-textarea--autogrow .q-field__control {
         height: auto;
-        min-height: 44px;
+        min-height: 46px;
     }
     &.q-field--dense.q-field--float .q-field__label {
         transform: translateY(-100%) scale(0.875);

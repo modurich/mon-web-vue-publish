@@ -3,7 +3,7 @@
         class="m-select gpu-layer"
         v-bind="$attrs"
         v-on="$listeners"
-        color="orange"
+        color="deep-purple"
         hide-dropdown-icon
         outlined
         behavior="menu"
@@ -56,10 +56,10 @@ export default {
         top: 12px;
     }
     &.q-field--dense .q-field__marginal {
-        height: 44px;
+        height: 46px;
     }
     &.q-field--auto-height.q-field--dense .q-field__control {
-        min-height: 44px;
+        min-height: 46px;
     }
     &.q-field--outlined .q-field__control:before {
         border-color: $ghost-white;
@@ -81,6 +81,6 @@ export default {
     }
 }
 .q-item.q-item-type.row.no-wrap.q-item--clickable.q-link.cursor-pointer.q-manual-focusable.q-item--dense {
-    min-height: 44px;
+    min-height: 46px;
 }
 </style>

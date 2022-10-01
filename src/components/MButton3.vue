@@ -85,7 +85,7 @@ export default {
     border-radius: 0;
     border: 1px solid transparent;
     // outline: none;
-
+    &.full{width:100% !important}
     &:disabled {
         opacity: 0.2 !important;
     }
@@ -94,8 +94,8 @@ export default {
         border-radius: 2px;
     }
     &.size-medium {
-        height: 40px;
-        min-height: 40px;
+        height: 46px;
+        min-height: 46px;
         width: 120px;
         font-size: 14px;
         font-weight: 700;

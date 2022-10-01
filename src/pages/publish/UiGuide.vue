@@ -15,8 +15,8 @@
                 <div class="type_view">
                     <p class="sbt">basic type</p>
                     <m-input v-model="text1" label="basic"/>
-                    <m-input filled v-model="text1" label="filled"/>
-                    <m-input outlined v-model="text1" label="outlined"/>
+                    <m-input filled v-model="text1" label="filled" class="round_type"/>
+                    <!-- <m-input outlined v-model="text1" label="outlined"/>
                     <m-input standout v-model="text1" label="standout"/>
                     <m-input standout="bg-teal text-orange" v-model="text1" label="custom standout"/>
                     <m-input borderless v-model="text1" label="borderless"/>
@@ -25,7 +25,7 @@
                     <m-input rounded standout v-model="text1" label="Rounded standout" />
                     <m-input square filled v-model="text1" label="Square filled" />
                     <m-input square outlined v-model="text1" label="Square outlined" />
-                    <m-input square standout v-model="text1" label="Square standout" />   
+                    <m-input square standout v-model="text1" label="Square standout" />    -->
                     <p class="sbt">color and icon</p>
                     <m-input color="purple-12" v-model="text1" label="purple-12">
                         <template v-slot:prepend>
@@ -205,12 +205,8 @@ export default {
 };
 </script>
 <style>
-body{background:linear-gradient(to top right, #ffeff0 0%, #dcf6e7 100%);
-    background:#ffeff0; /* Old browsers */
-    background:-moz-linear-gradient(45deg, #ffeff0 1%, #dcf6e7 100%); /* FF3.6-15 */
-    background:-webkit-linear-gradient(45deg, #ffeff0 1%,#dcf6e7 100%); /* Chrome10-25,Safari5.1-6 */
-    background:linear-gradient(45deg, #ffeff0 1%,#dcf6e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeff0', endColorstr='#dcf6e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+body{
+    background:#f8f8f8;
 }
 .btnTop {position:fixed;z-index:50;overflow:hidden;width:30px;height:30px;right:10px;bottom:10px}
 .btnTop a {display:block;width:30px;height:30px;text-indent:-9999em;opacity:.7}

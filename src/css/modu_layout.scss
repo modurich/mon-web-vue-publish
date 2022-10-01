@@ -1,2 +1,32 @@
 // app global css in Scss form
-.login_wrap{border:1px solid red}
+.login_wrap{
+    .monstock_logo{text-align: center;margin:32px 0;}
+    .login_area{
+        .l_row + .l_row{margin-bottom:26px}
+        .btn_wrap{
+            margin:10px 0 10px 0
+        }
+    }
+}
+
+.text-deep-purple {
+    color: #8673FF !important;
+}
+
+.q-field--filled{
+    &.round_type{
+        .q-field__control {
+            padding: 0 12px;
+            background: #FAFBFC !important;
+            border-radius: 46px;
+            &::before{
+                background: #F4F2FF !important;
+                border-bottom: 0 !important;
+               
+            }
+            &::after{
+                height: 0px !important;
+            }
+        }
+    }
+}
