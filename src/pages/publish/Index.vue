@@ -48,7 +48,7 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <router-link to="/A_10000_P">A_10000_P</router-link>
+                        <router-link to="/publish/A_10000_P">A_10000_P</router-link>
                     </td>
                     <td></td>
                     <td></td>
