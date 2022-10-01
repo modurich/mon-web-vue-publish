@@ -246,6 +246,33 @@
                     </m-dialog>
                 </div>
             </div>
+        </div>
+        <div id="group08" class="group_wrap">
+            <p class="h1_type">Tab</p>
+            <div class="box_wrap">
+                <p class="h2">Tab</p>
+                <div class="type_view">
+                    <m-tabs v-model="tab1" :items="tabs" class="bg-purple text-white shadow-2"/>
+                    <div v-if="tab1 == 'G'" style="height:200px; background-color:green;">
+
+                    </div>
+                    <div v-if="tab1 == 'F'" style="height:200px; background-color:orange;">
+
+                    </div>                    
+                </div>
+
+
+                    <q-tabs
+                        v-model="select1"
+                        no-caps
+                        class="bg-orange text-white shadow-2"
+                    >
+                        <q-tab name="Facebook" label="Facebook1" />
+                        <q-tab name="Google" label="Google2" />
+                    </q-tabs>                    
+
+                </div>
+            </div>            
         </div>                         
     </div>
 </template>
@@ -278,6 +305,11 @@ export default {
             select1:ref("Facebook"),
             options:[
                 'Google', 'Facebook'
+            ],
+            tab1:ref("G"),
+            tabs:[
+                {label:'GOOGLE', value:'G', icon:'mail'},
+                {label:'FACEBOOK', value:'F', icon:'photo'}
             ],
             date1: {
                 from:ref(''),
