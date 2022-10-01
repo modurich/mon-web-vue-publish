@@ -6,7 +6,7 @@
                 <aside class="left_aside">왼쪽영역</aside>
                 <div class="centerarea_wrap">
                     <router-view />
-                    <!-- <Footer /> -->
+                    <Footer />
                 </div>
                 <aside class="right_aside">오른쪽영역</aside>
             </div>
@@ -34,10 +34,8 @@ export default {
         width:100%;
         min-width: 320px;
         .contents_area{
-           // width: 1308px;
-            width: 1000px;
+            width: 1308px;
             margin:0 auto;
-            border:1px solid blue;
             display: flex;
             justify-content: space-between;
             .left_aside,.right_aside{width:280px;background: blue;}
@@ -48,7 +46,7 @@ export default {
             border:1px solid red;
         }
         //1308보다 작아질때
-        @media (max-width: 1000px) {
+        @media (max-width: 1308px) {
             .left_aside,.right_aside{display:none}
             .contents_area{
                 width:100%;

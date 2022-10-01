@@ -252,7 +252,7 @@ body{
 .tabs ul li:last-child a:after{display:none}
 
 .h1_type {font-weight:bold;font-size:18px;color:#000;margin-bottom:10px;font-family:'verdana';padding-top:60px}
-.h2 {background-color:#e0f2e8;margin:0 -20px;height:30px;line-height:30px;padding:0 20px;font-weight:bold;margin-bottom:10px}
+.h2 {background-color:#eee ;color:#555;margin:0 -20px;height:30px;line-height:30px;padding:0 20px;font-weight:bold;margin-bottom:10px}
 .box_wrap {border:1px solid #ddd;padding:0 20px 0 20px;background-color:#fff}
 .type_view {padding-bottom:20px;max-width:1080px}
 .type_view .sbt {margin-bottom:5px;color:#333}
