@@ -52,12 +52,15 @@
                     
                 </div>
                 <p class="h2">Input</p>
-
+                <div class="type_view">
+                    <p class="sbt">Standard</p>
+                    <m-date-range-picker v-model="date1"/>
+                </div>
 
                 <p class="h2">M Select</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
-                    <m-select v-model="model" :options="options" label="Standard"/>
+                    <m-select v-model="select1" :options="options" label="Standard"/>
                 </div>
                 <p class="h2">Radio</p>
                 <div class="type_view">
@@ -200,10 +203,11 @@ export default {
             check3:ref(['A', 'C']),
             check4:ref(['A', 'B', 'C']),
             rad1:ref('B'),
-            model:ref(null),
+            select1:ref("Facebook"),
             options:[
                 'Google', 'Facebook'
-            ]
+            ],
+            date1:ref(null)
         }
     }
 };

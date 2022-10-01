@@ -29,7 +29,7 @@ export default {
             text1:ref(''),
             text2:ref(''),
             check1:ref(true),
-            select1:ref('전체'),
+            select1:ref(null),
             options:[
                 '전체', '선택1', '선택2', '선택3', '선택4'
             ]
