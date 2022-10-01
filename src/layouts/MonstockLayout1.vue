@@ -1,7 +1,7 @@
 <template>
     <q-layout view="lHh Lpr lFf">
         <div class="layout_full">
-            <h1><a href="publish"><img src="~assets/logo.svg" width="30px" height="30px" alt="monstock logo"/> Monstock</a></h1>
+            <h1><router-link to="/publish"><img src="~assets/logo.svg" width="30px" height="30px" alt="monstock logo"/> Monstock</router-link ></h1>
             <q-page-container>
                 <router-view />
             </q-page-container>
