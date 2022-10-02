@@ -1,14 +1,16 @@
 <template>
     <q-layout view="lHh Lpr lFf">
         <!-- <Header/> -->
-        <div class="contents_wrap">
-            <div class="contents_area">
+        <div class="main_wrap">
+            <div class="main_area">
                 <Laside/>
                 <div class="centerarea_wrap">
-                    <router-view />
-                    <Footer />
+                    <div class="centerarea_area">
+                        <router-view />
+                        <Footer />
+                    </div>
                 </div>
-                <!-- <Raside/> -->
+                <Raside/>
             </div>
         </div>
     </q-layout>
@@ -32,25 +34,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .contents_wrap{
+    .main_wrap{
         width:100%;
         min-width: 320px;
-        .contents_area{
-            width: 1000px;
+        .main_area{
+            width: 1284px;
             margin:0 auto;
             display: flex;
             justify-content: space-between;
             .left_aside,.right_aside{width:280px;}
-            .centerarea_wrap{width:692px;min-width: 320px;background:#fff;margin:0 auto;}
+            .centerarea_wrap{width:692px;min-width: 320px;margin:0 auto;}
+            .centerarea_area{width:100%;background:#fff}
         }
         //700보다 작아질때
         @media (max-width: $breakpoint-xs-max) {
             // border:1px solid red;
         }
-        //1308보다 작아질때
-        @media (max-width: 1000px) {
+        //1284보다 작아질때
+        @media (max-width: 1284px) {
             .left_aside,.right_aside{display:none}
-            .contents_area{
+            .main_area{
                 width:100%;
             }
         }

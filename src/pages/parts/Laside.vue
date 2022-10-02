@@ -3,7 +3,8 @@
 <template>
     <aside class="left_aside">
         <div class="aside_box">
-            <div class="login_wrap">
+            <!--S login-->
+            <!-- <div class="login_wrap">
                 <q-form>
                     <div class="login_area">
                     <div class="monstock_logo l_row"><img src="~assets/logo.svg" alt="monstock logo"/></div>
@@ -20,7 +21,9 @@
                     </div>
                     </div>
                 </q-form>
-            </div>
+            </div> -->
+            <!--E login-->
+            <!--S user-->
             <div class="user_wrap">
                 <div class="user_area">
                     <div class="user_img">
@@ -44,6 +47,8 @@
                     </li>
                 </ul>
             </div>
+            <!--E user-->
+            <!--S member-->
             <div class="member_wrap">
                <div class="klip_wrap">
                     <span class="text_wrap">
@@ -81,6 +86,21 @@
                     <m-button-3 lined class="full primary">가입미션 (2/6)</m-button-3>
                 </div>
             </div>
+            <!--E member-->
+            <!--S alarm-->
+            <div class="alarm_wrap">
+                <a href="#" class="alarm_tit">
+                    새 알림
+                    <span>+ 32</span>
+                </a>
+                <div class="alarm_info">
+                    <p class="tit">BLASH 리워드 지급</p>
+                    <p class="con">BLASH 리워드(으)로 100 sMON이 지급되었습니다.</p>
+                    <p class="date">[MON/리워드] 2주전</p>
+                </div>
+            </div>
+            <!--E alarm-->
+            <!--S local-->
             <div class="local_wrap">
                 <p class="sub_title">로컬설정</p>
                 <ul class="local_list">
@@ -98,6 +118,7 @@
                     </li>
                 </ul>
             </div>
+            <!--E local-->
             <div class="info_wrap">
                 <a href="#">
                     <i class="icon ico_event"></i>
@@ -294,6 +315,45 @@ export default {
                     .ico_question{ background: url('~assets/ico_question.svg') center center no-repeat;}
                     .ico_info{ background: url('~assets/ico_info.svg') center center no-repeat;}
                     .ico_cs{ background: url('~assets/ico_cs.svg') center center no-repeat;}
+                }
+            }
+            .alarm_wrap{
+                .alarm_tit{
+                    display: flex;
+                    align-items: center;
+                    color: #141414;
+                    &::before{
+                        content:'';
+                        background: url('~assets/ico_alarm.png') center center no-repeat;
+                        width:26px;
+                        height: 26px;
+                        background-size:contain ;
+                        display: inline-flex;
+                    }
+                    &::after{
+                        content:'';
+                        background: url('~assets/arrow_right_b.svg') center center no-repeat;
+                        width:26px;
+                        height: 26px;
+                        position: absolute;
+                        right:0;
+                        background-size:contain ;
+                        display: inline-flex;
+                    }
+                    span{color:$primary;margin-left:8px;font-size:16px}
+                }
+                .alarm_info{
+                    background:#f4f2ff;
+                    color: #141414;
+                    border-radius: 8px;
+                    padding:16px;
+                    margin-top:16px;
+                    .tit{font-weight: 700;}
+                    .con,.date{font-size:12px}
+                    .date{color:$primary}
+                    p{
+                        &:last-child{margin:0}
+                    }
                 }
             }
             .local_list{

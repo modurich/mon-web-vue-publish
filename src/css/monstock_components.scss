@@ -5,6 +5,9 @@ $primary:#8673FF;
     color: $primary !important;
 }
 //button
+.m-button3 {
+    border-radius: 8px !important;
+}
 .m-button3.color-slateBlue {
     background-color: $primary;
     color: #ffffff;
