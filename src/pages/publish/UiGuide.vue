@@ -22,6 +22,19 @@
                     <p class="sbt">disabled</p>
                     <m-input v-model="text1" label="basic" disabled/><br/>
                     <m-input filled v-model="text1" label="filled" class="round_type" disabled/><br/>
+                    <p class="sbt">validate</p>
+                    <m-input filled v-model="text1" label="필수입력" :rules="[val => !!val || '이 필드는 필수 입력입니다.']" ref="inputRef"/>
+                    <m-space-h />
+                    <m-input filled v-model="text2" label="max 3" 
+                        bottom-slots hint="최대 3글자" 
+                        error-message="최대 3글자만 입력하세요?"
+                        :error="!isValid" />
+                    <m-space-h />
+                    <m-input filled v-model="text2" label="Type here" bottom-slots hint="최대 3글자" :error="!isValid">
+                        <template v-slot:error>
+                            Please use maximum 3 characters.
+                        </template>
+                    </m-input>
                     
                     <!-- <m-input outlined v-model="text1" label="outlined"/>
                     <m-input standout v-model="text1" label="standout"/>
@@ -288,7 +301,7 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import MTabs from 'src/components/MTabs.vue';
 import MAlert from 'src/components/MAlert.vue';
 import MHeader from 'src/components/MHeader.vue';
@@ -305,8 +318,12 @@ import MConfirm from 'src/components/MConfirm.vue';
 export default {
     components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle },
     setup() {
-    return {
+        const text2 = ref('');
+        return {
             text1:ref(''),
+            inputRef: ref(null),
+            text2,
+            isValid:computed(() => text2.value.length <= 3),
             check1:ref(true),
             check2:ref(false),
             check3:ref(['A', 'C']),
