@@ -177,6 +177,7 @@
                 </div>
                 <p class="h2">Button Size [medium[default], large]</p>
                 <div class="type_view">
+                    <m-button-3 lined size="small">small</m-button-3>
                     <m-button-3 lined size="medium">medium</m-button-3>
                     <m-button-3 lined size="large">large</m-button-3>
                 </div>

@@ -17,7 +17,10 @@
                     </ul>
                 </nav>
             </div>
-            <div class="search_wrap"><button class="ico_search">seach</button></div>
+            <div class="search_wrap">
+                <button class="ico_search">seach</button>
+                <m-button-3  color="slateBlue" size="small" class="mob_only">로그인</m-button-3>
+            </div>
         </div>
     </header>
 </template>
@@ -38,7 +41,8 @@ export default {
         background:#fff;
         border-bottom:1px solid #d4d9ea;
         margin-bottom:20px;
-       
+        
+       .mob_only{display:block}
         .header_area{
             height:80px;
             width:1284px;margin:0 auto;
@@ -46,6 +50,8 @@ export default {
             align-items: center;
             justify-content: space-between;
             .search_wrap{
+                display: inline-flex;
+                align-items: center;
                 .ico_search{
                     background: url('~assets/ico_search.svg') center right no-repeat;
                     display: inline-flex;
@@ -110,11 +116,15 @@ export default {
 
                 }
             }
-            
         }
-          //1284보다 작아질때
-          @media (max-width: 1284px) {
+        //1284보다 작아질때
+        @media (max-width: 1284px) {
+            border:1px solid red;
             .header_area{width:100%}
+            .mob_only{
+                display: block;
+            }
+            nav{display: none !important;}
         }
     }
 </style>
