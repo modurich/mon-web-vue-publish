@@ -196,10 +196,8 @@
                             class="rounded-borders"
                             navigation
                             padding
-                            height="300px">
-                            <!--
                             arrows
-                            --> 
+                            height="300px">
                         <q-carousel-slide name="style" class="column no-wrap flex-center">
                             <div class="q-mt-md text-center">
                                 <ul>
