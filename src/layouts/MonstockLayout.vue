@@ -1,6 +1,6 @@
 <template>
     <q-layout view="lHh Lpr lFf">
-        <!-- <Header/> -->
+        <Header/>
         <div class="main_wrap">
             <div class="main_area">
                 <Laside/>
