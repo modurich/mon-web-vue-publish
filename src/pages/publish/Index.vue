@@ -81,9 +81,9 @@ export default {
     table {width:100%;border-collapse:collapse;border-spacing:0;background-color: #fff;border-bottom:1px solid #ccc;table-layout:fixed}
     caption {display: none}
     th,td{color:#333}
-    th {padding:5px 0;color:#fff;background:$primary;border-top:1px solid #ccc;border-left:1px solid #ccc}
-    th.co01 {background:#000}
-    th.co02 {background:$primary}
+    th {padding:5px 0;color:#fff;background:rgb(58, 58, 62);border-top:1px solid #ccc;border-left:1px solid #ccc}
+    th.co01 {background:$primary}
+    th.co02 {background:rgb(58, 58, 62)}
     td {padding:7px 5px;border-top:1px solid #d5d5d5;border-left:1px solid #ccc;line-height:16px}
     .guide tr th, .guide tr td {background-color:#fff/*rgba(70,103,92,.4);border-color:#999*/}
     tr:first-child td {border-top:1px solid #e1e1e1}

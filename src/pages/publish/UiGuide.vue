@@ -14,8 +14,13 @@
                 <p class="h2">Input</p>
                 <div class="type_view">
                     <p class="sbt">basic type</p>
-                    <m-input v-model="text1" label="basic"/>
-                    <m-input filled v-model="text1" label="filled" class="round_type"/>
+                    <m-input v-model="text1" label="basic"/><br/>
+                    <p class="sbt">round type</p>
+                    <m-input filled v-model="text1" label="filled" class="round_type"/><br/>
+                    <p class="sbt">disabled</p>
+                    <m-input v-model="text1" label="basic" disabled/><br/>
+                    <m-input filled v-model="text1" label="filled" class="round_type" disabled/><br/>
+                    
                     <!-- <m-input outlined v-model="text1" label="outlined"/>
                     <m-input standout v-model="text1" label="standout"/>
                     <m-input standout="bg-teal text-orange" v-model="text1" label="custom standout"/>
@@ -26,7 +31,7 @@
                     <m-input square filled v-model="text1" label="Square filled" />
                     <m-input square outlined v-model="text1" label="Square outlined" />
                     <m-input square standout v-model="text1" label="Square standout" />    -->
-                    <p class="sbt">color and icon</p>
+                    <!-- <p class="sbt">color and icon</p>
                     <m-input color="purple-12" v-model="text1" label="purple-12">
                         <template v-slot:prepend>
                             <m-icon name="event"/>
@@ -50,7 +55,7 @@
                     <p class="sbt">style type</p>
                     <m-input-style-button />
                     
-                </div>
+                </div> -->
                 <p class="h2">DateRangePicker</p>
                 <div class="type_view">
                     <p class="sbt">Standard</p>
@@ -116,40 +121,20 @@
                 <p class="h2">Checkbox</p>
                 <div class="type_view">
                     <p class="sbt">basic</p>
-                    <m-checkbox v-model="check1" label="chk1"/>
-                    <m-checkbox v-model="check2" label="chk2"/>
-                    <m-checkbox v-model="check1" label="chk3"/>
-                    <m-checkbox v-model="check2" label="chk4"/>
-                    <p class="sbt">color</p>
-                    <m-checkbox v-model="check1" label="teal" color="teal"/>
-                    <m-checkbox v-model="check2" label="orange" color="orange"/>
-                    <m-checkbox v-model="check1" label="red" color="red"/>
-                    <m-checkbox v-model="check2" label="cyan" color="cyan"/>                    
-                    <p class="sbt">label</p>
+                    <m-checkbox v-model="check1" label="선택" />
+                    <m-checkbox v-model="check2" label="미선택"/>
+                    <m-checkbox  v-model="check2" label="비활성" disable/>
+                    <m-checkbox v-model="check2" label="선택 비활성" disable/>
+                    <p class="sbt">label position</p>
                     <m-checkbox v-model="check1" label="Label on Right" right-label/>
                     <m-checkbox v-model="check2" label="Label on Left" left-label/>
-                    <p class="sbt">disable</p>
-                    <div class="type_view">
-                        <m-checkbox disable v-model="check1" label="chk1"/>
-                        <m-checkbox disable v-model="check2" label="chk2"/>
-                        <m-checkbox v-model="check1" label="chk3"/>
-                        <m-checkbox v-model="check2" label="chk4"/>                    
-                    </div>
-                    <p class="sbt">Icon</p>
-                    <div class="type_view">
-                        <m-checkbox v-model="check4" val="A" size="xs" checked-icon="swipe_left"  unchecked-icon="swipe_right"/>
-                        <m-space-v size="50"/>
-                        <m-checkbox v-model="check4" val="B" size="xs" checked-icon="task_alt"    unchecked-icon="highlight_off"/>
-                        <m-space-v size="50"/>
-                        <m-checkbox v-model="check4" val="C" size="xs" checked-icon="star"        unchecked-icon="star_border"/>  
-                    </div>
-                    <p class="sbt">ArrayAsModel</p>
+                    <!-- <p class="sbt">ArrayAsModel</p>
                     <div class="type_view">
                         <m-checkbox v-model="check3" label="A" val="A"/>
                         <m-checkbox v-model="check3" label="B" val="B"/>
                         <m-checkbox v-model="check3" label="C" val="C"/>
                         <m-checkbox v-model="check3" label="D" val="D"/>
-                    </div>
+                    </div> -->
                     <p class="sbt">size</p>
                     <div class="type_view">
                         <m-checkbox size="xs" v-model="check1" label="Size 'xs'"/>
@@ -159,6 +144,16 @@
                         <m-checkbox size="xl" v-model="check1" label="Size 'xl'" />
                         <m-checkbox size="30px" v-model="check2" label="Size '30px'" />
                     </div>
+
+                    <p class="sbt">Icon</p>
+                    <div class="type_view">
+                        <m-checkbox v-model="check4" val="A" size="xs" checked-icon="swipe_left"  unchecked-icon="swipe_right"/>
+                        <m-space-v size="50"/>
+                        <m-checkbox v-model="check4" val="B" size="xs" checked-icon="task_alt"    unchecked-icon="highlight_off"/>
+                        <m-space-v size="50"/>
+                        <m-checkbox v-model="check4" val="C" size="xs" checked-icon="star"        unchecked-icon="star_border"/>  
+                    </div>
+
                     <p class="sbt">Toggle</p>
                     <div class="type_view">
                         <m-toggle v-model="toggle1"/>
@@ -169,48 +164,22 @@
         <div id="group05" class="group_wrap">
             <p class="h1_type">Button</p>
             <div class="box_wrap">
-                <p class="h2">Big Button</p>
+                <p class="h2">Button</p>
                 <div class="type_view">
                     <p class="sbt">basic</p>
-                    <m-button-3>TYPE01</m-button-3>
-                    <m-button-3>TYPE02</m-button-3>
-                    <m-button-3>TYPE03</m-button-3>
-                    <m-button-3>TYPE04</m-button-3>
+                    <m-button-3 color="mediumGrey">type01</m-button-3>
+                    <m-button-3 lined>type02</m-button-3>
+                    <m-button-3 color="slateBlue">type03</m-button-3>
                     <p class="sbt">disabled</p>
-                    <m-button-3 disabled>TYPE01</m-button-3>
-                    <m-button-3 disabled>TYPE02</m-button-3>
-                    <m-button-3 disabled>TYPE03</m-button-3>
-                    <m-button-3 disabled>TYPE04</m-button-3>
+                    <m-button-3 color="mediumGrey" disabled>type01</m-button-3>
+                    <m-button-3 lined disabled>type02</m-button-3>
+                    <m-button-3 color="slateBlue" disabled>type03</m-button-3>
                 </div>
                 <p class="h2">Button Size [medium[default], large]</p>
                 <div class="type_view">
-                    <m-button-3 size="medium">medium</m-button-3>
-                    <m-button-3 size="large">large</m-button-3>
+                    <m-button-3 lined size="medium">medium</m-button-3>
+                    <m-button-3 lined size="large">large</m-button-3>
                 </div>
-                <p class="h2">Color Button [mediumGrey[default], orange, crayolaFlamingoPink, slateBlue, vividRaseberry, duronResonantBlue]</p>
-                <div class="type_view">
-                    <m-button-3 color="mediumGrey">mediumGrey</m-button-3>
-                    <m-button-3 color="orange">orange</m-button-3>
-                    <m-button-3 color="crayolaFlamingoPink">crayolaFlamingoPink</m-button-3>
-                    <m-button-3 color="slateBlue">slateBlue</m-button-3>
-                    <m-button-3 colro="vividRaseberry">vividRaseberry</m-button-3>
-                    <m-button-3 colro="duronResonantBlue">duronResonantBlue</m-button-3>
-                </div>
-                <p class="h2">Button Lined [true[default], false]</p>
-                <div class="type_view">
-                    <m-button-3 lined>True</m-button-3>
-                    <m-button-3>False</m-button-3>
-                </div>
-                <p class="h2">Button round [true[default], false]</p>
-                <div class="type_view">
-                    <m-button-3 round>True</m-button-3>
-                    <m-button-3 v-vind:round="false">False</m-button-3>
-                </div>
-                <p class="h2">Button To/Href</p>
-                <div class="type_view">
-                    <m-button-3 to="/A_10000_P">A_10000_P</m-button-3>
-                    <m-button-3 href="http://google.com">To Google</m-button-3>
-                </div> 
             </div>
         </div>
         <div id="group06" class="group_wrap">
@@ -227,9 +196,9 @@
             <div class="box_wrap">
                 <p class="h2">Dialog</p>
                 <div class="type_view">
-                    <m-button-3 @click="alert = true">alert</m-button-3>
-                    <m-button-3 @click="confirm = true">confirm</m-button-3>
-                    <m-button-3 @click="dailog1 = true">dailog1</m-button-3>
+                    <m-button-3 lined @click="alert = true">alert</m-button-3>
+                    <m-button-3 lined @click="confirm = true">confirm</m-button-3>
+                    <m-button-3 lined @click="dailog1 = true">dailog1</m-button-3>
                     <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지"/>
                     <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지"/>
                     <m-dialog v-model="dailog1">
@@ -252,7 +221,7 @@
             <div class="box_wrap">
                 <p class="h2">Tab</p>
                 <div class="type_view">
-                    <m-tabs v-model="tab1" :items="tabs" />
+                    <m-tabs class="line_type" v-model="tab1" :items="tabs" />
                     <div v-if="tab1 == 'G'">
                         contents1
                     </div>
@@ -260,16 +229,13 @@
                         contents2
                     </div>                    
                 </div>
-
-
-                <q-tabs
+                <!-- <q-tabs
                     v-model="select1"
                     no-caps
                 >
                     <q-tab name="Facebook" label="Facebook1" />
                     <q-tab name="Google" label="Google2" />
-                </q-tabs>                    
-
+                </q-tabs>-->
                 </div>
             </div>            
         </div>                         
@@ -333,7 +299,7 @@ export default {
     }
 };
 </script>
-<style>
+<style lang="scss" scoped>
 body{
     background:#f8f8f8;
 }
@@ -354,7 +320,9 @@ body{
 .h1_type {font-weight:bold;font-size:18px;color:#000;margin-bottom:10px;font-family:'verdana';padding-top:60px}
 .h2 {background-color:#eee ;color:#555;margin:0 -20px;height:30px;line-height:30px;padding:0 20px;font-weight:bold;margin-bottom:10px}
 .box_wrap {border:1px solid #ddd;padding:0 20px 0 20px;background-color:#fff}
-.type_view {padding-bottom:20px;max-width:1080px}
+.type_view {padding-bottom:20px;max-width:1080px;
+    .q-checkbox,.m-radio,.m-button3{margin-right:16px}
+}
 .type_view .sbt {margin-bottom:5px;color:#333}
 .type_view .sbt ~ .sbt {margin-top:10px}
 .type_view.btn_view button {margin-right:20px}

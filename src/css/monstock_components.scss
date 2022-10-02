@@ -1,0 +1,55 @@
+// app global css in Scss form
+$primary:#8673FF;
+
+.text-deep-purple {
+    color: $primary !important;
+}
+//button
+.m-button3.color-slateBlue {
+    background-color: $primary;
+    color: #ffffff;
+}
+//input
+.q-field--filled{
+    &.round_type{
+        .q-field__control {
+            padding: 0 12px;
+            background: #FAFBFC !important;
+            border-radius: 46px;
+            &::before{
+                background: #F4F2FF !important;
+                border-bottom: 0 !important;
+               
+            }
+            &::after{
+                height: 0px !important;
+            }
+        }
+    }
+}
+//check
+.q-checkbox--dense .q-checkbox__label {
+    color: #141414;
+}
+//radio
+.m-radio .q-radio__label.q-anchor--skip {
+    color: #141414;
+    padding-left: 8px !important;
+}
+//tab
+.m-tabs .m-tabs-item.active {
+    background-color: #fff!important;
+    color: #616161!important;
+    font-weight: bold;
+    position: relative;
+    &::after{
+        content:'';
+        position: absolute;
+        bottom:0;
+        height:3px;
+        left:0;
+        right:0;
+        background: $primary;
+    }
+    
+}

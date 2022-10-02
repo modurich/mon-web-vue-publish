@@ -3,7 +3,7 @@
         class="m-radio"
         v-bind="$attrs"
         v-on="$listeners"
-        :color="$attrs.color || 'orange'"
+        :color="$attrs.color || 'text-deep-purple'"
         dense
     >
         <template v-for="(_, slot) of $scopedSlots" v-slot:[slot]="scope"><slot :name="slot" v-bind="scope" /></template>

@@ -34,28 +34,3 @@ body{
         }
     }
 }
-
-.text-deep-purple {
-    color: $primary !important;
-}
-.m-button3.color-slateBlue {
-    background-color: $primary;
-    color: #ffffff;
-}
-.q-field--filled{
-    &.round_type{
-        .q-field__control {
-            padding: 0 12px;
-            background: #FAFBFC !important;
-            border-radius: 46px;
-            &::before{
-                background: #F4F2FF !important;
-                border-bottom: 0 !important;
-               
-            }
-            &::after{
-                height: 0px !important;
-            }
-        }
-    }
-}
