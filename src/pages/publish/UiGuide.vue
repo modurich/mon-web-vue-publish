@@ -1,5 +1,6 @@
 <template>
     <div class="list_box_wrap">
+        <!--
         <div id="group01" class="group_wrap">
             <p class="h1_type">M Tag</p>
             <div class="box_wrap">
@@ -8,6 +9,7 @@
                 </div>
             </div>
         </div>
+        -->
         <div id="group02" class="group_wrap">
             <p class="h1_type">Form Tag</p>
             <div class="box_wrap">
@@ -228,14 +230,16 @@
                         </q-carousel-slide>
                     </q-carousel>
                     
-<!--                     <div class="row justify-center">
+                <!--                     
+                    <div class="row justify-center">
                         <q-btn-toggle glossy v-model="slide2" :options="[
                             { label: 1, value: 'style' },
                             { label: 2, value: 'tv' },
                             { label: 3, value: 'layers' },
                             { label: 4, value: 'map' }
                             ]" />
-                    </div> -->
+                    </div> 
+                -->
                 </div>
             </div>
         </div> 
