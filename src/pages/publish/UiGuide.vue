@@ -187,7 +187,56 @@
             <div class="box_wrap">
                 <p class="h2">Slide</p>
                 <div class="type_view">
-                    <m-slide-dialog v-bind:title="slide1.title" v-bind:list="slide1.list" class="dialog"/>
+                    <q-carousel v-model="slide2" 
+                            transition-prev="slide-right" 
+                            transition-next="slide-left" 
+                            swipeable
+                            animated 
+                            control-color="primary"
+                            class="rounded-borders"
+                            navigation
+                            padding
+                            height="300px">
+                            <!--
+                            arrows
+                            --> 
+                        <q-carousel-slide name="style" class="column no-wrap flex-center">
+                            <div class="q-mt-md text-center">
+                                <ul>
+                                    <li>데이터1</li>
+                                    <li>데이터2</li>
+                                    <li>데이터3</li>
+                                </ul>
+                            </div>
+                        </q-carousel-slide>
+                        <q-carousel-slide name="tv" class="column no-wrap flex-center">
+                            <q-icon name="live_tv" color="primary" size="56px" />
+                            <div class="q-mt-md text-center">
+                                {{ lorem }}
+                            </div>
+                        </q-carousel-slide>
+                        <q-carousel-slide name="layers" class="column no-wrap flex-center">
+                            <q-icon name="layers" color="primary" size="56px" />
+                            <div class="q-mt-md text-center">
+                                {{ lorem }}
+                            </div>
+                        </q-carousel-slide>
+                        <q-carousel-slide name="map" class="column no-wrap flex-center">
+                            <q-icon name="terrain" color="primary" size="56px" />
+                            <div class="q-mt-md text-center">
+                                {{ lorem }}
+                            </div>
+                        </q-carousel-slide>
+                    </q-carousel>
+                    
+<!--                     <div class="row justify-center">
+                        <q-btn-toggle glossy v-model="slide2" :options="[
+                            { label: 1, value: 'style' },
+                            { label: 2, value: 'tv' },
+                            { label: 3, value: 'layers' },
+                            { label: 4, value: 'map' }
+                            ]" />
+                    </div> -->
                 </div>
             </div>
         </div> 
@@ -222,27 +271,21 @@
                 <p class="h2">Tab</p>
                 <div class="type_view">
                     <m-tabs class="line_type" v-model="tab1" :items="tabs" />
-                    <div v-if="tab1 == 'G'">
+                     <div v-if="tab1 == 'G'">
                         contents1
                     </div>
                     <div v-if="tab1 == 'F'">
                         contents2
-                    </div>                    
-                </div>
-                <!-- <q-tabs
-                    v-model="select1"
-                    no-caps
-                >
-                    <q-tab name="Facebook" label="Facebook1" />
-                    <q-tab name="Google" label="Google2" />
-                </q-tabs>-->
+                    </div>
                 </div>
             </div>            
         </div>                         
     </div>
+</div>
 </template>
 
 <script>
+import { ref } from 'vue';
 import MTabs from 'src/components/MTabs.vue';
 import MAlert from 'src/components/MAlert.vue';
 import MHeader from 'src/components/MHeader.vue';
@@ -251,7 +294,6 @@ import MButton3 from 'src/components/MButton3.vue';
 import MSelect from 'src/components/MSelect.vue';
 import MRadio from 'src/components/MRadio.vue';
 import MSpaceV from 'src/components/MSpaceV.vue';
-import { ref } from 'vue';
 import MSlideDialog from 'src/components/MSlideDialog.vue';
 import MTextarea from 'src/components/MTextarea.vue';
 import MToggle from 'src/components/MToggle.vue';
@@ -271,7 +313,7 @@ export default {
             options:[
                 'Google', 'Facebook'
             ],
-            tab1:ref("G"),
+            tab1:ref('G'),
             tabs:[
                 {label:'GOOGLE', value:'G', icon:'mail'},
                 {label:'FACEBOOK', value:'F', icon:'photo'}
@@ -280,10 +322,15 @@ export default {
                 from:ref(''),
                 to:ref('')
             },
-            slide1: {
-                title:'슬라이드쇼',
-                list:['A', 'B', 'C']
-            },
+            slide1:ref(1),
+            slidelist: [
+                { content: 'https://cdn.quasar.dev/img/mountains.jpg' },
+                { content: 'https://cdn.quasar.dev/img/parallax1.jpg' },
+                { content: 'https://cdn.quasar.dev/img/parallax2.jpg' },
+                { content: 'https://cdn.quasar.dev/img/quasar.jpg' }
+            ],
+            slide2: ref('style'),
+            lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo provident incidunt ducimus iusto perferendis porro earum. Totam, numquam?',
             textarea1 : {
                 value: "abcdedfdf",
                 counter: true,

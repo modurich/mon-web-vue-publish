@@ -42,6 +42,7 @@ import MFoldableShadowedBox from 'components/MFoldableShadowedBox.vue';
 import MHighchart from 'components/MHighchart.vue';
 
 import TextareaAutosize from 'vue-textarea-autosize';
+import { Plugin } from 'vue-fragment';
 
 Vue.component('MIcon', MIcon);
 Vue.component('MButton3', MButton3);
@@ -86,8 +87,9 @@ Vue.component('MFoldableShadowedBox', MFoldableShadowedBox);
 Vue.component('highcharts', MHighchart);
 
 
-Vue.use(TextareaAutosize);
 
+Vue.use(TextareaAutosize);
+Vue.use(Plugin)
 // leave the export, even if you don't use it
 export default async({ Vue, ssrContext }) => {
 };
