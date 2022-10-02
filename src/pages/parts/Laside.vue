@@ -21,6 +21,66 @@
                     </div>
                 </q-form>
             </div>
+            <div class="user_wrap">
+                <div class="user_area">
+                    <div class="user_img">
+                        <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
+                    </div>
+                    <p class="user_name">닉네임열두글자하나둘셋넷</p>
+                    <p class="user_grade">
+                        <span class="ico_level1">level</span>
+                        <span class="badge type1">PL1</span>
+                        <span class="badge type2">4.59 ★</span>
+                    </p>
+                </div>
+                <ul class="follow_wrap">
+                    <li>
+                        <span class="txt01">팔로워</span>
+                        <span class="txt02">4K</span>
+                    </li>
+                    <li>
+                        <span class="txt01">팔로잉</span>
+                        <span class="txt02">326</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="member_wrap">
+               <div class="klip_wrap">
+                    <span class="text_wrap">
+                        <span class="ico_klip">klip</span>
+                        <span class="text_area">0xa590bc1aa0655d84f5e10xa590bc1aa0655d84f5e1</span>
+                    </span>
+                    <span class="qr_wrap"><img src="~assets/ico_qr.svg"></span>
+               </div>
+               <ul class="member_list">
+                    <li>
+                        <span class="txt01">MON</span>
+                        <span class="txt02">50.009</span>
+                    </li>
+                    <li>
+                        <span class="txt01">SMON</span>
+                        <span class="txt02">50,000,000,000001</span>
+                    </li>
+                </ul>
+               <ul class="member_info">
+                    <li>
+                        <span class="txt01">활동점수</span>
+                        <span class="txt02">500P</span>
+                    </li>
+                    <li>
+                        <span class="txt01">보팅파워</span>
+                        <span class="txt02">500VP</span>
+                    </li>
+                    <li>
+                        <span class="txt01">리워드</span>
+                        <span class="txt02">￦0</span>
+                    </li>
+                </ul>
+                <div class="btn_area">
+                    <m-button-3 lined class="full primary">멤버십 시작</m-button-3>
+                    <m-button-3 lined class="full primary">가입미션 (2/6)</m-button-3>
+                </div>
+            </div>
             <div class="local_wrap">
                 <p class="sub_title">로컬설정</p>
                 <ul class="local_list">
@@ -61,7 +121,7 @@
                 </a>
             </div>
             <div class="info_wrap">
-                <m-button-3 lined class="full">로그아웃</m-button-3>
+                <m-button-3 lined class="full light_gray">로그아웃</m-button-3>
             </div>
         </div>
     </aside>
@@ -110,6 +170,100 @@ export default {
                     height:1px;
                     border-bottom:1px solid #d4d9ea;
                     margin:0 -16px;
+                }
+            }
+            .user_wrap{
+                text-align: center;
+                .user_img{
+                    .img_area{
+                        width:80px;
+                        height:80px;
+                        margin:0 auto;
+                        border:3px solid $primary;
+                        border-radius:80px;
+                        overflow: hidden;
+                        img{width:100%;height: 100%;}
+                    }
+                }
+                .user_name{color:#141414;margin:8px 0;}
+                .user_grade{
+                    display:inline-flex;
+                    align-items: center;
+                    span{margin-right:10px;
+                        &:last-child{margin-right:0;}
+                    }
+                    .ico_level1{
+                        display: inline-flex;
+                        text-indent: -999em;
+                        width:17px;
+                        height: 17px;
+                        background:url('~assets/ico_level1.svg') center center no-repeat; ;
+                    }
+                }
+                .follow_wrap{
+                    display:flex;
+                    .txt01{color:#141414}
+                    .txt02{color:$primary;font-size:16px}
+                   li{
+                        width:50%;
+                        span{display: block;}
+                     }
+                    li + li{border-left:1px solid #d4d9ea} 
+                }
+            }
+            .member_wrap{
+                .klip_wrap{
+                    background:#f4f2ff;
+                    border-radius: 8px;
+                    padding:12px 10px;
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .ico_klip{
+                        background: url('~assets/ico_klip.svg') center center no-repeat;
+                        text-indent: -999em;
+                        width:32px;
+                        height:16px;
+                        display: inline-flex;
+                        margin-right:8px;
+                    }
+                    .text_wrap{
+                        display:flex;
+                        align-items: center;
+                        .text_area{
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width:150px;
+                            display: inline-block;
+                            color:#141414;
+                        }
+                    }
+                    
+                }
+                .member_list{
+                    margin:16px 0;
+                    li{
+                        display:flex;
+                        justify-content: space-between;
+                    }
+                    .txt01{color:#141414}
+                    .txt02{color:$primary;font-size:16px}
+                    li + li{margin-top:8px}
+                }
+                .member_info{
+                    display:flex;
+                    .txt01{color:#141414}
+                    .txt02{color:$primary;font-size:16px}
+                   li{
+                        flex:1;
+                        span{display: block;text-align: center;}
+                     }
+                    li + li{border-left:1px solid #d4d9ea} 
+                }
+                .btn_area{
+                    margin-top:32px;
+                    button + button{margin-top:16px}
                 }
             }
             .info_wrap{
