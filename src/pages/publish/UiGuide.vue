@@ -23,14 +23,28 @@
                     <m-input v-model="text1" label="basic" disabled/><br/>
                     <m-input filled v-model="text1" label="filled" class="round_type" disabled/><br/>
                     <p class="sbt">validate</p>
-                    <m-input filled v-model="text1"  class="round_type" label="필수입력" :rules="[val => !!val || '이 필드는 필수 입력입니다.']" ref="inputRef"/>
+                    <m-input filled v-model="text1" 
+                            class="round_type" 
+                            label="필수입력" 
+                            bottom-slots 
+                            hint="이 필드는 필수입니다."
+                            :rules="[val => !!val || '이 필드는 필수 입력입니다.']" ref="inputRef"/>
                     <m-space-h />
-                    <m-input filled v-model="text2"  class="round_type" label="max 3" 
-                        bottom-slots hint="최대 3글자" 
+                    <m-input filled v-model="text2"  
+                        class="round_type" 
+                        label="max 3" 
+                        bottom-slots 
+                        hint="최대 3글자" 
                         error-message="최대 3글자만 입력하세요?"
                         :error="!isValid" />
                     <m-space-h />
-                    <m-input filled v-model="text2"  class="round_type" label="Type here" bottom-slots hint="최대 3글자" :error="!isValid">
+                    <m-input filled 
+                        v-model="text2" 
+                        class="round_type" 
+                        label="Type here" 
+                        bottom-slots 
+                        hint="최대 3글자" 
+                        :error="!isValid">
                         <template v-slot:error>
                             Please use maximum 3 characters.
                         </template>
