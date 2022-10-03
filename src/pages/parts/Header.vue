@@ -10,7 +10,7 @@
                 </h1>
                 <nav>
                     <ul class="nav_area">
-                        <li><a href="#"><i class="ico top_menu01"/><span class="txt">홈</span></a></li>
+                        <li><a href="#" class="active"><i class="ico top_menu01"/><span class="txt">홈</span></a></li>
                         <li><a href="#"><i class="ico top_menu02"/><span class="txt">랭킹</span></a></li>
                         <li><a href="#"><i class="ico top_menu03"/><span class="txt">콘텐츠</span></a></li>
                         <li><a href="#"><i class="ico top_menu04"/><span class="txt">거버넌스</span></a></li>
@@ -106,6 +106,7 @@ export default {
                         height: 24px;
                         margin-right:10px;
                     }
+                    
                     .top_menu01{
                         background: url('~assets/top_menu01.svg') center right no-repeat;
                     }
@@ -117,6 +118,21 @@ export default {
                     }
                     .top_menu04{
                         background: url('~assets/top_menu04.svg') center right no-repeat;
+                    }
+                    .active{
+                        color:$primary;
+                        .top_menu01{
+                        background: url('~assets/top_menu01_active.svg') center right no-repeat;
+                        }
+                        .top_menu02{
+                            background: url('~assets/top_menu02_active.svg') center right no-repeat;
+                        }
+                        .top_menu03{
+                            background: url('~assets/top_menu03_active.svg') center right no-repeat;
+                        }
+                        .top_menu04{
+                            background: url('~assets/top_menu04_active.svg') center right no-repeat;
+                        }
                     }
 
                 }

@@ -1,5 +1,11 @@
 // app global css in Scss form
 $primary:#8673FF;
+$secondary:#ffa500;
+.font12{font-size:12px}
+.font16{font-size:16px;font-weight: 700;}
+.primary{color:#8673FF;}
+.secondary{color:#ffa500}
+.dark{color:#141414}
 body{
     background-color: #f8f9fd !important;
     color: #9ca8ba !important;
@@ -32,6 +38,41 @@ body{
                 a + a{border-left:1px solid #d4d9ea;padding-left:10px;margin-left:10px}
             }
         }
+    }
+}
+.con_box{
+    .l_row{margin-bottom:26px}
+    .l_row_s{margin-bottom:16px}
+    h2{padding:48px 0 42px 0;
+        margin:0 auto;
+        font-size:22px;
+        font-weight: 700;
+        color: #141414;
+        text-align: center;
+    }
+    .between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .check_area{
+        > div{margin-bottom:16px}
+        .view_wrap{
+            padding:0 0 0 16px;
+            > div{margin-bottom:16px}
+        }
+    }
+}
+.link_view{
+    color:$primary !important;
+    display: flex;
+    align-items: center;
+    &:after{
+        content: "";
+        background: url('~assets/arrow_right.svg') center right no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
     }
 }
 

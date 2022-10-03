@@ -1,5 +1,5 @@
 // app global css in Scss form
-$primary:#8673FF !important;
+$primary:#8673FF;
 
 .text-deep-purple {
     color: $primary !important;
@@ -17,7 +17,7 @@ $primary:#8673FF !important;
     border-radius: 8px !important;
 }
 .m-button3.color-slateBlue {
-    background-color: $primary;
+    background-color: $primary !important;
     color: #ffffff;
 }
 .m-button3.color-mediumGrey.lined.light_gray{

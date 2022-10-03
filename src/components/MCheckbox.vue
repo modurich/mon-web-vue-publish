@@ -37,7 +37,6 @@ export default {
 }
 .q-checkbox__label {
     font-size: 14px;
-    font-weight: bold;
 }
 .q-checkbox--dense .q-checkbox__label {
     padding-left: 8px;
