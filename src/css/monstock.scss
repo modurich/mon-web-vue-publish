@@ -63,7 +63,7 @@ body{
         }
     }
 }
-.link_view{
+.link_view,.btn_view{
     color:$primary !important;
     display: flex;
     align-items: center;
@@ -83,14 +83,15 @@ body{
     display: inline-flex;
     align-items: center;
     padding:0 3px;
+    border-radius: 2px;
     &.type1{
+        border:1px solid #ffa500;
+        background:#ffa500;
+        color:#fff;
+    }
+    &.type2{
         border:1px solid #ccedf6;
         background:#EBF8FB;
         color:#00A2D0;
-    }
-    &.type2{
-        border:1px solid #ffe1ee;
-        background:#fff5f9;
-        color:#ff0000;
     }
 }

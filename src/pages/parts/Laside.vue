@@ -4,7 +4,7 @@
     <aside class="left_aside">
         <div class="aside_box">
             <!--S login-->
-            <!-- <div class="login_wrap">
+            <div class="login_wrap">
                 <q-form>
                     <div class="login_area">
                     <div class="monstock_logo l_row"><img src="~assets/logo.svg" alt="monstock logo"/></div>
@@ -21,7 +21,7 @@
                     </div>
                     </div>
                 </q-form>
-            </div> -->
+            </div>
             <!--E login-->
             <!--S user-->
             <div class="user_wrap">
@@ -31,9 +31,9 @@
                     </div>
                     <p class="user_name">닉네임열두글자하나둘셋넷</p>
                     <p class="user_grade">
-                        <span class="ico_level1">level</span>
-                        <span class="badge type1">PL1</span>
-                        <span class="badge type2">4.59 ★</span>
+                        <!-- <span class="ico_level1">level</span> -->
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
                     </p>
                 </div>
                 <ul class="follow_wrap">
@@ -83,7 +83,7 @@
                 </ul>
                 <div class="btn_area">
                     <m-button-3 lined class="full primary">멤버십 시작</m-button-3>
-                    <m-button-3 lined class="full primary">가입미션 (2/6)</m-button-3>
+                    <m-button-3 lined class="full primary">🎉 가입미션 (2/6)</m-button-3>
                 </div>
             </div>
             <!--E member-->
@@ -106,15 +106,15 @@
                 <ul class="local_list">
                     <li>
                         <span class="txt01">언어</span>
-                        <span class="txt02">한국어</span>
+                        <span class="txt02"><button class="btn_view">한국어</button></span>
                     </li>
                     <li>
                         <span class="txt01">통화</span>
-                        <span class="txt02">원(￦)</span>
+                        <span class="txt02"><button class="btn_view">원(￦)</button></span>
                     </li>
                     <li>
                         <span class="txt01">타임존</span>
-                        <span class="txt02">UTC+9</span>
+                        <span class="txt02"><button class="btn_view">UTC+9</button></span>
                     </li>
                 </ul>
             </div>
@@ -210,7 +210,7 @@ export default {
                 .user_grade{
                     display:inline-flex;
                     align-items: center;
-                    span{margin-right:10px;
+                    span{margin-right:8px;
                         &:last-child{margin-right:0;}
                     }
                     .ico_level1{
@@ -362,18 +362,6 @@ export default {
                     justify-content: space-between;
                     margin-bottom: 16px;
                     &:last-child{margin-bottom: 0;}
-                    .txt02{
-                        color:$primary;
-                        display: flex;
-                        align-items: center;
-                        &:after{
-                            content:'';
-                            background: url('~assets/arrow_right.svg') center right no-repeat;
-                            width:20px;
-                            height:20px;
-                            display:inline-flex;
-                        }
-                    }
                 }
             }
             .login_wrap{

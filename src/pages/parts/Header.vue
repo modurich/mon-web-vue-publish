@@ -120,7 +120,7 @@ export default {
                     height: 36px;
                     margin-right:10px;
                     text-indent: -999em;
-                    background: url('~assets/monstock_logo1.png') center right no-repeat;
+                    background: url('~assets/monstock_logo1.svg') center right no-repeat;
                     background-size:contain;
                 }
                 .nav_area{
