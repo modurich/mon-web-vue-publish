@@ -36,7 +36,7 @@
                 </div>
               </div>
             </div>
-            <div class="check_area"><m-checkbox size="md" v-model="check2" label="마케팅 정보 수신 동의 (선택)"/></div>
+            <div class="check_area"><m-checkbox size="md" v-model="check6" label="마케팅 정보 수신 동의 (선택)"/></div>
           </div>
           <div class="btn_wrap l_row"><m-button-3 size="large" color="slateBlue" class="full" disabled>가입하기</m-button-3></div>
         </div>
@@ -54,6 +54,11 @@ export default {
             text1:ref(''),
             text2:ref(''),
             check1:ref(true),
+            check2:ref(false),
+            check3:ref(false),
+            check4:ref(false),
+            check5:ref(false),
+            check6:ref(false),
             select1:ref(null),
             options:[
                 'South Korea (+82)', '선택1', '선택2', '선택3', '선택4'
