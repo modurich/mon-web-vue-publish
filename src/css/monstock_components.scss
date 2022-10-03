@@ -49,7 +49,9 @@ $primary:#8673FF;
         }
     }
 }
-
+.m-input .q-field__append.q-field__marginal.row.no-wrap.items-center {
+    z-index: 1;
+}
 .m-input {
     &.q-field--rounded .q-field__control {
         border-radius: 46px;
