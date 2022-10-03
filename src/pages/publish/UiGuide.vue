@@ -308,8 +308,17 @@
                         contents2
                     </div>
                 </div>
-            </div>            
-        </div>                         
+            </div>
+        </div>
+        <div id="group09" class="group_wrap">
+            <p class="h1_type">Menu</p>
+            <div class="box_wrap">
+                <p class="h2">Menu</p>
+                <div class="type_view">
+                    <m-menu :items="tabs"/>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </template>

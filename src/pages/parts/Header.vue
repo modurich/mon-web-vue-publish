@@ -10,10 +10,18 @@
                 </h1>
                 <nav>
                     <ul class="nav_area">
+                        <li :key="`m-menu-item-${idx}`" v-for="(item, idx) in menuList" @click="handleClick(item)">
+                            <a :class="`${item.val == menu ? 'active' : 'inactive'}`">
+                                <i :class="`ico top_${item.val}`" />
+                                <span class="txt">{{item.label}}</span>
+                            </a>
+                        </li>
+                        <!--
                         <li><a href="#" class="active"><i class="ico top_menu01"/><span class="txt">홈</span></a></li>
                         <li><a href="#"><i class="ico top_menu02"/><span class="txt">랭킹</span></a></li>
                         <li><a href="#"><i class="ico top_menu03"/><span class="txt">콘텐츠</span></a></li>
                         <li><a href="#"><i class="ico top_menu04"/><span class="txt">거버넌스</span></a></li>
+                        -->
                     </ul>
                 </nav>
             </div>
@@ -31,11 +39,37 @@
 </template>
 
 <script>
-
-
 export default {
     name: 'header',
-   
+    data() {
+        return {
+            menu:"menu01",
+            menuList: [
+                { label: "홈", val: "menu01", to:""},
+                { label: "랭킹", val: "menu02", to: "" },
+                { label: "콘텐츠", val: "menu03", to: "" },
+                { label: "거버넌스", val: "menu04", to: "" },
+            ]
+        };
+    },
+    methods: {
+        handleClick(item) {
+            // console.log('menu item clicked!!!!', item.val);
+            // console.log(this.menu);
+            this.menu = item.val;
+            if (!item.to) this.$emit('input', item.val);
+            if (item.onClick) {
+                this.$nextTick(() => item.onClick(item));
+            }
+        }
+    },
+    created() {
+    },
+    updated() {
+
+    },
+    mounted() {
+    }
 };
 </script>
 
