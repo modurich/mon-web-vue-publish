@@ -83,7 +83,7 @@
                 </ul>
                 <div class="btn_area">
                     <m-button-3 lined class="full primary">멤버십 시작</m-button-3>
-                    <m-button-3 lined class="full primary">가입미션 (2/6)</m-button-3>
+                    <m-button-3 lined class="full primary">🎉 가입미션 (2/6)</m-button-3>
                 </div>
             </div>
             <!--E member-->

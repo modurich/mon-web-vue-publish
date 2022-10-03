@@ -80,7 +80,7 @@ export default {
     }
     &.q-field--dense.q-field--float .q-field__label {
         transform: translateY(-100%) scale(0.875);
-        background-color: $white;
+       // background-color: $white;
     }
     &.q-field--dense .q-field__label {
         z-index: 2;
