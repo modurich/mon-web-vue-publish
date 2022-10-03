@@ -31,6 +31,7 @@ $primary:#8673FF;
     border: 1px solid $primary !important;
 }
 //input
+/*
 .q-field--filled{
     &.round_type{
         .q-field__control {
@@ -45,6 +46,25 @@ $primary:#8673FF;
             &::after{
                 height: 0px !important;
             }
+        }
+    }
+}
+*/
+.m-input {
+    &.q-field--rounded .q-field__control {
+        border-radius: 46px;
+        padding: 0 12px;
+        background: #FAFBFC;
+
+        &::before {
+            background: #F4F2FF;
+            border-bottom: 0px;
+            opacity: 0;
+            transition: opacity 0.36s cubic-bezier(0.4, 0, 0.2, 1), background 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &::after {
+            height: 0px;
         }
     }
 }
