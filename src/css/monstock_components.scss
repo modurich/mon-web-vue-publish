@@ -101,7 +101,10 @@ $primary:#8673FF;
         align-items: flex-end !important;
     }
     .q-btn .q-icon, .q-btn .q-spinner {
-        font-size: 1.715; 
+        font-size: 1.2em;
+    }
+    .q-carousel__arrow  {
+        font-size: 28px;
     }
     .q-carousel__navigation-inner{
         .q-carousel__navigation-icon--active{
