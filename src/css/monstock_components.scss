@@ -106,6 +106,9 @@ $primary:#8673FF;
     .q-carousel__arrow  {
         font-size: 28px;
     }
+    .q-carousel__navigation .q-btn {
+        margin: 0 !important;
+    }
     .q-carousel__navigation-inner{
         .q-carousel__navigation-icon--active{
             color:#8673ff !important;
