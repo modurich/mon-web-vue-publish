@@ -153,7 +153,7 @@ import { ref } from 'vue';
 
 export default {
     name: 'Laside',
-    setup() {
+    data() {
         return {
             text1:ref(''),
             text2:ref(''),

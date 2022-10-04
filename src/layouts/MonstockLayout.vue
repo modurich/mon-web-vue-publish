@@ -8,6 +8,7 @@
                     <div class="centerarea_area">
                         <router-view />
                         <Footer />
+                        <FooterMenu />
                     </div>
                 </div>
                 <Raside/>
@@ -21,9 +22,10 @@ import Header from 'src/pages/parts/Header.vue';
 import Footer from 'src/pages/parts/Footer.vue';
 import Laside from 'src/pages/parts/Laside.vue';
 import Raside from 'src/pages/parts/Raside.vue';
+import FooterMenu from 'src/pages/parts/FooterMenu.vue';
 
 export default {
-  components: { Footer,Header,Raside,Laside},
+  components: { Footer,Header,Raside,Laside, FooterMenu},
     name: 'MainLayout',
     data() {
         return {
@@ -55,6 +57,7 @@ export default {
             .left_aside,.right_aside{display:none}
             .main_area{
                 width:100%;
+                .centerarea_wrap{padding-bottom:100px}
             }
         }
     }

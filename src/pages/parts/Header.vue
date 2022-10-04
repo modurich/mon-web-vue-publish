@@ -26,13 +26,13 @@
                 </nav>
             </div>
             <div class="btn_wrap">
-                <button class="ico_search ">seach</button>
-                <!-- <button class="ico_luckybox mob_only">luckybox</button>
-                <button class="ico_alarm01 mob_only">alarm</button>
-                <div class="user_img mob_only">
+                <button class="ico_search">seach</button>
+                <button class="ico_luckybox">luckybox</button>
+                <button class="ico_alarm01">alarm</button>
+                <div class="user_img">
                     <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
-                </div> -->
-                <m-button-3  color="slateBlue" size="small" class="mob_only">로그인</m-button-3>
+                </div>
+                <m-button-3  color="slateBlue" size="small">로그인</m-button-3>
             </div>
         </div>
     </header>
@@ -98,6 +98,29 @@ export default {
                     height: 36px;
                     text-indent: -999em;
                 }
+                .ico_luckybox{
+                    background: url('~assets/ico_luckybox.svg') center right no-repeat;
+                    display: inline-flex;
+                    width:36px;
+                    height: 36px;
+                    text-indent: -999em;
+                }
+                .ico_alarm01{
+                    background: url('~assets/ico_alarm01.svg') center right no-repeat;
+                    display: inline-flex;
+                    width:36px;
+                    height: 36px;
+                    text-indent: -999em;
+                }
+                .user_img{
+                    width:36px;
+                    height:36px;
+                    border-radius:36px;
+                    margin-left:20px;
+                    overflow: hidden;
+                    img{width:100%;height:100%}
+                }
+                button + button{margin-left:20px}
             }
             .nav_wrap{
                 display:flex;
@@ -181,35 +204,15 @@ export default {
                 .btn_wrap{
                     display: inline-flex;
                     align-items: center;
-                    button + button{margin-left:20px}
-                    .user_img{
-                        width:24px;
-                        height:24px;
-                        border-radius:24px;
-                        margin-left:20px;
-                        overflow: hidden;
-                        img{width:100%;height:100%}
-                    }
+                    
+                   
                     .ico_search{
                         background-size:contain !important;
                         width:24px !important;
                         height: 24px !important;
                     }
                     .m-button3{margin-left:30px}
-                    .ico_luckybox{
-                        background: url('~assets/ico_luckybox.svg') center right no-repeat;
-                        display: inline-flex;
-                        width:24px;
-                        height: 24px;
-                        text-indent: -999em;
-                    }
-                    .ico_alarm01{
-                        background: url('~assets/ico_alarm01.svg') center right no-repeat;
-                        display: inline-flex;
-                        width:24px;
-                        height: 24px;
-                        text-indent: -999em;
-                    }
+                    
                 }
             }
             .mob_only{

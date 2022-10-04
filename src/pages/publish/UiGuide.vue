@@ -231,6 +231,37 @@
                             height="300px">
                         <q-carousel-slide name="style" class="column no-wrap flex-center">
                             <div class="q-mt-md text-center">
+                                <ol class="ranking_list">
+                <li>
+                    <span class="txt01">1</span>
+                    <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진"/></span>
+                    <span class="txt02">몬스탁닉네임</span>
+                </li>
+                <li>
+                    <span class="txt01">2</span>
+                    <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진"/></span>
+                    <span class="txt02">호빵맨</span>
+                </li>
+                <li>
+                    <span class="txt01">3</span>
+                    <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진"/></span>
+                    <span class="txt02">식빵맨</span>
+                </li>
+                <li>
+                    <span class="txt01">4</span>
+                    <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진"/></span>
+                    <span class="txt02">쨜랑이</span>
+                </li>
+                <li>
+                    <span class="txt01">5</span>
+                    <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진"/></span>
+                    <span class="txt02">세균맨</span>
+                </li>
+            </ol>
+                            </div>
+                        </q-carousel-slide>
+                        <q-carousel-slide name="tv" class="column no-wrap flex-center">
+                            <div class="q-mt-md text-center">
                                 <ul>
                                     <li>데이터1</li>
                                     <li>데이터2</li>
@@ -238,22 +269,22 @@
                                 </ul>
                             </div>
                         </q-carousel-slide>
-                        <q-carousel-slide name="tv" class="column no-wrap flex-center">
-                            <q-icon name="live_tv" color="primary" size="56px" />
-                            <div class="q-mt-md text-center">
-                                {{ lorem }}
-                            </div>
-                        </q-carousel-slide>
                         <q-carousel-slide name="layers" class="column no-wrap flex-center">
-                            <q-icon name="layers" color="primary" size="56px" />
                             <div class="q-mt-md text-center">
-                                {{ lorem }}
+                                <ul>
+                                    <li>데이터1</li>
+                                    <li>데이터2</li>
+                                    <li>데이터3</li>
+                                </ul>
                             </div>
                         </q-carousel-slide>
                         <q-carousel-slide name="map" class="column no-wrap flex-center">
-                            <q-icon name="terrain" color="primary" size="56px" />
                             <div class="q-mt-md text-center">
-                                {{ lorem }}
+                                <ul>
+                                    <li>데이터1</li>
+                                    <li>데이터2</li>
+                                    <li>데이터3</li>
+                                </ul>
                             </div>
                         </q-carousel-slide>
                     </q-carousel>
@@ -341,7 +372,7 @@ import MConfirm from 'src/components/MConfirm.vue';
 
 export default {
     components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle },
-    setup() {
+    data() {
         const text2 = ref('');
         return {
             text1:ref(''),
