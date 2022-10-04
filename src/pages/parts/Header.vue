@@ -32,7 +32,7 @@
                 <div class="user_img">
                     <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
                 </div>
-                <m-button-3  color="slateBlue" size="small">로그인</m-button-3>
+                <!-- <m-button-3  color="slateBlue" size="small">로그인</m-button-3> -->
             </div>
         </div>
     </header>
@@ -91,6 +91,7 @@ export default {
             .btn_wrap{
                 display: inline-flex;
                 align-items: center;
+                .m-button3{margin-left:30px}
                 .ico_search{
                     background: url('~assets/ico_search.svg') center right no-repeat;
                     display: inline-flex;
@@ -100,6 +101,7 @@ export default {
                 }
                 .ico_luckybox{
                     background: url('~assets/ico_luckybox.svg') center right no-repeat;
+                    background-size:contain;
                     display: inline-flex;
                     width:36px;
                     height: 36px;
@@ -108,6 +110,7 @@ export default {
                 .ico_alarm01{
                     background: url('~assets/ico_alarm01.svg') center right no-repeat;
                     display: inline-flex;
+                    background-size:contain;
                     width:36px;
                     height: 36px;
                     text-indent: -999em;
@@ -204,15 +207,14 @@ export default {
                 .btn_wrap{
                     display: inline-flex;
                     align-items: center;
-                    
-                   
+                    button,.user_img{width:24px !important;
+                    height:24px !important;
+                    }
                     .ico_search{
                         background-size:contain !important;
                         width:24px !important;
                         height: 24px !important;
                     }
-                    .m-button3{margin-left:30px}
-                    
                 }
             }
             .mob_only{

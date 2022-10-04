@@ -95,3 +95,12 @@ $primary:#8673FF;
     }
     
 }
+
+.ranking_slide{
+    .q-carousel__arrow{
+        align-items: flex-end !important;
+    }
+    .q-btn .q-icon, .q-btn .q-spinner {
+        font-size: 1.715; 
+    }
+}
