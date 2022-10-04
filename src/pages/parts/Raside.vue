@@ -160,7 +160,7 @@ export default {
                 img{width:100%;height:100%}
             }
             .txt01{color: $primary;font-weight: 700;display: inline-flex;width:30px;justify-content: center;margin-right:8px}
-            .txt02{color:#141414;font-size:16px;font-weight: 700;}
+            .txt02{color:#141414;font-size:16px;font-weight: 700;width:calc(100% - 95px)}
         }
     }
 </style>

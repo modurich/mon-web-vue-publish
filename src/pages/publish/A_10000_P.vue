@@ -24,7 +24,7 @@ import { ref } from 'vue';
 
 export default {
     name: 'A_10000_P',
-    setup() {
+    data() {
         return {
             text1:ref(''),
             text2:ref(''),

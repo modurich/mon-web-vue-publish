@@ -121,3 +121,21 @@ $primary:#8673FF;
         }
     }
 }
+//dialog
+.pre_line{white-space: pre-line;}
+.dailog_wrap{
+    height:calc(100vh - 48px);
+    position:relative;
+    .dialog_tit{text-align:center;font-size:18px;color:#141414;font-weight: 700;}
+    .dailog_contents{
+        height:calc(100vh - 202px);
+        overflow: auto;
+        white-space: pre-line;}
+
+    .btn_wrap{
+        position: absolute;
+        bottom:32px;
+        width:100%;
+        padding:0 16px;
+    }
+}
