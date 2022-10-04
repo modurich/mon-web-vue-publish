@@ -100,15 +100,15 @@ $primary:#8673FF;
     .q-carousel__arrow{
         align-items: flex-end !important;
     }
-    /*
-
-    */   
     .q-carousel__arrow  {
         font-size: 28px;
     }
     .q-carousel__navigation-inner {
         .q-btn .q-icon, .q-btn .q-spinner {
             font-size: 1.2em;
+        }
+        .q-carousel__navigation .q-btn {
+            margin: 0 !important;
         }
         .q-carousel__navigation-icon--active{
             color:#8673ff !important;
@@ -117,6 +117,5 @@ $primary:#8673FF;
             color:#d4d9ea !important;
             opacity: 1;
         }
-
     }
 }
