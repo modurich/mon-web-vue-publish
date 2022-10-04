@@ -100,13 +100,17 @@ $primary:#8673FF;
     .q-carousel__arrow{
         align-items: flex-end !important;
         font-size: 28px;
+        bottom: 7px;
+        button{
+            i{margin-top: -7px;}
+        }
+    }
+    .q-carousel__navigation .q-btn {
+        margin: 0 !important;
     }
     .q-carousel__navigation-inner {
         .q-btn .q-icon, .q-btn .q-spinner {
             font-size: 1.2em;
-        }
-        .q-carousel__navigation .q-btn {
-            margin: 0 !important;
         }
         .q-carousel__navigation-icon--active{
             color:#8673ff !important;
