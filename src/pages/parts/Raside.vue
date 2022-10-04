@@ -81,7 +81,7 @@
                         </li>
                     </ol>
                 </q-carousel-slide>
-                <q-carousel-slide name="2" class="column no-wrap flex-center">
+                <q-carousel-slide name="3" class="column no-wrap flex-center">
                     <ol class="ranking_list">
                         <li>
                             <span class="txt01">1</span>
