@@ -232,32 +232,32 @@
                         <q-carousel-slide name="style" class="column no-wrap flex-center">
                             <div class="q-mt-md text-center">
                                 <ol class="ranking_list">
-                <li>
-                    <span class="txt01">1</span>
-                    <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진"/></span>
-                    <span class="txt02">몬스탁닉네임</span>
-                </li>
-                <li>
-                    <span class="txt01">2</span>
-                    <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진"/></span>
-                    <span class="txt02">호빵맨</span>
-                </li>
-                <li>
-                    <span class="txt01">3</span>
-                    <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진"/></span>
-                    <span class="txt02">식빵맨</span>
-                </li>
-                <li>
-                    <span class="txt01">4</span>
-                    <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진"/></span>
-                    <span class="txt02">쨜랑이</span>
-                </li>
-                <li>
-                    <span class="txt01">5</span>
-                    <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진"/></span>
-                    <span class="txt02">세균맨</span>
-                </li>
-            </ol>
+                                    <li>
+                                        <span class="txt01">1</span>
+                                        <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진"/></span>
+                                        <span class="txt02">몬스탁닉네임</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">2</span>
+                                        <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진"/></span>
+                                        <span class="txt02">호빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">3</span>
+                                        <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진"/></span>
+                                        <span class="txt02">식빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">4</span>
+                                        <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진"/></span>
+                                        <span class="txt02">쨜랑이</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">5</span>
+                                        <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진"/></span>
+                                        <span class="txt02">세균맨</span>
+                                    </li>
+                                </ol>
                             </div>
                         </q-carousel-slide>
                         <q-carousel-slide name="tv" class="column no-wrap flex-center">
