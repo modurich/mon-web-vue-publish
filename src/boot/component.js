@@ -44,6 +44,7 @@ import MHighchart from 'components/MHighchart.vue';
 import TextareaAutosize from 'vue-textarea-autosize';
 import { Plugin } from 'vue-fragment';
 
+
 Vue.component('MIcon', MIcon);
 Vue.component('MButton3', MButton3);
 Vue.component('MInputStyleButton', MInputStyleButton);
@@ -90,6 +91,9 @@ Vue.component('highcharts', MHighchart);
 
 Vue.use(TextareaAutosize);
 Vue.use(Plugin)
+
+import Polycy from 'pages/publish/Polycy.vue';
+Vue.component('Polycy', Polycy);
 // leave the export, even if you don't use it
 export default async({ Vue, ssrContext }) => {
 };

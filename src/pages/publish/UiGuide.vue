@@ -310,9 +310,10 @@
                     <m-button-3 lined @click="alert = true">alert</m-button-3>
                     <m-button-3 lined @click="confirm = true">confirm</m-button-3>
                     <m-button-3 lined @click="dailog1 = true">dailog1</m-button-3>
+                    <m-button-3 lined @click="dailog2 = true">dailog2</m-button-3>
                     <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지"/>
                     <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지"/>
-                    <m-dialog v-model="dailog1">
+                    <m-dialog v-model="dailog1" class="cls_test">
                         <q-card>
                             <q-card-section class="row items-center q-pb-none">
                                 <div class="text-h6">Close icon</div>
@@ -324,6 +325,10 @@
                             </q-card-section>
                         </q-card>
                     </m-dialog>
+                    <m-dialog-blank v-model="dailog2"
+                        children="Polycy"
+                    />
+                    <info-message/>
                 </div>
             </div>
         </div>
@@ -369,9 +374,11 @@ import MSlideDialog from 'src/components/MSlideDialog.vue';
 import MTextarea from 'src/components/MTextarea.vue';
 import MToggle from 'src/components/MToggle.vue';
 import MConfirm from 'src/components/MConfirm.vue';
+import MDialogBlank from 'src/components/MDialogBlank.vue';
+import InfoMessage from './InfoMessage.vue';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, InfoMessage },
     data() {
         const text2 = ref('');
         return {
@@ -416,7 +423,8 @@ export default {
             toggle1: ref(false),
             alert: ref(false),
             confirm:ref(false),
-            dailog1:ref(false)
+            dailog1:ref(false),
+            dailog2: ref(false),
         }
     }
 };
