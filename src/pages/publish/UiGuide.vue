@@ -375,10 +375,9 @@ import MTextarea from 'src/components/MTextarea.vue';
 import MToggle from 'src/components/MToggle.vue';
 import MConfirm from 'src/components/MConfirm.vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-import InfoMessage from './InfoMessage.vue';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, InfoMessage },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank},
     data() {
         const text2 = ref('');
         return {
