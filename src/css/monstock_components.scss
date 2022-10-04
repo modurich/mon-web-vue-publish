@@ -103,4 +103,14 @@ $primary:#8673FF;
     .q-btn .q-icon, .q-btn .q-spinner {
         font-size: 1.715; 
     }
+    .q-carousel__navigation-inner{
+        .q-carousel__navigation-icon--active{
+            color:#8673ff !important;
+        }
+        .q-carousel__navigation-icon--inactive{
+            color:#d4d9ea !important;
+            opacity: 1;
+        }
+
+    }
 }
