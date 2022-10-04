@@ -122,9 +122,8 @@ $primary:#8673FF;
     }
 }
 //dialog
-.pre_line{white-space: pre-line;}
 .dailog_wrap{
-    height:calc(100vh - 48px);
+    height:calc(100vh - 48px)!important;
     position:relative;
     .dialog_tit{text-align:center;font-size:18px;color:#141414;font-weight: 700;}
     .dailog_contents{
@@ -137,5 +136,17 @@ $primary:#8673FF;
         bottom:32px;
         width:100%;
         padding:0 16px;
+    }
+    
+}
+//700보다 작아질때
+@media (max-width: $breakpoint-xs-max) {
+    .q-dialog__inner--minimized > div {
+        max-height: 100vh !important;
+    }
+    .dailog_wrap{height:100vh !important;
+        .dailog_contents {
+            height: calc(100vh - 156px);
+        }
     }
 }

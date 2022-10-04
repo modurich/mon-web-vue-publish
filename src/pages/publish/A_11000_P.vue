@@ -26,7 +26,7 @@
                   <m-checkbox size="md" v-model="check3" label="서비스 이용약관 (필수)"/>
                   <a href="javascript:void(0)" @click="dailog1 = true" class="link_view">보기</a>
                 </div>
-                <m-dialog v-model="dailog1" class="testtestestrrerersre">
+                <m-dialog v-model="dailog1">
                   <q-card class="dailog_wrap">
                       <q-card-section class="row items-center q-pb-none">
                           <q-space />
