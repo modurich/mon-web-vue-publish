@@ -15,8 +15,8 @@
             <thead>
                 <tr>
                     <th colspan="5">메뉴</th>
-                    <th rowspan="2" class="co01">URL(파일명)</th>
-                    <th rowspan="2" class="co02">화면 ID</th>
+                    <th rowspan="2" class="co01">화면 ID</th>
+                    <th rowspan="2" class="co02">URL(파일명)</th>
                     <th rowspan="2">비고</th>
                 </tr>
                 <tr>
@@ -50,8 +50,20 @@
                     <td>
                         <router-link to="/publish/A_10000_P">A_10000_P</router-link>
                     </td>
+                    <td>로그인</td>
+                    <td></td>
+                </tr>   
+                <tr>
+                    <td></td>
+                    <td>A_10000_P,F_11000_T,<br/>F_12000_T,F_13000_T</td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_11000_P">A_11000_P</router-link>
+                    </td>
+                    <td>회원가입</td>
+                    <td>서비스 이용약관, 개인정보 처리방침, 게시물 작성규정</td>
                 </tr>                
             </tbody>
         </table>
