@@ -311,6 +311,8 @@
                     <m-button-3 lined @click="confirm = true">confirm</m-button-3>
                     <m-button-3 lined @click="dailog1 = true">dailog1</m-button-3>
                     <m-button-3 lined @click="dailog2 = true">dailog2</m-button-3>
+                    <m-button-3 lined @click="dailog3 = true">dailog3</m-button-3>
+                    <m-button-3 lined @click="dailog4 = true">dailog4</m-button-3>
                     <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지"/>
                     <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지"/>
                     <m-dialog v-model="dailog1" class="cls_test">
@@ -325,10 +327,16 @@
                             </q-card-section>
                         </q-card>
                     </m-dialog>
-                    <m-dialog-blank v-model="dailog2"
-                        children="Polycy"
-                    />
-                    <info-message/>
+                    <m-dialog v-model="dailog2" class="cls_test">
+                        <Polycy tp="01"/>
+                    </m-dialog>
+                    <m-dialog v-model="dailog3" class="cls_test">
+                        <Polycy tp="02" />
+                    </m-dialog>
+                    <m-dialog v-model="dailog4" class="cls_test">
+                        <Polycy tp="03" />
+                    </m-dialog>
+
                 </div>
             </div>
         </div>
@@ -375,9 +383,10 @@ import MTextarea from 'src/components/MTextarea.vue';
 import MToggle from 'src/components/MToggle.vue';
 import MConfirm from 'src/components/MConfirm.vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
+import Polycy from './Polycy.vue';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank},
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy },
     data() {
         const text2 = ref('');
         return {
@@ -424,6 +433,8 @@ export default {
             confirm:ref(false),
             dailog1:ref(false),
             dailog2: ref(false),
+            dailog3: ref(false),
+            dailog4: ref(false),
         }
     }
 };
