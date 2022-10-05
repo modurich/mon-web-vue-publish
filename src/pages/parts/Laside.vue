@@ -291,7 +291,7 @@ export default {
                 display: flex;
                 flex-wrap: wrap;
                 a{
-                    border:2px solid $primary;
+                    border:1px solid $primary;
                     border-radius:8px;
                     display:block;width:calc(50% - 8px);
                     height:82px;
