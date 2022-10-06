@@ -44,8 +44,6 @@
      src: 
      /* url(/fonts/NotoSansKR-Bold.woff2) format('woff2'), */
           url(/fonts/NotoSansKR-Bold.woff) format('woff'),
-  
-   
           url(/fonts/NotoSansKR-Bold.otf) format('opentype');
    }
   @font-face {
@@ -57,4 +55,3 @@
           url(/fonts/NotoSansKR-Black.woff) format('woff'),
           url(/fonts/NotoSansKR-Black.otf) format('opentype');
    } 
-  
