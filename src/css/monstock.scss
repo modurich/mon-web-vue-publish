@@ -1,11 +1,21 @@
 // app global css in Scss form
 $primary:#8673FF;
 $secondary:#ffa500;
+$txt_dk:#141414;
+$txt_red:#ec2222;
 .font12{font-size:12px}
 .font16{font-size:16px;font-weight: 700;}
-.primary{color:#8673FF;}
-.secondary{color:#ffa500}
-.dark{color:#141414}
+.primary{color:$primary;}
+.secondary{color:$secondary}
+.dark{color:$txt_dk}
+.txt_red{color:$txt_red}
+
+
+.l_row_s{margin-bottom:16px}
+.l_row{margin-bottom:26px;}
+.l_row_l{margin-bottom:32px;}
+.l_row_xl{margin-bottom:60px;}
+
 
 body{
     background-color: #f8f9fd !important;
@@ -24,7 +34,7 @@ body{
 }
 .sub_title{
     font-size:16px;
-    color: #141414;
+    color: $txt_dk;
     font-weight: 700;
 }
 .login_wrap{
@@ -42,14 +52,32 @@ body{
     }
 }
 .con_box{
-    .l_row{margin-bottom:26px}
-    .l_row_s{margin-bottom:16px}
+    .ico_top{
+        padding:48px 0 0 0;
+        text-align: center
+    }
+    .main_info{
+        color: $txt_dk;
+        text-align: center;
+        line-height: 26px;
+    }
+    .sub_info{
+        font-size:12px;
+        line-height: 22px;
+        margin-bottom:26px;
+    }
     h2{padding:48px 0 42px 0;
         margin:0 auto;
         font-size:22px;
         font-weight: 700;
-        color: #141414;
+        color: $txt_dk;
         text-align: center;
+        &.s_mg{padding:32px 0 16px 0;}
+    }
+    h3{padding:0px 0 8px 0;
+        font-size:16px;
+        font-weight: 700;
+        color: $txt_dk;
     }
     .between{
         display: flex;
@@ -73,8 +101,27 @@ body{
         background: url('~assets/arrow_right.svg') center right no-repeat;
         width: 20px;
         height: 20px;
+        margin-left:4px;
         display: inline-flex;
     }
+}
+.profile_wrap{
+    text-align: center;
+    img{ 
+        width:100px;
+        height:100px;
+        border-radius:100px;
+        overflow: hidden;
+        margin:0 auto;
+    }
+}
+//ico
+.ico_success{
+    display: inline-flex;
+    width:100px;
+    height:100px;
+    background-size: contain !important;
+    background: url('~assets/ico_success.png') center right no-repeat;
 }
 
 //badge
@@ -94,5 +141,15 @@ body{
         border:1px solid #ccedf6;
         background:#EBF8FB;
         color:#00A2D0;
+    }
+}
+
+//btn_wrap
+.btn_wrap{
+    display:flex;
+    align-items: center;
+    button + button{margin-left:16px}
+    &.center{
+        justify-content: center;
     }
 }

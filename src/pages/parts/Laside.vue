@@ -63,7 +63,7 @@
                         <span class="txt02">50.009</span>
                     </li>
                     <li>
-                        <span class="txt01">SMON</span>
+                        <span class="txt01">sMON</span>
                         <span class="txt02">50,000,000,000001</span>
                     </li>
                 </ul>
