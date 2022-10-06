@@ -7,7 +7,9 @@ const routes = [
             { path: '', component: () => import('pages/Index.vue') },
             { path: '/publish/A_10000_P', component: () => import('pages/publish/A_10000_P.vue') },
             { path: '/publish/A_11000_P', component: () => import('pages/publish/A_11000_P.vue') },
-            { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') }
+            { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },
+            { path: '/publish/A_11200_P', component: () => import('pages/publish/A_11200_P.vue') },
+            { path: '/publish/A_12000_P', component: () => import('pages/publish/A_12000_P.vue') }
         ]
     },
     {

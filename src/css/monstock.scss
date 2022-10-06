@@ -32,6 +32,21 @@ body{
         width:100%;padding:0 12px;
     }
 }
+.centerarea_box01{
+    width:100%;
+    margin:0 auto;
+    .btn_wrap{width:332px;margin:0 auto;
+        &.l_row_s{padding-bottom:16px}
+        &.l_row{padding-bottom:26px;}
+        &.l_row_l{padding-bottom:32px;}
+        &.l_row_xl{padding-bottom:60px;}
+    }
+    //700보다 작아질때
+    @media (max-width: $breakpoint-xs-max) {
+        width:100%;padding:0 12px;
+        .btn_wrap{width:100%;margin:0 auto}
+    }
+}
 .sub_title{
     font-size:16px;
     color: $txt_dk;
@@ -60,6 +75,7 @@ body{
         color: $txt_dk;
         text-align: center;
         line-height: 26px;
+        word-break: keep-all;
     }
     .sub_info{
         font-size:12px;
@@ -122,6 +138,13 @@ body{
     height:100px;
     background-size: contain !important;
     background: url('~assets/ico_success.png') center right no-repeat;
+}
+.ico_error{
+    display: inline-flex;
+    width:100px;
+    height:100px;
+    background-size: contain !important;
+    background: url('~assets/ico_error.png') center right no-repeat;
 }
 
 //badge

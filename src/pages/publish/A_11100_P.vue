@@ -6,7 +6,7 @@
             <i class="ico_success"></i>
           </div>
           <h2 class="s_mg">가입 완료</h2>
-          <p class="l_row_b main_info">몬스탁 가입을 환영합니다!<br/>
+          <p class="l_row_l main_info">몬스탁 가입을 환영합니다!<br/>
           닉네임과 프로필 사진을 설정해주세요.</p>
           <h3>프로필 사진</h3>
           <p class="sub_info l_row_s">줌인하여 이미지를 편집하실 수 있습니다.</p>
@@ -32,7 +32,7 @@
           <div class="l_row_s"><m-input filled v-model="text3" class="round_type"/></div>
           <div class="btn_wrap l_row_s"><m-button-3 color="slateBlue" class="full" disabled>인증번호발송(60s)</m-button-3></div>
           <div class="btn_wrap l_row"><m-button-3 size="large" color="slateBlue" class="full">이메일 등록</m-button-3></div>
-          <div class="btn_wrap center l_row_xl"><button class="btn_view">Skip</button></div>
+          <div class="btn_wrap center"><button class="btn_view">Skip</button></div>
         </div>
       </q-form>
     </div>
