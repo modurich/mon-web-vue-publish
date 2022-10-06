@@ -150,21 +150,4 @@ $primary:#8673FF;
         }
     }
 }
-@font-face {
-    font-family: 'ManropeBold';
-    font-style: normal;
-    font-weight: bold;
-    src: url(./Manrope-Bold.ttf) format('truetype'),
-         url(./Manrope-Bold.woff) format('woff');
-    unicode-range: U+0030-0039;
-}
-@font-face {
-    font-family: 'ManropeMeidum';
-    font-style: normal;
-    src:url(./Manrope-Medium.ttf) format('truetype'),
-        url(./Manrope-Medium.woff) format('woff');
-    unicode-range: U+0030-0039;
-}
-// html, body {
-//     font-family: 'ManropeBold','ManropeMeidum';
-// }
+

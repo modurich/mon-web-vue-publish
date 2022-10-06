@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(./Manrope-Bold.ttf) format('truetype'),
+         url(./Manrope-Bold.woff) format('woff');
+    unicode-range: U+0030-0039;
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    
+    src:url(./Manrope-Medium.ttf) format('truetype'),
+        url(./Manrope-Medium.woff) format('woff');
+    unicode-range: U+0030-0039;
+    font-style: normal;
+}
+
 // app global css in Scss form
 $primary:#8673FF;
 $secondary:#ffa500;

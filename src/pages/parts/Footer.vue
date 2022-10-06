@@ -32,24 +32,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer_wrap {
-    width:100%;
-    border-top:1px solid #d4d9ea;
-    margin-top:32px;
-     //700보다 작아질때
-     @media (max-width: $breakpoint-xs-max) {
-        background: #f8f9fd;
-        border-top:0;
-    }
-    .link_area{text-align: center;padding-top:32px;
-        a{margin:0 8px}
-    }
-    .info_area{
-        text-align: center;
-        font-size:12px;
-        line-height: 22px;
-        padding:16px 0 32px 0;
-        p{height:22px;margin:0}
-    }
-}
+
 </style>

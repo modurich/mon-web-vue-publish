@@ -128,39 +128,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .right_aside{
-        .aside_box{
-            padding:25px 20px;
-            background: #fff;
-            .tit{color:#141414;font-size:16px;font-weight: 700;}
-            .main_tit{color:#141414;margin: 0 0 10px;font-size:20px;font-weight: 700;}
-            .info_txt{margin: 0 0 32px;}
-            .number_wrap{
-                font-size: 16px;
-                .blue{color:#2c80ff}
-                .red{color:#fb1f1f}
-                .txt01{font-size:24px;}
-                .txt03{
-                    padding:2px 10px;
-                    display: inline-flex;
-                    border-radius: 4px;
-                    &.blue{background:#eef5ff}
-                    &.red{background:#fff0f0}
-                }
-                span + span{margin-left:10px}
-            }
-        }
-        .aside_box + .aside_box{margin-top:20px}
-        .ranking_list{
-            width:240px;
-            li{display:flex;align-items: center;
-                margin-bottom:32px
-            }
-            .img{width:40px;height:40px;overflow: hidden;margin-right:8px;
-                img{width:100%;height:100%}
-            }
-            .txt01{color: $primary;font-weight: 700;display: inline-flex;width:30px;justify-content: center;margin-right:8px}
-            .txt02{color:#141414;font-size:16px;font-weight: 700;width:calc(100% - 95px)}
-        }
-    }
+    
 </style>
