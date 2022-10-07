@@ -2,7 +2,7 @@
     <div
         :class="`m-tabs row ${$attrs.class || ''}`"
     >
-        <m-space-v size="12" />
+        <!-- <m-space-v size="12" /> -->
         <fragment :key="`m-tabs-item-${idx}`" v-for="(item, idx) in items">
             <fragment>
                 <button
@@ -32,7 +32,7 @@
             </router-link>
         </fragment>
         <slot></slot>
-        <m-space-v size="12" />
+        <!-- <m-space-v size="12" /> -->
     </div>
 </template>
 

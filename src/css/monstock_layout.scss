@@ -17,28 +17,32 @@
             display: inline-flex;
             align-items: center;
             .m-button3{margin-left:30px}
-            .ico_search{
-                background: url('~assets/ico_search.svg') center right no-repeat;
+            button{
                 display: inline-flex;
                 width:36px;
                 height: 36px;
                 text-indent: -999em;
+                
+            }
+            .ico_search{
+                background: url('~assets/ico_search.svg') center right no-repeat; 
+                background-size:contain; 
             }
             .ico_luckybox{
                 background: url('~assets/ico_luckybox.svg') center right no-repeat;
                 background-size:contain;
-                display: inline-flex;
-                width:36px;
-                height: 36px;
-                text-indent: -999em;
             }
-            .ico_alarm01{
-                background: url('~assets/ico_alarm01.svg') center right no-repeat;
-                display: inline-flex;
+            .ico_alarm_new{
+                background: url('~assets/ico_alarm_new.svg') center right no-repeat;
                 background-size:contain;
-                width:36px;
-                height: 36px;
-                text-indent: -999em;
+            }
+            .ico_alarm_off{
+                background: url('~assets/ico_alarm_off.svg') center right no-repeat;
+                background-size:contain;
+            }
+            .ico_alarm_on{
+                background: url('~assets/ico_alarm_on.svg') center right no-repeat;
+                background-size:contain;
             }
             .user_img{
                 width:36px;

@@ -3,6 +3,7 @@ $primary:#8673FF;
 $secondary:#ffa500;
 $txt_dk:#141414;
 $txt_red:#ec2222;
+$com_line:#d4d9ea;
 .font12{font-size:12px}
 .font16{font-size:16px;font-weight: 700;}
 .primary{color:$primary;}
@@ -16,6 +17,7 @@ $txt_red:#ec2222;
 .l_row_l{margin-bottom:32px;}
 .l_row_xl{margin-bottom:60px;}
 
+.mgt16{margin-top:16px}
 
 body{
     background-color: #f8f9fd !important;
@@ -89,6 +91,12 @@ body{
         color: $txt_dk;
         text-align: center;
         &.s_mg{padding:32px 0 16px 0;}
+        &.line_type{
+            font-size: 20px;
+            text-align: left;
+            padding:12px 16px;
+            border-bottom:1px solid #d4d9ea;
+        }
     }
     h3{padding:0px 0 8px 0;
         font-size:16px;
@@ -174,5 +182,27 @@ body{
     button + button{margin-left:16px}
     &.center{
         justify-content: center;
+    }
+}
+
+//my_list
+.my_list_wrap{
+    margin-bottom:16px;
+    li{display: flex;padding: 16px 0;
+        border-bottom:1px solid $com_line;
+        justify-content: space-between;
+        .txt_area{
+            font-size: 16px;
+            .txt01{width:120px;display: inline-flex;}
+            .txt02{color:$txt_dk}
+        }
+        
+    }
+     //700보다 작아질때
+     @media (max-width: $breakpoint-xs-max) {
+        .txt_area{
+            span{display: block;}
+            .txt02{margin-top:8px}
+        }
     }
 }

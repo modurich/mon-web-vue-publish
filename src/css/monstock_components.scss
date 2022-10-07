@@ -87,21 +87,41 @@ $primary:#8673FF;
     padding-left: 8px !important;
 }
 //tab
+.m-tabs{
+    &.large {
+        .m-tabs-item {
+            height: 58px;
+            font-size: 18px;
+            flex: 1;
+            min-width: 80px;
+            border: none;
+            margin: 0 1px;
+        }
+    }
+}
 .m-tabs .m-tabs-item.active {
     background-color: #fff!important;
-    color: #616161!important;
+    color: $primary !important;
     font-weight: bold;
     position: relative;
     &::after{
         content:'';
         position: absolute;
         bottom:0;
-        height:3px;
+        height:2px;
         left:0;
         right:0;
         background: $primary;
     }
     
+}
+.tab_contents{
+ padding: 16px 16px 0 16px;
+ //700보다 작아질때
+    @media (max-width: $breakpoint-xs-max) {
+        padding: 16px 12px 0 12px;
+    }
+
 }
 
 .ranking_slide{
@@ -131,15 +151,16 @@ $primary:#8673FF;
 }
 //dialog
 .dailog_wrap{
-    height:calc(100vh - 48px)!important;
+    max-height:calc(100vh - 48px)!important;
+    min-height: 300px;
     position:relative;
     .dialog_tit{text-align:center;font-size:18px;color:#141414;font-weight: 700;}
     .dailog_contents{
-        height:calc(100vh - 202px);
+        max-height:calc(100vh - 202px);
         overflow: auto;
         white-space: pre-line;}
 
-    .btn_wrap{
+    .fixed_btn_wrap{
         position: absolute;
         bottom:32px;
         width:100%;
@@ -147,11 +168,17 @@ $primary:#8673FF;
     }
     
 }
+
+.q-dialog__inner--minimized > div {
+    max-width: 400px !important;
+}
 //700보다 작아질때
+
 @media (max-width: $breakpoint-xs-max) {
     .q-dialog__inner--minimized > div {
         max-height: 100vh !important;
     }
+    
     .dailog_wrap{height:100vh !important;
         .dailog_contents {
             height: calc(100vh - 156px);

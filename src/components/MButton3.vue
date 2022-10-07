@@ -98,15 +98,15 @@ export default {
         min-height: 46px;
         width: 120px;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 21px;
     }
     &.size-large {
         height: 56px;
         min-height: 56px;
         width: 120px;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 500;
         line-height: 21px;
     }
 

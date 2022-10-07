@@ -29,8 +29,8 @@
             </thead>
             <tbody class="guide">
                 <tr>
-                    <td></td>
                     <td>UI Guide</td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -42,8 +42,8 @@
                     <td></td>
                 </tr>
                 <tr>
+                    <td>가입/로그인</td>
                     <td></td>
-                    <td>A_10000_P</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -55,16 +55,64 @@
                 </tr>   
                 <tr>
                     <td></td>
-                    <td>A_10000_P,F_11000_T,<br/>F_12000_T,F_13000_T</td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <router-link to="/publish/A_11000_P">A_11000_P</router-link>
+                        <router-link to="/publish/A_11000_P">A_10000_P,F_11000_T,<br/>F_12000_T,F_13000_T</router-link>
                     </td>
                     <td>회원가입</td>
                     <td>서비스 이용약관, 개인정보 처리방침, 게시물 작성규정</td>
-                </tr>                
+                </tr>  
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_11100_P">A_11100_P</router-link>
+                    </td>
+                    <td>가입완료</td>
+                    <td></td>
+                </tr>              
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_11200_P">A_11200_P</router-link>
+                    </td>
+                    <td>휴면 해제,재가입 안내,임시 비밀번호 발급 완료</td>
+                    <td></td>
+                </tr>    
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_21121_P">A_21121_P</router-link>
+                    </td>
+                    <td>비밀번호 변경</td>
+                    <td></td>
+                </tr>       
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_21120_T">A_21120_T</router-link>
+                    </td>
+                    <td>내 정보 수정</td>
+                    <td></td>
+                </tr>       
             </tbody>
         </table>
     </div>

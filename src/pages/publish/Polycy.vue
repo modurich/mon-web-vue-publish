@@ -8,7 +8,7 @@
                             <p class="dialog_tit">{{subject}}</p>
                             {{content}}
                         </q-card-section>
-                        <div class="btn_wrap">
+                        <div class="fixed_btn_wrap">
                             <m-button-3 size="large" color="slateBlue" class="full">확인</m-button-3>
                         </div>
                     </q-card>
