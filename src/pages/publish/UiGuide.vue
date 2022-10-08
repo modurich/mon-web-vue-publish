@@ -303,6 +303,86 @@
                 -->
                 </div>
             </div>
+            <div class="box_wrap">
+                <p class="h2">Slide2</p>
+                <div class="type_view">
+                    <swiper class="swiper" :options="swiperOption">
+                        <swiper-slide>
+                            <div class="q-mt-md text-center">
+                                <ol class="ranking_list">
+                                    <li>
+                                        <span class="txt01">1</span>
+                                        <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진" /></span>
+                                        <span class="txt02">몬스탁닉네임</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">2</span>
+                                        <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진" /></span>
+                                        <span class="txt02">호빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">3</span>
+                                        <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진" /></span>
+                                        <span class="txt02">식빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">4</span>
+                                        <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진" /></span>
+                                        <span class="txt02">쨜랑이</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">5</span>
+                                        <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진" /></span>
+                                        <span class="txt02">세균맨</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="q-mt-md text-center">
+                                <ol class="ranking_list">
+                                    <li>
+                                        <span class="txt01">1</span>
+                                        <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진" /></span>
+                                        <span class="txt02">몬스탁닉네임</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">2</span>
+                                        <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진" /></span>
+                                        <span class="txt02">호빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">3</span>
+                                        <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진" /></span>
+                                        <span class="txt02">식빵맨</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">4</span>
+                                        <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진" /></span>
+                                        <span class="txt02">쨜랑이</span>
+                                    </li>
+                                    <li>
+                                        <span class="txt01">5</span>
+                                        <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진" /></span>
+                                        <span class="txt02">세균맨</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>Slide 3</swiper-slide>
+                        <swiper-slide>Slide 4</swiper-slide>
+                        <swiper-slide>Slide 5</swiper-slide>
+                        <swiper-slide>Slide 6</swiper-slide>
+                        <swiper-slide>Slide 7</swiper-slide>
+                        <swiper-slide>Slide 8</swiper-slide>
+                        <swiper-slide>Slide 9</swiper-slide>
+                        <swiper-slide>Slide 10</swiper-slide>
+                        <div class="swiper-pagination" slot="pagination"></div>
+                        <div class="swiper-button-prev" slot="button-prev"></div>
+                        <div class="swiper-button-next" slot="button-next"></div>
+                    </swiper>
+                </div>
+            </div>
         </div> 
         <div id="group07" class="group_wrap">
             <p class="h1_type">Dialog</p>
@@ -386,9 +466,11 @@ import MToggle from 'src/components/MToggle.vue';
 import MConfirm from 'src/components/MConfirm.vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
 import Polycy from './Polycy.vue';
+import 'swiper/dist/css/swiper.css';
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, swiper, swiperSlide },
     data() {
         const text2 = ref('');
         return {
@@ -437,6 +519,19 @@ export default {
             dailog2: ref(false),
             dailog3: ref(false),
             dailog4: ref(false),
+            swiperOption: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            }
         }
     }
 };
