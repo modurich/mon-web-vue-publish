@@ -3,18 +3,16 @@
         <table>
             <caption>publish List</caption>
             <colgroup>
-                <col style="width:100px">
                 <col style="width:200px">
-                <col style="width:140px">
-                <col style="width:180px">
-                <col style="width:130px">
                 <col style="width:200px">
-                <col style="width:150px">
+                <col style="width:200px">
+                <col style="width:200px">
+                <col style="width:200px">
                 <col style="width:auto">
             </colgroup>
             <thead>
                 <tr>
-                    <th colspan="5">메뉴</th>
+                    <th colspan="3">메뉴</th>
                     <th rowspan="2" class="co01">화면 ID</th>
                     <th rowspan="2" class="co02">URL(파일명)</th>
                     <th rowspan="2">비고</th>
@@ -23,15 +21,11 @@
                     <th>1Depth</th>
                     <th>2Depth</th>
                     <th>3Depth</th>
-                    <th>4Depth</th>
-                    <th>5Depth</th>
                 </tr>
             </thead>
             <tbody class="guide">
                 <tr>
                     <td>UI Guide</td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td>
@@ -45,8 +39,6 @@
                     <td>가입/로그인</td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
                     <td>
                         <router-link to="/publish/A_10000_P">A_10000_P</router-link>
                     </td>
@@ -54,8 +46,6 @@
                     <td></td>
                 </tr>   
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -69,8 +59,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
                     <td>
                         <router-link to="/publish/A_11100_P">A_11100_P</router-link>
                     </td>
@@ -78,8 +66,6 @@
                     <td></td>
                 </tr>              
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -93,8 +79,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
                     <td>
                         <router-link to="/publish/A_21121_P">A_21121_P</router-link>
                     </td>
@@ -105,13 +89,21 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
                     <td>
                         <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T,A_12100_U,A_12200_U</router-link>
                     </td>
                     <td>프로필수정,계정정보 수정</td>
                     <td>휴대폰번호변경팝업,이메일 인증팝업</td>
+                </tr>    
+                <tr>
+                    <td>프로필1(마이페이지/내지갑)</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_21000_T">A_21000_T</router-link>
+                    </td>
+                    <td>프로필</td>
+                    <td>진행중</td>
                 </tr>       
             </tbody>
         </table>

@@ -235,3 +235,109 @@ body{
         a{display: inline-flex;color: $txt_blue;word-break: break-all;}
     }
 }
+
+//mypage
+.mypage_info_wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .my_profile{
+        display: flex;
+        align-items: center;
+        flex:1;
+        .img_area{
+            width:80px;
+            height:80px;
+            border-radius: 80px;
+            overflow: hidden;
+            margin-right:16px;
+            img{width:100%;height:100%}
+        }
+        .badge_area{span + span{margin-left:8px}}
+        .tit_area{
+            .txt_tit{
+                display:block;
+                font-size: 20px;
+                font-weight: 700;
+                color: $txt_dk;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .follow_wrap{
+        display:flex;
+        flex:1;
+        height: 66px;
+        .txt01{line-height: 22px;font-size: 12px;}
+        .txt02{color:$primary;margin-top:8px;font-size:24px;line-height: 30px;}
+       li{
+            width:50%;
+            text-align: center;
+            span{display: block;}
+         }
+        li + li{border-left:1px solid #d4d9ea} 
+    }
+     //700보다 작아질때
+     @media (max-width: $breakpoint-xs-max) {
+        flex-wrap: wrap;
+        .my_profile,.follow_wrap{width:100%;flex: inherit;}
+        .follow_wrap{margin:32px 0 0 0}
+    }
+}
+
+//pro정보
+.pro_info_wrap{
+    background: #f4f2ff;
+    padding:16px;
+    border-radius: 8px;
+    margin:32px 0;
+    .tit_area{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:16px;
+        .tit_txt{color: $txt_dk;font-size: 16px;font-weight: 700;}
+    }
+    .pro_list{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width:50%;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+            .txt_tit{color:$txt_dk;font-weight: 700;}
+            .txt_date{color:$primary}
+            &:nth-child(2){padding-left:8px}
+        }
+    }
+    
+    .ico_info{ 
+        color: $primary;
+        display: inline-flex;
+        align-items: center;
+        &::before{
+            content:'';
+            display: inline-block;
+            width:18px;
+            height:18px;
+            margin-right:4px;
+            background: url('~assets/ico_info.svg') center center no-repeat;
+        }
+    }
+     //700보다 작아질때
+     @media (max-width: $breakpoint-xs-max) {
+        .pro_list{
+            li{
+                width:100%;
+                &:nth-child(2){padding-left:0px}
+            }
+            li + li{margin-top:8px}
+        }
+    }
+}
+.ico_add{
+    display: flex;
+    width:48px;
+    height:48px;
+    text-indent: -999em;
+    background: url('~assets/ico_add.svg') center center no-repeat;}
