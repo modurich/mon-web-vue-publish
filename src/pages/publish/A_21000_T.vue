@@ -154,10 +154,8 @@
               <a href="#" class="link_view">더보기</a>
             </h3>
             <q-table
-              title="Treats"
-              :rows="rows"
-              :columns="columns"
-              row-key="name"
+              :rows="tbRowData"
+              :columns="tbColInfo"
             />
             <!-- E 통계 -->
             <!-- E 마이페이지-->
@@ -242,16 +240,15 @@
 <script>
 import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+
 export default {
  components: { MDialogBlank , Swiper, SwiperSlide},
     name: 'A_10000_P',
     
     data() {
         return {
-            columns,
-            rows,
             text1:ref('호빵맨'),
             text2:ref(''),
             text3:ref(''),
@@ -306,7 +303,25 @@ export default {
                         spaceBetween: 10
                     }
                 }
-            }
+            },
+          tbColInfo:ref ([
+            { name: 'date', required: true, label: '일자', align: 'center', field: row => row.date, format: val => `${val}`, sortable: true },
+            { name: 'category', align: 'center', label: '종목', field: 'category', sortable: true },
+            { name: 'updown', align: 'center', label: '상승/하락', field: 'updown', sortable: true },
+            { name: 'result', align: 'center', label: '예측결과', field: 'result' }
+            ]),
+          tbRowData:ref([
+            { date: '22.09.14', category: '삼성전자', updown: '상승', result: '성공'},
+            { date: '22.09.14', category: 'SK하이닉스', updown: '하각', result: '성공' },
+            { date: '22.09.14', category: '네이버', updown: '상승', result: '성공' },
+            { date: '22.09.14', category: '현대차', updown: '상승', result: '실패' },
+            { date: '22.09.14', category: '신풍제약', updown: '하각', result: '성공' },
+            { date: '22.09.14', category: '안랩', updown: '상승', result: '실패' },
+            { date: '22.09.14', category: '카카오', updown: '상승', result: '성공' },
+            { date: '22.09.14', category: 'KT&G', updown: '하각', result: '성공' },
+            { date: '22.09.14', category: '셀트리온', updown: '상승', result: '실패' },
+            { date: '22.09.14', category: '미래에셋증권', updown: '상승', result: '실패'}
+          ])
         }
     },
     methods: {

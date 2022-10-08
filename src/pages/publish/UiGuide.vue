@@ -454,10 +454,10 @@
                     <textarea v-model="text3" cols="165" rows="10"></textarea>
                 </div>
                 <div class="type_view">
-                    <p class="sub_info">
+                    <p class="sub_info" v-snip="{ lines: 2, mode: 'css' }">
                         {{text3}}
                     </p>
-                    <a href="#" v-if="true" class="callps">더보기</a>
+                    <a href="#" class="link_view">더보기</a>
                 </div>
             </div>
         </div>
@@ -483,11 +483,12 @@ import MToggle from 'src/components/MToggle.vue';
 import MConfirm from 'src/components/MConfirm.vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
 import Polycy from './Polycy.vue';
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+
 
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VueSnip },
     data() {
         const text2 = ref('');
         return {

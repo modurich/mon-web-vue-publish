@@ -46,6 +46,7 @@
     "vue-script2": "^2.1.0",
     "vue-scroll": "^2.1.13",
     "vue-slider-component": "^3.2.5",
+    "vue-snip": "^2.0.0",
     "vue-star-rating": "^1.7.0",
     "vue-template-compiler": "^2.6.14",
     "vue-textarea-autosize": "^1.1.1",
