@@ -104,6 +104,16 @@
                     </td>
                     <td>프로필</td>
                     <td>진행중</td>
+                </tr>  
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <router-link to="/publish/A_22100_P">A_22100_P</router-link>
+                    </td>
+                    <td>klip</td>
+                    <td>진행중</td>
                 </tr>       
             </tbody>
         </table>

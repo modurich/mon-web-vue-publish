@@ -142,7 +142,7 @@
                 </a>
             </div>
             <div class="info_wrap">
-                <m-button-3 lined class="full light_gray">로그아웃</m-button-3>
+                <m-button-3 lined color="lightGrey" class="full">로그아웃</m-button-3>
             </div>
         </div>
     </aside>

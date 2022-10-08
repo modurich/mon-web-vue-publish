@@ -19,6 +19,9 @@ $com_line:#d4d9ea;
 .l_row_l{margin-bottom:32px;}
 .l_row_xl{margin-bottom:60px;}
 
+.center{text-align: center;justify-content: center;}
+
+.font12{font-size:12px}
 .mgt16{margin-top:16px}
 
 body{
@@ -78,7 +81,7 @@ body{
     .main_info{
         color: $txt_dk;
         text-align: center;
-        line-height: 26px;
+        line-height: 22px;
         word-break: keep-all;
     }
     .sub_info{
@@ -370,4 +373,68 @@ body{
     height: 16px;
     width:calc(100% + 32px);
     margin:32px -16px 32px -16px;
+}
+//klip
+.ico_klip_b{
+    background: url('~assets/ico_klip.svg') center center no-repeat;
+    background-size: contain;
+    text-indent: -999em;
+    width:60px;
+    height:30px;
+    display: inline-flex;
+}
+.ico_klip_bk{
+    background: url('~assets/ico_klip_bk.svg') center center no-repeat;
+    text-indent: -999em;
+    width:32px;
+    height:16px;
+    display: inline-flex;
+    margin-right:8px;
+}
+.ico_cp01,.ico_cp02,.ico_cp03{
+    width:20px;
+    height:20px;
+    display: inline-flex;
+    margin-right:8px;
+}
+.ico_cp01{
+    background: url('~assets/ico_cp01.svg') center center no-repeat;
+}
+.ico_cp02{
+    background: url('~assets/ico_cp02.svg') center center no-repeat;
+}
+.ico_cp03{
+    background: url('~assets/ico_cp03.svg') center center no-repeat;
+}
+.ico_klip_bk{
+    background: url('~assets/ico_klip_bk.svg') center center no-repeat;
+    text-indent: -999em;
+    width:32px;
+    height:16px;
+    display: inline-flex;
+    margin-right:8px;
+}
+//line_tit
+.line_tit{
+    position: relative;
+    text-align: center;
+    padding:32px 10px;
+    height: 26px;
+    i{
+        display: flex;
+        transform: translateY(-50%);
+        height: 1px;
+        width: 100%;
+        border-top: 1px solid #d4d9ea;
+    }
+    span{
+        background: #fff;
+        display: inline-flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        padding:0 16px;
+        transform: translate(-50%, -50%);
+    }
 }
