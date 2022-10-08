@@ -75,14 +75,14 @@
               <span>추천 사용자</span>
               <a href="#" class="link_view">더보기</a>
             </h3>
-            <div>
+            <div class="swiper_wrap">
               <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
                     <div class="recommend_list">
                       <div class="img_area">
-                        <img src="~assets/profile_img1.png" alt="profile"/>
+                        <img src="~assets/profile_img2.png" alt="profile"/>
                       </div>
-                      <div class="txt_tit">몬스탁닉네임01</div>
+                      <div class="txt_tit">몬스탁닉넴열글자까지</div>
                       <span class="badge_area">
                         <span class="badge type1">PRO</span>
                         <span class="badge type2">PL1</span>
@@ -92,7 +92,7 @@
                   <swiper-slide>
                     <div class="recommend_list">
                       <div class="img_area">
-                        <img src="~assets/profile_img1.png" alt="profile"/>
+                        <img src="~assets/profile_img3.png" alt="profile"/>
                       </div>
                       <div class="txt_tit">몬스탁닉네임02</div>
                       <span class="badge_area">
@@ -104,7 +104,7 @@
                   <swiper-slide>
                     <div class="recommend_list">
                       <div class="img_area">
-                        <img src="~assets/profile_img1.png" alt="profile"/>
+                        <img src="~assets/profile_img4.png" alt="profile"/>
                       </div>
                       <div class="txt_tit">몬스탁닉네임03</div>
                       <span class="badge_area">
@@ -140,6 +140,26 @@
               </swiper>
             </div>
             <!-- E 추천 사용자 -->
+            <div class="divider"/>
+            <!-- S 콘텐츠 관리 -->
+            <h3 class="between">
+              <span>콘텐츠 관리</span>
+              <a href="#" class="link_view">구독현황</a>
+            </h3>
+            <!-- E 콘텐츠 관리 -->
+            <div class="divider"/>
+            <!-- S 통계 -->
+            <h3 class="between">
+              <span>통계</span>
+              <a href="#" class="link_view">더보기</a>
+            </h3>
+            <q-table
+              title="Treats"
+              :rows="rows"
+              :columns="columns"
+              row-key="name"
+            />
+            <!-- E 통계 -->
             <!-- E 마이페이지-->
           </div>
           <div class="tab_contents" v-if="tab1 == 'B'">
@@ -227,8 +247,11 @@ import 'swiper/css/swiper.css'
 export default {
  components: { MDialogBlank , Swiper, SwiperSlide},
     name: 'A_10000_P',
+    
     data() {
         return {
+            columns,
+            rows,
             text1:ref('호빵맨'),
             text2:ref(''),
             text3:ref(''),
@@ -290,7 +313,9 @@ export default {
       polcyPopup(type) {
         this.polcyType = type;
         this.dailog1 = true;
-      }
+      },
+      
+      
   }
 };
 </script>

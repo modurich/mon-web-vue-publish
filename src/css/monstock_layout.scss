@@ -430,7 +430,7 @@
 }
 
 //footer_menu
-.footer_menu{display: none;}
+.footer_menu{display: none;z-index: 2;}
 @media (max-width: 1284px) {
     .footer_menu{
         position:fixed;
