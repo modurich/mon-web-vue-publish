@@ -3,6 +3,7 @@ $primary:#8673FF;
 $secondary:#ffa500;
 $txt_dk:#141414;
 $txt_red:#ec2222;
+$txt_blue:#00a2d0;
 $com_line:#d4d9ea;
 .font12{font-size:12px}
 .font16{font-size:16px;font-weight: 700;}
@@ -10,6 +11,7 @@ $com_line:#d4d9ea;
 .secondary{color:$secondary}
 .dark{color:$txt_dk}
 .txt_red{color:$txt_red}
+.txt_blue{color:$txt_blue}
 
 
 .l_row_s{margin-bottom:16px}
@@ -204,5 +206,32 @@ body{
             span{display: block;}
             .txt02{margin-top:8px}
         }
+    }
+}
+
+//link_info
+.link_info{
+    .tit{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:8px
+    }
+    .txt01{color:$txt_dk;}
+    .ico_trash{
+        display: inline-flex;
+        align-items: center;
+        color: $primary;
+        line-height: 26px;
+        &::before{
+            content:'';
+            width:26px;
+            height:26px;
+            background: url('~assets/ico_trash.svg') center right no-repeat;
+        }
+       
+    }
+    .link_txt{
+        a{display: inline-flex;color: $txt_blue;word-break: break-all;}
     }
 }

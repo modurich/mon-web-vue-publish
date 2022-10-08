@@ -37,6 +37,23 @@
           </div>
           <div class="btn_wrap l_row_l"><m-button-3 size="large" color="slateBlue" class="full" disabled>저장</m-button-3></div>
           <h3>링크</h3>
+          <div class="link_info">
+            <p class="tit">
+              <span class="txt01">링크1</span>
+              <button class="ico_trash">삭제</button>
+            </p>
+            <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
+            <p class="tit">
+              <span class="txt01">링크2</span>
+              <button class="ico_trash">삭제</button>
+            </p>
+            <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
+            <p class="tit">
+              <span class="txt01">링크3</span>
+              <button class="ico_trash">삭제</button>
+            </p>
+            <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
+          </div>
           <div class="btn_wrap l_row_l"><m-button-3 size="large" color="slateBlue" class="full">추가</m-button-3></div>
 
             <!-- E 프로필 수정-->
@@ -58,20 +75,21 @@
                 </div>
                 <div class="btn_area"><button class="btn_view" @click="dailog1 = true">휴대폰 번호 변경</button></div>
                 <!-- S 휴대폰 번호 변경 -->
-                <m-dialog v-model="dailog1" class="cls_test">
-                  <q-card class="dailog_wrap">
-                        <q-card-section class="row items-center q-pb-none">
-                            <q-space />
-                            <q-btn icon="close" flat round dense v-close-popup />
-                        </q-card-section>
-                        <q-card-section class="dailog_contents">
-                            <p class="dialog_tit">{{subject}}</p>
-                            <div class="l_row"><m-select v-model="select1" :options="options" /></div>
-                          <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호 또는 이메일 주소" class="round_type"/></div>
-                          <div class="l_row"><m-input filled v-model="text1" label="비밀번호" class="round_type"/></div>
-                          <div class="btn_wrap l_row"><m-button-3 color="slateBlue" class="full">로그인</m-button-3></div>
-                        </q-card-section>
-                    </q-card>
+                <m-dialog v-model="dailog1">
+                  <div class="dailog_wrap">
+                    <div class="dailog_top">
+                        <q-btn icon="close" flat  v-close-popup />
+                    </div>
+                    <q-card-section class="dg_con">
+                        <p class="dialog_tit l_row_l">휴대폰 인증</p>
+                        <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
+                        <div class="l_row"><m-select v-model="select1" :options="options" /></div>
+                        <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
+                        <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
+                        <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full" disabled>인증번호 재발송 (60s)</m-button-3></div>
+                        <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" size="large" class="full">확인</m-button-3></div>
+                    </q-card-section>
+                  </div>
                 </m-dialog>
                 <!-- E 휴대폰 번호 변경 -->
               </li>
@@ -80,7 +98,24 @@
                   <span class="txt01">이메일</span>
                   <span class="txt02">example@monstock.com</span>
                 </div>
-                <div class="btn_area"><button class="btn_view">이메일 등록 / 변경</button></div>
+                <div class="btn_area"><button class="btn_view" @click="dailog2 = true">이메일 등록 / 변경</button></div>
+                <!-- S 이메일 인증 -->
+                <m-dialog v-model="dailog2">
+                  <div class="dailog_wrap">
+                      <div class="dailog_top">
+                          <q-btn icon="close" flat  v-close-popup />
+                      </div>
+                      <q-card-section class="dailog_contents">
+                          <p class="dialog_tit l_row_l">이메일 인증</p>
+                          <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
+                          <div class="l_row"><m-input filled v-model="text1" label="이메일 주소" class="round_type"/></div>
+                          <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
+                          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full" disabled>인증번호 재발송</m-button-3></div>
+                          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" size="large" class="full">확인</m-button-3></div>
+                      </q-card-section>
+                    </div>
+                </m-dialog>
+                <!-- E 이메일 인증 -->
               </li>
             </ul>
             <p class="secondary">
@@ -138,8 +173,6 @@ export default {
             },
             dailog1:ref(false),
             dailog2: ref(false),
-            dailog3: ref(false),
-            dailog4: ref(false),
         }
     },
     methods: {

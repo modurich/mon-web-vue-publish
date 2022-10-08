@@ -1,17 +1,16 @@
 <template>
-                    <q-card class="dailog_wrap">
-                        <q-card-section class="row items-center q-pb-none">
-                            <q-space />
-                            <q-btn icon="close" flat round dense v-close-popup />
-                        </q-card-section>
-                        <q-card-section class="dailog_contents">
-                            <p class="dialog_tit">{{subject}}</p>
-                            {{content}}
-                        </q-card-section>
-                        <div class="fixed_btn_wrap">
-                            <m-button-3 size="large" color="slateBlue" class="full">확인</m-button-3>
-                        </div>
-                    </q-card>
+    <div class="dailog_wrap fixed_btn">
+        <div class="dailog_top">
+            <q-btn icon="close" flat  v-close-popup />
+        </div>
+        <q-card-section class="dg_con">
+            <p class="dialog_tit">{{subject}}</p>
+            {{content}}
+        </q-card-section>
+        <q-card-actions class="fixed_btn_wrap">
+        <m-button-3 flat size="large"  color="slateBlue" v-close-popup class="full" >확인</m-button-3>
+        </q-card-actions>
+    </div>
 </template>
 
 <script>

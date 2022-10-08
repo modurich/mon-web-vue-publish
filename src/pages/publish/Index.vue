@@ -108,10 +108,10 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <router-link to="/publish/A_21120_T">A_21120_T</router-link>
+                        <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T,A_12100_U,A_12200_U</router-link>
                     </td>
-                    <td>내 정보 수정</td>
-                    <td></td>
+                    <td>프로필수정,계정정보 수정</td>
+                    <td>휴대폰번호변경팝업,이메일 인증팝업</td>
                 </tr>       
             </tbody>
         </table>
@@ -144,7 +144,7 @@ export default {
     th {padding:5px 0;color:#fff;background:rgb(58, 58, 62);border-top:1px solid #ccc;border-left:1px solid #ccc}
     th.co01 {background:$primary}
     th.co02 {background:rgb(58, 58, 62)}
-    td {padding:7px 5px;border-top:1px solid #d5d5d5;border-left:1px solid #ccc;line-height:16px}
+    td {padding:7px 5px;word-break: break-all;border-top:1px solid #d5d5d5;border-left:1px solid #ccc;line-height:16px}
     .guide tr th, .guide tr td {background-color:#fff/*rgba(70,103,92,.4);border-color:#999*/}
     tr:first-child td {border-top:1px solid #e1e1e1}
     th:first-child, td:first-child {border-left:0}

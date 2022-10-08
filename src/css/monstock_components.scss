@@ -123,7 +123,7 @@ $primary:#8673FF;
     }
 
 }
-
+//ranking
 .ranking_slide{
     .q-carousel__arrow{
         align-items: flex-end !important;
@@ -149,40 +149,52 @@ $primary:#8673FF;
         }
     }
 }
+
 //dialog
 .dailog_wrap{
-    max-height:calc(100vh - 48px)!important;
-    min-height: 300px;
     position:relative;
+    .dailog_top{display: flex;
+        justify-content: flex-end;
+    }
     .dialog_tit{text-align:center;font-size:18px;color:#141414;font-weight: 700;}
-    .dailog_contents{
-        max-height:calc(100vh - 202px);
+    .dg_con{
+        max-height:80vh;
         overflow: auto;
+        padding: 16px;
         white-space: pre-line;}
-
+    
     .fixed_btn_wrap{
-        position: absolute;
-        bottom:32px;
-        width:100%;
-        padding:0 16px;
+        padding:32px 16px;
     }
-    
-}
-
-.q-dialog__inner--minimized > div {
-    max-width: 400px !important;
-}
-//700보다 작아질때
-
-@media (max-width: $breakpoint-xs-max) {
-    .q-dialog__inner--minimized > div {
-        max-height: 100vh !important;
+    &.fixed_btn{
+        .dg_con{
+            max-height:60vh;
+            overflow: auto;
+            white-space: pre-line;
+        }
     }
-    
-    .dailog_wrap{height:100vh !important;
-        .dailog_contents {
-            height: calc(100vh - 156px);
+    //700보다 작아질때
+    @media (max-width: $breakpoint-xs-max) {
+        height: 100vh;
+        .dg_con {
+            max-height:calc(100vh - 150px) !important;
         }
     }
 }
-
+//700보다 작아질때
+@media (max-width: $breakpoint-xs-max) {
+    .dialog-content{
+        max-height:100vh !important;
+    }
+    .q-dialog__inner--minimized > div {
+        max-height:100vh;
+        width:100%;
+    }
+}
+ //700보다 클때
+@media (min-width: 700px){
+    .q-dialog__inner--minimized > div {
+        max-width: 400px;
+        min-width: 350px;
+    }
+}
