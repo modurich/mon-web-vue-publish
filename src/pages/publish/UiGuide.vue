@@ -441,10 +441,9 @@
                     <textarea v-model="text3" cols="165" rows="10"></textarea>
                 </div>
                 <div class="type_view">
-                    <p class="sub_info" v-snip="{ lines: 2, mode: 'css' }">
-                        {{text3}}
-                    </p>
-                    <a href="#" class="link_view">더보기</a>
+                    <p class="sub_info" v-if="snipOption.isSnipped" v-snip="{ lines: snipOption.lines, mode: snipOption.mode, onSnipped: onSnipped }">{{ text3 }}</p>
+                    <p class="sub_info" v-else>{{ text3 }}</p>
+                    <a href="#" class="link_view" v-if="snipOption.hasReadMore && snipOption.isSnipped && snipOption.hasEllipsis" @click="snipOption.isSnipped = false">더보기</a>
                 </div>
             </div>
         </div>
@@ -473,9 +472,8 @@ import Polycy from './Polycy.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 
-
 export default {
-    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VueSnip },
+    components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide},
     data() {
         const text2 = ref('');
         return {
@@ -557,8 +555,22 @@ export default {
                         spaceBetween: 10
                     }
                 }
+            },
+            snipOption: {
+                isSnipped: true,
+                lines: 2,
+                mode: 'css',
+                floatElement: false,
+                hasReadMore: true,
+                hasEllipsis: true
             }
         }
+    },
+    methods: {
+        onSnipped: function (newState) {
+            console.log(newState);
+            this.snipOption.hasEllipsis = newState.hasEllipsis
+        },
     }
 };
 </script>
@@ -590,10 +602,4 @@ body{
 .type_view .sbt ~ .sbt {margin-top:10px}
 .type_view.btn_view button {margin-right:20px}
 .type_view > .checkbox, .type_view > .radio {margin-right:15px}
-p.sub_info {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
 </style>

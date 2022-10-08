@@ -156,7 +156,26 @@
             <q-table
               :rows="tbRowData"
               :columns="tbColInfo"
-            />
+              row-key="category"
+              no-data-label="데이터가 존재하지 않습니다."
+            >
+              <template v-slot:body="props">
+                <q-tr :props="props">
+                  <q-td key="date" :props="props">
+                    {{props.row.date}}
+                  </q-td>
+                  <q-td key="category" :props="props">
+                    {{props.row.category}}
+                  </q-td>
+                  <q-td key="updown" :props="props">
+                    {{props.row.updown}}
+                  </q-td>
+                  <q-td key="isSuccess" :props="props">
+                    {{props.row.isSuccess}}
+                  </q-td>
+                </q-tr>
+              </template>
+            </q-table>
             <!-- E 통계 -->
             <!-- E 마이페이지-->
           </div>
@@ -243,6 +262,26 @@ import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 
+const tbColInfo = [
+  { name: 'date',       align: 'center', label: '일자',       field: 'date'},
+  { name: 'category',   align: 'center', label: '종목',       field: 'category'},
+  { name: 'updown',     align: 'center', label: '상승/하락',  field: 'updown'},
+  { name: 'isSuccess',  align: 'center', label: '예측결과',   field: 'isSuccess'}
+];
+const tbRowData = [
+  { date: '22.09.14', category: '삼성전자',   updown: '상승', isSuccess: '성공' },
+  { date: '22.09.14', category: 'SK하이닉스', updown: '하락', isSuccess: '성공' },
+  { date: '22.09.14', category: '네이버',     updown: '상승', isSuccess: '성공' },
+  { date: '22.09.14', category: '현대차',     updown: '상승', isSuccess: '실패' },
+  { date: '22.09.14', category: '신풍제약',   updown: '하락', isSuccess: '성공' },
+  { date: '22.09.14', category: '안랩',       updown: '상승', isSuccess: '실패' },
+  { date: '22.09.14', category: '카카오',     updown: '상승', isSuccess: '성공' },
+  { date: '22.09.14', category: 'KT&G',       updown: '하락', isSuccess: '성공' },
+  { date: '22.09.14', category: '셀트리온',    updown: '상승', isSuccess: '실패' },
+  { date: '22.09.14', category: '미래에셋증권', updown: '상승', isSuccess: '실패'}
+];
+
+
 export default {
  components: { MDialogBlank , Swiper, SwiperSlide},
     name: 'A_10000_P',
@@ -304,24 +343,8 @@ export default {
                     }
                 }
             },
-          tbColInfo:ref ([
-            { name: 'date', required: true, label: '일자', align: 'center', field: row => row.date, format: val => `${val}`, sortable: true },
-            { name: 'category', align: 'center', label: '종목', field: 'category', sortable: true },
-            { name: 'updown', align: 'center', label: '상승/하락', field: 'updown', sortable: true },
-            { name: 'result', align: 'center', label: '예측결과', field: 'result' }
-            ]),
-          tbRowData:ref([
-            { date: '22.09.14', category: '삼성전자', updown: '상승', result: '성공'},
-            { date: '22.09.14', category: 'SK하이닉스', updown: '하각', result: '성공' },
-            { date: '22.09.14', category: '네이버', updown: '상승', result: '성공' },
-            { date: '22.09.14', category: '현대차', updown: '상승', result: '실패' },
-            { date: '22.09.14', category: '신풍제약', updown: '하각', result: '성공' },
-            { date: '22.09.14', category: '안랩', updown: '상승', result: '실패' },
-            { date: '22.09.14', category: '카카오', updown: '상승', result: '성공' },
-            { date: '22.09.14', category: 'KT&G', updown: '하각', result: '성공' },
-            { date: '22.09.14', category: '셀트리온', updown: '상승', result: '실패' },
-            { date: '22.09.14', category: '미래에셋증권', updown: '상승', result: '실패'}
-          ])
+          tbColInfo,
+          tbRowData
         }
     },
     methods: {
