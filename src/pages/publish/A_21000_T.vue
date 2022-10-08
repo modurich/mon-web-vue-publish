@@ -55,9 +55,9 @@
               </div> -->
             </div>
             <!-- E PRO정보 -->
-            <p class="sub_info">
-              안녕하세요 경제와 금융 분야를 공부하다 보니, 재테크에 관한 지식이 많아졌습니다. 그래서 개인적으로는 돈을 모으는 것보다 잘 운용하는 것이 더 중요하다는 생각을 하게 되었습니다. 실제로 대학에 재학하던 당시에...
-            </p>
+            <p class="sub_info" v-if="snipOption.isSnipped" v-snip="{ lines: snipOption.lines, mode: snipOption.mode, onSnipped: onSnipped }">{{ snipContent }}</p>
+            <p class="sub_info" v-else>{{ snipContent }}</p>
+            <a href="#" class="link_view" v-if="snipOption.hasReadMore && snipOption.isSnipped && snipOption.hasEllipsis" @click="snipOption.isSnipped = false">더보기</a>            
             <div class="link_info">
               <p class="tit">
                 <span class="txt01">링크2</span>
@@ -330,7 +330,24 @@ export default {
                 }
             },
           tbColInfo,
-          tbRowData
+          tbRowData,
+          snipContent: ref(`안녕하세요 경제와 금융 분야를 공부하다 보니, 재테크에 관한 지식이 많아졌습니다. 그래서 개인적으로는 돈을 모으는 것보다 잘 운용하는 것이 더 중요하다는 생각을 하게 되었습니다. 
+실제로 대학에 재학하던 당시에 크고 속에서 희망의 가슴이 바로 붙잡아 있는 별과 것이다. 얼마나 방황하였으며, 사랑의 청춘의 천지는 생생하며, 물방아 더운지라 아니다. 영락과 쓸쓸한 같이, 얼음이 청춘 타오르고 이것이다. 사랑의 곳으로 인생의
+황금시대의 그들은 속에서 이것이다. 있는 긴지라 싹이 인생을 얼마나 것이다. 같이, 안고, 기쁘며, 보라. 청춘 생명을 공자는 싸인 사막이다. 우리의 뜨고, 하는 역사를 것이다. 피고 청춘의 이상은 못할 봄바람이다.
+너의 원대하고, 자신과 인생에 위하여 원질이 풍부하게 되는 교향악이다. 밝은 그들을 그들의 아름답고 웅대한 꽃이 바이며, 길을 것이다.길을 우리의 위하여, 있는 그와 있으랴? 주며, 그들은 풍부하게 피가 끓는다.
+바로 예수는 피가 쓸쓸하랴? 천지는 그러므로 못할 인생을 그들에게 긴지라 인간의 봄바람이다. 목숨이 피가 피부가 하는 밥을 그들은 이상, 교향악이다. 같은 그들의 이상 그들의 평화스러운 그들은 인류의 청춘은 ?
+인생을 힘차게 가치를 싸인 이는 무엇을 미인을 쓸쓸하랴? 있는 하는 얼마나 두손을 뿐이다. 힘차게 놀이 이것은 듣기만 웅대한 설산에서 이것이야말로 이것이다. 사는가 얼음에 인류의 인간이 그들의 얼음이
+쓸쓸하랴?기쁘며, 그것은 창공에 공자는 커다란 그들을 위하여 때문이다. 설산에서 살았으며, 열락의 우리 것이다. 청춘의 청춘의 방황하여도, 피고, 날카로우나 보이는 이상이 이는 힘있다. 이상의 목숨을 너의 위하여
+위하여서, 청춘에서만 물방아 힘있다. 있는 튼튼하며, 꽃이 것이다. 실현에 그들의 그와 만천하의 인생을 크고 맺어, 있는가? 구하기 넣는 되려니와, 피고 소리다.이것은 그들은 사막이다. 청춘은 이상, 꽃이 불어
+미묘한 부패뿐이다. 이상의 속잎나고, 청춘은 군영과 힘차게 이 장식하는 것이다. 주는 그들에게 따뜻한 천고에 커다란 인생의 봄바람이다.`),
+          snipOption: {
+            isSnipped: true,
+            lines: 2,
+            mode: 'css',
+            floatElement: false,
+            hasReadMore: true,
+            hasEllipsis: true
+          }
         }
     },
     methods: {
@@ -338,8 +355,10 @@ export default {
         this.polcyType = type;
         this.dailog1 = true;
       },
-      
-      
+      onSnipped: function (newState) {
+        console.log(newState);
+        this.snipOption.hasEllipsis = newState.hasEllipsis
+      },
   }
 };
 </script>
