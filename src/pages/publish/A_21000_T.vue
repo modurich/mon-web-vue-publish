@@ -34,6 +34,7 @@
                   </li>
               </ul>
             </div>
+            <!-- S PRO정보 -->
             <div class="pro_info_wrap">
               <div class="tit_area">
                 <span class="tit_txt">PRO 정보</span>
@@ -53,6 +54,7 @@
                 <m-button-3 color="primary" class="full">PRO 제안 발의</m-button-3>
               </div> -->
             </div>
+            <!-- E PRO정보 -->
             <p class="sub_info">
               안녕하세요 경제와 금융 분야를 공부하다 보니, 재테크에 관한 지식이 많아졌습니다. 그래서 개인적으로는 돈을 모으는 것보다 잘 운용하는 것이 더 중요하다는 생각을 하게 되었습니다. 실제로 대학에 재학하던 당시에...
             </p>
@@ -68,6 +70,51 @@
               <m-button-3 color="primary" class="full">내 정보 수정</m-button-3>
               <m-button-3 lined color="primary" class="ico_add">추가</m-button-3>
             </div>
+            <!-- S 추천 사용자 -->
+            <h3 class="between">
+              <span>추천 사용자</span>
+              <a href="#" class="link_view">더보기</a>
+            </h3>
+            <div>
+              <swiper class="swiper" :options="swiperOption">
+                  <swiper-slide>
+                    <div class="recommend_list">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="txt_tit">몬스탁닉네임01</div>
+                      <span class="badge_area">
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
+                      </span>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="recommend_list">
+                  <div class="img_area">
+                    <img src="~assets/profile_img1.png" alt="profile"/>
+                  </div>
+                  <div class="txt_tit">몬스탁닉네임01</div>
+                  <span class="badge_area">
+                    <span class="badge type1">PRO</span>
+                    <span class="badge type2">PL1</span>
+                  </span>
+                </div>
+                  </swiper-slide>
+                  <swiper-slide>Slide 3</swiper-slide>
+                  <swiper-slide>Slide 4</swiper-slide>
+                  <swiper-slide>Slide 5</swiper-slide>
+                  <swiper-slide>Slide 6</swiper-slide>
+                  <swiper-slide>Slide 7</swiper-slide>
+                  <swiper-slide>Slide 8</swiper-slide>
+                  <swiper-slide>Slide 9</swiper-slide>
+                  <swiper-slide>Slide 10</swiper-slide>
+                  <div class="swiper-pagination" slot="pagination"></div>
+                  <div class="swiper-button-prev" slot="button-prev"></div>
+                  <div class="swiper-button-next" slot="button-next"></div>
+              </swiper>
+            </div>
+            <!-- E 추천 사용자 -->
             <!-- E 마이페이지-->
           </div>
           <div class="tab_contents" v-if="tab1 == 'B'">
@@ -150,9 +197,10 @@
 <script>
 import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 export default {
-  components: { MDialogBlank },
+  components: { MDialogBlank ,swiper, swiperSlide },
     name: 'A_10000_P',
     data() {
         return {
@@ -185,6 +233,32 @@ export default {
             },
             dailog1:ref(false),
             dailog2: ref(false),
+            swiperOption: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    }
+                }
+            }
         }
     },
     methods: {
@@ -195,3 +269,6 @@ export default {
   }
 };
 </script>
+<style scoped>
+
+</style>

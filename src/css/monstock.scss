@@ -104,6 +104,7 @@ body{
         font-size:16px;
         font-weight: 700;
         color: $txt_dk;
+        .link_view{font-size: 14px;font-weight: 500;}
     }
     .between{
         display: flex;
@@ -341,3 +342,24 @@ body{
     height:48px;
     text-indent: -999em;
     background: url('~assets/ico_add.svg') center center no-repeat;}
+
+//추천사용자
+.recommend_list{
+    width:160px;
+    height:175px;
+    box-sizing: border-box;
+    border:1px solid rgba(108, 167, 255, 0.3);
+    border-radius: 16px;
+    text-align: center;
+    padding:16px;
+    .txt_tit{color: #000;font-weight: 700px;font-size: 16px;margin-top:16px}
+    .img_area{
+        width:80px;
+        height:80px;
+        border-radius: 80px;
+        overflow: hidden;
+        margin:0 auto;
+        img{width:100%;height:100%}
+    }
+    .badge_area{span + span{margin-left:8px}}
+}

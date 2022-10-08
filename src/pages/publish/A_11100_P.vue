@@ -32,7 +32,7 @@
           <div class="l_row_s"><m-input filled v-model="text3" class="round_type"/></div>
           <div class="btn_wrap l_row_s"><m-button-3 color="primary" class="full" disabled>인증번호발송(60s)</m-button-3></div>
           <div class="btn_wrap l_row"><m-button-3 size="large" color="primary" class="full">이메일 등록</m-button-3></div>
-          <div class="btn_wrap center"><button class="btn_view">Skip</button></div>
+          <div class="btn_wrap center"><a href="#" class="link_view">Skip</a></div>
         </div>
       </q-form>
     </div>
