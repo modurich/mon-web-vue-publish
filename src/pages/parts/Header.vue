@@ -33,7 +33,7 @@
                 <div class="user_img">
                     <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
                 </div>
-                <!-- <m-button-3  color="slateBlue" size="small">로그인</m-button-3> -->
+                <!-- <m-button-3  color="primary" size="small">로그인</m-button-3> -->
             </div>
         </div>
     </header>

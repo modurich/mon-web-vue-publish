@@ -6,7 +6,7 @@
           <div class="l_row"><m-input label="현재 비밀번호 (영문, 숫자, 특수문자 필수 8~20자리)" filled v-model="text1" class="round_type"/></div>
           <div class="l_row"><m-input label="새 비밀번호 (영문, 숫자, 특수문자 필수 8~20자리)" filled v-model="text2"  class="round_type"/></div>
           <div class="l_row"><m-input label="새 비밀번호 확인" filled v-model="text3" class="round_type"/></div>
-          <div class="btn_wrap l_row"><m-button-3 size="large" color="slateBlue" class="full">변경</m-button-3></div>
+          <div class="btn_wrap l_row"><m-button-3 size="large" color="primary" class="full">변경</m-button-3></div>
         </div>
       </q-form>
     </div>

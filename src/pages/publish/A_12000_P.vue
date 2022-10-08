@@ -6,8 +6,8 @@
             <i class="ico_error"></i>
           </div>
           <h2 class="s_mg">비밀번호 찾기</h2>
-          <div class="btn_wrap l_row_s"><m-button-3 size="large" color="slateBlue" class="full">휴대폰 번호 인증</m-button-3></div>
-          <div class="btn_wrap"><m-button-3 size="large" color="slateBlue" class="full">이메일 인증</m-button-3></div>
+          <div class="btn_wrap l_row_s"><m-button-3 size="large" color="primary" class="full">휴대폰 번호 인증</m-button-3></div>
+          <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">이메일 인증</m-button-3></div>
         </div>
       </q-form>
     </div>

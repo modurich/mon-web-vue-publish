@@ -199,12 +199,13 @@
                     <p class="sbt">basic</p>
                     <m-button-3 color="mediumGrey">type01</m-button-3>
                     <m-button-3 lined>type02</m-button-3>
-                    <m-button-3 color="slateBlue">type03</m-button-3>
+                    <!-- <m-button-3 color="primary">type03</m-button-3> -->
+                    <m-button-3 color="primary">type03</m-button-3>
                     <m-button-3 lined color="primary">type03</m-button-3>
                     <p class="sbt">disabled</p>
                     <m-button-3 color="mediumGrey" disabled>type01</m-button-3>
                     <m-button-3 lined disabled>type02</m-button-3>
-                    <m-button-3 color="slateBlue" disabled>type03</m-button-3>
+                    <m-button-3 color="primary" disabled>type03</m-button-3>
                 </div>
                 <p class="h2">Button Size [medium[default], large]</p>
                 <div class="type_view">

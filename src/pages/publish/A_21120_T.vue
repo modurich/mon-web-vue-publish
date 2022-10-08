@@ -13,7 +13,7 @@
           </div>
           <div class="btn_wrap l_row_l">
             <m-button-3 lined color="primary" class="full">취소</m-button-3>
-            <m-button-3 color="slateBlue" class="full">저장</m-button-3>
+            <m-button-3 color="primary" class="full">저장</m-button-3>
           </div>
           <h3>닉네임</h3>
           <p class="sub_info">
@@ -21,7 +21,7 @@
             공백없이 한글, 영문, 숫자 3-10자로 입력해주세요.
           </p>
           <div class="l_row_s"><m-input filled v-model="text1"  class="round_type"/></div>
-          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full">저장하기</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full">저장하기</m-button-3></div>
           <h3>소개</h3>
           <div class="l_row">
           <m-textarea 
@@ -35,7 +35,7 @@
             placeholder="예시) 모두 승투하세요~!"
           />
           </div>
-          <div class="btn_wrap l_row_l"><m-button-3 size="large" color="slateBlue" class="full" disabled>저장</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3 size="large" color="primary" class="full" disabled>저장</m-button-3></div>
           <h3>링크</h3>
           <div class="link_info">
             <p class="tit">
@@ -54,7 +54,7 @@
             </p>
             <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
           </div>
-          <div class="btn_wrap l_row_l"><m-button-3 size="large" color="slateBlue" class="full">추가</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3 size="large" color="primary" class="full">추가</m-button-3></div>
 
             <!-- E 프로필 수정-->
           </div>
@@ -86,8 +86,8 @@
                         <div class="l_row"><m-select v-model="select1" :options="options" /></div>
                         <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
                         <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                        <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full" disabled>인증번호 재발송 (60s)</m-button-3></div>
-                        <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" size="large" class="full">확인</m-button-3></div>
+                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송 (60s)</m-button-3></div>
+                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
                     </q-card-section>
                   </div>
                 </m-dialog>
@@ -110,8 +110,8 @@
                           <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
                           <div class="l_row"><m-input filled v-model="text1" label="이메일 주소" class="round_type"/></div>
                           <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full" disabled>인증번호 재발송</m-button-3></div>
-                          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" size="large" class="full">확인</m-button-3></div>
+                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송</m-button-3></div>
+                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
                       </q-card-section>
                     </div>
                 </m-dialog>

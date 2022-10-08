@@ -8,7 +8,7 @@
             {{content}}
         </q-card-section>
         <q-card-actions class="fixed_btn_wrap">
-        <m-button-3 flat size="large"  color="slateBlue" v-close-popup class="full" >확인</m-button-3>
+        <m-button-3 flat size="large"  color="primary" v-close-popup class="full" >확인</m-button-3>
         </q-card-actions>
     </div>
 </template>

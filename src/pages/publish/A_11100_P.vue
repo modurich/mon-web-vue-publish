@@ -14,10 +14,10 @@
             <img src="~assets/no_profile.png" alt="profile"/>
             <img src="~assets/profile_img1.png" alt="profile"/>
           </div>
-          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full">수정하기</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full">수정하기</m-button-3></div>
           <div class="btn_wrap l_row_l">
             <m-button-3 lined color="primary" class="full">취소</m-button-3>
-            <m-button-3 color="slateBlue" class="full">저장</m-button-3>
+            <m-button-3 color="primary" class="full">저장</m-button-3>
           </div>
           <h3>닉네임</h3>
           <p class="sub_info">
@@ -25,13 +25,13 @@
             공백없이 한글, 영문, 숫자 3-10자로 입력해주세요.
           </p>
           <div class="l_row_s"><m-input filled v-model="text1"  class="round_type"/></div>
-          <div class="btn_wrap l_row_l"><m-button-3 color="slateBlue" class="full">저장하기</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full">저장하기</m-button-3></div>
           <h3>이메일</h3>
           <p class="sub_info">이메일 주소를 등록하시면 비밀번호 분실, 휴대폰 번호 변경 시에도 이메일을 통해 비밀번호를 찾으실 수 있습니다.</p>
           <div class="l_row"><m-input filled v-model="text2"  class="round_type"/></div>
           <div class="l_row_s"><m-input filled v-model="text3" class="round_type"/></div>
-          <div class="btn_wrap l_row_s"><m-button-3 color="slateBlue" class="full" disabled>인증번호발송(60s)</m-button-3></div>
-          <div class="btn_wrap l_row"><m-button-3 size="large" color="slateBlue" class="full">이메일 등록</m-button-3></div>
+          <div class="btn_wrap l_row_s"><m-button-3 color="primary" class="full" disabled>인증번호발송(60s)</m-button-3></div>
+          <div class="btn_wrap l_row"><m-button-3 size="large" color="primary" class="full">이메일 등록</m-button-3></div>
           <div class="btn_wrap center"><button class="btn_view">Skip</button></div>
         </div>
       </q-form>

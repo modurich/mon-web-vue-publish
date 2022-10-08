@@ -8,7 +8,7 @@
           <div class="l_row"><m-input filled v-model="text1" label="비밀번호" class="round_type"/></div>
           <div class="l_row"><m-select v-model="select1" :options="options" /></div>
           <div class="l_row_s"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
-          <div class="btn_wrap l_row"><m-button-3 color="slateBlue" class="full" disabled>인증번호발송</m-button-3></div>
+          <div class="btn_wrap l_row"><m-button-3 color="primary" class="full" disabled>인증번호발송</m-button-3></div>
           <div class="l_row between">
             <span class="font16 dark">추천인 코드 (선택)</span>
             <span class="font12">입력시 <span class="primary">100 SMON</span> 즉시 지급!</span>
@@ -41,7 +41,7 @@
             </div>
             <div class="check_area"><m-checkbox size="md" v-model="check6" label="마케팅 정보 수신 동의 (선택)"/></div>
           </div>
-          <div class="btn_wrap"><m-button-3 size="large" color="slateBlue" class="full" disabled>가입하기</m-button-3></div>
+          <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full" disabled>가입하기</m-button-3></div>
         </div>
       </q-form>
     </div>

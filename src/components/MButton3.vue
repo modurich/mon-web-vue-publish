@@ -186,6 +186,24 @@ export default {
         }
     }
 
+    &.color-primary {
+        background-color: $slate-blue;
+        color: $white;
+        &:disabled {
+            // background-color: $slate-blue-20;
+            color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: $slate-blue;
+            border: 0.5px solid $slate-blue;
+            &:disabled {
+                // color: $slate-blue-20;
+                border: 1px solid $slate-blue;
+            }
+        }
+    }
+
     &.color-vividRaseberry {
         background-color: $vivid-raseberry;
         color: $white;
