@@ -109,9 +109,11 @@
                   <swiper-slide>Slide 8</swiper-slide>
                   <swiper-slide>Slide 9</swiper-slide>
                   <swiper-slide>Slide 10</swiper-slide>
+                  <!--
                   <div class="swiper-pagination" slot="pagination"></div>
                   <div class="swiper-button-prev" slot="button-prev"></div>
                   <div class="swiper-button-next" slot="button-next"></div>
+                  -->
               </swiper>
             </div>
             <!-- E 추천 사용자 -->
@@ -200,7 +202,7 @@ import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 export default {
-  components: { MDialogBlank ,swiper, swiperSlide },
+  components: { MDialogBlank ,Swiper, SwiperSlide },
     name: 'A_10000_P',
     data() {
         return {
@@ -236,10 +238,6 @@ export default {
             swiperOption: {
                 slidesPerView: 5,
                 spaceBetween: 50,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
                 breakpoints: {
                     1024: {
                         slidesPerView: 4,
@@ -254,7 +252,7 @@ export default {
                         spaceBetween: 20
                     },
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2.2,
                         spaceBetween: 10
                     }
                 }
