@@ -91,29 +91,52 @@
                   </swiper-slide>
                   <swiper-slide>
                     <div class="recommend_list">
-                  <div class="img_area">
-                    <img src="~assets/profile_img1.png" alt="profile"/>
-                  </div>
-                  <div class="txt_tit">몬스탁닉네임01</div>
-                  <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
-                  </span>
-                </div>
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="txt_tit">몬스탁닉네임02</div>
+                      <span class="badge_area">
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
+                      </span>
+                    </div>
                   </swiper-slide>
-                  <swiper-slide>Slide 3</swiper-slide>
-                  <swiper-slide>Slide 4</swiper-slide>
-                  <swiper-slide>Slide 5</swiper-slide>
-                  <swiper-slide>Slide 6</swiper-slide>
-                  <swiper-slide>Slide 7</swiper-slide>
-                  <swiper-slide>Slide 8</swiper-slide>
-                  <swiper-slide>Slide 9</swiper-slide>
-                  <swiper-slide>Slide 10</swiper-slide>
-                  <!--
-                  <div class="swiper-pagination" slot="pagination"></div>
-                  <div class="swiper-button-prev" slot="button-prev"></div>
-                  <div class="swiper-button-next" slot="button-next"></div>
-                  -->
+                  <swiper-slide>
+                    <div class="recommend_list">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="txt_tit">몬스탁닉네임03</div>
+                      <span class="badge_area">
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
+                      </span>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="recommend_list">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="txt_tit">몬스탁닉네임04</div>
+                      <span class="badge_area">
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
+                      </span>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="recommend_list">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="txt_tit">몬스탁닉네임05</div>
+                      <span class="badge_area">
+                        <span class="badge type1">PRO</span>
+                        <span class="badge type2">PL1</span>
+                      </span>
+                    </div>
+                  </swiper-slide>
               </swiper>
             </div>
             <!-- E 추천 사용자 -->
@@ -202,7 +225,7 @@ import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 export default {
-  components: { MDialogBlank ,Swiper, SwiperSlide },
+ components: { MDialogBlank , Swiper, SwiperSlide},
     name: 'A_10000_P',
     data() {
         return {
@@ -244,11 +267,15 @@ export default {
                         spaceBetween: 40
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 30
                     },
-                    640: {
-                        slidesPerView: 2,
+                    650: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    520: {
+                        slidesPerView: 3,
                         spaceBetween: 20
                     },
                     320: {
