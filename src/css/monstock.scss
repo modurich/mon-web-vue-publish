@@ -123,6 +123,20 @@ body{
         }
     }
 }
+.btn_view_list{
+    color: $primary;
+    font-size: 14px;
+    &:after{
+        content: "";
+        background: url('~assets/arrow_right.svg') center right no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-left:4px;
+        position: relative;
+        top:5px;
+        display: inline-flex;
+    }
+}
 .link_view,.btn_view{
     color:$primary !important;
     display: flex;

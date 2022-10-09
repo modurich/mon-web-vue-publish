@@ -59,7 +59,7 @@
               <v-clamp autoresize :max-lines="2">
                 {{ snipContent }}
                 <template #after="{ toggle, expanded, clamped }">
-                  <button v-if="expanded || clamped" class="toggle btn btn-sm" @click="toggle">{{ clamped ? '더보기' : '닫기' }}</button>
+                  <button v-if="expanded || clamped" class="btn_view_list" @click="toggle">{{ clamped ? '더보기' : '닫기' }}</button>
                 </template>
               </v-clamp>
             </div>
@@ -168,7 +168,6 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <q-table
-                  style="height: 400px"
                   :data="tbRowData"
                   :columns="tbColInfo"
                   row-key="category"
