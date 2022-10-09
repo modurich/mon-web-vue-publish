@@ -182,11 +182,11 @@
                       <q-td key="category" :props="props">
                           {{ props.row.category }}
                       </q-td>
-                      <q-td key="updown" :props="props" class="txt_blue">
-                          {{ props.row.updown }}
+                      <q-td key="updown" :props="props">
+                        <span class="txt_blue">{{ props.row.updown }}</span>
                       </q-td>
-                      <q-td key="isSuccess" :props="props" class="txt_red">
-                          {{ props.row.isSuccess }}
+                      <q-td key="isSuccess" :props="props">
+                          <span class="txt_red">{{ props.row.isSuccess }}</span>
                       </q-td>
                     </q-tr>
                   </template>
