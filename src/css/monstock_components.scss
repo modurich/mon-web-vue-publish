@@ -22,6 +22,7 @@ $primary:#8673FF;
             border: 1px solid $primary !important;;
         }
     }
+    &.color-textPrimary{color: $primary;}
 }
 .m-button3.color-slateBlue {
     background-color: $primary !important;
@@ -222,6 +223,12 @@ $primary:#8673FF;
     }
 }
 //q-table
+.q-table{
+    th{font-size: 14px;color:#9ca8ba}
+}
+.q-table thead, .q-table tr, .q-table th, .q-table td {
+    border-color: #d4d9ea;
+}
 .q-table__card {
     box-shadow:none;
 }
@@ -242,4 +249,11 @@ $primary:#8673FF;
         }
     }
     button{position: absolute;right:0;bottom:0}
+}
+
+//radio_wrap
+.radio_wrap{
+    margin:32px 0;
+    &.right{text-align: right;}
+    .m-radio + .m-radio{margin-left:16px}
 }

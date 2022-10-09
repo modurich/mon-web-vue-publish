@@ -203,7 +203,8 @@
                     <m-button-3 color="primary">primary</m-button-3>
                     <m-button-3 lined color="primary">lined primary</m-button-3>
                     <m-button-3 color="yellow">yellow</m-button-3>
-                    <m-button-3 lined color="lightGrey">light_gray</m-button-3>
+                    <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
+                    <m-button-3  color="textPrimary">textPrimary</m-button-3>
                     <p class="sbt">disabled</p>
                     <m-button-3 color="mediumGrey" disabled>mediumGrey</m-button-3>
                     <m-button-3 lined disabled>lined</m-button-3>
@@ -472,7 +473,7 @@
                 </div>
                 <div class="type_view">
                     <div class="view2_wrap">
-                    <p class="view2_area full">크고 속에서 희망의 가슴이 바로 붙잡아 있는 별과 것이다. 얼마나 방황하였으며, 사랑의 청춘의 천지는 생생하며, 물방아 더운지라 아니다. 영락과 쓸쓸한 같이, 얼음이 청춘 타오르고 이것이다. 사랑의 곳으로 인생의
+                    <p class="view2_area">크고 속에서 희망의 가슴이 바로 붙잡아 있는 별과 것이다. 얼마나 방황하였으며, 사랑의 청춘의 천지는 생생하며, 물방아 더운지라 아니다. 영락과 쓸쓸한 같이, 얼음이 청춘 타오르고 이것이다. 사랑의 곳으로 인생의
 황금시대의 그들은 속에서 이것이다. 있는 긴지라 싹이 인생을 얼마나 것이다. 같이, 안고, 기쁘며, 보라. 청춘 생명을 공자는 싸인 사막이다. 우리의 뜨고, 하는 역사를 것이다. 피고 청춘의 이상은 못할 봄바람이다.
 너의 원대하고, 자신과 인생에 위하여 원질이 풍부하게 되는 교향악이다. 밝은 그들을 그들의 아름답고 웅대한 꽃이 바이며, 길을 것이다.길을 우리의 위하여, 있는 그와 있으랴? 주며, 그들은 풍부하게 피가 끓는다.
 바로 예수는 피가 쓸쓸하랴? 천지는 그러므로 못할 인생을 그들에게 긴지라 인간의 봄바람이다. 목숨이 피가 피부가 하는 밥을 그들은 이상, 교향악이다. 같은 그들의 이상 그들의 평화스러운 그들은 인류의 청춘은 ?
