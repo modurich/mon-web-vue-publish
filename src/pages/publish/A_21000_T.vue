@@ -174,6 +174,22 @@
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                 >
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="date" :props="props">
+                        {{ props.row.date }}
+                      </q-td>
+                      <q-td key="category" :props="props">
+                          {{ props.row.category }}
+                      </q-td>
+                      <q-td key="updown" :props="props">
+                          {{ props.row.updown }}
+                      </q-td>
+                      <q-td key="isSuccess" :props="props">
+                          {{ props.row.isSuccess }}
+                      </q-td>
+                    </q-tr>
+                  </template>
                 </q-table>
                 <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
               </div>
