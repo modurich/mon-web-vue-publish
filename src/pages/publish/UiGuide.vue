@@ -203,7 +203,8 @@
                     <m-button-3 color="primary">primary</m-button-3>
                     <m-button-3 lined color="primary">lined primary</m-button-3>
                     <m-button-3 color="yellow">yellow</m-button-3>
-                    <m-button-3 lined color="lightGrey">light_gray</m-button-3>
+                    <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
+                    <m-button-3  color="textPrimary">textPrimary</m-button-3>
                     <p class="sbt">disabled</p>
                     <m-button-3 color="mediumGrey" disabled>mediumGrey</m-button-3>
                     <m-button-3 lined disabled>lined</m-button-3>
@@ -293,17 +294,7 @@
                             </div>
                         </q-carousel-slide>
                     </q-carousel>
-                    
-                <!--                     
-                    <div class="row justify-center">
-                        <q-btn-toggle glossy v-model="slide2" :options="[
-                            { label: 1, value: 'style' },
-                            { label: 2, value: 'tv' },
-                            { label: 3, value: 'layers' },
-                            { label: 4, value: 'map' }
-                            ]" />
-                    </div> 
-                -->
+
                 </div>
             </div>
             <div class="box_wrap">
@@ -464,15 +455,6 @@
                 <p class="h2">Callps</p>
                 <div class="type_view">
                     <textarea v-model="text3" cols="165" rows="10"></textarea>
-                </div>
-                <div class="type_view">
-                    
-                </div>
-                <div class="type_view">
-                    <div class="view2_wrap">
-                        <p class="view2_area">{{text3}}</p>
-                        <button>더보기</button>
-                    </div>
                 </div>
                 <div class="type_view">
                     <v-clamp autoresize :max-lines="2">

@@ -155,13 +155,18 @@
             <div class="divider"/>
             <!-- S 통계 -->
         
-            <div  class="between">
+            <div class="add_tab_tit">
               <h3>
                 <span>통계</span>
               </h3>
-              <m-tabs class="card_type small" v-model="tab2" :items="tabs" />
+              <m-tabs class="card_type small" v-model="tab2" :items="tabs1" />
             </div>
               <div v-if="tab2 == 'A'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
                 <q-table
                   style="height: 400px"
                   :data="tbRowData"
@@ -171,16 +176,11 @@
                   hide-bottom
                 >
                 </q-table>
+                <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
               </div>
               <div v-if="tab2 == 'B'">
                   contents2
               </div>
-            <h3 class="between">
-              <span>통계</span>
-              <a href="#" class="link_view">더보기</a>
-            </h3>
-        
-           
             <!-- E 통계 -->
             <!-- E 마이페이지-->
           </div>
@@ -306,9 +306,14 @@ export default {
             select1:ref(null),
             tab1:ref('A'),
             tab2:ref('A'),
+            rad1:ref('A'),
             tabs:[
                 {label:'마이페이지', value:'A', icon:'mail'},
                 {label:'내지갑', value:'B', icon:'photo'}
+            ],
+            tabs1:[
+                {label:'인사이트', value:'A', icon:'mail'},
+                {label:'BLASH', value:'B', icon:'photo'}
             ],
             options:[
                 'South Korea (+82)', '선택1', '선택2', '선택3', '선택4'

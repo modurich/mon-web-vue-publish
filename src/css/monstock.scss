@@ -7,6 +7,7 @@ $txt_blue:#00a2d0;
 $com_line:#d4d9ea;
 .font12{font-size:12px}
 .font16{font-size:16px;font-weight: 700;}
+.font18{font-size:18px !important;}
 .primary{color:$primary;}
 .secondary{color:$secondary}
 .dark{color:$txt_dk}
@@ -21,7 +22,7 @@ $com_line:#d4d9ea;
 
 .center{text-align: center;justify-content: center;}
 
-.font12{font-size:12px}
+
 .mgt16{margin-top:16px}
 
 body{
@@ -437,4 +438,10 @@ body{
         padding:0 16px;
         transform: translate(-50%, -50%);
     }
+}
+
+//add_tab_tit
+.add_tab_tit{
+    text-align: right;
+    h3{position: absolute;}
 }
