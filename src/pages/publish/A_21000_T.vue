@@ -183,17 +183,20 @@
                           {{ props.row.category }}
                       </q-td>
                       <q-td key="updown" :props="props">
-                        <span v-if="props.row.updown == 'U'" class="txt_red">상승<span>▲</span></span>
-                        <span v-else class="txt_blue">하락<span>▼</span></span>
+                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
+                        <span v-else class="ico_down">하락</span>
                       </q-td>
                       <q-td key="isSuccess" :props="props">
                         <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
                         <span v-else class="txt_blue">실패</span>
+                        <!-- <span class="txt_gray">무효</span> -->
                       </q-td>
                     </q-tr>
                   </template>
                 </q-table>
-                <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                <div class="btn_wrap">
+                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                </div>
               </div>
               <div v-if="tab2 == 'B'">
                   contents2

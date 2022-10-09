@@ -1,6 +1,5 @@
 // app global css in Scss form
-$primary:#8673FF;
-
+@import 'variables.scss';
 .text-deep-purple {
     color: $primary !important;
 }
@@ -77,6 +76,12 @@ $primary:#8673FF;
             height: 0px;
         }
     }
+}
+.ico_ip_search{
+    background: url('~assets/ico_ip_search.svg') center right no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
 }
 //check
 .q-checkbox--dense .q-checkbox__label {
@@ -232,7 +237,28 @@ $primary:#8673FF;
 .q-table__card {
     box-shadow:none;
 }
-
+.ico_up,.ico_down{
+    display:inline-flex;
+    align-items: center;
+    &:after{
+        content:'';
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+    }
+}
+.ico_up{
+    color: $txt_red;
+    &:after{
+        background: url('~assets/ico_up.svg') center right no-repeat;
+    }
+}
+.ico_down{
+    color: $txt_blue;
+    &:after{
+        background: url('~assets/ico_down.svg') center right no-repeat; 
+    }
+}
 //더보기
 .view2_wrap{
     position: relative;

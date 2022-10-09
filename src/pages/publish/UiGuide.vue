@@ -24,7 +24,7 @@
                     <p class="sbt">search type</p>
                     <m-input rounded v-model="search" filled type="search" hint="Search">
                         <template v-slot:append>
-                        <q-icon name="search" />
+                        <button class="ico_ip_search"/>
                         </template>
                     </m-input>
                     <p class="sbt">disabled</p>
