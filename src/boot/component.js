@@ -95,8 +95,6 @@ Vue.use(Plugin);
 import Polycy from 'pages/publish/Polycy.vue';
 Vue.component('Polycy', Polycy);
 
-import VueSnip from 'vue-snip';
-Vue.use(VueSnip);
 // leave the export, even if you don't use it
 export default async({ Vue, ssrContext }) => {
 };

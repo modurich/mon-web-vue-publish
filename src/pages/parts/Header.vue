@@ -6,7 +6,8 @@
             <div class="nav_wrap">
                 <h1>
                     <button class="ico_back">back</button>
-                    <a href="#" class="m_logo">monstock</a>
+                    <!-- <a href="/publish" class="m_logo">monstock</a> -->
+                    <router-link to="/publish" class="m_logo">monstock</router-link>
                 </h1>
                 <nav>
                     <ul class="nav_area">

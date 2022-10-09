@@ -55,9 +55,14 @@
               </div> -->
             </div>
             <!-- E PRO정보 -->
-            <p class="sub_info" v-if="snipOption.isSnipped" v-snip="{ lines: snipOption.lines, mode: snipOption.mode, onSnipped: onSnipped }">{{ snipContent }}</p>
-            <p class="sub_info" v-else>{{ snipContent }}</p>
-            <a href="#" class="link_view" v-if="snipOption.hasReadMore && snipOption.isSnipped && snipOption.hasEllipsis" @click="snipOption.isSnipped = false">더보기</a>            
+            <div class="sub_info">
+              <v-clamp autoresize :max-lines="2">
+                {{ snipContent }}
+                <template #after="{ toggle, expanded, clamped }">
+                  <button v-if="expanded || clamped" class="toggle btn btn-sm" @click="toggle">{{ clamped ? '더보기' : '닫기' }}</button>
+                </template>
+              </v-clamp>
+            </div>
             <div class="link_info">
               <p class="tit">
                 <span class="txt01">링크2</span>
@@ -261,6 +266,7 @@ import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
+import VClamp from '@boyuai/vue-clamp';
 
 const tbColInfo = [
   { name: 'date',       align: 'center', label: '일자',       field: 'date'},
@@ -283,7 +289,7 @@ const tbRowData = [
 
 
 export default {
- components: { MDialogBlank , Swiper, SwiperSlide},
+  components: { MDialogBlank, Swiper, SwiperSlide, VClamp },
     name: 'A_10000_P',
     
     data() {
@@ -355,24 +361,12 @@ export default {
 쓸쓸하랴?기쁘며, 그것은 창공에 공자는 커다란 그들을 위하여 때문이다. 설산에서 살았으며, 열락의 우리 것이다. 청춘의 청춘의 방황하여도, 피고, 날카로우나 보이는 이상이 이는 힘있다. 이상의 목숨을 너의 위하여
 위하여서, 청춘에서만 물방아 힘있다. 있는 튼튼하며, 꽃이 것이다. 실현에 그들의 그와 만천하의 인생을 크고 맺어, 있는가? 구하기 넣는 되려니와, 피고 소리다.이것은 그들은 사막이다. 청춘은 이상, 꽃이 불어
 미묘한 부패뿐이다. 이상의 속잎나고, 청춘은 군영과 힘차게 이 장식하는 것이다. 주는 그들에게 따뜻한 천고에 커다란 인생의 봄바람이다.`),
-          snipOption: {
-            isSnipped: true,
-            lines: 2,
-            mode: 'css',
-            floatElement: false,
-            hasReadMore: true,
-            hasEllipsis: true
-          }
         }
     },
     methods: {
       polcyPopup(type) {
         this.polcyType = type;
         this.dailog1 = true;
-      },
-      onSnipped: function (newState) {
-        console.log(newState);
-        this.snipOption.hasEllipsis = newState.hasEllipsis
       },
   }
 };
