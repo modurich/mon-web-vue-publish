@@ -149,19 +149,33 @@
             <!-- E 콘텐츠 관리 -->
             <div class="divider"/>
             <!-- S 통계 -->
+        
+            <div  class="between">
+              <h3>
+                <span>통계</span>
+              </h3>
+              <m-tabs class="card_type small" v-model="tab2" :items="tabs" />
+            </div>
+              <div v-if="tab2 == 'A'">
+                <q-table
+                  style="height: 400px"
+                  :data="tbRowData"
+                  :columns="tbColInfo"
+                  row-key="category"
+                  no-data-label="데이터가 존재하지 않습니다."
+                  hide-bottom
+                >
+                </q-table>
+              </div>
+              <div v-if="tab2 == 'B'">
+                  contents2
+              </div>
             <h3 class="between">
               <span>통계</span>
               <a href="#" class="link_view">더보기</a>
             </h3>
-            <q-table
-              style="height: 400px"
-              :data="tbRowData"
-              :columns="tbColInfo"
-              row-key="category"
-              no-data-label="데이터가 존재하지 않습니다."
-            >
-
-            </q-table>
+        
+           
             <!-- E 통계 -->
             <!-- E 마이페이지-->
           </div>
@@ -285,6 +299,7 @@ export default {
             check6:ref(false),
             select1:ref(null),
             tab1:ref('A'),
+            tab2:ref('A'),
             tabs:[
                 {label:'마이페이지', value:'A', icon:'mail'},
                 {label:'내지갑', value:'B', icon:'photo'}
