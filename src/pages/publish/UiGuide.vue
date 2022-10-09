@@ -17,9 +17,16 @@
                 <div class="type_view">
                     <p class="sbt">basic type</p>
                     <m-input v-model="text1" label="basic"/><br/>
+                    <br/>
                     <p class="sbt">round type</p>
                     <m-input rounded filled v-model="text1" label="filled"/><br/>
                     <m-input filled v-model="text1" label="filled" class="round_type"/><br />
+                    <p class="sbt">search type</p>
+                    <m-input rounded v-model="search" filled type="search" hint="Search">
+                        <template v-slot:append>
+                        <q-icon name="search" />
+                        </template>
+                    </m-input>
                     <p class="sbt">disabled</p>
                     <m-input v-model="text1" label="basic" disabled/><br/>
                     <m-input filled v-model="text1" label="filled" class="round_type" disabled/><br/>
