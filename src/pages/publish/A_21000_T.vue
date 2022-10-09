@@ -182,10 +182,10 @@
                       <q-td key="category" :props="props">
                           {{ props.row.category }}
                       </q-td>
-                      <q-td key="updown" :props="props">
+                      <q-td key="updown" :props="props" class="txt_blue">
                           {{ props.row.updown }}
                       </q-td>
-                      <q-td key="isSuccess" :props="props">
+                      <q-td key="isSuccess" :props="props" class="txt_red">
                           {{ props.row.isSuccess }}
                       </q-td>
                     </q-tr>
@@ -290,16 +290,16 @@ const tbColInfo = [
   { name: 'isSuccess',  align: 'center', label: '예측결과',   field: 'isSuccess'}
 ];
 const tbRowData = [
-  { date: '22.09.14', category: '삼성전자',   updown: '상승', isSuccess: '성공' },
-  { date: '22.09.14', category: 'SK하이닉스', updown: '하락', isSuccess: '성공' },
-  { date: '22.09.14', category: '네이버',     updown: '상승', isSuccess: '성공' },
-  { date: '22.09.14', category: '현대차',     updown: '상승', isSuccess: '실패' },
-  { date: '22.09.14', category: '신풍제약',   updown: '하락', isSuccess: '성공' },
-  { date: '22.09.14', category: '안랩',       updown: '상승', isSuccess: '실패' },
-  { date: '22.09.14', category: '카카오',     updown: '상승', isSuccess: '성공' },
-  { date: '22.09.14', category: 'KT&G',       updown: '하락', isSuccess: '성공' },
-  { date: '22.09.14', category: '셀트리온',    updown: '상승', isSuccess: '실패' },
-  { date: '22.09.14', category: '미래에셋증권', updown: '상승', isSuccess: '실패'}
+  { date: '22.09.14', category: '삼성전자',   updown: '상승 ▲', isSuccess: '성공' },
+  { date: '22.09.14', category: 'SK하이닉스', updown: '하락 ▼', isSuccess: '성공' },
+  { date: '22.09.14', category: '네이버',     updown: '상승 ▲', isSuccess: '성공' },
+  { date: '22.09.14', category: '현대차',     updown: '상승 ▲', isSuccess: '실패' },
+  { date: '22.09.14', category: '신풍제약',   updown: '하락 ▼', isSuccess: '성공' },
+  { date: '22.09.14', category: '안랩',       updown: '상승 ▲', isSuccess: '실패' },
+  { date: '22.09.14', category: '카카오',     updown: '상승 ▲', isSuccess: '성공' },
+  { date: '22.09.14', category: 'KT&G',       updown: '하락 ▼', isSuccess: '성공' },
+  { date: '22.09.14', category: '셀트리온',    updown: '상승 ▲', isSuccess: '실패' },
+  { date: '22.09.14', category: '미래에셋증권', updown: '상승 ▲', isSuccess: '실패'}
 ];
 
 
