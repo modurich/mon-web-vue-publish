@@ -38,21 +38,27 @@
           <div class="btn_wrap l_row_l"><m-button-3 size="large" color="primary" class="full" disabled>저장</m-button-3></div>
           <h3>링크</h3>
           <div class="link_info">
-            <p class="tit">
-              <span class="txt01">링크1</span>
-              <button class="ico_trash">삭제</button>
-            </p>
-            <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
-            <p class="tit">
-              <span class="txt01">링크2</span>
-              <button class="ico_trash">삭제</button>
-            </p>
-            <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
-            <p class="tit">
-              <span class="txt01">링크3</span>
-              <button class="ico_trash">삭제</button>
-            </p>
-            <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
+            <div>
+              <p class="tit">
+                <span class="txt01">링크1</span>
+                <button class="ico_trash">삭제</button>
+              </p>
+              <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
+            </div>
+            <div>
+              <p class="tit">
+                <span class="txt01">링크2</span>
+                <button class="ico_trash">삭제</button>
+              </p>
+              <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
+            </div>
+            <div>
+              <p class="tit">
+                <span class="txt01">링크3</span>
+                <button class="ico_trash">삭제</button>
+              </p>
+              <p class="link_txt"><a href="#">https://www.naver.com/</a></p>
+            </div>
           </div>
           <div class="btn_wrap l_row_l"><m-button-3 size="large" color="primary" class="full">추가</m-button-3></div>
 

@@ -64,11 +64,13 @@
               </v-clamp>
             </div>
             <div class="link_info">
-              <p class="tit">
-                <span class="txt01">링크2</span>
-                <button class="ico_trash">삭제</button>
-              </p>
-              <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
+              <div>
+                <p class="tit">
+                  <span class="txt01">링크2</span>
+                  <button class="ico_trash">삭제</button>
+                </p>
+                <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
+              </div>
             </div>
             <div class="btn_wrap l_row_l">
               <m-button-3 color="primary" class="full">추천코드</m-button-3>
