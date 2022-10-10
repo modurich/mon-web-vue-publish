@@ -105,7 +105,7 @@ export default {
         display: none;
     }
     .q-field__bottom.row.items-start.q-field__bottom--animated, .q-field__bottom.row.items-start.q-field__bottom--stale {
-        padding-left: 0px;
+        padding-left: 12px;
         font-size: 12px;
     }
     &.q-field__label.no-pointer-events.absolute.ellipsis{

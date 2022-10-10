@@ -1,5 +1,6 @@
 // app global css in Scss form
 @import 'variables.scss';
+
 .text-deep-purple {
     color: $primary !important;
 }
@@ -170,7 +171,7 @@
             font-size: 1.2em;
         }
         .q-carousel__navigation-icon--active{
-            color:#8673ff !important;
+            color:$primary !important;
         }
         .q-carousel__navigation-icon--inactive{
             color:#d4d9ea !important;

@@ -216,6 +216,10 @@
                     <m-button-3 color="mediumGrey" disabled>mediumGrey</m-button-3>
                     <m-button-3 lined disabled>lined</m-button-3>
                     <m-button-3 color="primary" disabled>primary</m-button-3>
+                    <m-button-3 lined color="primary" disabled>lined primary</m-button-3>
+                    <m-button-3 color="yellow" disabled>yellow</m-button-3>
+                    <m-button-3 lined color="lightGrey" disabled>lightGrey</m-button-3>
+                    <m-button-3  color="textPrimary" disabled>textPrimary</m-button-3>
                     
                 </div>
                 <p class="h2">Button Size [medium[default], large]</p>

@@ -4,7 +4,7 @@
     height:80px;
     width:100%;
     background:#fff;
-    border-bottom:1px solid #d4d9ea;
+    border-bottom:1px solid $com_line;
     margin-bottom:20px;
     
     .mob_only{display:none}
@@ -84,7 +84,7 @@
                 justify-content: space-between;
                 align-items: center;
                 font-size: 16px;
-                color:#9ca8ba;
+                color:$txt_gray;
                 width:540px;
                 a{
                     display: inline-flex;
@@ -174,8 +174,8 @@
     .aside_box{
         padding:25px 20px;
         background: #fff;
-        .tit{color:#141414;font-size:16px;font-weight: 700;}
-        .main_tit{color:#141414;margin: 0 0 10px;font-size:20px;font-weight: 700;}
+        .tit{color:$txt_dk;font-size:16px;font-weight: 700;}
+        .main_tit{color:$txt_dk;margin: 0 0 10px;font-size:20px;font-weight: 700;}
         .info_txt{margin: 0 0 32px;}
         .number_wrap{
             font-size: 16px;
@@ -202,7 +202,7 @@
             img{width:100%;height:100%}
         }
         .txt01{color: $primary;font-weight: 700;display: inline-flex;width:30px;justify-content: center;margin-right:8px}
-        .txt02{color:#141414;font-size:16px;font-weight: 700;width:calc(100% - 95px)}
+        .txt02{color:$txt_dk;font-size:16px;font-weight: 700;width:calc(100% - 95px)}
     }
 }
 //laside
@@ -226,7 +226,7 @@
                 right:0;
                 left:0;
                 height:1px;
-                border-bottom:1px solid #d4d9ea;
+                border-bottom:1px solid $com_line;
                 margin:0 -16px;
             }
         }
@@ -243,7 +243,7 @@
                     img{width:100%;height: 100%;}
                 }
             }
-            .user_name{color:#141414;margin:8px 0;font-weight: 700;}
+            .user_name{color:$txt_dk;margin:8px 0;font-weight: 700;}
             .user_grade{
                 display:inline-flex;
                 align-items: center;
@@ -260,13 +260,13 @@
             }
             .follow_wrap{
                 display:flex;
-                .txt01{color:#141414;line-height: 22px;}
+                .txt01{color:$txt_dk;line-height: 22px;}
                 .txt02{color:$primary;font-size:16px;line-height: 30px;font-weight: 700;}
                li{
                     width:50%;
                     span{display: block;}
                  }
-                li + li{border-left:1px solid #d4d9ea} 
+                li + li{border-left:1px solid $com_line} 
             }
         }
         .member_wrap{
@@ -294,7 +294,7 @@
                         white-space: nowrap;
                         width:150px;
                         display: inline-block;
-                        color:#141414;
+                        color:$txt_dk;
                         font-weight: 700;
                     }
                 }
@@ -306,19 +306,19 @@
                     display:flex;
                     justify-content: space-between;
                 }
-                .txt01{color:#141414;font-size:12px}
+                .txt01{color:$txt_dk;font-size:12px}
                 .txt02{color:$primary;font-size:12px;font-weight: 700;}
                 li + li{margin-top:8px}
             }
             .member_info{
                 display:flex;
-                .txt01{color:#141414;line-height: 22px;}
+                .txt01{color:$txt_dk;line-height: 22px;}
                 .txt02{color:$primary;font-size:16px;line-height: 30px;font-weight: 700;}
                li{
                     flex:1;
                     span{display: block;text-align: center;}
                  }
-                li + li{border-left:1px solid #d4d9ea} 
+                li + li{border-left:1px solid $com_line} 
             }
             .btn_area{
                 margin-top:32px;
@@ -364,7 +364,7 @@
             .alarm_tit{
                 display: flex;
                 align-items: center;
-                color: #141414;
+                color: $txt_dk;
                 &::before{
                     content:'';
                     background: url('~assets/ico_alarm.png') center center no-repeat;
@@ -387,7 +387,7 @@
             }
             .alarm_info{
                 background:#f4f2ff;
-                color: #141414;
+                color: $txt_dk;
                 border-radius: 8px;
                 padding:16px;
                 margin-top:16px;
@@ -442,7 +442,7 @@
         width:100%;
         height:80px;
         background:#fff;
-        border-top:1px solid #d4d9ea;
+        border-top:1px solid $com_line;
         nav{
             display: flex;
             align-items: center;
@@ -453,7 +453,7 @@
             justify-content: space-around;
             align-items: center;
             font-size: 16px;
-            color:#9ca8ba;
+            color:$txt_gray;
             width:100%;
             a{
                 display: inline-flex;
@@ -506,7 +506,7 @@
 //footer
 .footer_wrap {
     width:100%;
-    border-top:1px solid #d4d9ea;
+    border-top:1px solid $com_line;
     margin-top:60px;
      //700보다 작아질때
      @media (max-width: $breakpoint-xs-max) {

@@ -136,7 +136,7 @@ export default {
         color: #141414;
         &:disabled {
             // background-color: $ghost-white;
-            color: $white;
+            //color: $white;
         }
         &.lined {
             background-color: $white;
