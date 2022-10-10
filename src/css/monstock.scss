@@ -446,3 +446,33 @@ body{
     text-align: right;
     h3{position: absolute;}
 }
+
+//
+.insight_list{
+    display:flex;
+    flex-wrap: wrap;
+    .txt01{line-height: 22px;margin-bottom:4px}
+    .txt02{font-size:24px;color:$txt_dk;line-height: 40px;font-weight: 500;}
+   li{
+        width:50%;
+        text-align: center;
+        margin-bottom: 16px;
+        span{display: block;}
+        &:nth-child(2n){border-left:1px solid #d4d9ea}
+        
+    }
+    &.list3{
+        li{
+            width:calc(100% / 3);
+            border-left:1px solid #d4d9ea;
+            &:nth-child(3n + 1){border-left:0}
+        }  
+    }
+}
+.ico_star{
+    background: url('~assets/ico_star.svg') center center no-repeat;
+    width:18px;
+    height:18px;
+    display: inline-flex;
+    margin-right:4px;
+}

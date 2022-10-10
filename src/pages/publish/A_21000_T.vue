@@ -167,6 +167,29 @@
                     <m-radio v-model="rad1" val="B" label="주식"/>
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
+                  <span>22.09.20 ~ 22.09.20</span>
+                </div>
+                <ul class="insight_list">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_red">7.84%</span>
+                        <!-- 수익률 class txt_red,txt_blue -->
+                    </li>
+                </ul>
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
@@ -199,7 +222,72 @@
                 </div>
               </div>
               <div v-if="tab2 == 'B'">
-                  contents2
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
+                  <span>22.09.20 ~ 22.09.20</span>
+                </div>
+                <ul class="insight_list list3">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_red">3.84%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 익절</span>
+                        <span class="txt02 txt_red">18.05%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 손절</span>
+                        <span class="txt02 txt_blue">-5.01%</span>
+                        <!-- 수익률 class txt_red,txt_blue -->
+                    </li>
+                </ul>
+                <q-table
+                  :data="tbRowData"
+                  :columns="tbColInfo"
+                  row-key="category"
+                  no-data-label="데이터가 존재하지 않습니다."
+                  hide-bottom
+                >
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="date" :props="props">
+                        {{ props.row.date }}
+                      </q-td>
+                      <q-td key="category" :props="props">
+                          {{ props.row.category }}
+                      </q-td>
+                      <q-td key="updown" :props="props">
+                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
+                        <span v-else class="ico_down">하락</span>
+                      </q-td>
+                      <q-td key="isSuccess" :props="props">
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_blue">실패</span>
+                        <span v-else class="txt_gray">무효</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="btn_wrap">
+                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                </div>
               </div>
             <!-- E 통계 -->
             <!-- E 마이페이지-->
@@ -299,7 +387,7 @@ const tbRowData = [
   { date: '22.09.14', category: 'SK하이닉스', updown: 'D', isSuccess: 'S' },
   { date: '22.09.14', category: '네이버',     updown: 'U', isSuccess: 'S' },
   { date: '22.09.14', category: '현대차',     updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', category: '신풍제약',   updown: 'D', isSuccess: 'S' },
+  { date: '22.09.14', category: '신풍제약',   updown: 'D', isSuccess: 'M' },
   { date: '22.09.14', category: '안랩',       updown: 'U', isSuccess: 'F' },
   { date: '22.09.14', category: '카카오',     updown: 'U', isSuccess: 'S' },
   { date: '22.09.14', category: 'KT&G',       updown: 'D', isSuccess: 'S' },

@@ -10,7 +10,7 @@
           <div class="l_row_s"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
           <div class="btn_wrap l_row"><m-button-3 color="primary" class="full" disabled>인증번호발송</m-button-3></div>
           <div class="l_row between">
-            <span class="font16 dark">추천인 코드 (선택)</span>
+            <span class="font16 txt_dk">추천인 코드 (선택)</span>
             <span class="font12">입력시 <span class="primary">100 SMON</span> 즉시 지급!</span>
           </div>
           <div class="l_row"><m-input filled v-model="text1" label="영문, 숫자 혼합 8자리" class="round_type"/></div>

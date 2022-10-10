@@ -244,33 +244,11 @@
                             height="300px">
                         <q-carousel-slide name="style" class="column no-wrap flex-center">
                             <div class="q-mt-md text-center">
-                                <ol class="ranking_list">
-                                    <li>
-                                        <span class="txt01">1</span>
-                                        <span class="img"><img src="~assets/ranking_pro1.png" alt="프로필사진"/></span>
-                                        <span class="txt02">몬스탁닉네임</span>
-                                    </li>
-                                    <li>
-                                        <span class="txt01">2</span>
-                                        <span class="img"><img src="~assets/ranking_pro2.png" alt="프로필사진"/></span>
-                                        <span class="txt02">호빵맨</span>
-                                    </li>
-                                    <li>
-                                        <span class="txt01">3</span>
-                                        <span class="img"><img src="~assets/ranking_pro3.png" alt="프로필사진"/></span>
-                                        <span class="txt02">식빵맨</span>
-                                    </li>
-                                    <li>
-                                        <span class="txt01">4</span>
-                                        <span class="img"><img src="~assets/ranking_pro4.png" alt="프로필사진"/></span>
-                                        <span class="txt02">쨜랑이</span>
-                                    </li>
-                                    <li>
-                                        <span class="txt01">5</span>
-                                        <span class="img"><img src="~assets/ranking_pro5.png" alt="프로필사진"/></span>
-                                        <span class="txt02">세균맨</span>
-                                    </li>
-                                </ol>
+                                <ul>
+                                    <li>데이터1</li>
+                                    <li>데이터2</li>
+                                    <li>데이터3</li>
+                                </ul>
                             </div>
                         </q-carousel-slide>
                         <q-carousel-slide name="tv" class="column no-wrap flex-center">
@@ -467,7 +445,7 @@
                     <v-clamp autoresize :max-lines="2">
                         {{text3}}
                         <template #after="{ toggle, expanded, clamped }">
-                            <button v-if="expanded || clamped" class="toggle btn btn-sm" @click="toggle">{{ clamped ? '더보기' : '닫기' }}</button>
+                            <button v-if="expanded || clamped" class="btn_view_list" @click="toggle">{{ clamped ? '더보기' : '닫기' }}</button>
                         </template>
                     </v-clamp>
                 </div>
@@ -566,19 +544,19 @@ export default {
                 },
                 breakpoints: {
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 40
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 30
                     },
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20
                     },
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     }
                 }
