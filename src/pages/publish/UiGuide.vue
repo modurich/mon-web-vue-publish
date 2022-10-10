@@ -19,10 +19,9 @@
           <m-input v-model="text1" label="basic" /><br />
           <br />
           <p class="sbt">round type</p>
-          <m-input rounded filled v-model="text1" label="filled" /><br />
-          <m-input filled v-model="text1" label="filled" class="round_type" /><br />
+          <m-input filled v-model="text1" label="filled" class="round_type"/><br />
           <p class="sbt">search type</p>
-          <m-input rounded v-model="search" filled type="search" hint="Search">
+          <m-input v-model="search" filled type="search" hint="Search" class="round_type">
             <template v-slot:append>
               <button class="ico_ip_search" />
             </template>
