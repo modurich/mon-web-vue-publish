@@ -41,7 +41,7 @@ export default {
     background-image: url(/components/mtoggle_off.png);
 
     &.on {
-        background-image: url(/components/mtoggle_on.png);
+        background-image: url(/components/mtoggle_on.svg);
     }
 }
 </style>
