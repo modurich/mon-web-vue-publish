@@ -1,52 +1,52 @@
 <template>
-    <div class="dailog_wrap fixed_btn">
-        <div class="dailog_top">
-            <q-btn icon="close" flat  v-close-popup />
-        </div>
-        <q-card-section class="dg_con">
-            <p class="dialog_tit">{{subject}}</p>
-            {{content}}
-        </q-card-section>
-        <q-card-actions class="fixed_btn_wrap">
-        <m-button-3 flat size="large"  color="primary" v-close-popup class="full" >확인</m-button-3>
-        </q-card-actions>
+  <div class="dailog_wrap fixed_btn">
+    <div class="dailog_top">
+      <q-btn icon="close" flat v-close-popup />
     </div>
+    <q-card-section class="dg_con">
+      <p class="dialog_tit">{{subject}}</p>
+      {{content}}
+    </q-card-section>
+    <q-card-actions class="fixed_btn_wrap">
+      <m-button-3 flat size="large" color="primary" v-close-popup class="full">확인</m-button-3>
+    </q-card-actions>
+  </div>
 </template>
 
 <script>
 export default {
-    name:"Polycy",
-    props: {
-        polcyType: {
-            type: String,
-            default: function () {
-                return '01';
-            }
+  name: "Polycy",
+  props: {
+    polcyType: {
+      type: String,
+      default: function () {
+        return '01';
+      }
+    }
+  },
+  computed: {
+    subject() {
+      for (var content of this.polcyContents) {
+        if (this.polcyType === content.polcyType) {
+          return content.polcyName;
         }
+      }
+      return null;
     },
-    computed: {
-        subject() {
-            for (var content of this.polcyContents) {
-                if (this.polcyType === content.polcyType) {
-                    return content.polcyName;
-                }
-            }
-            return null;
-        },
-        content() {
-            for (var content of this.polcyContents) {
-                if (this.polcyType === content.polcyType) {
-                    return content.polcyContent;
-                }
-            };
+    content() {
+      for (var content of this.polcyContents) {
+        if (this.polcyType === content.polcyType) {
+          return content.polcyContent;
         }
-    },
-    data() {
-        return { 
-            "polcyContents":[{
-                "polcyType": "01",
-                "polcyName": "서비스 이용약관",
-                "polcyContent": `제 1 조 (목적)
+      };
+    }
+  },
+  data() {
+    return {
+      "polcyContents": [{
+        "polcyType": "01",
+        "polcyName": "서비스 이용약관",
+        "polcyContent": `제 1 조 (목적)
 
                     이 약관은 주식회사 모두리치(이하 "회사"라고 합니다)가 제공하는 인터넷과 모바일 애플리케이션 몬스탁 관련 제반 서비스(이하 "서비스"라고 합니다)를 이용하면서 "회사"와 회원의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다.
 
@@ -361,11 +361,11 @@ export default {
                     1. "서비스" 이용과 관련하여 "회사"와 "회원" 사이에 분쟁이 발생한 경우, "회사"와 "회원"은 분쟁의 해결을 위해 성실히 협의합니다.
                     2. "회사"와 "회원"간 발생한 분쟁에 대하여는 대한민국 법을 준거법으로 합니다.
                     3. "회사"와 "회원"간 발생한 분쟁에 관한 소송은 "회사"의 본사 소재지를 관할하는 법원을 전속 관할로 합니다.`
-            },
-            {
-                "polcyType": "02",
-                "polcyName": "개인정보 처리방침",
-                "polcyContent": `<주식회사 모두리치>('www.monstock.app'이하 '몬스탁')은(는) 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.
+      },
+      {
+        "polcyType": "02",
+        "polcyName": "개인정보 처리방침",
+        "polcyContent": `<주식회사 모두리치>('www.monstock.app'이하 '몬스탁')은(는) 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.
 
                     <주식회사 모두리치>('몬스탁') 은(는) 회사는 개인정보처리방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
 
@@ -537,12 +537,12 @@ export default {
                     - 전화 : (국번 없이) 1833-6972
                     - 주소 : (03171) 서울특별시 종로구 세종대로 209 정부서울청사 4층
                     ▶ 대검찰청 사이버범죄수사단 : 02-3480-3573 (www.spo.go.kr)
-                    ▶ 경찰청 사이버안전국 : 182 (http://cyberbureau.police.go.kr)` 
-            }, 
-            {
-                "polcyType": "03",
-                "polcyName": "게시물 작성규정",
-                "polcyContent": `몬스탁 게시물 작성 규정
+                    ▶ 경찰청 사이버안전국 : 182 (http://cyberbureau.police.go.kr)`
+      },
+      {
+        "polcyType": "03",
+        "polcyName": "게시물 작성규정",
+        "polcyContent": `몬스탁 게시물 작성 규정
 
                     1. 게시물이란 인사이트(종목추천 포함), 포스트, 댓글 등 몬스탁 서비스 내에 회원이 작성하는 모든 게시물을 말하며 텍스트, 이미지, 동영상, 음성 등 그 형태와는 무관하게 모두 해당합니다.
                     2. 몬스탁에 게시되는 게시물 중 특히 주식투자의견이 포함된 게시물의 경우 작성 시 항상 불특정 다수를 대상으로 작성해 주십시오.
@@ -561,8 +561,9 @@ export default {
 
                     위 내용에 동의하며 이를 위반하여 발생한 모든 민, 형사상 책임은 본인에게 있음을 서약합니다.
 
-                    - 금감원은 투자자문사나 투자일임업 등록 등을 하지 않은 자격이 없는 자가 타인에게 대가를 받고 일대일로 투자자문을 하는 행위를 금지하고 있습니다.` }]};
-    }
+                    - 금감원은 투자자문사나 투자일임업 등록 등을 하지 않은 자격이 없는 자가 타인에게 대가를 받고 일대일로 투자자문을 하는 행위를 금지하고 있습니다.` }]
+    };
+  }
 };
 </script>
 
