@@ -10,6 +10,10 @@ const routes = [
             { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },
             { path: '/publish/A_11200_P', component: () => import('pages/publish/A_11200_P.vue') },
             { path: '/publish/A_12000_P', component: () => import('pages/publish/A_12000_P.vue') },
+
+            { path: '/publish/A_12100_U', component: () => import('pages/publish/A_12100_U.vue') },
+            { path: '/publish/A_12200_U', component: () => import('pages/publish/A_12200_U.vue') },
+
             { path: '/publish/A_21121_P', component: () => import('pages/publish/A_21121_P.vue') },
             { path: '/publish/A_21120_T', component: () => import('pages/publish/A_21120_T.vue') },
             { path: '/publish/A_21000_T', component: () => import('pages/publish/A_21000_T.vue') },

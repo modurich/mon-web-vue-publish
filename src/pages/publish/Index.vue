@@ -80,6 +80,16 @@
           <td></td>
           <td></td>
           <td>
+            <router-link to="/publish/A_12000_P">A_12000_P</router-link>
+          </td>
+          <td>비밀번호찾기</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
             <router-link to="/publish/A_21121_P">A_21121_P</router-link>
           </td>
           <td>비밀번호 변경</td>
@@ -90,10 +100,30 @@
           <td></td>
           <td></td>
           <td>
-            <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T,A_12100_U,A_12200_U</router-link>
+            <router-link to="/publish/A_12100_U">A_12100_U</router-link>
+          </td>
+          <td>휴대폰번호변경팝업</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <router-link to="/publish/A_12200_U">A_12200_U</router-link>
+          </td>
+          <td>이메일 인증팝업</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T</router-link>
           </td>
           <td>프로필수정,계정정보 수정</td>
-          <td>휴대폰번호변경팝업,이메일 인증팝업</td>
+          <td></td>
         </tr>
         <!-- <tr>
                     <td>프로필1(마이페이지/내지갑)</td>
