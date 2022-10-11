@@ -125,26 +125,36 @@
           <td>프로필수정,계정정보 수정</td>
           <td></td>
         </tr>
-        <!-- <tr>
-                    <td>프로필1(마이페이지/내지갑)</td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <router-link to="/publish/A_21000_T">A_21000_T</router-link>
-                    </td>
-                    <td>프로필</td>
-                    <td>진행중</td>
-                </tr>  
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <router-link to="/publish/A_22100_P">A_22100_P</router-link>
-                    </td>
-                    <td>klip</td>
-                    <td>진행중</td>
-                </tr>        -->
+        <tr>
+            <td>프로필1(마이페이지/내지갑)</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_21000_T">A_21000_T</router-link>
+            </td>
+            <td>프로필</td>
+            <td>진행중</td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22100_P">A_22100_P</router-link>
+            </td>
+            <td>klip</td>
+            <td>진행중</td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_21310_T">A_21310_T</router-link>
+            </td>
+            <td>소셜</td>
+            <td>진행중</td>
+        </tr>       
       </tbody>
     </table>
   </div>

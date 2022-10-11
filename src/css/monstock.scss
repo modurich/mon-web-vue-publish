@@ -67,6 +67,14 @@ body{
         padding:48px 0 0 0;
         text-align: center
     }
+    .com_message{
+        font-size: 22px;
+        font-weight: 700;
+        color: $txt_dk;
+        text-align: center;
+        padding:32px 0 96px 0;
+    }
+
     .main_info{
         color: $txt_dk;
         text-align: center;
@@ -292,6 +300,59 @@ body{
     }
 }
 
+//follow
+.follow_info_wrap{
+    margin-bottom: 64px;
+    li{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:16px;
+        &:last-child{margin-bottom: 0;}
+        .my_profile{
+            display: flex;
+            align-items: center;
+            flex:1;
+            .img_area{
+                width:60px;
+                height:60px;
+                border-radius: 60px;
+                overflow: hidden;
+                margin-right:16px;
+                img{width:100%;height:100%}
+            }
+            .badge_area{span + span{margin-left:8px}}
+            .tit_area{
+                .txt_tit{
+                    display:block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $txt_dk;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        .follow_btn_wrap{display: inline-flex;
+        button + button{margin-left:8px}
+        }
+    }
+}
+
+.ico_user_pl,.ico_user_ck,.ico_menu{
+    display: flex;
+    width:24px;
+    height:24px;
+    text-indent: -999em;
+}
+.ico_user_pl{
+    background: url('~assets/ico_user_pl.svg');
+}
+.ico_user_ck{
+    background: url('~assets/ico_user_ck.svg');
+}
+.ico_menu{
+    background: url('~assets/ico_menu.svg');
+}
 //pro정보
 .pro_info_wrap{
     background: #f4f2ff;
