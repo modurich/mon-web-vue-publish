@@ -351,7 +351,7 @@ export default {
             },
             accessibility: {
                 point: {
-                    valueSuffix: '%'
+                    valueSuffix: '건'
                 }
             },
             // title: {
@@ -363,16 +363,32 @@ export default {
             // tooltip: {
             //     pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
             // },
+            title: {
+              text:'<div style="font-size: 50px;">30건</div>',
+              align:'center',
+              verticalAlign:'middle',
+              x:-30,
+              y:60
+            },
             plotOptions: {
                 pie: {
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
-                        enabled: true,
-                        format: '{point.name}: {y} %'
+                        enabled: false,
+                        format: '{point.name}: {y} 건'
                     },
                     showInLegend: true
                 }
+            },
+            legend: {
+              align: 'right',
+              verticalAlign: 'top',
+              y: 50,
+              layout: 'vertical',
+              bubbleLegend: {
+                enabled: true
+              }
             },
             series: [{
                 name: 'Registrations',
@@ -380,21 +396,17 @@ export default {
                 innerSize: '75%',
                 data: [
                 {
-                    name: 'EV',
-                    y: 68.1
+                    name: '단기',
+                    y: 3
                 }, 
                 {
-                    name: 'Hybrids',
-                    y: 11.0
+                    name: '중기',
+                    y: 6
                 }, 
                 {
-                    name: 'Diesel',
-                    y: 11.2
-                }, 
-                // {
-                //     name: 'Petrol',
-                //     y: 9.7
-                // }
+                    name: '단기',
+                    y: 21
+                }
               ]
             }]
             },
