@@ -6,6 +6,7 @@
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             <!-- S 마이페이지-->
+            <highcharts :options="chartOptions"></highcharts>
             <div class="mypage_info_wrap">
               <div class="my_profile">
                 <div class="img_area">
@@ -296,73 +297,7 @@
           </div>
           <div class="tab_contents" v-if="tab1 == 'B'">
             <!-- S 내지갑 -->
-            <ul class="my_list_wrap">
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">이름</span>
-                  <span class="txt02">홍길동</span>
-                </div>
-                <div class="btn_area"><button class="btn_view">비밀번호 변경</button></div>
-              </li>
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">휴대폰 번호</span>
-                  <span class="txt02">+82 010-1234-5678</span>
-                </div>
-                <div class="btn_area"><button class="btn_view" @click="dailog1 = true">휴대폰 번호 변경</button></div>
-                <!-- S 휴대폰 번호 변경 -->
-                <m-dialog v-model="dailog1">
-                  <div class="dailog_wrap">
-                    <div class="dailog_top">
-                        <q-btn icon="close" flat  v-close-popup />
-                    </div>
-                    <q-card-section class="dg_con">
-                        <p class="dialog_tit l_row_l">휴대폰 인증</p>
-                        <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
-                        <div class="l_row"><m-select v-model="select1" :options="options" /></div>
-                        <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
-                        <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송 (60s)</m-button-3></div>
-                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
-                    </q-card-section>
-                  </div>
-                </m-dialog>
-                <!-- E 휴대폰 번호 변경 -->
-              </li>
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">이메일</span>
-                  <span class="txt02">example@monstock.com</span>
-                </div>
-                <div class="btn_area"><button class="btn_view" @click="dailog2 = true">이메일 등록 / 변경</button></div>
-                <!-- S 이메일 인증 -->
-                <m-dialog v-model="dailog2">
-                  <div class="dailog_wrap">
-                      <div class="dailog_top">
-                          <q-btn icon="close" flat  v-close-popup />
-                      </div>
-                      <q-card-section class="dailog_contents">
-                          <p class="dialog_tit l_row_l">이메일 인증</p>
-                          <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
-                          <div class="l_row"><m-input filled v-model="text1" label="이메일 주소" class="round_type"/></div>
-                          <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송</m-button-3></div>
-                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
-                      </q-card-section>
-                    </div>
-                </m-dialog>
-                <!-- E 이메일 인증 -->
-              </li>
-            </ul>
-            <p class="secondary">
-              회원가입, 약관정책 변경 등 비마케팅성 정보는 수신동의 여부와 관계없이 발송됩니다.
-            </p>
-            <div class="check_wrap">
-              <div class="check_area"><m-checkbox size="md" v-model="check1" label="마케팅 정보 수신 동의 (선택)"/></div>
-            </div>
-            <p class="sub_info">
-              회원가입, 약관정책 변경 등 비마케팅성 정보는 수신동의 여부와 관계없이 발송됩니다.
-            </p>
+            
             <!-- E 내지갑 -->
           </div>
          
@@ -404,6 +339,60 @@ export default {
     
     data() {
         return {
+          chartOptions: {
+            colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
+            chart: {
+                type: 'pie'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            // title: {
+            //     text: 'February 2020 Norway passenger auto registrations'
+            // },
+            // subtitle: {
+            //     text: 'Source:<a href="https://cleantechnica.com/2020/03/07/pioneering-norway-rises-above-68-plug-in-vehicle-market-share-in-february/">cleantechnica</a>'
+            // },
+            // tooltip: {
+            //     pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            // },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {y} %'
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Registrations',
+                colorByPoint: true,
+                innerSize: '75%',
+                data: [
+                {
+                    name: 'EV',
+                    y: 68.1
+                }, 
+                {
+                    name: 'Hybrids',
+                    y: 11.0
+                }, 
+                {
+                    name: 'Diesel',
+                    y: 11.2
+                }, 
+                // {
+                //     name: 'Petrol',
+                //     y: 9.7
+                // }
+              ]
+            }]
+            },
             text1:ref('호빵맨'),
             text2:ref(''),
             text3:ref(''),
