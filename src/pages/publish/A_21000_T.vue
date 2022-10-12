@@ -6,7 +6,12 @@
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             <!-- S 마이페이지-->
-            <highcharts :options="chartOptions"></highcharts>
+            <div class="chart_wrap">
+              <div class="chart_area">
+                <span class="txt_area">50%</span>
+              </div>
+              <highcharts :options="chartOptions"></highcharts>
+            </div>
             <div class="mypage_info_wrap">
               <div class="my_profile">
                 <div class="img_area">

@@ -538,3 +538,24 @@ body{
     display: inline-flex;
     margin-right:4px;
 }
+
+//chart_wrap
+.chart_wrap{
+    border:1px solid red;
+    .chart_area{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+    .txt_area{
+        // display: inline-block;
+        // border:10px solid blue;
+        // z-index: 100;
+        // position: absolute;
+        // left:50%;
+        // top:50%;
+        // transform: translate(-50%, -50%);
+    }
+    // .highcharts-container {position: absolute;}
+}
