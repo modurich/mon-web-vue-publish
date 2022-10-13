@@ -5,13 +5,6 @@
           <h2 class="line_type">프로필</h2>
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
-            <!-- S 마이페이지-->
-            <div class="chart_wrap">
-              <div class="chart_area">
-                <span class="txt_area">50%</span>
-              </div>
-              <highcharts :options="chartOptions"></highcharts>
-            </div>
             <div class="mypage_info_wrap">
               <div class="my_profile">
                 <div class="img_area">
@@ -236,7 +229,7 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
+                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
                   <span>22.09.20 ~ 22.09.20</span>
                 </div>
                 <ul class="insight_list list3">
@@ -295,6 +288,49 @@
                 </q-table>
                 <div class="btn_wrap">
                   <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                </div>
+                <div class="divider1"/>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
+                  <span>22.09.20 ~ 22.09.20</span>
+                </div>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">평가 수익률</span>
+                          <span class="txt02 txt_blue">-5.01%</span>
+                      </li>
+                      <li>
+                          <span class="txt01">투자 비중</span>
+                          <span class="txt02">80%</span>
+                      </li>
+                  </ul>
+                  </div>
                 </div>
               </div>
             <!-- E 통계 -->
@@ -364,51 +400,52 @@ export default {
             //     pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
             // },
             title: {
-              text:'<div style="font-size: 50px;">30건</div>',
+              text:'<div style="font-size: 20px;font-weight:700">30건</div>',
               align:'center',
               verticalAlign:'middle',
-              x:-30,
-              y:60
+              x:0,
+              y:25
             },
             plotOptions: {
                 pie: {
+                    //size: 100,
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: false,
                         format: '{point.name}: {y} 건'
                     },
-                    showInLegend: true
-                }
-            },
-            legend: {
-              align: 'right',
-              verticalAlign: 'top',
-              y: 50,
-              layout: 'vertical',
-              bubbleLegend: {
-                enabled: true
-              }
-            },
-            series: [{
-                name: 'Registrations',
-                colorByPoint: true,
-                innerSize: '75%',
-                data: [
-                {
-                    name: '단기',
-                    y: 3
-                }, 
-                {
-                    name: '중기',
-                    y: 6
-                }, 
-                {
-                    name: '단기',
-                    y: 21
-                }
-              ]
-            }]
+                    showInLegend: false
+                  }
+                },
+                legend: {
+                  align: 'right',
+                  verticalAlign: 'top',
+                  y: 50,
+                  layout: 'vertical',
+                  bubbleLegend: {
+                    enabled: true
+                  }
+                },
+                series: [{
+                  name: 'Registrations',
+                  colorByPoint: true,
+                  innerSize: '75%',
+                  data: [
+                  {
+                      name: '단기',
+                      y: 3
+                  }, 
+                  {
+                      name: '중기',
+                      y: 6
+                  }, 
+                  {
+                      name: '단기',
+                      y: 21
+                  }
+                ]
+              }]
             },
             text1:ref('호빵맨'),
             text2:ref(''),

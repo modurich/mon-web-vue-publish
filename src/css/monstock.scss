@@ -438,6 +438,12 @@ body{
     width:calc(100% + 32px);
     margin:32px -16px 32px -16px;
 }
+.divider1{
+    background:$com_line;
+    height: 1px;
+    width:100%;
+    margin:64px 0px 64px 0px;
+}
 //klip
 .ico_klip_b{
     background: url('~assets/ico_klip.svg') center center no-repeat;
@@ -539,23 +545,68 @@ body{
     margin-right:4px;
 }
 
-//chart_wrap
-.chart_wrap{
-    // border:1px solid red;
-    .chart_area{
-        position: absolute;
-        left:50%;
-        top:50%;
-        transform: translate(-50%, -50%);
+//blash_wrap
+.blash_wrap{
+    display:flex;
+    flex-wrap: wrap;
+    .blash_list{
+        flex:1;
+        display: flex;
+        align-items: center;
+        .return_wrap{
+            display:flex;
+            flex:1;
+            height: 66px;
+            .txt01{line-height: 22px;font-size: 14px;}
+            .txt02{color:$txt_dk;margin-top:8px;font-size:24px;line-height: 30px;}
+           li{
+                width:50%;
+                text-align: center;
+                span{display: block;}
+             }
+            li + li{border-left:1px solid #d4d9ea} 
+        }
     }
-    .txt_area{
-        // display: inline-block;
-        // border:10px solid blue;
-        // z-index: 100;
-        // position: absolute;
-        // left:50%;
-        // top:50%;
-        // transform: translate(-50%, -50%);
+    
+    .blash_chart{
+        display:flex;
+        flex:1;
+        .chart_wrap{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .chart_area{
+                width:150px;
+                height:150px;
+                > div{width:100%;height:100%}
+            }
+            .regend_box{
+                width:calc(100% - 150px);
+                padding:0 60px 0 20px;
+                box-sizing: border-box;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin:4px 0;
+                }
+                .tit,.con{color:$txt_dk;line-height: 26px;
+                    display: flex;align-items: center;
+                }
+                .dot{
+                    display: inline-flex;
+                    width:16px;
+                    height: 16px;
+                    border-radius: 16px;
+                    margin-right:8px
+                }
+            }
+        }
     }
-    // .highcharts-container {position: absolute;}
+     //700보다 작아질때
+     @media (max-width: $breakpoint-xs-max) {
+        .blash_list{margin:32px 0;width:100%;flex: inherit;} 
+        .blash_chart{width:100%;flex: inherit;}  
+        .regend_box{padding:0 40px 0 40px !important;}
+     }
 }

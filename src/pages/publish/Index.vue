@@ -145,16 +145,16 @@
             <td>klip</td>
             <td></td>
         </tr>   
-        <!-- <tr>
+        <tr>
             <td></td>
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/A_21310_T">A_21310_T</router-link>
+                <router-link to="/publish/A_21310_T">A_21310_T,A_21320_T,A_21330_T</router-link>
             </td>
-            <td>소셜</td>
+            <td>소셜-팔로워,팔로잉,차단</td>
             <td>진행중</td>
-        </tr>        -->
+        </tr>       
       </tbody>
     </table>
   </div>
