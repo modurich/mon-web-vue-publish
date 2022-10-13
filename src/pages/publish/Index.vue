@@ -153,7 +153,7 @@
                 <router-link to="/publish/A_21310_T">A_21310_T,A_21320_T,A_21330_T</router-link>
             </td>
             <td>소셜-팔로워,팔로잉,차단</td>
-            <td>진행중</td>
+            <td></td>
         </tr>       
       </tbody>
     </table>
