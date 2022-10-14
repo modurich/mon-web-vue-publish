@@ -130,7 +130,7 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/A_21000_T">A_21000_T</router-link>
+                <router-link to="/publish/A_21000_T">A_21000_T,A_22000_T</router-link>
             </td>
             <td>프로필</td>
             <td>진행중</td>

@@ -366,7 +366,24 @@
           </div>
           <div class="tab_contents" v-if="tab1 == 'B'">
             <!-- S 내지갑 -->
-            <div class="title_type1">
+            <!-- S 지갑연결 -->
+            <div class="swap_wrap">
+              <div>
+                <a href="#" class="link_view right">내역보기</a>
+              </div>
+              <div class="btn_wrap">
+                <m-button-3 size="large" color="primary" class="full">
+                  지갑 연결
+                  <q-tooltip anchor="top middle" self="bottom middle" :offset="[10, 30]">
+                    🎁 최초 연결 시 7.7777777 MON 지급
+                  </q-tooltip>
+                </m-button-3>
+              </div>
+            </div>
+            <!-- E 지갑연결 -->
+           
+             <!-- S 스왑하기 -->
+             <div class="title_type1">
               <div class="txt_area">
                 <span class="txt01"><img src="~assets/ico_cp02.svg" alt=""/><span class="bold">Metamask</span> 지갑 연결중</span>
                 <a href="#" class="link_view">주소보기</a>
@@ -385,7 +402,6 @@
               </q-menu>
             </button>
             </div>
-             <!-- S 스왑하기 -->
             <div class="swap_wrap">
               <div class="icon_area">
                 <img src="~assets/ico_cp01.svg" alt=""/> MON
@@ -393,10 +409,8 @@
               <p class="txt01">999,999,999.9999999999<span>MON</span></p>
               <p class="txt02">$ 999,999,999.99</p>
               <p class="txt03">( ₩ 999,999,999,999 )</p>
-              <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">스왑하기</m-button-3></div>
+              <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full"><i class="ico_swap"/>스왑하기</m-button-3></div>
             </div>
-            <!-- E 스왑하기 -->
-            
             <div class="btn_wrap l_row_l">
               <m-button-3 lined color="primary" class="full">PIN코드 변경</m-button-3>
               <m-button-3 lined color="primary" class="full">PIN코드 찾기</m-button-3>
@@ -406,6 +420,8 @@
               <a href="#" class="link_view gray">지갑해제</a>
               <a href="#" class="link_view gray">내역보기</a>
             </div>
+            <!-- E 스왑하기 -->
+           
             <div class="divider1 small"/>
             <div class="between">
               <span class="txt_dk">sMON</span>

@@ -735,6 +735,14 @@ body{
         .btn_wrap{width:100%;}
      }
 }
+.ico_swap{
+    display: inline-flex;
+    width:20px;
+    height:20px;
+    margin-right: 8px;
+    background: url('~assets/ico_swap.svg') center right no-repeat;
+}
+
 //title
 .title_type1{
     display:flex;
