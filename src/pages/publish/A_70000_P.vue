@@ -1,14 +1,25 @@
 <template>
     <div class="centerarea_box1">
         <div class="con_box">
-          <h2 class="line_type">프로필</h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
-          <div class="tab_contents" v-if="tab1 == 'A'">
-            <!-- S 마이페이지-->
+          <h2 class="line_type between">
+            <span>ooo님 프로필</span>
+            <button class="ico_menu" color="secondary" label="Auto-Close Menu">
+              menu
+              <q-menu auto-close :offset="[30, 10]">
+                <q-list style="min-width: 80px">
+                  <q-item clickable>
+                    <q-item-section>?</q-item-section>
+                  </q-item>
+                  <q-separator />
+                </q-list>
+              </q-menu>
+            </button>
+          </h2>
+          <div class="box_contents">  
             <div class="mypage_info_wrap">
               <div class="my_profile">
                 <div class="img_area">
-                  <img src="~assets/profile_img1.png" alt="profile"/>
+                  <img src="~assets/profile_img2.png" alt="profile"/>
                 </div>
                 <div class="tit_area">
                   <span class="txt_tit">몬스탁닉넴열글자까지</span>
@@ -65,15 +76,14 @@
             <div class="link_info">
               <div>
                 <p class="tit">
-                  <span class="txt01">링크2</span>
+                  <span class="txt01">링크명01</span>
                   <button class="ico_trash">삭제</button>
                 </p>
                 <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
               </div>
             </div>
             <div class="btn_wrap l_row_l">
-              <m-button-3 color="primary" class="full">추천코드</m-button-3>
-              <m-button-3 color="primary" class="full">내 정보 수정</m-button-3>
+              <m-button-3 color="primary" class="full">팔로우</m-button-3>
               <m-button-3 lined color="primary" class="ico_add">추가</m-button-3>
             </div>
             <!-- S 추천 사용자 -->
@@ -147,12 +157,32 @@
             </div>
             <!-- E 추천 사용자 -->
             <div class="divider"/>
-            <!-- S 콘텐츠 관리 -->
-            <h3 class="between">
-              <span>콘텐츠 관리</span>
-              <a href="#" class="link_view">구독현황</a>
+            <!-- S NFT -->
+            <h3 class="l_row_l">
+              <span>NFT</span>
             </h3>
-            <!-- E 콘텐츠 관리 -->
+            <div class="ico_top">
+              <i class="ico_power"></i>
+            </div>
+            <div class="com_message">
+              비공개로 설정되어 있습니다
+            </div>
+            <div>
+              <span class="txt_dk font16 bold">장착한 슬롯</span>
+            </div>
+            <ul class="nft_wrap">
+              <li><img src="~assets/nft_img01.png" alt="" /></li>
+              <li><img src="~assets/nft_img02.png" alt="" /></li>
+            </ul>
+            <div class="between">
+              <span class="txt_dk font16 bold">보유중인 NFT</span>
+              <a href="#" class="link_view">전체보기</a>
+            </div>
+            <ul class="nft_wrap">
+              <li><img src="~assets/nft_img01.png" alt="" /></li>
+              <li><img src="~assets/nft_img02.png" alt="" /></li>
+            </ul>
+            <!-- E NFT -->
             <div class="divider"/>
             <!-- S 통계 -->
         
@@ -364,159 +394,6 @@
             <!-- E 통계 -->
             <!-- E 마이페이지-->
           </div>
-          <div class="tab_contents" v-if="tab1 == 'B'">
-            <!-- S 내지갑 -->
-            <div class="title_type1">
-              <div class="txt_area">
-                <span class="txt01"><img src="~assets/ico_cp02.svg" alt=""/><span class="bold">Metamask</span> 지갑 연결중</span>
-                <a href="#" class="link_view">주소보기</a>
-              </div>
-              <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-              menu
-              <q-menu auto-close :offset="[30, 10]">
-                <q-list style="min-width: 80px">
-                  <q-item clickable>
-                    <q-item-section>락업정보</q-item-section>
-                  </q-item>
-                  <q-item clickable>
-                    <q-item-section>보내기</q-item-section>
-                  </q-item>
-                </q-list>
-              </q-menu>
-            </button>
-            </div>
-             <!-- S 스왑하기 -->
-            <div class="swap_wrap">
-              <div class="icon_area">
-                <img src="~assets/ico_cp01.svg" alt=""/> MON
-              </div>
-              <p class="txt01">999,999,999.9999999999<span>MON</span></p>
-              <p class="txt02">$ 999,999,999.99</p>
-              <p class="txt03">( ₩ 999,999,999,999 )</p>
-              <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">스왑하기</m-button-3></div>
-            </div>
-            <!-- E 스왑하기 -->
-            
-            <div class="btn_wrap l_row_l">
-              <m-button-3 lined color="primary" class="full">PIN코드 변경</m-button-3>
-              <m-button-3 lined color="primary" class="full">PIN코드 찾기</m-button-3>
-              <m-button-3 lined color="primary" class="full">OTP 설정</m-button-3>
-            </div>
-            <div class="between">
-              <a href="#" class="link_view gray">지갑해제</a>
-              <a href="#" class="link_view gray">내역보기</a>
-            </div>
-            <div class="divider1 small"/>
-            <div class="between">
-              <span class="txt_dk">sMON</span>
-              <span class="primary font20 bold">288,897,913.21</span>
-            </div>
-            <div class="divider1 small"/>
-            <div class="between">
-              <span class="txt_dk">원화</span>
-              <span class="primary font20 bold">₩ 900,000</span>
-            </div>
-            <ul class="list_type1">
-              <li>
-                <span class="txt01">등록상태</span>
-                <span class="txt02 txt_blue">승인완료</span>
-              </li>
-              <li>
-                <span class="txt01">금융기관명</span>
-                <span class="txt02">기업은행</span>
-              </li>
-              <li>
-                <span class="txt01">계좌번호</span>
-                <span class="txt02">12345678901234567890</span>
-              </li>
-              <li>
-                <span class="txt01">예금주명</span>
-                <span class="txt02">홍길동</span>
-              </li>
-            </ul>
-            <div class="btn_wrap l_row_l">
-              <m-button-3 lined color="primary" class="full">출금 계좌 등록 / 변경</m-button-3>
-              <m-button-3 lined color="primary" class="full">원화 출금 신청</m-button-3>
-            </div>
-            <div class="divider "/>
-            <m-tabs class="line_type large" v-model="tab3" :items="tabs2"/>
-            <div class="tab_contents" v-if="tab3 == 'A'">
-              <!-- S 코인 -->
-              <ul class="coin_list">
-                <li>
-                  <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
-                  </div>
-                  <div class="txt_area">
-                    <p class="txt01">9,739,432,138.3832 MON</p>
-                    <p class="txt02">＄9,432,138.3832</p>
-                    <p class="txt02">(￦ 000,000)</p>
-                    <p class="txt03 right">1 MON ≒ $ 0.001</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
-                  </div>
-                  <div class="txt_area">
-                    <p class="txt01">9,739,432,138.3832 MON</p>
-                    <p class="txt02">＄9,432,138.3832</p>
-                    <p class="txt02">(￦ 000,000)</p>
-                    <p class="txt03 right">1 MON ≒ $ 0.001</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
-                  </div>
-                  <div class="txt_area">
-                    <p class="txt01">9,739,432,138.3832 MON</p>
-                    <p class="txt02">＄9,432,138.3832</p>
-                    <p class="txt02">(￦ 000,000)</p>
-                    <p class="txt03 right">1 MON ≒ $ 0.001</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
-                  </div>
-                  <div class="txt_area">
-                    <p class="txt01">9,739,432,138.3832 MON</p>
-                    <p class="txt02">＄9,432,138.3832</p>
-                    <p class="txt02">(￦ 000,000)</p>
-                    <p class="txt03 right">1 MON ≒ $ 0.001</p>
-                  </div>
-                </li>
-              </ul>
-              <!-- E 코인 -->
-            </div>
-            <div class="tab_contents" v-if="tab3 == 'B'">
-              <!-- S NFT -->
-              <div class="flex right mgt16 l_row_l">
-                <span class="txt_dk mgr10">비공개</span> <m-toggle v-model="toggle1" />
-              </div>
-              <div class="between">
-                <span class="txt_dk font16 bold">보유중인 NFT</span>
-                <a href="#" class="primary">슬롯확장 &nbsp;&nbsp; +</a>
-              </div>
-              <ul class="nft_wrap">
-                <li><img src="~assets/nft_img01.png" alt="" /></li>
-                <li><img src="~assets/nft_img02.png" alt="" /></li>
-              </ul>
-              <div class="between">
-                <span class="txt_dk font16 bold">보유중인 NFT</span>
-                <a href="#" class="link_view">전체보기</a>
-              </div>
-              <div class="ico_top">
-                <i class="ico_error"></i>
-              </div>
-              <div class="com_message">
-                보유중인 NFT가 없습니다
-              </div>
-              <!-- E NFT -->
-            </div>
-            <!-- E 내지갑 -->
-          </div>
         </div>
     </div>
 </template>
@@ -642,10 +519,8 @@ export default {
             check5:ref(false),
             check6:ref(false),
             select1:ref(null),
-            toggle1: ref(false),
             tab1:ref('A'),
             tab2:ref('A'),
-            tab3:ref('A'),
             rad1:ref('A'),
             tabs:[
                 {label:'마이페이지', value:'A', icon:'mail'},
@@ -654,10 +529,6 @@ export default {
             tabs1:[
                 {label:'인사이트', value:'A', icon:'mail'},
                 {label:'BLASH', value:'B', icon:'photo'}
-            ],
-            tabs2:[
-                {label:'코인', value:'A', icon:'mail'},
-                {label:'NFT', value:'B', icon:'photo'}
             ],
             options:[
                 'South Korea (+82)', '선택1', '선택2', '선택3', '선택4'

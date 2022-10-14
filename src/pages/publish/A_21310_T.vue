@@ -1,6 +1,5 @@
 <template>
     <div class="centerarea_box1">
-      <q-form>
         <div class="con_box">
           <h2 class="line_type">프로필</h2>
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
@@ -712,9 +711,7 @@
             </ul>
             <!-- E 차단 -->
           </div>
-         
         </div>
-      </q-form>
     </div>
 </template>
 

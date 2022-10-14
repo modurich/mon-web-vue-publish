@@ -154,6 +154,36 @@
             </td>
             <td>소셜-팔로워,팔로잉,차단</td>
             <td></td>
+        </tr>    
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_21510_T">A_21510_T,A_21520_T</router-link>
+            </td>
+            <td>플레이어 추천-인기추천,신규가입</td>
+            <td></td>
+        </tr>     
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_70000_P">A_70000_P</router-link>
+            </td>
+            <td>ooo프로필</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22923_P">A_22923_P</router-link>
+            </td>
+            <td>보유 NFT</td>
+            <td></td>
         </tr>       
       </tbody>
     </table>
