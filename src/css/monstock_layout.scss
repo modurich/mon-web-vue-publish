@@ -50,8 +50,33 @@
                 height:36px;
                 border-radius:36px;
                 margin-left:20px;
-                overflow: hidden;
-                img{width:100%;height:100%}
+                .img_area{
+                    position: relative;
+                    .alarm_dot{
+                        position: absolute;
+                        display: flex;
+                        top:3px;
+                        right:-5px;
+                        width:12px;
+                        height: 12px;
+                        border-radius: 12px;
+                        background-color: #fb1f1f;
+                        text-indent: -999em;
+                    }
+                }
+                img{width:100%;height:100%;border-radius:36px;}
+                //1284px보다 작아질때
+                @media (max-width: 1284px) {
+                    .img_area{
+                        .alarm_dot{
+                            top:2px;
+                            right:0px;
+                            width:8px;
+                            height: 8px;
+                            border-radius: 8px;
+                        }
+                    }
+                }
             }
             button + button{margin-left:20px}
         }
@@ -240,6 +265,7 @@
                     border:3px solid $primary;
                     border-radius:80px;
                     overflow: hidden;
+                    box-sizing: border-box;
                     img{width:100%;height: 100%;}
                 }
             }

@@ -13,8 +13,8 @@
                 <div class="tit_area">
                   <span class="txt_tit">몬스탁닉넴열글자까지</span>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </div>
@@ -35,8 +35,8 @@
               <li>
                 <img src="~assets/nft_img02.png" alt="" />
                 <p class="txt01">웰컴 카드 - 골드</p>
-                <p class="txt02">몬스탁에 가입해주셔서 감사합니다.<br/>
-                웰컴 카드 보유자에게는 행운이 찾아올지도...!</p>
+                <p class="txt02">100장 한정으로 발행한 평생멤버십 카드입니다.
+                이 카드를 슬롯에 장착하면 기간 제한 없이 몬스탁 ...</p>
               </li>
             </ul>
           </div>

@@ -83,6 +83,7 @@ export default {
     box-sizing: border-box;
     position: relative;
     border-radius: 0;
+    padding: 0 20px;
     border: 1px solid transparent;
     // outline: none;
     &.full{width:100% !important}
@@ -96,7 +97,7 @@ export default {
     &.size-medium {
         height: 46px;
         min-height: 46px;
-        width: 120px;
+        min-width: 120px;
         font-size: 14px;
         font-weight: 500;
         line-height: 21px;
@@ -104,7 +105,7 @@ export default {
     &.size-large {
         height: 56px;
         min-height: 56px;
-        width: 120px;
+        min-width: 120px;
         font-size: 20px;
         font-weight: 500;
         line-height: 21px;

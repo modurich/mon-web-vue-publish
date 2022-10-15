@@ -36,8 +36,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -74,8 +74,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -112,8 +112,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -150,8 +150,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -188,8 +188,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -232,8 +232,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉넴열글자까지</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -244,8 +244,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임02</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -256,8 +256,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임03</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -268,8 +268,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임04</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -280,8 +280,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임05</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -315,8 +315,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -353,8 +353,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -391,8 +391,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -429,8 +429,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -467,8 +467,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -526,8 +526,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -564,8 +564,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -602,8 +602,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -640,8 +640,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>
@@ -678,8 +678,8 @@
                   <div class="tit_area">
                     <span class="txt_tit">몬스탁닉넴열글자까지</span>
                     <span class="badge_area">
-                      <span class="badge type1">PRO</span>
-                      <span class="badge type2">PL1</span>
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
                     </span>
                   </div>
                 </div>

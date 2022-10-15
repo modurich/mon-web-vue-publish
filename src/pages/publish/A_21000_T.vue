@@ -13,8 +13,8 @@
                 <div class="tit_area">
                   <span class="txt_tit">몬스탁닉넴열글자까지</span>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </div>
@@ -90,8 +90,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉넴열글자까지</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -102,8 +102,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임02</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -114,8 +114,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임03</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -126,8 +126,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임04</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -138,8 +138,8 @@
                       </div>
                       <div class="txt_tit">몬스탁닉네임05</div>
                       <span class="badge_area">
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                       </span>
                     </div>
                   </swiper-slide>
@@ -454,8 +454,8 @@
               <m-button-3 lined color="primary" class="full">출금 계좌 등록 / 변경</m-button-3>
               <m-button-3 lined color="primary" class="full">원화 출금 신청</m-button-3>
             </div>
-            <div class="divider "/>
-            <m-tabs class="line_type large" v-model="tab3" :items="tabs2"/>
+            <div class="divider mgb0"/>
+            <m-tabs class="box_type large mg0" v-model="tab3" :items="tabs2"/>
             <div class="tab_contents" v-if="tab3 == 'A'">
               <!-- S 코인 -->
               <ul class="coin_list">
@@ -511,6 +511,15 @@
               <div class="flex right mgt16 l_row_l">
                 <span class="txt_dk mgr10">비공개</span> <m-toggle v-model="toggle1" />
               </div>
+              <div class="between">
+                <span class="txt_dk font16 bold">보유중인 NFT</span>
+                <a href="#" class="primary">슬롯확장 &nbsp;&nbsp; +</a>
+              </div>
+              <ul class="nft_wrap">
+                <li><button class="ico_plus">upload</button></li>
+                <li><button class="ico_lock">lock</button></li>
+                <li><button class="ico_lock">lock</button></li>
+              </ul>
               <div class="between">
                 <span class="txt_dk font16 bold">보유중인 NFT</span>
                 <a href="#" class="primary">슬롯확장 &nbsp;&nbsp; +</a>

@@ -6,7 +6,6 @@
             <div class="nav_wrap">
                 <h1>
                     <button class="ico_back">back</button>
-                    <!-- <a href="/publish" class="m_logo">monstock</a> -->
                     <router-link to="/publish" class="m_logo">monstock</router-link>
                 </h1>
                 <nav>
@@ -32,7 +31,11 @@
                 <!--알람 스타일 ico_alarm_new, ico_alarm_off, ico_alarm_on-->
                 <button class="ico_alarm_new">alarm</button>
                 <div class="user_img">
-                    <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
+                    <div class="img_area">
+                        <!-- <i class="alarm_dot">updated</i> -->
+                        <!-- <img src="~assets/ico_user_noimg.svg" alt="profile"/> -->
+                        <img src="~assets/user_img.png" alt="profile"/>
+                    </div>
                 </div>
                 <!-- <m-button-3  color="primary" size="small">로그인</m-button-3> -->
             </div>

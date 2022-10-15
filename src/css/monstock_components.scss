@@ -94,7 +94,11 @@
     padding-left: 8px !important;
 }
 //tab
+
 .m-tabs{
+    .m-tabs-item.inactive{
+        color: $txt_gray !important;
+    }
     &.small {
         .m-tabs-item {
             height: 34px;
@@ -126,6 +130,15 @@
             background: linear-gradient(to right, #8673ff 0%, #5a3ffa 100%);
         }
         button{padding:0 10px}
+    }
+    &.box_type{
+        .m-tabs-item.active {
+            background-color: $primary !important;
+            color: #fff !important;
+            font-weight: bold;
+            position: relative;
+        }
+        &.mg0{margin:0 -16px 0 -16px}
     }
 }
 .m-tabs .m-tabs-item.active {

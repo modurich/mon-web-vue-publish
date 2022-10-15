@@ -13,7 +13,9 @@
 
 .mgt16{margin-top:16px}
 .mgb16{margin-bottom:16px}
+.mgb8{margin-bottom:8px}
 .mgr10{margin-right:10px}
+.mgb0{margin-bottom:0 !important}
 
 .font12{font-size:12px}
 .font16{font-size:16px;font-weight: 700;}
@@ -22,6 +24,7 @@
 
 .bold{font-weight: 700;}
 
+.line26{line-height: 26px;}
 body{
     background-color: #f8f9fd !important;
     color: #9ca8ba !important;
@@ -191,11 +194,65 @@ body{
 //badge
 .badge{
     height:16px;
-    font-size: 12px;
+    font-size: 10px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    min-width: 26px;
     padding:0 3px;
     border-radius: 2px;
+    font-weight: 700;
+    &.r1{ 
+        border:1px solid $txt_gray;
+        background:#fff;
+        color:$txt_gray;}
+    &.r2{ 
+        border:1px solid $txt_gray;
+        background:$txt_gray;
+        color:#fff;}
+    &.r3,&.rstar{ 
+        border:1px solid #000;
+        background:#fff;
+        color:#000}
+    &.pl1, &.pl2, &.pl3{
+        border:1px solid #00a2d0;
+        background:#fff;
+        color:#00a2d0;
+    }
+    &.plstar{
+        border:1px solid #6ee0b0;
+        background:#fff;
+        color:#6ee0b0;
+    }
+    &.cl1,&.cl2{
+        border:1px solid #ffa500;
+        background: #fff;
+        color:#ffa500;
+    }
+    &.pro,&.confirm{
+        border:1px solid #ffa500;
+        background: #ffa500;
+        color:#fff;
+    }
+    &.operate,&.bot,&.monster{
+        border:1px solid $primary;
+        background: #fff;
+        color: $primary;
+    }
+    &.monster{
+        text-indent: -999em;
+        &::before{
+            content:'';
+            width:26px;
+            height:9px;
+            background: url('~assets/ico_monster.svg') center right no-repeat;
+        }
+    }
+    &.sup{
+        border:1px solid  $primary;
+        background:  $primary;
+        color:#fff;
+    }
     &.type1{
         border:1px solid #ffa500;
         background:#ffa500;
@@ -637,7 +694,36 @@ body{
     flex-wrap: wrap;
     li{
         margin:0 16px 16px 0px;
-        img{width:100px;height:100px;}
+        img,button{width:100px;height:100px;}
+        button{
+            border:1px solid $com_line;
+            border-radius: 8px;
+            font-size: 25px;
+            font-weight: lighter;
+            &.ico_lock,&.ico_plus{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-indent: -999em;
+                &::before{
+                    content:'';
+                    display:flex;
+                    width:24px;
+                    height:24px;
+                }
+            }
+            &.ico_plus{
+                &::before{
+                    background: url('~assets/ico_plus.svg') center center no-repeat;
+                }
+            }
+            &.ico_lock{
+                background-color: #fafbfc;
+                &::before{
+                    background: url('~assets/ico_lock.svg') center center no-repeat;
+                }
+            }
+        }
     }
 }
 .nft_list{
@@ -760,4 +846,96 @@ body{
             }
         }
     }
+}
+
+//code_wrap
+.code_wrap{
+  .tit{color:$txt_dk;display: flex;align-items: center;}  
+  .code_list{
+    margin:8px 0 32px 0;
+    p{
+        position: relative;
+        margin-left:20px;
+        margin-bottom:7px;
+        &:last-child{margin-bottom:0;}
+        &::before{
+            content:'';
+            position: absolute;
+            display: block;
+            top:8px;
+            left:-15px;
+            width:4px;
+            height: 4px;
+            border-radius: 4px;
+            background: $txt_gray;
+        }
+    }
+  }
+}
+.ico_copy{
+    display: inline-flex;
+    width:18px;
+    height:18px;
+    margin-left: 8px;
+    text-indent: -999em;
+    background: url('~assets/ico_copy.svg') center right no-repeat;
+}
+//등급 뱃지
+.grade_wrap{
+    .user_wrap{
+        text-align: center;
+        .user_img{
+            .img_area{
+                width:80px;
+                height:80px;
+                margin:0 auto;
+                border-radius:80px;
+                overflow: hidden;
+                img{width:100%;height: 100%;}
+            }
+        }
+        .user_name{color:$txt_dk;margin:8px 0;font-weight: 700;}
+        .user_grade{
+            display:inline-flex;
+            align-items: center;
+            span{margin-right:8px;
+                &:last-child{margin-right:0;}
+            }
+        }
+        .follow_wrap{
+            display:flex;
+            margin:16px 0 32px 0;
+            .txt01{color:$txt_dk;line-height: 22px;}
+            .txt02{color:$primary;font-size:16px;line-height: 30px;font-weight: 700;}
+           li{
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+                width:25%;
+                .txt01{display: block;}
+             }
+            li + li{border-left:1px solid $com_line} 
+        }
+    }
+}
+.ico_level1,.ico_level2,.ico_level3,.ico_level4,.ico_level5{
+    display: inline-flex;
+    text-indent: -999em;
+    width:18px;
+    height: 18px;
+}
+.ico_level1{
+    background:url('~assets/ico_level1.svg');
+}
+.ico_level2{
+    background:url('~assets/ico_level2.svg');
+}
+.ico_level3{
+    background:url('~assets/ico_level3.svg');
+}
+.ico_level4{
+    background:url('~assets/ico_level4.svg');
+}
+.ico_level5{
+    background:url('~assets/ico_level5.svg');
 }

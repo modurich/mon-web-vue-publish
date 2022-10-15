@@ -184,7 +184,77 @@
             </td>
             <td>보유 NFT</td>
             <td></td>
-        </tr>       
+        </tr>     
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_100_U">A_100_U</router-link>
+            </td>
+            <td>종목공개하기</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_101_U">A_101_U</router-link>
+            </td>
+            <td>링크추가</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_102_U">A_102_U</router-link>
+            </td>
+            <td>추천코드</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_103_U">A_103_U</router-link>
+            </td>
+            <td>등급/뱃지</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_104_U">A_104_U</router-link>
+            </td>
+            <td>Google OTP 초기화</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_105_U">A_105_U</router-link>
+            </td>
+            <td>슬롯확장(활동등급 미달)</td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_106_U">A_106_U</router-link>
+            </td>
+            <td>NFT 장착 안내</td>
+            <td></td>
+        </tr>    
       </tbody>
     </table>
   </div>

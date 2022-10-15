@@ -32,8 +32,8 @@
                     <p class="user_name">닉네임열두글자하나둘셋넷</p>
                     <p class="user_grade">
                         <!-- <span class="ico_level1">level</span> -->
-                        <span class="badge type1">PRO</span>
-                        <span class="badge type2">PL1</span>
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
                     </p>
                 </div>
                 <ul class="follow_wrap">

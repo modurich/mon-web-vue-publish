@@ -1,15 +1,39 @@
 <template>
   <div class="uiguide_wrap">
-    <!--
-        <div id="group01" class="group_wrap">
-            <p class="h1_type">M Tag</p>
-            <div class="box_wrap">
-                <div class="type_view">
-                    <m-tag>H1</m-tag>
-                </div>
-            </div>
+    <div id="group01" class="group_wrap">
+        <p class="h1_type">ico</p>
+        <div class="box_wrap">
+          <p class="h2">level</p>
+          <div class="type_view ico">
+            <span class="ico_level1">level1</span>
+            <span class="ico_level2">level2</span>
+            <span class="ico_level3">level3</span>
+            <span class="ico_level4">level4</span>
+            <span class="ico_level5">level5</span>
+          </div>
         </div>
-        -->
+        <div class="box_wrap">
+          <p class="h2">badge</p>
+          <div class="type_view ico">
+            <span class="badge r1">R1</span>
+            <span class="badge r2">R2</span>
+            <span class="badge r3">R3</span>
+            <span class="badge rstar">R★</span>
+            <span class="badge pl1">PL1</span>
+            <span class="badge pl2">PL2</span>
+            <span class="badge pl3">PL3</span>
+            <span class="badge plstar">PL★</span>
+            <span class="badge cl1">CL1</span>
+            <span class="badge cl2">CL2</span>
+            <span class="badge pro">PRO</span>
+            <span class="badge confirm">인증</span>
+            <span class="badge sup">SUP</span>
+            <span class="badge operate">운영</span>
+            <span class="badge bot">bot</span>
+            <span class="badge monster">monster</span>
+          </div>
+        </div>
+      </div>
     <div id="group02" class="group_wrap">
       <p class="h1_type">Form Tag</p>
       <div class="box_wrap">
@@ -268,8 +292,8 @@
                   </div>
                   <div class="txt_tit">몬스탁닉넴열글자까지</div>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </swiper-slide>
@@ -280,8 +304,8 @@
                   </div>
                   <div class="txt_tit">몬스탁닉네임02</div>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </swiper-slide>
@@ -292,8 +316,8 @@
                   </div>
                   <div class="txt_tit">몬스탁닉네임03</div>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </swiper-slide>
@@ -304,8 +328,8 @@
                   </div>
                   <div class="txt_tit">몬스탁닉네임04</div>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </swiper-slide>
@@ -316,8 +340,8 @@
                   </div>
                   <div class="txt_tit">몬스탁닉네임05</div>
                   <span class="badge_area">
-                    <span class="badge type1">PRO</span>
-                    <span class="badge type2">PL1</span>
+                    <span class="badge pro">PRO</span>
+                    <span class="badge pl1">PL1</span>
                   </span>
                 </div>
               </swiper-slide>
@@ -390,6 +414,18 @@
           </div>
         </div>
         <div class="box_wrap">
+          <p class="h2">boxTab</p>
+          <div class="type_view">
+            <m-tabs class="box_type large" v-model="tab1" :items="tabs" />
+            <div v-if="tab1 == 'G'">
+              contents1
+            </div>
+            <div v-if="tab1 == 'F'">
+              contents2
+            </div>
+          </div>
+        </div>
+        <div class="box_wrap">
           <p class="h2">cardTab</p>
           <div class="type_view">
             <m-tabs class="card_type small" v-model="tab1" :items="tabs" />
@@ -402,15 +438,19 @@
           </div>
         </div>
       </div>
-      <div id="group09" class="group_wrap">
-        <p class="h1_type">Menu</p>
+      <!-- <div id="group09" class="group_wrap">
+        <p class="h1_type">ico</p>
         <div class="box_wrap">
-          <p class="h2">Menu</p>
+          <p class="h2">level</p>
           <div class="type_view">
-            <m-menu :items="tabs" />
           </div>
         </div>
-      </div>
+        <div class="box_wrap">
+          <p class="h2">badge</p>
+          <div class="type_view">
+          </div>
+        </div>
+      </div> -->
       <div id="group10" class="group_wrap">
         <p class="h1_type">Callps</p>
         <div class="box_wrap">
@@ -673,6 +713,9 @@ export default {
   .type_view {
     padding-bottom: 20px;
     max-width: 1080px;
+    &.ico{
+      span{margin-right:10px}
+    }
 
     .q-checkbox,
     .m-radio,
