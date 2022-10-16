@@ -1,15 +1,13 @@
 <template>
     <div class="centerarea_box01">
-      <q-form>
-        <div class="con_box">
-          <div class="ico_top">
-            <i class="ico_error"></i>
-          </div>
-          <h2 class="s_mg mgb16">비밀번호 찾기</h2>
-          <div class="btn_wrap l_row_s"><m-button-3 size="large" color="primary" class="full">휴대폰 번호 인증</m-button-3></div>
-          <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">이메일 인증</m-button-3></div>
+      <div class="con_box">
+        <div class="ico_top">
+          <i class="ico_error"></i>
         </div>
-      </q-form>
+        <h2 class="s_mg mgb16">비밀번호 찾기</h2>
+        <div class="btn_wrap l_row_s"><m-button-3 size="large" color="primary" class="full">휴대폰 번호 인증</m-button-3></div>
+        <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">이메일 인증</m-button-3></div>
+      </div>
     </div>
 </template>
 

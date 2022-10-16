@@ -1,6 +1,5 @@
 <template>
     <div class="centerarea_box01">
-      <q-form>
         <div class="con_box">
           <!-- S 휴면 해제 -->
           <div class="ico_top">
@@ -34,7 +33,6 @@
           <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">비밀번호 변경</m-button-3></div>
           <!-- E 임시 비밀번호 발급 완료 -->
         </div>
-      </q-form>
     </div>
 </template>
 

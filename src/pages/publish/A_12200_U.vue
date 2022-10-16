@@ -44,9 +44,9 @@ export default {
   name: 'A_10000_P',
   data() {
     return {
-      text1: ref('호빵맨'),
-      text2: ref('monstock@monstock.com'),
-      text3: ref('**********'),
+      text1: ref(''),
+      text2: ref(''),
+      text3: ref(''),
       check1: ref(true),
       check2: ref(false),
       check3: ref(false),
