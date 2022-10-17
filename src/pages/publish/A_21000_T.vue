@@ -197,6 +197,8 @@
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                   :visible-columns="table1"
+                  :rows-per-page-options="[0]" 
+                  :pagination.sync="table1page"
                 >
                   <template v-slot:body="props">
                     <q-tr :props="props">
@@ -583,9 +585,14 @@ export default {
     
     data() {
         return {
+          table1page: {
+            page: 1,
+            rowsPerPage: 10
+          },
           table1: ref(['date', 'category', 'updown', 'isSuccess']),
           table2: ref(['buydate', 'category', 'tgtperform', 'isSuccess']),
           table3: ref(['category', 'period', 'specific', 'perform']),
+
           chartOptions: {
             colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
             chart: {
