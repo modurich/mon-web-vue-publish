@@ -332,17 +332,6 @@
                         </q-list>
                       </q-menu>
                     </button>
-                    <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-                      menu
-                      <q-menu auto-close :offset="[30, 10]">
-                        <q-list style="min-width: 80px">
-                          <q-item clickable>
-                            <q-item-section>?</q-item-section>
-                          </q-item>
-                          <q-separator />
-                        </q-list>
-                      </q-menu>
-                    </button>
                 </div>
               </li>
               <li>
@@ -365,17 +354,6 @@
                         <q-list style="min-width: 80px">
                           <q-item clickable>
                             <q-item-section>차단해제</q-item-section>
-                          </q-item>
-                          <q-separator />
-                        </q-list>
-                      </q-menu>
-                    </button>
-                    <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-                      menu
-                      <q-menu auto-close :offset="[30, 10]">
-                        <q-list style="min-width: 80px">
-                          <q-item clickable>
-                            <q-item-section>?</q-item-section>
                           </q-item>
                           <q-separator />
                         </q-list>
@@ -408,17 +386,6 @@
                         </q-list>
                       </q-menu>
                     </button>
-                    <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-                      menu
-                      <q-menu auto-close :offset="[30, 10]">
-                        <q-list style="min-width: 80px">
-                          <q-item clickable>
-                            <q-item-section>?</q-item-section>
-                          </q-item>
-                          <q-separator />
-                        </q-list>
-                      </q-menu>
-                    </button>
                 </div>
               </li>
               <li>
@@ -446,17 +413,6 @@
                         </q-list>
                       </q-menu>
                     </button>
-                    <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-                      menu
-                      <q-menu auto-close :offset="[30, 10]">
-                        <q-list style="min-width: 80px">
-                          <q-item clickable>
-                            <q-item-section>?</q-item-section>
-                          </q-item>
-                          <q-separator />
-                        </q-list>
-                      </q-menu>
-                    </button>
                 </div>
               </li>
               <li>
@@ -479,17 +435,6 @@
                         <q-list style="min-width: 80px">
                           <q-item clickable>
                             <q-item-section>차단해제</q-item-section>
-                          </q-item>
-                          <q-separator />
-                        </q-list>
-                      </q-menu>
-                    </button>
-                    <button class="ico_menu" color="secondary" label="Auto-Close Menu">
-                      menu
-                      <q-menu auto-close :offset="[30, 10]">
-                        <q-list style="min-width: 80px">
-                          <q-item clickable>
-                            <q-item-section>?</q-item-section>
                           </q-item>
                           <q-separator />
                         </q-list>

@@ -20,8 +20,8 @@
             .m-button3{margin-left:30px}
             button{
                 display: inline-flex;
-                width:36px;
-                height: 36px;
+                width:30px;
+                height: 30px;
                 text-indent: -999em;
                 
             }
@@ -82,18 +82,24 @@
         }
         .nav_wrap{
             display:flex;
+            h1{
+                display:flex;
+                align-items: center;
+            }
             nav{
                 display: flex;
                 align-items: center;
-                margin-left:134px;
+                margin-left:150px;
             }
             .ico_back{
                 display: inline-flex;
-                width:36px;
-                height: 36px;
+                width:30px;
+                height: 30px;
                 margin-right:10px;
                 text-indent: -999em;
-                background: url('~assets/ico_back.svg') center right no-repeat;
+                background-size: contain;
+                background: url('~assets/ico_back.svg');
+                background-position: 0px -3px;
             }
             .m_logo{
                 display: inline-flex;

@@ -77,7 +77,6 @@
               <div>
                 <p class="tit">
                   <span class="txt01">링크명01</span>
-                  <button class="ico_trash">삭제</button>
                 </p>
                 <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
               </div>
@@ -411,9 +410,9 @@ const tbColInfo = [
   { name: 'category', align: 'center', label: '종목', field: 'category' },
   { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
   { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
-  { name: 'period', align: 'center', label: '투자기간 / 보유기간' },
+  { name: 'period', align: 'center', label: '목표 / 현재' },
   { name: 'specific', align: 'center', label: '비중' },
-  { name: 'perform', align: 'center', label: '목표 수익률 / 현재 수익률' },
+  { name: 'perform', align: 'center', label: '목표 / 현재' },
   { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
 ];
 const tbRowData = [

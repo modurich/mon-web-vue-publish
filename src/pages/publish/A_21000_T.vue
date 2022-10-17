@@ -66,12 +66,11 @@
               <div>
                 <p class="tit">
                   <span class="txt01">링크2</span>
-                  <button class="ico_trash">삭제</button>
                 </p>
                 <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
               </div>
             </div>
-            <div class="btn_wrap l_row_l">
+            <div class="btn_wrap l_row_l mgt32">
               <m-button-3 color="primary" class="full">추천코드</m-button-3>
               <m-button-3 color="primary" class="full">내 정보 수정</m-button-3>
               <m-button-3 lined color="primary" class="ico_add">추가</m-button-3>
@@ -350,9 +349,9 @@
                       </q-td>
                       <q-td key="perform" :props="props">
                         {{ props.row.tgtperform }}% / 
-                        <span v-if="props.row.currperform > 0" class="txt_red">{{ props.row.currperform }}</span>
-                        <span v-else-if="props.row.currperform < 0" class="txt_blue">{{ props.row.currperform }}</span>
-                        <span v-else class="txt_gray">{{ props.row.currperform }}</span>%
+                        <span v-if="props.row.currperform > 0" class="txt_red">{{ props.row.currperform }}%</span>
+                        <span v-else-if="props.row.currperform < 0" class="txt_blue">{{ props.row.currperform }}%</span>
+                        <span v-else class="txt_gray">{{ props.row.currperform }}%</span>
                       </q-td>
                     </q-tr>
                   </template>
@@ -456,7 +455,7 @@
             </div>
             <div class="divider mgb0"/>
             <m-tabs class="box_type large mg0" v-model="tab3" :items="tabs2"/>
-            <div class="tab_contents" v-if="tab3 == 'A'">
+            <div class="mgt32" v-if="tab3 == 'A'">
               <!-- S 코인 -->
               <ul class="coin_list">
                 <li>
@@ -506,7 +505,7 @@
               </ul>
               <!-- E 코인 -->
             </div>
-            <div class="tab_contents" v-if="tab3 == 'B'">
+            <div class="mgt32" v-if="tab3 == 'B'">
               <!-- S NFT -->
               <div class="flex right mgt16 l_row_l">
                 <span class="txt_dk mgr10">비공개</span> <m-toggle v-model="toggle1" />
@@ -522,7 +521,7 @@
               </ul>
               <div class="between">
                 <span class="txt_dk font16 bold">보유중인 NFT</span>
-                <a href="#" class="primary">슬롯확장 &nbsp;&nbsp; +</a>
+                <a href="#" class="link_view">전체보기</a>
               </div>
               <ul class="nft_wrap">
                 <li><img src="~assets/nft_img01.png" alt="" /></li>
@@ -559,9 +558,9 @@ const tbColInfo = [
   { name: 'category', align: 'center', label: '종목', field: 'category' },
   { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
   { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
-  { name: 'period', align: 'center', label: '투자기간 / 보유기간' },
+  { name: 'period', align: 'center', label: '목표 / 현재' },
   { name: 'specific', align: 'center', label: '비중' },
-  { name: 'perform', align: 'center', label: '목표 수익률 / 현재 수익률' },
+  { name: 'perform', align: 'center', label: '목표 / 현재' },
   { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
 ];
 const tbRowData = [
