@@ -4,7 +4,7 @@
         <div class="con_box">
           <h2>회원가입</h2>
           <div class="l_row"><m-input filled v-model="text1" label="이름" class="round_type"/></div>
-          <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호 또는 이메일 주소" class="round_type"/></div>
+          <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호 또는 이메일 주소" class="round_type" :rules="[val => val.length === 0 ? '휴대폰 또는 이메일 주소를 입력하세요' : true]"/></div>
           <div class="l_row"><m-input filled v-model="text1" label="비밀번호" class="round_type"/></div>
           <div class="l_row"><m-select v-model="select1" :options="options" /></div>
           <div class="l_row_s"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
