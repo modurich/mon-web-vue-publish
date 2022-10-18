@@ -726,6 +726,8 @@ export default {
     padding-bottom: 20px;
     max-width: 1080px;
     &.ico{
+      display: inline-flex;
+      align-items: center;
       span{margin-right:10px}
     }
 
