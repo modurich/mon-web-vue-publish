@@ -11,9 +11,9 @@
           <div class="l_row_l"><a href="#" class="link_view center">내 손안의 디지털 지갑, Klip 안내</a></div>
           <div class="btn_wrap l_row_l"><m-button-3 color="yellow" class="full"><i class="ico_klip_bk"/>카카오톡으로 Klip 지갑 연결</m-button-3></div>
           <div class="line_tit"><span>다른 지갑 연결하기</span><i/></div>
-          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_cp01"/>카이카스(Kaikas) 지갑 연결</m-button-3></div>
-          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_cp02"/>Metamask 지갑 연결</m-button-3></div>
-          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_cp03"/>D'CENT 지갑 연결</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_sb sb_klaytn"/>카이카스(Kaikas) 지갑 연결</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_sb sb_metamask"/>Metamask 지갑 연결</m-button-3></div>
+          <div class="btn_wrap l_row_l"><m-button-3  color="lightGrey" class="full"><i class="ico_sb sb_dcent"/>D'CENT 지갑 연결</m-button-3></div>
 
         </div>
       </q-form>

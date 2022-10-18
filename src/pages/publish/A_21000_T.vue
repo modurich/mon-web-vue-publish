@@ -386,7 +386,7 @@
              <!-- S 스왑하기 -->
              <div class="title_type1">
               <div class="txt_area">
-                <span class="txt01"><img src="~assets/ico_cp02.svg" alt=""/><span class="bold">Metamask</span> 지갑 연결중</span>
+                <span class="txt01"><span class="ico_sb sb_metamask"/><span class="bold">Metamask</span> 지갑 연결중</span>
                 <a href="#" class="link_view">주소보기</a>
               </div>
               <button class="ico_menu" color="secondary" label="Auto-Close Menu">
@@ -405,7 +405,7 @@
             </div>
             <div class="swap_wrap">
               <div class="icon_area">
-                <img src="~assets/ico_cp01.svg" alt=""/> MON
+                <span class="ico_sb sb_klaytn"/> MON
               </div>
               <p class="txt01">999,999,999.9999999999<span>MON</span></p>
               <p class="txt02">$ 999,999,999.99</p>
@@ -462,7 +462,7 @@
               <ul class="coin_list">
                 <li>
                   <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
+                    <span class="ico_sb sb_klaytn"/>
                   </div>
                   <div class="txt_area">
                     <p class="txt01">9,739,432,138.3832 MON</p>
@@ -473,7 +473,7 @@
                 </li>
                 <li>
                   <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
+                    <span class="ico_sb sb_klaytn"/>
                   </div>
                   <div class="txt_area">
                     <p class="txt01">9,739,432,138.3832 MON</p>
@@ -484,7 +484,7 @@
                 </li>
                 <li>
                   <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
+                    <span class="ico_sb sb_klaytn"/>
                   </div>
                   <div class="txt_area">
                     <p class="txt01">9,739,432,138.3832 MON</p>
@@ -495,7 +495,7 @@
                 </li>
                 <li>
                   <div class="icon_area">
-                    <img src="~assets/ico_cp01.svg" alt=""/>
+                    <span class="ico_sb sb_klaytn"/>
                   </div>
                   <div class="txt_area">
                     <p class="txt01">9,739,432,138.3832 MON</p>

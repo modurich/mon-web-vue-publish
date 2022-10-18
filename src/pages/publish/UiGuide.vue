@@ -1,7 +1,19 @@
 <template>
   <div class="uiguide_wrap">
     <div id="group01" class="group_wrap">
-        <p class="h1_type">ico</p>
+      <p class="h1_type">ico</p>
+        <div class="box_wrap">
+          <p class="h2">기업 symbol</p>
+          <div class="type_view ico">
+            <span class="ico_sb sb_bitcoin">bitcoin</span>
+            <span class="ico_sb sb_ethereum">ethereum</span>
+            <span class="ico_sb sb_klip">klip</span>
+            <span class="ico_sb sb_klaytn">klaytn</span>
+            <span class="ico_sb sb_metamask">metamask</span>
+            <span class="ico_sb sb_dcent">dcent</span>
+            <span class="ico_sb sb_null">null</span>
+          </div>
+        </div>
         <div class="box_wrap">
           <p class="h2">level</p>
           <div class="type_view ico">

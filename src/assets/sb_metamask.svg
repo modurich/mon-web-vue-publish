@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m7.722 19.418 2.62.695v-.909l.214-.214h1.498v1.818h-1.605l-1.978-.855-.75-.535z" fill="#CDBDB2"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m16.278 19.418-2.567.695v-.909l-.214-.214H12v1.818h1.604l1.979-.855.695-.535z" fill="#CDBDB2"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m10.556 17.44-.214 1.764.268-.214h2.78l.321.214-.214-1.765-.428-.267-2.139.053-.374.214z" fill="#393939"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m9.112 5.514 1.284 2.994.588 8.717h2.085l.642-8.717 1.177-2.994H9.112z" fill="#F89C35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.497 12.09 2 16.423l3.743-.214H8.15v-1.871l-.107-3.85-.535.427-4.01 1.177z" fill="#F89D35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m6.332 12.572 4.385.107-.482 2.246-2.085-.535-1.818-1.818z" fill="#D87C30"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m6.332 12.625 1.818 1.711v1.711l-1.818-3.422z" fill="#EA8D3A"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m8.15 14.39 2.139.535.695 2.3-.481.267-2.353-1.39V14.39z" fill="#F89D35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m8.15 16.102-.428 3.315 2.834-1.979-2.406-1.336z" fill="#EB8F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m10.717 12.68.267 4.545-.802-2.326.535-2.22z" fill="#EA8E3A"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m5.69 16.155 2.46-.053-.428 3.315-2.032-3.262z" fill="#D87C30"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m3.176 20.861 4.546-1.444-2.032-3.262-3.69.268 1.176 4.438z" fill="#EB8F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m10.396 8.508-2.3 1.925-1.764 2.139 4.385.16-.321-4.224z" fill="#E8821E"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m7.722 19.416 2.834-1.979-.214 1.712v.962l-1.925-.374-.695-.32zM16.278 19.416l-2.78-1.979.213 1.712v.962l1.925-.374.642-.32z" fill="#DFCEC3"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m9.54 13.642.588 1.23-2.085-.535 1.497-.695z" fill="#393939"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m3.123 3 7.273 5.508-1.23-2.995L3.123 3z" fill="#E88F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.123 3 2.16 5.941l.535 3.209-.374.214.535.481-.428.374.588.535-.374.32.855 1.07 4.011-1.23c1.96-1.568 2.923-2.37 2.888-2.406C10.36 8.472 7.936 6.636 3.123 3z" fill="#8E5A30"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.503 12.09 22 16.423l-3.743-.214H15.85v-1.871l.107-3.85.535.427 4.01 1.177z" fill="#F89D35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m17.669 12.572-4.386.107.482 2.246 2.085-.535 1.819-1.818z" fill="#D87C30"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m17.669 12.625-1.819 1.711v1.711l1.819-3.422z" fill="#EA8D3A"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m15.85 14.39-2.139.535-.695 2.3.481.267 2.353-1.39V14.39z" fill="#F89D35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m15.85 16.102.428 3.315-2.78-1.925 2.352-1.39z" fill="#EB8F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m13.283 12.68-.267 4.545.802-2.326-.535-2.22z" fill="#EA8E3A"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m18.31 16.155-2.46-.053.428 3.315 2.032-3.262z" fill="#D87C30"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m20.823 20.861-4.545-1.444 2.032-3.262 3.69.268-1.177 4.438z" fill="#EB8F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m13.604 8.508 2.3 1.925 1.765 2.139-4.386.16.321-4.224z" fill="#E8821E"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m14.46 13.642-.588 1.23 2.085-.535-1.497-.695z" fill="#393939"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m20.877 3-7.273 5.508 1.23-2.995L20.877 3z" fill="#E88F35"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m20.877 3 .963 2.941-.535 3.209.374.214-.535.481.428.374-.588.535.374.32-.855 1.07-4.011-1.23c-1.96-1.568-2.923-2.37-2.888-2.406.036-.036 2.46-1.872 7.273-5.508z" fill="#8E5A30"/>
+</svg>

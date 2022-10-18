@@ -791,7 +791,9 @@ body{
         border-bottom:1px solid $com_line;
         &:last-child{border-bottom:0}
         .icon_area{
-            img{width:30px;height:30px;margin-right:16px}
+            .ico_sb{width:30px;height:30px;margin-right:16px;
+            background-size: contain;
+            }
         }
         .txt_area{
             width:calc(100% - 46px);
@@ -852,11 +854,9 @@ body{
         .txt01{
             color: $txt_dk;
             margin-right:8px;
-            img{
-                width:24px;
-                height: 24px;
-                margin-right:8px
-            }
+            display: inline-flex;
+            align-items: center;
+            .bold{margin-right:8px}
         }
     }
 }
@@ -951,4 +951,41 @@ body{
 }
 .ico_level5{
     background:url('~assets/ico_level5.svg');
+}
+
+//symbol
+button{
+    .ico_sb{
+        width:20px;
+        height:20px;
+        margin-right:8px;
+    }
+}
+.ico_sb{
+    display: inline-flex;
+    text-indent: -999em;
+    width:24px;
+    height: 24px;
+    margin-right:8px;
+}
+.sb_bitcoin{
+    background:url('~assets/sb_bitcoin.svg');
+}
+.sb_ethereum{
+    background:url('~assets/sb_ethereum.svg');
+}
+.sb_klip{
+    background:url('~assets/sb_klip.svg');
+}
+.sb_klaytn{
+    background:url('~assets/sb_klaytn.svg');
+}
+.sb_metamask{
+    background:url('~assets/sb_metamask.svg');
+}
+.sb_dcent{
+    background:url('~assets/sb_dcent.svg');
+}
+.sb_null{
+    background:url('~assets/sb_null.svg');
 }

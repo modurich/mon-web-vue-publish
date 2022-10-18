@@ -17,9 +17,15 @@
         .btn_wrap{
             display: inline-flex;
             align-items: center;
-            .m-button3{margin-left:30px}
+            .m-button3{
+                margin-left:30px;
+                text-indent: inherit !important;
+                padding: 0 10px;
+            }
             button{
                 display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 width:30px;
                 height: 30px;
                 text-indent: -999em;
