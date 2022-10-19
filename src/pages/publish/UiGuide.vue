@@ -78,6 +78,7 @@
               Please use maximum 3 characters.
             </template>
           </m-input>
+          <br/><br/>
 
           <!-- <m-input outlined v-model="text1" label="outlined"/>
                     <m-input standout v-model="text1" label="standout"/>
