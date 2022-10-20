@@ -97,7 +97,7 @@ export default {
     &.size-medium {
         height: 46px;
         min-height: 46px;
-        min-width: 120px;
+        min-width: 80px;
         font-size: 14px;
         font-weight: 500;
         line-height: 21px;

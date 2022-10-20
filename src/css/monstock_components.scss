@@ -40,6 +40,18 @@
 }
 
 //input
+.m-input{
+    .ico_search{
+        background: url('~assets/ico_search.svg') center right no-repeat; 
+        background-size:contain; 
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width:25px;
+        height:25px;
+        text-indent: -999em;
+    }
+}
 
 .m-input.q-field--with-bottom {
     padding-bottom: 0 !important;

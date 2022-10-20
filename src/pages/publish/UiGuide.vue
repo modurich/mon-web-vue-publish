@@ -1,51 +1,73 @@
 <template>
   <div class="uiguide_wrap">
     <div id="group01" class="group_wrap">
+      <p class="h1_type">title</p>
+      <div class="box_wrap">
+        <p class="h2">title</p>
+        <div class="type_view">
+            <div class="con_box">
+            <h3 class="mgt16">프로필 사진</h3>
+            <h3 class="between">
+              <span>콘텐츠 관리</span>
+              <a href="#" class="link_view">구독현황</a>
+            </h3>
+            <h3 class="between">
+              <span>콘텐츠 관리</span>
+              <button class="ico_trash">전체삭제</button>
+            </h3>
+            <div class="l_row_l between">
+              <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
+              <span>22.09.20 ~ 22.09.20</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <p class="h1_type">ico</p>
-        <div class="box_wrap">
-          <p class="h2">기업 symbol</p>
-          <div class="type_view ico">
-            <span class="ico_sb sb_bitcoin">bitcoin</span>
-            <span class="ico_sb sb_ethereum">ethereum</span>
-            <span class="ico_sb sb_klip">klip</span>
-            <span class="ico_sb sb_klaytn">klaytn</span>
-            <span class="ico_sb sb_metamask">metamask</span>
-            <span class="ico_sb sb_dcent">dcent</span>
-            <span class="ico_sb sb_null">null</span>
-          </div>
-        </div>
-        <div class="box_wrap">
-          <p class="h2">level</p>
-          <div class="type_view ico">
-            <span class="ico_level1">level1</span>
-            <span class="ico_level2">level2</span>
-            <span class="ico_level3">level3</span>
-            <span class="ico_level4">level4</span>
-            <span class="ico_level5">level5</span>
-          </div>
-        </div>
-        <div class="box_wrap">
-          <p class="h2">badge</p>
-          <div class="type_view ico">
-            <span class="badge r1">R1</span>
-            <span class="badge r2">R2</span>
-            <span class="badge r3">R3</span>
-            <span class="badge rstar">R★</span>
-            <span class="badge pl1">PL1</span>
-            <span class="badge pl2">PL2</span>
-            <span class="badge pl3">PL3</span>
-            <span class="badge plstar">PL★</span>
-            <span class="badge cl1">CL1</span>
-            <span class="badge cl2">CL2</span>
-            <span class="badge pro">PRO</span>
-            <span class="badge confirm">인증</span>
-            <span class="badge sup">SUP</span>
-            <span class="badge operate">운영</span>
-            <span class="badge bot">bot</span>
-            <span class="badge monster">monster</span>
-          </div>
+      <div class="box_wrap">
+        <p class="h2">기업 symbol</p>
+        <div class="type_view ico">
+          <span class="ico_sb sb_bitcoin">bitcoin</span>
+          <span class="ico_sb sb_ethereum">ethereum</span>
+          <span class="ico_sb sb_klip">klip</span>
+          <span class="ico_sb sb_klaytn">klaytn</span>
+          <span class="ico_sb sb_metamask">metamask</span>
+          <span class="ico_sb sb_dcent">dcent</span>
+          <span class="ico_sb sb_null">null</span>
         </div>
       </div>
+      <div class="box_wrap">
+        <p class="h2">level</p>
+        <div class="type_view ico">
+          <span class="ico_level1">level1</span>
+          <span class="ico_level2">level2</span>
+          <span class="ico_level3">level3</span>
+          <span class="ico_level4">level4</span>
+          <span class="ico_level5">level5</span>
+        </div>
+      </div>
+      <div class="box_wrap">
+        <p class="h2">badge</p>
+        <div class="type_view ico">
+          <span class="badge r1">R1</span>
+          <span class="badge r2">R2</span>
+          <span class="badge r3">R3</span>
+          <span class="badge rstar">R★</span>
+          <span class="badge pl1">PL1</span>
+          <span class="badge pl2">PL2</span>
+          <span class="badge pl3">PL3</span>
+          <span class="badge plstar">PL★</span>
+          <span class="badge cl1">CL1</span>
+          <span class="badge cl2">CL2</span>
+          <span class="badge pro">PRO</span>
+          <span class="badge confirm">인증</span>
+          <span class="badge sup">SUP</span>
+          <span class="badge operate">운영</span>
+          <span class="badge bot">bot</span>
+          <span class="badge monster">monster</span>
+        </div>
+      </div>
+    </div>
     <div id="group02" class="group_wrap">
       <p class="h1_type">Form Tag</p>
       <div class="box_wrap">
@@ -56,6 +78,16 @@
           <br />
           <p class="sbt">round type</p>
           <m-input filled v-model="text1" label="filled" class="round_type"/><br />
+          <p class="sbt">search type</p>
+          <div class="search_input">
+            <m-input filled v-model="text1" class="round_type" placeholder="검색어를 입력해 주세요">
+              <template v-slot:prepend>
+                <q-icon class="ico_search" />
+              </template>
+            </m-input>
+            <m-button-3 color="primary">검색</m-button-3>
+          </div>
+          <br />
           <p class="sbt">search type</p>
           <m-input v-model="search" filled type="search" hint="Search" class="round_type">
             <template v-slot:append>

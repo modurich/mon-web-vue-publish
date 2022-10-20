@@ -435,6 +435,12 @@
                 p{
                     &:last-child{margin:0}
                 }
+                &.no_data{
+                    background:#fff;
+                    margin:32px 0;
+                    text-align: center;
+                    color: $txt_gray;
+                }
             }
         }
         .local_list{

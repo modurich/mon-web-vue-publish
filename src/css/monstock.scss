@@ -304,6 +304,20 @@ body{
 }
 
 //link_info
+.ico_trash{
+    display: inline-flex;
+    align-items: center;
+    color: $primary;
+    line-height: 26px;
+    font-size: 14px;
+    &::before{
+        content:'';
+        width:26px;
+        height:26px;
+        background: url('~assets/ico_trash.svg') center right no-repeat;
+    }
+   
+}
 .link_info{
     .tit{
         display:flex;
@@ -312,19 +326,7 @@ body{
         margin-bottom:8px
     }
     .txt01{color:$txt_dk;font-weight: 700;}
-    .ico_trash{
-        display: inline-flex;
-        align-items: center;
-        color: $primary;
-        line-height: 26px;
-        &::before{
-            content:'';
-            width:26px;
-            height:26px;
-            background: url('~assets/ico_trash.svg') center right no-repeat;
-        }
-       
-    }
+    
     .link_txt{
         a{display: inline-flex;color: #00a2d0;word-break: break-all;}
     }
@@ -988,4 +990,11 @@ button{
 }
 .sb_null{
     background:url('~assets/sb_null.svg');
+}
+
+//search_input
+.search_input{
+    display:flex;
+    .q-field{margin-right:16px}
+    .m-button3{width:66px}
 }
