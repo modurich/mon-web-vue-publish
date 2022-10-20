@@ -1,7 +1,7 @@
 <template>
   <div class="uiguide_wrap">
     <div id="group01" class="group_wrap">
-      <p class="h1_type">title</p>
+      <!-- <p class="h1_type">title</p>
       <div class="box_wrap">
         <p class="h2">title</p>
         <div class="type_view">
@@ -21,8 +21,7 @@
             </div>
           </div>
         </div>
-
-      </div>
+      </div> -->
       <p class="h1_type">ico</p>
       <div class="box_wrap">
         <p class="h2">기업 symbol</p>
