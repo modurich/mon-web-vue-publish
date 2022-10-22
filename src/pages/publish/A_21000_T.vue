@@ -376,7 +376,9 @@
                 <m-button-3 size="large" color="primary" class="full">
                   지갑 연결
                   <q-tooltip :content-class="{ 'custom_tooltip':true}" anchor="top middle" self="bottom middle" :offset="[10, 30]">
+                    <div>
                     🎁 최초 연결 시 7.7777777 MON 지급
+                    </div>
                   </q-tooltip>
                 </m-button-3>
               </div>
