@@ -192,11 +192,11 @@
                       </div>
                       <div class="txt_num" style="border:1px solid red">
                         889.62%
-                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[70, 70]">
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
                           <ul class="result_list">
                             <li>
-                              <span class="txt01" style="color:red">평가</span>
-                              <span class="txt01">527 건</span>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
                             </li>
                             <li>
                               <span class="txt01">성공률</span>

@@ -1529,29 +1529,17 @@ button{
         background: #f8f9fd;
         font-size: 12px;
     }
-.tooltip_type2{
-    border:10px solid red;
-    &.result_list{
-        border:10px solid red;
-        li{
-            font-size: 12px;
-            display: flex;
-            justify-content: space-between;
-            .txt01{color: #fff;}
-            .txt02{color:#c1b7ff;}
+}
 
-            }
-        }
+
+.result_list{
+    li{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin:2px 0;
+    .txt01{color: #fff;}
+    .txt02{color:#c1b7ff;}
+
     }
 }
-.result_list{
-    border:10px solid red;
-    li{
-        font-size: 12px;
-        display: flex;
-        justify-content: space-between;
-        .txt01{color: #fff;}
-        .txt02{color:#c1b7ff;}
-
-        }
-    }
