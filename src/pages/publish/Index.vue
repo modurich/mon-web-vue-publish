@@ -305,7 +305,31 @@
             </td>
             <td>인사이트 작성 종목 선택</td>
             <td></td>
-        </tr>   
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_50000_P">
+                  H_50000_P
+                </router-link>
+            </td>
+            <td>더보기-로컬설정</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_41000_T">
+                  H_41000_T
+                </router-link>
+            </td>
+            <td>거버넌스</td>
+            <td></td>
+        </tr>  
       </tbody>
     </table>
   </div>

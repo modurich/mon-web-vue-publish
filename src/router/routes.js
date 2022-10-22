@@ -32,7 +32,9 @@ const routes = [
             { path: '/publish/A_50000_P', component: () => import('pages/publish/A_50000_P.vue') },
             { path: '/publish/H_21000_T', component: () => import('pages/publish/H_21000_T.vue') },
             { path: '/publish/A_51100_P', component: () => import('pages/publish/A_51100_P.vue') },
-            { path: '/publish/C_21100_T', component: () => import('pages/publish/C_21100_T.vue') }
+            { path: '/publish/C_21100_T', component: () => import('pages/publish/C_21100_T.vue') },
+            { path: '/publish/H_50000_P', component: () => import('pages/publish/H_50000_P.vue') },
+            { path: '/publish/H_41000_T', component: () => import('pages/publish/H_41000_T.vue') }
         ]
     },
     {

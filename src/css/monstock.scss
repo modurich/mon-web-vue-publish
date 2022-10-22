@@ -12,21 +12,24 @@
 .center{text-align: center;justify-content: center;}
 .right{text-align: right;justify-content: flex-end;}
 
-.mgt16{margin-top:16px}
-.mgt32{margin-top:32px}
-.mgb16{margin-bottom:16px}
-.mgb8{margin-bottom:8px}
-.mgr10{margin-right:10px}
+.mgt16{margin-top:16px !important}
+.mgt32{margin-top:32px !important}
+.mgb4{margin-bottom:4px !important}
+.mgb16{margin-bottom:16px !important}
+.mgb32{margin-bottom:32px !important}
+.mgb8{margin-bottom:8px !important}
+.mgr10{margin-right:10px !important}
 .mgb0{margin-bottom:0 !important}
 .mga32{margin:32px 0 !important}
-.font10{font-size:10px}
-.font11{font-size:11px}
-.font12{font-size:12px}
-.font16{font-size:16px;font-weight: 700;}
+.font10{font-size:10px !important}
+.font11{font-size:11px !important}
+.font12{font-size:12px !important}
+.font14{font-size:14px !important}
+.font16{font-size:16px !important;font-weight: 700;}
 .font18{font-size:18px !important;}
 .font20{font-size:20px !important;}
-
-.bold{font-weight: 700;}
+.medium{font-weight: 500 !important;}
+.bold{font-weight: 700 !important;}
 
 .line26{line-height: 26px;}
 body{
@@ -87,8 +90,9 @@ body{
         font-size: 22px;
         font-weight: 700;
         color: $txt_dk;
+        line-height: 26px;
         text-align: center;
-        padding:32px 0 96px 0;
+        margin:32px 0 96px 0;
     }
 
     .main_info{
@@ -117,7 +121,7 @@ body{
             margin-bottom:16px;
         }
     }
-    h3{padding:0px 0 8px 0;
+    h3{
         font-size:20px;
         font-weight: 700;
         color: $txt_dk;
@@ -479,19 +483,7 @@ body{
         }
     }
     
-    .ico_info{ 
-        color: $primary;
-        display: inline-flex;
-        align-items: center;
-        &::before{
-            content:'';
-            display: inline-block;
-            width:18px;
-            height:18px;
-            margin-right:4px;
-            background: url('~assets/ico_info.svg') center center no-repeat;
-        }
-    }
+    
      //700보다 작아질때
      @media (max-width: $breakpoint-xs-max) {
         .pro_list{
@@ -501,6 +493,27 @@ body{
             }
             li + li{margin-top:8px}
         }
+    }
+}
+.expect_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:16px;
+    li{
+        width:50%;
+        box-sizing: border-box;
+        display:flex;
+        font-size: 16px;
+        justify-content: space-between;
+        .txt_con{font-weight: 700;}  
+        &:nth-child(2){padding-left:8px}
+    }
+    @media (max-width: $breakpoint-xs-max) {
+        li{
+            width:100%;
+            &:nth-child(2){padding-left:0px}
+        }
+        li + li{margin-top:8px}
     }
 }
 .ico_add{
@@ -717,15 +730,40 @@ body{
 
 //nft_wrap
 .nft_wrap{
-    margin:16px 0 32px 0;
+    margin:16px 0 16px 0;
     display: flex;
     flex-wrap: wrap;
+    &.add_footer{
+        li{
+            &.disabled{
+                img{opacity: 0.5;}
+            }
+            .footer_box{
+                width:100px;
+                height:40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #d4d9ea;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                &.active{
+                    background:$primary;
+                    color:#fff;
+                }
+            }
+            button,img{
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
     li{
         margin:0 16px 16px 0px;
-        img,button{width:100px;height:100px;}
+        width: 100px;
+        img,button{width:100px;height:100px;border-radius: 8px;}
         button{
             border:1px solid $com_line;
-            border-radius: 8px;
             font-size: 25px;
             font-weight: lighter;
             &.ico_lock,&.ico_plus{
@@ -1099,22 +1137,18 @@ button{
   }
   .ranking_box01 {
     text-align: center;
-    padding: 40px 0 32px 0;
+    padding: 32px 0 32px 0;
     border-radius: 8px;
     color:#fff;
     margin:32px 0;
     background-image: linear-gradient(to right, #8673FF  0%, #5a3ffa);
     .txt01{font-size: 16px;
         .point{
+            text-emphasis-style: dot;
+            text-emphasis-position: over left;
+            -webkit-text-emphasis-style: dot;
+            -webkit-text-emphasis-position: over;
             position: relative;
-            &::before{
-                content: '......';
-                position: absolute;
-                top:-28px;
-                left:4px;
-                letter-spacing: 0.35em;
-                font-size: 23px;
-            }
         }
     }
     a{display: inline-flex;}
@@ -1281,7 +1315,19 @@ button{
     color: #fb1f1f;
 }
 
-
+.ico_info{ 
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    &::before{
+        content:'';
+        display: inline-block;
+        width:18px;
+        height:18px;
+        margin-right:4px;
+        background: url('~assets/ico_info.svg') center center no-repeat;
+    }
+}
 .ico_info_bk{ 
     color: $txt_dk;
     display: inline-flex;
@@ -1426,4 +1472,75 @@ button{
 .tag_blue{
     background: #eefbf5;
     color: $txt_blue1;
+}
+
+.swiper_wrap{margin:16px 0;}
+
+.klip_box{
+    border:1px solid $com_line;
+    border-radius: 8px;
+    padding:20px;
+    margin-top:32px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    .ico_klip{
+        background: url('~assets/ico_klip.svg') center center no-repeat;
+        text-indent: -999em;
+        width:32px;
+        height:16px;
+        display: inline-flex;
+        margin-right:8px;
+    }
+    .text_wrap{
+        display:flex;
+        align-items: center;
+        .text_area{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width:150px;
+            display: inline-block;
+            font-weight: 700;
+        }
+    }
+}
+
+.gray_box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border:1px solid $com_line;
+    padding: 32px 16px;
+    margin:16px 0;
+    &.add_footer{
+        padding:32px 16px 80px 16px;
+    }
+    .center{
+        span{display: inline-flex;margin:0 4px}
+    }
+    .footer_message{
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom: 0;
+        padding: 16px;
+        color: $txt_red;
+        background: #f8f9fd;
+        font-size: 12px;
+    }
+.tooltip_type2{
+    border:10px solid red;
+    .result_list{
+        border:10px solid red;
+        li{
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            .txt01{color: #fff;}
+            .txt02{color:#c1b7ff;}
+
+            }
+        }
+    }
 }

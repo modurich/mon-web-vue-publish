@@ -24,6 +24,20 @@
       </div> -->
       <p class="h1_type">ico</p>
       <div class="box_wrap">
+        <p class="h2">etc</p>
+        <div class="type_view ico">
+          <span class="tag_red">-0.81%</span>
+          <span class="tag_blue">+1.24%</span>
+        </div>
+        <div class="type_view ico">
+          <button class="btn_view">버튼</button>
+          <a href="#" class="link_view">링크</a>
+          <a href="#" class="link_view gray">링크 gray</a>
+          <span class="ico_info">PRO란?</span>
+          <span class="ico_info_bk">PRO란?</span>
+        </div>
+      </div>
+      <div class="box_wrap">
         <p class="h2">기업 symbol</p>
         <div class="type_view ico">
           <span class="ico_sb sb_bitcoin">bitcoin</span>
