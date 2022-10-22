@@ -254,7 +254,58 @@
             </td>
             <td>NFT 장착 안내</td>
             <td></td>
-        </tr>    
+        </tr> 
+        <tr>
+            <td>랭킹/거버넌스/통합검색/작성안내</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_21000_T">H_21000_T,H_22000_T</router-link>
+            </td>
+            <td>랭킹</td>
+            <td>
+              <span class="txt_red">
+              배너 이미지 백그라운드 투명으로 왼쪽 영역과 
+              오른쪽 영역으로 내보내 주세요.
+              </span>
+            </td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_50000_P">A_50000_P</router-link>
+            </td>
+            <td>최근검색</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_51100_P">
+                  A_51100_P,A_51200_P,A_51300_P,A_51400_P,A_51500_P,A_51600_P
+                </router-link>
+            </td>
+            <td>검색</td>
+            <td>
+              진행중<br/>
+              퀘이사 q-tab 모바일 반응형 지원안함 - 확인중</td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_21100_T">
+                  C_21100_T,C_21200_T,C_21300_T
+                </router-link>
+            </td>
+            <td>인사이트 작성 종목 선택</td>
+            <td></td>
+        </tr>   
       </tbody>
     </table>
   </div>

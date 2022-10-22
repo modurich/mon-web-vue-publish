@@ -166,8 +166,9 @@
             font-weight: bold;
             position: relative;
         }
-        &.mg0{margin:0 -16px 0 -16px}
+        
     }
+    &.mg0{margin:0 -16px 0 -16px}
 }
 .m-tabs .m-tabs-item.active {
     background-color: #fff!important;
@@ -349,4 +350,9 @@
     border-radius: 4px;
     text-transform: none;
     font-weight: 500;
+}
+
+
+.q-checkbox__inner {
+    color: $primary;
 }

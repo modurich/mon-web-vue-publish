@@ -28,7 +28,11 @@ const routes = [
             { path: '/publish/A_103_U', component: () => import('pages/publish/A_103_U.vue') },
             { path: '/publish/A_104_U', component: () => import('pages/publish/A_104_U.vue') },
             { path: '/publish/A_105_U', component: () => import('pages/publish/A_105_U.vue') },
-            { path: '/publish/A_106_U', component: () => import('pages/publish/A_106_U.vue') }
+            { path: '/publish/A_106_U', component: () => import('pages/publish/A_106_U.vue') },
+            { path: '/publish/A_50000_P', component: () => import('pages/publish/A_50000_P.vue') },
+            { path: '/publish/H_21000_T', component: () => import('pages/publish/H_21000_T.vue') },
+            { path: '/publish/A_51100_P', component: () => import('pages/publish/A_51100_P.vue') },
+            { path: '/publish/C_21100_T', component: () => import('pages/publish/C_21100_T.vue') }
         ]
     },
     {
