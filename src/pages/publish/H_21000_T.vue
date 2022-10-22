@@ -195,7 +195,7 @@
                         <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[70, 70]">
                           <ul class="result_list">
                             <li>
-                              <span class="txt01">평가</span>
+                              <span class="txt01" style="color:red">평가</span>
                               <span class="txt01">527 건</span>
                             </li>
                             <li>

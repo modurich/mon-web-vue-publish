@@ -1531,7 +1531,7 @@ button{
     }
 .tooltip_type2{
     border:10px solid red;
-    .result_list{
+    &.result_list{
         border:10px solid red;
         li{
             font-size: 12px;
@@ -1544,3 +1544,14 @@ button{
         }
     }
 }
+.result_list{
+    border:10px solid red;
+    li{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        .txt01{color: #fff;}
+        .txt02{color:#c1b7ff;}
+
+        }
+    }
