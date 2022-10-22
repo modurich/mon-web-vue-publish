@@ -13,13 +13,7 @@
               </m-input>
               <m-button-3 color="primary">검색</m-button-3>
             </div>
-            <q-tabs
-              v-model="tab1"
-              dense
-              class="bg-grey-3 text-grey-7"
-              active-color="primary"
-              indicator-color="purple"
-              align="justify">
+            <q-tabs v-model="tab1">
               
               <template v-for="itm in tabs">
                 <q-tab :key="itm.id" :name="itm.value" :label="itm.label"></q-tab>
@@ -28,9 +22,7 @@
             
             <q-tab-panels
               v-model="tab1"
-              animated
               swipeable
-              infinite
             >
             
             <q-tab-panel name="tab1">
@@ -1106,12 +1098,12 @@ export default {
         return {
           tab1: ref('tab1'),
           tabs: [
-            { id:1, label: '전체',      value: 'tab1', icon: '' },
-            { id:2, label: '종목',      value: 'tab2', icon: '' },
-            { id:3, label: '테마',      value: 'tab3', icon: '' },
-            { id:4, label: '콘텐츠',    value: 'tab4', icon: '' },
-            { id:5, label: '플레이어',  value: 'tab5', icon: '' },
-            { id:6, label: '#태그',     value: 'tab6', icon: '' },
+            { id: 1, label: '전체', value: 'tab1', icon: '' },
+            { id: 2, label: '종목', value: 'tab2', icon: '' },
+            { id: 3, label: '테마', value: 'tab3', icon: '' },
+            { id: 4, label: '콘텐츠', value: 'tab4', icon: '' },
+            { id: 5, label: '플레이어', value: 'tab5', icon: '' },
+            { id: 6, label: '#태그', value: 'tab6', icon: '' }     
           ],
           tab: ref('mails'),
           val: ref(true),
