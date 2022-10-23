@@ -7,7 +7,7 @@
           <div class="box_contents">  
             <h3 class="between">
               <span>추천 테마</span>
-              <span class="font12">총 종목수 :<span class="primary"> 215</span></span>
+              <span class="font12 txt_gray medium">총 종목수 :<span class="primary"> 215</span></span>
             </h3>
             <div class="divider1 small"/>
             <div class="radio_wrap right">

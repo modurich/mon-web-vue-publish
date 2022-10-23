@@ -5,16 +5,10 @@
             <ul class="nav_area">
                 <li :key="`m-menu-item-${idx}`" v-for="(item, idx) in menuList" @click="handleClick(item)">
                     <a :class="`${item.val == menu ? 'active' : 'inactive'}`" href="#">
-                        <i :class="`ico top_${item.val}`" />{{item.label}}
+                        <i :class="`ico top_${item.val}`" />
+                        <span class="txt_area">{{item.label}}</span>
                     </a>
                 </li>
-                <!--
-                <li><a href="#" class="active"><i class="ico top_menu01"/></a></li>
-                <li><a href="#"><i class="ico top_menu02"/></a></li>
-                <li><a href="#"><i class="ico top_menu03"/></a></li>
-                <li><a href="#"><i class="ico top_menu04"/></a></li>
-                <li><a href="#"><i class="ico top_menu05"/></a></li>
-                -->
             </ul>
         </nav>
     </div>
@@ -31,7 +25,7 @@ export default {
                 { label: "랭킹", val: "menu02", to: "" },
                 { label: "콘텐츠", val: "menu03", to: "" },
                 { label: "거버넌스", val: "menu04", to: "" },
-                { label: "", val: "menu05", to: "" },
+                { label: "더보기", val: "menu05", to: "" },
             ]
         };
     },
