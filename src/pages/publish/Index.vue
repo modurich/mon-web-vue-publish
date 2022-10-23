@@ -303,7 +303,31 @@
                   A_51310_P
                 </router-link>
             </td>
-            <td>테마카테고리</td>
+            <td>테마 카테고리-테이블</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_51311_P">
+                  A_51311_P
+                </router-link>
+            </td>
+            <td>테마 카테고리-리스트</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_513111_P">
+                  A_513111_P
+                </router-link>
+            </td>
+            <td>테마 카테고리</td>
             <td></td>
         </tr>  
         <tr>
