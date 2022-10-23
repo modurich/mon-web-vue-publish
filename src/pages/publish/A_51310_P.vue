@@ -22,7 +22,10 @@
                     <template v-slot:body="props">
                     <q-tr :props="props">
                       <q-td key="category" :props="props">
-                          <span class="badge1" :class="props.row.category"></span>{{ props.row.itemName }}
+                        <span class="flex">
+                          <span class="badge1 mgr8" :class="props.row.category"></span>
+                          <span>{{ props.row.itemName }}</span>
+                        </span>
                       </q-td>
                       <q-td key="range" :props="props">
                         <span :class="{'tag_red':props.row.fluctuations == 'U', 'tag_blue':props.row.fluctuations == 'D'}">
@@ -30,7 +33,7 @@
                         </span>
                       </q-td>
                       <q-td key="itemCnt" :props="props">
-                        <span>{{props.row.itemCnt}}</span>
+                        <span class="txt_gray">{{props.row.itemCnt}}</span>
                       </q-td>
                     </q-tr>
                   </template>
@@ -47,7 +50,7 @@
 import { ref } from 'vue';
 
 const tbColInfo = [
-  { name: 'category', 	align: 'left', label: '카테고리', 	field: 'category' },
+  { name: 'category', 	align: 'left', label: '카테고리', 	field: 'category',style: 'width: 65%', },
   { name: 'itemName', 	align: 'left', label: '카테고리명', 	field: 'itemName' },
   { name: 'fluctuations', 	align: 'center', label: '등락률', 	field: 'fluctuations' },
   { name: 'range', 	align: 'center', label: '등락률', 	field: 'range'},
