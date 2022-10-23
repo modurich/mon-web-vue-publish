@@ -5,7 +5,7 @@
             <ul class="nav_area">
                 <li :key="`m-menu-item-${idx}`" v-for="(item, idx) in menuList" @click="handleClick(item)">
                     <a :class="`${item.val == menu ? 'active' : 'inactive'}`" href="#">
-                        <i :class="`ico top_${item.val}`" />
+                        <i :class="`ico top_${item.val}`" />{{item.label}}
                     </a>
                 </li>
                 <!--
