@@ -133,7 +133,7 @@
                 <router-link to="/publish/A_21000_T">A_21000_T,A_22000_T</router-link>
             </td>
             <td>프로필</td>
-            <td>진행중</td>
+            <td></td>
         </tr>  
         <tr>
             <td></td>
@@ -294,6 +294,18 @@
               진행중<br/>
               퀘이사 q-tab 모바일용 제작중</td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_51310_P">
+                  A_51310_P
+                </router-link>
+            </td>
+            <td>테마카테고리</td>
+            <td></td>
+        </tr>  
         <tr>
             <td></td>
             <td></td>

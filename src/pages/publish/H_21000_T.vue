@@ -81,7 +81,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -110,7 +128,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -139,7 +175,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -190,7 +244,7 @@
                         <span class="txt01">3</span>
                         <span class="txt_up"><span class="font11">▲</span> 172</span>
                       </div>
-                      <div class="txt_num" style="border:1px solid red">
+                      <div class="txt_num">
                         889.62%
                         <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
                           <ul class="result_list">
@@ -244,7 +298,25 @@
                         <span class="txt01">3</span>
                         <span>-</span>
                       </div>
-                      <div class="txt_num">889.62%</div>
+                      <div class="txt_num">
+                        889.62%
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                      </div>
                   </div>
                 </li>
                 <li>
@@ -280,7 +352,25 @@
                         <span class="txt01">6</span>
                         <span class="txt_down"><span class="font11">▼</span> 5</span>
                       </div>
-                      <div class="txt_num">889.62%</div>
+                      <div class="txt_num">
+                        889.62%
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                      </div>
                   </div>
                 </li>
               </ul>
@@ -372,7 +462,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -401,7 +509,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -430,7 +556,25 @@
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
                     </p>
-                    <p class="txt_num">994.87%</p>
+                    <p class="txt_num">
+                      994.87%
+                      <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                    </p>
                     <p class="btn_area">
                       <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                         user추가
@@ -481,7 +625,25 @@
                         <span class="txt01">3</span>
                         <span class="txt_up"><span class="font11">▲</span> 172</span>
                       </div>
-                      <div class="txt_num">889.62%</div>
+                      <div class="txt_num">
+                        889.62%
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                      </div>
                   </div>
                 </li>
                 <li>
@@ -517,7 +679,25 @@
                         <span class="txt01">3</span>
                         <span>-</span>
                       </div>
-                      <div class="txt_num">889.62%</div>
+                      <div class="txt_num">
+                        889.62%
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                      </div>
                   </div>
                 </li>
                 <li>
@@ -553,7 +733,25 @@
                         <span class="txt01">6</span>
                         <span class="txt_down"><span class="font11">▼</span> 5</span>
                       </div>
-                      <div class="txt_num">889.62%</div>
+                      <div class="txt_num">
+                        889.62%
+                        <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                          <ul class="result_list">
+                            <li>
+                              <span class="txt01">평가</span>
+                              <span class="txt02">527 건</span>
+                            </li>
+                            <li>
+                              <span class="txt01">성공률</span>
+                              <span class="txt02">100.00%</span>
+                            </li>
+                            <li>
+                              <span class="txt01">수익률</span>
+                              <span class="txt02">9,999.00%</span>
+                            </li>
+                          </ul>
+                        </q-tooltip>
+                      </div>
                   </div>
                 </li>
               </ul>

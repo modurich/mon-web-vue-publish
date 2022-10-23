@@ -50,6 +50,21 @@
         </div>
       </div>
       <div class="box_wrap">
+        <p class="h2">기업 symbol</p>
+        <div class="type_view ico">
+          <span class="badge1 build">건설</span>
+          <span class="badge1 semiconductor">반도체</span>
+          <span class="badge1 display">디스플레이</span>
+          <span class="badge1 politics">정치</span>
+          <span class="badge1 energy">에너지</span>
+          <span class="badge1 it">it</span>
+          <span class="badge1 cosmetics">화장품</span>
+          <span class="badge1 car">자동차</span>
+          <span class="badge1 bio">바이오</span>
+          <span class="badge1 blockchain">블록체인</span>
+        </div>
+      </div>
+      <div class="box_wrap">
         <p class="h2">level</p>
         <div class="type_view ico">
           <span class="ico_level1">level1</span>
