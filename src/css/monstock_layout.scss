@@ -459,13 +459,22 @@
             width:100%;
             a{
                 display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 align-items: center;
+                .txt_area{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top:2px;
+                    font-size: 10px;
+                }
             }
             .ico{
                 display: inline-flex;
+                justify-content: center;
                 width:24px;
                 height: 24px;
-                margin-right:10px;
             }
             
             .top_menu01{

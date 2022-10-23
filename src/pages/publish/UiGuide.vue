@@ -52,16 +52,16 @@
       <div class="box_wrap">
         <p class="h2">기업 badge</p>
         <div class="type_view ico">
-          <span class="badge1 build"></span>건설&nbsp;&nbsp;&nbsp;
-          <span class="badge1 semiconductor"></span>반도체&nbsp;&nbsp;&nbsp;
-          <span class="badge1 display"></span>디스플레이&nbsp;&nbsp;&nbsp;
-          <span class="badge1 politics"></span>정치&nbsp;&nbsp;&nbsp;
-          <span class="badge1 energy"></span>에너지&nbsp;&nbsp;&nbsp;
-          <span class="badge1 it"></span>it&nbsp;&nbsp;&nbsp;
-          <span class="badge1 cosmetics"></span>화장품&nbsp;&nbsp;&nbsp;
-          <span class="badge1 car"></span>자동차&nbsp;&nbsp;&nbsp;
-          <span class="badge1 bio"></span>바이오&nbsp;&nbsp;&nbsp;
-          <span class="badge1 blockchain"></span>블록체인&nbsp;&nbsp;&nbsp;
+          <span class="badge1 build" />건설&nbsp;&nbsp;&nbsp;
+          <span class="badge1 semiconductor" />반도체&nbsp;&nbsp;&nbsp;
+          <span class="badge1 display" />디스플레이&nbsp;&nbsp;&nbsp;
+          <span class="badge1 politics" />정치&nbsp;&nbsp;&nbsp;
+          <span class="badge1 energy" />에너지&nbsp;&nbsp;&nbsp;
+          <span class="badge1 it" />it&nbsp;&nbsp;&nbsp;
+          <span class="badge1 cosmetics" />화장품&nbsp;&nbsp;&nbsp;
+          <span class="badge1 car" />자동차&nbsp;&nbsp;&nbsp;
+          <span class="badge1 bio" />바이오&nbsp;&nbsp;&nbsp;
+          <span class="badge1 blockchain" />블록체인&nbsp;&nbsp;&nbsp;
         </div><br/><br/>
         <div class="type_view ico">
           <span class="badge2 build">건설</span>
