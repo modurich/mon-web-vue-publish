@@ -1237,13 +1237,16 @@ button{
         }
         .user_name{color:$txt_dk;
             color: #141414;
-            margin: 8px;
-            height: 30px;
+            margin: 8px 4px 4px 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 20px;
             font-weight: 700;
+            //700보다 작아질때
+            @media (max-width: $breakpoint-xs-max) {
+                height:30px;
+            }
         }
         .user_grade{
             display:inline-flex;

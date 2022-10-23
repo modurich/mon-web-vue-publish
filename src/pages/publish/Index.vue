@@ -327,7 +327,7 @@
                   A_513111_P
                 </router-link>
             </td>
-            <td>테마 카테고리</td>
+            <td>테마 카테고리-전체</td>
             <td></td>
         </tr>  
         <tr>
