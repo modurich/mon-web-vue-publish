@@ -5,7 +5,7 @@
             테마 카테고리
           </h2>
           <div class="box_contents">  
-            <div class="radio_wrap right">
+            <div class="radio_wrap right mgt0 mgb16">
                 <m-radio v-model="rad1" val="B" label="상승률순"/>
                 <m-radio v-model="rad1" val="C" label="하락률순"/>
             </div>

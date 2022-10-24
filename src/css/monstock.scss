@@ -1149,7 +1149,7 @@ button{
     }
 }
 .no_data{
-   margin:16px 0;
+   margin:32px 0;
    display: flex;
    align-items: center;
    justify-content: center; 
@@ -1367,6 +1367,7 @@ button{
     color: $primary;
     display: inline-flex;
     align-items: center;
+    font-weight: 400;
     &::before{
         content:'';
         display: inline-block;
@@ -1598,11 +1599,12 @@ button{
     .text_wrap{
         display:flex;
         align-items: center;
+        width:calc(100% - 50px);
         .text_area{
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            width:150px;
+            width:calc(100% - 40px);
             display: inline-block;
             font-weight: 700;
         }
