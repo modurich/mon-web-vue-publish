@@ -366,6 +366,54 @@
             <td>거버넌스</td>
             <td></td>
         </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_500_P">
+                  A_500_P
+                </router-link>
+            </td>
+            <td>인사이트 랭킹 기준</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_501_P">
+                  A_501_P
+                </router-link>
+            </td>
+            <td>BLASH 랭킹 기준</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_502_P">
+                  A_502_P
+                </router-link>
+            </td>
+            <td>팔로우 추가</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_503_P">
+                  A_503_P
+                </router-link>
+            </td>
+            <td>팔로우 취소</td>
+            <td></td>
+        </tr>  
       </tbody>
     </table>
   </div>

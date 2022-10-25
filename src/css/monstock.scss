@@ -217,6 +217,13 @@ body{
     background-size: contain !important;
     background: url('~assets/ico_error.png') center right no-repeat;
 }
+.ico_follow{
+    display: inline-flex;
+    width:100px;
+    height:100px;
+    background-size: contain !important;
+    background: url('~assets/ico_follow.png') center right no-repeat;
+}
 
 //badge
 .badge2{

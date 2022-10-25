@@ -149,6 +149,23 @@ export default {
             }
         }
     }
+    &.color-red{
+        background-color: #ec2222;
+        color: #FFF;
+        &:disabled {
+            // background-color: $ghost-white;
+            //color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: $medium-grey;
+            border: 0.5px solid $medium-grey;
+            &:disabled {
+                // color: $ghost-white;
+                border: 1px solid $medium-grey;
+            }
+        }
+    }
     &.color-lightGrey {
         background-color: #f8f9fd;
         color:#141414;
