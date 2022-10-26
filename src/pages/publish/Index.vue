@@ -164,7 +164,7 @@
             </td>
             <td>플레이어 추천-인기추천,신규가입</td>
             <td></td>
-        </tr>     
+        </tr> 
         <tr>
             <td></td>
             <td></td>
@@ -364,6 +364,16 @@
                 </router-link>
             </td>
             <td>거버넌스</td>
+            <td>탭 알림 배치 확인중</td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_21530_T">A_21530_T</router-link>
+            </td>
+            <td>추천,활동랭킹,신규가입입</td>
             <td></td>
         </tr>  
         <tr>

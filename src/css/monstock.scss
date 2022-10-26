@@ -226,6 +226,24 @@ body{
 }
 
 //badge
+.badge3{
+    height: 20px;
+    font-size: 10px;
+    padding:0 4px;
+    min-width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 400;
+    color:#fff;
+    &.gray{background: #9ca8ba;}
+    &.green{background: #6ee0b0;}
+    &.light_green{background: #9cd76e;}
+    &.brown{background: #c79058;}
+    &.yellow{background: #ffd165;color: $txt_dk;}
+    &.primary{background: $primary;color: #fff !important;}
+}
 .badge2{
     height: 18px;
     font-size: 10px;
@@ -236,6 +254,7 @@ body{
     justify-content: center;
     border-radius: 2px;
     color:#fff;
+    background-color: #9ca8ba;
     &.build{background-color:#8673ff;}
     &.semiconductor{background-color:#ffa500 ;}
     &.display{background-color:#9cd76e;}
@@ -1187,7 +1206,7 @@ button{
   }
   .ranking_box01 {
     text-align: center;
-    padding: 32px 0 32px 0;
+    padding: 32px 16px;
     border-radius: 8px;
     color:#fff;
     margin:32px 0;
@@ -1202,6 +1221,14 @@ button{
         }
     }
     a{display: inline-flex;}
+    .number_wrap{
+        .number_area{
+            font-size: 20px;
+            font-weight: 700;
+            word-wrap:break-word;
+            margin-right:4px;
+        }
+    }
   }
 
   //ranking_user
@@ -1369,7 +1396,19 @@ button{
 .txt_down{
     color: #fb1f1f;
 }
-
+.ico_pen{ 
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    &::before{
+        content:'';
+        display: inline-block;
+        width:23px;
+        height:26px;
+        margin-right:4px;
+        background: url('~assets/ico_pen.svg') center center no-repeat;
+    }
+}
 .ico_info{ 
     color: $primary;
     display: inline-flex;
@@ -1654,4 +1693,64 @@ button{
     .txt02{color:#c1b7ff;}
 
     }
+}
+.agenda_tit{
+    display: flex;
+    justify-content: space-between;
+    .ico_wrap{
+        display: flex;
+        align-items: center;
+        button,span{margin-left:16px}
+    }
+}
+
+.agenda_list{
+    li{
+        &.active{
+            border:2px solid $primary; 
+        }
+        padding: 32px 16px;
+        border:2px solid $com_line;
+        border-radius: 8px;
+        margin-top:32px;
+        .badge_wrap{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 9px;
+            .badge_area{
+                span + span{margin-left:8px}
+            }
+        }
+        .txt_tit{font-size: 16px;color:$txt_dk;}
+        .progress_tit{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            margin-bottom:4px;
+            .txt01{color: $primary;}
+        }
+        .txt_area{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top:16px;
+            font-size: 12px;
+            .txt01{color: $primary;}
+        }
+        //700보다 작을때
+        @media (max-width: $breakpoint-xs-max) {
+            .txt_area{
+                span{width:100%}
+                span + span{margin-top:4px}
+            }
+         }
+    }
+}
+
+.half_select{
+    width:50%;
+    //700보다 작을때
+    @media (max-width: $breakpoint-xs-max) {
+        width:100%;
+     }
 }

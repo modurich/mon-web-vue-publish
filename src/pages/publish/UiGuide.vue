@@ -51,6 +51,7 @@
       </div>
       <div class="box_wrap">
         <p class="h2">기업 badge</p>
+        <p class="h3">badge1</p>
         <div class="type_view ico">
           <span class="badge1 build" />건설&nbsp;&nbsp;&nbsp;
           <span class="badge1 semiconductor" />반도체&nbsp;&nbsp;&nbsp;
@@ -63,8 +64,10 @@
           <span class="badge1 bio" />바이오&nbsp;&nbsp;&nbsp;
           <span class="badge1 blockchain" />블록체인&nbsp;&nbsp;&nbsp;
         </div><br/><br/>
+        <p class="h3">badge2</p>
         <div class="type_view ico">
-          <span class="badge2 build">건설</span>
+          <span class="badge2">건설</span>
+          <!-- <span class="badge2 build">건설</span>
           <span class="badge2 semiconductor">반도체</span>
           <span class="badge2 display">디스플레이</span>
           <span class="badge2 politics">정치</span>
@@ -73,7 +76,16 @@
           <span class="badge2 cosmetics">화장품</span>
           <span class="badge2 car">자동차</span>
           <span class="badge2 bio">바이오</span>
-          <span class="badge2 blockchain">블록체인</span>
+          <span class="badge2 blockchain">블록체인</span> -->
+        </div><br/><br/>
+        <p class="h3">badge3</p>
+        <div class="type_view ico">
+          <span class="badge3 gray">gray</span>
+          <span class="badge3 green">green</span>
+          <span class="badge3 light_green">light_green</span>
+          <span class="badge3 brown">brown</span>
+          <span class="badge3 yellow">yellow</span>
+          <span class="badge3 primary">primary</span>
         </div>
       </div>
       <div class="box_wrap">

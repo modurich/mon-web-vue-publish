@@ -13,7 +13,9 @@
               </h3>
               <div class="ranking_box01">
                 <p>총 스테이킹 수량</p>
-                <span class="center"><span class="font20 bold">9,000,000.9999999999</span> MON</span>
+                <span class="number_wrap">
+                  <span class="number_area">9,000,000.9999999999</span>MON
+                </span>
               </div>
               <div><span class="ico_info_bk">예상 보상률</span></div>
               <ul class="expect_list">
@@ -118,7 +120,91 @@
               <!-- E NFT 슬롯 -->
             </div>
             <div class="tab_contents" v-if="tab1 == 'B'">
-             
+              <!--S 의제투표-->
+              <div class="half_select mgt16 mgb32">
+                <m-select v-model="select1" :options="options" />
+              </div>
+              <div class="agenda_tit">
+                <span class="font12">최근 작성일 순</span>
+                <span class="ico_wrap">
+                  <button class="ico_pen">기타의제 작성</button>
+                  <span class="ico_info">의제투표란?</span>
+                </span>
+              </div>
+              
+              <ul class="agenda_list">
+                <li class="active">
+                  <span class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 yellow">PRO</span>
+                        <span class="badge3 primary">반영완료</span>
+                      </span>
+                      <span class="badge_area">
+                        <span class="badge3 gray">부결</span>
+                      </span>
+                  </span>
+                  <p class="txt_tit">호빵맨님의 PRO 승급 제안</p>
+                  <div class="progress_bar">
+                    <div class="progress_tit">
+                      <span class="txt01">🗳 471 VP</span>
+                      <span class="txt02">정족수 2,000 VP</span>
+                    </div>
+                    <q-linear-progress class="progress_type1" size="10px" :value="progress" />
+                    <div class="txt_area">
+                      <span>의제 종류 : 기타</span>
+                      <span>투표 기간:  2022.09.20 10:16:39 ~  2022.09.23 10:16:39</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 yellow">PRO</span>
+                        <span class="badge3 primary">반영완료</span>
+                      </span>
+                      <span class="badge_area">
+                        <span class="badge3 green">가결</span>
+                      </span>
+                  </span>
+                  <p class="txt_tit">호빵맨님의 PRO 승급 제안</p>
+                  <div class="progress_bar">
+                    <div class="progress_tit">
+                      <span class="txt01">🗳 471 VP</span>
+                      <span class="txt02">정족수 2,000 VP</span>
+                    </div>
+                    <q-linear-progress class="progress_type1" size="10px" :value="progress" />
+                    <div class="txt_area">
+                      <span>의제 종류 : 기타</span>
+                      <span>투표 기간:  2022.09.20 10:16:39 ~  2022.09.23 10:16:39</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 brown">코인</span>
+                        <span class="badge3 yellow">BEST</span>
+                        <span class="badge3 gray">취소</span>
+                      </span>
+                      <span class="badge_area">
+                        <span class="badge3 green">가결</span>
+                      </span>
+                  </span>
+                  <p class="txt_tit">호빵맨님의 PRO 승급 제안</p>
+                  <div class="progress_bar">
+                    <div class="progress_tit">
+                      <span class="txt01">🗳 471 VP</span>
+                      <span class="txt02">정족수 2,000 VP</span>
+                    </div>
+                    <q-linear-progress class="progress_type1" size="10px" :value="progress" />
+                    <div class="txt_area">
+                      <span>의제 종류 : 기타</span>
+                      <span>투표 기간:  2022.09.20 10:16:39 ~  2022.09.23 10:16:39</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!--E 의제투표-->
             </div>
         </div>
     </div>
@@ -129,12 +215,17 @@ import { ref } from 'vue';
 export default {
   data() {
         return {
+          select1: ref("전체"),
+          options: [
+            '전체', '선택1','선택2','선택3'
+          ],
           tab1: ref('A'),
           tabs: [
             { label: '스테이킹', value: 'A', icon: '' },
             { label: '의제 투표', value: 'B', icon: '' },
            
           ],
+          progress: 0.4
         }
     },
     methods: {

@@ -8,7 +8,7 @@
             <ul class="thema_list mgt0">
               <li>
                 <div class="tit_area">
-                  <span class="badge2 semiconductor">반도체</span>
+                  <span class="badge2">반도체</span>
                   <span class="txt01 font20">메모리반도체</span>
                 </div>
                 <div class="ico_area">

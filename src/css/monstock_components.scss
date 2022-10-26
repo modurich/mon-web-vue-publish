@@ -366,3 +366,14 @@
 .q-checkbox__inner {
     color: $primary;
 }
+
+//progress
+.progress_type1{
+    border-radius: 10px;
+    &.q-linear-progress {
+        color: #c1b7ff;
+    }
+    .q-linear-progress__track--light {
+        background:#f4f2ff;
+    } 
+}
