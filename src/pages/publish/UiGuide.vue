@@ -536,6 +536,26 @@
             </div>
           </div>
         </div>
+        <div class="box_wrap">
+          <p class="h2">cardTab</p>
+          <div class="type_view">
+          <q-tabs class="line_type large" v-model="tab1">
+            <q-tab name="G"  label="스테이킹"></q-tab>
+            <q-tab name="F"  label="의제 투표" alert="red"></q-tab>
+          </q-tabs>
+          <q-tab-panels v-model="tab1" animated>
+            <q-tab-panel name="G" class="tab_contents">
+              <div class="text-h6">스테이킹</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </q-tab-panel>
+
+            <q-tab-panel name="F" class="tab_contents">
+              <div class="text-h6">의제 투표</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </q-tab-panel>
+          </q-tab-panels>
+          </div>
+        </div>
       </div>
       <!-- <div id="group09" class="group_wrap">
         <p class="h1_type">ico</p>
