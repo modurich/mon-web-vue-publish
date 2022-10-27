@@ -381,6 +381,16 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/C_10000_P">C_10000_P</router-link>
+            </td>
+            <td>BLASH 작성 안내</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/A_500_P">
                   A_500_P
                 </router-link>

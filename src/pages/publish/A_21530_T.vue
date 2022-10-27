@@ -19,6 +19,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -46,6 +48,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -73,6 +77,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -100,6 +106,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -127,6 +135,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -163,6 +173,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -190,6 +202,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -217,6 +231,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -244,6 +260,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -271,6 +289,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -307,6 +327,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -334,6 +356,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -361,6 +385,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -388,6 +414,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
@@ -415,6 +443,8 @@
                     <span class="badge_area">
                       <span class="badge pro">PRO</span>
                       <span class="badge pl1">PL1</span>
+                      <span class="ico_level1">level1</span>
+                      <span class="primary">2500P</span>
                     </span>
                   </div>
                 </div>
