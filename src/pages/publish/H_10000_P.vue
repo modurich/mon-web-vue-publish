@@ -26,8 +26,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big gray">추매취소</span>
                     </div>
                   </li>
                   <li>
@@ -43,8 +42,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big red">자동매도</span>
                     </div>
                   </li>
                   <li>
@@ -60,8 +58,23 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big green">최초매수</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prd_img">
+                      <div class="img_area">
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">삼성전자우</span>
+                        <span class="txt02">
+                          코스피 005932
+                        </span>
+                      </div>
+                    </div>
+                    <div class="ico_area">
+                      <span class="badge3 big orange">홀딩</span>
                     </div>
                   </li>
                 </ul>
@@ -259,6 +272,67 @@
                 </div>
                  <!-- E 배너 -->
                 <div class="divider mgt0"/>
+                  <!-- S 팔로우 인사이트 -->
+                  <q-expansion-item
+                  class="accordion_type1"
+                  expand-separator
+                  default-opened
+                  label="팔로우 인사이트"
+                >
+                <p class="pdb32">내가 보팅중인 콘텐츠 종목</p>
+                <ul class="product_list">
+                  <li>
+                    <div class="prd_img">
+                      <div class="img_area">
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">삼성전자우</span>
+                        <span class="txt02">
+                          코스피 005930
+                        </span>
+                      </div>
+                    </div>
+                    <div class="ico_area">
+                      <span class="badge3 big red">하락예측</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prd_img">
+                      <div class="img_area">
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">삼성전자우</span>
+                        <span class="txt02">
+                          코스피 005930
+                        </span>
+                      </div>
+                    </div>
+                    <div class="ico_area">
+                      <span class="badge3 big green">상승예측</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prd_img">
+                      <div class="img_area">
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">삼성전자우</span>
+                        <span class="txt02">
+                          코스피 005930
+                        </span>
+                      </div>
+                    </div>
+                    <div class="ico_area">
+                      <span class="badge3 big green">상승예측</span>
+                    </div>
+                  </li>
+                </ul>
+                </q-expansion-item>
+                <!-- E 팔로우 인사이트 -->
+                <div class="divider"/>
                  <!-- S 보러가기 -->
                  <div class="view_box">
                     <p class="list_wrap">
@@ -295,8 +369,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big gray">진행중</span>
                     </div>
                   </li>
                   <li>

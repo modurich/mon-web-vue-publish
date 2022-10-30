@@ -508,7 +508,7 @@
                 <router-link to="/publish/H_10000_P">H_10000_P</router-link>
             </td>
             <td>내종목,발견</td>
-            <td>진행중</td>
+            <td>swiper 진행중</td>
         </tr> 
       </tbody>
     </table>
