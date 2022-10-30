@@ -241,6 +241,15 @@ body{
     border-radius: 4px;
     font-weight: 400;
     color:#fff;
+    //size
+    &.big{border-radius: 4px;
+        font-size: 12px;
+        height: 30px;
+        min-width: 70px;
+        padding:0 16px;
+    }
+    //color
+    &.red{background: #fb1f1f;}
     &.gray{background: #9ca8ba;}
     &.green{background: #6ee0b0;}
     &.light_green{background: #9cd76e;}
@@ -1926,4 +1935,51 @@ button{
         &.mob{display: block;}
        } 
     }
+}
+
+//assets_list
+.assets_list{
+    display: flex;
+    margin-top:32px;
+    li{
+        position: relative;
+        padding: 10px;
+        text-align: center;
+        margin-right:24px;
+        border-radius: 8px;
+        width:105px;
+        box-sizing: border-box;
+        
+        .ico_close_gray{position: absolute;
+            top:-10px;
+            right:-5px
+        }
+        .logo{
+            img{width:36px;height:36px;
+            border-radius: 36px;overflow: hidden;;
+            }
+            margin-bottom: 4px;
+        }
+        .txt01,.txt02{display: block;}
+        .txt01{color: $txt_dk;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        &.blue_box{
+            background: #eefbf5;
+            .txt02{color:#43c890 ;}
+        }
+        &.red_box{
+            background: #fff0f0;
+            .txt02{color: #fb1f1f;}
+        }
+    }
+}
+.ico_close_gray{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    text-indent: -999em;
+    background: url('~assets/ico_close_gray.svg');
 }

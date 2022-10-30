@@ -362,7 +362,7 @@
                 </router-link>
             </td>
             <td>거버넌스</td>
-            <td>탭 알림 배치 확인중</td>
+            <td>탭 알림 badge 예시</td>
         </tr> 
         <tr>
             <td></td>
@@ -402,16 +402,6 @@
                 <router-link to="/publish/C_41000_T">C_41000_T,C_42000_T</router-link>
             </td>
             <td>임시저장</td>
-            <td></td>
-        </tr>  
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <router-link to="/publish/H_10000_P">H_10000_P</router-link>
-            </td>
-            <td>내종목,발견</td>
             <td></td>
         </tr>  
         <tr>
@@ -510,6 +500,16 @@
             <td>의제 투표란?</td>
             <td></td>
         </tr>  
+        <tr>
+            <td>홈(내종목)/콘텐츠썸네일</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_10000_P">H_10000_P</router-link>
+            </td>
+            <td>내종목,발견</td>
+            <td>진행중</td>
+        </tr> 
       </tbody>
     </table>
   </div>

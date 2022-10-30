@@ -87,6 +87,15 @@
           <span class="badge3 yellow">yellow</span>
           <span class="badge3 primary">primary</span>
         </div>
+        <div class="type_view ico">
+          <span class="badge3 big gray">gray</span>
+          <span class="badge3 big green">green</span>
+          <span class="badge3 big light_green">light_green</span>
+          <span class="badge3 big brown">brown</span>
+          <span class="badge3 big yellow">yellow</span>
+          <span class="badge3 big primary">primary</span>
+          <span class="badge3 big red">red</span>
+        </div>
       </div>
       <div class="box_wrap">
         <p class="h2">level</p>

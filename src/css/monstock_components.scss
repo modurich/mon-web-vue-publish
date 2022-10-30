@@ -228,7 +228,10 @@
     }
 
 }
-
+.q-tab__alert {
+    height: 8px;
+    width: 8px;
+}
 
 //ranking
 .ranking_slide{
@@ -415,6 +418,7 @@
 
 //accordion_type1
 .accordion_type1{
+    position: relative;
     .q-item {
         padding: 8px 0px;
     }
@@ -423,4 +427,11 @@
         color: $txt_dk;
     }
     hr{display: none;}
+    .tit_btn{
+        position: absolute;
+        right: 41px;
+        top: -30px;
+        color:$primary;
+    }
 }
+

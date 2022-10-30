@@ -75,6 +75,7 @@
                   default-opened
                   label="관심자산"
                 >
+                <button class="tit_btn">편집하기</button>
                 <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
                 <div v-if="tab2 == 'A'">
                   <ul class="product_list">
@@ -214,9 +215,45 @@
                 </div>
                 </q-expansion-item>
                 <!-- E 관심자산추천 -->
+                <div class="divider"/>
+                 <!-- S 최근본자산 -->
+                 <q-expansion-item
+                  class="accordion_type1"
+                  expand-separator
+                  default-opened
+                  label="최근본자산"
+                >
+                <ul class="assets_list">
+                   <li class="blue_box">
+                    <button class="ico_close_gray">close</button>
+                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                    <span class="txt01">삼성전자우삼성전자우삼성전자우</span>
+                    <span class="txt02">+29.24%</span>
+                  </li>
+                  <li class="red_box">
+                    <button class="ico_close_gray">close</button>
+                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                    <span class="txt01">삼성전자우</span>
+                    <span class="txt02">+29.24%</span>
+                  </li>
+                  <li class="blue_box">
+                    <button class="ico_close_gray">close</button>
+                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                    <span class="txt01">삼성전자우</span>
+                    <span class="txt02">+29.24%</span>
+                  </li>
+                  <li class="blue_box">
+                    <button class="ico_close_gray">close</button>
+                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                    <span class="txt01">삼성전자우</span>
+                    <span class="txt02">+29.24%</span>
+                  </li>
+                </ul>
+              </q-expansion-item>
+                 <!-- E 최근본자산 -->
                 <div class="divider mgb0"/>
                  <!-- S 배너 -->
-                 <div class="banner_box mg0">
+                <div class="banner_box mg0">
                     <img src="~assets/banner_img01.png" alt="BLASH 구독하고 실시간 시그널 기능을 경험해보세요!" class="pc">
                     <img src="~assets/mob_banner_img01.png" alt="BLASH 구독하고 실시간 시그널 기능을 경험해보세요!" class="mob">
                 </div>
@@ -258,8 +295,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big gray">진행중</span>
                     </div>
                   </li>
                   <li>
@@ -275,8 +311,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big green">성공</span>
                     </div>
                   </li>
                   <li>
@@ -292,8 +327,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                      <span class="badge3 big red">실패</span>
                     </div>
                   </li>
                 </ul>
