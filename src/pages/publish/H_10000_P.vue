@@ -156,7 +156,7 @@
                   class="accordion_type1"
                   expand-separator
                   default-opened
-                  label="관심자산"
+                  label="관심자산추천"
                 >
                 <p>관심 자산 등록하고  빠르게 소식 받아가세요</p>
                 <m-tabs class="card_type small mgt16" v-model="tab3" :items="tabs2" />
