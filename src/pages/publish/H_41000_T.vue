@@ -4,8 +4,12 @@
           <h2 class="line_type">
             거버넌스
           </h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
-            <div class="tab_contents" v-if="tab1 == 'A'">
+          <q-tabs class="line_type large" v-model="tab1">
+            <q-tab name="A"  label="스테이킹"></q-tab>
+            <q-tab name="B"  label="의제 투표" alert="red"></q-tab>
+          </q-tabs>
+          <q-tab-panels v-model="tab1" animated>
+            <q-tab-panel name="A" class="tab_contents">
               <!-- S 스테이킹 현황 -->
               <h3 class="between mgt32">
                 <span class="font16">MON 스테이킹 현황</span>
@@ -118,8 +122,9 @@
                 <div class="footer_message">📌️  NFT 추가 보상은 하루 1번 수령이 가능하며 매일 오전 9시까지 수령하지 않은 보상은 초기화됩니다.</div>
               </div>
               <!-- E NFT 슬롯 -->
-            </div>
-            <div class="tab_contents" v-if="tab1 == 'B'">
+            </q-tab-panel>
+
+            <q-tab-panel name="B" class="tab_contents">
               <!--S 의제투표-->
               <div class="half_select mgt16 mgb32">
                 <m-select v-model="select1" :options="options" />
@@ -205,7 +210,17 @@
                 </li>
               </ul>
               <!--E 의제투표-->
+            </q-tab-panel>
+          </q-tab-panels>
+          <!--
+          <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
+            <div class="tab_contents" v-if="tab1 == 'A'">
+
             </div>
+            <div class="tab_contents" v-if="tab1 == 'B'">
+
+            </div>
+          -->
         </div>
     </div>
 </template>
@@ -220,11 +235,6 @@ export default {
             '전체', '선택1','선택2','선택3'
           ],
           tab1: ref('A'),
-          tabs: [
-            { label: '스테이킹', value: 'A', icon: '' },
-            { label: '의제 투표', value: 'B', icon: '' },
-           
-          ],
           progress: 0.4
         }
     },
