@@ -13,8 +13,7 @@
               </m-input>
               <m-button-3 color="primary">검색</m-button-3>
             </div>
-            <q-tabs v-model="tab1">
-              
+            <q-tabs v-model="tab1" class="line_type">
               <template v-for="itm in tabs">
                 <q-tab :key="itm.id" :name="itm.value" :label="itm.label"></q-tab>
               </template>

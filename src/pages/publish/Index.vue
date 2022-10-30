@@ -290,9 +290,7 @@
                 </router-link>
             </td>
             <td>검색</td>
-            <td>
-              진행중<br/>
-              퀘이사 q-tab 모바일용 제작중</td>
+            <td></td>
         </tr> 
         <tr>
             <td></td>
@@ -391,6 +389,36 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/C_20000_T">C_20000_T</router-link>
+            </td>
+            <td>BLASH 작성 안내</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_41000_T">C_41000_T,C_42000_T</router-link>
+            </td>
+            <td>임시저장</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_10000_P">H_10000_P</router-link>
+            </td>
+            <td>내종목,발견</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/A_500_P">
                   A_500_P
                 </router-link>
@@ -432,6 +460,54 @@
                 </router-link>
             </td>
             <td>팔로우 취소</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_504_P">
+                  A_504_P
+                </router-link>
+            </td>
+            <td>스테이킹이란</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_505_P">
+                  A_505_P
+                </router-link>
+            </td>
+            <td>스테이킹 수량별 보상VP</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_506_P">
+                  A_506_P
+                </router-link>
+            </td>
+            <td>NFT 추가보상 안내</td>
+            <td></td>
+        </tr>  
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_507_P">
+                  A_507_P
+                </router-link>
+            </td>
+            <td>의제 투표란?</td>
             <td></td>
         </tr>  
       </tbody>
