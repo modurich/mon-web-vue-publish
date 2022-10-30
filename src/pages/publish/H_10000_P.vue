@@ -238,32 +238,42 @@
                   default-opened
                   label="최근본자산"
                 >
-                <ul class="assets_list">
-                   <li class="blue_box">
+            <div class="assets_list">                  
+              <swiper class="swiper" :options="swiperOption">
+                  <swiper-slide>                  
+                   <div class="blue_box">
                     <button class="ico_close_gray">close</button>
                     <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                     <span class="txt01">삼성전자우삼성전자우삼성전자우</span>
                     <span class="txt02">+29.24%</span>
-                  </li>
-                  <li class="red_box">
+                  </div>
+                  </swiper-slide>                    
+                  <swiper-slide>                  
+                   <div class="blue_box">
                     <button class="ico_close_gray">close</button>
                     <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                     <span class="txt01">삼성전자우</span>
                     <span class="txt02">+29.24%</span>
-                  </li>
-                  <li class="blue_box">
+                  </div>
+                  </swiper-slide>                    
+                  <swiper-slide>                  
+                   <div class="blue_box">
                     <button class="ico_close_gray">close</button>
                     <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                     <span class="txt01">삼성전자우</span>
                     <span class="txt02">+29.24%</span>
-                  </li>
-                  <li class="blue_box">
+                  </div>
+                  </swiper-slide>                    
+                  <swiper-slide>                  
+                   <div class="blue_box">
                     <button class="ico_close_gray">close</button>
                     <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                     <span class="txt01">삼성전자우</span>
                     <span class="txt02">+29.24%</span>
-                  </li>
-                </ul>
+                     </div>
+                  </swiper-slide>
+                  </swiper>                               
+                </div>
               </q-expansion-item>
                  <!-- E 최근본자산 -->
                 <div class="divider mgb0"/>
@@ -423,7 +433,12 @@
 
 <script>
 import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+
 export default {
+  components: { Swiper, SwiperSlide },
+  name:"H_10000_P", 
   data() {
         return {
           select1: ref("전체"),
@@ -452,7 +467,33 @@ export default {
           ],
           val: ref(false),
           v_true: ref(true),
-          progress: 0.4
+          progress: 0.4,
+          swiperOption: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    650: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    520: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    320: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 30
+                    }
+                }
+            },
         }
     },
     methods: {
