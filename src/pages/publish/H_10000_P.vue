@@ -82,73 +82,75 @@
                 <!-- E 구독중 매매시그널 -->
                 <div class="divider"/>
                 <!-- S 관심자산 -->
-                <q-expansion-item
-                  class="accordion_type1"
-                  expand-separator
-                  default-opened
-                  label="관심자산"
-                >
-                <button class="tit_btn">편집하기</button>
-                <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
-                <div v-if="tab2 == 'A'">
-                  <ul class="product_list">
-                    <li>
-                      <div class="prd_img">
-                        <div class="img_area">
-                          <img src="~assets/prd_logo.png" alt="profile" />
+                <div class="accordion_wrap">
+                  <button class="tit_btn">편집하기</button>
+                  <q-expansion-item
+                    class="accordion_type1"
+                    expand-separator
+                    default-opened
+                    label="관심자산"
+                  >
+                  <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
+                  <div v-if="tab2 == 'A'">
+                    <ul class="product_list">
+                      <li>
+                        <div class="prd_img">
+                          <div class="img_area">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt01">삼성전자우</span>
+                            <span class="txt02">
+                              코스피 005930
+                            </span>
+                          </div>
                         </div>
-                        <div class="tit_area">
-                          <span class="txt01">삼성전자우</span>
-                          <span class="txt02">
-                            코스피 005930
-                          </span>
+                        <div class="ico_area right">
+                          <span class="tag_red">-12.26%</span>
+                          <div class="mgt8">₩ 352,100</div>
                         </div>
-                      </div>
-                      <div class="ico_area right">
-                        <span class="tag_red">-12.26%</span>
-                        <div class="mgt8">₩ 352,100</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="prd_img">
-                        <div class="img_area">
-                          <img src="~assets/prd_logo.png" alt="profile" />
+                      </li>
+                      <li>
+                        <div class="prd_img">
+                          <div class="img_area">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt01">삼성전자우</span>
+                            <span class="txt02">
+                              코스피 005930
+                            </span>
+                          </div>
                         </div>
-                        <div class="tit_area">
-                          <span class="txt01">삼성전자우</span>
-                          <span class="txt02">
-                            코스피 005930
-                          </span>
+                        <div class="ico_area right">
+                          <span class="tag_blue">+1.24%</span>
+                          <div class="mgt8">₩ 352,100</div>
                         </div>
-                      </div>
-                      <div class="ico_area right">
-                        <span class="tag_blue">+1.24%</span>
-                        <div class="mgt8">₩ 352,100</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="prd_img">
-                        <div class="img_area">
-                          <img src="~assets/prd_logo.png" alt="profile" />
+                      </li>
+                      <li>
+                        <div class="prd_img">
+                          <div class="img_area">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt01">삼성전자우</span>
+                            <span class="txt02">
+                              코스피 005930
+                            </span>
+                          </div>
                         </div>
-                        <div class="tit_area">
-                          <span class="txt01">삼성전자우</span>
-                          <span class="txt02">
-                            코스피 005930
-                          </span>
+                        <div class="ico_area right">
+                          <span class="tag_blue">+1.24%</span>
+                          <div class="mgt8">₩ 352,100</div>
                         </div>
-                      </div>
-                      <div class="ico_area right">
-                        <span class="tag_blue">+1.24%</span>
-                        <div class="mgt8">₩ 352,100</div>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div v-if="tab2 == 'B'">
+                    contents2
+                  </div>
+                  </q-expansion-item>
                 </div>
-                <div v-if="tab2 == 'B'">
-                  contents2
-                </div>
-                </q-expansion-item>
                 <!-- E 관심자산 -->
                 <div class="divider"/>
                 <!-- S 관심자산추천 -->

@@ -417,8 +417,16 @@
 }
 
 //accordion_type1
-.accordion_type1{
+.accordion_wrap{
     position: relative;
+    .tit_btn{
+        position: absolute;
+        right: 41px;
+        top: 18px;
+        color:$primary;
+    }
+}
+.accordion_type1{
     .q-item {
         padding: 8px 0px;
     }
@@ -427,11 +435,5 @@
         color: $txt_dk;
     }
     hr{display: none;}
-    .tit_btn{
-        position: absolute;
-        right: 41px;
-        top: -30px;
-        color:$primary;
-    }
 }
 

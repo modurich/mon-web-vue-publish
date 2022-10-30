@@ -1942,7 +1942,7 @@ button{
 .assets_list{
     display: flex;
     margin-top:32px;
-    li{
+    > div{
         position: relative;
         padding: 10px;
         text-align: center;
