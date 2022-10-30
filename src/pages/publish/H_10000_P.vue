@@ -38,12 +38,12 @@
                       <div class="tit_area">
                         <span class="txt01">삼성전자우</span>
                         <span class="txt02">
-                          코스피 005930
+                          코스피 005931
                         </span>
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                      <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                         indeterminate-icon="help" />
                     </div>
                   </li>
@@ -55,7 +55,7 @@
                       <div class="tit_area">
                         <span class="txt01">삼성전자우</span>
                         <span class="txt02">
-                          코스피 005930
+                          코스피 005932
                         </span>
                       </div>
                     </div>
@@ -163,8 +163,8 @@
                         </div>
                       </div>
                       <div class="ico_area">
-                        <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                        indeterminate-icon="help" />
+                        <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                          indeterminate-icon="help" />
                       </div>
                     </li>
                     <li>
@@ -175,7 +175,7 @@
                         <div class="tit_area">
                           <span class="txt01">삼성전자우</span>
                           <span class="txt02">
-                            코스피 005930
+                            코스피 005931
                           </span>
                         </div>
                       </div>
@@ -192,12 +192,12 @@
                         <div class="tit_area">
                           <span class="txt01">삼성전자우</span>
                           <span class="txt02">
-                            코스피 005930
+                            코스피 005932
                           </span>
                         </div>
                       </div>
                       <div class="ico_area">
-                        <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                        <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                         indeterminate-icon="help" />
                       </div>
                     </li>
@@ -258,7 +258,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                      <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                         indeterminate-icon="help" />
                     </div>
                   </li>
@@ -292,7 +292,7 @@
                       </div>
                     </div>
                     <div class="ico_area">
-                      <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                      <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                         indeterminate-icon="help" />
                     </div>
                   </li>
@@ -340,6 +340,8 @@ export default {
             { label: '코인', value: 'C', icon: '' },
            
           ],
+          val: ref(false),
+          v_true: ref(true),
           progress: 0.4
         }
     },
