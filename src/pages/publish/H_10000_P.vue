@@ -238,42 +238,50 @@
                   default-opened
                   label="최근본자산"
                 >
-            <div class="assets_list">                  
+                         
               <swiper class="swiper" :options="swiperOption">
-                  <swiper-slide>                  
-                   <div class="blue_box">
-                    <button class="ico_close_gray">close</button>
-                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
-                    <span class="txt01">삼성전자우삼성전자우삼성전자우</span>
-                    <span class="txt02">+29.24%</span>
+                  <swiper-slide>    
+                  <div class="assets_list">              
+                    <div class="blue_box">
+                      <button class="ico_close_gray">close</button>
+                      <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                      <span class="txt01">삼성전자우삼성전자우삼성전자우</span>
+                      <span class="txt02">+29.24%</span>
+                    </div>
                   </div>
                   </swiper-slide>                    
-                  <swiper-slide>                  
+                  <swiper-slide>   
+                    <div class="assets_list">                 
                    <div class="blue_box">
                     <button class="ico_close_gray">close</button>
                     <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                     <span class="txt01">삼성전자우</span>
                     <span class="txt02">+29.24%</span>
                   </div>
+                </div>
                   </swiper-slide>                    
-                  <swiper-slide>                  
-                   <div class="blue_box">
-                    <button class="ico_close_gray">close</button>
-                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">+29.24%</span>
+                  <swiper-slide>   
+                  <div class="assets_list">                 
+                    <div class="blue_box">
+                      <button class="ico_close_gray">close</button>
+                      <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">+29.24%</span>
+                    </div>
                   </div>
                   </swiper-slide>                    
-                  <swiper-slide>                  
-                   <div class="blue_box">
-                    <button class="ico_close_gray">close</button>
-                    <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">+29.24%</span>
-                     </div>
+                  <swiper-slide>     
+                    <div class="assets_list">               
+                    <div class="blue_box">
+                      <button class="ico_close_gray">close</button>
+                      <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">+29.24%</span>
+                      </div>
+                    </div>
                   </swiper-slide>
                   </swiper>                               
-                </div>
+              
               </q-expansion-item>
                  <!-- E 최근본자산 -->
                 <div class="divider mgb0"/>
@@ -470,27 +478,27 @@ export default {
           progress: 0.4,
           swiperOption: {
                 slidesPerView: 5,
-                spaceBetween: 50,
+                spaceBetween: 24,
                 breakpoints: {
                     1024: {
                         slidesPerView: 4,
-                        spaceBetween: 40
+                        spaceBetween: 24
                     },
                     768: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 24
                     },
                     650: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 24
                     },
                     520: {
                         slidesPerView: 3,
-                        spaceBetween: 30
+                        spaceBetween: 24
                     },
                     320: {
                         slidesPerView: 2.2,
-                        spaceBetween: 30
+                        spaceBetween: 24
                     }
                 }
             },

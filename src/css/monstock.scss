@@ -1940,13 +1940,12 @@ button{
 
 //assets_list
 .assets_list{
-    display: flex;
-    margin-top:32px;
+    // display: flex;
+    // margin-top:32px;
     > div{
         position: relative;
         padding: 10px;
         text-align: center;
-        margin-right:24px;
         border-radius: 8px;
         width:105px;
         box-sizing: border-box;
