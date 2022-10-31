@@ -144,6 +144,40 @@
                           <div class="mgt8">₩ 352,100</div>
                         </div>
                       </li>
+                      <li>
+                        <div class="prd_img">
+                          <div class="img_area">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt01">삼성전자우</span>
+                            <span class="txt02">
+                              코스피 005930
+                            </span>
+                          </div>
+                        </div>
+                        <div class="ico_area right">
+                          <span class="tag_blue">+1.24%</span>
+                          <div class="mgt8">₩ 352,100</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prd_img">
+                          <div class="img_area">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt01">삼성전자우</span>
+                            <span class="txt02">
+                              코스피 005930
+                            </span>
+                          </div>
+                        </div>
+                        <div class="ico_area right">
+                          <span class="tag_blue">+1.24%</span>
+                          <div class="mgt8">₩ 352,100</div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div v-if="tab2 == 'B'">
@@ -217,9 +251,43 @@
                         indeterminate-icon="help" />
                       </div>
                     </li>
+                    <li>
+                      <div class="prd_img">
+                        <div class="img_area">
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                        </div>
+                        <div class="tit_area">
+                          <span class="txt01">삼성전자우</span>
+                          <span class="txt02">
+                            코스피 005932
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ico_area">
+                        <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                        indeterminate-icon="help" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="prd_img">
+                        <div class="img_area">
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                        </div>
+                        <div class="tit_area">
+                          <span class="txt01">삼성전자우</span>
+                          <span class="txt02">
+                            코스피 005932
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ico_area">
+                        <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                        indeterminate-icon="help" />
+                      </div>
+                    </li>
                   </ul>
                   <div class="btn_wrap l_row_l">
-                    <m-button-3 lined color="primary" class="full">모두보기</m-button-3>
+                    <m-button-3 lined size="large" color="primary" class="full">모두보기</m-button-3>
                   </div>
                 </div>
                 <div v-if="tab3 == 'B'">
@@ -262,7 +330,7 @@
                   </swiper-slide>                    
                   <swiper-slide>   
                   <div class="assets_list">                 
-                    <div class="blue_box">
+                    <div class="red_box">
                       <button class="ico_close_gray">close</button>
                       <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                       <span class="txt01">삼성전자우</span>
@@ -272,7 +340,27 @@
                   </swiper-slide>                    
                   <swiper-slide>     
                     <div class="assets_list">               
+                    <div class="red_box">
+                      <button class="ico_close_gray">close</button>
+                      <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">+29.24%</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>     
+                    <div class="assets_list">               
                     <div class="blue_box">
+                      <button class="ico_close_gray">close</button>
+                      <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">+29.24%</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>     
+                    <div class="assets_list">               
+                    <div class="red_box">
                       <button class="ico_close_gray">close</button>
                       <div class="logo"><img src="~assets/prd_logo.png" alt="삼성전자우" /></div>
                       <span class="txt01">삼성전자우</span>
@@ -350,6 +438,9 @@
                     </div>
                   </li>
                 </ul>
+                <div class="btn_wrap l_row_l">
+                    <m-button-3 lined size="large" color="primary" class="full">모두보기</m-button-3>
+                  </div>
                 </q-expansion-item>
                 <!-- E 팔로우 인사이트 -->
                 <div class="divider"/>
@@ -362,7 +453,7 @@
                       </span>
                     </p>
                     <div class="btn_wrap l_row_l">
-                      <m-button-3 color="primary" class="full">보러가기</m-button-3>
+                      <m-button-3 size="large" color="primary" class="full">보러가기</m-button-3>
                     </div>
                 </div>
                  <!-- E 보러가기 -->
@@ -481,15 +572,15 @@ export default {
                 spaceBetween: 24,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 24
                     },
                     768: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 24
                     },
                     650: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 24
                     },
                     520: {
@@ -497,7 +588,7 @@ export default {
                         spaceBetween: 24
                     },
                     320: {
-                        slidesPerView: 2.2,
+                        slidesPerView: 3,
                         spaceBetween: 24
                     }
                 }
