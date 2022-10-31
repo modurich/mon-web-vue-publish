@@ -508,7 +508,27 @@
                 <router-link to="/publish/H_10000_P">H_10000_P</router-link>
             </td>
             <td>내종목,발견</td>
-            <td>swiper 진행중</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11220_U">H_11220_U</router-link>
+            </td>
+            <td>관심 자산 그룹 선택</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11115_U">H_11115_U</router-link>
+            </td>
+            <td>그룹명 변경</td>
+            <td></td>
         </tr> 
       </tbody>
     </table>

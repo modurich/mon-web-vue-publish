@@ -1983,3 +1983,14 @@ button{
     text-indent: -999em;
     background: url('~assets/ico_close_gray.svg');
 }
+
+//btn_list_wrap
+.btn_list_wrap{
+    button{margin-bottom:16px;
+        opacity: 0.5;
+        &.active{
+            opacity: 1;
+        }
+    }
+
+}

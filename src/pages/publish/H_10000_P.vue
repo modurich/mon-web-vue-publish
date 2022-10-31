@@ -92,6 +92,17 @@
                   >
                   <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
                   <div v-if="tab2 == 'A'">
+                    <div class="no_data_wrap">
+                      <div class="ico_top">
+                        <i class="ico_error"></i>
+                      </div>
+                      <div class="com_message mgb32 font18">
+                        관심자산을 추가하고 관찰해보세요!
+                      </div>
+                      <div class="btn_wrap l_row_l">
+                        <m-button-3 size="large" color="primary" class="full">관심자산 추가하기</m-button-3>
+                      </div>
+                    </div>
                     <ul class="product_list">
                       <li>
                         <div class="prd_img">
@@ -387,7 +398,18 @@
                   default-opened
                   label="팔로우 인사이트"
                 >
-                <p class="pdb32">내가 보팅중인 콘텐츠 종목</p>
+                <p class="pdb32">나의 팔로우가 작성한 인사이트 종목</p>
+                <div class="no_data_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message mgb32 font18">
+                    팔로우하고 친구의 콘텐츠를 확인해보세요
+                  </div>
+                  <div class="btn_wrap l_row_l">
+                    <m-button-3 size="large" color="primary" class="full">플레이어 둘러보기</m-button-3>
+                  </div>
+                </div>
                 <ul class="product_list">
                   <li>
                     <div class="prd_img">
@@ -466,6 +488,17 @@
                   label="보팅"
                 >
                 <p class="pdb32">내가 보팅중인 콘텐츠 종목</p>
+                <div class="no_data_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message mgb32 font18">
+                    보팅중인 콘텐츠가 없어요
+                  </div>
+                  <div class="btn_wrap l_row_l">
+                    <m-button-3 size="large" color="primary" class="full">보팅하고 보상받기</m-button-3>
+                  </div>
+                </div>
                 <ul class="product_list">
                   <li>
                     <div class="prd_img">
