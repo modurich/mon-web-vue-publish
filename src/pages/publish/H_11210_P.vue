@@ -1,7 +1,7 @@
 <template>
     <div class="centerarea_box1">
         <div class="con_box">
-          <h2 class="line_type">프로필</h2>
+          <h2 class="line_type">관심 TOP 100</h2>
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             <!-- S 전체-->

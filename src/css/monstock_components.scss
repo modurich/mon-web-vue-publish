@@ -417,6 +417,9 @@
 }
 
 //accordion_type1
+.q-focus-helper{
+    opacity: 0 !important;
+}
 .accordion_wrap{
     position: relative;
     .tit_btn{

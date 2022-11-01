@@ -540,6 +540,16 @@
             <td>관심 TOP 100</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11111_P">H_11111_P</router-link>
+            </td>
+            <td>관심 자산 추가</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>
