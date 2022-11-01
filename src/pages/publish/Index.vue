@@ -530,6 +530,16 @@
             <td>그룹명 변경</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11210_P">H_11210_P</router-link>
+            </td>
+            <td>관심 TOP 100</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>

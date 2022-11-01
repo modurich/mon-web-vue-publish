@@ -1130,7 +1130,10 @@ button{
     background:url('~assets/sb_ethereum.svg');
 }
 .sb_klip{
-    background:url('~assets/sb_klip.svg');
+    background:url('~assets/sb_klip.svg') center center;
+    width:32px;
+    height: 16px;
+    background-size: cover;
 }
 .sb_klaytn{
     background:url('~assets/sb_klaytn.svg');
@@ -1506,6 +1509,12 @@ button{
             display: flex;
             align-items: center;
             flex:1;
+            .txt_number{width:30px;
+                margin-right:8px;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+            }
             .img_area{
                 width:48px;
                 height:48px;
@@ -1986,8 +1995,9 @@ button{
 
 //btn_list_wrap
 .btn_list_wrap{
-    button{margin-bottom:16px;
-        opacity: 0.5;
+    button{
+        margin-bottom:16px;
+        opacity: 0.3;
         &.active{
             opacity: 1;
         }

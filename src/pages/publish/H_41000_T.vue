@@ -41,7 +41,8 @@
               </h3>
               <div class="klip_box">
                   <span class="text_wrap">
-                      <span class="ico_klip">klip</span>
+                      <span class="ico_sb sb_klip">klip</span>
+                      <!-- <span class="ico_sb sb_metamask">metamask</span> -->
                       <span class="text_area">0xa590bc1aa0655d84f5e10xa590bc1aa0655d84f5e1</span>
                   </span>
                   <button class="ico_copy">copy</button>
