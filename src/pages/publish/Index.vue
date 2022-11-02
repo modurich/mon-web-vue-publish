@@ -550,6 +550,16 @@
             <td>관심 자산 추가</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_20000_P">H_20000_P</router-link>
+            </td>
+            <td>콘텐츠썸네일</td>
+            <td>진행중</td>
+        </tr> 
       </tbody>
     </table>
   </div>
