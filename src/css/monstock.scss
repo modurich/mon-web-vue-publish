@@ -2041,7 +2041,7 @@ button{
             }
             .my_profile{
                 display: flex;
-                justify-content: space-between;
+                width:90%;
             }
             @media (max-width: $breakpoint-xs-max) {
                .tit_area{
@@ -2086,17 +2086,17 @@ button{
                 align-items: center;
                 justify-content: space-between;
                 .txt_area{
-                    .tit{
+                    .tit_txt{
                         color: $txt_dk;
                         display: flex;
                         align-items: center;
-                        span{color:#43c890;
+                        .txt02{color:#43c890;
                         font-size: 24px;
                         font-weight: 700;
                         margin-left: 16px;
                         }
                     }
-                    .con{
+                    .con_txt{
                         color: $txt_dk;
                         font-size: 12px;
                         display: flex;
@@ -2114,6 +2114,11 @@ button{
                         color:$primary;font-weight: 700;
                         }
                     }
+                }
+            }
+            @media (max-width: $breakpoint-xs-max) {
+                .con_wrap{
+                    padding:27px 16px;
                 }
             }
         }

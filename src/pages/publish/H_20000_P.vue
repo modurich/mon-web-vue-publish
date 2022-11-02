@@ -48,8 +48,10 @@
                   </div>
                   <div class="con_wrap">
                     <div class="txt_area">
-                      <div class="tit">목표수익률 <span>99999.99 %</span></div>
-                      <div class="con">
+                      <div class="tit_txt">
+                        <span class="txt01">목표수익률</span> 
+                        <span class="txt02">99999.99 %</span></div>
+                      <div class="con_txt">
                         <span>비중 <span class="txt01">100%</span></span>
                         <span>기간 <span class="txt01">120일</span></span>
                       </div>
