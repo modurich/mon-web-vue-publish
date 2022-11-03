@@ -243,6 +243,12 @@ body{
     font-weight: 400;
     color:#fff;
     //size
+    &.small{height: 18px;
+        i{
+            width:14px;
+            height:14px;
+        }
+    }
     &.big{border-radius: 4px;
         font-size: 12px;
         height: 30px;
@@ -256,6 +262,7 @@ body{
     &.green{background: #6ee0b0;}
     &.light_green{background: #9cd76e;}
     &.brown{background: #c79058;}
+    &.pink{background: #ff006c;}
     &.yellow{background: #ffd165;color: $txt_dk;}
     &.primary{background: $primary;color: #fff !important;}
 }
@@ -2011,6 +2018,16 @@ button{
         border:1px solid $com_line;
         padding:20px 12px;
         border-radius: 8px;
+        margin-bottom: 32px;
+        &.active{
+            border:1px solid $primary;
+            .top_wrap{
+                border-bottom:1px solid $primary !important;
+            }
+            .btn_area{
+                border-top:1px solid $primary !important;
+            }
+        }
         .top_wrap{
             display: flex;
             justify-content: space-between;
@@ -2057,6 +2074,8 @@ button{
                 justify-content: space-between;
                 margin-bottom:6px;
                 .badge_area{
+                    display: flex;
+                    align-items: center;
                     span{margin-right:8px}
                 }
             }
@@ -2068,6 +2087,11 @@ button{
             
         }
         .blash_box{
+            &.premium{
+                .tit_wrap{
+                    background: #4c34dc;
+                }
+            }
             .tit_wrap{
                 background: #8673ff;
                 display: flex;
@@ -2075,10 +2099,13 @@ button{
                 justify-content: space-between;
                 padding:0 16px;
                 height: 42px;
-                .txt01{color: #fff;}
+                .txt01{color: #fff;
+                    display: inline-flex;
+                    align-items: center;}
                 .txt02{color: #ffd165}
             }
             .con_wrap{
+                position: relative;
                 border:1px solid #e0dbff;
                 background: #fafbfc;
                 padding:27px 32px;
@@ -2089,7 +2116,9 @@ button{
                     .tit_txt{
                         color: $txt_dk;
                         display: flex;
+                        flex-wrap: wrap;
                         align-items: center;
+                        
                         .txt02{color:#43c890;
                         font-size: 24px;
                         font-weight: 700;
@@ -2101,15 +2130,17 @@ button{
                         font-size: 12px;
                         display: flex;
                         margin-top: 8px;
-                        > span{
+                        .col{
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            border-right:1px solid $com_line;
-                            padding-right:16px;
-                            margin-right:16px;
+                            
                             &:last-child{border-right:0}
                         }
+                        .col + .col{
+                            border-left:1px solid $com_line;
+                            padding-left:16px;
+                            margin-left:16px;}
                         .txt01{font-size:16px;margin-left:8px;
                         color:$primary;font-weight: 700;
                         }
@@ -2118,7 +2149,22 @@ button{
             }
             @media (max-width: $breakpoint-xs-max) {
                 .con_wrap{
-                    padding:27px 16px;
+                    padding:27px 16px 60px 16px;
+                    .tit_txt{
+                        justify-content: center;
+                       .txt01{
+                        text-align: center;
+                        width: 100%;
+                       }
+                    }
+                    .con_txt{
+                        justify-content: space-between;
+                        position:absolute;
+                        left:16px;
+                        right:16px;
+                        bottom:16px;
+                        > span{flex:1}
+                    }
                 }
             }
         }
@@ -2131,6 +2177,23 @@ button{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+            .btn_area{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin:24px -12px 0 -12px;
+                padding:24px 12px 0 12px;
+                width:calc(100% + 24px);
+                border-top:1px solid $com_line;
+                .txt_area{
+                    display: flex;
+                    align-items: center;
+                    color: $secondary;
+                }
+                button{
+                    .point{color: #ffd165;}
+                }
             }
         }
     }
@@ -2153,3 +2216,34 @@ button{
 .ico_comment{background: url('~assets/ico_comment.svg') no-repeat center left;}
 .ico_view{background: url('~assets/ico_view.svg') no-repeat center left;}
 .ico_star_s{background: url('~assets/ico_star_s.svg') no-repeat center left;}
+
+.ico_crown{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_crown.svg') no-repeat center center; 
+}
+.ico_clock{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_clock.svg') no-repeat center center; 
+}
+.ico_vote{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_vote.svg') no-repeat center center; 
+}

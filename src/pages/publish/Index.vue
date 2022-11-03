@@ -535,6 +535,16 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/H_11112_U">H_11112_U</router-link>
+            </td>
+            <td>자산 순서 변경</td>
+            <td>진행중</td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/H_11210_P">H_11210_P</router-link>
             </td>
             <td>관심 TOP 100</td>
@@ -559,6 +569,16 @@
             </td>
             <td>콘텐츠썸네일</td>
             <td>진행중</td>
+        </tr> 
+        <tr>
+            <td>5. 콘텐츠</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_300_P">H_300_P</router-link>
+            </td>
+            <td>포커스자산삭제</td>
+            <td></td>
         </tr> 
       </tbody>
     </table>

@@ -86,6 +86,8 @@
           <span class="badge3 brown">brown</span>
           <span class="badge3 yellow">yellow</span>
           <span class="badge3 primary">primary</span>
+          <span class="badge3 red">red</span>
+          <span class="badge3 pink">pink</span>
         </div>
         <div class="type_view ico">
           <span class="badge3 big gray">gray</span>
@@ -95,6 +97,7 @@
           <span class="badge3 big yellow">yellow</span>
           <span class="badge3 big primary">primary</span>
           <span class="badge3 big red">red</span>
+          <span class="badge3 big pink">pink</span>
         </div>
       </div>
       <div class="box_wrap">
