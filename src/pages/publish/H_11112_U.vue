@@ -22,8 +22,8 @@
                           <img :src="item.img" alt="profile" />
                         </div>
                         <div>
-                          <span class="font16 txt_dk">{{item.name}}</span>
-                          <span class="txt02">{{item.number}}</span>
+                          <div class="font16 txt_dk">{{item.name}}</div>
+                          <div class="txt02">{{item.number}}</div>
                         </div>
                       </div>
                       <div class="ico_area">
@@ -59,11 +59,11 @@ export default {
       dailog2: ref(false),
       items:[
         {name:'삼성전자우',number:'코스피 005930', img:'img/prd_logo.png'},
-        {name:'SKBTV',number:'코스피 005930', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi6CqjPt1KaEH1LomiOXCB5KX_bLdPsbOsvg&usqp=CAU'},
+        {name:'SKBTV',number:'코스피 005930', img:'img/prd_logo.png'},
         {name:'삼성전자우2',number:'코스피 005930', img:'img/prd_logo.png'},
-        {name:'LG전자',number:'코스피 005930', img:'https://img.insight.co.kr/static/2018/05/22/700/91939q9qbenssel3645j.jpg'},
+        {name:'LG전자',number:'코스피 005930', img:'img/prd_logo.png'},
         {name:'삼성전자우4',number:'코스피 005930', img:'img/prd_logo.png'},
-        {name:'삼성전자우5',number:'코스피 005930', img:'img/no_profile.png'},
+        {name:'삼성전자우5',number:'코스피 005930', img:'img/prd_logo.png'},
       ]
     }
   },
