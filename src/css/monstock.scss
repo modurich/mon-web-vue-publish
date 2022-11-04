@@ -1502,7 +1502,7 @@ button{
 //product_list
 .product_list{
     margin: 32px 0;
-    li{
+   > div, li{
         display:flex;
         justify-content: space-between;
         align-items: center;
@@ -2246,4 +2246,14 @@ button{
     margin-right:4px;
     background-size: contain !important;
     background: url('~assets/ico_vote.svg') no-repeat center center; 
+}
+.ico_menu01{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:30px;
+    height: 30px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_menu01.svg') no-repeat center center; 
 }
