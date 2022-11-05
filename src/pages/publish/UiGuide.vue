@@ -706,14 +706,14 @@ export default {
       dailog4: ref(false),
       tab: ref('A'),
       tablist:[
-        {id:'A', title:'테스트1', IS_SSR:false},
-        {id:'B', title:'테스트2', IS_SSR:false},
-        {id:'C', title:'테스트3', IS_SSR:false},
-        {id:'D', title:'테스트4', IS_SSR:false},
-        {id:'E', title:'테스트5', IS_SSR:false},
-        {id:'F', title:'테스트6', IS_SSR:false},
-        {id:'G', title:'테스트7', IS_SSR:false},
-        {id:'H', title:'테스트8', IS_SSR:false}
+        {id:'A', title:'테스트1'},
+        {id:'B', title:'테스트2'},
+        {id:'C', title:'테스트3'},
+        {id:'D', title:'테스트4'},
+        {id:'E', title:'테스트5'},
+        {id:'F', title:'테스트6'},
+        {id:'G', title:'테스트7'},
+        {id:'H', title:'테스트8'}
       ],
       swiperOption: {
         slidesPerView: 5,
