@@ -256,6 +256,7 @@ body{
         padding:0 16px;
     }
     //color
+    &.dark_green{background: #43c890;}
     &.orange{background: #ffa500;}
     &.red{background: #fb1f1f;}
     &.gray{background: #9ca8ba;}
@@ -1488,6 +1489,8 @@ button{
 //banner_wrap
 .banner_wrap{
     margin-bottom: 16px;
+    .pc_banner,.mob_banner{width:100%;}
+    .mob_banner{display: none;}
     .banner_img{
         display: flex;
         justify-content: space-between;
@@ -1495,6 +1498,11 @@ button{
         img{height:140px}
         background-image: linear-gradient(to right, #d8f8ea  0%, #77e4b6);
     }
+     //700보다 작을때
+     @media (max-width: $breakpoint-xs-max) {
+        .mob_banner{display: flex;}
+        .pc_banner{display: none;}
+     }
 }
 
 
@@ -2076,7 +2084,7 @@ button{
                 .badge_area{
                     display: flex;
                     align-items: center;
-                    span{margin-right:8px}
+                    span{margin-right:4px}
                 }
             }
             .tit_txt{
@@ -2084,7 +2092,20 @@ button{
                 font-size: 18px;
                 font-weight: 700;
             }
+            .logo_wrap{
+                display: flex;
+                align-items: center;
+                color: $txt_dk;
+                img{width:20px;border:20px;border-radius: 20px;margin-right:8px}
+            }
             
+        }
+        .blash_box,.defalut_box{
+            .txt_area{
+                .txt02{
+                    &.red{color: #fb1f1f !important;}
+                }
+            }
         }
         .blash_box{
             &.premium{
@@ -2112,6 +2133,10 @@ button{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                .img_area{
+                    .ico_upimg01{width:106px;height:100px}
+                    .ico_upimg02{width:150px;height:80px}
+                }
                 .txt_area{
                     .tit_txt{
                         color: $txt_dk;
@@ -2120,9 +2145,9 @@ button{
                         align-items: center;
                         
                         .txt02{color:#43c890;
-                        font-size: 24px;
-                        font-weight: 700;
-                        margin-left: 16px;
+                            font-size: 24px;
+                            font-weight: 700;
+                            margin-left: 16px;
                         }
                     }
                     .con_txt{
@@ -2150,12 +2175,16 @@ button{
             @media (max-width: $breakpoint-xs-max) {
                 .con_wrap{
                     padding:27px 16px 60px 16px;
+                    .txt_area{flex:2}
                     .tit_txt{
                         justify-content: center;
                        .txt01{
                         text-align: center;
                         width: 100%;
                        }
+                       .txt02{
+                        margin-left: 0px !important;
+                        }
                     }
                     .con_txt{
                         justify-content: space-between;
@@ -2164,6 +2193,65 @@ button{
                         right:16px;
                         bottom:16px;
                         > span{flex:1}
+                    }
+                    .txt_area{flex:1.8}
+                    .img_area{
+                        display: flex;
+                        justify-content: center;
+                        flex:1;
+                        .ico_upimg01{width:76px;height:70px}
+                        .ico_upimg02{width:95px;height:70px}
+                    }
+                }
+            }
+        }
+        .defalut_box{
+            .con_wrap{
+                position: relative;
+                border-top:1px dashed $com_line;
+                border-bottom:1px dashed $com_line;
+                padding:16px 32px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .img_area{
+                    .ico_graph_up,.ico_graph_down{width:200px;height:92px}
+                }
+                .txt_area{
+                    .tit_txt{
+                        color: $txt_dk;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        .txt02{color:#43c890;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-left: 16px;
+                        }
+                    }
+                }
+            }
+            @media (max-width: $breakpoint-xs-max) {
+                .con_wrap{
+                    padding:16px 16px;
+                    .txt_area{flex:2}
+                    .tit_txt{
+                        justify-content: center;
+                       .txt01{
+                        text-align: center;
+                        width: 100%;
+                       }
+                    }
+                    .txt_area{flex:1.8;
+                        .txt02{
+                             margin-left: 0px !important;
+                        }
+                    }
+                    .img_area{
+                        display: flex;
+                        justify-content: center;
+                        flex:1;
+                        .ico_graph_up,.ico_graph_down{width:132px;height:92px}
                     }
                 }
             }

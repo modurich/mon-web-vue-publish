@@ -10,36 +10,32 @@
               <swiper class="swiper">
                 <swiper-slide class="slide">
                   <div class="banner_wrap">
-                    <div class="banner_img">
-                      <img src="~assets/banner_txt.png" 
-                      alt="2022년 3분기 blash 수익률 대회! 
-                      텐배거에 도전하라! 1-3등 한정판 NFT 지급!">
-                      <img src="~assets/banner_img.png">
-                    </div>
+                    <img src="~assets/pc_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="pc_banner">
+                    <img src="~assets/mob_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="mob_banner">
                   </div>
                 </swiper-slide>
                 <swiper-slide class="slide">
                   <div class="banner_wrap">
-                    <div class="banner_img">
-                      <img src="~assets/banner_txt.png" alt="2022년 3분기 blash 수익률 대회! 텐배거에 도전하라!">
-                      <img src="~assets/banner_img.png">
-                    </div>
+                    <img src="~assets/pc_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="pc_banner">
+                    <img src="~assets/mob_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="mob_banner">
                   </div>
                 </swiper-slide>
                 <swiper-slide class="slide">
                   <div class="banner_wrap">
-                    <div class="banner_img">
-                      <img src="~assets/banner_txt.png" alt="2022년 3분기 blash 수익률 대회! 텐배거에 도전하라!">
-                      <img src="~assets/banner_img.png">
-                    </div>
-                  </div>
-                </swiper-slide>
-                <swiper-slide class="slide">
-                  <div class="banner_wrap">
-                    <div class="banner_img">
-                      <img src="~assets/banner_txt.png" alt="2022년 3분기 blash 수익률 대회! 텐배거에 도전하라!">
-                      <img src="~assets/banner_img.png">
-                    </div>
+                    <img src="~assets/pc_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="pc_banner">
+                    <img src="~assets/mob_banner1.png" 
+                    alt="2022년 3분기 blash 수익률 대회! 
+                    텐배거에 도전하라! 1-3등 한정판 NFT 지급!" class="mob_banner">
                   </div>
                 </swiper-slide>
               </swiper>

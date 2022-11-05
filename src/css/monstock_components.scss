@@ -263,6 +263,23 @@
 //dialog
 .dailog_wrap{
     position:relative;
+    &.tit_add{
+        .dailog_top{
+            flex-wrap: wrap;
+            justify-content: center;
+            .btn_area{display: flex;
+            width:100%;
+            justify-content: flex-end;}
+            .dialog_tit{width:100%;}
+            .check_area{
+                display: flex;
+                width:100%;
+                padding:0 16px;
+                box-sizing: border-box;
+                justify-content: space-between;
+            }
+        }
+    }
     .dailog_top{display: flex;
         justify-content: flex-end;
     }
@@ -286,8 +303,22 @@
     //700보다 작아질때
     @media (max-width: $breakpoint-xs-max) {
         height: 100vh;
+       
         .dg_con {
             max-height:calc(100vh - 150px) !important;
+        }
+        &.tit_add{
+            .dg_con {
+                max-height:calc(100vh - 190px) !important;
+            }
+        }
+        &.tit_add{
+            &.check_add{
+                .dg_con {
+                    max-height:calc(100vh - 220px) !important;
+                }
+            }
+           
         }
     }
 }

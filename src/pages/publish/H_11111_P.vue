@@ -11,10 +11,6 @@
                 </m-input>
                 <m-button-3 color="primary">검색</m-button-3>
               </div>
-              <h3 class="between">
-                <span class="font16">최근 검색</span>
-                <span class="font12 txt_gray">12.25 12:50 (UTC +9)</span>
-              </h3>
               <div class="no_data_wrap">
                 <div class="ico_top">
                   <i class="ico_error"></i>
@@ -23,6 +19,10 @@
                   일치하는 종목이 없습니다.
                 </div>
               </div>
+              <h3 class="between">
+                <span class="font16">인기 검색</span>
+                <span class="font12 txt_gray">12.25 12:50 (UTC +9)</span>
+              </h3>
               <ul class="product_list">
                 <li>
                   <div class="prd_img">

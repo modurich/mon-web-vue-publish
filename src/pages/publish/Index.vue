@@ -265,8 +265,7 @@
             <td>랭킹</td>
             <td>
               <span class="txt_red">
-              배너 이미지 백그라운드 투명으로 왼쪽 영역과 
-              오른쪽 영역으로 내보내 주세요.
+              11/15일 slide배너 수정
               </span>
             </td>
         </tr>   
@@ -525,9 +524,9 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/H_11115_U">H_11115_U</router-link>
+                <router-link to="/publish/H_11112_U">H_11112_U</router-link>
             </td>
-            <td>그룹명 변경</td>
+            <td>자산 순서 변경</td>
             <td></td>
         </tr> 
         <tr>
@@ -535,10 +534,30 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/H_11112_U">H_11112_U</router-link>
+                <router-link to="/publish/H_11113_U">H_11113_U</router-link>
             </td>
-            <td>자산 순서 변경</td>
-            <td>진행중</td>
+            <td>자산 삭제</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11114_U">H_11114_U</router-link>
+            </td>
+            <td>새그룹 추가</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11115_U">H_11115_U</router-link>
+            </td>
+            <td>그룹명 변경</td>
+            <td></td>
         </tr> 
         <tr>
             <td></td>

@@ -82,6 +82,7 @@
         <div class="type_view ico">
           <span class="badge3 gray">gray</span>
           <span class="badge3 green">green</span>
+          <span class="badge3 dark_green">dark green</span>
           <span class="badge3 light_green">light_green</span>
           <span class="badge3 brown">brown</span>
           <span class="badge3 yellow">yellow</span>
