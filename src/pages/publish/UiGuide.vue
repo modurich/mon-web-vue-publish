@@ -154,7 +154,7 @@
           </div>
           <br />
           <p class="sbt">search type</p>
-          <m-input v-model="search" filled type="search" hint="Search" class="round_type">
+          <m-input v-model="search" filled  class="round_type">
             <template v-slot:append>
               <button class="ico_ip_search" />
             </template>
@@ -540,7 +540,7 @@
         <div class="box_wrap">
           <p class="h2">cardTab</p>
           <div class="type_view">
-            <m-tabs class="card_type small" v-model="tab1" :items="tabs" />
+            <m-tabs class="card_type small" style="width: 100%;" v-model="tab1" :items="tabs" />
             <div v-if="tab1 == 'G'">
               contents1
             </div>
@@ -601,6 +601,24 @@
           </div>
         </div>
       </div>
+      <div id="group10" class="group_wrap">
+        <p class="h1_type">MCHIP LIST</p>
+        <div class="box_wrap">
+          <p class="h2">mchip list</p>
+          <div class="type_view">
+            <MChipList style="width: 300px;">
+              <template v-for="itm in tablist">
+                <MChip :lined="tab !== itm.id">
+                  <template v-slot:icon v-if="tab === itm.id">
+                    <m-icon name="refresh"/>
+                  </template>
+                  {{itm.title}}
+                </MChip>
+              </template>
+            </MChipList>
+          </div>
+        </div>
+      </div>      
     </div>
   </div>
 </template>
@@ -624,9 +642,12 @@ import Polycy from './Polycy.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
+import MChipList from 'src/components/MChipList.vue';
+import MChip from 'src/components/MChip.vue';
 
 export default {
-  components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VClamp },
+  components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, 
+    MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VClamp, MChipList, MChip },
   data() {
     const text2 = ref('');
     return {
@@ -653,8 +674,8 @@ export default {
       ],
       tab1: ref('G'),
       tabs: [
-        { label: 'GOOGLE', value: 'G', icon: 'mail' },
-        { label: 'FACEBOOK', value: 'F', icon: 'photo' }
+        { label: 'YOUTUBE', value: 'G', icon: 'youtube' },
+        { label: 'FACEBOOK', value: 'F', icon: 'facebook' }
       ],
       date1: {
         from: ref(''),
@@ -683,6 +704,17 @@ export default {
       dailog2: ref(false),
       dailog3: ref(false),
       dailog4: ref(false),
+      tab: ref('A'),
+      tablist:[
+        {id:'A', title:'테스트1', IS_SSR:false},
+        {id:'B', title:'테스트2', IS_SSR:false},
+        {id:'C', title:'테스트3', IS_SSR:false},
+        {id:'D', title:'테스트4', IS_SSR:false},
+        {id:'E', title:'테스트5', IS_SSR:false},
+        {id:'F', title:'테스트6', IS_SSR:false},
+        {id:'G', title:'테스트7', IS_SSR:false},
+        {id:'H', title:'테스트8', IS_SSR:false}
+      ],
       swiperOption: {
         slidesPerView: 5,
         spaceBetween: 50,
