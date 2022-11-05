@@ -256,7 +256,23 @@ export default {
             }
         }
     }
-
+    &.color-darkPurple {
+        background-color: #4c34dc;
+        color: $white;
+        &:disabled {
+            // background-color: $slate-blue-20;
+            color: $white;
+        }
+        &.lined {
+            background-color: #fff;
+            color: #4c34dc;
+            border: 0.5px solid #4c34dc;
+            &:disabled {
+                // color: $slate-blue-20;
+                border: 1px solid #4c34dc;
+            }
+        }
+    }
     &.color-vividRaseberry {
         background-color: $vivid-raseberry;
         color: $white;

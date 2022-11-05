@@ -60,6 +60,10 @@ const routes = [
             { path: '/publish/H_11113_U', component: () => import('pages/publish/H_11113_U.vue') },
             { path: '/publish/H_11114_U', component: () => import('pages/publish/H_11114_U.vue') },
             { path: '/publish/H_300_P', component: () => import('pages/publish/H_300_P.vue') },
+            { path: '/publish/H_31000_T', component: () => import('pages/publish/H_31000_T.vue') },
+            { path: '/publish/H_35000_T', component: () => import('pages/publish/H_35000_T.vue') },
+            { path: '/publish/H_32000_T', component: () => import('pages/publish/H_32000_T.vue') },
+            { path: '/publish/H_33200_T', component: () => import('pages/publish/H_33200_T.vue') },
         ]
     },
     {

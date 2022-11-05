@@ -23,6 +23,8 @@
 .mgb16{margin-bottom:16px !important}
 .mgb32{margin-bottom:32px !important}
 .mgb8{margin-bottom:8px !important}
+.mgl4{margin-left:4px !important}
+.mgl8{margin-left:8px !important}
 .mgr4{margin-right:4px !important}
 .mgr8{margin-right:8px !important}
 .mgr10{margin-right:10px !important}
@@ -256,6 +258,7 @@ body{
         padding:0 16px;
     }
     //color
+    &.black{background: #141414;}
     &.dark_green{background: #43c890;}
     &.orange{background: #ffa500;}
     &.red{background: #fb1f1f;}
@@ -266,6 +269,13 @@ body{
     &.pink{background: #ff006c;}
     &.yellow{background: #ffd165;color: $txt_dk;}
     &.primary{background: $primary;color: #fff !important;}
+    &.line{
+        background-color: transparent;
+        &.black{
+            border:1px solid #141414;
+            color: #141414;
+        }
+    }
 }
 .badge2{
     height: 18px;
@@ -1448,6 +1458,19 @@ button{
         background: url('~assets/ico_pen.svg') center center no-repeat;
     }
 }
+.ico_pen_w{ 
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    &::before{
+        content:'';
+        display: inline-block;
+        width:24px;
+        height:28px;
+        margin-right:4px;
+        background: url('~assets/ico_pen_w.svg') center center no-repeat;
+    }
+}
 .ico_info{ 
     color: $primary;
     display: inline-flex;
@@ -2020,8 +2043,84 @@ button{
     }
 
 }
+//comment_list
+.comment_list{
+    border-top:1px solid $com_line;
+    li{
+        border-bottom:1px solid $com_line;
+        padding:16px;
+        &.reply_wrap{display: flex;
+            background: #f8f9fd;
+            .reply_area{
+                width: calc(100% - 15px);
+            }
+        }
+        .top_wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img_area{
+                img{width:24px;
+                height:24px;
+                border-radius: 24px;
+                }
+            }
+            .tit_area{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .txt_tit{
+                    font-size: 12px;
+                    color: $txt_dk;
+                    margin:0 0 0 8px;
+                }
+                .badge_area{
+                    span{margin-left:8px}
+                }
+            }
+            .my_profile{
+                display: flex;
+                width:90%;
+            }
+        }
+        .con_area{
+            margin:16px 0;
+            color: $txt_dk;
+        }
+        .footer_area{
+            margin-top:16px;
+            .ico_wrap{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+.ico_reply{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:13px;
+    height: 13px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_reply.svg') no-repeat center center; 
+}
 //thumb_list
 .thumb_list{
+    &.post{
+        .active{
+            background: #f9f9ff;
+            border:1px solid #c1b7ff;
+            .top_wrap{
+                border-bottom:1px solid #c1b7ff !important;
+            }
+            .btn_area{
+                border-top:1px solid #c1b7ff !important;
+            }
+        }
+    }
     li{
         border:1px solid $com_line;
         padding:20px 12px;
@@ -2256,6 +2355,37 @@ button{
                 }
             }
         }
+        .con_area{
+            .con_txt{
+                margin-top:10px;
+                font-size:12px;line-height: 18px;}
+            .img{
+                img{width:100%;}
+            }
+            .list_box{
+                padding:8px;
+                border: 1px solid $com_line;
+                display:flex;
+                .img_area{
+                    img{width:57px;height:57px;margin-right:8px}
+                }
+                .txt_area{
+                    width:calc(100% - 65px);
+                    .tit{color:$txt_dk ;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: block;
+                        white-space: nowrap;
+                    }
+                    .con{font-size: 12px;}
+                    .link_txt{font-size: 12px;color:#6ee0b0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
         .footer_area{
             margin-top:16px;
             .tag_area{
@@ -2291,6 +2421,7 @@ button{
     display: inline-flex;
     align-items: center;
     margin-right:8px;
+    &.active{color: $primary;}
     &::before{
         content: '';
         display: inline-flex;
@@ -2300,7 +2431,9 @@ button{
         margin-right:4px;
     }
 }
-.ico_thumbsUp{background: url('~assets/ico_thumbsUp.svg') no-repeat center left;}
+.ico_thumbsUp{background: url('~assets/ico_thumbsUp.svg') no-repeat center left;
+    &.active{background: url('~assets/ico_thumbsUp_on.svg') no-repeat center left;}
+}
 .ico_comment{background: url('~assets/ico_comment.svg') no-repeat center left;}
 .ico_view{background: url('~assets/ico_view.svg') no-repeat center left;}
 .ico_star_s{background: url('~assets/ico_star_s.svg') no-repeat center left;}
@@ -2325,6 +2458,16 @@ button{
     background-size: contain !important;
     background: url('~assets/ico_clock.svg') no-repeat center center; 
 }
+.ico_check01{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_check01.svg') no-repeat center center; 
+}
 .ico_vote{
     content: '';
     display: inline-flex;
@@ -2344,4 +2487,22 @@ button{
     margin-right:4px;
     background-size: contain !important;
     background: url('~assets/ico_menu01.svg') no-repeat center center; 
+}
+
+.button_list_wrap{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    .ico{width:60px;height:60px;border-radius: 60px;box-sizing: border-box;
+        background: #f8f9fd;display: flex;margin-bottom:4px;
+        align-items: center;justify-content: center;font-style: normal;
+        color: $txt_gray;font-size: 20px;font-weight: 400;
+    }
+    button{margin-right:16px; color:$txt_dk;
+        &.active {
+            color:$primary;
+            .ico{border:2px solid $primary;}
+            
+        }   
+    }
 }

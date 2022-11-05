@@ -80,6 +80,7 @@
         </div><br/><br/>
         <p class="h3">badge3</p>
         <div class="type_view ico">
+          <span class="badge3 line black">gray</span>
           <span class="badge3 gray">gray</span>
           <span class="badge3 green">green</span>
           <span class="badge3 dark_green">dark green</span>
@@ -325,6 +326,7 @@
             <!-- <m-button-3 color="primary">type03</m-button-3> -->
             <m-button-3 color="primary">primary</m-button-3>
             <m-button-3 lined color="primary">lined primary</m-button-3>
+            <m-button-3 color="darkPurple">darkPurple</m-button-3>
             <m-button-3 color="yellow">yellow</m-button-3>
             <m-button-3 color="red">red</m-button-3>
             <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
@@ -334,6 +336,7 @@
             <m-button-3 lined disabled>lined</m-button-3>
             <m-button-3 color="primary" disabled>primary</m-button-3>
             <m-button-3 lined color="primary" disabled>lined primary</m-button-3>
+            <m-button-3 color="darkPurple" disabled>darkPurple</m-button-3>
             <m-button-3 color="yellow" disabled>yellow</m-button-3>
             <m-button-3 color="red" disabled>red</m-button-3>
             <m-button-3 lined color="lightGrey" disabled>lightGrey</m-button-3>

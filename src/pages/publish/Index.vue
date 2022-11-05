@@ -599,6 +599,46 @@
             <td>포커스자산삭제</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_31000_T">H_31000_T</router-link>
+            </td>
+            <td>예측 콘텐츠-인사이트</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_35000_T">H_35000_T</router-link>
+            </td>
+            <td>예측 콘텐츠-BLASH</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_32000_T">H_32000_T</router-link>
+            </td>
+            <td>포스트</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_33200_T">H_33200_T</router-link>
+            </td>
+            <td>H_33200_T</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>
