@@ -4,22 +4,24 @@
           <h2 class="line_type">예측 콘텐츠</h2>
           <div class="box_contents pdt32">  
             <div class="button_list_wrap">
-              <button class="active">
-                <i class="ico ico_insite"/>
-                <span>인사이트</span>
-              </button>
-              <button>
-                <i class="ico ico_blash"/>
-                <span>BLASH</span>
-              </button>
-              <button>
-                <i class="ico ico_post"/>
-                <span>포스트</span>
-              </button>
-              <button>
-                <i class="ico ico_plus">+</i>
-                <span>자산추가</span>
-              </button>
+              <m-chip-list>
+                <button class="active">
+                  <i class="ico ico_insite" />
+                  <span>인사이트</span>
+                </button>
+                <button>
+                  <i class="ico ico_blash" />
+                  <span>BLASH</span>
+                </button>
+                <button>
+                  <i class="ico ico_post" />
+                  <span>포스트</span>
+                </button>
+                <button>
+                  <i class="ico ico_plus">+</i>
+                  <span>자산추가</span>
+                </button>
+              </m-chip-list>
             </div>
             <!-- S banner -->
             <swiper class="swiper">
