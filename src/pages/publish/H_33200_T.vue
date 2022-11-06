@@ -34,9 +34,9 @@
                 <m-button-3 color="primary" size="small">토론</m-button-3>
             </div>
             <MChipList v-dragscroll>
-              <MChip :to="`/publish/H_33100_T`">인사이트</MChip>
-              <MChip :to="`/publish/H_33100_T`">BLASH</MChip>
-              <MChip :to="`/publish/H_33100_T`">토론</MChip>
+              <MChip :to="`/publish/H_33100_T`" :lined="true">인사이트</MChip>
+              <MChip :to="`/publish/H_33300_T`" :lined="true">BLASH</MChip>
+              <MChip :to="`/publish/H_33200_T`">토론</MChip>
             </MChipList>            
             <!-- S banner -->
             <swiper class="swiper">
