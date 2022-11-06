@@ -26,11 +26,6 @@
                 <span>자산추가</span>
               </button>
             </div>
-            <div class="button_list_wrap">
-                <m-button-3 color="primary" size="small">인사이트</m-button-3>
-                <m-button-3 color="textGray" size="small">BLASH</m-button-3>
-                <m-button-3 color="textGray" size="small">토론</m-button-3>
-            </div>
             <MChipList v-dragscroll>
               <MChip :to="`/publish/H_33100_T`">인사이트</MChip>
               <MChip :to="`/publish/H_33300_T`" :lined="true">BLASH</MChip>
