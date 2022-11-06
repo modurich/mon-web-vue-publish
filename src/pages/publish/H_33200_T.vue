@@ -3,36 +3,36 @@
         <div class="con_box">
           <h2 class="line_type">삼성전자</h2>
           <div class="box_contents pdt32">  
-            <div class="button_list_wrap">
-              <button>
-                <i class="ico ico_insite"/>
+          <div class="button_list_wrap">
+            <m-chip-list>
+              <button class="active">
+                <i class="ico ico_insite" />
                 <span>인사이트</span>
               </button>
-              <button class="active">
-                <i class="ico ico_blash"/>
+              <button>
+                <i class="ico ico_blash" />
                 <span>BLASH</span>
               </button>
               <button>
-                <i class="ico ico_post"/>
+                <i class="ico ico_post" />
                 <span>포스트</span>
               </button>
-              <template v-for="idx in 5">
-                <button>
-                <i class="ico_close_gray"/>
-                <img src="~assets/prd_logo.png" :alt="`삼성전자${idx}`" />
-                <span>삼성전자{{idx}}</span>
-              </button>              
-              </template>
+              <button v-bind:key="num" v-for="num in 10">
+                <i class="ico_close_gray" />
+                <img src="~assets/prd_logo.png" :alt="`삼성전자${num}`" />
+                <span>삼성전자{{num}}</span>
+              </button>
               <button>
                 <i class="ico ico_plus">+</i>
                 <span>자산추가</span>
               </button>
-            </div>
-            <MChipList v-dragscroll class="card_type">
-              <MChip :to="`/publish/H_33100_T`" :lined="true">인사이트</MChip>
-              <MChip :to="`/publish/H_33300_T`" :lined="true">BLASH</MChip>
-              <MChip :to="`/publish/H_33200_T`">토론</MChip>
-            </MChipList>            
+            </m-chip-list>
+          </div>
+            <m-chip-list v-dragscroll class="card_type">
+              <m-chip :to="`/publish/H_33100_T`" :lined="true">인사이트</m-chip>
+              <m-chip :to="`/publish/H_33300_T`" :lined="true">BLASH</m-chip>
+              <m-chip :to="`/publish/H_33200_T`">토론</m-chip>
+            </m-chip-list>            
             <!-- S banner -->
             <swiper class="swiper">
               <swiper-slide class="slide">

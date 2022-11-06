@@ -4,30 +4,32 @@
           <h2 class="line_type">포스트</h2>
           <div class="box_contents pdt32">  
             <div class="button_list_wrap">
-              <button>
-                <i class="ico ico_insite"/>
-                <span>인사이트</span>
-              </button>
-              <button>
-                <i class="ico ico_blash"/>
-                <span>BLASH</span>
-              </button>
-              <button class="active">
-                <i class="ico ico_post"/>
-                <span>포스트</span>
-              </button>
-              <button>
-                <i class="ico ico_plus">+</i>
-                <span>자산추가</span>
-              </button>
+              <m-chip-list>
+                <button class="active">
+                  <i class="ico ico_insite" />
+                  <span>인사이트</span>
+                </button>
+                <button>
+                  <i class="ico ico_blash" />
+                  <span>BLASH</span>
+                </button>
+                <button>
+                  <i class="ico ico_post" />
+                  <span>포스트</span>
+                </button>
+                <button>
+                  <i class="ico ico_plus">+</i>
+                  <span>자산추가</span>
+                </button>
+              </m-chip-list>
             </div>
-            <MChipList v-dragscroll>
+            <m-chip-list v-dragscroll>
               <template v-for="(name, inx) in ['전체', '공지', 'BEST', '정보', '유머', '자유', '홍보', 'Q&A']">
-                <MChip :lined=" inx !== 0">{{name}}</MChip>
+                <m-chip :lined="inx !== 0">{{name}}</m-chip>
               </template>
-            </MChipList>
+            </m-chip-list>
             <!-- S banner -->
-            <swiper class="swiper">
+<swiper class="swiper">
               <swiper-slide class="slide">
                 <div class="banner_wrap">
                   <img src="~assets/pc_banner1.png" 
@@ -60,18 +62,18 @@
               </swiper-slide>
             </swiper>
             <!-- E banner -->
-            <div class="between mgb32 mgt16">
+<div class="between mgb32 mgt16">
               <m-select v-model="select1" :options="options" style="width:150px" />
               <div class="flex">
                 <m-toggle v-model="toggle1" :label="`Model is (flipped boolean)`" />
                 <span class="mgl8">보팅중만 보기</span>
               </div>
             </div>
-            <div class="btn_wrap l_row_l">
+<div class="btn_wrap l_row_l">
               <m-button-3 color="primary" size="large" class="full">
                 <i class="ico_pen_w"/>포스트 작성</m-button-3>
             </div>
-            <ul class="thumb_list post">
+<ul class="thumb_list post">
               <li class="active">
                 <div class="top_wrap">
                   <div class="my_profile">
