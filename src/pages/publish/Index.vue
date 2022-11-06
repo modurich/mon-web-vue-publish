@@ -357,7 +357,7 @@
             <td></td>
             <td>
                 <router-link to="/publish/H_41000_T">
-                  H_41000_T
+                  H_41000_T,H_42000_T
                 </router-link>
             </td>
             <td>거버넌스</td>
@@ -527,7 +527,7 @@
                 <router-link to="/publish/H_11112_U">H_11112_U</router-link>
             </td>
             <td>자산 순서 변경</td>
-            <td></td>
+            <td>vuedragable</td>
         </tr> 
         <tr>
             <td></td>
@@ -537,7 +537,7 @@
                 <router-link to="/publish/H_11113_U">H_11113_U</router-link>
             </td>
             <td>자산 삭제</td>
-            <td></td>
+            <td>vuedragable</td>
         </tr> 
         <tr>
             <td></td>
@@ -587,7 +587,7 @@
                 <router-link to="/publish/H_20000_P">H_20000_P</router-link>
             </td>
             <td>콘텐츠썸네일</td>
-            <td>진행중</td>
+            <td></td>
         </tr> 
         <tr>
             <td>5. 콘텐츠</td>
@@ -634,9 +634,29 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/H_33100_T">H_33100_T</router-link>
+            </td>
+            <td>인사이트</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_33300_T">H_33300_T</router-link>
+            </td>
+            <td>blash</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/H_33200_T">H_33200_T</router-link>
             </td>
-            <td>H_33200_T</td>
+            <td>토론</td>
             <td></td>
         </tr> 
       </tbody>

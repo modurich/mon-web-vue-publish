@@ -26,6 +26,15 @@
       <div class="box_wrap">
         <p class="h2">etc</p>
         <div class="type_view ico">
+          <q-rating
+            v-model="ratingModel"
+            size="24px"
+            color="primary"
+            icon="star_border"
+            icon-selected="star"
+          />
+        </div><br/><br/>
+        <div class="type_view ico">
           <span class="tag_red">-0.81%</span>
           <span class="tag_blue">+1.24%</span>
         </div>
@@ -675,6 +684,7 @@ export default {
   data() {
     const text2 = ref('');
     return {
+      ratingModel: ref(3),
       text1: ref(''),
       inputRef: ref(null),
       text2,

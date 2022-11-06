@@ -2,7 +2,7 @@
     <div class="centerarea_box1">
         <div class="con_box">
           <h2 class="line_type">포스트</h2>
-          <div class="box_contents pdt32">  
+          <div class="box_contents pdt16">  
             <div class="button_list_wrap">
               <m-chip-list>
                 <button class="active">
