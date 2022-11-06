@@ -3,31 +3,58 @@
         <div class="con_box">
           <h2 class="line_type">삼성전자</h2>
           <div class="box_contents pdt32">  
-            <MChipList v-dragscroll class="button_list_wrap">
-                <MChip :lined="true">
-                  <i class="ico ico_insite"/>
-                  <span>인사이트</span>
-                </MChip>
-                <MChip :lined="true">
-                  <i class="ico ico_blash"/>
-                  <span>BLASH</span>
-                </MChip>
-                <MChip :lined="true">
-                  <i class="ico ico_post"/>
-                  <span>포스트</span>
-                </MChip>
-                <template v-for="inx in 10">
-                <MChip :lined="true">
-                  <i class="ico_close_gray"/>
-                  <img src="~assets/prd_logo.png" :alt="`삼성전자${inx}`" />
-                  <span>삼성전자{{inx}}</span>
-                </MChip>
-                </template>
-                <MChip :lined="true">
-                  <i class="ico ico_plus">+</i>
-                  <span>자산추가</span>
-                </MChip>                 
-            </MChipList>
+            <div class="button_list_wrap">
+              <button>
+                <i class="ico ico_insite"/>
+                <span>인사이트</span>
+              </button>
+              <button class="active">
+                <i class="ico ico_blash"/>
+                <span>BLASH</span>
+              </button>
+              <button>
+                <i class="ico ico_post"/>
+                <span>포스트</span>
+              </button>
+              <button>
+                <i class="ico ico_plus">+</i>
+                <span>자산추가</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
             </div>
             <!-- S banner -->
             <swiper class="swiper">
