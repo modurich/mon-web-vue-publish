@@ -40,21 +40,6 @@
                 <img src="~assets/prd_logo.png" alt="삼성전자" />
                 <span>삼성전자</span>
               </button>
-              <button>
-                <i class="ico_close_gray"/>
-                <img src="~assets/prd_logo.png" alt="삼성전자" />
-                <span>삼성전자</span>
-              </button>
-              <button>
-                <i class="ico_close_gray"/>
-                <img src="~assets/prd_logo.png" alt="삼성전자" />
-                <span>삼성전자</span>
-              </button>
-              <button>
-                <i class="ico_close_gray"/>
-                <img src="~assets/prd_logo.png" alt="삼성전자" />
-                <span>삼성전자</span>
-              </button>
             </div>
             <!-- S banner -->
             <swiper class="swiper">
