@@ -1976,7 +1976,7 @@ button{
 }
 //banner_box
 .banner_box{
-    img{width:calc(100% + 32px);margin:0 -16px 0 -16px;
+    img{width:100%;
         &.mob{display: none;}
     }
     @media (max-width: $breakpoint-xs-max) {
