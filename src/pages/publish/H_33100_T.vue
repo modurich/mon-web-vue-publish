@@ -29,15 +29,10 @@
               </button>
             </div>
             <div class="button_list_wrap">
-                <m-button-3 color="textGray" size="small">인사이트</m-button-3>
+                <m-button-3 color="primary" size="small">인사이트</m-button-3>
                 <m-button-3 color="textGray" size="small">BLASH</m-button-3>
-                <m-button-3 color="primary" size="small">토론</m-button-3>
+                <m-button-3 color="textGray" size="small">토론</m-button-3>
             </div>
-            <MChipList v-dragscroll>
-              <MChip :to="`/publish/H_33100_T`">인사이트</MChip>
-              <MChip :to="`/publish/H_33100_T`">BLASH</MChip>
-              <MChip :to="`/publish/H_33100_T`">토론</MChip>
-            </MChipList>            
             <!-- S banner -->
             <swiper class="swiper">
               <swiper-slide class="slide">
@@ -281,14 +276,12 @@ import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
-import MChipList from 'src/components/MChipList.vue';
-import MChip from 'src/components/MChip.vue';
 
 
 
 export default {
-  components: { MDialogBlank, Swiper, SwiperSlide, VClamp, MChipList, MChip },
-    name: 'H_33200_T',
+  components: { MDialogBlank, Swiper, SwiperSlide, VClamp },
+    name: 'H_33100_T',
     
     data() {
         return {

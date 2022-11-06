@@ -63,6 +63,7 @@ const routes = [
             { path: '/publish/H_31000_T', component: () => import('pages/publish/H_31000_T.vue') },
             { path: '/publish/H_35000_T', component: () => import('pages/publish/H_35000_T.vue') },
             { path: '/publish/H_32000_T', component: () => import('pages/publish/H_32000_T.vue') },
+            { path: '/publish/H_33100_T', component: () => import('pages/publish/H_33100_T.vue') },
             { path: '/publish/H_33200_T', component: () => import('pages/publish/H_33200_T.vue') },
         ]
     },
