@@ -21,6 +21,11 @@
                 <span>자산추가</span>
               </button>
             </div>
+            <MChipList v-dragscroll>
+              <template v-for="(name, inx) in ['전체', '공지', 'BEST', '정보', '유머', '자유', '홍보', 'Q&A']">
+                <MChip :lined=" inx !== 0">{{name}}</MChip>
+              </template>
+            </MChipList>
             <!-- S banner -->
             <swiper class="swiper">
               <swiper-slide class="slide">
