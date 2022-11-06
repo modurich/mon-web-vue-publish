@@ -2493,16 +2493,34 @@ button{
     margin-bottom: 32px;
     display: flex;
     align-items: center;
-    .ico{width:60px;height:60px;border-radius: 60px;box-sizing: border-box;
-        background: #f8f9fd;display: flex;margin-bottom:4px;
+    .ico,img{width:60px;height:60px;border-radius: 60px;box-sizing: border-box;
+        background-size: cover !important;background-color:#f8f9fd ;display: flex;margin-bottom:4px;
         align-items: center;justify-content: center;font-style: normal;
-        color: $txt_gray;font-size: 20px;font-weight: 400;
+        color: $txt_gray;font-size: 20px;font-weight: 400 ;
+    }
+    img{
+        object-fit: contain;
     }
     button{margin-right:16px; color:$txt_dk;
+        position: relative;
+        .ico_close_gray{
+            position: absolute;
+            right:-10px;
+            top:-5px;
+        }
         &.active {
             color:$primary;
-            .ico{border:2px solid $primary;}
-            
+            .ico,img{border:2px solid $primary;}
         }   
     }
+}
+
+.ico_insite{    
+    background: url('~assets/ico_insite.png')  no-repeat center center; 
+}
+.ico_blash{
+    background: url('~assets/ico_blash.png')  no-repeat center center; 
+}
+.ico_post{
+    background: url('~assets/ico_post.png')  no-repeat center center; 
 }

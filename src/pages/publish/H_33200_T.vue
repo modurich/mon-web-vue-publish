@@ -20,6 +20,41 @@
                 <i class="ico ico_plus">+</i>
                 <span>자산추가</span>
               </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
+              <button>
+                <i class="ico_close_gray"/>
+                <img src="~assets/prd_logo.png" alt="삼성전자" />
+                <span>삼성전자</span>
+              </button>
             </div>
             <!-- S banner -->
             <swiper class="swiper">
