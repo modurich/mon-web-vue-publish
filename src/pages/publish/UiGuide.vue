@@ -591,7 +591,7 @@
         <div class="box_wrap">
           <p class="h2">Callps</p>
           <div class="type_view">
-            <textarea v-model="text3" cols="165" rows="10"></textarea>
+            <textarea v-model="text3" class="type_view"></textarea>
           </div>
           <div class="type_view">
             <v-clamp autoresize :max-lines="2">
@@ -609,10 +609,10 @@
         <div class="box_wrap">
           <p class="h2">mchip list</p>
           <div class="type_view">
-            <MChipList style="width: 300px;">
-              <template v-for="itm in tablist">
-                <MChip :lined="tab !== itm.id">
-                  <template v-slot:icon v-if="tab === itm.id">
+            <MChipList v-dragscroll>
+              <template v-for="itm in listdata">
+                <MChip :lined="tab !== itm.idx">
+                  <template v-slot:icon v-if="tab === itm.idx">
                     <m-icon name="refresh"/>
                   </template>
                   {{itm.title}}
@@ -621,6 +621,27 @@
             </MChipList>
           </div>
         </div>
+        <div class="box_wrap">
+          <p class="h2">Slide2</p>
+          <div class="type_view">
+            <MChipList>
+              <template v-for="itm in listdata">
+              <MChip :filled="false" :lined="true">
+               
+                  <div class="img_area">
+                    <img :src="itm.img" alt="profile" />
+                  </div>
+                  <div class="txt_tit">{{itm.title}}</div>
+                  <span class="badge_area">
+                    <span class="badge pro">{{itm.pro}}</span>
+                    <span class="badge pl1">{{itm.pl}}</span>
+                  </span>
+               
+              </MChip>
+              </template>
+            </MChipList>
+          </div>
+        </div>        
       </div>      
     </div>
   </div>
@@ -707,16 +728,16 @@ export default {
       dailog2: ref(false),
       dailog3: ref(false),
       dailog4: ref(false),
-      tab: ref('A'),
-      tablist:[
-        {id:'A', title:'테스트1'},
-        {id:'B', title:'테스트2'},
-        {id:'C', title:'테스트3'},
-        {id:'D', title:'테스트4'},
-        {id:'E', title:'테스트5'},
-        {id:'F', title:'테스트6'},
-        {id:'G', title:'테스트7'},
-        {id:'H', title:'테스트8'}
+      tab: ref(3),
+      listdata: [
+        {idx:1, title:'몬스탁닉네임01', img:require("../../assets/profile_img1.png"), pro:'PRO', pl:'PL1'},
+        {idx:2, title:'몬스탁닉네임02', img:require("../../assets/profile_img2.png"), pro:'PRO', pl:'PL2'},
+        {idx:3, title:'몬스탁닉네임03', img:require("../../assets/profile_img3.png"), pro:'PRO', pl:'PL3'},
+        {idx:4, title:'몬스탁닉네임04', img:require("../../assets/profile_img4.png"), pro:'PRO', pl:'PL4'},
+        {idx:5, title:'몬스탁닉네임05', img:require("../../assets/profile_img1.png"), pro:'PRO', pl:'PL1'},
+        {idx:6, title:'몬스탁닉네임06', img:require("../../assets/profile_img2.png"), pro:'PRO', pl:'PL3'},
+        {idx:7, title:'몬스탁닉네임07', img:require("../../assets/profile_img3.png"), pro:'PRO', pl:'PL4'},
+        {idx:8, title:'몬스탁닉네임08', img:require("../../assets/profile_img4.png"), pro:'PRO', pl:'PL2'}  
       ],
       swiperOption: {
         slidesPerView: 5,
