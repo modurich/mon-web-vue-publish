@@ -527,7 +527,7 @@
                 <router-link to="/publish/H_11112_U">H_11112_U</router-link>
             </td>
             <td>자산 순서 변경</td>
-            <td>vuedragable</td>
+            <td>vuedragable,팝업 타이틀 고정</td>
         </tr> 
         <tr>
             <td></td>
@@ -537,7 +537,7 @@
                 <router-link to="/publish/H_11113_U">H_11113_U</router-link>
             </td>
             <td>자산 삭제</td>
-            <td>vuedragable</td>
+            <td>vuedragable,팝업 타이틀 고정</td>
         </tr> 
         <tr>
             <td></td>
@@ -658,6 +658,16 @@
             </td>
             <td>토론</td>
             <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_31210_P">H_31210_P</router-link>
+            </td>
+            <td>작성자통계</td>
+            <td>진행중</td>
         </tr> 
       </tbody>
     </table>

@@ -337,6 +337,7 @@
             <m-button-3 lined color="primary">lined primary</m-button-3>
             <m-button-3 color="darkPurple">darkPurple</m-button-3>
             <m-button-3 color="yellow">yellow</m-button-3>
+            <m-button-3 color="darkYellow">yellow</m-button-3>
             <m-button-3 color="red">red</m-button-3>
             <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
             <m-button-3 color="textPrimary">textPrimary</m-button-3>
@@ -347,6 +348,7 @@
             <m-button-3 lined color="primary" disabled>lined primary</m-button-3>
             <m-button-3 color="darkPurple" disabled>darkPurple</m-button-3>
             <m-button-3 color="yellow" disabled>yellow</m-button-3>
+            <m-button-3 color="darkYellow" disabled>yellow</m-button-3>
             <m-button-3 color="red" disabled>red</m-button-3>
             <m-button-3 lined color="lightGrey" disabled>lightGrey</m-button-3>
             <m-button-3 color="textPrimary" disabled>textPrimary</m-button-3>
