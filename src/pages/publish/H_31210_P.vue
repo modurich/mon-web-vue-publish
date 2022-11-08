@@ -1,8 +1,83 @@
+<i18n>
+  {
+      "ko": {
+          "computed": {
+              "chartOptions": {
+                  "xAxis": {
+                      "label1": "적시성",
+                      "label2": "논리성",
+                      "label3": "정확성",
+                      "label4": "독창성",
+                      "label5": "가독성"
+                  }
+              }
+          }
+      },
+      "en": {
+          "computed": {
+              "chartOptions": {
+                  "xAxis": {
+                      "label1": "Timely",
+                      "label2": "Logical",
+                      "label3": "Accuracy",
+                      "label4": "Creatively",
+                      "label5": "Readability"
+                  }
+              }
+          }
+      }
+  }
+  </i18n>
 <template>
     <div class="centerarea_box1">
         <div class="con_box">
-          <h2 class="line_type">삼성전자</h2>
+          <h2 class="line_type">인사이트</h2>
           <div class="box_contents pdt16"> 
+            <div class="tit_type01">
+              <p class="badge_wrap">
+                <span class="badge_area">
+                  <span class="badge3 small green">주식</span>
+                  <span class="badge3 small yellow">BEST</span>
+                </span>
+                <span>
+                  <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                    menu
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>락업정보</q-item-section>
+                        </q-item>
+                        <q-item clickable>
+                          <q-item-section>보내기</q-item-section>
+                        </q-item>
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </span>
+              </p>
+              <p class="tit_area">제목은 2글자 이상 최대 40자입니다</p>
+              <p class="badge_wrap">
+                <span class="badge_area">
+                  <span class="ico_f ico_comment">7</span>
+                  <span class="ico_f ico_pen">1.2</span>
+                </span>
+                <span>
+                  <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                    menu
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>락업정보</q-item-section>
+                        </q-item>
+                        <q-item clickable>
+                          <q-item-section>보내기</q-item-section>
+                        </q-item>
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </span>
+              </p>
+            </div>
             <h3 class="between">
               <span class="font16">종료</span>
               <span class="font12 txt_gray medium flex"><span class="badge3 small primary mgr4 disabled">단기</span> 22..9.13 ~ 22.09.19</span>
@@ -55,15 +130,54 @@
               </button>
             </div>
             <div class="divider" />
+            <div class="font10 mga32">
+              본 자료는 몬스탁의 이용약관 및 게시물 작성규정에 동의하고 기준에 따라 작성 권한을 획득한 회원에 의해 작성된 자료입니다. 본 자료는 회원의 투자 판단을 돕기 위한 정보제공을 목적으로 작성된 참고용 자료이며 당사와 작성자는 제공되는 정보의 완전성이나 정확성을 보장하지 않습니다.
+              모든 투자의사 결정은 투자자 자신의 판단과 책임하에 하시기 바랍니다. 본 자료는 어떠한 경우에도 고객의 증권투자 결과에 대한 법적 책임소재의 증빙자료로 사용될 수 없습니다.
+            </div>
+            <div class="divider" />
             <h3 class="between">
               <span class="font16">보팅</span>
-              <span class="font12 txt_gray medium"><i class="ico_time"/>2일 23:53:06</span>
+              <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>
             </h3>
+            <div class="voting_list_wrap">
+              <ul class="voting_list">
+                <li>
+                  <span>누적 보팅 파워 / 전체 보팅 한도</span>
+                  <span><span class="primary">2,000</span> / 10,000VP</span>
+                </li>
+                <li>
+                  <span>전체 보팅 보상 (예상)</span>
+                  <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
+                </li>
+              </ul>
+              <ul class="voting_list">
+                <li>
+                  <span>내 보팅 한도</span>
+                  <span>10VP</span>
+                </li>
+                <li>
+                  <span>내 보팅 보상 (예상)</span>
+                  <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
+                </li>
+                <li class="col2">
+                  <span>보팅 수량</span>
+                  <span class="stepper_wrap">
+                    <button class="btn_minus">-</button>
+                    <span class="txt_area">5</span>
+                    <button class="btn_plus">+</button>
+                  </span>
+                </li>
+              </ul>
+            </div>
             <div class="divider" />
             <h3 class="between">
               <span class="font16">콘텐츠 평점</span>
               <span class="font12 txt_gray medium">참여 123명</span>
             </h3>
+            <div>
+              <highcharts ref="chart" :constructor-type="'chart'" :options="chartOptions"></highcharts>
+              <p class="center primary font16 bold">평균평점 4.44</p>
+            </div>
             <div class="divider" />
             <h3 class="between">
               <span class="font16">댓글<span class="primary mgl4">23</span></span>
@@ -75,7 +189,7 @@
                 <span class="font12 mgl8">평점은 작성 후 수정/삭제할 수 없습니다.</span>
               </div>
               <div class="list_area">
-                <div class="txt_area">유용한가요?</div>
+                <div class="txt_area primary">유용한가요?</div>
                 <div class="star">
                   <q-rating
                     v-model="ratingModel"
@@ -90,7 +204,7 @@
                 <div class="txt_area">논리적인가요?</div>
                 <div class="star">
                   <q-rating
-                    v-model="ratingModel"
+                    v-model="ratingMode2"
                     size="21px"
                     color="primary"
                     icon="star_border"
@@ -102,7 +216,7 @@
                 <div class="txt_area">정보가 확실한가요?</div>
                 <div class="star">
                   <q-rating
-                    v-model="ratingModel"
+                    v-model="ratingMode3"
                     size="21px"
                     color="primary"
                     icon="star_border"
@@ -114,7 +228,7 @@
                 <div class="txt_area">새로운 시각인가요?</div>
                 <div class="star">
                   <q-rating
-                    v-model="ratingModel"
+                    v-model="ratingMode4"
                     size="21px"
                     color="primary"
                     icon="star_border"
@@ -126,7 +240,7 @@
                 <div class="txt_area">읽기 편했나요?</div>
                 <div class="star">
                   <q-rating
-                    v-model="ratingModel"
+                    v-model="ratingMode5"
                     size="21px"
                     color="primary"
                     icon="star_border"
@@ -352,7 +466,11 @@ export default {
     
     data() {
         return {
-            ratingModel: ref(0),
+            ratingModel: ref(3),
+            ratingMode2: ref(0),
+            ratingMode3: ref(0),
+            ratingMode4: ref(0),
+            ratingMode5: ref(0),
             textarea1: {
               value: "",
               counter: true,
@@ -378,7 +496,96 @@ export default {
         }
     },
     methods: {
-  }
+    },
+    computed: {
+        chartOptions() {
+            const rating = this.rating || {
+                score1: 2,
+                score2: 3,
+                score3: 1,
+                score4: 4,
+                score5: 5
+            };
+            return {
+                title: {
+                    text: ''
+                },
+                chart: {
+                    polar: true,
+                    height: 221
+                },
+                credits: {
+                    enabled: false
+                },
+                xAxis: {
+                    categories: [
+                        this.$t('computed.chartOptions.xAxis.label1'),
+                        this.$t('computed.chartOptions.xAxis.label2'),
+                        this.$t('computed.chartOptions.xAxis.label3'),
+                        this.$t('computed.chartOptions.xAxis.label4'),
+                        this.$t('computed.chartOptions.xAxis.label5')
+                    ],
+                    tickmarkPlacement: 'on',
+                    lineWidth: 0,
+                    labels: {
+                        format: '<span class="f-12-b-lg">{value}</span>',
+                        useHTML: true
+                        /* style: {
+                            color: '#A8A8A8',
+                            fontSize: '12px',
+                            fontWeight: 'bold'
+                        }, */
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    },
+                    labels: {
+                        enabled: false
+                    },
+                    gridLineInterpolation: 'polygon',
+                    lineWidth: 0,
+                    min: 0,
+                    max: 5,
+                    endOnTick: true,
+                    showLastLabel: false,
+                    gridLineWidth: 1,
+                    minorTickInterval: 1,
+                    tickInterval: 1,
+                    minorGridLineWidth: 0
+                },
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: false
+                        },
+                        states: {
+                            hover: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    area: {
+                        lineColor: 'rgba(134, 115, 255, 1)',
+                        fillColor: 'rgba(134, 115, 255, 0.3)'
+                    }
+                },
+                tooltip: {
+                    enabled: false
+                },
+                legend: {
+                    enabled: false
+                },
+
+                series: [{
+                    type: 'area',
+                    data: [rating.score2, rating.score5, rating.score3, rating.score1, rating.score4],
+                    pointPlacement: 'on'
+                }]
+            };
+        }
+    },
 };
 </script>
 <style scoped>

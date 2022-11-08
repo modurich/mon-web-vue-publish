@@ -32,7 +32,7 @@
 .mgb0{margin-bottom:0 !important}
 .mga32{margin:32px 0 !important}
 .pdt32{padding-top:32px !important}
-.font10{font-size:10px !important}
+.font10{font-size:10px !important;line-height: 18px;}
 .font11{font-size:11px !important}
 .font12{font-size:12px !important}
 .font14{font-size:14px !important}
@@ -2593,4 +2593,86 @@ button{
     }
     .txt_area{color: $txt_dk;}
     .star{position: relative;margin-top:-12px}
+}
+
+//voting_list
+.voting_list_wrap{margin-top:32px}
+.voting_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{width:calc(50% - 16px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top:12px;
+        &.col2{width:100%;}
+    }
+    li:nth-child(2n){margin-left:32px;}
+    @media (max-width: $breakpoint-xs-max) {
+        li{width:100%;}
+        li:nth-child(2n){margin-left:0;}
+    }
+}
+.voting_list + .voting_list{
+    border-top:1px solid $com_line;
+    margin-top:16px;
+    padding-top:4px;
+}
+.stepper_wrap{
+    display: flex;
+    align-items: center;
+    .txt_area{margin:0 16px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $primary;}
+}
+.btn_minus,.btn_plus{
+    border:1px solid $com_line;
+    border-radius: 4px;
+    width:28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: -999em;
+}
+.btn_minus{
+    background: url('~assets/btn_minus.svg')  no-repeat center center; 
+}
+.btn_plus{
+    background: url('~assets/btn_plus.svg')  no-repeat center center; 
+}
+
+.ico_mon{
+    width:18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    background: url('~assets/ico_mon.svg')  no-repeat center center; 
+}
+.ico_time_y{
+    width:26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: url('~assets/ico_time_y.svg')  no-repeat center center; 
+}
+
+.tit_type01{
+    .badge_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .badge_area{
+            span + span{margin-left:8px}
+        }
+    }
+    
+    .tit_area{font-weight: 700;
+    color:$txt_dk;font-size: 18px;}
 }

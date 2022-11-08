@@ -1,4 +1,4 @@
-<i18n>
+<!-- <i18n>
 {
     "ko": {
         "computed": {
@@ -27,7 +27,7 @@
         }
     }
 }
-</i18n>
+</i18n> -->
 
 <template>
     <div class="score-radar-chart">
