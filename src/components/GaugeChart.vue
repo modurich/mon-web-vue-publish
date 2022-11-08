@@ -56,11 +56,7 @@ export default {
         chartOptions() {
             return {
               chart: {
-                type: 'solidgauge',
-                height: '110%',
-                events: {
-                  //render: renderIcons
-                }
+                type: 'solidgauge'
               },
 
               title: {
@@ -90,7 +86,7 @@ export default {
                 background: [{ // Track for Move
                   outerRadius: '112%',
                   innerRadius: '88%',
-                  // backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
+                  backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
                   borderWidth: 0
                 }]
               },
@@ -116,7 +112,7 @@ export default {
               series: [{
                 name: 'Move',
                 data: [{
-                  // color: Highcharts.getOptions().colors[0],
+                  color: Highcharts.getOptions().colors[0],
                   radius: '112%',
                   innerRadius: '88%',
                   y: 80
