@@ -257,6 +257,11 @@
                   </li>
                 </ul>
               </div>
+              <div class="btn_wrap mgt32">
+                  <m-button-3 size="large" color="primary" class="full">
+                    <i class="ico_vote big mgr16"/>보팅하기
+                  </m-button-3>
+              </div>
               <div class="divider" />
               <h3 class="between">
                 <span class="font16">콘텐츠 평점</span>
