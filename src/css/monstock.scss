@@ -1062,13 +1062,18 @@ body{
     }
   }
 }
-.ico_copy{
+.ico_copy,.ico_copy_w{
     display: inline-flex;
     width:18px;
     height:18px;
     margin-left: 8px;
     text-indent: -999em;
+}
+.ico_copy{
     background: url('~assets/ico_copy.svg') center right no-repeat;
+}
+.ico_copy_w{
+    background: url('~assets/ico_copy_w.svg') center right no-repeat;
 }
 //등급 뱃지
 .grade_wrap{
@@ -2537,7 +2542,23 @@ button{
 .ico_post{
     background: url('~assets/ico_post.png')  no-repeat center center; 
 }
-
+.bookmark{
+    display: flex;
+    align-items: center;
+    .txt_area{margin-right:4px}
+    .ico_bookmark{
+        display: inline-flex;
+        width:24px;
+        height: 24px;
+        background: url('~assets/btn_bookmark.svg')  no-repeat center center; 
+    }
+    &.active{
+        color: $primary;
+        .ico_bookmark{
+            background: url('~assets/btn_bookmark_p.svg')  no-repeat center center; 
+        }
+    }
+}
 
 
 .btn_area_center{
@@ -2668,11 +2689,107 @@ button{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom:18px;
         .badge_area{
+            font-size: 12px;
             span + span{margin-left:8px}
         }
     }
     
     .tit_area{font-weight: 700;
     color:$txt_dk;font-size: 18px;}
+}
+
+.hashtag_wrap{
+    background: #d4d9ea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-bottom:32px;
+    .btn_area{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .txt_area{
+        width:80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        span{margin-right:8px}
+    }
+}
+
+.invest_wrap{
+    .badge_area{
+        display: block;
+        span + span{margin-left:4px}
+        margin-bottom:8px;
+    }
+   .pro_area{
+    display: flex;
+    justify-content: space-between;
+        .txt_wrap{
+            display: flex;
+            .txt_area{
+                text-align: right;
+                > span{display: block;}
+                .txt01{font-size: 18px;}
+                .txt02{font-size: 12px;}
+                .ico_area{margin:4px 0 2px 0}
+            }
+            .bar_area{margin-left:8px}
+        }
+        .logo_wrap{
+            display: flex;
+            .logo{
+                img{
+                    width:40px;
+                    height:40px;
+                    border-radius: 40px;
+                    overflow: hidden;
+                    margin-right:10px;
+                }
+            }
+            .txt_area{
+                > span{display: block;}
+                .txt01{color: $txt_dk;
+                font-size: 16px;
+                line-height:28px;
+                }
+                .txt02{
+                    font-size: 10px;
+                    }
+            }
+        }
+   } 
+}
+
+.chart_list_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    > div{flex:1}
+    .chart_area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .list_area{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom:17px;
+            .txt01{font-size:12px}
+            .ico_area{
+                span{margin-right:4px}
+            }
+        }
+    }
+    @media (max-width: $breakpoint-xs-max) {
+        > div{width:100%;flex: auto;}
+    }
 }

@@ -515,3 +515,32 @@
     text-shadow: 0 0 0 rgb(0 0 0 / 0%), 0 1px 2px rgb(0 0 0 / 0%) !important;
 }
 
+.line_bar_wrap{
+    position: relative;
+    width:7px;
+    height:88px;
+    display: flex;
+    &.red{
+        .line{background: $txt_red;}
+        .bar{background: $txt_red;}
+    }
+    &.blue{
+        .line{background: $txt_blue1;}
+        .bar{background: $txt_blue1;}
+    }
+    .line{
+        height:88px;
+        width: 1px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bar{
+        position: absolute;
+        width:7px;
+        display: flex;
+
+    }
+    
+}
