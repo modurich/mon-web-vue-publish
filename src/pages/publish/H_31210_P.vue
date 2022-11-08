@@ -281,7 +281,7 @@
                   <div class="star">
                     <q-rating
                       v-model="ratingModel"
-                      size="21px"
+                      size="18px"
                       color="primary"
                       icon="star_border"
                       icon-selected="star"
@@ -293,7 +293,7 @@
                   <div class="star">
                     <q-rating
                       v-model="ratingMode2"
-                      size="21px"
+                      size="18px"
                       color="primary"
                       icon="star_border"
                       icon-selected="star"
@@ -305,7 +305,7 @@
                   <div class="star">
                     <q-rating
                       v-model="ratingMode3"
-                      size="21px"
+                      size="18px"
                       color="primary"
                       icon="star_border"
                       icon-selected="star"
@@ -317,7 +317,7 @@
                   <div class="star">
                     <q-rating
                       v-model="ratingMode4"
-                      size="21px"
+                      size="18px"
                       color="primary"
                       icon="star_border"
                       icon-selected="star"
@@ -329,7 +329,7 @@
                   <div class="star">
                     <q-rating
                       v-model="ratingMode5"
-                      size="21px"
+                      size="18px"
                       color="primary"
                       icon="star_border"
                       icon-selected="star"
