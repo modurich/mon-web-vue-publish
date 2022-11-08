@@ -669,6 +669,15 @@
             <td>작성자통계</td>
             <td>진행중</td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/SoceRadarChart">SoceRadarChart</router-link>
+            </td>
+            <td>콘텐츠 평점 차트</td>
+        </tr> 
       </tbody>
     </table>
   </div>

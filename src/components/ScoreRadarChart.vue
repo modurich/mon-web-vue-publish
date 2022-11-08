@@ -54,11 +54,11 @@ export default {
     computed: {
         chartOptions() {
             const rating = this.rating || {
-                score1: 0,
-                score2: 0,
-                score3: 0,
-                score4: 0,
-                score5: 0
+                score1: 2,
+                score2: 3,
+                score3: 1,
+                score4: 4,
+                score5: 5
             };
             return {
                 title: {

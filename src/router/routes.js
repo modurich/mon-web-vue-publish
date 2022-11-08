@@ -67,6 +67,7 @@ const routes = [
             { path: '/publish/H_33200_T', component: () => import('pages/publish/H_33200_T.vue') },
             { path: '/publish/H_33300_T', component: () => import('pages/publish/H_33300_T.vue') },
             { path: '/publish/H_31210_P', component: () => import('pages/publish/H_31210_P.vue') },
+            { path: '/publish/SoceRadarChart', component: () => import('components/ScoreRadarChart.vue') },
         ]
     },
     {
