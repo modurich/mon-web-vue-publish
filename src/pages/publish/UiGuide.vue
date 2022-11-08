@@ -652,10 +652,25 @@
               </template>
             </MChipList>
           </div>
-        </div>        
+        </div>
+      </div>
+    </div>
+    <div id="group10" class="group_wrap">
+        <p class="h1_type">CHART</p>    
+        <div class="box_wrap">
+          <p class="h2">CHART</p>
+          <div class="type_view">
+            <ScoreRadarChart/>
+          </div>
+        </div>  
+        <div class="box_wrap">
+          <p class="h2">CHART</p>
+          <div class="type_view">
+            <GaugeChart/>
+          </div>
+        </div>                        
       </div>      
     </div>
-  </div>
 </template>
 
 <script>
@@ -679,13 +694,15 @@ import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
 import MChipList from 'src/components/MChipList.vue';
 import MChip from 'src/components/MChip.vue';
+import ScoreRadarChart from 'src/components/ScoreRadarChart.vue';
+import GaugeChart from 'src/components/GaugeChart.vue';
 
 export default {
-  components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, 
-    MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VClamp, MChipList, MChip },
+  components: { MTabs, MAlert, MHeader, MMenu, MButton3, MSelect, MRadio, MSpaceV, MSlideDialog, MTextarea, MToggle, MDialogBlank, Polycy, Swiper, SwiperSlide, VClamp, MChipList, MChip, ScoreRadarChart, GaugeChart },
   data() {
     const text2 = ref('');
     return {
+      search: ref(''),
       ratingModel: ref(3),
       text1: ref(''),
       inputRef: ref(null),
