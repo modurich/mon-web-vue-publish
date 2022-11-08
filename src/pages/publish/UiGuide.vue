@@ -35,6 +35,8 @@
           />
         </div><br/><br/>
         <div class="type_view ico">
+          <span class="tag_red small">-0.81%</span>
+          <span class="tag_blue small">+1.24%</span>
           <span class="tag_red">-0.81%</span>
           <span class="tag_blue">+1.24%</span>
         </div>
