@@ -148,7 +148,13 @@
               <div class="chart_list_wrap">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  차트 들어가는 곳
+                  <div class="lcon_list">
+                    <span class="txt_area">
+                      <span class="txt01">목표가 달성률</span>
+                      <span class="txt02">9999.9%</span>
+                    </span>
+                    <div class="img_area"><img src="~assets/ico_stamp.svg" alt="성공" /></div>
+                  </div>
                   <!-- E 차트 들어가는 곳-->
                 </div>
                 <div class="list_area">
@@ -539,7 +545,231 @@
               </div>
             </div>
             <div class="tab_contents" v-if="tab1 == 'B'">
-            작성자 통계
+             <!-- S 통계 -->
+             <div class="add_tab_tit">
+              <h3>
+                <span>통계</span>
+              </h3>
+              <m-tabs class="card_type small" v-model="tab2" :items="tabs1" />
+            </div>
+              <div v-if="tab2 == 'A'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">종료된 인사이트</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
+                </div>
+                <ul class="insight_list">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_blue1">7.84%</span>
+                        <!-- 수익률 class txt_red,txt_blue1 -->
+                    </li>
+                </ul>
+                <q-table
+                  :data="tbRowData"
+                  :columns="tbColInfo"
+                  row-key="category"
+                  no-data-label="데이터가 존재하지 않습니다."
+                  hide-bottom
+                  :visible-columns="table1"
+                  :rows-per-page-options="[0]" 
+                  :pagination.sync="table1page"
+                >
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="date" :props="props">
+                        {{ props.row.date }}
+                      </q-td>
+                      <q-td key="category" :props="props">
+                          {{ props.row.category }}
+                      </q-td>
+                      <q-td key="updown" :props="props">
+                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
+                        <span v-else class="ico_down">하락</span>
+                      </q-td>
+                      <q-td key="isSuccess" :props="props">
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
+                        <span v-else class="txt_gray">무효</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
+                </div>
+                <div class="divider1" />
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
+                </div>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions1"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
+                      </li>
+                      <li>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
+                      </li>
+                  </ul>
+                  </div>
+                </div>
+                <q-table :data="tbRowData" :columns="tbColInfo" row-key="category" no-data-label="데이터가 존재하지 않습니다." hide-bottom
+                  :visible-columns="table3">
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="category" :props="props">
+                        {{ props.row.category }}
+                      </q-td>
+                      <q-td key="period" :props="props">
+                        <span v-if="props.row.investperiod == '단기'" style="color:#c1b7ff">{{ props.row.investperiod }}</span>
+                        <span v-else-if="props.row.investperiod == '중기'" style="color:#8673ff">{{ props.row.investperiod }}</span>
+                        <span v-else style="color:#4c34dc">{{ props.row.investperiod }}</span> / {{ props.row.holdperiod }}일
+                      </q-td>
+                      <q-td key="specific" :props="props">
+                        {{props.row.specific}}%
+                      </q-td>
+                      <q-td key="perform" :props="props">
+                        {{ props.row.tgtperform }}% / 
+                        <span v-if="props.row.currperform > 0" class="txt_blue1">{{ props.row.currperform }}%</span>
+                        <span v-else-if="props.row.currperform < 0" class="txt_red">{{ props.row.currperform }}%</span>
+                        <span v-else class="txt_gray">{{ props.row.currperform }}%</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
+                </div>
+              </div>
+              <div v-if="tab2 == 'B'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
+                  <span>22.09.20 ~ 22.09.20</span>
+                </div>
+                <ul class="insight_list list3">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_red">3.84%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 익절</span>
+                        <span class="txt02 txt_red">18.05%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 손절</span>
+                        <span class="txt02 txt_blue">-5.01%</span>
+                        <!-- 수익률 class txt_red,txt_blue -->
+                    </li>
+                </ul>
+                <q-table
+                  :data="tbRowData"
+                  :columns="tbColInfo"
+                  row-key="category"
+                  no-data-label="데이터가 존재하지 않습니다."
+                  hide-bottom
+                  :visible-columns="table2"
+                >
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="buydate" :props="props">
+                        {{ props.row.buydate }}
+                      </q-td>
+                      <q-td key="category" :props="props">
+                        {{ props.row.category }}
+                      </q-td>
+                      <q-td key="tgtperform" :props="props">
+                        {{props.row.tgtperform}}%
+                      </q-td>
+                      <q-td key="isSuccess" :props="props">
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
+                        <span v-else class="txt_gray">무효</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="btn_wrap">
+                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                </div>
+                <div class="divider1"/>
+              </div>
+            <!-- E 통계 -->
             </div>
           </div>
         </div>
@@ -555,6 +785,29 @@ import VClamp from '@boyuai/vue-clamp';
 import MChipList from 'src/components/MChipList.vue';
 import MChip from 'src/components/MChip.vue';
 
+const tbColInfo = [
+  { name: 'date', align: 'center', label: '일자', field: 'date' },
+  { name: 'buydate', align: 'center', label: '매도일자', field: 'buydate' },
+  { name: 'category', align: 'center', label: '종목', field: 'category' },
+  { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
+  { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
+  { name: 'period', align: 'center', label: '목표 / 현재' },
+  { name: 'specific', align: 'center', label: '비중' },
+  { name: 'perform', align: 'center', label: '목표 / 현재' },
+  { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
+];
+const tbRowData = [
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '삼성전자', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: 'SK하이닉스', updown: 'D', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '1.25', specific: '10', investperiod: '중기', holdperiod: '9', category: '네이버', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '0', specific: '5', investperiod: '중기', holdperiod: '13', category: '현대차', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-1.28', specific: '5', investperiod: '장기', holdperiod: '16', category: '신풍제약', updown: 'D', isSuccess: 'M' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '안랩', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: '카카오', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '0.72', specific: '10', investperiod: '중기', holdperiod: '9', category: 'KT&G', updown: 'D', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '-1.28', specific: '5', investperiod: '중기', holdperiod: '13', category: '셀트리온', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '2', specific: '5', investperiod: '장기', holdperiod: '16', category: '미래에셋증권', updown: 'U', isSuccess: 'F' }
+];
 
 
 export default {
@@ -563,10 +816,17 @@ export default {
     
     data() {
         return {
-            tabs: [
-              { label: '투자정보', value: 'A', icon: '' },
-              { label: '작성자 통계', value: 'B', icon: '' }
+            select1: ref("전체"),
+              options: [
+              '전체', '선택1','선택2','선택3',
             ],
+            table1page: {
+              page: 1,
+              rowsPerPage: 10
+            },
+            table1: ref(['date', 'category', 'updown', 'isSuccess']),
+            table2: ref(['buydate', 'category', 'tgtperform', 'isSuccess']),
+            table3: ref(['category', 'period', 'specific', 'perform']),
             ratingModel: ref(3),
             ratingMode2: ref(0),
             ratingMode3: ref(0),
@@ -586,13 +846,90 @@ export default {
             tab1:ref('A'),
             tab2:ref('A'),
             rad1:ref('A'),
+            current: ref(3),
             v_true: ref(true),
             tabs: [
               { label: '투자정보', value: 'A', icon: '' },
               { label: '작성자 통계', value: 'B', icon: '' }
             ],
+            tabs1:[
+                {label:'인사이트', value:'A', icon:'mail'},
+                {label:'BLASH', value:'B', icon:'photo'}
+            ],
             dailog1:ref(false),
             polcyType:ref('01'),
+            tbColInfo,
+            tbRowData,
+            chartOptions1: {
+            colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
+            chart: {
+                type: 'pie'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '건'
+                }
+            },
+            credits: {
+              enabled: false
+            },
+            // title: {
+            //     text: 'February 2020 Norway passenger auto registrations'
+            // },
+            // subtitle: {
+            //     text: 'Source:<a href="https://cleantechnica.com/2020/03/07/pioneering-norway-rises-above-68-plug-in-vehicle-market-share-in-february/">cleantechnica</a>'
+            // },
+            // tooltip: {
+            //     pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            // },
+            title: {
+              text:'<div style="font-size: 20px;font-weight:700">30건</div>',
+              align:'center',
+              verticalAlign:'middle',
+              x:0,
+              y:25
+            },
+            plotOptions: {
+                pie: {
+                    //size: 100,
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        format: '{point.name}: {y} 건'
+                    },
+                    showInLegend: false
+                  }
+                },
+                legend: {
+                  align: 'right',
+                  verticalAlign: 'top',
+                  y: 50,
+                  layout: 'vertical',
+                  bubbleLegend: {
+                    enabled: true
+                  }
+                },
+                series: [{
+                  name: 'Registrations',
+                  colorByPoint: true,
+                  innerSize: '75%',
+                  data: [
+                  {
+                      name: '단기',
+                      y: 3
+                  }, 
+                  {
+                      name: '중기',
+                      y: 6
+                  }, 
+                  {
+                      name: '단기',
+                      y: 21
+                  }
+                ]
+              }]
+            },
         }
     },
     methods: {

@@ -667,7 +667,7 @@
                 <router-link to="/publish/H_31210_P">H_31210_P</router-link>
             </td>
             <td>작성자통계</td>
-            <td>진행중</td>
+            <td>진행중 - 스크롤 이벤트 진행해야함</td>
         </tr> 
         <tr>
             <td></td>

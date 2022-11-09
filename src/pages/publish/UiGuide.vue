@@ -25,6 +25,13 @@
       <p class="h1_type">ico</p>
       <div class="box_wrap">
         <p class="h2">etc</p>
+        <q-pagination
+          v-model="current"
+          :max="5"
+          direction-links
+          boundary-links
+          class="custom_type1"
+        /><br/><br/>
         <div class="type_view ico">
           <q-rating
             v-model="ratingModel"
@@ -90,6 +97,20 @@
           <span class="badge2 blockchain">블록체인</span> -->
         </div><br/><br/>
         <p class="h3">badge3</p>
+        <p class="h3">small - height18</p>
+        <div class="type_view ico">
+          <span class="badge3 small line black">gray</span>
+          <span class="badge3 small gray">gray</span>
+          <span class="badge3 small green">green</span>
+          <span class="badge3 small dark_green">dark green</span>
+          <span class="badge3 small light_green">light_green</span>
+          <span class="badge3 small brown">brown</span>
+          <span class="badge3 small yellow">yellow</span>
+          <span class="badge3 small primary">primary</span>
+          <span class="badge3 small red">red</span>
+          <span class="badge3 small pink">pink</span>
+        </div>
+        <p class="h3">defalut - height20</p>
         <div class="type_view ico">
           <span class="badge3 line black">gray</span>
           <span class="badge3 gray">gray</span>
@@ -102,6 +123,7 @@
           <span class="badge3 red">red</span>
           <span class="badge3 pink">pink</span>
         </div>
+        <p class="h3">big - height30</p>
         <div class="type_view ico">
           <span class="badge3 big gray">gray</span>
           <span class="badge3 big green">green</span>
@@ -723,6 +745,7 @@ export default {
       check3: ref(['A', 'C']),
       check4: ref(['A', 'B', 'C']),
       rad1: ref('B'),
+      current: ref(3),
       select1: ref("Facebook"),
       options: [
         'Google', 'Facebook'

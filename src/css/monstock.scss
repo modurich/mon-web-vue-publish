@@ -2613,7 +2613,7 @@ button{
         &:last-child{margin-bottom: 0;}
     }
     .txt_area{color: $txt_dk;}
-    .star{position: relative;margin-top:-12px}
+    .star{position: relative;margin-top:-8px}
 }
 
 //voting_list
@@ -2772,6 +2772,19 @@ button{
     display: flex;
     flex-wrap: wrap;
     > div{flex:1}
+    .lcon_list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:90%;
+        .txt_area{display: flex;
+            align-items: center;}
+        .txt01{font-size: 12px;}
+        .txt02{font-size: 24px;
+        color: $txt_dk;
+        margin-left:16px;
+        }
+    }
     .chart_area{
         display: flex;
         align-items: center;
@@ -2794,5 +2807,6 @@ button{
     }
     @media (max-width: $breakpoint-xs-max) {
         > div{width:100%;flex: auto;}
+        .lcon_list{margin: 0 0 32px 0}
     }
 }
