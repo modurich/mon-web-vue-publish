@@ -46,6 +46,8 @@
           <span class="tag_blue small">+1.24%</span>
           <span class="tag_red">-0.81%</span>
           <span class="tag_blue">+1.24%</span>
+          <span class="tag_red big">-0.81%</span>
+          <span class="tag_blue big">+1.24%</span>
         </div>
         <div class="type_view ico">
           <button class="btn_view">버튼</button>
