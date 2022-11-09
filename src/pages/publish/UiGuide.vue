@@ -97,7 +97,7 @@
           <span class="badge2 blockchain">블록체인</span> -->
         </div><br/><br/>
         <p class="h3">badge3</p>
-        <p class="h3">small - height18</p>
+        <!-- <p class="h3">small - height18</p>
         <div class="type_view ico">
           <span class="badge3 small line black">gray</span>
           <span class="badge3 small gray">gray</span>
@@ -109,8 +109,8 @@
           <span class="badge3 small primary">primary</span>
           <span class="badge3 small red">red</span>
           <span class="badge3 small pink">pink</span>
-        </div>
-        <p class="h3">defalut - height20</p>
+        </div> -->
+        <p class="h3">defalut - height18</p>
         <div class="type_view ico">
           <span class="badge3 line black">gray</span>
           <span class="badge3 gray">gray</span>

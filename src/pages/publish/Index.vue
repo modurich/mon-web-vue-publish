@@ -36,6 +36,16 @@
           <td></td>
         </tr>
         <tr>
+            <td>components</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/SoceRadarChart">SoceRadarChart</router-link>
+            </td>
+            <td>콘텐츠 평점 차트</td>
+            <td></td>
+        </tr> 
+        <tr>
           <td>가입/로그인</td>
           <td></td>
           <td></td>
@@ -674,10 +684,12 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/SoceRadarChart">SoceRadarChart</router-link>
+                <router-link to="/publish/H_31310_P">H_31310_P</router-link>
             </td>
-            <td>콘텐츠 평점 차트</td>
+            <td>밴드구간</td>
+            <td>진행중</td>
         </tr> 
+      
       </tbody>
     </table>
   </div>

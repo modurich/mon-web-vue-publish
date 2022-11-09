@@ -213,8 +213,8 @@
                         <span v-else class="ico_down">하락</span>
                       </q-td>
                       <q-td key="isSuccess" :props="props">
-                        <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
-                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_blue">실패</span>
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
                         <span v-else class="txt_gray">무효</span>
                       </q-td>
                     </q-tr>

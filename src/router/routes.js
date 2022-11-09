@@ -5,15 +5,14 @@ const routes = [
         component: () => import('layouts/MonstockLayout.vue'),
         children: [
             { path: '', component: () => import('pages/Index.vue') },
+            { path: '/publish/SoceRadarChart', component: () => import('components/ScoreRadarChart.vue') },
             { path: '/publish/A_10000_P', component: () => import('pages/publish/A_10000_P.vue') },
             { path: '/publish/A_11000_P', component: () => import('pages/publish/A_11000_P.vue') },
             { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },
             { path: '/publish/A_11200_P', component: () => import('pages/publish/A_11200_P.vue') },
             { path: '/publish/A_12000_P', component: () => import('pages/publish/A_12000_P.vue') },
-
             { path: '/publish/A_12100_U', component: () => import('pages/publish/A_12100_U.vue') },
             { path: '/publish/A_12200_U', component: () => import('pages/publish/A_12200_U.vue') },
-
             { path: '/publish/A_21121_P', component: () => import('pages/publish/A_21121_P.vue') },
             { path: '/publish/A_21120_T', component: () => import('pages/publish/A_21120_T.vue') },
             { path: '/publish/A_21000_T', component: () => import('pages/publish/A_21000_T.vue') },
@@ -67,7 +66,8 @@ const routes = [
             { path: '/publish/H_33200_T', component: () => import('pages/publish/H_33200_T.vue') },
             { path: '/publish/H_33300_T', component: () => import('pages/publish/H_33300_T.vue') },
             { path: '/publish/H_31210_P', component: () => import('pages/publish/H_31210_P.vue') },
-            { path: '/publish/SoceRadarChart', component: () => import('components/ScoreRadarChart.vue') },
+            { path: '/publish/H_31310_P', component: () => import('pages/publish/H_31310_P.vue') },
+            
         ]
     },
     {

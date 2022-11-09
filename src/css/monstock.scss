@@ -235,7 +235,7 @@ body{
 
 //badge
 .badge3{
-    height: 20px;
+    height: 18px;
     font-size: 10px;
     padding:0 4px;
     min-width: 40px;
@@ -259,6 +259,9 @@ body{
         padding:0 16px;
     }
     //color
+    &.short{background: #c1b7ff;} 
+    &.middle{background: #8673ff;} 
+    &.long{background: #4c34dc;}
     &.black{background: #141414;}
     &.dark_green{background: #43c890;}
     &.orange{background: #ffa500;}
@@ -2489,6 +2492,17 @@ button{
     margin-right:4px;
     background-size: contain !important;
     background: url('~assets/ico_vote.svg') no-repeat center center;
+    &.big{width:24px;height:24px} 
+}
+.ico_prize_w{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_prize_w.svg') no-repeat center center;
     &.big{width:24px;height:24px} 
 }
 .ico_menu01{
