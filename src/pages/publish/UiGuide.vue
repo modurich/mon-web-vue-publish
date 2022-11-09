@@ -512,6 +512,26 @@
             <m-button-3 lined @click="dailog2 = true">dailog2</m-button-3>
             <m-button-3 lined @click="dailog3 = true">dailog3</m-button-3>
             <m-button-3 lined @click="dailog4 = true">dailog4</m-button-3>
+            
+            <m-button-3 lined @click="dailog5 = true">bottom</m-button-3>
+            <q-dialog v-model="dailog5" position="bottom">
+              <q-card style="width: 350px">
+                <q-linear-progress :value="0.6" color="pink" />
+            
+                <q-card-section class="row items-center no-wrap">
+                  <div>
+                    <div class="text-weight-bold">The Walker</div>
+                    <div class="text-grey">Fitz & The Tantrums</div>
+                  </div>
+            
+                  <q-space />
+            
+                  <q-btn flat round icon="fast_rewind" />
+                  <q-btn flat round icon="pause" />
+                  <q-btn flat round icon="fast_forward" />
+                </q-card-section>
+              </q-card>
+            </q-dialog>
             <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지" />
             <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지" />
             <m-dialog v-model="dailog1" class="cls_test">
@@ -695,7 +715,7 @@
             <GaugeChart/>
           </div>
         </div>                        
-      </div>      
+      </div>
     </div>
 </template>
 
@@ -784,6 +804,7 @@ export default {
       dailog2: ref(false),
       dailog3: ref(false),
       dailog4: ref(false),
+      dailog5: ref(false),
       tab: ref(3),
       listdata: [
         {idx:1, title:'몬스탁닉네임01', img:require("../../assets/profile_img1.png"), pro:'PRO', pl:'PL1'},

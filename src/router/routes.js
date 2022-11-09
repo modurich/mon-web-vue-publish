@@ -6,6 +6,7 @@ const routes = [
         children: [
             { path: '', component: () => import('pages/Index.vue') },
             { path: '/publish/SoceRadarChart', component: () => import('components/ScoreRadarChart.vue') },
+            { path: '/publish/BackDropDialog', component: () => import('components/BackDropDialog.vue') },
             { path: '/publish/A_10000_P', component: () => import('pages/publish/A_10000_P.vue') },
             { path: '/publish/A_11000_P', component: () => import('pages/publish/A_11000_P.vue') },
             { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },

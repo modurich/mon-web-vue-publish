@@ -1,31 +1,4 @@
-<i18n>
-  {
-      "ko": {
-          "computed": {
-              "chartOptions": {
-                "yAxis": {
-                    "title": {
-                        "text": "속도"
-                    }
-                }
-              }
-          }
-      },
-      "en": {
-          "computed": {
-              "chartOptions": {
-                "yAxis": {
-                    "title": {
-                      "text": "Speed"
-                    }
-                }
-              }
-          }
-      }
-  }
-  </i18n>
-  
-  <template>
+<template>
       <div class="gauge-chart">
         <highcharts ref="chart" :constructor-type="'chart'" :options="chartOptions"></highcharts>
       </div>
@@ -56,30 +29,20 @@ export default {
         chartOptions() {
             return {
               chart: {
-                type: 'solidgauge'
+                type: 'solidgauge',
+                height: 221,
+                width: 221
               },
 
               title: {
-  
+                text:''
               },
-
+              credits: {
+                enabled: false
+              },
               tooltip: {
-                borderWidth: 0,
-                backgroundColor: 'none',
-                shadow: false,
-                style: {
-                  fontSize: '16px'
-                },
-                valueSuffix: '%',
-                pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
-                positioner: function (labelWidth) {
-                  return {
-                    x: (this.chart.chartWidth - labelWidth) / 2,
-                    y: (this.chart.plotHeight / 2) + 15
-                  };
-                }
-              },
-
+                enabled: false
+              },      
               pane: {
                 startAngle:-150,
                 endAngle: 150,
@@ -87,7 +50,7 @@ export default {
                   outerRadius: '112%',
                   innerRadius: '88%',
                   backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
-                  borderWidth: 0
+                  borderWidth: 0,
                 }]
               },
 
@@ -101,7 +64,7 @@ export default {
               plotOptions: {
                 solidgauge: {
                   dataLabels: {
-                    enabled: false
+                    enabled: true
                   },
                   linecap: 'round',
                   stickyTracking: false,
@@ -110,13 +73,24 @@ export default {
               },
 
               series: [{
-                name: 'Move',
+                name: '현재수익률',
                 data: [{
                   color: Highcharts.getOptions().colors[0],
                   radius: '112%',
                   innerRadius: '88%',
-                  y: 80
-                }]
+                  y: 60
+                }, {
+                  color: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+                  radius: '112%',
+                  innerRadius: '88%',
+                  y: 100
+                  }
+                ],
+                dataLabels: {
+                  format: '<span class="NS-M12">현재수익률</span><br/><span>0000.0<span class="text-style-1" >%</span></span> ',
+                  borderWidth: 0,
+                  useHTML: true
+                },
               }]
             };
           }
