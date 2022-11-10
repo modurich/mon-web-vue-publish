@@ -226,7 +226,7 @@
                   </div>
                   <div class="btn_area">
                     <span class="txt_area"><i class="ico_clock" />보팅 2일 남음</span>
-                    <m-button-3 color="primary" size="small"><i class="ico_vote" /><span class="point">1,200</span> / 2000 VP
+                    <m-button-3 color="primary" size="small" @click="dailog1 = true"><i class="ico_vote" /><span class="point">1,200</span> / 2000 VP
                     </m-button-3>
                   </div>
                 </div>
@@ -308,13 +308,11 @@
                   </div>
                   <div class="btn_area">
                     <span class="txt_area"><i class="ico_clock" />보팅 2일 남음</span>
-                    <m-button-3 color="darkPurple" size="small"><i class="ico_check01" /><span class="point">1,200</span> / 2000 VP
+                    <m-button-3 color="darkPurple" size="small" @click="dailog1 = true"><i class="ico_check01" /><span class="point">1,200</span> / 2000 VP
                     </m-button-3>
                   </div>
                 </div>
               </li>
-
-
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
@@ -620,6 +618,55 @@
             </ul>
           </div>
         </div>
+        <q-dialog v-model="dailog1" position="bottom">
+          <div class="bottom_sheet_wrap">
+            <h3 class="between">
+              <span class="font16 txt_dk">보팅</span>
+              <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>
+            </h3>
+            <div class="voting_list_wrap">
+              <ul class="voting_list">
+                <li>
+                  <span>누적 보팅 파워 / 전체 보팅 한도</span>
+                  <span><span class="primary">2,000</span> / 10,000VP</span>
+                </li>
+                <li>
+                  <span>전체 보팅 보상 (예상)</span>
+                  <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
+                </li>
+              </ul>
+              <ul class="voting_list">
+                <li>
+                  <span>내 보팅 한도</span>
+                  <span>10VP</span>
+                </li>
+                <li>
+                  <span>내 보팅 보상 (예상)</span>
+                  <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
+                </li>
+                <li class="col2">
+                  <span>보팅 수량</span>
+                  <span class="stepper_wrap">
+                    <button class="btn_minus">-</button>
+                    <span class="txt_area">5</span>
+                    <button class="btn_plus">+</button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="btn_wrap mgt32">
+                <m-button-3 size="large" color="primary" class="full">
+                  <i class="ico_vote big mgr16"/>보팅하기
+                </m-button-3>
+            </div>
+            <div class="txt_dk center mgt32">종목 공개 후 보팅할 수 있어요</div>
+            <div class="btn_wrap mgt32">
+                <m-button-3 size="large" color="pink" class="full">
+                  종목 공개하기 (50 sMON)
+                </m-button-3>
+            </div>
+          </div>
+        </q-dialog>
     </div>
 </template>
 
@@ -654,6 +701,7 @@ export default {
             tab1:ref('A'),
             tab2:ref('A'),
             rad1:ref('A'),
+            dailog1: ref(false),
             v_true: ref(true),
             tabs:[
                 {label:'전체', value:'A', icon:''},

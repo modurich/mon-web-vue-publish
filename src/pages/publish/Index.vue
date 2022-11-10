@@ -667,7 +667,7 @@
                 <router-link to="/publish/H_33300_T">H_33300_T</router-link>
             </td>
             <td>blash</td>
-            <td></td>
+            <td>*****백드롭*****</td>
         </tr> 
         <tr>
             <td></td>
