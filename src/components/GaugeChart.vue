@@ -30,8 +30,8 @@ export default {
             return {
               chart: {
                 type: 'solidgauge',
-                height: 221,
-                width: 221
+                height: 210,
+                width: 210
               },
 
               title: {
@@ -44,10 +44,10 @@ export default {
                 enabled: false
               },      
               pane: {
-                startAngle:-150,
-                endAngle: 150,
+                startAngle:-125,
+                endAngle: 125,
                 background: [{ // Track for Move
-                  outerRadius: '112%',
+                  outerRadius: '114%',
                   innerRadius: '88%',
                   backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
                   borderWidth: 0,
@@ -76,18 +76,18 @@ export default {
                 name: '현재수익률',
                 data: [{
                   color: Highcharts.getOptions().colors[0],
-                  radius: '112%',
+                  radius: '114%',
                   innerRadius: '88%',
                   y: 60
                 }, {
                   color: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
-                  radius: '112%',
+                  radius: '114%',
                   innerRadius: '88%',
                   y: 100
                   }
                 ],
                 dataLabels: {
-                  format: '<span class="NS-M12">현재수익률</span><br/><span>0000.0<span class="text-style-1" >%</span></span> ',
+                  format: '<div class="label_wrap"><span class="txt01">현재수익률</span><span class="txt02" >0000.0%</span></div> ',
                   borderWidth: 0,
                   useHTML: true
                 },

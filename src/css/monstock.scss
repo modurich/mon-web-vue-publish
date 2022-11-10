@@ -1695,10 +1695,17 @@ button{
 .tag_red,.tag_blue{
     padding: 2px 10px;
     display: inline-flex;
+    align-items: center;
     border-radius: 4px;
     font-size:16px;
+    font-style: normal;
     &.small{
         font-size:12px;
+    }
+    &.big{
+        font-size:20px;
+        height: 40px;
+        padding:0 15px;
     }
 }
 .tag_red{
@@ -2631,7 +2638,14 @@ button{
 }
 
 //voting_list
-.voting_list_wrap{margin-top:32px}
+.voting_list_wrap{margin-top:32px;
+    &.line{
+        border:1px solid $com_line;
+        padding: 4px 12px 16px 12px;
+        border-radius: 8px;
+    }
+    .badge3.big{height: 26px;}
+}
 .voting_list{
     display: flex;
     align-items: center;
@@ -2642,7 +2656,7 @@ button{
         align-items: center;
         justify-content: space-between;
         margin-top:12px;
-        &.col2{width:100%;}
+        &.col2{width:100%;margin-left:0px !important;}
     }
     li:nth-child(2n){margin-left:32px;}
     @media (max-width: $breakpoint-xs-max) {
@@ -2706,6 +2720,8 @@ button{
         margin-bottom:8px;
         .badge_area{
             font-size: 12px;
+            display: flex;
+            align-items: center;
             span + span{margin-left:8px}
         }
     }
@@ -2785,6 +2801,7 @@ button{
 .chart_list_wrap{
     display: flex;
     flex-wrap: wrap;
+    align-items:center;
     > div{flex:1}
     .lcon_list{
         display: flex;
@@ -2822,5 +2839,97 @@ button{
     @media (max-width: $breakpoint-xs-max) {
         > div{width:100%;flex: auto;}
         .lcon_list{margin: 0 0 32px 0}
+    }
+}
+//chart_list_wrap1
+.chart_list_wrap1{
+    .chart_wrap{
+        display: flex;
+        justify-content: space-between;
+        .txt_area{
+            > span{display: block;line-height: 37px;}
+            .txt01{color:#43c890 ;}
+            .txt02{color: #ffa500;}
+            .txt03{color: #ffa500;}
+            .txt04{color: #fb1f1f;}
+        }
+        .chart_area{
+            position: relative;
+            width:calc(100% - 60px);
+            margin:20px 0;
+            .chart_img01,.chart_img02{
+            position: absolute;
+            bottom:-25px;
+            left:0;
+            }
+            .tooltip_box{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 12px;
+                min-width: 50px;
+                background: #4c34dc;
+                height: 30px;
+                border-radius: 3px;
+                &::after {  		
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #4c34dc transparent transparent transparent;
+                }
+            }
+            .box{
+                height: 37px;
+                &.box1{border-top:1px solid #43c890;}
+                &.box2{border-top:1px solid #ffa500;
+                       background: rgba(255, 209, 101, 0.3);
+                       color:#ffa500;display: flex;align-items: center;
+                       padding-right:8px;
+                       border-bottom:1px solid #ffa500;}
+                &.box3{border-bottom:1px solid #fb1f1f;}
+            }
+        }
+    }
+    
+}
+.chart_message{
+   padding:16px 0;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   margin-bottom:32px;
+   height:62px;
+   font-size:16px;
+   &.red{
+    border:1px dashed $txt_red;
+    color: $txt_red;
+   } 
+   &.blue{
+    border:1px dashed $txt_blue1;
+    color: $txt_blue1;
+   } 
+   &.brown{
+    border:1px dashed #c79058;
+    color: #c79058;
+   } 
+}
+
+.gaug_wrap{
+    position: relative;
+    .label_wrap{
+        position: absolute;
+        margin-top:-35px;
+        left: 50%;
+        transform: translateX(-50% );
+        > span{display: block;text-align: center;}
+        .txt01{color: $txt_gray;}
+        .txt02{font-size: 28px;color: $txt_blue1;}
     }
 }
