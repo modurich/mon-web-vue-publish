@@ -2935,22 +2935,22 @@ button{
     }
 }
 
-.bottom_sheet_wrap{
-    background-color: #fff;
-}
-
 
 .bottom_sheet_wrap {
     padding: 32px 16px;
-    border-top-left-radius:16px ;
-    border-top-right-radius:16px ;
+    border-top-left-radius:16px !important; 
+    border-top-right-radius:16px !important; 
+    background-color: #fff;
 }
 @media (min-width: 700px){
     .bottom_sheet_wrap {
         max-width: 692px;
         width: 692px !important; 
-        min-width: 350px;
+        max-width: 692px !important; 
         box-sizing: border-box;
+        padding: 32px 16px;
+        border-top-left-radius:16px ;
+        border-top-right-radius:16px ;
     }
 }
 
