@@ -32,9 +32,9 @@ export default {
   },
   computed: {
     chartOptions() {
-      console.log(this.fld01+' , '+this.fld02);
-      let color = this.fld01 < this.fld02 ? '#43c890' :'#fb1f1f';
-      console.log('color  ==> '+color);
+      const seriscolor = this.fld01 < this.fld02 ? '#43c890' : '#fe8383';
+      const txtcolor = this.fld01 < this.fld02 ? 'txt02' : 'txt03';
+      
       return {
         chart: {
           type: 'solidgauge',
@@ -57,7 +57,7 @@ export default {
           background: [{ // Track for Move
             outerRadius: '114%',
             innerRadius: '88%',
-            backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
+            backgroundColor: Highcharts.color(seriscolor).setOpacity(0.0).get(),
             borderWidth: 0,
           }]
         },
@@ -83,19 +83,19 @@ export default {
         series: [{
           name: '현재수익률',
           data: [{
-            color: Highcharts.color(color).setOpacity(1).get(),
+            color: Highcharts.color(seriscolor).setOpacity(1).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 60
           }, {
-            color: Highcharts.color(color).setOpacity(0.3).get(),
+            color: Highcharts.color(seriscolor).setOpacity(0.3).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 100
           }
           ],
           dataLabels: {
-            format: '<div class="label_wrap"><span class="txt01">현재수익률</span><span class="txt02">0000.0%</span></div> ',
+            format: '<div class="label_wrap"><span class="txt01">현재수익률</span><span class="' + txtcolor + '">0000.0%</span></div>',
             borderWidth: 0,
             useHTML: true
           },
