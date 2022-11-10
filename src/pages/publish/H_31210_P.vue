@@ -152,7 +152,7 @@
               <div class="chart_list_wrap">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart/></div>
+                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
                   <!-- <div class="lcon_list">
                     <span class="txt_area">
                       <span class="txt01">목표가 달성률</span>
@@ -190,7 +190,7 @@
               <div class="chart_list_wrap">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart/></div>
+                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="80"/></div>
                   <!-- <div class="lcon_list">
                     <span class="txt_area">
                       <span class="txt01">목표가 달성률</span>
@@ -985,6 +985,8 @@ export default {
             credits: {
               enabled: false
             },
+              chartdata: { 'fil01': 100, 'fld02': 200, 'fld03': 200 },
+            
             // title: {
             //     text: 'February 2020 Norway passenger auto registrations'
             // },

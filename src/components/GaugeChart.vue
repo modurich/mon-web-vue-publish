@@ -15,9 +15,16 @@ export default {
   components: { },
   name: 'GaugeChart',
   props: {
-    rating: {
-      type: Object
+    fld01: {
+      type: Number
+    },
+    fld02: {
+      type: Number
+    },
+    fld03: {
+      type: Number
     }
+
   },
   data() {
     return {
@@ -25,6 +32,9 @@ export default {
   },
   computed: {
     chartOptions() {
+      console.log(this.fld01+' , '+this.fld02);
+      let color = this.fld01 < this.fld02 ? '#43c890' :'#fb1f1f';
+      console.log('color  ==> '+color);
       return {
         chart: {
           type: 'solidgauge',
@@ -35,7 +45,6 @@ export default {
         title: {
           text: ''
         },
-        colors: ['#43c890', 'orange'],
         credits: {
           enabled: false
         },
@@ -74,12 +83,12 @@ export default {
         series: [{
           name: '현재수익률',
           data: [{
-            color: Highcharts.color('#43c890').setOpacity(1).get(),
+            color: Highcharts.color(color).setOpacity(1).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 60
           }, {
-            color: Highcharts.color('#43c890').setOpacity(0.3).get(),
+            color: Highcharts.color(color).setOpacity(0.3).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 100
