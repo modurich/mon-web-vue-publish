@@ -38,7 +38,10 @@ export default {
         chart: {
           type: 'solidgauge',
           height: 210,
-          width: 210
+          width: 210,
+          backgroundColor: {
+
+          },
         },
 
         title: {
@@ -82,12 +85,20 @@ export default {
         series: [{
           name: '현재수익률',
           data: [{
-            color: Highcharts.color(seriscolor).setOpacity(1).get(),
+            color: {
+              linearGradient: [0, 0, 300, 300],
+              stops: [
+                [0, Highcharts.color(seriscolor).setOpacity(0.2).get()],
+                [1, Highcharts.color(seriscolor).setOpacity(1).get()]
+              ]
+            },
+            
+            // Highcharts.color(seriscolor).setOpacity(1).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 60
           }, {
-            color: Highcharts.color(seriscolor).setOpacity(0.3).get(),
+            color: Highcharts.color(seriscolor).setOpacity(0.1).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 100
