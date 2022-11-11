@@ -99,6 +99,13 @@
                         <span class="badge3 small brown">코인</span>
                         <span class="badge3 small yellow">BEST</span>
                     </span>
+                  </p>
+                  <p class="logo_wrap">
+                    <span>
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                      삼성전자 우
+                    </span>
+                    <q-space />
                     <span>매수대기</span>
                   </p>
                   <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
