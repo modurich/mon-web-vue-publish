@@ -86,8 +86,9 @@ export default {
                 background: [{ // Track for Move
                   outerRadius: '112%',
                   innerRadius: '88%',
-                  backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.0).get(),
-                  borderWidth: 0
+                  backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+                  borderWidth: 0,
+                  shape: 'arc'
                 }]
               },
 
