@@ -222,6 +222,9 @@
 }
 .tab_contents,.box_contents{
  padding: 16px 16px 0 16px;
+ .tab_contents{
+    padding: 16px 0px 0 0px;
+ }
  //700보다 작아질때
     @media (max-width: $breakpoint-xs-max) {
         padding: 16px 12px 0 12px;
@@ -354,21 +357,26 @@
     align-items: center;
     &:after{
         content:'';
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
         display: inline-flex;
+        align-items: center;
+        margin-left:4px;
     }
 }
 .ico_up{
-    color: $txt_red;
+    color: $txt_blue1;
     &:after{
-        background: url('~assets/ico_up.svg') center right no-repeat;
+        content:'▲';
+        //background: url('~assets/ico_up.svg') center right no-repeat;
     }
 }
 .ico_down{
-    color: $txt_blue;
+    color: $txt_red;
     &:after{
-        background: url('~assets/ico_down.svg') center right no-repeat; 
+        content:'▼';
+        //background: url('~assets/ico_down.svg') center right no-repeat; 
     }
 }
 //더보기
@@ -543,4 +551,29 @@
 
     }
     
+}
+
+//q-pagination 
+.pagination_wrap{
+    margin:32px 0;
+    display: flex;
+    justify-content: center;
+}
+.q-pagination {
+    &.custom_type1{
+        display: flex;
+        align-items: center;
+        button{
+            color: $txt_gray !important;
+            font-size: 16px !important;
+            &.q-btn--standard{
+                background: #fff !important;
+                color:$primary !important ;
+                font-weight: 700;
+            }
+            .q-btn__wrapper:before {
+                box-shadow: 0 1px 5px rgb(0 0 0 / 0%), 0 2px 2px rgb(0 0 0 / 0%), 0 3px 1px -2px rgb(0 0 0 / 0%) !important;
+            }
+        }
+    }
 }

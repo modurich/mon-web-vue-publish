@@ -183,6 +183,23 @@ export default {
             }
         }
     }
+    &.color-pink{
+        background-color: #ff006c;
+        color: #FFF;
+        &:disabled {
+            // background-color: $ghost-white;
+            //color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: #ff006c;
+            border: 0.5px solid #ff006c;
+            &:disabled {
+                // color: $ghost-white;
+                border: 1px solid #ff006c;
+            }
+        }
+    }
     &.color-lightGrey {
         background-color: #f8f9fd;
         color:#141414;

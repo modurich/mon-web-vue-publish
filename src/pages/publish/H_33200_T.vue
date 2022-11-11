@@ -116,8 +116,8 @@
                 <div class="footer_area">
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <button class="ico_f ico_comment">7</button>
                       <!-- <span class="ico_f ico_view">1.2</span>
                       <span class="ico_f ico_star_s primary">4.7</span> -->
                     </span>
@@ -172,8 +172,8 @@
                   <div class="footer_area">
                     <div class="ico_wrap">
                       <span class="ico_area">
-                        <span class="ico_f ico_thumbsUp active">624</span>
-                        <span class="ico_f ico_comment">7</span>
+                        <button class="ico_f ico_thumbsUp active">624</button>
+                        <button class="ico_f ico_comment">7</button>
                         <!-- <span class="ico_f ico_view">1.2</span>
                         <span class="ico_f ico_star_s primary">4.7</span> -->
                       </span>
@@ -229,8 +229,8 @@
                   <div class="footer_area">
                     <div class="ico_wrap">
                       <span class="ico_area">
-                        <span class="ico_f ico_thumbsUp active">624</span>
-                        <span class="ico_f ico_comment">7</span>
+                        <button class="ico_f ico_thumbsUp active">624</button>
+                        <button class="ico_f ico_comment">7</button>
                         <!-- <span class="ico_f ico_view">1.2</span>
                         <span class="ico_f ico_star_s primary">4.7</span> -->
                       </span>

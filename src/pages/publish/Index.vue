@@ -36,6 +36,26 @@
           <td></td>
         </tr>
         <tr>
+            <td>components</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/SoceRadarChart">SoceRadarChart</router-link>
+            </td>
+            <td>콘텐츠 평점 차트</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>components</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/BackDropDialog">BackDropDialog</router-link>
+            </td>
+            <td>백드롭</td>
+            <td>컴포넌트를 직접 호출하면 안되고 Dialog로 호출해야 뜨네요....</td>
+        </tr> 
+        <tr>
           <td>가입/로그인</td>
           <td></td>
           <td></td>
@@ -647,7 +667,7 @@
                 <router-link to="/publish/H_33300_T">H_33300_T</router-link>
             </td>
             <td>blash</td>
-            <td></td>
+            <td>*****백드롭*****</td>
         </tr> 
         <tr>
             <td></td>
@@ -667,17 +687,19 @@
                 <router-link to="/publish/H_31210_P">H_31210_P</router-link>
             </td>
             <td>작성자통계</td>
-            <td>진행중</td>
+            <td>진행중 - 스크롤 이벤트 진행해야함</td>
         </tr> 
         <tr>
             <td></td>
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/SoceRadarChart">SoceRadarChart</router-link>
+                <router-link to="/publish/H_31310_P">H_31310_P</router-link>
             </td>
-            <td>콘텐츠 평점 차트</td>
+            <td>밴드구간</td>
+            <td>진행중</td>
         </tr> 
+      
       </tbody>
     </table>
   </div>

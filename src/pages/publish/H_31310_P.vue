@@ -152,58 +152,13 @@
               <div class="chart_list_wrap">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
-                  <!-- <div class="lcon_list">
+                  <div class="lcon_list">
                     <span class="txt_area">
                       <span class="txt01">목표가 달성률</span>
                       <span class="txt02">9999.9%</span>
                     </span>
-                    <div class="img_area">
-                      <img src="~assets/ico_stamp.svg" alt="성공" />
-                      <img src="~assets/ico_stamp01.svg" alt="실패" />
-                      <img src="~assets/ico_stamp02.svg" alt="무효" />
-                      <img src="~assets/ico_stamp03.svg" alt="매수실패" /> 
-                    </div>
-                  </div> -->
-                  
-                  <!-- E 차트 들어가는 곳-->
-                </div>
-                <div class="list_area">
-                  <!-- S 리스트-->
-                  <ul>
-                    <li>
-                      <span class="txt01">기준가</span>
-                      <span class="ico_area txt_dk">₩ 19,000</span>
-                    </li>
-                    <li>
-                      <span class="txt01">목표가</span>
-                      <span class="ico_area txt_blue1"><span class="tag_blue small">+15%</span>₩ 21,729</span>
-                    </li>
-                    <li>
-                      <span class="txt01">실패가</span>
-                      <span class="ico_area"><span class="tag_red small">-10%</span>₩ 18,000</span>
-                    </li>
-                  </ul>
-                  <!-- E 리스트-->
-                </div>
-              </div>
-              <div class="chart_list_wrap">
-                <div class="chart_area">
-                  <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="80"/></div>
-                  <!-- <div class="lcon_list">
-                    <span class="txt_area">
-                      <span class="txt01">목표가 달성률</span>
-                      <span class="txt02">9999.9%</span>
-                    </span>
-                    <div class="img_area">
-                      <img src="~assets/ico_stamp.svg" alt="성공" />
-                      <img src="~assets/ico_stamp01.svg" alt="실패" />
-                      <img src="~assets/ico_stamp02.svg" alt="무효" />
-                      <img src="~assets/ico_stamp03.svg" alt="매수실패" /> 
-                    </div>
-                  </div> -->
-                  
+                    <div class="img_area"><img src="~assets/ico_stamp.svg" alt="성공" /></div>
+                  </div>
                   <!-- E 차트 들어가는 곳-->
                 </div>
                 <div class="list_area">
@@ -674,36 +629,28 @@
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
-                  row-key="fld04"
+                  row-key="category"
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                   :visible-columns="table1"
                   :rows-per-page-options="[0]" 
                   :pagination.sync="table1page"
                 >
-                  <template v-slot:header="props">
-                    <q-tr :props="porps">
-                      <q-th key="fld01" :props="props">종료일자</q-th>
-                      <q-th key="fld04" :props="props">자산</q-th>
-                      <q-th key="fld05" :props="props">예측</q-th>
-                      <q-th key="fld10" :props="props">예측결과</q-th>
-                    </q-tr>
-                  </template>
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <q-td key="fld01" :props="props">
-                        {{ props.row.fld01 }}
+                      <q-td key="date" :props="props">
+                        {{ props.row.date }}
                       </q-td>
-                      <q-td key="fld04" :props="props">
-                          {{ props.row.fld04 }}
+                      <q-td key="category" :props="props">
+                          {{ props.row.category }}
                       </q-td>
-                      <q-td key="fld05" :props="props">
-                        <span v-if="props.row.fld05 == 'U'" class="ico_up">상승</span>
+                      <q-td key="updown" :props="props">
+                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
                         <span v-else class="ico_down">하락</span>
                       </q-td>
-                      <q-td key="fld10" :props="props">
-                        <span v-if="props.row.fld10 == 'S'" class="txt_blue1">성공</span>
-                        <span v-else-if="props.row.fld10 == 'F'" class="txt_red">실패</span>
+                      <q-td key="isSuccess" :props="props">
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
                         <span v-else class="txt_gray">무효</span>
                       </q-td>
                     </q-tr>
@@ -761,42 +708,26 @@
                   </ul>
                   </div>
                 </div>
-                <q-table 
-                  :data="tbRowData" 
-                  :columns="tbColInfo" 
-                  row-key="fld04" 
-                  no-data-label="데이터가 존재하지 않습니다." 
-                  hide-bottom
+                <q-table :data="tbRowData" :columns="tbColInfo" row-key="category" no-data-label="데이터가 존재하지 않습니다." hide-bottom
                   :visible-columns="table3">
-                  <template v-slot:header="props">
-                    <q-tr :props="porps">
-                      <q-th key="fld04" :props="props">자산</q-th>
-                      <q-th key="fld03" :props="props">기간</q-th>
-                      <q-th key="fld06" :props="props">목표</q-th>
-                      <q-th key="fld05" :props="props">예측</q-th>
-                      <q-th key="fld09" :props="props">달성률</q-th>
-                    </q-tr>
-                  </template>
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <q-td key="fld04" :props="props">
-                        {{ props.row.fld04 }}
+                      <q-td key="category" :props="props">
+                        {{ props.row.category }}
                       </q-td>
-                      <q-td key="fld03" :props="props">
-                        <span class="badge3" v-if="props.row.fld03 == '단기'" style="background:#c1b7ff">{{ props.row.fld03 }}</span>
-                        <span class="badge3" v-else-if="props.row.fld03 == '중기'" style="background:#8673ff">{{ props.row.fld03 }}</span>
-                        <span class="badge3" v-else style="background:#4c34dc">{{ props.row.fld03 }}</span>
+                      <q-td key="period" :props="props">
+                        <span class="badge3" v-if="props.row.investperiod == '단기'" style="background:#c1b7ff">{{ props.row.investperiod }}</span>
+                        <span class="badge3" v-else-if="props.row.investperiod == '중기'" style="background:#8673ff">{{ props.row.investperiod }}</span>
+                        <span class="badge3" v-else style="background:#4c34dc">{{ props.row.investperiod }}</span> / {{ props.row.holdperiod }}일
                       </q-td>
-                      <q-td key="fld06" :props="props">
-                        <span v-if="props.row.fld05 == 'U'" class="ico_up">{{ props.row.fld06 }}%</span>
-                        <span v-else class="ico_down">{{ props.row.fld06 }}%</span>
+                      <q-td key="specific" :props="props">
+                        {{props.row.specific}}%
                       </q-td>
-                      <q-td key="fld05" :props="props">
-                        <span v-if="props.row.fld05 == 'U'" class="ico_up">상승</span>
-                        <span v-else class="ico_down">하락</span>
-                      </q-td>
-                      <q-td key="fld09" :props="props">
-                        {{ props.row.fld09 }}%
+                      <q-td key="perform" :props="props">
+                        {{ props.row.tgtperform }}% / 
+                        <span v-if="props.row.currperform > 0" class="txt_blue1">{{ props.row.currperform }}%</span>
+                        <span v-else-if="props.row.currperform < 0" class="txt_red">{{ props.row.currperform }}%</span>
+                        <span v-else class="txt_gray">{{ props.row.currperform }}%</span>
                       </q-td>
                     </q-tr>
                   </template>
@@ -851,25 +782,25 @@
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
-                  row-key="fld04"
+                  row-key="category"
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                   :visible-columns="table2"
                 >
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <q-td key="fld02" :props="props">
-                        {{ props.row.fld02 }}
+                      <q-td key="buydate" :props="props">
+                        {{ props.row.buydate }}
                       </q-td>
-                      <q-td key="fld04" :props="props">
-                        {{ props.row.fld04 }}
+                      <q-td key="category" :props="props">
+                        {{ props.row.category }}
                       </q-td>
-                      <q-td key="fld06" :props="props">
-                        {{props.row.fld06}}%
+                      <q-td key="tgtperform" :props="props">
+                        {{props.row.tgtperform}}%
                       </q-td>
-                      <q-td key="fld10" :props="props">
-                        <span v-if="props.row.fld10 == 'S'" class="txt_blue1">성공</span>
-                        <span v-else-if="props.row.fld10 == 'F'" class="txt_red">실패</span>
+                      <q-td key="isSuccess" :props="props">
+                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
                         <span v-else class="txt_gray">무효</span>
                       </q-td>
                     </q-tr>
@@ -895,35 +826,34 @@ import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
 import MChipList from 'src/components/MChipList.vue';
 import MChip from 'src/components/MChip.vue';
-import GaugeChart from 'src/components/GaugeChart.vue';
 
 const tbColInfo = [
-  { name: 'fld01', align: 'center', label: '일자', field: 'fld01' },
-  { name: 'fld02', align: 'center', label: '매도일자', field: 'fld02' },
-  { name: 'fld03', align: 'center', label: '기간', field: 'fld03' },
-  { name: 'fld04', align: 'center', label: '종목', field: 'fld04' },
-  { name: 'fld05', align: 'center', label: '상승/하락', field: 'fld05' },
-  { name: 'fld06', align: 'center', label: '목표수익률', field: 'fld06' },
-  { name: 'fld07', align: 'center', label: '현재수익률', field: 'fld07' },
-  { name: 'fld08', align: 'center', label: '비중', field: 'fld08' },
-  { name: 'fld09', align: 'center', label: '달성률', field: 'fld09' },
-  { name: 'fld10', align: 'center', label: '예측결과', field: 'fld10' }
+  { name: 'date', align: 'center', label: '일자', field: 'date' },
+  { name: 'buydate', align: 'center', label: '매도일자', field: 'buydate' },
+  { name: 'category', align: 'center', label: '종목', field: 'category' },
+  { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
+  { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
+  { name: 'period', align: 'center', label: '목표 / 현재' },
+  { name: 'specific', align: 'center', label: '비중' },
+  { name: 'perform', align: 'center', label: '목표 / 현재' },
+  { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
 ];
 const tbRowData = [
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '삼성전자', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'S' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'SK하이닉스', fld05: 'D', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '네이버', fld05: 'U', fld06: '15', fld07: '1.25', fld08: '10', fld09: '9', fld10: 'S' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '현대차', fld05: 'U', fld06: '5', fld07: '0', fld08: '5', fld09: '13', fld10: 'F' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '신풍제약', fld05: 'D', fld06: '10', fld07: '-1.28', fld08: '5', fld09: '16', fld10: 'M' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '안랩', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'F' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '카카오', fld05: 'U', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'KT&G', fld05: 'D', fld06: '15', fld07: '0.72', fld08: '10', fld09: '9', fld10: 'S' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '셀트리온', fld05: 'U', fld06: '5', fld07: '-1.28', fld08: '5', fld09: '13', fld10: 'F' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '미래에셋증권', fld05: 'U', fld06: '10', fld07: '2', fld08: '5', fld09: '16', fld10: 'F' }
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '삼성전자', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: 'SK하이닉스', updown: 'D', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '1.25', specific: '10', investperiod: '중기', holdperiod: '9', category: '네이버', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '0', specific: '5', investperiod: '중기', holdperiod: '13', category: '현대차', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-1.28', specific: '5', investperiod: '장기', holdperiod: '16', category: '신풍제약', updown: 'D', isSuccess: 'M' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '안랩', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: '카카오', updown: 'U', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '0.72', specific: '10', investperiod: '중기', holdperiod: '9', category: 'KT&G', updown: 'D', isSuccess: 'S' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '-1.28', specific: '5', investperiod: '중기', holdperiod: '13', category: '셀트리온', updown: 'U', isSuccess: 'F' },
+  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '2', specific: '5', investperiod: '장기', holdperiod: '16', category: '미래에셋증권', updown: 'U', isSuccess: 'F' }
 ];
 
+
 export default {
-  components: { MDialogBlank, Swiper, SwiperSlide, VClamp, MChipList, MChip, GaugeChart },
+  components: { MDialogBlank, Swiper, SwiperSlide, VClamp, MChipList, MChip },
     name: 'H_33200_T',
     
     data() {
@@ -936,9 +866,9 @@ export default {
               page: 1,
               rowsPerPage: 10
             },
-            table1: ref(['fld01', 'fld04', 'fld05', 'fld10']),
-            table2: ref(['fld02', 'fld04', 'fld06', 'fld10']),
-            table3: ref(['fld04', 'fld03', 'fld06', 'fld05', 'fld09']),
+            table1: ref(['date', 'category', 'updown', 'isSuccess']),
+            table2: ref(['buydate', 'category', 'tgtperform', 'isSuccess']),
+            table3: ref(['category', 'period', 'specific', 'perform']),
             ratingModel: ref(3),
             ratingMode2: ref(0),
             ratingMode3: ref(0),
@@ -985,8 +915,6 @@ export default {
             credits: {
               enabled: false
             },
-              chartdata: { 'fil01': 100, 'fld02': 200, 'fld03': 200 },
-            
             // title: {
             //     text: 'February 2020 Norway passenger auto registrations'
             // },

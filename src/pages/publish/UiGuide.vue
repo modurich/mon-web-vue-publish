@@ -25,6 +25,13 @@
       <p class="h1_type">ico</p>
       <div class="box_wrap">
         <p class="h2">etc</p>
+        <q-pagination
+          v-model="current"
+          :max="5"
+          direction-links
+          boundary-links
+          class="custom_type1"
+        /><br/><br/>
         <div class="type_view ico">
           <q-rating
             v-model="ratingModel"
@@ -39,6 +46,8 @@
           <span class="tag_blue small">+1.24%</span>
           <span class="tag_red">-0.81%</span>
           <span class="tag_blue">+1.24%</span>
+          <span class="tag_red big">-0.81%</span>
+          <span class="tag_blue big">+1.24%</span>
         </div>
         <div class="type_view ico">
           <button class="btn_view">버튼</button>
@@ -90,6 +99,20 @@
           <span class="badge2 blockchain">블록체인</span> -->
         </div><br/><br/>
         <p class="h3">badge3</p>
+        <!-- <p class="h3">small - height18</p>
+        <div class="type_view ico">
+          <span class="badge3 small line black">gray</span>
+          <span class="badge3 small gray">gray</span>
+          <span class="badge3 small green">green</span>
+          <span class="badge3 small dark_green">dark green</span>
+          <span class="badge3 small light_green">light_green</span>
+          <span class="badge3 small brown">brown</span>
+          <span class="badge3 small yellow">yellow</span>
+          <span class="badge3 small primary">primary</span>
+          <span class="badge3 small red">red</span>
+          <span class="badge3 small pink">pink</span>
+        </div> -->
+        <p class="h3">defalut - height18</p>
         <div class="type_view ico">
           <span class="badge3 line black">gray</span>
           <span class="badge3 gray">gray</span>
@@ -102,6 +125,7 @@
           <span class="badge3 red">red</span>
           <span class="badge3 pink">pink</span>
         </div>
+        <p class="h3">big - height30</p>
         <div class="type_view ico">
           <span class="badge3 big gray">gray</span>
           <span class="badge3 big green">green</span>
@@ -341,6 +365,7 @@
             <m-button-3 color="yellow">yellow</m-button-3>
             <m-button-3 color="darkYellow">yellow</m-button-3>
             <m-button-3 color="red">red</m-button-3>
+            <m-button-3 color="pink">red</m-button-3>
             <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
             <m-button-3 color="textPrimary">textPrimary</m-button-3>
             <p class="sbt">disabled</p>
@@ -352,6 +377,7 @@
             <m-button-3 color="yellow" disabled>yellow</m-button-3>
             <m-button-3 color="darkYellow" disabled>yellow</m-button-3>
             <m-button-3 color="red" disabled>red</m-button-3>
+            <m-button-3 color="pink" disabled>red</m-button-3>
             <m-button-3 lined color="lightGrey" disabled>lightGrey</m-button-3>
             <m-button-3 color="textPrimary" disabled>textPrimary</m-button-3>
           </div>
@@ -488,6 +514,26 @@
             <m-button-3 lined @click="dailog2 = true">dailog2</m-button-3>
             <m-button-3 lined @click="dailog3 = true">dailog3</m-button-3>
             <m-button-3 lined @click="dailog4 = true">dailog4</m-button-3>
+            
+            <m-button-3 lined @click="dailog5 = true">bottom</m-button-3>
+            <q-dialog v-model="dailog5" position="bottom">
+              <q-card style="width: 350px">
+                <q-linear-progress :value="0.6" color="pink" />
+            
+                <q-card-section class="row items-center no-wrap">
+                  <div>
+                    <div class="text-weight-bold">The Walker</div>
+                    <div class="text-grey">Fitz & The Tantrums</div>
+                  </div>
+            
+                  <q-space />
+            
+                  <q-btn flat round icon="fast_rewind" />
+                  <q-btn flat round icon="pause" />
+                  <q-btn flat round icon="fast_forward" />
+                </q-card-section>
+              </q-card>
+            </q-dialog>
             <m-alert v-model="alert" content="문제가 발생하였습니다." buttonLabel="확인" title="경고메시지" />
             <m-confirm v-model="confirm" content="진행할까요?" title="확인메시지" />
             <m-dialog v-model="dailog1" class="cls_test">
@@ -671,7 +717,7 @@
             <GaugeChart/>
           </div>
         </div>                        
-      </div>      
+      </div>
     </div>
 </template>
 
@@ -723,6 +769,7 @@ export default {
       check3: ref(['A', 'C']),
       check4: ref(['A', 'B', 'C']),
       rad1: ref('B'),
+      current: ref(3),
       select1: ref("Facebook"),
       options: [
         'Google', 'Facebook'
@@ -759,6 +806,7 @@ export default {
       dailog2: ref(false),
       dailog3: ref(false),
       dailog4: ref(false),
+      dailog5: ref(false),
       tab: ref(3),
       listdata: [
         {idx:1, title:'몬스탁닉네임01', img:require("../../assets/profile_img1.png"), pro:'PRO', pl:'PL1'},
