@@ -30,9 +30,6 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
-      <div class="sticky_tab1 ">
-      삼성전자 우 
-      </div>
         <div class="con_box">
           <h2 class="line_type">BLASH 미리보기</h2>
           <div class="box_contents pdt16"> 
@@ -109,7 +106,14 @@
               </div>
               <!--E 투자 리스트-->
             </div>
+            <div class="sticky_tab1 " v-show="isshow">
+              삼성전자 우 
+            </div>
+
+            
             <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
+
+
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>
@@ -1062,6 +1066,7 @@ export default {
               page: 1,
               rowsPerPage: 10
             },
+            isshow: ref(false),
             table1: ref(['fld01', 'fld04', 'fld05', 'fld10']),
             table2: ref(['fld02', 'fld04', 'fld06', 'fld10']),
             table3: ref(['fld04', 'fld03', 'fld06', 'fld05', 'fld09']),
@@ -1173,15 +1178,29 @@ export default {
         }
     },
     methods: {
+      scrollEvents:function(){
+        // console.log(window.scrollY);
+        if(window.scrollY > 447){
+          this.isshow = true;
+        }else{
+          this.isshow = false;
+        }
+      }
+    },
+    mounted() {
+      window.scrollTo(0, 0);
+      document.addEventListener('scroll', this.scrollEvents);
+    },
+    unmounted() {
+      document.removeEventListener('scroll', this.scrollEvents);
     },
     watch: {
       tab1() {
-        console.log('aaa ==> '+this.tab1);
-        console.log('======> '+window.scrollY);
         if(window.scrollY > 447) {
           window.scrollTo(0, 447);
         }
-      }
+        console.log(this.isshow);
+      } 
     },
     computed: {
         chartOptions() {
