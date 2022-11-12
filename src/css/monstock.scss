@@ -2996,17 +2996,23 @@ button{
 .sticky_tab{
     @media (max-width: $breakpoint-xs-max) {
         position:sticky;
-        top:0;
+        top:50px;
         background: #fff;
         z-index: 2;
         margin:0 -12px;
     }
 }
 
-.sticky_title{
-    border:5px solid red;
-    width:100%;
-    height:50px
+.sticky_tab1{
+    @media (max-width: $breakpoint-xs-max) {
+        position:sticky;
+        top:0px;
+        background: #fff;
+        z-index: 2;
+        margin:0 -12px;
+        height: 50px;
+        border:10px solid red;
+    }
 }
 
 

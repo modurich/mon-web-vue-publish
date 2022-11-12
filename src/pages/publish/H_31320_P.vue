@@ -30,6 +30,9 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
+      <div class="sticky_tab1 ">
+      삼성전자 우 
+      </div>
         <div class="con_box">
           <h2 class="line_type">BLASH 미리보기</h2>
           <div class="box_contents pdt16"> 
@@ -74,9 +77,6 @@
                 <span class="btn_area"><button class="ico_copy_w"/></span>
               </div>
                <!--S 투자 리스트-->
-               <div class="sticky_title">
-                  삼성전자 우 
-                </div>
                <div class="invest_wrap">
                 <div class="between">
                   <span class="badge_area">
