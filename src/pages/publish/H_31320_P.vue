@@ -38,9 +38,10 @@
           <m-button-3  size="large" color="primary"><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
         </div>
         <div class="con_box">
-          <h2 class="line_type">BLASH 미리보기</h2>
+          
           <div class="box_contents pdt16"> 
-            <div class="tit_type01">
+            <div ref="s03" class="tit_type01">
+              <h2 class="line_type">BLASH 미리보기</h2>
               <p class="badge_wrap">
                 <span class="badge_area">
                   <span class="badge3 small green">주식</span>
@@ -1189,8 +1190,17 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        console.log('======> '+window.scrollY + ' , '+this.isshow);
-        if(window.scrollY > 340){
+        // console.log('======> '+window.scrollY + ' , '+this.isshow);
+
+        let s03 = this.$refs.s03.clientHeight;
+        let s02 = this.$refs.s02.clientHeight;
+        let s01 = this.$refs.s01.clientHeight;
+        if(s03 < 300) {
+          s03 = s03- s01;
+        } else {
+          s03 = s03+s02;
+        }
+        if(window.scrollY > s03){
           this.isshow = true;
         }else{
           this.isshow = false;
@@ -1206,11 +1216,17 @@ export default {
     },
     watch: {
       tab1() {
-        if(window.scrollY > 348) {
-          window.scrollTo(0, 348);
+        let s03 = this.$refs.s03.clientHeight;
+        let s01 = this.$refs.s01.clientHeight;
+        if(s03 < 300) {
+          s03 = s03- s01;
         }
-        console.log(this.$refs.s01.clientHeight);
-        console.log(this.$refs.s02.clientHeight);
+        if(window.scrollY > s03) {
+          window.scrollTo(0, s03);
+        }
+        console.log('s01 ==> '+this.$refs.s01.clientHeight);
+        console.log('s02 ==> '+this.$refs.s02.clientHeight);
+        console.log('s03 ==> '+this.$refs.s03.clientHeight);
         this.scrollEvents();
         console.log(this.isshow);
       } 
