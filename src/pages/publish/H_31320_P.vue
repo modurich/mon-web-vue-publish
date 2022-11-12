@@ -770,7 +770,8 @@
                   row-key="fld04" 
                   no-data-label="데이터가 존재하지 않습니다." 
                   hide-bottom
-                  :visible-columns="table3">
+                  :visible-columns="table3"
+                  :pagination.sync="table1page">
                   <template v-slot:header="props">
                     <q-tr :props="porps">
                       <q-th key="fld04" :props="props">자산</q-th>
@@ -861,6 +862,7 @@
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                   :visible-columns="table2"
+                  :pagination.sync="table1page"
                 >
                   <template v-slot:body="props">
                     <q-tr :props="props">
@@ -934,7 +936,8 @@
                   row-key="fld04" 
                   no-data-label="데이터가 존재하지 않습니다." 
                   hide-bottom
-                  :visible-columns="table3">
+                  :visible-columns="table3"
+                  :pagination.sync="table1page">
                   <template v-slot:header="props">
                     <q-tr :props="porps">
                       <q-th key="fld04" :props="props">자산</q-th>
@@ -1012,7 +1015,7 @@ const tbRowData = [
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'SK하이닉스', fld05: 'D', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '네이버', fld05: 'U', fld06: '15', fld07: '1.25', fld08: '10', fld09: '9', fld10: 'S' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '현대차', fld05: 'U', fld06: '5', fld07: '0', fld08: '5', fld09: '13', fld10: 'F' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '신풍제약', fld05: 'D', fld06: '10', fld07: '-1.28', fld08: '5', fld09: '16', fld10: 'M' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '신풍제약', fld05: 'D', fld06: '10', fld07: '-1.28', fld08: '5', fld09: '16', fld10: 'N' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '안랩', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'F' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '카카오', fld05: 'U', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'KT&G', fld05: 'D', fld06: '15', fld07: '0.72', fld08: '10', fld09: '9', fld10: 'S' },
