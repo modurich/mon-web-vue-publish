@@ -209,11 +209,11 @@
                 <span class="font16">시그널</span>
               </h3>
               <div class="voting_list_wrap line">
-                <ul class="voting_list">
-                  <li class="col2">
+                <li class="between mgt10">
                     <span class="badge3 big green">최초매수</span>
                     <span class="font12">2022.10.26 10:30</span>
                   </li>
+                <ul class="voting_list">
                   <li class="col2">
                     <span class="font12">매수가</span>
                     <span class="txt_blue1">₩ ????? ~ ?????</span>
