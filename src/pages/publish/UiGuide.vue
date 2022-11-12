@@ -121,6 +121,7 @@
           <span class="badge3 light_green">light_green</span>
           <span class="badge3 brown">brown</span>
           <span class="badge3 yellow">yellow</span>
+          <span class="badge3 orange">orange</span>
           <span class="badge3 primary">primary</span>
           <span class="badge3 red">red</span>
           <span class="badge3 pink">pink</span>

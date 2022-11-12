@@ -31,6 +31,7 @@
 .mgr16{margin-right:16px !important}
 .mgb0{margin-bottom:0 !important}
 .mga32{margin:32px 0 !important}
+.mga48{margin:48px 0 !important}
 .pdt32{padding-top:32px !important}
 .font10{font-size:10px !important;line-height: 18px;}
 .font11{font-size:11px !important}
@@ -246,6 +247,7 @@ body{
     font-weight: 400;
     color:#fff;
     //size
+    &.icon{min-width: 26px !important ;padding: 0px !important;}
     &.small{height: 18px;
         i{
             width:14px;
@@ -2437,7 +2439,7 @@ button{
     }
 }
 .tag_area{
-    span{margin-right:4px;color: $txt_dk;}
+    span{margin-right:8px;color: $txt_dk;}
 } 
 .ico_f{
     display: inline-flex;
@@ -2581,6 +2583,24 @@ button{
     }
 }
 
+.boost{
+    display: flex;
+    align-items: center;
+    .txt_area{margin-right:4px}
+    .ico_boost{
+        display: inline-flex;
+        width:24px;
+        height: 24px;
+        background: url('~assets/ico_boost.svg')  no-repeat center center; 
+    }
+    &.active{
+        color: $primary;
+        .ico_boost{
+            background: url('~assets/ico_boost_p.svg')  no-repeat center center; 
+        }
+    }
+}
+
 
 .btn_area_center{
     margin:32px 0;
@@ -2645,7 +2665,22 @@ button{
         border-radius: 8px;
     }
     .badge3.big{height: 26px;}
+    .ico_area{
+        display: flex;
+        align-items: center;
+        > span{margin-right:4px}
+        > button{margin-right:4px}
+    }
 }
+
+.ico_result_type01{
+    display: flex;
+    width:16px;
+    height: 16px;
+    background: url('~assets/ico_result_type01.svg')  no-repeat center center; 
+}
+
+.voting_list_wrap + .voting_list_wrap{margin-top:16px}
 .voting_list{
     display: flex;
     align-items: center;
@@ -2803,6 +2838,7 @@ button{
     flex-wrap: wrap;
     align-items:center;
     > div{flex:1}
+    .insight_list{flex:1}
     .lcon_list{
         display: flex;
         align-items: center;
@@ -2953,4 +2989,14 @@ button{
         border-top-right-radius:16px ;
     }
 }
+.sticky_tab{
+    @media (max-width: $breakpoint-xs-max) {
+        position:sticky;
+        top:0;
+        background: #fff;
+        z-index: 2;
+        margin:0 -12px;
+    }
+}
+
 

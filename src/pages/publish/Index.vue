@@ -699,7 +699,16 @@
             <td>밴드구간</td>
             <td>진행중</td>
         </tr> 
-      
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_31320_P">H_31320_P</router-link>
+            </td>
+            <td>매수대기</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>
