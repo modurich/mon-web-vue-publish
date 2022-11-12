@@ -154,7 +154,40 @@
                     </li>
                 </ul>
               </div>
-              
+              <div class="chart_list_wrap">
+                <div class="chart_area">
+                  <div class="lcon_list">
+                    <span class="txt_area">
+                      <span class="txt01">목표가 달성률</span>
+                      <span class="txt02">9999.9%</span>
+                    </span>
+                    <div class="img_area center">
+                      <!-- <img src="~assets/ico_stamp.svg" alt="성공" />
+                      <p class="center txt_blue1">목표가 도달</p>
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                      <p class="center txt_red">손절가 도달</p>
+                      <img src="~assets/ico_stamp02.svg" alt="무효" />
+                      <p class="center txt_brown">기간 종료 (수익)</p> -->
+                      <img src="~assets/ico_stamp03.svg" alt="매수실패" /> 
+                      <p class="center">취소</p>
+                    </div>
+                  </div>
+                </div>
+                <ul class="insight_list list3">
+                    <li>
+                        <span class="txt01">목표수익률</span>
+                        <span class="txt02"><i class="tag_blue big">+1.24%</i></span>
+                    </li>
+                    <li>
+                        <span class="txt01">투자비중</span>
+                        <span class="txt02">100%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">투자기간</span>
+                        <span class="txt02">100일</span>
+                    </li>
+                </ul>
+              </div>
                 <div class="voting_list_wrap">
                 <ul class="voting_list">
                   <li>
@@ -293,7 +326,8 @@
               <div class="divider" />
               <h3 class="between">
                 <span class="font16">보팅</span>
-                <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>
+                <span class="font12 txt_red medium flex">보팅이 종료되었어요</span>
+                <!-- <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span> -->
               </h3>
               <div class="voting_list_wrap">
                 <ul class="voting_list">
@@ -324,6 +358,9 @@
                     </span>
                   </li>
                 </ul>
+              </div>
+              <div class="center txt_dk mgt32">
+                종목 공개 후 보팅할 수 있어요
               </div>
               <div class="btn_wrap mgt32">
                   <m-button-3 size="large" color="primary" class="full">
