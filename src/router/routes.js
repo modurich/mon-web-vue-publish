@@ -72,6 +72,9 @@ const routes = [
             { path: '/publish/H_31321_P', component: () => import('pages/publish/H_31321_P.vue') },
             { path: '/publish/H_31322_P', component: () => import('pages/publish/H_31322_P.vue') },
             { path: '/publish/H_31323_P', component: () => import('pages/publish/H_31323_P.vue') },
+            { path: '/publish/H_32110_P', component: () => import('pages/publish/H_32110_P.vue') },
+            { path: '/publish/votinglist', component: () => import('pages/publish/votinglist.vue') },
+            { path: '/publish/H_301_P', component: () => import('pages/publish/H_301_P.vue') },
             
         ]
     },

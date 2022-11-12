@@ -739,6 +739,36 @@
             <td>매도 시그널</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_32110_P">H_32110_P</router-link>
+            </td>
+            <td>포스트 상세</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/votinglist">votinglist</router-link>
+            </td>
+            <td>보팅 리스트</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_301_P">H_301_P</router-link>
+            </td>
+            <td>평단가수정</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>

@@ -30,6 +30,13 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
+        <!-- <div class="fixed_btn">
+           <m-button-3 size="large" color="primary">구독하기 (알림받기)</m-button-3 >
+        </div> -->
+        <div class="fixed_btn btn2">
+          <m-button-3 lined size="large" color="primary">구독취소</m-button-3 >
+          <m-button-3  size="large" color="primary"><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
+        </div>
         <div class="con_box">
           <h2 class="line_type">BLASH 미리보기</h2>
           <div class="box_contents pdt16"> 

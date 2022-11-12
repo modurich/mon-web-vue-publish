@@ -29,7 +29,7 @@
                 <button class="ico_search">search</button>
                 <button class="ico_luckybox">luckybox</button>
                 <!--알람 스타일 ico_alarm_new, ico_alarm_off, ico_alarm_on-->
-                <button class="ico_alarm_new">alarm</button>
+                <button class="ico_alarm_on">alarm</button>
                 <div class="user_img">
                     <div class="img_area">
                         <!-- <i class="alarm_dot">updated</i> -->
