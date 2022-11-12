@@ -40,6 +40,7 @@
 .font16{font-size:16px !important;font-weight: 700;}
 .font18{font-size:18px !important;}
 .font20{font-size:20px !important;}
+.font24{font-size:24px !important;}
 .medium{font-weight: 500 !important;}
 .bold{font-weight: 700 !important;}
 
@@ -2122,6 +2123,42 @@ button{
         }
     }
 }
+.badge_list{
+    display: flex;
+    justify-content: space-between;
+    .btn_area{display: flex;}
+    .txt01{font-size: 12px;}
+    button{width:20px;height: 20px;background-size: contain !important;}
+}
+.top_wrap1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img_area{
+        img{width:24px;
+        height:24px;
+        border-radius: 24px;
+        }
+    }
+    .tit_area{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .txt_tit{
+            font-size: 12px;
+            color: $txt_dk;
+            margin:0 0 0 8px;
+        }
+        .badge_area{
+            span{margin-left:4px}
+        }
+    }
+    .my_profile{
+        display: flex;
+        width:90%;
+    }
+    .ico_user_pl{width:20px;height: 20px;background-size: contain !important;}
+}
 .ico_reply{
     content: '';
     display: inline-flex;
@@ -2387,29 +2424,6 @@ button{
             .img{
                 img{width:100%;}
             }
-            .list_box{
-                padding:8px;
-                border: 1px solid $com_line;
-                display:flex;
-                .img_area{
-                    img{width:57px;height:57px;margin-right:8px}
-                }
-                .txt_area{
-                    width:calc(100% - 65px);
-                    .tit{color:$txt_dk ;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: block;
-                        white-space: nowrap;
-                    }
-                    .con{font-size: 12px;}
-                    .link_txt{font-size: 12px;color:#6ee0b0;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-                }
-            }
         }
         .footer_area{
             margin-top:16px;
@@ -2438,6 +2452,31 @@ button{
         }
     }
 }
+
+.list_box{
+    padding:8px;
+    border: 1px solid $com_line;
+    display:flex;
+    .img_area{
+        img{width:57px;height:57px;margin-right:8px}
+    }
+    .txt_area{
+        width:calc(100% - 65px);
+        .tit{color:$txt_dk ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            white-space: nowrap;
+        }
+        .con{font-size: 12px;}
+        .link_txt{font-size: 12px;color:#6ee0b0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
 .tag_area{
     span{margin-right:8px;color: $txt_dk;}
 } 
@@ -2993,6 +3032,17 @@ button{
         border-top-right-radius:16px ;
     }
 }
+
+.sticky_tab0{
+    @media (max-width: $breakpoint-xs-max) {
+        position:sticky;
+        top:0px;
+        background: #fff;
+        z-index: 2;
+        margin:0 -12px;
+    }
+}
+
 .sticky_tab{
     @media (max-width: $breakpoint-xs-max) {
         position:sticky;
@@ -3014,5 +3064,44 @@ button{
         border:10px solid red;
     }
 }
-
-
+.fixed_btn{
+    position: fixed !important;
+    display: flex;
+    bottom:0;
+    width:692px;
+    z-index: 1;
+    height:56px;
+    background: #fff;
+    button{
+        display: flex;
+        align-items: center;
+        width:100%;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        i{margin-right:16px}
+    }
+    &.btn2{
+        button{
+            &:nth-child(1){
+                border-top-right-radius:0px !important ;
+            }
+            &:nth-child(2){
+                border-top-left-radius:0px !important ;
+            }
+        }
+    }
+    //1284보다 작아질때 변환시 스크롤 이슈 발생
+    @media (max-width: 1310px) {
+        bottom:80px;
+    }
+    @media (max-width: $breakpoint-xs-max) {
+       width:100%;
+    }
+}
+.ico_alarm_on_w{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
+    background-size:contain;
+}

@@ -30,6 +30,9 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
+        <div class="fixed_btn">
+           <m-button-3 size="large" color="pink">종목공개하기(50sMON)</m-button-3 >
+        </div>
         <div class="con_box">
           <h2 class="line_type">BLASH 미리보기</h2>
           <div class="box_contents pdt16"> 
@@ -71,7 +74,7 @@
                 <span class="btn_area"><button class="ico_copy_w"/></span>
               </div>
             </div>
-            <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
+            <m-tabs class="line_type large sticky_tab0" v-model="tab1" :items="tabs"/>
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>

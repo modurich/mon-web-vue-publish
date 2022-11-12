@@ -366,7 +366,7 @@
             <m-button-3 color="yellow">yellow</m-button-3>
             <m-button-3 color="darkYellow">yellow</m-button-3>
             <m-button-3 color="red">red</m-button-3>
-            <m-button-3 color="pink">red</m-button-3>
+            <m-button-3 color="pink">pink</m-button-3>
             <m-button-3 lined color="lightGrey">lightGrey</m-button-3>
             <m-button-3 color="textPrimary">textPrimary</m-button-3>
             <p class="sbt">disabled</p>
