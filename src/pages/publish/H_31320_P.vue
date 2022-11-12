@@ -81,7 +81,7 @@
                   </span>
                   <span class="font10 primary">장중 / 실시간</span>
                 </div>
-                <div class="pro_area">
+                <div ref="s01" class="pro_area"  v-show="!isshow">
                   <p class="logo_wrap">
                     <span class="logo"><img src="~assets/prd_logo.png" alt="" /></span>
                     <span class="txt_area">
@@ -103,13 +103,16 @@
                     </span>
                   </p>
                 </div>
+
+
+
               </div>
               <!--E 투자 리스트-->
             </div>
-            <div class="sticky_tab1 " v-show="isshow">
-              삼성전자 우 
+ 
+            <div ref="s02" class="sticky_tab1 " v-show="isshow">
+                  삼성전자 우 
             </div>
-
             
             <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
 
@@ -1179,8 +1182,8 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        console.log('======> '+window.scrollY);
-        if(window.scrollY > 440){
+        console.log('======> '+window.scrollY + ' , '+this.isshow);
+        if(window.scrollY > 340){
           this.isshow = true;
         }else{
           this.isshow = false;
@@ -1196,9 +1199,11 @@ export default {
     },
     watch: {
       tab1() {
-        if(window.scrollY > 447) {
-          window.scrollTo(0, 447);
+        if(window.scrollY > 348) {
+          window.scrollTo(0, 348);
         }
+        console.log(this.$refs.s01.clientHeight);
+        console.log(this.$refs.s02.clientHeight);
         this.scrollEvents();
         console.log(this.isshow);
       } 
