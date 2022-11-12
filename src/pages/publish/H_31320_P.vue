@@ -601,6 +601,9 @@
                   <m-button-3 lined size="large" color="lightGrey" class="full">전체 BLASH 보기</m-button-3>
               </div>
             </div>
+
+
+
             <div class="tab_contents" v-if="tab1 == 'B'">
              
             <!-- S 통계 -->
@@ -1148,6 +1151,15 @@ export default {
         }
     },
     methods: {
+    },
+    watch: {
+      tab1() {
+        console.log('aaa ==> '+this.tab1);
+        console.log('======> '+window.scrollY);
+        if(window.scrollY > 447) {
+          window.scrollTo(0, 447);
+        }
+      }
     },
     computed: {
         chartOptions() {
