@@ -1179,8 +1179,8 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        // console.log(window.scrollY);
-        if(window.scrollY > 447){
+        console.log('======> '+window.scrollY);
+        if(window.scrollY > 440){
           this.isshow = true;
         }else{
           this.isshow = false;
@@ -1199,6 +1199,7 @@ export default {
         if(window.scrollY > 447) {
           window.scrollTo(0, 447);
         }
+        this.scrollEvents();
         console.log(this.isshow);
       } 
     },
