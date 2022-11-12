@@ -74,6 +74,9 @@
                 <span class="btn_area"><button class="ico_copy_w"/></span>
               </div>
                <!--S 투자 리스트-->
+               <div class="sticky_title">
+                  삼성전자 우 
+                </div>
                <div class="invest_wrap">
                 <div class="between">
                   <span class="badge_area">
