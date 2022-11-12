@@ -158,29 +158,29 @@
                 <div class="voting_list_wrap">
                 <ul class="voting_list">
                   <li>
-                    <span>목표가</span>
+                    <span class="font12">목표가</span>
                     <span class="font18 txt_blue1">₩ ?????</span>
                   </li>
                   <li>
-                    <span>기준가 (매수고가)</span>
+                    <span class="font12">기준가 (매수고가)</span>
                     <span class="font18 txt_dk">₩ ?????</span>
                   </li>
                   <li>
-                    <span>매수저가</span>
+                    <span class="font12">매수저가</span>
                     <span class="font18 txt_dk">₩ ?????</span>
                   </li>
                   <li>
-                    <span class="txt_red">손절가</span>
+                    <span class="txt_red font12">손절가</span>
                     <span class="font18 txt_red"><span class="tag_red mgr8">-0.81%</span> ₩ ?????</span>
                   </li>
                 </ul>
                 <ul class="voting_list">
                   <li class="col2">
-                    <span>최초 매수</span>
+                    <span class="font12">최초 매수</span>
                     <span class="txt_dk">YYYY.MM.DD hh:mm:ss</span>
                   </li>
                   <li class="col2">
-                    <span>1차 추매</span>
+                    <span class="font12">1차 추매</span>
                     <span class="txt_dk">대기중</span>
                   </li>
                 </ul>
@@ -215,17 +215,17 @@
                     <span class="font12">2022.10.26 10:30</span>
                   </li>
                   <li class="col2">
-                    <span>매수가</span>
+                    <span class="font12">매수가</span>
                     <span class="txt_blue1">₩ ????? ~ ?????</span>
                   </li>
                 </ul>
                 <ul class="voting_list">
                   <li>
-                    <span>투자비중</span>
+                    <span class="font12">투자비중</span>
                     <span class="txt_dk">100%</span>
                   </li>
                   <li>
-                    <span>투자기간</span>
+                    <span class="font12">투자기간</span>
                     <span class="txt_dk">100일</span>
                   </li>
                 </ul>
@@ -248,17 +248,17 @@
               <div class="voting_list_wrap">
                 <ul class="voting_list">
                   <li>
-                    <span>누적 보팅 파워 / 전체 보팅 한도</span>
+                    <span class="font12">누적 보팅 파워 / 전체 보팅 한도</span>
                     <span><span class="primary">2,000</span> / 10,000VP</span>
                   </li>
                   <li>
-                    <span>전체 보팅 보상 (예상)</span>
+                    <span class="font12">전체 보팅 보상 (예상)</span>
                     <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
                   </li>
                 </ul>
                 <ul class="voting_list">
                   <li class="col2">
-                    <span>10 VP 예상 보상량 + 00% 🚀</span>
+                    <span class="font12">10 VP 예상 보상량 + 00% 🚀</span>
                     <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
                   </li>
                 </ul>

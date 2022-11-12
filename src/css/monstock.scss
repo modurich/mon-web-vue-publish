@@ -752,7 +752,7 @@ body{
 .insight_list{
     display:flex;
     flex-wrap: wrap;
-    .txt01{line-height: 22px;margin-bottom:4px}
+    .txt01{line-height: 22px;margin-bottom:4px;font-size: 12px;}
     .txt02{font-size:24px;color:$txt_dk;line-height: 40px;font-weight: 500;}
    li{
         width:50%;
@@ -2672,7 +2672,11 @@ button{
         > button{margin-right:4px}
     }
 }
-
+.ico_area{
+    display: flex;
+    align-items: center;
+    > .badge3{margin-right:4px}
+}
 .ico_result_type01{
     display: flex;
     width:16px;
@@ -2699,7 +2703,7 @@ button{
         li:nth-child(2n){margin-left:0;}
     }
 }
-.voting_list{
+.voting_list + .voting_list{
     border-top:1px solid $com_line;
     margin-top:16px;
     padding-top:4px;

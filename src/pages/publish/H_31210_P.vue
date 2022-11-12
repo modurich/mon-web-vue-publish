@@ -287,25 +287,25 @@
               <div class="voting_list_wrap">
                 <ul class="voting_list">
                   <li>
-                    <span>누적 보팅 파워 / 전체 보팅 한도</span>
+                    <span class="font12">누적 보팅 파워 / 전체 보팅 한도</span>
                     <span><span class="primary">2,000</span> / 10,000VP</span>
                   </li>
                   <li>
-                    <span>전체 보팅 보상 (예상)</span>
+                    <span class="font12">전체 보팅 보상 (예상)</span>
                     <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
                   </li>
                 </ul>
                 <ul class="voting_list">
                   <li>
-                    <span>내 보팅 한도</span>
+                    <span class="font12">내 보팅 한도</span>
                     <span>10VP</span>
                   </li>
                   <li>
-                    <span>내 보팅 보상 (예상)</span>
+                    <span class="font12">내 보팅 보상 (예상)</span>
                     <span class="primary flex">324.1234567890<i class="ico_mon"/></span>
                   </li>
                   <li class="col2">
-                    <span>보팅 수량</span>
+                    <span class="font12">보팅 수량</span>
                     <span class="stepper_wrap">
                       <button class="btn_minus">-</button>
                       <span class="txt_area">5</span>
