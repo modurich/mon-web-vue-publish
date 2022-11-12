@@ -85,15 +85,17 @@ export default {
         series: [{
           name: '현재수익률',
           data: [{
-            color: {
+            color: 
+            
+            /*{
               linearGradient: [0, 0, 300, 300],
               stops: [
                 [0, Highcharts.color(seriscolor).setOpacity(0.2).get()],
                 [1, Highcharts.color(seriscolor).setOpacity(1).get()]
               ]
-            },
+            },*/
             
-            // Highcharts.color(seriscolor).setOpacity(1).get(),
+            Highcharts.color(seriscolor).setOpacity(1).get(),
             radius: '114%',
             innerRadius: '88%',
             y: 60
