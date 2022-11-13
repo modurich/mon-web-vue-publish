@@ -72,6 +72,15 @@
                 </span>
                 <span class="btn_area"><button class="ico_copy_w"/></span>
               </div>
+              <!-- S show header-->
+              <div ref="s02"  id="dynamic" class="sticky_header">
+                <span class="logo">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>    
+                <span class="txt01">₩ 352,100</span> 
+              </div>
+              <!-- E show header-->
               <!--S 투자 리스트-->
               <div class="invest_wrap">
                 <div class="between">
@@ -139,7 +148,7 @@
               </div> -->
               <!--E 투자 리스트-->
             </div>
-            <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
+            <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>
@@ -1153,6 +1162,19 @@ export default {
         }
     },
     methods: {
+      scrollEvents:function(){
+        if(window.scrollTop > 50){
+          document.querySelector("#dynamic").classList.add('newClass');
+        }else{
+           document.querySelecotr("#dynamic").classList.remove("newClass");
+        }
+      }
+    },
+    mounted() {
+      document.addEventListener('scroll', this.scrollEvents);
+    },
+    unmounted() {
+      document.removeEventListener('scroll', this.scrollEvents);
     },
     computed: {
         chartOptions() {
