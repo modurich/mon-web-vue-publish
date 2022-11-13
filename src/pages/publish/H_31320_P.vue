@@ -89,7 +89,7 @@
                   </span>
                   <span class="font10 primary">장중 / 실시간</span>
                 </div>
-                <div ref="s01" class="pro_area"  v-show="!isshow">
+                <div ref="s01" class="pro_area" v-show="!isshow">
                   <p class="logo_wrap">
                     <span class="logo"><img src="~assets/prd_logo.png" alt="" /></span>
                     <span class="txt_area">
@@ -1183,7 +1183,11 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        // console.log('======> '+window.scrollY + ' , '+this.isshow);
+        if(window.outerWidth > 600){
+          this.isshow = false;
+          return;
+        }
+       
 
         let s03 = this.$refs.s03.clientHeight;
         let s02 = this.$refs.s02.clientHeight;
@@ -1209,19 +1213,27 @@ export default {
     },
     watch: {
       tab1() {
-        let s03 = this.$refs.s03.clientHeight;
-        let s01 = this.$refs.s01.clientHeight;
-        if(s03 < 300) {
-          s03 = s03- s01;
+
+        if(window.outerWidth > 600){
+          this.isshow = false;
+          return;
         }
+
+        let s03 = this.$refs.s03.clientHeight;
+        let s02 = this.$refs.s02.clientHeight;
+        let s01 = this.$refs.s01.clientHeight;
+
+        if(s03 < 300) {
+          s03 = s03 + s02;
+        } else {
+          s03 = s03 - s01;
+        }
+        s03 = s03 + 46;
         if(window.scrollY > s03) {
           window.scrollTo(0, s03);
         }
-        console.log('s01 ==> '+this.$refs.s01.clientHeight);
-        console.log('s02 ==> '+this.$refs.s02.clientHeight);
-        console.log('s03 ==> '+this.$refs.s03.clientHeight);
+
         this.scrollEvents();
-        console.log(this.isshow);
       } 
     },
     computed: {
