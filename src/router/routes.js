@@ -75,6 +75,7 @@ const routes = [
             { path: '/publish/H_32110_P', component: () => import('pages/publish/H_32110_P.vue') },
             { path: '/publish/votinglist', component: () => import('pages/publish/votinglist.vue') },
             { path: '/publish/H_301_P', component: () => import('pages/publish/H_301_P.vue') },
+            { path: '/publish/A_21711_T', component: () => import('pages/publish/A_21711_T.vue') },
             
         ]
     },

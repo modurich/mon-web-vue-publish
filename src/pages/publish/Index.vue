@@ -769,6 +769,16 @@
             <td>평단가수정</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_21711_T">A_21711_T,A_21712_T,A_21713_T</router-link>
+            </td>
+            <td>진행중</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>

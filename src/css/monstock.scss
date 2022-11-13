@@ -29,7 +29,9 @@
 .mgr8{margin-right:8px !important}
 .mgr10{margin-right:10px !important}
 .mgr16{margin-right:16px !important}
+.mgr32{margin-right:32px !important}
 .mgb0{margin-bottom:0 !important}
+.mga16{margin:16px 0 !important}
 .mga32{margin:32px 0 !important}
 .mga48{margin:48px 0 !important}
 .pdt32{padding-top:32px !important}
@@ -672,7 +674,7 @@ body{
     height: 1px;
     width:100%;
     margin:64px 0px 64px 0px;
-    
+    &.xsmall{margin:16px 0px 16px 0px;}
     &.small{
         margin:32px 0px 32px 0px;
         &.mglr16{margin:32px 16px 32px 16px;}
@@ -948,7 +950,8 @@ body{
 //list_type1
 .list_type1{
     margin:16px 0;
-    li{display:flex;
+    li{
+    display:flex;
     justify-content: space-between;
     margin-bottom: 8px;
     &:last-child{margin-bottom:0}
@@ -961,6 +964,40 @@ body{
             line-height: 26px;
         }
     }
+}
+
+//
+.list_type2{
+    li{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:16px;
+        border-bottom:1px solid $com_line;
+        padding-bottom: 16px;
+        .l_area{
+            width:calc(100% - 75px);
+            .txt_tit{
+                font-size:16px;
+                color:$txt_dk;
+                margin-bottom:4px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            .logo_area{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img{width:20px;height: 20px;}
+            }
+        }
+        .r_area{
+            .txt01{color: $txt_blue1;font-size: 20px;}
+        }
+    }
+    
 }
 
 //coin_list
@@ -3105,3 +3142,4 @@ button{
     background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
     background-size:contain;
 }
+
