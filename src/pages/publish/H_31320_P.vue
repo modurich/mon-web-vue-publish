@@ -114,8 +114,12 @@
               </div>
               <!--E 투자 리스트-->
             </div>
-            <div ref="s02" class="sticky_tab1 " v-show="isshow">
-                  삼성전자 우 
+            <div ref="s02" class="sticky_tab1 sticky_header" v-show="isshow">
+              <span class="logo">
+                <img src="~assets/prd_logo.png" alt="profile" />
+                삼성전자
+              </span>    
+              <span class="txt01">₩ 352,100</span> 
             </div>
             <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
             <div class="tab_contents" v-if="tab1 == 'A'">

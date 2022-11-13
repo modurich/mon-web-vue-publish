@@ -30,6 +30,7 @@
 .mgr10{margin-right:10px !important}
 .mgr16{margin-right:16px !important}
 .mgr32{margin-right:32px !important}
+.mgr48{margin-right:48px !important}
 .mgb0{margin-bottom:0 !important}
 .mga16{margin:16px 0 !important}
 .mga32{margin:32px 0 !important}
@@ -772,6 +773,22 @@ body{
             &:nth-child(3n + 1){border-left:0}
         }  
     }
+    &.list6{
+        li{
+            width:calc(100% / 6);
+            border-left:1px solid #d4d9ea;
+            &:nth-child(1){border-left:0}
+        }  
+    }
+    @media (max-width: $breakpoint-xs-max) {
+        &.list6{
+            li{
+                width:calc(100% / 3);
+                border-left:1px solid #d4d9ea;
+                &:nth-child(3n + 1){border-left:0}
+            }  
+        }
+    }
 }
 .ico_star{
     background: url('~assets/ico_star.svg') center center no-repeat;
@@ -968,6 +985,11 @@ body{
 
 //
 .list_type2{
+    &.w100{
+        .l_area{
+            width:100%;
+        }
+    }
     li{
         display:flex;
         justify-content: space-between;
@@ -976,7 +998,7 @@ body{
         border-bottom:1px solid $com_line;
         padding-bottom: 16px;
         .l_area{
-            width:calc(100% - 75px);
+            width:calc(100% - 100px);
             .txt_tit{
                 font-size:16px;
                 color:$txt_dk;
@@ -995,6 +1017,48 @@ body{
         }
         .r_area{
             .txt01{color: $txt_blue1;font-size: 20px;}
+        }
+    }
+    
+}
+.list_type3{
+    li{
+        margin-bottom:16px;
+        border-bottom:1px solid $com_line;
+        padding-bottom: 16px;
+        .tit_wrap{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            .txt_tit{
+                display: block;
+                width:70%;
+                font-size:16px;
+                color:$txt_dk;
+                margin-bottom:4px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: bold;
+            }
+        }
+        .txt_area{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            .txt_box{
+                span{margin-left:4px}
+            }
+            .txt01{color:$txt_dk;}
+        }
+        
+        .logo_area{
+            margin:4px 0 8px 0;
+            img{width:20px;height: 20px;
+                border-radius: 20px;
+                margin-right: 4px;}
         }
     }
     
@@ -2224,7 +2288,7 @@ button{
         border:1px solid $com_line;
         padding:16px 12px;
         border-radius: 8px;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         &.active{
             border:1px solid $primary;
             .top_wrap{
@@ -2468,6 +2532,10 @@ button{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+            .btn_area1{display:flex;
+                font-size: 12px;
+                button{width: 20px;height: 20px;background-size: contain !important;}
             }
             .btn_area{
                 display: flex;
@@ -2746,6 +2814,12 @@ button{
         align-items: center;
         > span{margin-right:4px}
         > button{margin-right:4px}
+    }
+    .logo_wrap{
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        img{width:20px;height: 20px;margin-right: 8px;}
     }
 }
 .ico_area{
@@ -3098,9 +3172,40 @@ button{
         z-index: 2;
         margin:0 -12px;
         height: 50px;
-        border:10px solid red;
     }
 }
+.sticky_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px;
+    .logo{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: $txt_dk;
+        img{width:30px;height:30px;border-radius: 30px;
+            margin-right:8px
+        }
+    }
+    .txt01{color: $txt_blue1;font-size: 18px;}
+}
+.pro_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: $txt_dk;
+        img{width:30px;height:30px;border-radius: 30px;
+            margin-right:8px
+        }
+    }
+    .txt01{color: $txt_blue1;font-size: 18px;}
+}
+
 .fixed_btn{
     position: fixed !important;
     display: flex;
@@ -3142,4 +3247,5 @@ button{
     background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
     background-size:contain;
 }
+
 

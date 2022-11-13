@@ -69,11 +69,11 @@
                 <span class="mgl8">보팅중만 보기</span>
               </div>
             </div>
-<div class="btn_wrap l_row_l">
+              <div class="btn_wrap l_row_l">
               <m-button-3 color="primary" size="large" class="full">
                 <i class="ico_pen_w"/>포스트 작성</m-button-3>
             </div>
-<ul class="thumb_list post">
+            <ul class="thumb_list post">
               <li class="active">
                 <div class="top_wrap">
                   <div class="my_profile">

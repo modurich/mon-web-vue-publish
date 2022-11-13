@@ -166,6 +166,41 @@ export default {
             }
         }
     }
+    &.color-orange{
+        background-color: #ffa500;
+        color: #fff;
+        &:disabled {
+            // background-color: $ghost-white;
+            //color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: $medium-grey;
+            border: 0.5px solid $medium-grey;
+            &:disabled {
+                // color: $ghost-white;
+                border: 1px solid $medium-grey;
+            }
+        }
+    }
+
+    &.color-green{
+        background-color: #6ee0b0;
+        color: #fff;
+        &:disabled {
+            // background-color: $ghost-white;
+            //color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: $medium-grey;
+            border: 0.5px solid $medium-grey;
+            &:disabled {
+                // color: $ghost-white;
+                border: 1px solid $medium-grey;
+            }
+        }
+    }
     &.color-red{
         background-color: #ec2222;
         color: #FFF;

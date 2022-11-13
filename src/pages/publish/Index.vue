@@ -687,7 +687,7 @@
                 <router-link to="/publish/H_31210_P">H_31210_P</router-link>
             </td>
             <td>작성자통계</td>
-            <td>진행중 - 스크롤 이벤트 진행해야함</td>
+            <td></td>
         </tr> 
         <tr>
             <td></td>
@@ -697,7 +697,7 @@
                 <router-link to="/publish/H_31310_P">H_31310_P</router-link>
             </td>
             <td>밴드구간</td>
-            <td>진행중</td>
+            <td>sticky 탭</td>
         </tr> 
         <tr>
             <td></td>
@@ -707,7 +707,7 @@
                 <router-link to="/publish/H_31320_P">H_31320_P</router-link>
             </td>
             <td>매수대기</td>
-            <td></td>
+            <td>진행중 - 스크롤 이벤트 진행해야함</td>
         </tr> 
         <tr>
             <td></td>
@@ -774,9 +774,19 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/A_21711_T">A_21711_T,A_21712_T,A_21713_T</router-link>
+                <router-link to="/publish/A_21711_T">A_21711_T,A_21712_T,A_21713_T,A_21721_T,A_21722_T,A_21723_T,A_21731_T,A_21732_T</router-link>
             </td>
-            <td>진행중</td>
+            <td>콘텐츠 관리-작성,관심,보팅</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217121_U">A_217121_U</router-link>
+            </td>
+            <td>매수성공-백드롭</td>
             <td></td>
         </tr> 
       </tbody>
