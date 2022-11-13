@@ -687,7 +687,7 @@
                 <router-link to="/publish/H_31210_P">H_31210_P</router-link>
             </td>
             <td>작성자통계</td>
-            <td></td>
+            <td class="txt_red">스크롤 완료 - 원하시는게 이게 맞으실까요??</td>
         </tr> 
         <tr>
             <td></td>
@@ -697,7 +697,7 @@
                 <router-link to="/publish/H_31310_P">H_31310_P</router-link>
             </td>
             <td>밴드구간</td>
-            <td>sticky 탭</td>
+            <td class="txt_red">sticky 탭</td>
         </tr> 
         <tr>
             <td></td>
@@ -707,7 +707,7 @@
                 <router-link to="/publish/H_31320_P">H_31320_P</router-link>
             </td>
             <td>매수대기</td>
-            <td>진행중 - 스크롤 이벤트 진행해야함</td>
+            <td class="txt_red">스크롤 완료 - 원하시는게 이게 맞으실까요??</td>
         </tr> 
         <tr>
             <td></td>

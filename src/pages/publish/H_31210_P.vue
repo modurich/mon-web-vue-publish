@@ -30,6 +30,15 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
+        <!-- S show header-->
+        <div id="dynamic" class="sticky_header">
+          <span class="logo">
+            <img src="~assets/prd_logo.png" alt="profile" />
+            삼성전자
+          </span>    
+          <span class="txt01">₩ 352,100</span> 
+        </div>
+        <!-- E show header-->
         <div class="con_box">
           <h2 class="line_type">인사이트</h2>
           <div class="box_contents pdt16"> 
@@ -72,15 +81,7 @@
                 </span>
                 <span class="btn_area"><button class="ico_copy_w"/></span>
               </div>
-              <!-- S show header-->
-              <div ref="s02"  id="dynamic" class="sticky_header">
-                <span class="logo">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </span>    
-                <span class="txt01">₩ 352,100</span> 
-              </div>
-              <!-- E show header-->
+              
               <!--S 투자 리스트-->
               <div class="invest_wrap">
                 <div class="between">
@@ -1163,10 +1164,10 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        if(window.scrollY > 50){
-          document.querySelector('#dynamic').classList.add('newClass');
+        if(window.scrollY > 300){
+          document.querySelector('#dynamic').classList.add('show');
         }else{
-          document.querySelector('#dynamic').classList.remove('newClass');
+          document.querySelector('#dynamic').classList.remove('show');
         }
       }
     },

@@ -33,6 +33,15 @@
         <!-- <div class="fixed_btn">
            <m-button-3 size="large" color="primary">구독하기 (알림받기)</m-button-3 >
         </div> -->
+         <!-- S show header-->
+         <div id="dynamic" class="sticky_header">
+            <span class="logo">
+              <img src="~assets/prd_logo.png" alt="profile" />
+              삼성전자
+            </span>    
+            <span class="txt01">₩ 352,100</span> 
+          </div>
+          <!-- E show header-->
         <div class="fixed_btn btn2">
           <m-button-3 lined size="large" color="primary">구독취소</m-button-3 >
           <m-button-3  size="large" color="primary"><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
@@ -114,13 +123,7 @@
               </div>
               <!--E 투자 리스트-->
             </div>
-            <div ref="s02" class="sticky_tab1 sticky_header" v-show="isshow">
-              <span class="logo">
-                <img src="~assets/prd_logo.png" alt="profile" />
-                삼성전자
-              </span>    
-              <span class="txt01">₩ 352,100</span> 
-            </div>
+           
             <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
@@ -1187,58 +1190,18 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        if(window.outerWidth > 600){
-          this.isshow = false;
-          return;
-        }
-       
-
-        let s03 = this.$refs.s03.clientHeight;
-        let s02 = this.$refs.s02.clientHeight;
-        let s01 = this.$refs.s01.clientHeight;
-        if(s03 < 300) {
-          s03 = s03- s01;
-        } else {
-          s03 = s03+s02;
-        }
-        if(window.scrollY > s03){
-          this.isshow = true;
+        if(window.scrollY > 300){
+          document.querySelector('#dynamic').classList.add('show');
         }else{
-          this.isshow = false;
+          document.querySelector('#dynamic').classList.remove('show');
         }
       }
     },
     mounted() {
-      window.scrollTo(0, 0);
       document.addEventListener('scroll', this.scrollEvents);
     },
     unmounted() {
       document.removeEventListener('scroll', this.scrollEvents);
-    },
-    watch: {
-      tab1() {
-
-        if(window.outerWidth > 600){
-          this.isshow = false;
-          return;
-        }
-
-        let s03 = this.$refs.s03.clientHeight;
-        let s02 = this.$refs.s02.clientHeight;
-        let s01 = this.$refs.s01.clientHeight;
-
-        if(s03 < 300) {
-          s03 = s03 + s02;
-        } else {
-          s03 = s03 - s01;
-        }
-        s03 = s03 + 46;
-        if(window.scrollY > s03) {
-          window.scrollTo(0, s03);
-        }
-
-        this.scrollEvents();
-      } 
     },
     computed: {
         chartOptions() {

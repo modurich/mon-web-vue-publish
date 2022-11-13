@@ -3154,15 +3154,7 @@ button{
     }
 }
 
-.sticky_tab{
-    @media (max-width: $breakpoint-xs-max) {
-        position:sticky;
-        top:50px;
-        background: #fff;
-        z-index: 2;
-        margin:0 -12px;
-    }
-}
+
 
 .sticky_tab1{
     @media (max-width: $breakpoint-xs-max) {
@@ -3174,21 +3166,38 @@ button{
         height: 50px;
     }
 }
-.sticky_header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:16px;
-    .logo{
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        color: $txt_dk;
-        img{width:30px;height:30px;border-radius: 30px;
-            margin-right:8px
-        }
+//sticky_header와 함께 사용할경우
+.sticky_tab{
+    @media (max-width: $breakpoint-xs-max) {
+        position:sticky;
+        top:50px;
+        background: #fff;
+        z-index: 2;
+        margin:0 -12px;
     }
-    .txt01{color: $txt_blue1;font-size: 18px;}
+}
+.sticky_header{
+    display: none;
+    @media (max-width: $breakpoint-xs-max) {
+        align-items: center;
+        justify-content: space-between;
+        padding:16px;
+        display: none;
+        background-color: #fff;
+        z-index: 1;
+        &.show{display: flex;position: sticky;top:0}
+        .logo{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: $txt_dk;
+            img{width:30px;height:30px;border-radius: 30px;
+                margin-right:8px
+            }
+        }
+        .txt01{color: $txt_blue1;font-size: 18px;}
+    }
+    
 }
 .pro_header{
     display: flex;
@@ -3247,8 +3256,3 @@ button{
     background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
     background-size:contain;
 }
-.newClass {
-    border:none;
-    background-color:orange;
-  }
-
