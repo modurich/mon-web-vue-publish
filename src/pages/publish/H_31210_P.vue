@@ -1163,10 +1163,10 @@ export default {
     },
     methods: {
       scrollEvents:function(){
-        if(window.scrollTop > 50){
-          document.querySelector("#dynamic").classList.add('newClass');
+        if(window.scrollY > 50){
+          document.querySelector('#dynamic').classList.add('newClass');
         }else{
-           document.querySelecotr("#dynamic").classList.remove("newClass");
+          document.querySelector('#dynamic').classList.remove('newClass');
         }
       }
     },
