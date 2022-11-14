@@ -29,7 +29,7 @@
               </template>
             </m-chip-list>
             <!-- S banner -->
-<swiper class="swiper">
+            <swiper class="swiper">
               <swiper-slide class="slide">
                 <div class="banner_wrap">
                   <img src="~assets/pc_banner1.png" 
@@ -62,14 +62,7 @@
               </swiper-slide>
             </swiper>
             <!-- E banner -->
-<div class="between mgb32 mgt16">
-              <m-select v-model="select1" :options="options" style="width:150px" />
-              <div class="flex">
-                <m-toggle v-model="toggle1" :label="`Model is (flipped boolean)`" />
-                <span class="mgl8">보팅중만 보기</span>
-              </div>
-            </div>
-              <div class="btn_wrap l_row_l">
+            <div class="btn_wrap l_row_l mgt16">
               <m-button-3 color="primary" size="large" class="full">
                 <i class="ico_pen_w"/>포스트 작성</m-button-3>
             </div>

@@ -789,6 +789,16 @@
             <td>매수성공-백드롭</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11110_P">H_11110_P</router-link>
+            </td>
+            <td>관심그룹</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>

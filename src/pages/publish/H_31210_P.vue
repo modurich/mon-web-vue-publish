@@ -341,7 +341,7 @@
               <div class="divider" />
               <h3 class="between">
                 <span class="font16">댓글<span class="primary mgl4">23</span></span>
-                <span class="font12 txt_gray medium">최근 작성순</span>
+                <button class="font12 txt_gray medium">최근 작성순</button>
               </h3>
               <div class="contents_list_wrap">
                 <div class="mgb16">

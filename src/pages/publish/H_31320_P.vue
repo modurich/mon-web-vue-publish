@@ -42,7 +42,7 @@
             <span class="txt01">₩ 352,100</span> 
           </div>
           <!-- E show header-->
-        <div class="fixed_btn btn2">
+        <div class="fixed_btn_bottom btn2">
           <m-button-3 lined size="large" color="primary">구독취소</m-button-3 >
           <m-button-3  size="large" color="primary"><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
         </div>
@@ -379,7 +379,7 @@
               <div class="divider" />
               <h3 class="between">
                 <span class="font16">댓글<span class="primary mgl4">23</span></span>
-                <span class="font12 txt_gray medium">최근 작성순</span>
+                <button class="font12 txt_gray medium">최근 작성순</button>
               </h3>
               <!-- <div class="contents_list_wrap">
                 <div class="mgb16">

@@ -25,6 +25,7 @@
 .mgb8{margin-bottom:8px !important}
 .mgl4{margin-left:4px !important}
 .mgl8{margin-left:8px !important}
+.mgl16{margin-left:16px !important}
 .mgr4{margin-right:4px !important}
 .mgr8{margin-right:8px !important}
 .mgr10{margin-right:10px !important}
@@ -1652,6 +1653,7 @@ button{
         display:flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         margin-bottom:22px;
             .link_area{
                 display: flex;
@@ -1676,6 +1678,11 @@ button{
                 overflow: hidden;
                 margin-right:10px;
                 img{width:100%;height:100%}
+                &.small{
+                    width:40px;
+                    height:40px;
+                    border-radius: 40px;
+                }
             }
             .badge_area{span + span{margin-left:8px}}
             .tit_area{
@@ -1692,6 +1699,26 @@ button{
             .q-icon {
                 font-size: 0.7em;
                 top: 4px;
+            }
+        }
+    }
+    .footer_list{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f8f9fd;
+        border-bottom:1px solid #d4d9ea;
+        padding:8px;
+        box-sizing: border-box;
+        margin-top:12px;
+        > div{display:flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            width: calc(50% - 16px);
+            &:nth-child(2n) {
+                margin-left: 32px;
             }
         }
     }
@@ -3215,7 +3242,7 @@ button{
     .txt01{color: $txt_blue1;font-size: 18px;}
 }
 
-.fixed_btn{
+.fixed_btn_bottom{
     position: fixed !important;
     display: flex;
     bottom:0;
@@ -3254,5 +3281,16 @@ button{
     width: 24px;
     height: 24px;
     background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
+    background-size:contain;
+}
+
+.btn_setting{display: flex;
+align-items: center;color: $txt_dk;
+}
+.ico_setting{
+    display: flex;
+    width: 26px;
+    height: 26px;
+    background: url('~assets/ico_setting.svg') center right no-repeat;
     background-size:contain;
 }

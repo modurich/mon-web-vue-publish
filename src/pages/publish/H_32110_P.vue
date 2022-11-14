@@ -82,7 +82,12 @@
                 <span class="txt_area">공유</span>
               </button>
             </div>
-            <div class="mgt16">
+            <div class="divider"/>
+            <h3 class="between">
+              <span class="font16">댓글<span class="primary mgl4">23</span></span>
+              <button class="font12 txt_gray medium">최근 작성순</button>
+            </h3>
+            <div class="mgt32">
               <m-textarea :maxlength="1000" :showError="false" :minHeight="textarea1.minHeight"
               :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
               :height="50" 

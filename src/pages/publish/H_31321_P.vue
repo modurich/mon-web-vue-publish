@@ -46,18 +46,22 @@
               </div>
               <div class="voting_list_wrap">
                 <ul class="voting_list">
-                  <li class="col2">
+                  <li>
                     <span class="font12">매수가</span>
-                    <span class="txt_blue1">₩ ????? ~ ?????</span>
+                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                  </li>
+                  <li>
+                    <span class="font12">평단가</span>
+                    <span class="txt_dk">₩ 1,000,000</span>
                   </li>
                 </ul>
                 <ul class="voting_list">
                   <li>
-                    <span class="font12">투자비중</span>
+                    <span class="font12">추가비중</span>
                     <span class="txt_dk">100%</span>
                   </li>
                   <li>
-                    <span class="font12">투자기간</span>
+                    <span class="font12">추가기간</span>
                     <span class="txt_dk">100일</span>
                   </li>
                 </ul>

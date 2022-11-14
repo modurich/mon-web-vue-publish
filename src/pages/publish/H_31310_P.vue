@@ -30,7 +30,7 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
-        <div class="fixed_btn">
+        <div class="fixed_btn_bottom">
            <m-button-3 size="large" color="pink">종목공개하기(50sMON)</m-button-3 >
         </div>
         <div class="con_box">
@@ -281,7 +281,7 @@
               <div class="divider" />
               <h3 class="between">
                 <span class="font16">댓글<span class="primary mgl4">23</span></span>
-                <span class="font12 txt_gray medium">최근 작성순</span>
+                <button class="font12 txt_gray medium">최근 작성순</button>
               </h3>
               <div class="no_data_wrap">
                 <div class="ico_top">
