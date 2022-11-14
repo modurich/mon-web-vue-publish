@@ -29,7 +29,7 @@
             <div class="flex">
               <div><m-checkbox size="md" v-model="check1" label="평단가 보기"/></div>
               <button class="btn_setting mgl16"><i class="ico_setting"/> 설정
-                <q-menu auto-close :offset="[70, 10]">
+                <q-menu auto-close :offset="[60, 10]">
                     <q-list style="min-width: 80px">
                       <q-item clickable>
                         <q-item-section>자산 추가</q-item-section>

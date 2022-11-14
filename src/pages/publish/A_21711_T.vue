@@ -674,8 +674,7 @@
                 </p>
                 <div class="between mgt10">
                   <span class="ico_area">
-                    <span class="badge3 big green">최초매수</span>
-                    <span class="badge3 big orange icon"><i class="ico_result_type01"/></span>
+                    <span class="badge3 big red">자동매도</span>
                     <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
                   </span>
                   <span class="font12">2022.10.26 10:30</span>
@@ -707,7 +706,10 @@
                   삼성전자
                 </p>
                 <div class="between mgt10">
-                  <span class="badge3 big red">매도</span>
+                  <span class="ico_area">
+                    <span class="badge3 big red">매도</span>
+                    <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
+                  </span>
                   <span class="font12">2022.10.26 10:30</span>
                 </div>
                 <ul class="voting_list">
@@ -731,31 +733,168 @@
                   </li>
                 </ul>
               </div>
+              
+              <div class="voting_list_wrap line">
+                <p class="logo_wrap">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </p>
+                <div class="between mgt10">
+                  <span class="ico_area">
+                    <span class="badge3 big orange">홀딩</span>
+                  </span>
+                  <span class="font12">2022.10.26 10:30</span>
+                </div>
+                <ul class="voting_list">
+                  <li class="col2">
+                    <span class="font12">평단가</span>
+                    <span class="txt_dk">₩ 1,000,000</span>
+                  </li>
+                </ul>
+                <ul class="voting_list">
+                  <li class="col2">
+                    <span class="font12">추가기간</span>
+                    <span class="txt_dk">100일</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="voting_list_wrap line">
+                <p class="logo_wrap">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </p>
+                <div class="between mgt10">
+                  <span class="ico_area">
+                    <span class="badge3 big green">1차추매</span>
+                    <span class="badge3 big orange icon"><i class="ico_result_type01"/></span>
+                    <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
+                  </span>
+                  <span class="font12">2022.10.26 10:30</span>
+                </div>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">매수가</span>
+                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                  </li>
+                  <li>
+                    <span class="font12">평단가</span>
+                    <span class="txt_dk">₩ 1,000,000</span>
+                  </li>
+                </ul>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">추가비중</span>
+                    <span class="txt_dk">100%</span>
+                  </li>
+                  <li>
+                    <span class="font12">추가기간</span>
+                    <span class="txt_dk">100일</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="voting_list_wrap line">
+                <p class="logo_wrap">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </p>
+                <div class="between mgt10">
+                  <span class="badge3 big green">최초매수</span>
+                  <span class="font12">2022.10.26 10:30</span>
+                </div>
+                <ul class="voting_list">
+                  <li class="col2">
+                    <span class="font12">매수가</span>
+                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                  </li>
+                </ul>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">투자비중</span>
+                    <span class="txt_dk">100%</span>
+                  </li>
+                  <li>
+                    <span class="font12">투자기간</span>
+                    <span class="txt_dk">100일</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="voting_list_wrap line">
+                <p class="logo_wrap">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </p>
+                <div class="between mgt10">
+                  <span class="badge3 big gray">추매취소</span>
+                  <span class="font12">2022.10.26 10:30</span>
+                </div>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">매수가</span>
+                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                  </li>
+                  <li>
+                    <span class="font12">평단가</span>
+                    <span class="txt_dk">₩ 1,000,000</span>
+                  </li>
+                </ul>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">추가비중</span>
+                    <span class="txt_dk">100%</span>
+                  </li>
+                  <li>
+                    <span class="font12">추가기간</span>
+                    <span class="txt_dk">100일</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="voting_list_wrap line">
+                <p class="logo_wrap">
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </p>
+                <div class="between mgt10">
+                  <span class="badge3 big gray">취소</span>
+                  <span class="font12">2022.10.26 10:30</span>
+                </div>
+                <ul class="voting_list">
+                  <li class="col2">
+                    <span class="font12">매수가</span>
+                    <span class="txt_blue1">₩ ????? ~ ?????</span>
+                  </li>
+                </ul>
+                <ul class="voting_list">
+                  <li>
+                    <span class="font12">투자비중</span>
+                    <span class="txt_dk">100%</span>
+                  </li>
+                  <li>
+                    <span class="font12">투자기간</span>
+                    <span class="txt_dk">100일</span>
+                  </li>
+                </ul>
+              </div>
               <div class="btn_wrap">
                 <m-button-3 size="large" class="font16 full" color="textPrimary">더보기</m-button-3>
               </div>
               <div class="between font12 mgt32">
                 <span>전체 00개</span>
                 <span>
-                  <span class="mgr48">실현 수익률</span>
-                  <span>예측 결과</span>
+                  현재수익률(비중)
                 </span>
               </div>
               <div class="divider1 small mga16"/>
               <ul class="list_type2 w100">
                 <li>
                   <div class="l_area">
-                    <span class="ico_area mgb4">
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                    <p class="txt_tit">CJ제일제당 장기 상승</p>
                     <span class="logo_area">
                       <span>
                         <img src="~assets/prd_logo.png" alt="profile" />
                         삼성전자
                       </span>
                       <span class="font20 txt_blue1">
-                        +20.26%
+                        +15.29%
                         <span class="txt_dk font16">(5%)</span>
                       </span>
                     </span>
@@ -763,22 +902,22 @@
                 </li>
                 <li>
                   <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
                     <span class="logo_area">
                       <span>
                         <img src="~assets/prd_logo.png" alt="profile" />
                         삼성전자
                       </span>
                       <span class="font20 txt_blue1">
-                        +20.26%
-                        <span class="txt_dk font16">(5%)</span>
+                        +0.34%
+                        <span class="txt_dk font16">(10%)</span>
                       </span>
                     </span>
                   </div>
                 </li>
                 <li>
                   <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
                     <span class="logo_area">
                       <span>
                         <img src="~assets/prd_logo.png" alt="profile" />
@@ -786,6 +925,21 @@
                       </span>
                       <span class="font20 txt_red">
                         -2.58%
+                        <span class="txt_dk font16">(15%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">단기 눌림목 공략!</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_red">
+                        -1.79%
                         <span class="txt_dk font16">(5%)</span>
                       </span>
                     </span>
@@ -793,15 +947,18 @@
                 </li>
                 <li>
                   <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                    <span class="ico_area mgb4">
+                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                    </span>
+                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
                     <span class="logo_area">
                       <span>
                         <img src="~assets/prd_logo.png" alt="profile" />
                         삼성전자
                       </span>
                       <span class="font20 txt_blue1">
-                        +20.26%
-                        <span class="txt_dk font16">(5%)</span>
+                        +1000.42%
+                        <span class="txt_dk font16">(100%)</span>
                       </span>
                     </span>
                   </div>
@@ -831,22 +988,7 @@
                     </span>
                   </div>
                   <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp02.svg" alt="무효" />
+                    <img src="~assets/ico_stamp.svg" alt="성공" />
                   </div>
                 </li>
                 <li>
@@ -872,7 +1014,7 @@
                         <img src="~assets/prd_logo.png" alt="profile" />
                         삼성전자
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
+                      <span class="font20 txt_blue1">0.00%</span>
                     </span>
                   </div>
                   <div class="r_area">
@@ -887,7 +1029,25 @@
                         <img src="~assets/prd_logo.png" alt="profile" />
                         삼성전자
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
+                      <span class="font20 txt_blue1">+0.26%</span>
+                    </span>
+                  </div>
+                  <div class="r_area">
+                    <img src="~assets/ico_stamp02.svg" alt="무효" />
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="ico_area mgb4">
+                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                    </span>
+                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">+1000.42%</span>
                     </span>
                   </div>
                   <div class="r_area">
@@ -1086,7 +1246,6 @@
               </div>
               <div class="between font12">
                 <span>전체 00개</span>
-                <span>현재 달성률</span>
               </div>
               <div class="divider1 xsmall"/>
               <ul class="list_type3">
@@ -1159,7 +1318,6 @@
               </div>
               <div class="between font12">
                 <span>전체 00개</span>
-                <span>현재 달성률</span>
               </div>
               <div class="divider1 xsmall"/>
               <ul class="list_type3">
