@@ -162,19 +162,19 @@
               <div class="chart_list_wrap">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
-                  <!-- <div class="lcon_list">
+                  <!-- <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div> -->
+                  <div class="lcon_list">
                     <span class="txt_area">
                       <span class="txt01">목표가 달성률</span>
                       <span class="txt02">9999.9%</span>
                     </span>
                     <div class="img_area">
                       <img src="~assets/ico_stamp.svg" alt="성공" />
-                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                      <!-- <img src="~assets/ico_stamp01.svg" alt="실패" />
                       <img src="~assets/ico_stamp02.svg" alt="무효" />
-                      <img src="~assets/ico_stamp03.svg" alt="매수실패" /> 
+                      <img src="~assets/ico_stamp03.svg" alt="매수실패" />  -->
                     </div>
-                  </div> -->
+                  </div>
                   
                   <!-- E 차트 들어가는 곳-->
                 </div>
