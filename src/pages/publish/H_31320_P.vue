@@ -30,9 +30,6 @@
   </i18n>
 <template>
     <div class="centerarea_box1">
-        <!-- <div class="fixed_btn">
-           <m-button-3 size="large" color="primary">구독하기 (알림받기)</m-button-3 >
-        </div> -->
          <!-- S show header-->
          <div id="dynamic" class="sticky_header">
             <span class="logo">
@@ -42,6 +39,9 @@
             <span class="txt01">₩ 352,100</span> 
           </div>
           <!-- E show header-->
+          <!-- <div class="fixed_btn_bottom">
+           <m-button-3 size="large" color="primary">구독하기 (알림받기)</m-button-3 >
+        </div> -->
         <div class="fixed_btn_bottom btn2">
           <m-button-3 lined size="large" color="primary">구독취소</m-button-3 >
           <m-button-3  size="large" color="primary"><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
