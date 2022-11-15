@@ -1696,6 +1696,11 @@ button{
             }
         }
         .ico_area{
+            &.wrap{
+                text-align: right;
+                justify-content: flex-end;
+                .txt01{width:100%;margin-top:8px}
+            }
             .q-icon {
                 font-size: 0.7em;
                 top: 4px;
@@ -2118,7 +2123,7 @@ button{
         width:60px;
         height: 60px;
         margin-right:16px;
-        background: url('~assets/ico_alarm_new.svg') center right no-repeat;
+        background: url('~assets/ico_alarm_new1.svg') center right no-repeat;
         background-size:contain;
     }
 }
