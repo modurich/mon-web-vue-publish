@@ -2339,6 +2339,10 @@ button{
             width:calc(100% + 24px);
             .ico_user_pl{width:20px;height:20px;background-size: contain !important;}
             .img_area{
+                a > div{width:24px;
+                height:24px;
+                border-radius: 24px;
+                }
                 img{width:24px;
                 height:24px;
                 border-radius: 24px;
@@ -2356,8 +2360,11 @@ button{
                 }
                 .badge_area{
                     display: flex;align-items: center;
-                    span{margin-left:4px;
-                        &:first-child{margin-left:8px;}
+                    span:first-child{
+                        margin-left:4px;
+                    }
+                    span+span{
+                        margin-left:4px;
                     }
                 }
             }
