@@ -794,6 +794,76 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/A_217122_U">A_217122_U</router-link>
+            </td>
+            <td>A_217122_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217221_U">A_217221_U</router-link>
+            </td>
+            <td>A_217221_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217222_U">A_217222_U</router-link>
+            </td>
+            <td>A_217222_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217311_U">A_217311_U</router-link>
+            </td>
+            <td>A_217311_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217312_U">A_217312_U</router-link>
+            </td>
+            <td>A_217312_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217321_U">A_217321_U</router-link>
+            </td>
+            <td>A_217321_U-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_217322_U">A_217322_U</router-link>
+            </td>
+            <td>보팅성공,실패(주석처리)-백드롭</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/H_11110_P">H_11110_P</router-link>
             </td>
             <td>관심그룹</td>

@@ -80,6 +80,13 @@ const routes = [
             { path: '/publish/H_11110_P', component: () => import('pages/publish/H_11110_P.vue') },
             { path: '/publish/H_11911_T', component: () => import('pages/publish/H_11911_T.vue') },
             { path: '/publish/H_10000_P2', component: () => import('pages/publish/H_10000_P2.vue') },
+            { path: '/publish/A_217122_U', component: () => import('pages/publish/A_217122_U.vue') },
+            { path: '/publish/A_217221_U', component: () => import('pages/publish/A_217221_U.vue') },
+            { path: '/publish/A_217222_U', component: () => import('pages/publish/A_217222_U.vue') },
+            { path: '/publish/A_217311_U', component: () => import('pages/publish/A_217311_U.vue') },
+            { path: '/publish/A_217312_U', component: () => import('pages/publish/A_217312_U.vue') },
+            { path: '/publish/A_217321_U', component: () => import('pages/publish/A_217321_U.vue') },
+            { path: '/publish/A_217322_U', component: () => import('pages/publish/A_217322_U.vue') },
             
         ]
     },

@@ -67,7 +67,7 @@
                       <span class="ico_area txt_blue1 font12">+00.00%</span>
                     </li>
                     <li>
-                      <span class="txt01 txt_blue1">목표가</span>
+                      <span class="txt01">목표가</span>
                       <span class="ico_area txt_blue1 font12">＄0.0123456789</span>
                     </li>
                     <li>
@@ -81,6 +81,11 @@
                   </ul>
                   <!-- E 리스트-->
                 </div>
+              </div>
+              <div class="btn_wrap mgb16">
+                <m-button-3 lined color="red" class="full">
+                  BLASH 취소 하기
+                </m-button-3>
               </div>
               <div class="btn_wrap">
                 <m-button-3 color="green" class="full">

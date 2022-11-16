@@ -210,11 +210,11 @@ export default {
         }
         &.lined {
             background-color: $white;
-            color: $medium-grey;
-            border: 0.5px solid $medium-grey;
+            color: #ec2222;
+            border: 0.5px solid #ec2222;
             &:disabled {
                 // color: $ghost-white;
-                border: 1px solid $medium-grey;
+                border: 1px solid #ec2222;
             }
         }
     }
