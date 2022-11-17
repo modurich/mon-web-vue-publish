@@ -151,11 +151,55 @@
               <span>콘텐츠 관리</span>
               <a href="#" class="link_view">구독현황</a>
             </h3>
+            <div class="ico_content_box">
+              <i class="ico_contents"/>
+              <span class="txt_area">내가 작성,구독, 보팅, 관심등록한
+              콘텐츠를 확인할 수 있으며<br/>
+              BLASH 시그널도 보낼 수 있어요
+              </span>
+            </div>
+            <div class="btn_wrap l_row_l mgt32">
+              <m-button-3 color="primary" class="full">바로가기</m-button-3>
+            </div>
             <!-- E 콘텐츠 관리 -->
             <div class="divider"/>
-            <!-- S 통계 -->
-        
-            <div class="add_tab_tit">
+           <!-- S 통계 -->
+           <ul class="follow_info_wrap mga32">
+              <li>
+                <div class="my_profile">
+                  <div class="img_area">
+                    <img src="~assets/profile_img1.png" alt="profile"/>
+                  </div>
+                  <div class="tit_area">
+                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="badge_area">
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="follow_btn_wrap">
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                      user추가
+                      <q-menu auto-close :offset="[30, 10]">
+                        <q-list style="min-width: 80px">
+                          <q-item clickable>
+                            <q-item-section>차단해제</q-item-section>
+                          </q-item>
+                          <q-separator />
+                        </q-list>
+                      </q-menu>
+                    </button>
+                </div>
+              </li>
+              </ul>
+             <div class="divider" />
+              <div class="between">
+                <span class="font16 txt_dk bold">인사이트 작성 당시 플레이어 등급</span>
+                <span data-v-ab911258="" class="badge pl1">PL1</span>
+              </div>
+             <div class="divider" />
+             <div class="add_tab_tit">
               <h3>
                 <span>통계</span>
               </h3>
@@ -168,8 +212,11 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
-                  <span>22.09.20 ~ 22.09.20</span>
+                  <span class="font16 txt_dk">종료된 인사이트</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
                 </div>
                 <ul class="insight_list">
                     <li>
@@ -186,115 +233,62 @@
                     </li>
                     <li>
                         <span class="txt01">수익률</span>
-                        <span class="txt02 txt_red">7.84%</span>
-                        <!-- 수익률 class txt_red,txt_blue -->
+                        <span class="txt02 txt_blue1">7.84%</span>
+                        <!-- 수익률 class txt_red,txt_blue1 -->
                     </li>
                 </ul>
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
-                  row-key="category"
+                  row-key="fld04"
                   no-data-label="데이터가 존재하지 않습니다."
                   hide-bottom
                   :visible-columns="table1"
                   :rows-per-page-options="[0]" 
                   :pagination.sync="table1page"
                 >
+                  <template v-slot:header="props">
+                    <q-tr :props="porps">
+                      <q-th key="fld01" :props="props">종료일자</q-th>
+                      <q-th key="fld04" :props="props">자산</q-th>
+                      <q-th key="fld05" :props="props">예측</q-th>
+                      <q-th key="fld10" :props="props">예측결과</q-th>
+                    </q-tr>
+                  </template>
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <q-td key="date" :props="props">
-                        {{ props.row.date }}
+                      <q-td key="fld01" :props="props">
+                        {{ props.row.fld01 }}
                       </q-td>
-                      <q-td key="category" :props="props">
-                          {{ props.row.category }}
+                      <q-td key="fld04" :props="props">
+                          {{ props.row.fld04 }}
                       </q-td>
-                      <q-td key="updown" :props="props">
-                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
+                      <q-td key="fld05" :props="props">
+                        <span v-if="props.row.fld05 == 'U'" class="ico_up">상승</span>
                         <span v-else class="ico_down">하락</span>
                       </q-td>
-                      <q-td key="isSuccess" :props="props">
-                        <span v-if="props.row.isSuccess == 'S'" class="txt_blue1">성공</span>
-                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_red">실패</span>
-                        <span v-else class="txt_gray">무효</span>
+                      <q-td key="fld10" :props="props">
+                        <span v-if="props.row.fld10 == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.fld10 == 'F'" class="txt_red">실패</span>
+                        <span v-else-if="props.row.fld10 == 'N'" class="txt_brown">무효</span>
+                        <span v-else class="txt_gray">취소</span>
                       </q-td>
                     </q-tr>
                   </template>
                 </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
                 </div>
-              </div>
-              <div v-if="tab2 == 'B'">
-                <div class="radio_wrap right">
-                    <m-radio v-model="rad1" val="A" label="전체"/>
-                    <m-radio v-model="rad1" val="B" label="주식"/>
-                    <m-radio v-model="rad1" val="C" label="코인"/>
-                </div>
+                <div class="divider1" />
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
-                  <span>22.09.20 ~ 22.09.20</span>
-                </div>
-                <ul class="insight_list list3">
-                    <li>
-                        <span class="txt01">총 예측 횟수</span>
-                        <span class="txt02">27건</span>
-                    </li>
-                    <li>
-                        <span class="txt01">성공률</span>
-                        <span class="txt02">72.61%</span>
-                    </li>
-                    <li>
-                        <span class="txt01">평점</span>
-                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
-                    </li>
-                    <li>
-                        <span class="txt01">수익률</span>
-                        <span class="txt02 txt_red">3.84%</span>
-                    </li>
-                    <li>
-                        <span class="txt01">최대 익절</span>
-                        <span class="txt02 txt_red">18.05%</span>
-                    </li>
-                    <li>
-                        <span class="txt01">최대 손절</span>
-                        <span class="txt02 txt_blue">-5.01%</span>
-                        <!-- 수익률 class txt_red,txt_blue -->
-                    </li>
-                </ul>
-                <q-table
-                  :data="tbRowData"
-                  :columns="tbColInfo"
-                  row-key="category"
-                  no-data-label="데이터가 존재하지 않습니다."
-                  hide-bottom
-                  :visible-columns="table2"
-                >
-                  <template v-slot:body="props">
-                    <q-tr :props="props">
-                      <q-td key="buydate" :props="props">
-                        {{ props.row.buydate }}
-                      </q-td>
-                      <q-td key="category" :props="props">
-                        {{ props.row.category }}
-                      </q-td>
-                      <q-td key="tgtperform" :props="props">
-                        {{props.row.tgtperform}}%
-                      </q-td>
-                      <q-td key="isSuccess" :props="props">
-                        <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
-                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_blue">실패</span>
-                        <span v-else class="txt_gray">무효</span>
-                      </q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
-                </div>
-                <div class="divider1"/>
-                <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
-                  <span>22.09.20 ~ 22.09.20</span>
+                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
                 </div>
                 <div class="blash_wrap">
                   <div class="blash_chart">
@@ -324,42 +318,241 @@
                   <div class="blash_list">
                     <ul class="return_wrap">
                       <li>
-                          <span class="txt01">평가 수익률</span>
-                          <span class="txt02 txt_blue">-5.01%</span>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
                       </li>
                       <li>
-                          <span class="txt01">투자 비중</span>
-                          <span class="txt02">80%</span>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
                       </li>
                   </ul>
                   </div>
                 </div>
-                <q-table :data="tbRowData" :columns="tbColInfo" row-key="category" no-data-label="데이터가 존재하지 않습니다." hide-bottom
-                  :visible-columns="table3">
+                <q-table 
+                  :data="tbRowData" 
+                  :columns="tbColInfo" 
+                  row-key="fld04" 
+                  no-data-label="데이터가 존재하지 않습니다." 
+                  hide-bottom
+                  :visible-columns="table3"
+                  :rows-per-page-options="[0]" 
+                  :pagination.sync="table1page">
+                  <template v-slot:header="props">
+                    <q-tr :props="porps">
+                      <q-th key="fld04" :props="props">자산</q-th>
+                      <q-th key="fld03" :props="props">기간</q-th>
+                      <q-th key="fld06" :props="props">목표</q-th>
+                      <q-th key="fld05" :props="props">예측</q-th>
+                      <q-th key="fld09" :props="props">달성률</q-th>
+                    </q-tr>
+                  </template>
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <q-td key="category" :props="props">
-                        {{ props.row.category }}
+                      <q-td key="fld04" :props="props">
+                        {{ props.row.fld04 }}
                       </q-td>
-                      <q-td key="period" :props="props">
-                        <span v-if="props.row.investperiod == '단기'" style="color:#c1b7ff">{{ props.row.investperiod }}</span>
-                        <span v-else-if="props.row.investperiod == '중기'" style="color:#8673ff">{{ props.row.investperiod }}</span>
-                        <span v-else style="color:#4c34dc">{{ props.row.investperiod }}</span> / {{ props.row.holdperiod }}일
+                      <q-td key="fld03" :props="props">
+                        <span class="badge3" v-if="props.row.fld03 == '단기'" style="background:#c1b7ff">{{ props.row.fld03 }}</span>
+                        <span class="badge3" v-else-if="props.row.fld03 == '중기'" style="background:#8673ff">{{ props.row.fld03 }}</span>
+                        <span class="badge3" v-else style="background:#4c34dc">{{ props.row.fld03 }}</span>
                       </q-td>
-                      <q-td key="specific" :props="props">
-                        {{props.row.specific}}%
+                      <q-td key="fld06" :props="props">
+                        <span v-if="props.row.fld05 == 'U'" class="ico_up">{{ props.row.fld06 }}%</span>
+                        <span v-else class="ico_down">{{ props.row.fld06 }}%</span>
                       </q-td>
-                      <q-td key="perform" :props="props">
-                        {{ props.row.tgtperform }}% / 
-                        <span v-if="props.row.currperform > 0" class="txt_red">{{ props.row.currperform }}%</span>
-                        <span v-else-if="props.row.currperform < 0" class="txt_blue">{{ props.row.currperform }}%</span>
-                        <span v-else class="txt_gray">{{ props.row.currperform }}%</span>
+                      <q-td key="fld05" :props="props">
+                        <span v-if="props.row.fld05 == 'U'" class="ico_up">상승</span>
+                        <span v-else class="ico_down">하락</span>
+                      </q-td>
+                      <q-td key="fld09" :props="props">
+                        {{ props.row.fld09 }}%
                       </q-td>
                     </q-tr>
                   </template>
                 </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
+                </div>
+              </div>
+              <div v-if="tab2 == 'B'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">종료된 BLASH</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
+                </div>
+                <ul class="insight_list list3">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_blue1">3.84%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 익절</span>
+                        <span class="txt02 txt_blue1">18.05%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 손절</span>
+                        <span class="txt02 txt_red">-5.01%</span>
+                        <!-- 수익률 class txt_red,txt_blue -->
+                    </li>
+                </ul>
+                <q-table
+                  :data="tbRowData"
+                  :columns="tbColInfo"
+                  row-key="fld04"
+                  no-data-label="데이터가 존재하지 않습니다."
+                  hide-bottom
+                  :visible-columns="table2"
+                  :rows-per-page-options="[0]" 
+                  :pagination.sync="table1page"
+                >
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="fld02" :props="props">
+                        {{ props.row.fld02 }}
+                      </q-td>
+                      <q-td key="fld04" :props="props">
+                        {{ props.row.fld04 }}
+                      </q-td>
+                      <q-td key="fld06" :props="props">
+                        {{props.row.fld06}}%
+                      </q-td>
+                      <q-td key="fld10" :props="props">
+                        <span v-if="props.row.fld10 == 'S'" class="txt_blue1">성공</span>
+                        <span v-else-if="props.row.fld10 == 'F'" class="txt_red">실패</span>
+                        <span v-else-if="props.row.fld10 == 'N'" class="txt_brown">무효</span>
+                        <span v-else class="txt_gray">취소</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
+                </div>
+                <div class="divider1"/>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
+                </div>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
+                      </li>
+                      <li>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
+                      </li>
+                  </ul>
+                  </div>
+                </div>
+                <q-table 
+                  :data="tbRowData" 
+                  :columns="tbColInfo" 
+                  row-key="fld04" 
+                  no-data-label="데이터가 존재하지 않습니다." 
+                  hide-bottom
+                  :visible-columns="table4"
+                  :rows-per-page-options="[0]" 
+                  :pagination.sync="table1page"
+                  >
+                  <template v-slot:header="props">
+                    <q-tr :props="porps">
+                      <q-th key="fld04" :props="props">자산</q-th>
+                      <q-th key="fld03" :props="props">기간</q-th>
+                      <q-th key="fld06" :props="props">목표</q-th>
+                      <q-th key="fld08" :props="props">비중</q-th>
+                      <q-th key="fld12" :props="props">현재</q-th>
+                    </q-tr>
+                  </template>
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <q-td key="fld04" :props="props">
+                        {{ props.row.fld04 }}
+                      </q-td>
+                      <q-td key="fld03" :props="props">
+                        <span class="badge3" v-if="props.row.fld03 == '단기'" style="background:#c1b7ff">{{ props.row.fld03 }}</span>
+                        <span class="badge3" v-else-if="props.row.fld03 == '중기'" style="background:#8673ff">{{ props.row.fld03 }}</span>
+                        <span class="badge3" v-else style="background:#4c34dc">{{ props.row.fld03 }}</span>
+                      </q-td>
+                      <q-td key="fld06" :props="props">
+                        <span v-if="props.row.fld05 == 'U'" class="ico_up">{{ props.row.fld06 }}%</span>
+                        <span v-else class="ico_down">{{ props.row.fld06 }}%</span>
+                      </q-td>
+                      <q-td key="fld08" :props="props">
+                        {{ props.row.fld08 }}%
+                      </q-td>
+                      <q-td key="fld12" :props="props">
+                        <span v-if="props.row.fld11 == 'R'" class="txt_red">{{ props.row.fld12 }}%</span>
+                        <span v-else class="txt_blue1">{{ props.row.fld12 }}%</span>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
+                <div class="pagination_wrap">
+                  <q-pagination
+                    v-model="current"
+                    :max="5"
+                    direction-links
+                    boundary-links
+                    class="custom_type1"
+                  />
                 </div>
               </div>
             <!-- E 통계 -->
@@ -555,29 +748,31 @@ import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
 
 const tbColInfo = [
-  { name: 'date', align: 'center', label: '일자', field: 'date' },
-  { name: 'buydate', align: 'center', label: '매도일자', field: 'buydate' },
-  { name: 'category', align: 'center', label: '종목', field: 'category' },
-  { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
-  { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
-  { name: 'period', align: 'center', label: '목표 / 현재' },
-  { name: 'specific', align: 'center', label: '비중' },
-  { name: 'perform', align: 'center', label: '목표 / 현재' },
-  { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
+  { name: 'fld01', align: 'center', label: '일자', field: 'fld01' },
+  { name: 'fld02', align: 'center', label: '매도일자', field: 'fld02' },
+  { name: 'fld03', align: 'center', label: '기간', field: 'fld03' },
+  { name: 'fld04', align: 'center', label: '종목', field: 'fld04' },
+  { name: 'fld05', align: 'center', label: '상승/하락', field: 'fld05' },
+  { name: 'fld06', align: 'center', label: '목표수익률', field: 'fld06' },
+  { name: 'fld07', align: 'center', label: '현재수익률', field: 'fld07' },
+  { name: 'fld08', align: 'center', label: '비중', field: 'fld08' },
+  { name: 'fld09', align: 'center', label: '달성률', field: 'fld09' },
+  { name: 'fld10', align: 'center', label: '예측결과', field: 'fld10' },
+  { name: 'fld11', align: 'center', label: '상승/하락', field: 'fld11' },
+  { name: 'fld12', align: 'center', label: '현재', field: 'fld12' }
 ];
 const tbRowData = [
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '삼성전자', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: 'SK하이닉스', updown: 'D', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '1.25', specific: '10', investperiod: '중기', holdperiod: '9', category: '네이버', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '0', specific: '5', investperiod: '중기', holdperiod: '13', category: '현대차', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-1.28', specific: '5', investperiod: '장기', holdperiod: '16', category: '신풍제약', updown: 'D', isSuccess: 'M' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '안랩', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: '카카오', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '0.72', specific: '10', investperiod: '중기', holdperiod: '9', category: 'KT&G', updown: 'D', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '-1.28', specific: '5', investperiod: '중기', holdperiod: '13', category: '셀트리온', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '2', specific: '5', investperiod: '장기', holdperiod: '16', category: '미래에셋증권', updown: 'U', isSuccess: 'F' }
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '삼성전자', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'S',fld11: 'R',fld12: '-24.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'SK하이닉스', fld05: 'D', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S',fld11: 'B',fld12: '+4.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '네이버', fld05: 'U', fld06: '15', fld07: '1.25', fld08: '10', fld09: '9', fld10: 'S',fld11: 'R',fld12: '-24.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '현대차', fld05: 'U', fld06: '5', fld07: '0', fld08: '5', fld09: '13', fld10: 'F',fld11: 'R',fld12: '-24.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '신풍제약', fld05: 'D', fld06: '10', fld07: '-1.28', fld08: '5', fld09: '16', fld10: 'N',fld11: 'B' ,fld12: '+4.24'},
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '안랩', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'F',fld11: 'R' ,fld12: '-24.24'},
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '카카오', fld05: 'U', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'F',fld11: 'B',fld12: '+4.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'KT&G', fld05: 'D', fld06: '15', fld07: '0.72', fld08: '10', fld09: '9', fld10: 'S',fld11: 'B',fld12: '+4.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '셀트리온', fld05: 'U', fld06: '5', fld07: '-1.28', fld08: '5', fld09: '13', fld10: 'F',fld11: 'R' ,fld12: '-24.24'},
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '미래에셋증권', fld05: 'U', fld06: '10', fld07: '2', fld08: '5', fld09: '16', fld10: 'F',fld11: 'R' ,fld12: '-24.24'}
 ];
-
 
 export default {
   components: { MDialogBlank, Swiper, SwiperSlide, VClamp },
@@ -585,14 +780,15 @@ export default {
     
     data() {
         return {
+          
           table1page: {
             page: 1,
             rowsPerPage: 10
           },
-          table1: ref(['date', 'category', 'updown', 'isSuccess']),
-          table2: ref(['buydate', 'category', 'tgtperform', 'isSuccess']),
-          table3: ref(['category', 'period', 'specific', 'perform']),
-
+          table1: ref(['fld01', 'fld04', 'fld05', 'fld10']),
+          table2: ref(['fld02', 'fld04', 'fld06', 'fld10']),
+          table3: ref(['fld04', 'fld03', 'fld06', 'fld05', 'fld09']),
+          table4: ref(['fld04', 'fld03', 'fld06', 'fld08', 'fld12']),
           chartOptions: {
             colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
             chart: {
@@ -691,7 +887,7 @@ export default {
                 {label:'NFT', value:'B', icon:'photo'}
             ],
             options:[
-                'South Korea (+82)', '선택1', '선택2', '선택3', '선택4'
+                '전체', '선택1', '선택2', '선택3', '선택4'
             ],
             dailog1:ref(false),
             polcyType:ref('01'),

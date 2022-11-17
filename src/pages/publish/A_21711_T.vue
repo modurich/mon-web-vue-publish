@@ -184,6 +184,7 @@
             </div>
             <div v-if="tab2 == 'B'">
               <!-- S BLASH -->
+              
               <div class="mga32">
                 <m-select v-model="select1" :options="options" />
               </div>
@@ -194,10 +195,118 @@
                 <div class="com_message mgb32">
                   작성된 BLASH가 없어요
                 </div>
+                <div class="btn_wrap mgb32">
+                  <m-button-3 size="large" color="primary"  class="full">BLASH 작성하기</m-button-3>
+                </div>
               </div>
-              <div class="btn_wrap mgb32">
-                <m-button-3 size="large" color="primary"  class="full">BLASH 작성하기</m-button-3>
+              <!-- S 진행중 -->
+              <ul class="insight_list list3 mgt32">
+                  <li>
+                      <span class="txt01">추천중</span>
+                      <span class="txt02">4건</span>
+                  </li>
+                  <li>
+                      <span class="txt01">현재투자비중</span>
+                      <span class="txt02">40%</span>
+                  </li>
+                  <li>
+                      <span class="txt01">현재수익률</span>
+                      <span class="txt02 txt_blue1">+15.29%</span>
+                  </li>
+              </ul>
+              <div class="between font12 mgt32">
+                <span>전체 00개</span>
+                <span>
+                  현재수익률(비중)
+                </span>
               </div>
+              <div class="divider1 small mga16"/>
+              <ul class="list_type2 w100">
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">CJ제일제당 장기 상승</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +15.29%
+                        <span class="txt_dk font16">(5%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +0.34%
+                        <span class="txt_dk font16">(10%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_red">
+                        -2.58%
+                        <span class="txt_dk font16">(15%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">단기 눌림목 공략!</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_red">
+                        -1.79%
+                        <span class="txt_dk font16">(5%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="ico_area mgb4">
+                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                    </span>
+                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +1000.42%
+                        <span class="txt_dk font16">(100%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn_wrap">
+                <m-button-3 size="large" class="font16 full" color="textPrimary">더보기</m-button-3>
+              </div>
+              <!-- E 진행중 -->
+              <!-- S 종료 -->
+             
               <ul class="insight_list">
                   <li>
                       <span class="txt01">최고</span>
@@ -304,6 +413,7 @@
               <div class="btn_wrap">
                 <m-button-3 size="large" class="font16 full" color="textPrimary">더보기</m-button-3>
               </div>
+              <!-- E 종료 -->
               <!-- S BLASH -->
             </div>
             <div v-if="tab2 == 'C'">
@@ -880,7 +990,7 @@
               <div class="between font12 mgt32">
                 <span>전체 00개</span>
                 <span>
-                  현재수익률(비중)
+                  현재수익률
                 </span>
               </div>
               <div class="divider1 small mga16"/>

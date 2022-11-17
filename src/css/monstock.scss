@@ -860,7 +860,7 @@ body{
     }
      //700보다 작아질때
      @media (max-width: $breakpoint-xs-max) {
-        .blash_list{margin:32px 0;width:100%;flex: inherit;} 
+        .blash_list{margin:0 0 32px 0;width:100%;flex: inherit;} 
         .blash_chart{width:100%;flex: inherit;}  
         .regend_box{padding:0 40px 0 40px !important;}
      }
@@ -3309,5 +3309,22 @@ align-items: center;color: $txt_dk;
     width: 26px;
     height: 26px;
     background: url('~assets/ico_setting.svg') center right no-repeat;
+    background-size:contain;
+}
+.ico_content_box{
+    display: flex;
+    align-items: center;
+    margin-top:32px;
+    .txt_area{
+        font-size:16px;
+        color:$txt_dk;
+        margin-left:16px;
+    }
+}
+.ico_contents{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: url('~assets/ico_contents.svg') center right no-repeat;
     background-size:contain;
 }

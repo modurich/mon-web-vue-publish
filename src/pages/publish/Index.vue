@@ -879,16 +879,6 @@
             <td>팔로우 콘텐츠</td>
             <td></td>
         </tr> 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <router-link to="/publish/H_10000_P2">H_10000_P2</router-link>
-            </td>
-            <td>구독중 매매시그널,내가 작성한 콘텐츠</td>
-            <td></td>
-        </tr> 
       </tbody>
     </table>
   </div>
