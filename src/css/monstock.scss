@@ -3301,6 +3301,14 @@ button{
     background-size:contain;
 }
 
+.ico_alarm_off_w{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background: url('~assets/ico_alarm_off.svg') center right no-repeat;
+    background-size:contain;
+}
+
 .btn_setting{display: flex;
 align-items: center;color: $txt_dk;
 }
