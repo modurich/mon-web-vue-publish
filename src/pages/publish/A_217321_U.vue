@@ -70,12 +70,12 @@
                     <span class="ico_area txt_blue1 font12">＄0.0123456789</span>
                   </li>
                   <li>
-                    <span class="txt01">기준가</span>
-                    <span class="ico_area txt_dk font12">$ 0.0123456789</span>
+                    <span class="txt01">투자비중</span>
+                    <span class="ico_area txt_dk font12">100%</span>
                   </li>
                   <li>
-                    <span class="txt01">실패가</span>
-                    <span class="ico_area txt_red font12">$ 0.0123456789</span>
+                    <span class="txt01">투자기간</span>
+                    <span class="ico_area txt_dk font12">100일</span>
                   </li>
                 </ul>
                 <!-- E 리스트-->

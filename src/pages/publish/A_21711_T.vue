@@ -1005,7 +1005,6 @@
                       </span>
                       <span class="font20 txt_blue1">
                         +15.29%
-                        <span class="txt_dk font16">(5%)</span>
                       </span>
                     </span>
                   </div>
@@ -1020,7 +1019,6 @@
                       </span>
                       <span class="font20 txt_blue1">
                         +0.34%
-                        <span class="txt_dk font16">(10%)</span>
                       </span>
                     </span>
                   </div>
@@ -1035,7 +1033,6 @@
                       </span>
                       <span class="font20 txt_red">
                         -2.58%
-                        <span class="txt_dk font16">(15%)</span>
                       </span>
                     </span>
                   </div>
@@ -1050,7 +1047,6 @@
                       </span>
                       <span class="font20 txt_red">
                         -1.79%
-                        <span class="txt_dk font16">(5%)</span>
                       </span>
                     </span>
                   </div>
@@ -1068,7 +1064,6 @@
                       </span>
                       <span class="font20 txt_blue1">
                         +1000.42%
-                        <span class="txt_dk font16">(100%)</span>
                       </span>
                     </span>
                   </div>
@@ -1342,6 +1337,9 @@
               <m-tabs class="card_type small" v-model="tab4" :items="tabs3" />
             </div>
             <div v-if="tab4 == 'A'">
+              <div class="mga32">
+                <m-select v-model="select1" :options="options" />
+              </div>
               <!-- S 인사이트-->
               <div class="no_data_wrap">
                 <div class="ico_top pdt32">
@@ -1414,6 +1412,9 @@
                <!-- E 인사이트 -->
             </div>
             <div v-if="tab4 == 'B'">
+              <div class="mga32">
+                <m-select v-model="select1" :options="options" />
+              </div>
               <!-- S BLASH -->
               <div class="no_data_wrap">
                 <div class="ico_top pdt32">

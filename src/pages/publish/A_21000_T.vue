@@ -149,7 +149,6 @@
             <!-- S 콘텐츠 관리 -->
             <h3 class="between">
               <span>콘텐츠 관리</span>
-              <a href="#" class="link_view">구독현황</a>
             </h3>
             <div class="ico_content_box">
               <i class="ico_contents"/>
@@ -232,7 +231,7 @@
                         <span class="txt02">72.61%</span>
                     </li>
                     <li>
-                        <span class="txt01">수익률</span>
+                        <span class="txt01">평균수익률</span>
                         <span class="txt02 txt_blue1">7.84%</span>
                         <!-- 수익률 class txt_red,txt_blue1 -->
                     </li>
@@ -461,7 +460,7 @@
                 </div>
                 <div class="divider1"/>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <span class="font16 txt_dk">진행중인 BLASH</span>
                   <!-- <span>22.09.20 ~ 22.09.20</span> -->
                 </div>
                 <div class="blash_wrap">
@@ -492,12 +491,12 @@
                   <div class="blash_list">
                     <ul class="return_wrap">
                       <li>
-                          <span class="txt01">상승 예측</span>
-                          <span class="txt02">12건</span>
+                          <span class="txt01">평가 수익률</span>
+                          <span class="txt02 txt_red">-5.01%</span>
                       </li>
                       <li>
-                          <span class="txt01">하락 예측</span>
-                          <span class="txt02">45건</span>
+                          <span class="txt01">투자 비중</span>
+                          <span class="txt02">80%</span>
                       </li>
                   </ul>
                   </div>
@@ -751,7 +750,7 @@ const tbColInfo = [
   { name: 'fld01', align: 'center', label: '일자', field: 'fld01' },
   { name: 'fld02', align: 'center', label: '매도일자', field: 'fld02' },
   { name: 'fld03', align: 'center', label: '기간', field: 'fld03' },
-  { name: 'fld04', align: 'center', label: '종목', field: 'fld04' },
+  { name: 'fld04', align: 'center', label: '자산', field: 'fld04' },
   { name: 'fld05', align: 'center', label: '상승/하락', field: 'fld05' },
   { name: 'fld06', align: 'center', label: '목표수익률', field: 'fld06' },
   { name: 'fld07', align: 'center', label: '현재수익률', field: 'fld07' },

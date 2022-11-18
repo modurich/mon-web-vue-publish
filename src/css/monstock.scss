@@ -1062,8 +1062,33 @@ body{
                 border-radius: 20px;
                 margin-right: 4px;}
         }
+    } 
+}
+
+.list_type4{
+    .col1,.col2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 12px;
+        .txt02{font-size: 14px;}
     }
-    
+    .col2{
+        > div{
+            width:calc(50% - 16px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top:12px;
+        }
+    }
+    @media (max-width: $breakpoint-xs-max) {
+        .col2{
+            > div{
+                width:100%;
+            }
+        }
+    }
 }
 
 //coin_list
@@ -1613,6 +1638,19 @@ button{
         height:18px;
         margin-right:4px;
         background: url('~assets/ico_info_bk.svg') center center no-repeat;
+    }
+}
+.ico_info_gray{ 
+    color: $txt_dk;
+    display: inline-flex;
+    align-items: center;
+    &::before{
+        content:'';
+        display: inline-block;
+        width:18px;
+        height:18px;
+        margin-right:4px;
+        background: url('~assets/ico_info_gray.svg') center center no-repeat;
     }
 }
 
@@ -2793,7 +2831,22 @@ button{
 .btn_area_center{
     margin:32px 0;
     text-align: center;
-    button{
+    &.type1{
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid $com_line;
+        padding-top: 20px;
+        button,a{
+            border:0 !important;
+            box-sizing: border-box;
+            padding:10px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    button,a{
         text-align: center;
         width:70px;
         height: 70px;
@@ -2809,6 +2862,18 @@ button{
         .btn_share{
             background: url('~assets/btn_share.svg')  no-repeat center center; 
         }
+        .btn_heart{
+            background: url('~assets/btn_heart.svg')  no-repeat center center; 
+        }
+        .btn_write{
+            background: url('~assets/btn_write.svg')  no-repeat center center; 
+        }
+        .btn_chart{
+            background: url('~assets/btn_chart.svg')  no-repeat center center; 
+        }
+        .btn_naver{
+            background: url('~assets/btn_naver.png')  no-repeat center center; 
+        }
         &.active{
             border:1px solid $primary;
             color: $primary;
@@ -2821,11 +2886,13 @@ button{
         }
        
     }
-    .btn_bookmark,.btn_thumbsUp,.btn_share{
+    .txt_area{display: block;width:100%;}
+    .btn_naver,.btn_bookmark,.btn_thumbsUp,.btn_share,.btn_chart,.btn_write,.btn_heart{
         margin:0 auto;
         width:24px;
         height: 24px;
         display: block;
+        background-size: contain !important;
     }
 }
 
@@ -3298,6 +3365,14 @@ button{
     width: 24px;
     height: 24px;
     background: url('~assets/ico_alarm_on_w.svg') center right no-repeat;
+    background-size:contain;
+}
+
+.ico_alarm_off_w{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background: url('~assets/ico_alarm_off_w.svg') center right no-repeat;
     background-size:contain;
 }
 

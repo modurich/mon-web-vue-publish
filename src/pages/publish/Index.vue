@@ -879,6 +879,16 @@
             <td>팔로우 콘텐츠</td>
             <td></td>
         </tr> 
+        <tr>
+            <td>7. 프로필2(미션, 알림, 멤버십) / 홈(발견)</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_51211_T">A_51211_T</router-link>
+            </td>
+            <td>종목상세</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>
