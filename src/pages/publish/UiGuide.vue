@@ -37,85 +37,85 @@
         </ul>
         <p class="h2">list2</p>
         <ul class="list_type2 w100">
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">CJ제일제당 장기 상승</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_blue1">
-                        +15.29%
-                        <span class="txt_dk font16">(5%)</span>
-                      </span>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_blue1">
-                        +0.34%
-                        <span class="txt_dk font16">(10%)</span>
-                      </span>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_red">
-                        -2.58%
-                        <span class="txt_dk font16">(15%)</span>
-                      </span>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">단기 눌림목 공략!</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_red">
-                        -1.79%
-                        <span class="txt_dk font16">(5%)</span>
-                      </span>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <span class="ico_area mgb4">
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
-                      </span>
-                      <span class="font20 txt_blue1">
-                        +1000.42%
-                        <span class="txt_dk font16">(100%)</span>
-                      </span>
-                    </span>
-                  </div>
-                </li>
-              </ul>
+          <li>
+            <div class="l_area">
+              <p class="txt_tit">CJ제일제당 장기 상승</p>
+              <span class="logo_area">
+                <span>
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>
+                <span class="font20 txt_blue1">
+                  +15.29%
+                  <span class="txt_dk font16">(5%)</span>
+                </span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="l_area">
+              <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
+              <span class="logo_area">
+                <span>
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>
+                <span class="font20 txt_blue1">
+                  +0.34%
+                  <span class="txt_dk font16">(10%)</span>
+                </span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="l_area">
+              <p class="txt_tit">고려산업, 식량 위기 테마</p>
+              <span class="logo_area">
+                <span>
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>
+                <span class="font20 txt_red">
+                  -2.58%
+                  <span class="txt_dk font16">(15%)</span>
+                </span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="l_area">
+              <p class="txt_tit">단기 눌림목 공략!</p>
+              <span class="logo_area">
+                <span>
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>
+                <span class="font20 txt_red">
+                  -1.79%
+                  <span class="txt_dk font16">(5%)</span>
+                </span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="l_area">
+              <span class="ico_area mgb4">
+                <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+              </span>
+              <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
+              <span class="logo_area">
+                <span>
+                  <img src="~assets/prd_logo.png" alt="profile" />
+                  삼성전자
+                </span>
+                <span class="font20 txt_blue1">
+                  +1000.42%
+                  <span class="txt_dk font16">(100%)</span>
+                </span>
+              </span>
+            </div>
+          </li>
+        </ul>
         <ul class="list_type2">
           <li>
             <div class="l_area v_center">

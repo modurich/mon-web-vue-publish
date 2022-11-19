@@ -166,7 +166,7 @@
         .m-tabs-item {
             height: 34px;
             font-size: 14px;
-            flex: 1;
+            flex: auto;
             min-width: 60px;
             border: none;
             margin: 0 1px;
@@ -176,7 +176,7 @@
         .m-tabs-item {
             height: 58px;
             font-size: 18px;
-            flex: 1;
+            flex: auto;
             min-width: 80px;
             border: none;
             margin: 0 1px;
@@ -185,6 +185,12 @@
     &.card_type{
         display: inline-flex;
         border-bottom: 0;
+        &.small{
+            button{
+                min-width: 0;
+                padding:0 10px;
+            }
+        }
         .m-tabs-item.active {
             color: #fff !important;
             font-weight: 500;
@@ -192,7 +198,7 @@
             border-radius: 8px;
             background: linear-gradient(to right, #8673ff 0%, #5a3ffa 100%);
         }
-        button{padding:0 10px}
+        button{padding:0 10px;}
     }
     &.box_type{
         .m-tabs-item.active {
@@ -238,6 +244,12 @@
 
 //ranking
 .ranking_slide{
+    &.ico_box{
+        .q-carousel__slide{margin:0 !important;
+        padding: 0 !important;
+        }
+    }
+    .view_box{width: 100%;}
     .q-carousel__arrow{
         align-items: flex-end !important;
         font-size: 28px;
@@ -469,6 +481,12 @@
     }
 }
 .accordion_type1{
+    &.small{
+        .q-item__label{font-weight: 700;
+            font-size: 12px;
+            color: $txt_gray;
+        }
+    }
     .q-item {
         padding: 8px 0px;
     }

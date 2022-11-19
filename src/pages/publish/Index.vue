@@ -899,6 +899,106 @@
             <td>종목상세</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_30000_P">A_30000_P</router-link>
+            </td>
+            <td>혜택</td>
+            <td>좀 더 해야함</td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_31000_P">A_31000_P</router-link>
+            </td>
+            <td>럭키박스 내역</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_61000_P">A_61000_P</router-link>
+            </td>
+            <td>카드</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_61100_P">A_61100_P</router-link>
+            </td>
+            <td>무통장입금 안내</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_62000_P">A_62000_P</router-link>
+            </td>
+            <td>결제내역</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_63000_P">A_63000_P</router-link>
+            </td>
+            <td>멤버십 이용정보</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_63100_P">A_63100_P</router-link>
+            </td>
+            <td>결제내역 상세</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_63200_P">A_63200_P</router-link>
+            </td>
+            <td>결제취소</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_63300_P">A_63300_P</router-link>
+            </td>
+            <td>결제 취소 완료</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_41000_P">A_41000_P</router-link>
+            </td>
+            <td>알림</td>
+            <td></td>
+        </tr> 
       </tbody>
     </table>
   </div>

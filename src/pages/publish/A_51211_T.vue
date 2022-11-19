@@ -167,6 +167,73 @@
               </div>
               <div class="divider"/>
               <h3 class="between mgb32 mgt16">
+                <span class="font16">수급 정보</span>
+              </h3>
+              <div class="half_select mgt16 mgb32">
+                <m-select v-model="select1" :options="options" />
+              </div>
+              <div class="accordion_wrap">
+                <button class="tit_btn txt_blue1">999,999,999 주</button>
+                <q-expansion-item
+                  class="accordion_type1 small"
+                  expand-separator
+                  default-opened
+                  label="기관 순매수"
+                >
+                <div class="list_type4 bg_gray">
+                  <div class="col2">
+                    <div>
+                      <span class="txt01">금융투자</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">보험</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">투자신탁</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">은행</span>
+                      <span class="txt02 txt_dk">- 999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">사모펀드</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">기타금융</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">연기금</span>
+                      <span class="txt02 txt_dk">- 999,999,999</span>
+                    </div>
+                    <div>
+                      <span class="txt01">국가</span>
+                      <span class="txt02 txt_dk">999,999,999</span>
+                    </div>
+                  </div>
+                </div>
+                </q-expansion-item>
+              </div>
+              <div class="list_type4 mgt16">
+                <div class="col1">
+                  <span class="txt01">외국인 순매수</span>
+                  <span class="txt02 txt_red">- 999,999,999 주</span>
+                </div>
+                <div class="col1">
+                  <span class="txt01">개인 순매수</span>
+                  <span class="txt02 txt_blue1">999,999,999 주</span>
+                </div>
+                <div class="col1">
+                  <span class="txt01">기타 순매수</span>
+                  <span class="txt02 txt_red">- 999,999,999 주</span>
+                </div>
+              </div>
+              <div class="divider"/>
+              <h3 class="between mgb32 mgt16">
                 <span class="font16">시세 정보</span>
               </h3>
               <div class="list_type4">
