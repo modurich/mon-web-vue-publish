@@ -6,25 +6,23 @@
           <div class="box_contents pdt16"> 
                <!--S 투자 리스트-->
                <div class="invest_wrap">
-                <div class="between">
-                  <span class="badge_area">
-                    <span class="badge3 small red">정리매매</span>
-                  </span>
+                <div class="right mgb4">
                   <span class="font10 primary">장중 / 실시간</span>
                 </div>
                 <div class="pro_area">
                   <p class="logo_wrap">
-                    <span class="logo mgt4"><img src="~assets/prd_logo.png" alt="" /></span>
+                    <span class="logo mgt4"><img src="~assets/sb_bitcoin.svg" alt="" /></span>
                     <span class="txt_area">
-                      <span class="txt01">삼성전자 우</span>
-                      <span class="txt02">코스닥 반도치 087600</span>
+                      <span class="txt01">Bitcoin</span>
+                      <span class="txt02">BTC</span>
                     </span>
                   </p>
                   <p class="txt_wrap">
                     <span class="txt_area txt_blue1">
-                      <span class="txt01">₩ 352,100</span>
+                      <span class="txt01">$ 0.1234567890</span>
+                      <span class="font12 txt_gray">₩ 3,000,000</span>
                       <span class="ico_area"><span class="tag_blue small">+4.26%</span></span>
-                      <span class="txt02">▲ 2,000</span>
+                      <span class="txt02">▲ 0.1234567890</span>
                     </span>
                     <span class="bar_area">
                       <span class="line_bar_wrap blue">
@@ -41,12 +39,8 @@
               <!--E 투자 리스트-->
               <div class="btn_area_center type1">
                 <button>
-                  <i class="btn_naver"/>
-                  <span class="txt_area">네이버금융</span>
-                </button>
-                <button>
-                  <i class="btn_chart"/>
-                  <span class="txt_area">차트</span>
+                  <i class="btn_coinmarket"/>
+                  <span class="txt_area">코인마켓캡</span>
                 </button>
                 <button>
                   <i class="btn_share"/>
@@ -61,6 +55,7 @@
                   <span class="txt_area">작성</span>
                 </a>
               </div>
+              <div class="right mgt32 mgb32"><img src="~assets/coinmarket_logo.svg" alt="logo"/></div>
             </div>
             <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
@@ -142,27 +137,19 @@
                 <span class="font16">오늘의 거래</span>
               </h3>
               <div class="list_type4">
-                <div class="col1">
-                  <span class="txt01">오늘 시가</span>
-                  <span class="txt02 txt_dk">₩2,360,200</span>
-                </div>
                 <div class="col2">
                   <div>
-                    <span class="txt01">오늘 고가</span>
-                    <span class="txt02 txt_blue1">₩2,360,200</span>
+                    <span class="txt01">24시간 고가</span>
+                    <span class="txt02 txt_blue1">$ 0.0000001234</span>
                   </div>
                   <div>
-                    <span class="txt01">오늘 저가</span>
-                    <span class="txt02 txt_red">₩2,360,200</span>
+                    <span class="txt01">24시간 저가</span>
+                    <span class="txt02 txt_red">$ 0.0000001234</span>
                   </div>
-                  <div>
-                    <span class="txt01">1일 거래량</span>
-                    <span class="txt02 txt_dk">1,100,000천 주</span>
-                  </div>
-                  <div>
-                    <span class="txt01">1일 거래대금</span>
-                    <span class="txt02 txt_dk">1,000,000,000 원</span>
-                  </div>
+                </div>
+                <div class="col1">
+                  <span class="txt01">24시간 거래대금</span>
+                  <span class="txt02 txt_dk">$ 9,999,999 M</span>
                 </div>
               </div>
               <div class="divider"/>
@@ -172,16 +159,32 @@
               <div class="list_type4">
                 <div class="col1">
                   <span class="txt01">전일 종가</span>
-                  <span class="txt02 txt_dk">₩2,360,200</span>
+                  <span class="txt02 txt_dk">$ 0.0000001234</span>
                 </div>
                 <div class="col2">
                   <div>
-                    <span class="txt01">52주 최고가</span>
-                    <span class="txt02 txt_blue1">₩2,360,200</span>
+                    <span class="txt01">1개월 고가</span>
+                    <span class="txt02 txt_blue1">$ 0.0000001234</span>
                   </div>
                   <div>
-                    <span class="txt01">52주 최저가</span>
-                    <span class="txt02 txt_red">₩2,360,200</span>
+                    <span class="txt01">1개월 저가</span>
+                    <span class="txt02 txt_red">$ 0.0000001234</span>
+                  </div>
+                  <div>
+                    <span class="txt01">1년 고가</span>
+                    <span class="txt02 txt_blue1">$ 0.0000001234</span>
+                  </div>
+                  <div>
+                    <span class="txt01">1년 저가</span>
+                    <span class="txt02 txt_red">$ 0.0000001234</span>
+                  </div>
+                  <div>
+                    <span class="txt01">역대 고가</span>
+                    <span class="txt02 txt_blue1">$ 0.0000001234</span>
+                  </div>
+                  <div>
+                    <span class="txt01">역대 저가</span>
+                    <span class="txt02 txt_red">$ 0.0000001234</span>
                   </div>
                 </div>
               </div>
@@ -193,57 +196,139 @@
                 <div class="col2">
                   <div>
                     <span class="txt01">시가 총액</span>
-                    <span class="txt02 txt_dk">33,480,383억 원</span>
+                    <span class="txt02 txt_dk">$ 9,999,999 M</span>
                   </div>
                   <div>
                     <span class="txt01">시총 순위</span>
-                    <span class="txt02"><span class="txt_dk">999 위</span> / 3660</span>
+                    <span class="txt02 txt_dk">999 위</span>
                   </div>
                   <div>
-                    <span class="txt01">상장 주식수</span>
-                    <span class="txt02 txt_dk">1,596,978만 주</span>
+                    <span class="txt01">도미넌스</span>
+                    <span class="txt02 txt_dk">0.0001 %</span>
                   </div>
                   <div>
-                    <span class="txt01">외국인 보유율</span>
-                    <span class="txt02 txt_dk">99.99%</span>
+                    <span class="txt01">총 공급</span>
+                    <span class="txt02 txt_dk">978억 개</span>
                   </div>
-                  <div>
-                    <span class="txt01">PER</span>
-                    <span class="txt02 txt_dk">999.99 배</span>
-                  </div>
-                  <div>
-                    <span class="txt01">PBR</span>
-                    <span class="txt02 txt_dk">999.99 배</span>
-                  </div>
-                  <div>
-                    <span class="txt01">EPS</span>
-                    <span class="txt02 txt_dk">999,777 원</span>
-                  </div>
-                  <div>
-                    <span class="txt01">BPS</span>
-                    <span class="txt02 txt_dk">999,999 원</span>
-                  </div>
+                </div>
+                <div class="col1">
+                  <span class="txt01">유통 공급량</span>
+                  <span class="txt02 txt_dk">6,978만 개</span>
                 </div>
               </div>
+              <div class="right mgt32"><img src="~assets/coinmarket_logo.svg" alt="logo"/></div>
               <div class="divider"/>
               <h3 class="between mgb32 mgt16">
-                <span class="font16">배당 정보</span>
+                <span class="font16">🏢 홈페이지</span>
               </h3>
-              <div class="list_type4">
-                <div class="col1">
-                  <span class="txt01">주당 배당금</span>
-                  <span class="txt02 txt_dk">999,999 원</span>
-                </div>
-                <div class="col2">
-                  <div>
-                    <span class="txt01">배당 수익률</span>
-                    <span class="txt02 txt_dk">99.99%</span>
+              <ul class="list_type1">
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+              </ul>
+              <div class="divider"/>
+              <h3 class="between mgb32 mgt16">
+                <span class="font16">📖 백서</span>
+              </h3>
+              <ul class="list_type1">
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+              </ul>
+              <div class="divider"/>
+              <h3 class="between mgb32 mgt16">
+                <span class="font16">🌏 익스플로러</span>
+              </h3>
+              <ul class="list_type1">
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+              </ul>
+              <div class="divider"/>
+              <h3 class="between mgb32 mgt16">
+                <span class="font16">📢 공지 채널</span>
+              </h3>
+              <ul class="list_type1">
+                <li>https://www.ethereum.org/</li>
+                <li>https://www.ethereum.org/</li>
+              </ul>
+              <div class="divider"/>
+              <h3 class="between mgb32 mgt16">
+                <span class="font16">🏦 거래소</span>
+              </h3>
+              <ul class="list_type2 w100 no_line">
+                <li>
+                  <div class="l_area">
+                    <span class="logo_area font12">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="Binance" />
+                        <span class="txt_dk font14 mgl16">Binance</span>
+                        <span class="mgl16">BTC/USDT</span>
+                      </span>
+                      <span>
+                        15858.20002945
+                      </span>
+                    </span>
                   </div>
-                  <div>
-                    <span class="txt01">배당률 순위</span>
-                    <span class="txt02"><span class="txt_dk">999 위</span> / 3660</span>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="logo_area font12">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="CoinW" />
+                        <span class="txt_dk font14 mgl16">CoinW</span>
+                        <span class="mgl16">BTC/USDT</span>
+                      </span>
+                      <span>
+                        15858.20002945
+                      </span>
+                    </span>
                   </div>
-                </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="logo_area font12">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="CoinW" />
+                        <span class="txt_dk font14 mgl16">CoinW</span>
+                        <span class="mgl16">BTC/USDT</span>
+                      </span>
+                      <span>
+                        15858.20002945
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="logo_area font12">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="CoinW" />
+                        <span class="txt_dk font14 mgl16">CoinW</span>
+                        <span class="mgl16">BTC/USDT</span>
+                      </span>
+                      <span>
+                        15858.20002945
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="logo_area font12">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="CoinW" />
+                        <span class="txt_dk font14 mgl16">CoinW</span>
+                        <span class="mgl16">BTC/USDT</span>
+                      </span>
+                      <span>
+                        15858.20002945
+                      </span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn_wrap mgt32">
+                <m-button-3 lined color="primary" size="large" class="full">전체보기</m-button-3>
               </div>
             </div>
             <div class="tab_contents" v-if="tab1 == 'B'">

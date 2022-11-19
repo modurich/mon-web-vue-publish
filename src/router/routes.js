@@ -88,6 +88,7 @@ const routes = [
             { path: '/publish/A_217321_U', component: () => import('pages/publish/A_217321_U.vue') },
             { path: '/publish/A_217322_U', component: () => import('pages/publish/A_217322_U.vue') },
             { path: '/publish/A_51211_T', component: () => import('pages/publish/A_51211_T.vue') },
+            { path: '/publish/A_51221_T', component: () => import('pages/publish/A_51221_T.vue') },
             
         ]
     },

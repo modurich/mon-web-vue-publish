@@ -992,6 +992,9 @@ body{
             width:100%;
         }
     }
+    &.no_line{
+        li{border-bottom:0;padding-bottom:0}
+    }
     li{
         display:flex;
         justify-content: space-between;
@@ -1080,12 +1083,15 @@ body{
             align-items: center;
             justify-content: space-between;
             margin-top:12px;
+            &:nth-child(1),&:nth-child(2){margin-top:0}
         }
     }
+    .col2 + .col1,.col1 + .col2{margin-top:12px;}
     @media (max-width: $breakpoint-xs-max) {
         .col2{
             > div{
                 width:100%;
+                &:nth-child(2){margin-top:12px}
             }
         }
     }
@@ -2845,6 +2851,7 @@ button{
             flex-wrap: wrap;
             justify-content: center;
         }
+        .txt_area{font-size: 10px;}
     }
     button,a{
         text-align: center;
@@ -2874,6 +2881,9 @@ button{
         .btn_naver{
             background: url('~assets/btn_naver.png')  no-repeat center center; 
         }
+        .btn_coinmarket{
+            background: url('~assets/btn_coinmarket.svg')  no-repeat center center; 
+        }
         &.active{
             border:1px solid $primary;
             color: $primary;
@@ -2886,8 +2896,8 @@ button{
         }
        
     }
-    .txt_area{display: block;width:100%;}
-    .btn_naver,.btn_bookmark,.btn_thumbsUp,.btn_share,.btn_chart,.btn_write,.btn_heart{
+    .txt_area{display: block;width:100%;font-size: 12px;margin-top:3px}
+    .btn_naver,.btn_bookmark,.btn_thumbsUp,.btn_share,.btn_chart,.btn_write,.btn_heart,.btn_coinmarket{
         margin:0 auto;
         width:24px;
         height: 24px;
@@ -3066,12 +3076,15 @@ button{
             display: flex;
             .txt_area{
                 text-align: right;
-                > span{display: block;}
+                > span{display: block;margin-bottom: 4px;}
                 .txt01{font-size: 18px;}
                 .txt02{font-size: 12px;}
                 .ico_area{margin:4px 0 2px 0}
             }
-            .bar_area{margin-left:8px}
+            .bar_area{margin-left:8px;
+                align-items: center;
+                display: flex;
+            }
         }
         .logo_wrap{
             display: flex;

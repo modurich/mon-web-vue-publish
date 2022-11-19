@@ -527,7 +527,7 @@
                 <router-link to="/publish/H_10000_P">H_10000_P</router-link>
             </td>
             <td>내종목,발견</td>
-            <td></td>
+            <td>accodion</td>
         </tr> 
         <tr>
             <td></td>
@@ -885,6 +885,16 @@
             <td></td>
             <td>
                 <router-link to="/publish/A_51211_T">A_51211_T</router-link>
+            </td>
+            <td>종목상세</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_51221_T">A_51221_T</router-link>
             </td>
             <td>종목상세</td>
             <td></td>

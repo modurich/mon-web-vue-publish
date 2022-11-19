@@ -22,6 +22,160 @@
           </div>
         </div>
       </div> -->
+      <p class="h1_type">list</p>
+      <div class="box_wrap">
+        <p class="h2">list1</p>
+        <ul class="list_type1 font12">
+          <li>
+            <span class="txt01 secondary">홀딩</span>
+            <span class="txt02">YYYY.MM.DD hh:mm:ss</span>
+          </li>
+          <li>
+            <span class="txt01 txt_blue1">최초매수</span>
+            <span class="txt02">YYYY.MM.DD hh:mm:ss</span>
+          </li>
+        </ul>
+        <p class="h2">list2</p>
+        <ul class="list_type2 w100">
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">CJ제일제당 장기 상승</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +15.29%
+                        <span class="txt_dk font16">(5%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +0.34%
+                        <span class="txt_dk font16">(10%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_red">
+                        -2.58%
+                        <span class="txt_dk font16">(15%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <p class="txt_tit">단기 눌림목 공략!</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_red">
+                        -1.79%
+                        <span class="txt_dk font16">(5%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="l_area">
+                    <span class="ico_area mgb4">
+                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                    </span>
+                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
+                    <span class="logo_area">
+                      <span>
+                        <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                      </span>
+                      <span class="font20 txt_blue1">
+                        +1000.42%
+                        <span class="txt_dk font16">(100%)</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+        <ul class="list_type2">
+          <li>
+            <div class="l_area v_center">
+              <span class="font12">
+                실현 수익률
+              </span>
+              <span class="mgl16 font24 txt_blue1">
+                15.00%
+              </span>
+            </div>
+            <div class="r_area">
+              <img src="~assets/ico_stamp.svg" alt="성공" />
+            </div>
+          </li>
+        </ul>
+        <p class="h2">list3</p>
+        <ul class="list_type3 mgt32">
+          <li>
+            <div class="tit_wrap">
+              <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+              <span class="badge3 green">성공</span>
+            </div>
+            <div class="logo_area">
+              <img src="~assets/prd_logo.png" alt="profile" />
+                삼성전자
+            </div>
+            <div class="txt_area">
+              <span class="txt01">sMON보상 / 보팅량</span>
+              <span class="txt_box">
+                <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p class="h2">list4</p>
+        <div class="list_type4">
+          <div class="col1">
+            <span class="txt01">오늘 시가</span>
+            <span class="txt02 txt_dk">₩2,360,200</span>
+          </div>
+          <div class="col2">
+            <div>
+              <span class="txt01">오늘 고가</span>
+              <span class="txt02 txt_blue1">₩2,360,200</span>
+            </div>
+            <div>
+              <span class="txt01">오늘 저가</span>
+              <span class="txt02 txt_red">₩2,360,200</span>
+            </div>
+            <div>
+              <span class="txt01">1일 거래량</span>
+              <span class="txt02 txt_dk">1,100,000천 주</span>
+            </div>
+            <div>
+              <span class="txt01">1일 거래대금</span>
+              <span class="txt02 txt_dk">1,000,000,000 원</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <p class="h1_type">ico</p>
       <div class="box_wrap">
         <p class="h2">etc</p>
