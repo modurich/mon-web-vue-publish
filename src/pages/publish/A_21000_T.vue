@@ -236,6 +236,7 @@
                         <!-- 수익률 class txt_red,txt_blue1 -->
                     </li>
                 </ul>
+                <!-- 
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
@@ -284,6 +285,10 @@
                     class="custom_type1"
                   />
                 </div>
+                -->
+                <default-table tbl-type="1"/>
+
+
                 <div class="divider1" />
                 <div class="l_row_l between">
                   <span class="font16 txt_dk">진행중인 인사이트</span>
@@ -327,6 +332,7 @@
                   </ul>
                   </div>
                 </div>
+                <!--
                 <q-table 
                   :data="tbRowData" 
                   :columns="tbColInfo" 
@@ -378,6 +384,8 @@
                     class="custom_type1"
                   />
                 </div>
+                -->
+                <default-table tbl-type="2"/>
               </div>
               <div v-if="tab2 == 'B'">
                 <div class="radio_wrap right">
@@ -419,6 +427,7 @@
                         <!-- 수익률 class txt_red,txt_blue -->
                     </li>
                 </ul>
+                <!--
                 <q-table
                   :data="tbRowData"
                   :columns="tbColInfo"
@@ -458,6 +467,10 @@
                     class="custom_type1"
                   />
                 </div>
+                -->
+
+                <default-table tbl-type="3"/>
+
                 <div class="divider1"/>
                 <div class="l_row_l between">
                   <span class="font16 txt_dk">진행중인 BLASH</span>
@@ -501,6 +514,7 @@
                   </ul>
                   </div>
                 </div>
+                <!--
                 <q-table 
                   :data="tbRowData" 
                   :columns="tbColInfo" 
@@ -553,6 +567,11 @@
                     class="custom_type1"
                   />
                 </div>
+                -->
+
+                <default-table :tbl-type="4"/>
+
+
               </div>
             <!-- E 통계 -->
             <!-- E 마이페이지-->
@@ -745,7 +764,9 @@ import MDialogBlank from 'src/components/MDialogBlank.vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
+import DefaultTable from 'src/components/DefaultTeble.vue';
 
+/*
 const tbColInfo = [
   { name: 'fld01', align: 'center', label: '일자', field: 'fld01' },
   { name: 'fld02', align: 'center', label: '매도일자', field: 'fld02' },
@@ -772,22 +793,26 @@ const tbRowData = [
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '셀트리온', fld05: 'U', fld06: '5', fld07: '-1.28', fld08: '5', fld09: '13', fld10: 'F',fld11: 'R' ,fld12: '-24.24'},
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '미래에셋증권', fld05: 'U', fld06: '10', fld07: '2', fld08: '5', fld09: '16', fld10: 'F',fld11: 'R' ,fld12: '-24.24'}
 ];
-
+*/
 export default {
-  components: { MDialogBlank, Swiper, SwiperSlide, VClamp },
+  components: { MDialogBlank, Swiper, SwiperSlide, VClamp, DefaultTable },
     name: 'A_10000_P',
     
     data() {
         return {
-          
+          /*
           table1page: {
             page: 1,
             rowsPerPage: 10
           },
+
           table1: ref(['fld01', 'fld04', 'fld05', 'fld10']),
           table2: ref(['fld02', 'fld04', 'fld06', 'fld10']),
           table3: ref(['fld04', 'fld03', 'fld06', 'fld05', 'fld09']),
           table4: ref(['fld04', 'fld03', 'fld06', 'fld08', 'fld12']),
+          tbColInfo,
+          tbRowData,
+          */
           chartOptions: {
             colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
             chart: {
@@ -925,8 +950,6 @@ export default {
                     }
                 }
             },
-          tbColInfo,
-          tbRowData,
           snipContent: ref(`안녕하세요 경제와 금융 분야를 공부하다 보니, 재테크에 관한 지식이 많아졌습니다. 그래서 개인적으로는 돈을 모으는 것보다 잘 운용하는 것이 더 중요하다는 생각을 하게 되었습니다. 
 실제로 대학에 재학하던 당시에 크고 속에서 희망의 가슴이 바로 붙잡아 있는 별과 것이다. 얼마나 방황하였으며, 사랑의 청춘의 천지는 생생하며, 물방아 더운지라 아니다. 영락과 쓸쓸한 같이, 얼음이 청춘 타오르고 이것이다. 사랑의 곳으로 인생의
 황금시대의 그들은 속에서 이것이다. 있는 긴지라 싹이 인생을 얼마나 것이다. 같이, 안고, 기쁘며, 보라. 청춘 생명을 공자는 싸인 사막이다. 우리의 뜨고, 하는 역사를 것이다. 피고 청춘의 이상은 못할 봄바람이다.
