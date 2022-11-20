@@ -4,8 +4,7 @@
         <h2 class="line_type">실시간 순위 TOP 100</h2>
         <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
           <div class="tab_contents" v-if="tab1 == 'A'">
-            <!-- S 내종목 -->
-              <!-- S 관심자산 -->
+            <!-- S 전체 -->
               <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
               <div v-if="tab2 == 'A'">
                 <ul class="product_list">
@@ -108,11 +107,14 @@
                 contents2
               </div>
             </div>
-            <!-- E 관심자산 -->
-           <!-- E 내종목 -->
+           <!-- E 전체 -->
           <div class="tab_contents" v-if="tab1 == 'B'">
-            <!--S 발견-->
-            <!--E 발견-->
+            <!--S 주식-->
+            <!--E 주식-->
+          </div>
+          <div class="tab_contents" v-if="tab1 == 'C'">
+            <!--S 코인-->
+            <!--E 코인-->
           </div>
       </div>
   </div>
@@ -137,7 +139,7 @@ data() {
         tabs: [
           { label: '전체', value: 'A', icon: '' },
           { label: '주식', value: 'B', icon: '' },
-          { label: '코인', value: 'B', icon: '' },
+          { label: '코인', value: 'C', icon: '' },
          
         ],
         tab2: ref('A'),
