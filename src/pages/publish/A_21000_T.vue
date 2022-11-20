@@ -569,7 +569,7 @@
                 </div>
                 -->
 
-                <default-table :tbl-type="4"/>
+                <default-table tbl-type="4"/>
 
 
               </div>
