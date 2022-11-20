@@ -40,19 +40,19 @@
                 <!-- <m-button-3  color="primary" size="small">로그인</m-button-3> -->
             </div>
         </div>
-        <!-- <div class="top_banner_wrap">
+        <div class="top_banner_wrap" v-if="isBanner">
             <div class="box_wrap">
                 📢 의제 투표가 진행중입니다. 지금 투표에 참여하여 몬스탁의 주요 의제를 직접 결정하고 활동점수도 받으세요.
-                <button class="ico_close_w"/>
+                <button class="ico_close_w" @click="isBanner = false" />
             </div>
-        </div> -->
-        <div class="top_banner_wrap bg_dk">
+        </div>
+        <!-- <div class="top_banner_wrap bg_dk">
             <a href="javascript:void(0)" role="button" class="flex">
                 <div class="box_wrap">
                     <img src="~assets/logo.svg" width="24px" height="24px" alt="monstock logo" class="mgr16"/>몬스탁 앱 설치
                 </div>
             </a>
-        </div>
+        </div> -->
     </header>
 </template>
 
@@ -61,6 +61,7 @@ export default {
     name: 'header',
     data() {
         return {
+            isBanner: true,
             menu:"menu01",
             menuList: [
                 { label: "홈", val: "menu01", to:""},
