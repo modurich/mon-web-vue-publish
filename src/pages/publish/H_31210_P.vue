@@ -777,7 +777,7 @@
                 
                 <div class="divider1"/>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <span class="font16 txt_dk">진행중인 BLASH</span>
                   <!-- <span>22.09.20 ~ 22.09.20</span> -->
                 </div>
                 <div class="blash_wrap">

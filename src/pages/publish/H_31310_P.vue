@@ -522,8 +522,11 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
-                  <span>22.09.20 ~ 22.09.20</span>
+                  <span class="font16 txt_dk">종료된 BLASH</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
                 </div>
                 <ul class="insight_list list3">
                     <li>
@@ -586,7 +589,7 @@
                 </div>
                 <div class="divider1"/>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <span class="font16 txt_dk">진행중인 BLASH</span>
                   <!-- <span>22.09.20 ~ 22.09.20</span> -->
                 </div>
                 <div class="blash_wrap">
