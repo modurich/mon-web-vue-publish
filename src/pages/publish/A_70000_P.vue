@@ -223,42 +223,55 @@
                         <!-- 수익률 class txt_red,txt_blue1 -->
                     </li>
                 </ul>
-                <!--
-                <q-table
-                  :data="tbRowData"
-                  :columns="tbColInfo"
-                  row-key="category"
-                  no-data-label="데이터가 존재하지 않습니다."
-                  hide-bottom
-                  :visible-columns="table1"
-                  :rows-per-page-options="[0]" 
-                  :pagination.sync="table1page"
-                >
-                  <template v-slot:body="props">
-                    <q-tr :props="props">
-                      <q-td key="date" :props="props">
-                        {{ props.row.date }}
-                      </q-td>
-                      <q-td key="category" :props="props">
-                          {{ props.row.category }}
-                      </q-td>
-                      <q-td key="updown" :props="props">
-                        <span v-if="props.row.updown == 'U'" class="ico_up">상승</span>
-                        <span v-else class="ico_down">하락</span>
-                      </q-td>
-                      <q-td key="isSuccess" :props="props">
-                        <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
-                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_blue">실패</span>
-                        <span v-else class="txt_gray">무효</span>
-                      </q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+
+                <default-table tblType="1"/>
+
+              <div class="divider1" />
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
                 </div>
-                -->
-              <default-table tblType="1"/>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
+                      </li>
+                      <li>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
+                      </li>
+                  </ul>
+                  </div>
+                </div>
+
+                <default-table tbl-type="2"/>
+
               </div>
               <div v-if="tab2 == 'B'">
                 <div class="radio_wrap right">
@@ -300,38 +313,7 @@
                         <!-- 수익률 class txt_red,txt_blue -->
                     </li>
                 </ul>
-                <!--
-                <q-table
-                  :data="tbRowData"
-                  :columns="tbColInfo"
-                  row-key="category"
-                  no-data-label="데이터가 존재하지 않습니다."
-                  hide-bottom
-                  :visible-columns="table2"
-                >
-                  <template v-slot:body="props">
-                    <q-tr :props="props">
-                      <q-td key="buydate" :props="props">
-                        {{ props.row.buydate }}
-                      </q-td>
-                      <q-td key="category" :props="props">
-                        {{ props.row.category }}
-                      </q-td>
-                      <q-td key="tgtperform" :props="props">
-                        {{props.row.tgtperform}}%
-                      </q-td>
-                      <q-td key="isSuccess" :props="props">
-                        <span v-if="props.row.isSuccess == 'S'" class="txt_red">성공</span>
-                        <span v-else-if="props.row.isSuccess == 'F'" class="txt_blue">실패</span>
-                        <span v-else class="txt_gray">무효</span>
-                      </q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
-                </div>
-                -->
+
                 <default-table tbType="3"/>
 
                 <div class="divider1"/>
@@ -376,35 +358,7 @@
                   </ul>
                   </div>
                 </div>
-                <!--
-                <q-table :data="tbRowData" :columns="tbColInfo" row-key="category" no-data-label="데이터가 존재하지 않습니다." hide-bottom
-                  :visible-columns="table3">
-                  <template v-slot:body="props">
-                    <q-tr :props="props">
-                      <q-td key="category" :props="props">
-                        {{ props.row.category }}
-                      </q-td>
-                      <q-td key="period" :props="props">
-                        <span v-if="props.row.investperiod == '단기'" style="color:#c1b7ff">{{ props.row.investperiod }}</span>
-                        <span v-else-if="props.row.investperiod == '중기'" style="color:#8673ff">{{ props.row.investperiod }}</span>
-                        <span v-else style="color:#4c34dc">{{ props.row.investperiod }}</span> / {{ props.row.holdperiod }}일
-                      </q-td>
-                      <q-td key="specific" :props="props">
-                        {{props.row.specific}}%
-                      </q-td>
-                      <q-td key="perform" :props="props">
-                        {{ props.row.tgtperform }}% / 
-                        <span v-if="props.row.currperform > 0" class="txt_red">{{ props.row.currperform }}</span>
-                        <span v-else-if="props.row.currperform < 0" class="txt_blue">{{ props.row.currperform }}</span>
-                        <span v-else class="txt_gray">{{ props.row.currperform }}</span>%
-                      </q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-                <div class="btn_wrap">
-                  <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
-                </div>
-                -->
+
                 <default-table tbl-type="4"/>
               </div>
             <!-- E 통계 -->
@@ -421,31 +375,6 @@ import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import VClamp from '@boyuai/vue-clamp';
 import DefaultTable from 'src/components/DefaultTeble.vue';
-/*
-const tbColInfo = [
-  { name: 'date', align: 'center', label: '일자', field: 'date' },
-  { name: 'buydate', align: 'center', label: '매도일자', field: 'buydate' },
-  { name: 'category', align: 'center', label: '종목', field: 'category' },
-  { name: 'updown', align: 'center', label: '상승/하락', field: 'updown' },
-  { name: 'tgtperform', align: 'center', label: '목표수익률', field: 'tgtperform' },
-  { name: 'period', align: 'center', label: '목표 / 현재' },
-  { name: 'specific', align: 'center', label: '비중' },
-  { name: 'perform', align: 'center', label: '목표 / 현재' },
-  { name: 'isSuccess', align: 'center', label: '예측결과', field: 'isSuccess' }
-];
-const tbRowData = [
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '삼성전자', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: 'SK하이닉스', updown: 'D', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '1.25', specific: '10', investperiod: '중기', holdperiod: '9', category: '네이버', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '0', specific: '5', investperiod: '중기', holdperiod: '13', category: '현대차', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-1.28', specific: '5', investperiod: '장기', holdperiod: '16', category: '신풍제약', updown: 'D', isSuccess: 'M' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '3', specific: '15', investperiod: '단기', holdperiod: '3', category: '안랩', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '-0.12', specific: '5', investperiod: '중기', holdperiod: '5', category: '카카오', updown: 'U', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '15', currperform: '0.72', specific: '10', investperiod: '중기', holdperiod: '9', category: 'KT&G', updown: 'D', isSuccess: 'S' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '5', currperform: '-1.28', specific: '5', investperiod: '중기', holdperiod: '13', category: '셀트리온', updown: 'U', isSuccess: 'F' },
-  { date: '22.09.14', buydate: '22.09.14', tgtperform: '10', currperform: '2', specific: '5', investperiod: '장기', holdperiod: '16', category: '미래에셋증권', updown: 'U', isSuccess: 'F' }
-];
-*/
 
 export default {
   components: { MDialogBlank, Swiper, SwiperSlide, VClamp, DefaultTable },
@@ -453,17 +382,6 @@ export default {
     
     data() {
         return {
-          /*
-          table1page: {
-            page: 1,
-            rowsPerPage: 10
-          },
-          table1: ref(['date', 'category', 'updown', 'isSuccess']),
-          table2: ref(['buydate', 'category', 'tgtperform', 'isSuccess']),
-          table3: ref(['category', 'period', 'specific', 'perform']),
-          tbColInfo,
-          tbRowData,
-          */
           chartOptions: {
             colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
             chart: {
