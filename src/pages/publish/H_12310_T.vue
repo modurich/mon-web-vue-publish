@@ -11,7 +11,7 @@
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">1</span>
-                      <div class="img_area">
+                      <div class="img_area small">
                         <img src="~assets/prd_logo.png" alt="profile" />
                       </div>
                       <div class="tit_area">
@@ -29,7 +29,7 @@
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">2</span>
-                      <div class="img_area">
+                      <div class="img_area small">
                         <img src="~assets/prd_logo.png" alt="profile" />
                       </div>
                       <div class="tit_area">
@@ -47,7 +47,7 @@
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">3</span>
-                      <div class="img_area">
+                      <div class="img_area small">
                         <img src="~assets/prd_logo.png" alt="profile" />
                       </div>
                       <div class="tit_area">
@@ -65,7 +65,7 @@
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">4</span>
-                      <div class="img_area">
+                      <div class="img_area small">
                         <img src="~assets/prd_logo.png" alt="profile" />
                       </div>
                       <div class="tit_area">
@@ -83,7 +83,7 @@
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">100</span>
-                      <div class="img_area">
+                      <div class="img_area small">
                         <img src="~assets/prd_logo.png" alt="profile" />
                       </div>
                       <div class="tit_area">
