@@ -48,6 +48,7 @@
 .font18{font-size:18px !important;}
 .font20{font-size:20px !important;}
 .font24{font-size:24px !important;}
+.font30{font-size:30px !important;}
 .medium{font-weight: 500 !important;}
 .bold{font-weight: 700 !important;}
 
@@ -1214,7 +1215,7 @@ body{
     }
   }
 }
-.ico_copy,.ico_copy_w{
+.ico_copy,.ico_copy_w,.ico_copy_p{
     display: inline-flex;
     width:18px;
     height:18px;
@@ -1227,6 +1228,10 @@ body{
 .ico_copy_w{
     background: url('~assets/ico_copy_w.svg') center right no-repeat;
 }
+.ico_copy_p{
+    background: url('~assets/ico_copy_p.svg') center right no-repeat;
+}
+
 //등급 뱃지
 .grade_wrap{
     .user_wrap{
@@ -1364,6 +1369,14 @@ button{
     height: 24px;
     margin-right:8px;
     background:url('~assets/ico_close.svg');
+}
+.ico_close_w{
+    display: inline-flex;
+    text-indent: -999em;
+    width:24px;
+    height: 24px;
+    margin-right:8px;
+    background:url('~assets/ico_close_w.svg');
 }
 .best_wrap{
     display: flex;
@@ -1701,7 +1714,14 @@ button{
      }
 }
 
-
+.banner_wrap01{
+    img{width:100%}
+    .mob_only{display: none;}
+    @media (max-width: $breakpoint-xs-max) {
+        .mob_only{display: flex;}
+        .pc_only{display: none;}
+     }
+}
 
 //product_list
 .product_list{
@@ -2849,6 +2869,20 @@ button{
 .btn_area_center{
     margin:32px 0;
     text-align: center;
+    &.big{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .ico{
+            width:24px;
+            height: 24px;
+        }
+        button{
+            margin-bottom: 16px;
+            width:75px;
+            height: 75px;
+        }
+    }
     &.type1{
         display: flex;
         justify-content: space-around;
@@ -2896,6 +2930,30 @@ button{
         .btn_coinmarket{
             background: url('~assets/btn_coinmarket.svg')  no-repeat center center; 
         }
+        .ico_share_na{
+            background: url('~assets/ico_share_na.png')  no-repeat center center; 
+        }
+        .ico_share_da{
+            background: url('~assets/ico_share_da.png')  no-repeat center center; 
+        }
+        .ico_share_in01{
+            background: url('~assets/ico_share_in01.png')  no-repeat center center; 
+        }
+        .ico_share_in02{
+            background: url('~assets/ico_share_in02.png')  no-repeat center center; 
+        }
+        .ico_share_tw{
+            background: url('~assets/ico_share_tw.png')  no-repeat center center; 
+        }
+        .ico_share_fa{
+            background: url('~assets/ico_share_fa.png')  no-repeat center center; 
+        }
+        .ico_share_ba{
+            background: url('~assets/ico_share_ba.png')  no-repeat center center; 
+        }
+        .ico_share_ka{
+            background: url('~assets/ico_share_ka.png')  no-repeat center center; 
+        }
         &.active{
             border:1px solid $primary;
             color: $primary;
@@ -2909,7 +2967,11 @@ button{
        
     }
     .txt_area{display: block;width:100%;font-size: 12px;margin-top:3px}
-    .btn_naver,.btn_bookmark,.btn_thumbsUp,.btn_share,.btn_chart,.btn_write,.btn_heart,.btn_coinmarket{
+    .btn_naver,.btn_bookmark,.btn_thumbsUp,.btn_share,
+    .btn_chart,.btn_write,.btn_heart,.btn_coinmarket,
+    .ico_share_na,.ico_share_da,.ico_share_in01,.ico_share_in02,.ico_share_tw,.ico_share_fa,
+    .ico_share_ba,.ico_share_ka
+    {
         margin:0 auto;
         width:24px;
         height: 24px;
@@ -2919,7 +2981,7 @@ button{
 }
 
 .luck_box{
-    .title{text-align: center;}
+    .title{text-align: center;color:$txt_dk}
     .ico_event_on{background: url('~assets/ico_event_on.svg')  no-repeat center center; }
     .ico_write_on{background: url('~assets/ico_write_on.svg')  no-repeat center center; }
     .ico_thumbsUp_on1{background: url('~assets/ico_thumbsUp_on1.svg')  no-repeat center center; }
@@ -2943,6 +3005,9 @@ button{
         .txt03{color:#ffd165}
     }
     .message{width:324px;margin:0 auto;margin-top:16px}
+    @media (max-width: $breakpoint-xs-max) {
+        .message,.list{width:100%;max-width: 324px;}
+    }
 }
 //contents_list_wrap
 .contents_list_wrap{
@@ -3510,6 +3575,13 @@ align-items: center;color: $txt_dk;
     background: url('~assets/ico_box01.png') center right no-repeat;
     background-size:contain !important;
 }
+.ico_box02{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: url('~assets/ico_box02.png') center right no-repeat;
+    background-size:contain !important;
+}
 .ico_export{
     display: flex;
     width: 20px;
@@ -3572,6 +3644,13 @@ align-items: center;color: $txt_dk;
     width: 24px;
     height: 24px;
     background: url('~assets/ico_arrow_right_dk.svg') center right no-repeat;
+    background-size:contain !important;
+}
+.ico_luckybox{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: url('~assets/ico_luckybox.png') center right no-repeat;
     background-size:contain !important;
 }
 .date_header_wrap{

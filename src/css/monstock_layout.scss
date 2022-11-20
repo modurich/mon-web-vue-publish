@@ -1,12 +1,32 @@
 @import 'variables.scss';
 //header
 .header_wrap{
-    height:80px;
     width:100%;
     background:#fff;
     border-bottom:1px solid $com_line;
     margin-bottom:20px;
-    
+    .top_banner_wrap{
+        color: #fff;
+        text-align: center;
+        margin:0 auto;
+        background: linear-gradient(to right, #fb1e1e 0%, #fe8383 100%);
+        &.bg_dk{background:#141414}
+        .box_wrap{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            width:1300px;
+            font-size: 16px;
+            line-height: 30px;
+            margin:0 auto;
+            .ico_close_w{
+                position: absolute;
+                right:0;
+            }
+        }
+    }
     .mob_only{display:none}
     .header_area{
         height:80px;
@@ -172,10 +192,22 @@
     }
     //1284보다 작아질때 변환시 스크롤 이슈 발생
     @media (max-width: 1310px) {
-        height:60px;
+        //height:60px;
         width:692px;
         box-sizing: border-box;
         margin:0 auto;
+        .top_banner_wrap{
+            .box_wrap{
+                width:100%;
+                margin:0 auto;
+                text-align: left;
+                padding:10px 35px 10px 10px;
+                .ico_close_w{
+                    position: absolute;
+                    right:0;
+                }
+            }
+        }
         .header_area{width:100%;
             height: 60px;
             padding:0 16px;

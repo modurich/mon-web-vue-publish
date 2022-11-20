@@ -884,6 +884,46 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/A_601_P">A_601_P</router-link>
+            </td>
+            <td>럭키박스 결과</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_602_P">A_602_P</router-link>
+            </td>
+            <td>럭키박스 결과02</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_603_P">A_603_P</router-link>
+            </td>
+            <td>알림상세</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_604_P">A_604_P</router-link>
+            </td>
+            <td>공유하기</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/A_51211_T">A_51211_T</router-link>
             </td>
             <td>종목상세</td>
@@ -907,7 +947,7 @@
                 <router-link to="/publish/A_30000_P">A_30000_P</router-link>
             </td>
             <td>혜택</td>
-            <td>좀 더 해야함</td>
+            <td></td>
         </tr> 
         <tr>
             <td></td>
@@ -997,6 +1037,36 @@
                 <router-link to="/publish/A_41000_P">A_41000_P</router-link>
             </td>
             <td>알림</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_41100_P">A_41100_P</router-link>
+            </td>
+            <td>푸시설정</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12000_T">H_12000_T</router-link>
+            </td>
+            <td>오늘의 테마</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12310_T">H_12310_T</router-link>
+            </td>
+            <td>실시간 순위 TOP 100</td>
             <td></td>
         </tr> 
       </tbody>

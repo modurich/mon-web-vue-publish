@@ -42,43 +42,59 @@
             transition-next="slide-left" 
             swipeable 
             animated     
+            height="350px"
             control-color="primary" 
             class="ranking_slide ico_box" 
             navigation padding arrows>
-            <q-carousel-slide name="1" class="column no-wrap flex-center">
+            <q-carousel-slide name="1">
               <div class="view_box">
                 <div class="ico_box_wrap center">
-                  <i>😭</i>
-                  <p class="font24 primary">아쉽지만 다음기회에</p>
-                  <p class="txt_dk">몬스탁 멤버십에 가입하면 럭키박스에서 꽝이 나오지 않아요!</p>
+                  <i class="ico_box01"></i>
+                  <p class="font18 txt_dk">“<span class="primary">브론즈</span> 럭키박스” 도착</p>
+                  <p class="primary">(9일 23시간 남음)</p>
                 </div>
                 <div class="btn_wrap l_row_l mgt32">
                   <m-button-3 size="large" color="primary" class="full">열기</m-button-3>
                 </div>
               </div>
             </q-carousel-slide>
-            <q-carousel-slide name="2" class="column no-wrap flex-center">
+            <q-carousel-slide name="2">
               <div class="view_box">
                 <div class="ico_box_wrap center">
-                  <i class="ico_box01"></i>
-                  <p class="font18 txt_dk">“<span class="primary">브론즈</span> 럭키박스” 도착</p>
-                  <p class="primary">(9일 23시간 남음)</p>
+                  <i class="ico_box02"></i>
+                  <p class="font24 primary">아쉽지만 다음기회에</p>
+                  <p class="txt_dk">몬스탁 멤버십에 가입하면 럭키박스에서 꽝이 나오지 않아요!</p>
                 </div>
                 <div class="btn_wrap l_row_l mgt32">
                   <m-button-3 size="large" color="primary" class="full">멤버십 가입하기</m-button-3>
                 </div>
               </div>
             </q-carousel-slide>
-            
-            <q-carousel-slide name="3" class="column no-wrap flex-center">
+            <q-carousel-slide name="3">
               <div class="view_box">
                 <div class="ico_box_wrap center">
-                  <i class="ico_box01"></i>
-                  <p class="font18 txt_dk">“<span class="primary">브론즈</span> 럭키박스” 도착</p>
-                  <p class="primary">(9일 23시간 남음)</p>
+                  <div class="ico_top">
+                    <i class="ico_luckybox"></i>
+                  </div>
+                  <div class="primary font30 bold">
+                    + 57 sMON
+                  </div>
+                  <div class="txt_dk mgt16">
+                    럭키박스에서 57sMON을 받았어요!
+                  </div>
                 </div>
-                <div class="btn_wrap l_row_l mgt32">
-                  <m-button-3 size="large" color="primary" class="full">열기</m-button-3>
+              </div>
+            </q-carousel-slide>
+            <q-carousel-slide name="4">
+              <div class="no_data_wrap">
+                <div class="ico_top">
+                  <i class="ico_error"></i>
+                </div>
+                <div class="com_message font18 mgb16">
+                  선물 받은 럭키박스가 없어요
+                </div>
+                <div class="mgt16 center">
+                  <button class="ico_info">럭키박스 획득 방법</button>
                 </div>
               </div>
             </q-carousel-slide>
