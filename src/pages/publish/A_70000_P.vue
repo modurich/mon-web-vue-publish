@@ -198,8 +198,11 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 인사이트</span>
-                  <span>22.09.20 ~ 22.09.20</span>
+                  <span class="font16 txt_dk">종료된 인사이트</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
                 </div>
                 <ul class="insight_list">
                     <li>
@@ -215,9 +218,9 @@
                         <span class="txt02">72.61%</span>
                     </li>
                     <li>
-                        <span class="txt01">수익률</span>
-                        <span class="txt02 txt_red">7.84%</span>
-                        <!-- 수익률 class txt_red,txt_blue -->
+                        <span class="txt01">평균수익률</span>
+                        <span class="txt02 txt_blue1">7.84%</span>
+                        <!-- 수익률 class txt_red,txt_blue1 -->
                     </li>
                 </ul>
                 <!--
@@ -264,8 +267,11 @@
                     <m-radio v-model="rad1" val="C" label="코인"/>
                 </div>
                 <div class="l_row_l between">
-                  <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
-                  <span>22.09.20 ~ 22.09.20</span>
+                  <span class="font16 txt_dk">종료된 BLASH</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
                 </div>
                 <ul class="insight_list list3">
                     <li>
@@ -282,15 +288,15 @@
                     </li>
                     <li>
                         <span class="txt01">수익률</span>
-                        <span class="txt02 txt_red">3.84%</span>
+                        <span class="txt02 txt_blue1">3.84%</span>
                     </li>
                     <li>
                         <span class="txt01">최대 익절</span>
-                        <span class="txt02 txt_red">18.05%</span>
+                        <span class="txt02 txt_blue1">18.05%</span>
                     </li>
                     <li>
-                          <span class="txt01">최대 손절</span>
-                        <span class="txt02 txt_blue">-5.01%</span>
+                        <span class="txt01">최대 손절</span>
+                        <span class="txt02 txt_red">-5.01%</span>
                         <!-- 수익률 class txt_red,txt_blue -->
                     </li>
                 </ul>
@@ -331,7 +337,6 @@
                 <div class="divider1"/>
                 <div class="l_row_l between">
                   <span class="font16 txt_dk">최근 6개월 종료된 BLASH</span>
-                  <span>22.09.20 ~ 22.09.20</span>
                 </div>
                 <div class="blash_wrap">
                   <div class="blash_chart">
@@ -362,7 +367,7 @@
                     <ul class="return_wrap">
                       <li>
                           <span class="txt01">평가 수익률</span>
-                          <span class="txt02 txt_blue">-5.01%</span>
+                          <span class="txt02 txt_red">-5.01%</span>
                       </li>
                       <li>
                           <span class="txt01">투자 비중</span>
