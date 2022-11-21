@@ -1069,6 +1069,57 @@
             <td>실시간 순위 TOP 100</td>
             <td></td>
         </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12710_T">H_12710_T</router-link>
+            </td>
+            <td>보팅</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12810_T">H_12810_T</router-link>
+            </td>
+            <td>인기 태그 TOP 100</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12e10_T">H_12e10_T</router-link>
+            </td>
+            <td>인기 토론 자산 TOP 100</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12c10_T">H_12c10_T</router-link>
+            </td>
+            <td>가격대별 종목</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12d10_T">H_12d10_T</router-link>
+            </td>
+            <td>상승,하락</td>
+            <td></td>
+        </tr> 
+      
       </tbody>
     </table>
   </div>

@@ -106,6 +106,11 @@ const routes = [
             { path: '/publish/A_604_P', component: () => import('pages/publish/A_604_P.vue') },
             { path: '/publish/H_12000_T', component: () => import('pages/publish/H_12000_T.vue') },
             { path: '/publish/H_12310_T', component: () => import('pages/publish/H_12310_T.vue') },
+            { path: '/publish/H_12710_T', component: () => import('pages/publish/H_12710_T.vue') },
+            { path: '/publish/H_12e10_T', component: () => import('pages/publish/H_12e10_T.vue') },
+            { path: '/publish/H_12810_T', component: () => import('pages/publish/H_12810_T.vue') },
+            { path: '/publish/H_12c10_T', component: () => import('pages/publish/H_12c10_T.vue') },
+            { path: '/publish/H_12d10_T', component: () => import('pages/publish/H_12d10_T.vue') },
             
         ]
     },
