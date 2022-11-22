@@ -51,10 +51,16 @@
 .font30{font-size:30px !important;}
 .medium{font-weight: 500 !important;}
 .bold{font-weight: 700 !important;}
-
 .line26{line-height: 26px;}
-
 .link_type1{color:#6ee0b0 !important;text-decoration: underline !important;}
+
+.mob_only{display: none;}
+.pc_only{display: block;}
+@media (max-width: $breakpoint-xs-max) {
+    .mob_only{display: block;}
+    .pc_only{display: none;}
+ }
+
 body{
     background-color: #f8f9fd !important;
     color: #9ca8ba !important;
@@ -3177,12 +3183,13 @@ button{
     justify-content: space-between;
         .txt_wrap{
             display: flex;
+            margin-bottom: 0;
             .txt_area{
                 text-align: right;
-                > span{display: block;margin-bottom: 4px;}
+                > span{display: block;margin-bottom:8px;}
                 .txt01{font-size: 18px;}
                 .txt02{font-size: 12px;}
-                .ico_area{margin:4px 0 2px 0}
+                .ico_area{margin:8px 0 8px 0}
             }
             .bar_area{margin-left:8px;
                 align-items: center;
@@ -3443,7 +3450,7 @@ button{
 }
 .fixed_con_bottom{
     position: fixed !important;
-    display: none;
+    display: flex;
     bottom:0;
     width:692px;
     z-index: 1;
@@ -3459,11 +3466,9 @@ button{
     //1284보다 작아질때 변환시 스크롤 이슈 발생
     @media (max-width: 1310px) {
         bottom:80px;
-        display: flex;
     }
     @media (max-width: $breakpoint-xs-max) {
        width:100%;
-       display: flex;
     }
 }
 .fixed_btn_bottom{
@@ -3519,11 +3524,17 @@ button{
 .btn_setting{display: flex;
 align-items: center;color: $txt_dk;
 }
-.ico_setting{
+.ico_setting,.ico_setting_gray{
     display: flex;
     width: 26px;
     height: 26px;
+}
+.ico_setting{
     background: url('~assets/ico_setting.svg') center right no-repeat;
+    background-size:contain;
+}
+.ico_setting_gray{
+    background: url('~assets/ico_setting_gray.svg') center right no-repeat;
     background-size:contain;
 }
 .ico_content_box{

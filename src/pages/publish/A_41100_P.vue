@@ -15,7 +15,7 @@
             <!-- <span class="txt_red">푸시 불가</span> -->
           </div>
           <p class="font12">본 설정은 로그인된 모든 기기에 유효하며, 기기와 브라우저 스펙에 따라 웹푸시 기능이 작동하지 않을 수 있습니다.</p>
-          <p class="font12 mgt32"><span class="ico_info">웹푸시 설정이 안되시나요?</span></p>
+          <p class="font12 mgt32"><button class="ico_info">웹푸시 설정이 안되시나요?</button></p>
           <div class="divider1 small"/>
           <div>
             <ul class="list_type1">
@@ -40,6 +40,9 @@
                 <span><m-checkbox size="md" v-model="check5"/></span>
               </li>
             </ul>
+            <div class="btn_wrap mgt32">
+                <m-button-3 size="large" color="primary" class="full">저장</m-button-3>
+            </div>
           </div>
         </div>
       </div>

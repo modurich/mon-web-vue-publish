@@ -116,6 +116,13 @@
                 </div>
               </div>
               <!--E 투자 리스트-->
+              <div class="mob_only">
+                <div class="divider1 small" />
+                <div class="between mgb16">
+                  <button class="flex"><i class="ico_setting_gray"/>증권사 미설정</button>
+                  <m-button-3 color="primary">주문하기</m-button-3 >
+                </div>
+              </div>
                <!--S 투자 리스트-->
                <!-- <div class="invest_wrap">
                 <div class="between">
