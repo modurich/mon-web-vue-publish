@@ -978,6 +978,11 @@ body{
 //list_type1
 .list_type1{
     margin:16px 0;
+    &.vip_list{
+        li{
+            > span{flex:1;}
+        }
+    }
     li{
     display:flex;
     justify-content: space-between;
@@ -2286,10 +2291,23 @@ button{
     li{
         border-bottom:1px solid $com_line;
         padding:16px;
-        &.reply_wrap{display: flex;
+        &.reply_wrap{
+            display: flex;
             background: #f8f9fd;
             .reply_area{
                 width: calc(100% - 15px);
+            }
+        }
+        .re_reply_wrap{
+            display: flex;
+            background: #f8f9fd;
+            //margin:0 -12px;
+            &.re{
+               padding:16px 0 16px 12px; 
+               margin:16px -12px 0 - 12px;
+            }
+            .reply_area{
+                width: calc(100% - 29px);
             }
         }
         .ico_user_pl,.ico_menu{
@@ -3591,6 +3609,13 @@ align-items: center;color: $txt_dk;
     width: 80px;
     height: 80px;
     background: url('~assets/ico_box02.png') center right no-repeat;
+    background-size:contain !important;
+}
+.ico_box03{
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    background: url('~assets/ico_box03.png') center right no-repeat;
     background-size:contain !important;
 }
 .ico_export{

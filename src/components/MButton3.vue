@@ -325,6 +325,23 @@ export default {
             }
         }
     }
+    &.color-gray {
+        background-color:#9ca8ba;
+        color: $white;
+        &:disabled {
+            // background-color: $slate-blue-20;
+            color: $white;
+        }
+        &.lined {
+            background-color: $white;
+            color: #9ca8ba;
+            border: 0.5px solid #9ca8ba;
+            &:disabled {
+                // color: $slate-blue-20;
+                border: 1px solid #9ca8ba;
+            }
+        }
+    }
     &.color-darkPurple {
         background-color: #4c34dc;
         color: $white;

@@ -1129,7 +1129,47 @@
             <td>상승,하락</td>
             <td></td>
         </tr> 
-      
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_605_P">A_605_P</router-link>
+            </td>
+            <td>로컬 설정</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_606_P">A_606_P</router-link>
+            </td>
+            <td>연속 보상 안내</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_607_P">A_607_P</router-link>
+            </td>
+            <td>VP올리는법</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_512131_P">A_512131_P</router-link>
+            </td>
+            <td>토론글 작성</td>
+            <td>진행중</td>
+        </tr>
+        
       </tbody>
     </table>
   </div>

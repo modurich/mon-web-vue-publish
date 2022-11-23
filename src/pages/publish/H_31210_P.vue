@@ -489,6 +489,60 @@
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div class="top_wrap">
+                    <div class="my_profile">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                      user추가
+                      <q-menu auto-close :offset="[30, 10]">
+                        <q-list style="min-width: 80px">
+                          <q-item clickable>
+                            <q-item-section>차단해제</q-item-section>
+                          </q-item>
+                          <q-separator />
+                        </q-list>
+                      </q-menu>
+                    </button>
+                  </div>
+                  <div class="con_area">삼성전자 가즈아</div>
+                  <div class="footer_area">
+                    <div class="ico_wrap">
+                      <span class="ico_area">
+                        <button class="ico_f ico_thumbsUp">624</button>
+                        <button class="ico_f ico_comment">7</button>
+                        <!-- <span class="ico_f ico_view">1.2</span>
+                        <span class="ico_f ico_star_s primary">4.7</span> -->
+                      </span>
+                      <span class="flex">
+                        2022.10.26
+                        <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                          menu
+                          <q-menu auto-close :offset="[30, 10]">
+                            <q-list style="min-width: 80px">
+                              <q-item clickable>
+                                <q-item-section>락업정보</q-item-section>
+                              </q-item>
+                              <q-item clickable>
+                                <q-item-section>보내기</q-item-section>
+                              </q-item>
+                            </q-list>
+                          </q-menu>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </li>
                 <li class="reply_wrap">
                   <div class="ico_reply"></div>
                   <div class="reply_area">
@@ -601,7 +655,127 @@
                         </span>
                       </div>
                     </div>
+                    <!-- S 댓글 -->
+                    <div class="divider1 mga16"/>
+                    <div class="re_reply_wrap">
+                      <div class="ico_reply"></div>
+                      <div class="reply_area">
+                        <m-textarea :maxlength="300" :showError="false" :minHeight="textarea1.minHeight"
+                        :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
+                        :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
+                        <div class="btn_wrap mgt16">
+                            <m-button-3 size="large" color="primary" class="full">등록</m-button-3>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- E 댓글 -->
                   </div>
+                </li>
+                <li>
+                  <div class="top_wrap">
+                    <div class="my_profile">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                      user추가
+                      <q-menu auto-close :offset="[30, 10]">
+                        <q-list style="min-width: 80px">
+                          <q-item clickable>
+                            <q-item-section>차단해제</q-item-section>
+                          </q-item>
+                          <q-separator />
+                        </q-list>
+                      </q-menu>
+                    </button>
+                  </div>
+                  <div class="con_area">삼성전자 가즈아</div>
+                  <div class="footer_area">
+                    <div class="ico_wrap">
+                      <span class="ico_area">
+                        <button class="ico_f ico_thumbsUp">624</button>
+                        <button class="ico_f ico_comment">7</button>
+                        <!-- <span class="ico_f ico_view">1.2</span>
+                        <span class="ico_f ico_star_s primary">4.7</span> -->
+                      </span>
+                      <span class="flex">
+                        2022.10.26
+                        <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                          menu
+                          <q-menu auto-close :offset="[30, 10]">
+                            <q-list style="min-width: 80px">
+                              <q-item clickable>
+                                <q-item-section>락업정보</q-item-section>
+                              </q-item>
+                              <q-item clickable>
+                                <q-item-section>보내기</q-item-section>
+                              </q-item>
+                            </q-list>
+                          </q-menu>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- S 댓글 -->
+                  <div class="re_reply_wrap re">
+                    <div class="ico_reply"></div>
+                    <div class="reply_area">
+                      <m-textarea :maxlength="300" :showError="false" :minHeight="textarea1.minHeight"
+                      :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
+                      :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
+                      <div class="btn_wrap mgt16">
+                          <m-button-3 size="large" color="gray" class="full">취소</m-button-3>
+                          <m-button-3 size="large" color="primary" class="full">수정</m-button-3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- E 댓글 -->
+                </li>
+                <li>
+                  <div class="top_wrap">
+                    <div class="my_profile">
+                      <div class="img_area">
+                        <img src="~assets/profile_img1.png" alt="profile"/>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                      user추가
+                      <q-menu auto-close :offset="[30, 10]">
+                        <q-list style="min-width: 80px">
+                          <q-item clickable>
+                            <q-item-section>차단해제</q-item-section>
+                          </q-item>
+                          <q-separator />
+                        </q-list>
+                      </q-menu>
+                    </button>
+                  </div>
+                   <!-- S 댓글 -->
+                   <div class="mgt16">
+                      <m-textarea :maxlength="300" :showError="false" :minHeight="textarea1.minHeight"
+                      :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
+                      :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
+                      <div class="btn_wrap mgt16">
+                          <m-button-3 size="large" color="gray" class="full">취소</m-button-3>
+                          <m-button-3 size="large" color="primary" class="full">수정</m-button-3>
+                      </div>
+                  </div>
+                  <!-- E 댓글 -->
                 </li>
               </ul>
               <div class="btn_wrap">
