@@ -56,6 +56,16 @@
             <td>컴포넌트를 직접 호출하면 안되고 Dialog로 호출해야 뜨네요....</td>
         </tr> 
         <tr>
+            <td>components</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/FroalaEditor">FroalaEditor</router-link>
+            </td>
+            <td>Froala 텍스트 에디터</td>
+            <td>npm install 하신 다음 사용하세요.</td>
+        </tr> 
+        <tr>
           <td>가입/로그인</td>
           <td></td>
           <td></td>

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import FroalaMixin from 'mixins/FroalaMixin';
+import FroalaMixin from 'components/external/FroalaMixin';
 
 export default {
     name: 'ExternalFroala',
@@ -55,6 +55,7 @@ export default {
     created() {
     },
     mounted() {
+      console.log('config', this.config);
     }
 };
 </script>

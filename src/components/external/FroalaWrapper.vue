@@ -14,7 +14,7 @@ import 'froala-editor/js/languages/ko.js';
 // import 'froala-editor/js/third_party/font_awesome.min';
 // import 'froala-editor/js/third_party/image_tui.min';
 // import 'froala-editor/css/third_party/image_tui.min.css';
-// import 'froala-editor/css/froala_editor.pkgd.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
 
 // tributejs
 import 'tributejs/dist/tribute.css';
@@ -40,7 +40,7 @@ export default {
     created() {
     },
     mounted() {
-        // console.log('Vue', Vue, this);
+        console.log('Vue', Vue, this);
     }
 };
 </script>
