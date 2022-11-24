@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@boyuai/vue-clamp": "^0.4.2",
+    "@johmun/vue-tags-input": "^2.1.0",
     "@quasar/extras": "^1.13.3",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
     "@vue/babel-preset-jsx": "^1.2.4",
