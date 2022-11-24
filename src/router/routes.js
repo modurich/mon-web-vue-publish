@@ -109,6 +109,7 @@ const routes = [
             { path: '/publish/A_605_P', component: () => import('pages/publish/A_605_P.vue') },
             { path: '/publish/A_606_P', component: () => import('pages/publish/A_606_P.vue') },
             { path: '/publish/A_607_P', component: () => import('pages/publish/A_607_P.vue') },
+            { path: '/publish/A_608_P', component: () => import('pages/publish/A_608_P.vue') },
             { path: '/publish/H_12000_T', component: () => import('pages/publish/H_12000_T.vue') },
             { path: '/publish/H_12310_T', component: () => import('pages/publish/H_12310_T.vue') },
             { path: '/publish/H_12710_T', component: () => import('pages/publish/H_12710_T.vue') },
@@ -117,6 +118,8 @@ const routes = [
             { path: '/publish/H_12c10_T', component: () => import('pages/publish/H_12c10_T.vue') },
             { path: '/publish/H_12d10_T', component: () => import('pages/publish/H_12d10_T.vue') },
             { path: '/publish/A_512131_P', component: () => import('pages/publish/A_512131_P.vue') },
+            { path: '/publish/A_512132_P', component: () => import('pages/publish/A_512132_P.vue') },
+            { path: '/publish/H_33200_T1', component: () => import('pages/publish/H_33200_T1.vue') },
             
         ]
     },

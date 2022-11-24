@@ -1174,10 +1174,40 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/A_608_P">A_608_P</router-link>
+            </td>
+            <td>평점 상세</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/A_512131_P">A_512131_P</router-link>
             </td>
             <td>토론글 작성</td>
-            <td>진행중</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_512132_P">A_512132_P</router-link>
+            </td>
+            <td>토론글 상세</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_33200_T1">H_33200_T1</router-link>
+            </td>
+            <td>H_33200_T1</td>
+            <td></td>
         </tr>
         
       </tbody>

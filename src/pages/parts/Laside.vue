@@ -50,16 +50,16 @@
             <!--E user-->
             <!--S member-->
             <div class="member_wrap">
-               <!-- <div class="klip_wrap">
+               <div class="klip_wrap">
                     <span class="text_wrap">
                         <span class="ico_klip">klip</span>
                         <span class="text_area">0xa590bc1aa0655d84f5e10xa590bc1aa0655d84f5e1</span>
                     </span>
                     <span class="qr_wrap"><img src="~assets/ico_qr.svg"></span>
-               </div> -->
-               <div class="btn_wrap">
-                <m-button-3 color="primary" class="full" >지갑 연결</m-button-3>
                </div>
+               <!-- <div class="btn_wrap">
+                <m-button-3 color="primary" class="full" >지갑 연결</m-button-3>
+               </div> -->
                <ul class="member_list">
                     <li>
                         <span class="txt01">MON</span>
@@ -96,14 +96,14 @@
                     새 알림
                     <span>+ 32</span>
                 </a>
-                <!-- <div class="alarm_info">
+                <div class="alarm_info">
                     <p class="tit">BLASH 리워드 지급</p>
                     <p class="con">BLASH 리워드(으)로 100 sMON이 지급되었습니다.</p>
                     <p class="date">[MON/리워드] 2주전</p>
-                </div> -->
-                <div class="alarm_info no_data">
-                    <p>새로운 알림이 없습니다.</p>
                 </div>
+                <!-- <div class="alarm_info no_data">
+                    <p>새로운 알림이 없습니다.</p>
+                </div> -->
             </div>
             <!--E alarm-->
             <!--S local-->

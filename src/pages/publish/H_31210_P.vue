@@ -463,6 +463,7 @@
                   </div>
                   <div class="con_area">삼성전자 가즈아</div>
                   <div class="footer_area">
+                    <p><span class="ico_f ico_star_s primary">4.7</span></p>
                     <div class="ico_wrap">
                       <span class="ico_area">
                         <button class="ico_f ico_thumbsUp">624</button>
@@ -517,6 +518,7 @@
                   </div>
                   <div class="con_area">삼성전자 가즈아</div>
                   <div class="footer_area">
+                    <p><span class="ico_f ico_star_s primary">4.7</span></p>
                     <div class="ico_wrap">
                       <span class="ico_area">
                         <button class="ico_f ico_thumbsUp">624</button>

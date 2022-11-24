@@ -5,15 +5,36 @@
           <span>토론글 작성</span>
         </h2>
         <div class="box_contents"> 
+          <div class="between mgb32">
+            <span class="img_area_wrap">
+              <img src="~assets/prd_logo.png" alt="profile" />
+              <span class="txt01">삼성전자</span>
+            </span>
+            <span class="font18 txt_blue1">
+              ₩ 2,403,000
+            </span>
+          </div>
           <p class="txt_dk font12">📍 본문 10자 이상 필수, $종목태그 사용가능</p>
           <div class="mgb32">
             <Froala
               ref="froala"
               v-model="content"
               :config="{
-                  placeholderText: '- 타인 글 인용 시 저작자와 출처, 원문링크 필요\n- 카테고리에 미부합, 음란성, 불법성, 허위사실, 명예 훼손, 저작권 침해, 욕설, 의미 없는 문구 반복(도배) 등이 포함된 게시글 금지',
+                  placeholderText: '- 다른 사람의 글을 인용할 때는 저작자와 출처, 원문링크를 반드시 포함해주세요.\n- 음란성, 불법성, 허위사실, 욕설 등 정책에 위반되는 글은 금지합니다.',
                   charCounterMax: 10000
               }"
+            />
+          </div>
+          <div class="mgb32">
+            <TagsInput
+                v-model="tag"
+                :tags="tags"
+                @tags-changed="newTags => tags = newTags"
+                :autocomplete-items="filteredAutoTagItems"
+                :placeholder="'#태그(선택)'"
+                :autocomplete-min-length="0"
+                :maxlength="20"
+                :max-tags="50"
             />
           </div>
           <p class="txt_dk font12 between">
@@ -32,12 +53,16 @@
 
 <script>
 import { ref } from 'vue';
+import TagsInput from 'src/components/external/TagsInput.vue';
 import Froala from 'src/components/external/Froala.vue';
 export default {
-    components: { Froala },
+    components: { Froala,TagsInput },
     name: 'Laside',
     data() {
         return {
+          tag: '',
+          tags: [],
+          defaultHashTag: ['2차전지', '바이오'],
           content: '',
           check1:ref(true),
           check2:ref(true),
@@ -47,7 +72,12 @@ export default {
           slide: ref('1'),
           toggle1: ref(false),
         }
+    },
+    computed: {
+    filteredAutoTagItems() {
+        return this.defaultHashTag.map(text => ({ text }));
     }
+  },
    
 };
 </script>
