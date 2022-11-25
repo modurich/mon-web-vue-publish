@@ -99,7 +99,42 @@
               </div>
             </q-carousel-slide>
           </q-carousel>
-          <!-- E 럭키박스 -->
+          <!-- E 럭키박스 --> 
+          <div class="divider"/>
+          <!-- S 나의 활동 내역 -->
+          <h3 class="between mgb32 mgt16">
+            <span>나의 활동 내역</span>
+            <a href="#" class="ico_info_gray txt_gray font14 medium">보팅파워 올리는 방법</a>
+          </h3>
+          <ul class="insight_list">
+            <li>
+                <span class="txt01">나의 보팅파워</span>
+                <span class="txt02 primary">10 VP</span>
+            </li>
+            <li>
+                <span class="txt01">나의 활동점수</span>
+                <span class="txt02 txt_blue">45 P</span>
+            </li>
+        </ul>
+          <!-- E 나의 활동 내역 -->
+          <div class="divider"/>
+           <!-- S 활동 등급 / 점수 -->
+           <h3 class="between mgb32 mgt16">
+            <span>활동 등급 / 점수</span>
+          </h3>
+          <ul class="insight_list">
+            <li>
+                <span class="txt01">나의 보팅파워</span>
+                <span class="txt02 primary">10 VP</span>
+            </li>
+            <li>
+                <span class="txt01">나의 활동점수</span>
+                <span class="txt02 txt_blue">45 P</span>
+            </li>
+          </ul>
+          <div class="divider1 small" />
+          <p>❗ 활동점수 유효기간은 획득한 날부터 6개월입니다</p>
+          <!-- E 활동 등급 / 점수 -->
           <div class="divider"/>
           <h3 class="between mgb16 mgt16">
             <span>가입미션</span>

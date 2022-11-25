@@ -1140,7 +1140,7 @@
             <td></td>
         </tr> 
         <tr>
-            <td></td>
+            <td>8. 토론 / 실시간인기토론</td>
             <td></td>
             <td></td>
             <td>
@@ -1207,6 +1207,16 @@
                 <router-link to="/publish/H_33200_T1">H_33200_T1</router-link>
             </td>
             <td>H_33200_T1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12920_T">H_12920_T</router-link>
+            </td>
+            <td>실시간 인기 토론</td>
             <td></td>
         </tr>
         

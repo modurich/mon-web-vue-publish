@@ -120,6 +120,7 @@ const routes = [
             { path: '/publish/A_512131_P', component: () => import('pages/publish/A_512131_P.vue') },
             { path: '/publish/A_512132_P', component: () => import('pages/publish/A_512132_P.vue') },
             { path: '/publish/H_33200_T1', component: () => import('pages/publish/H_33200_T1.vue') },
+            { path: '/publish/H_12920_T', component: () => import('pages/publish/H_12920_T.vue') },
             
         ]
     },
