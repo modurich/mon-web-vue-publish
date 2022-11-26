@@ -300,6 +300,11 @@
           <span class="ico_level3">level3</span>
           <span class="ico_level4">level4</span>
           <span class="ico_level5">level5</span>
+          <span class="ico_level1 big">level1</span>
+          <span class="ico_level2 big">level2</span>
+          <span class="ico_level3 big">level3</span>
+          <span class="ico_level4 big">level4</span>
+          <span class="ico_level5 big">level5</span>
         </div>
       </div>
       <div class="box_wrap">
