@@ -1002,6 +1002,133 @@
             <h3 class="between">
               <span>실시간 인기 토론</span>
             </h3>
+            <ul class="thumb_list1">
+              <li>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/prd_logo.png" alt="logo"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit txt_dk">삼성전자</span>
+                    </div>
+                  </div>
+                  <span class="tag_blue">+1.24%</span>
+                </div>
+                <div class="con_area">
+                  <p class="font12 mgt16">몬스탁닉넴열글자까지</p>
+                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                  https://kr.investing.com/news/stock-market-news/article-760933
+                  </p>
+                  <button class="primary mgb16">상세보기</button>
+                  <p class="img"><img src="~assets/test_img.png"></p>
+                  <div class="footer_area">
+                  <p class="tag_area">
+                    <span class="primary">＄관련종목</span>
+                    <span>#금리인상</span>
+                    <span>#친환경</span>
+                    <span>#로봇관련주</span>
+                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <span class="ico_f ico_thumbsUp">624</span>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
+                    </span>
+                    <span class="font12">2분 전</span>
+                  </div>
+                </div>
+                </div>
+              </li>
+              <li>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/prd_logo.png" alt="logo"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit txt_dk">삼성전자</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <span class="tag_blue">+1.24%</span>
+                </div>
+                <div class="con_area">
+                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                  https://kr.investing.com/news/stock-market-news/article-760933
+                  </p>
+                  <button class="primary mgb16">상세보기</button>
+                  <div class="footer_area">
+                  <p class="tag_area">
+                    <span>#금리인상</span>
+                    <span>#친환경</span>
+                    <span>#로봇관련주</span>
+                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <span class="ico_f ico_thumbsUp">624</span>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
+                    </span>
+                    <span class="font12">2분 전</span>
+                  </div>
+                </div>
+                </div>
+              </li>
+              <li>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/prd_logo.png" alt="logo"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit txt_dk">삼성전자</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <span class="tag_blue">+1.24%</span>
+                </div>
+                <div class="con_area">
+                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                  https://kr.investing.com/news/stock-market-news/article-760933
+                  </p>
+                  <button class="primary mgb16">상세보기</button>
+                  <div class="footer_area">
+                  <p class="tag_area">
+                    <span>#금리인상</span>
+                    <span>#친환경</span>
+                    <span>#로봇관련주</span>
+                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <span class="ico_f ico_thumbsUp">624</span>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
+                    </span>
+                    <span class="font12">2분 전</span>
+                  </div>
+                </div>
+                </div>
+              </li>
+            </ul>
+            <div class="btn_wrap l_row_l mgt32">
+              <m-button-3 size="large" lined color="primary" class="full">모두보기</m-button-3>
+            </div>
             <!-- E 실시간 인기 토론 -->
             <div class="divider"/>
             <!-- S 인기 토론 자산 -->

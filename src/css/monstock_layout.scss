@@ -5,6 +5,26 @@
     background:#fff;
     border-bottom:1px solid $com_line;
     margin-bottom:20px;
+    .top_info_wrap{
+        margin:0px;
+        display: none;
+        .top_info_area{
+            display: flex;
+            border-top:1px solid $com_line;
+            li{
+                display:flex;
+                white-space: nowrap;
+                padding: 16px 12px;
+                margin-right:40px;
+                .txt01{color:$txt_dk;}
+                > span{margin-right:8px}
+            }
+        }
+        @media (max-width: $breakpoint-xs-max) {
+            display: flex;
+         }
+    }
+    
     .top_banner_wrap{
         color: #fff;
         text-align: center;

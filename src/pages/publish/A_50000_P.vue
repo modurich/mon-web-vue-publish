@@ -18,7 +18,7 @@
               <button class="ico_trash">전체삭제</button>
             </h3>
             <div class="no_data">최근 검색 내역 없음</div>
-            <ul class="search_list">
+            <ul class="search_list mgt32">
               <li>
                 <span class="search_name">
                   삼성전자
@@ -63,9 +63,9 @@
             <div class="divider1 small"/>
             <h3 class="between">
               <span class="font16">인기 검색</span>
-              <span class="font12 txt_gray">12.25 12:50 (UTC +9)</span>
+              <span class="font12 txt_gray medium">12.25 12:50 (UTC +9)</span>
             </h3>
-            <div class="best_wrap">
+            <div class="best_wrap mgt32">
               <ul class="best_list">
                 <li>
                   <span class="num_txt">1</span>

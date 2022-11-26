@@ -689,7 +689,7 @@
             <td>blash</td>
             <td>*****백드롭*****</td>
         </tr> 
-        <tr>
+        <!-- <tr>
             <td></td>
             <td></td>
             <td></td>
@@ -698,7 +698,7 @@
             </td>
             <td>토론</td>
             <td></td>
-        </tr> 
+        </tr>  -->
         <tr>
             <td></td>
             <td></td>
@@ -1204,10 +1204,10 @@
             <td></td>
             <td></td>
             <td>
-                <router-link to="/publish/H_33200_T1">H_33200_T1</router-link>
+                <router-link to="/publish/H_33200_T">H_33200_T</router-link>
             </td>
-            <td>H_33200_T1</td>
-            <td></td>
+            <td>H_33200_T</td>
+            <td>토론</td>
         </tr>
         <tr>
             <td></td>
@@ -1217,6 +1217,16 @@
                 <router-link to="/publish/H_12920_T">H_12920_T</router-link>
             </td>
             <td>실시간 인기 토론</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_12410_T">H_12410_T</router-link>
+            </td>
+            <td>인사이트 인기 종목</td>
             <td></td>
         </tr>
         

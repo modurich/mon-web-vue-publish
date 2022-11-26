@@ -83,7 +83,7 @@
             </div>
             <div class="btn_wrap l_row_l">
               <m-button-3 color="primary" class="full">팔로우</m-button-3>
-              <m-button-3 lined color="primary" class="ico_add">추가</m-button-3>
+              <!-- <m-button-3 lined color="primary" class="ico_add">추가</m-button-3> -->
             </div>
             <!-- S 추천 사용자 -->
             <h3 class="between">

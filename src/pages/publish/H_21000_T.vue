@@ -50,7 +50,7 @@
                 <m-select v-model="select1" :options="options" />
               </div>
               <div class="sub_title_wrap">
-                <span class="txt01"><span class="ico_info_bk">성공률 순위</span></span>
+                <span class="txt01"><span class="ico_info_bk">누적 수익률</span></span>
                 <span class="txt02">참여 9999 명 09.12 16:40 (UTC+9)</span>
               </div>
               <div class="ranking_box">

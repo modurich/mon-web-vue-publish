@@ -48,15 +48,15 @@
                   <button class="ico_copy">copy</button>
                </div>
                <div class="gray_box">
-                <p class="font16 txt_dk">총 스테이킹 수량</p>
+                <p class="font16 txt_dk">스테이킹 수량</p>
                 <p class="center mgb4"><span class="font20 bold primary">9,000,000.9999999999</span> <span class="txt_dk">MON</span></p>
                 <p class="center">지분율<span class="primary">0.0331%</span></p>
                 <div class="btn_wrap l_row_s mgt32">
-                  <m-button-3 color="primary" class="full">지갑 연결하기</m-button-3>
+                  <m-button-3 color="primary" class="full">예치</m-button-3>
                 </div>
                 <div class="btn_wrap">
-                  <m-button-3 color="primary" lined class="full">지갑 연결하기</m-button-3>
-                  <m-button-3 color="primary" lined class="full">지갑 연결하기</m-button-3>
+                  <m-button-3 color="primary" lined class="full">출금요청</m-button-3>
+                  <m-button-3 color="primary" lined class="full">출금 / 내역</m-button-3>
                 </div>
               </div>
               <div class="gray_box">
@@ -127,7 +127,7 @@
 
             <q-tab-panel name="B" class="tab_contents">
               <!--S 의제투표-->
-              <div class="half_select mgt16 mgb32">
+              <div class="mgt16 mgb32">
                 <m-select v-model="select1" :options="options" />
               </div>
               <div class="agenda_tit">
@@ -144,12 +144,14 @@
                       <span class="badge_area">
                         <span class="badge3 yellow">PRO</span>
                         <span class="badge3 primary">반영완료</span>
+                        <span class="badge3 light_green">주식</span>
                       </span>
                       <span class="badge_area">
                         <span class="badge3 gray">부결</span>
                       </span>
                   </span>
                   <p class="txt_tit">호빵맨님의 PRO 승급 제안</p>
+                  <p class="sub_tit mgt8">[식빵맨님의 BLASH]</p>
                   <div class="progress_bar">
                     <div class="progress_tit">
                       <span class="txt01">🗳 471 VP</span>
@@ -167,6 +169,7 @@
                       <span class="badge_area">
                         <span class="badge3 yellow">PRO</span>
                         <span class="badge3 primary">반영완료</span>
+                        <span class="badge3 gray">종료</span>
                       </span>
                       <span class="badge_area">
                         <span class="badge3 green">가결</span>

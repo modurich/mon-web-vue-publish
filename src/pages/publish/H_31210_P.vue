@@ -734,7 +734,7 @@
                       :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
                       :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
                       <div class="btn_wrap mgt16">
-                          <m-button-3 size="large" color="gray" class="full">취소</m-button-3>
+                          <m-button-3 lined size="large" color="primary" class="full">취소</m-button-3>
                           <m-button-3 size="large" color="primary" class="full">수정</m-button-3>
                       </div>
                     </div>
@@ -773,7 +773,7 @@
                       :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
                       :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
                       <div class="btn_wrap mgt16">
-                          <m-button-3 size="large" color="gray" class="full">취소</m-button-3>
+                          <m-button-3 lined size="large" color="primary" class="full">취소</m-button-3>
                           <m-button-3 size="large" color="primary" class="full">수정</m-button-3>
                       </div>
                   </div>

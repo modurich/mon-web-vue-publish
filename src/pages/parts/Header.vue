@@ -40,6 +40,7 @@
                 <!-- <m-button-3  color="primary" size="small">로그인</m-button-3> -->
             </div>
         </div>
+        
         <div class="top_banner_wrap" v-if="isBanner">
             <div class="box_wrap">
                 📢 의제 투표가 진행중입니다. 지금 투표에 참여하여 몬스탁의 주요 의제를 직접 결정하고 활동점수도 받으세요.
@@ -53,6 +54,30 @@
                 </div>
             </a>
         </div> -->
+        <m-chip-list v-dragscroll class="top_info_wrap">
+        <ul class="top_info_area">
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_blue1">₩ 2,814.49</span>
+                <span class="tag_blue small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+        </ul>
+        </m-chip-list>
     </header>
 </template>
 

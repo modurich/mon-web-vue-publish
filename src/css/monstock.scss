@@ -13,7 +13,7 @@
     &.top{align-items: flex-start;}
 }
 .center{text-align: center;justify-content: center;}
-.right{text-align: right;justify-content: flex-end;}
+.right{text-align: right !important;justify-content: flex-end !important;}
 .mgt0{margin-top:0px !important}
 .mgt4{margin-top:4px !important}
 .mgt8{margin-top:8px !important}
@@ -1736,9 +1736,10 @@ button{
 }
 
 .banner_wrap01{
-    img{width:100%}
+    img{width:calc(100% + 32px);margin:0 -16px}
     .mob_only{display: none;}
     @media (max-width: $breakpoint-xs-max) {
+        img{width:calc(100% + 24px);margin:0 -12px}
         .mob_only{display: flex;}
         .pc_only{display: none;}
      }
@@ -2048,13 +2049,16 @@ button{
                 span + span{margin-left:8px}
             }
         }
-        .txt_tit{font-size: 16px;color:$txt_dk;}
+        .txt_tit{font-size: 16px;color:$txt_dk;margin-bottom: 8px;}
+        .sub_tit{font-size: 16px;color: #c79058;}
+        .progress_bar{margin-top:16px}
         .progress_tit{
             display: flex;
             justify-content: space-between;
             font-weight: 700;
             margin-bottom:4px;
             .txt01{color: $primary;}
+            .txt02{font-weight: 500;}
         }
         .txt_area{
             display: flex;
@@ -2695,8 +2699,8 @@ button{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin:24px -12px 0 -12px;
-                padding:24px 12px 0 12px;
+                margin:16px -12px 0 -12px;
+                padding:16px 12px 0 12px;
                 width:calc(100% + 24px);
                 border-top:1px solid $com_line;
                 .txt_area{
@@ -2763,7 +2767,7 @@ button{
                 color: $txt_dk;
                 margin-top:10px;
                 line-height: 22px;
-                font-size:12px;}
+                }
             .img{
                 img{width:100%;}
             }

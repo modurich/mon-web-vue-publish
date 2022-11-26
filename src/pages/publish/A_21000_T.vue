@@ -37,7 +37,7 @@
             <div class="pro_info_wrap">
               <div class="tit_area">
                 <span class="tit_txt">PRO 정보</span>
-                <span class="ico_info">PRO란?</span>
+                <button class="ico_info">PRO란?</button>
               </div>
               <ul class="pro_list">
                 <li>
@@ -54,7 +54,7 @@
               </div> -->
             </div>
             <!-- E PRO정보 -->
-            <div class="sub_info">
+            <div class="sub_info font14">
               <v-clamp autoresize :max-lines="2">
                 {{ snipContent }}
                 <template #after="{ toggle, expanded, clamped }">
