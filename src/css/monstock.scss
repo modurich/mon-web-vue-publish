@@ -653,8 +653,18 @@ body{
     height:48px;
     min-width: 48px !important;
     text-indent: -999em;
-    background: url('~assets/ico_add.svg') center center no-repeat;}
+    background: url('~assets/ico_add.svg') center center no-repeat;
+}
+.ico_add1{
+    display: flex;
+    width:48px;
+    height:48px;
+    min-width: 48px !important;
+    text-indent: -999em;
+    background: url('~assets/ico_add1.svg') center center no-repeat;
+}
 
+    
 //추천사용자
 .recommend_list{
     width:160px;
@@ -1955,7 +1965,8 @@ button{
     color: $txt_blue1;
 }
 
-.swiper_wrap{margin:16px 0;}
+.swiper_wrap{margin:16px 0;
+}
 
 .klip_box{
     border:1px solid $com_line;
