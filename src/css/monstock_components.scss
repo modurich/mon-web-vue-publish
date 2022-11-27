@@ -121,6 +121,19 @@
     color: #141414;
     padding-left: 8px !important;
 }
+.q-radio__inner.text-text-deep-purple + .no-outline + .q-radio__label{
+    color: #141414 !important;
+}
+.q-radio__inner.q-radio__inner--falsy + .no-outline + .q-radio__label{
+    color: #9ca8ba !important;
+}
+
+.q-radio__inner {
+    color: #9ca8ba !important;
+}
+.q-radio__inner.text-text-deep-purple {
+    color: $primary !important;
+}
 //tab
 .q-tabs{
     &.line_type{
@@ -282,6 +295,7 @@
     position:relative;
     &.tit_add{
         .dailog_top{
+            border:1px solid red;
             flex-wrap: wrap;
             justify-content: center;
             .btn_area{display: flex;
@@ -299,7 +313,9 @@
     }
     .dailog_top{display: flex;
         justify-content: flex-end;
+        height:50px;
     }
+    .dailog_contents{padding:0 16px 16px 16px}
     .dialog_tit{text-align:center;font-size:18px;color:#141414;font-weight: 700;}
     .dg_con{
         max-height:80vh;
@@ -660,4 +676,16 @@
 .q-checkbox__icon {
     color: currentColor;
     font-size: 0.65em !important;
+}
+
+
+//select
+.q-item.q-item-type.row.no-wrap.q-item--clickable.q-link.cursor-pointer.q-manual-focusable.q-item--dense {
+    min-height: 46px;
+    color:#9ca8ba;
+}
+.m-select .q-field__native {
+    font-size: 14px;
+    font-weight: 500;
+    color: #141414 !important;
 }

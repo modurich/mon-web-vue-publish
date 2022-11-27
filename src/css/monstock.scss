@@ -422,6 +422,9 @@ body{
     &.center{
         justify-content: center;
     }
+    &.small{
+        button + button{margin-left:8px}
+    }
      //700보다 작아질때
      @media (max-width: $breakpoint-xs-max) {
         button + button{margin-left:8px}

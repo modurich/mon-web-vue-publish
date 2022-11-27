@@ -71,8 +71,8 @@
             <span class="badge3" v-else style="background:#4c34dc">{{ props.row.fld03 }}</span>
           </q-td>
           <q-td key="fld06" :props="props">
-            <span v-if="props.row.fld05 == 'U'" class="ico_up">{{ props.row.fld06 }}%</span>
-            <span v-else class="ico_down">{{ props.row.fld06 }}%</span>
+            <span v-if="props.row.fld05 == 'U'" class="txt_blue1">{{ props.row.fld06 }}%</span>
+            <span v-else class="txt_red">{{ props.row.fld06 }}%</span>
           </q-td>
           
           <q-td key="fld05" :props="props" v-if="tblType == 2">
