@@ -3834,7 +3834,7 @@ align-items: center;color: $txt_dk;
     align-items: center;
     > div{flex:1}
     .level_area{
-        > span{
+        > span,> button{
             display: flex;
             width: 100%;
             flex-wrap: wrap;
@@ -3896,3 +3896,5 @@ align-items: center;color: $txt_dk;
         color: $txt_dk;
     }
 }
+
+

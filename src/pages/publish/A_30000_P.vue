@@ -126,7 +126,7 @@
             <div class="level_area">
               <span><span class="ico_level5 big">level5</span></span>
               <span class="txt01">몬스터개미</span>
-              <span class="ico_info">등급 정보</span>
+              <button class="ico_info">등급 정보</button>
             </div>
             <div class="chart_wrap">
               <div class="chart_list_wrap">

@@ -3,48 +3,66 @@
 <template>
     <aside class="right_aside">
         <div class="aside_box">
-            <swiper class="swiper"
-            :options="this.swiperOption"
-            >
-                <swiper-slide class="slide">
-                    <p class="tit">KOSPI</p>
+            <carousel
+            ref="carousel"
+            v-model="slideIdx"
+            autoplay
+            :autoplay-timeout="1000"
+            :navigate-to="slideIdx"
+            :per-page="1"
+            :pagination-enabled="false"
+            :navigation-enabled="false"
+            :mouse-drag="true"
+            :loop="true"
+        >
+            <slide>
+                <p class="tit">KOSPI</p>
                     <div class="number_wrap">
                         <span class="txt01 blue">2402.59</span>
                         <span class="txt02 blue">▼ 17.15</span>
                         <span class="txt03 blue">-0.81%</span>
                     </div>
-                </swiper-slide>
-                <swiper-slide class="slide">
-                    <p class="tit">KOSDAQ</p>
+            </slide>
+            <slide>
+                <p class="tit">KOSDAQ</p>
                     <div class="number_wrap">
                         <span class="txt01 red">795.16</span>
                         <span class="txt02 red">▲ 2.91</span>
                         <span class="txt03 red">+1.24%</span>
                     </div>
-                </swiper-slide>
-            </swiper>
+            </slide>
+        </carousel>
         </div>
         <div class="aside_box">
-            <swiper class="swiper"
-            :options="this.swiperOption1"
-            >
-                <swiper-slide class="slide">
-                    <p class="tit">Bitcoin</p>
-                    <div class="number_wrap">
-                        <span class="txt01 blue">795.16</span>
-                        <span class="txt02 blue">▲ 2.91</span>
-                        <span class="txt03 blue">+1.24%</span>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="slide">
-                    <p class="tit">Ethereum</p>
-                    <div class="number_wrap">
-                        <span class="txt01 red">795.16</span>
-                        <span class="txt02 red">▲ 2.91</span>
-                        <span class="txt03 red">+1.24%</span>
-                    </div>
-                </swiper-slide>
-            </swiper>
+        <carousel
+            ref="carousel"
+            v-model="slideIdx"
+            autoplay
+            :autoplay-timeout="1000"
+            :navigate-to="slideIdx"
+            :per-page="1"
+            :pagination-enabled="false"
+            :navigation-enabled="false"
+            :mouse-drag="true"
+            :loop="true"
+        >
+            <slide>
+                <p class="tit">Bitcoin</p>
+                <div class="number_wrap">
+                    <span class="txt01 blue">795.16</span>
+                    <span class="txt02 blue">▲ 2.91</span>
+                    <span class="txt03 blue">+1.24%</span>
+                </div>
+            </slide>
+            <slide>
+                <p class="tit">Ethereum</p>
+                <div class="number_wrap">
+                    <span class="txt01 blue">795.16</span>
+                    <span class="txt02 blue">▲ 2.91</span>
+                    <span class="txt03 blue">+1.24%</span>
+                </div>
+            </slide>
+        </carousel>
         </div>
         <div class="aside_box">
             <p class="main_tit">플레이어 랭킹</p>
@@ -170,7 +188,12 @@ export default {
                 },
                 spaceBetween: 30,
                 centeredSlides: true,
-            }
+            },
+            banWord: [
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'},
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'},
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'}
+            ]
         }
     }
 };
