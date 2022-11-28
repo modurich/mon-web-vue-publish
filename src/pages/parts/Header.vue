@@ -55,7 +55,29 @@
             </a>
         </div> -->
         <m-chip-list v-dragscroll class="marquee top_info_wrap">
-        <ul class="top_info_area">
+        <ul class="marquee__content top_info_area">
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_blue1">₩ 2,814.49</span>
+                <span class="tag_blue small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+            <li>
+                <span class="txt01">KOSPI</span>
+                <span class="txt_red">₩ 2,814.49</span>
+                <span class="tag_red small">-0.81%</span>
+            </li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content top_info_area">
             <li>
                 <span class="txt01">KOSPI</span>
                 <span class="txt_blue1">₩ 2,814.49</span>
@@ -119,40 +141,37 @@ export default {
 
 <style lang="scss" scoped>
 .marquee {
-  width: 100%;
-  max-width: 100%;
-//   height: 25px;
-//   margin: 0 auto;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   border: 1px solid #F00;
-//   background: GhostWhite;
-//   color: #000;
-//   font-size: 20px;
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
 }
 
-.marquee ul {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 20s linear infinite;
-  cursor: default;
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
 }
 
-.marquee ul:hover {
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Pause on hover */
+.top_info_wrap:hover .marquee__content{
   -moz-animation-play-state: paused;
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 
-
-/* Make it move */
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0)
-  }
-  100% {
-    transform: translate(-100%, 0)
-  }
-}
 </style>
