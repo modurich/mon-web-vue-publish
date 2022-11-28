@@ -71,8 +71,8 @@
             <span class="badge3" v-else style="background:#4c34dc">{{ props.row.fld03 }}</span>
           </q-td>
           <q-td key="fld06" :props="props">
-            <span v-if="props.row.fld05 == 'U'" class="ico_up">{{ props.row.fld06 }}%</span>
-            <span v-else class="ico_down">{{ props.row.fld06 }}%</span>
+            <span v-if="props.row.fld05 == 'U'" class="txt_blue1">{{ props.row.fld06 }}%</span>
+            <span v-else class="txt_red">{{ props.row.fld06 }}%</span>
           </q-td>
           
           <q-td key="fld05" :props="props" v-if="tblType == 2">
@@ -126,7 +126,7 @@ const tbColInfo = [
 const tbRowData = [
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '삼성전자', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'S',fld11: 'R',fld12: '-24.24' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: 'SK하이닉스', fld05: 'D', fld06: '10', fld07: '-0.12', fld08: '5', fld09: '5', fld10: 'S',fld11: 'B',fld12: '+4.24' },
-  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '네이버', fld05: 'U', fld06: '15', fld07: '1.25', fld08: '10', fld09: '9', fld10: 'S',fld11: 'R',fld12: '-24.24' },
+  { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '네이버', fld05: 'U', fld06: '15', fld07: '1.25', fld08: '10', fld09: '9', fld10: '',fld11: 'R',fld12: '-24.24' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '중기', fld04: '현대차', fld05: 'U', fld06: '5', fld07: '0', fld08: '5', fld09: '13', fld10: 'F',fld11: 'R',fld12: '-24.24' },
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '장기', fld04: '신풍제약', fld05: 'D', fld06: '10', fld07: '-1.28', fld08: '5', fld09: '16', fld10: 'N',fld11: 'B' ,fld12: '+4.24'},
   { fld01: '22.09.14', fld02: '22.09.14', fld03: '단기', fld04: '안랩', fld05: 'U', fld06: '5', fld07: '3', fld08: '15', fld09: '3', fld10: 'F',fld11: 'R' ,fld12: '-24.24'},

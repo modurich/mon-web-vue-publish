@@ -54,7 +54,7 @@
                 <div class="btn_wrap l_row_s mgt32">
                   <m-button-3 color="primary" class="full">예치</m-button-3>
                 </div>
-                <div class="btn_wrap">
+                <div class="btn_wrap small">
                   <m-button-3 color="primary" lined class="full">출금요청</m-button-3>
                   <m-button-3 color="primary" lined class="full">출금 / 내역</m-button-3>
                 </div>

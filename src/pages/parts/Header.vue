@@ -54,7 +54,7 @@
                 </div>
             </a>
         </div> -->
-        <m-chip-list v-dragscroll class="top_info_wrap">
+        <m-chip-list v-dragscroll class="marquee top_info_wrap">
         <ul class="top_info_area">
             <li>
                 <span class="txt01">KOSPI</span>
@@ -118,5 +118,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.marquee {
+  width: 100%;
+  max-width: 100%;
+//   height: 25px;
+//   margin: 0 auto;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   border: 1px solid #F00;
+//   background: GhostWhite;
+//   color: #000;
+//   font-size: 20px;
+}
 
+.marquee ul {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+  cursor: default;
+}
+
+.marquee ul:hover {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+
+/* Make it move */
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0)
+  }
+  100% {
+    transform: translate(-100%, 0)
+  }
+}
 </style>

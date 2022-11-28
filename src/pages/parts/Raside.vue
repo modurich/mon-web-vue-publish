@@ -27,7 +27,6 @@
         <div class="aside_box">
             <swiper class="swiper"
             :options="this.swiperOption1"
-            @click="mouseOver"
             >
                 <swiper-slide class="slide">
                     <p class="tit">Bitcoin</p>
@@ -178,7 +177,12 @@ export default {
                 },
                 spaceBetween: 30,
                 centeredSlides: true,
-            }
+            },
+            banWord: [
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'},
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'},
+                {title:'test',number1:'test1',number2:'test1',number3:'test1'}
+            ]
         }
     }
 };

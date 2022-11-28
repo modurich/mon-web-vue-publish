@@ -9,6 +9,7 @@ const routes = [
             { path: '/publish/BackDropDialog', component: () => import('components/BackDropDialog.vue') },
             { path: '/publish/FroalaEditor', component: () => import('components/FroalaEditor.vue') },
             { path: '/publish/TagsTextInput', component: () => import('components/TagsTextInput.vue') },
+            { path: '/publish/Carousel', component: () => import('src/components/CarouselSample.vue') },
             { path: '/publish/A_10000_P', component: () => import('pages/publish/A_10000_P.vue') },
             { path: '/publish/A_11000_P', component: () => import('pages/publish/A_11000_P.vue') },
             { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },

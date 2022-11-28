@@ -34,7 +34,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -48,7 +48,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -62,7 +62,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -76,7 +76,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -90,7 +90,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -111,7 +111,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -125,7 +125,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -139,7 +139,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -153,7 +153,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>
@@ -167,7 +167,7 @@
                     <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
                     <span class="logo_area">
                       <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                        <img src="~assets/prd_logo.png" alt="logo" />
                         삼성전자
                       </span>
                     </span>

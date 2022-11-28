@@ -372,7 +372,7 @@
               </ul>
               <!-- E ranking user list -->
               <div class="btn_wrap mgt32">
-                <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                <m-button-3 class="font16 full" color="textPrimary">더보기</m-button-3>
               </div>
             </div>
             <div v-if="tab2 == 'B'">
@@ -753,7 +753,7 @@
               </ul>
               <!-- E ranking user list -->
               <div class="btn_wrap mgt32">
-                <m-button-3 class="font18 full" color="textPrimary">더보기</m-button-3>
+                <m-button-3 class="font16 full" color="textPrimary">더보기</m-button-3>
               </div>
             </div>
             <div v-if="tab3 == 'B'">

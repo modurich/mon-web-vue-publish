@@ -70,10 +70,10 @@
                 <p class="link_txt"><a href="#">https://docs.google.com/presentation/d/1XSMUivsrJcxYabsD7D7ZLqHiDLfwaF2KdFUpxtZmlj4/edit#slide=id.g15918d493b0_0_49</a></p>
               </div>
             </div>
-            <div class="btn_wrap l_row_l mgt32">
+            <div class="btn_wrap l_row_l mgt32 small">
               <m-button-3 color="primary" class="full">추천코드</m-button-3>
               <m-button-3 color="primary" class="full">내 정보 수정</m-button-3>
-              <m-button-3 lined color="primary" class="ico_add">추가</m-button-3>
+              <m-button-3 lined color="primary" class="ico_add1">추가</m-button-3>
             </div>
             <!-- S 추천 사용자 -->
             <h3 class="between">
@@ -696,16 +696,16 @@ export default {
                 spaceBetween: 50,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 40
+                        slidesPerView: 3.7,
+                        spaceBetween: 0
                     },
                     768: {
-                        slidesPerView: 4,
-                        spaceBetween: 30
+                      slidesPerView: 3.7,
+                        spaceBetween: 0
                     },
                     650: {
-                        slidesPerView: 4,
-                        spaceBetween: 30
+                      slidesPerView: 3.7,
+                        spaceBetween: 0
                     },
                     520: {
                         slidesPerView: 3,
