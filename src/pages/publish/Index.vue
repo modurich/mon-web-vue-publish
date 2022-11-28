@@ -76,6 +76,16 @@
             <td>npm install 하신 다음 사용하세요.</td>
         </tr> 
         <tr>
+            <td>components</td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/Carousel">CarouselSample</router-link>
+            </td>
+            <td>Carousel</td>
+            <td></td>
+        </tr> 
+        <tr>
           <td>가입/로그인</td>
           <td></td>
           <td></td>
