@@ -6,7 +6,7 @@
             <swiper class="swiper"
             :options="this.swiperOption"
             >
-                <swiper-slide class="slide">
+                <swiper-slide class="slide" >
                     <p class="tit">KOSPI</p>
                     <div class="number_wrap">
                         <span class="txt01 blue">2402.59</span>
@@ -27,6 +27,7 @@
         <div class="aside_box">
             <swiper class="swiper"
             :options="this.swiperOption1"
+            @click="mouseOver"
             >
                 <swiper-slide class="slide">
                     <p class="tit">Bitcoin</p>
@@ -147,26 +148,33 @@
 import { ref, computed } from 'vue';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
+
 export default {
+
     components: { Swiper, SwiperSlide },
+
     data() {
         return {
             slide: ref('1'),
             dailog1:ref(false),
+            active: false,
             swiperOption: {
                 effect: 'slide',
                 loop: true,
                 autoplay: {
-                delay: 5000
+                    delay: 5000,
+                    disableOnInteraction: false,
                 },
                 spaceBetween: 30,
                 centeredSlides: true,
+                
             },
             swiperOption1: {
                 effect: 'slide',
                 loop: true,
                 autoplay: {
-                delay: 5000
+                    delay: 5000,
+                    disableOnInteraction: false,
                 },
                 spaceBetween: 30,
                 centeredSlides: true,
