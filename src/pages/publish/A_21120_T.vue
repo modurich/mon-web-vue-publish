@@ -3,7 +3,7 @@
       <q-form>
         <div class="con_box">
           <h2 class="line_type">내 정보 수정</h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
+          <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
           <!-- S 프로필 수정-->
           <h3 class="mgt16">프로필 사진</h3>

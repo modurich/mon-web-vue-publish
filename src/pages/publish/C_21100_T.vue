@@ -13,7 +13,7 @@
               </m-input>
               <m-button-3 color="primary">검색</m-button-3>
             </div>
-            <m-tabs class="line_type large mg0" v-model="tab1" :items="tabs" />
+            <m-tabs class="line_type large mg0 sticky_tab1" v-model="tab1" :items="tabs" />
             <div v-if="tab1 == 'A'">
               <h3 class="between mgt32">
                 <span class="font16">최근 검색</span>

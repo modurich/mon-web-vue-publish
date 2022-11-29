@@ -31,13 +31,13 @@
 <template>
     <div class="centerarea_box1">
         <!-- S show header-->
-        <div id="dynamic" class="sticky_header">
+        <!-- <div id="dynamic" class="sticky_header">
           <span class="logo">
             <img src="~assets/prd_logo.png" alt="profile" />
             삼성전자
           </span>    
           <span class="txt01">₩ 352,100</span> 
-        </div>
+        </div> -->
         <!-- E show header-->
         <div class="con_box">
           <h2 class="line_type">인사이트</h2>
@@ -156,7 +156,7 @@
               </div> -->
               <!--E 투자 리스트-->
             </div>
-            <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs" />
+            <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>
@@ -658,15 +658,17 @@
                       </div>
                     </div>
                     <!-- S 댓글 -->
-                    <div class="divider1 mga16"/>
-                    <div class="re_reply_wrap">
-                      <div class="ico_reply"></div>
-                      <div class="reply_area">
-                        <m-textarea :maxlength="300" :showError="false" :minHeight="textarea1.minHeight"
-                        :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
-                        :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
-                        <div class="btn_wrap mgt16">
-                            <m-button-3 size="large" color="primary" class="full">등록</m-button-3>
+                    <div class="re_box_wrap">
+                      <div class="divider1 mga16"/>
+                      <div class="re_reply_wrap">
+                        <div class="ico_reply"></div>
+                        <div class="reply_area">
+                          <m-textarea :maxlength="300" :showError="false" :minHeight="textarea1.minHeight"
+                          :counter="textarea1.counter" :value="textarea1.value" :bottomMessage="textarea1.bottomMessage"
+                          :height="50" placeholder="저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관과 관련 법률에 의해 제재를 받을 수 있습니다."/>
+                          <div class="btn_wrap mgt16">
+                              <m-button-3 size="large" color="primary" class="full">등록</m-button-3>
+                          </div>
                         </div>
                       </div>
                     </div>

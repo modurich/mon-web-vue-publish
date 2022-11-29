@@ -143,7 +143,6 @@ export default {
 .marquee {
   --gap: 1rem;
   position: relative;
-  display: flex;
   overflow: hidden;
   user-select: none;
   gap: var(--gap);

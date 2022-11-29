@@ -8,6 +8,9 @@
     .top_info_wrap{
         margin:0px;
         display: none;
+        height:58px;
+        position:sticky;
+        top:0px;
         .top_info_area{
             display: flex;
             border-top:1px solid $com_line;

@@ -2,7 +2,7 @@
     <div class="centerarea_box1">
         <div class="con_box">
           <h2 class="line_type">프로필</h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
+          <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             <!-- S 팔로워-->
             <!-- S 추천 사용자 -->
@@ -31,13 +31,13 @@
               <li>
                 <div class="my_profile">
                   <div class="img_area">
-                    <img src="~assets/profile_img1.png" alt="profile"/>
+                    <a href="#"><img src="~assets/profile_img1.png" alt="profile"/></a>
                   </div>
                   <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="txt_tit"><a href="#">몬스탁닉넴열글자까지</a></span>
                     <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
+                      <button class="badge pro">PRO</button>
+                      <button class="badge pl1">PL1</button>
                     </span>
                   </div>
                 </div>
@@ -69,13 +69,13 @@
               <li>
                 <div class="my_profile">
                   <div class="img_area">
-                    <img src="~assets/profile_img2.png" alt="profile"/>
+                    <a href="#"><img src="~assets/profile_img2.png" alt="profile"/></a>
                   </div>
                   <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="txt_tit"><a href="#">몬스탁닉넴열글자까지</a></span>
                     <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
+                      <button class="badge pro">PRO</button>
+                      <button class="badge pl1">PL1</button>
                     </span>
                   </div>
                 </div>
@@ -107,13 +107,13 @@
               <li>
                 <div class="my_profile">
                   <div class="img_area">
-                    <img src="~assets/profile_img3.png" alt="profile"/>
+                    <a href="#"><img src="~assets/profile_img3.png" alt="profile"/></a>
                   </div>
                   <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="txt_tit"><a href="#">몬스탁닉넴열글자까지</a></span>
                     <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
+                      <button class="badge pro">PRO</button>
+                      <button class="badge pl1">PL1</button>
                     </span>
                   </div>
                 </div>
@@ -145,13 +145,13 @@
               <li>
                 <div class="my_profile">
                   <div class="img_area">
-                    <img src="~assets/profile_img4.png" alt="profile"/>
+                    <a href="#"><img src="~assets/profile_img4.png" alt="profile"/></a>
                   </div>
                   <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="txt_tit"><a href="#">몬스탁닉넴열글자까지</a></span>
                     <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
+                      <button class="badge pro">PRO</button>
+                      <button class="badge pl1">PL1</button>
                     </span>
                   </div>
                 </div>
@@ -183,13 +183,13 @@
               <li>
                 <div class="my_profile">
                   <div class="img_area">
-                    <img src="~assets/profile_img4.png" alt="profile"/>
+                    <a href="#"><img src="~assets/profile_img4.png" alt="profile"/></a>
                   </div>
                   <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="txt_tit"><a href="#">몬스탁닉넴열글자까지</a></span>
                     <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
+                      <button class="badge pro">PRO</button>
+                      <button class="badge pl1">PL1</button>
                     </span>
                   </div>
                 </div>

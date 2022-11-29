@@ -24,23 +24,23 @@
                 <div class="tit_area">
                   <span class="txt_tit">몬스탁닉넴열글자까지</span>
                   <span class="badge_area">
-                    <span class="badge pro">PRO</span>
-                    <span class="badge pl1">PL1</span>
+                    <button class="badge pro">PRO</button>
+                    <button class="badge pl1">PL1</button>
                   </span>
                 </div>
               </div>
               <ul class="follow_wrap">
                   <li>
                       <span class="txt01">콘텐츠</span>
-                      <span class="txt02">215</span>
+                      <a href="#" class="txt02">215</a>
                   </li>
                   <li>
                       <span class="txt01">팔로워</span>
-                      <span class="txt02">58</span>
+                      <a href="#" class="txt02">58</a>
                   </li>
                   <li>
                       <span class="txt01">팔로잉</span>
-                      <span class="txt02">361</span>
+                      <a href="#" class="txt02">361</a>
                   </li>
               </ul>
             </div>

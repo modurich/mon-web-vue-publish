@@ -17,7 +17,7 @@
               </li>
             </ul>
             <p>메모리 반도체란 반도체의 회로를 전기적으로 제어함으로써 데이터를 저장하는 반도체 회로장치다.</p>
-            <m-tabs class="line_type large mg0" v-model="tab1" :items="tabs" />
+            <m-tabs class="line_type large mg0 sticky_tab1" v-model="tab1" :items="tabs" />
             <div v-if="tab1 == 'A'">
               <!-- <div class="no_data">최근 검색 내역 없음</div> -->
               <ul class="product_list">
@@ -81,6 +81,7 @@
                     </div>
                   </a>
                 </li>
+                
               </ul>
             </div>
             <div v-if="tab1 == 'B'">

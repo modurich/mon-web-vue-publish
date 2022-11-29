@@ -4,7 +4,7 @@
           <h2 class="line_type">
             거버넌스
           </h2>
-          <q-tabs class="line_type large" v-model="tab1">
+          <q-tabs class="line_type large sticky_tab1" v-model="tab1">
             <q-tab name="A"  label="스테이킹"></q-tab>
             <q-tab name="B"  label="의제 투표" alert="red"></q-tab>
           </q-tabs>

@@ -4,7 +4,7 @@
           <h2 class="line_type">
             임시저장
           </h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs" />
+          <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
               <!-- S 인사이트 -->
               <div class="radio_wrap right">

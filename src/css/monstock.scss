@@ -54,6 +54,8 @@
 .line26{line-height: 26px;}
 .link_type1{color:#6ee0b0 !important;text-decoration: underline !important;}
 
+a.block{display: block;}
+
 .mob_only{display: none;}
 .pc_only{display: block;}
 @media (max-width: $breakpoint-xs-max) {
@@ -500,6 +502,7 @@ body{
             img{width:100%;height:100%}
         }
         .badge_area{span + span{margin-left:8px}}
+        .badge_area{button + button{margin-left:8px}}
         .tit_area{
             .txt_tit{
                 display:block;
@@ -519,7 +522,7 @@ body{
        li{
             width:50%;
             text-align: center;
-            span{display: block;}
+            span,a{display: block;}
          }
         li + li{border-left:1px solid #d4d9ea} 
     }
@@ -556,6 +559,7 @@ body{
                 display: inline-flex;
                 align-items: center;
                 span + span{margin-left:8px}
+                button + button{margin-left:8px}
             }
             .tit_area{
                 .txt_tit{
@@ -2326,6 +2330,10 @@ button{
                 width: calc(100% - 15px);
             }
         }
+        .re_box_wrap{
+            margin:0 -16px 0 -16px;
+            .divider1{width:calc(100% - 12px)}
+        }
         .re_reply_wrap{
             display: flex;
             background: #f8f9fd;
@@ -3531,12 +3539,10 @@ button{
         top:0px;
         background: #fff;
         z-index: 2;
-        margin:0 -12px;
-        height: 50px;
     }
 }
 //sticky_header와 함께 사용할경우
-.sticky_tab{
+.sticky_tab2{
     @media (max-width: $breakpoint-xs-max) {
         position:sticky;
         top:50px;
