@@ -2410,6 +2410,10 @@ button{
     justify-content: space-between;
     align-items: center;
     .img_area{
+        a > div{width:24px;
+        height:24px;
+        border-radius: 24px;
+        }
         img{width:24px;
         height:24px;
         border-radius: 24px;
