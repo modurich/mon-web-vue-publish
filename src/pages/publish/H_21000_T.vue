@@ -74,8 +74,8 @@
                     <p class="user_name">닉네임열두</p>
                     <p class="user_grade">
                         <!-- <span class="ico_level1">level</span> -->
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
+                        <button class="badge pro">PRO</button>
+                        <button class="badge pl1">PL1</button>
                     </p>
                     <p class="txt_num">
                       994.87%
@@ -121,8 +121,8 @@
                     <p class="user_name">닉네임열두글자하나둘셋넷</p>
                     <p class="user_grade">
                         <!-- <span class="ico_level1">level</span> -->
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
+                        <button class="badge pro">PRO</button>
+                        <button class="badge pl1">PL1</button>
                     </p>
                     <p class="txt_num">
                       994.87%
@@ -168,8 +168,8 @@
                     <p class="user_name">닉네임열두글자하나둘셋넷</p>
                     <p class="user_grade">
                         <!-- <span class="ico_level1">level</span> -->
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
+                        <button class="badge pro">PRO</button>
+                        <button class="badge pl1">PL1</button>
                     </p>
                     <p class="txt_num">
                       994.87%

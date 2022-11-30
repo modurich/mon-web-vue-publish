@@ -31,13 +31,13 @@
 <template>
     <div class="centerarea_box1">
         <!-- S show header-->
-        <!-- <div id="dynamic" class="sticky_header">
+        <div id="dynamic" class="sticky_header">
           <span class="logo">
             <img src="~assets/prd_logo.png" alt="profile" />
             삼성전자
           </span>    
           <span class="txt01">₩ 352,100</span> 
-        </div> -->
+        </div>
         <!-- E show header-->
         <div class="con_box">
           <h2 class="line_type">인사이트</h2>
@@ -156,7 +156,7 @@
               </div> -->
               <!--E 투자 리스트-->
             </div>
-            <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs" />
+            <m-tabs class="line_type large sticky_tab2" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>
@@ -250,7 +250,7 @@
               <h3 class="between">
                 <span class="font16">분석</span>
               </h3>
-              <div class="mga32">
+              <div class="mga32 break">
                 루시드와 엘지 엔솔 관련 종목으로 부각받았던 이력이있는 나라엠엔디입니다. 최근 삼기를 비롯한 자동차 부품 관련 종목들의 흐름이 매우 강력합니다.<br/>
                 기계 관련 종목이기도 합니다.<br/>
                 <span class="primary">$삼성전자</span> 실적은 미미하지만 흑자상태를 보이고 있는 종목으로 최근 하락추세를 걷어 올리는 힘이 나오고 있습니다.

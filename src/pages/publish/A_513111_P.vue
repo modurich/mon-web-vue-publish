@@ -6,7 +6,7 @@
           </h2>
           <div class="box_contents">  
             <ul class="thema_list mgt0">
-              <li>
+              <li class="end">
                 <div class="tit_area">
                   <span class="badge2 mgb4">반도체</span>
                   <span class="txt01 font20">메모리반도체</span>
@@ -22,7 +22,6 @@
               <!-- <div class="no_data">최근 검색 내역 없음</div> -->
               <ul class="product_list">
                 <li>
-                  <a href="#" class="link_area">
                     <div class="prd_img">
                       <div class="img_area">
                         <img src="~assets/prd_logo.png" alt="profile"/>
@@ -34,15 +33,12 @@
                         </span>
                       </div>
                     </div>
-                    <div class="ico_area txt_red">
+                    <div class="ico_area block txt_red">
                       <div class="right font16 mgb4">52,100</div>
-                      <span class="font12 mgr4"><span class="font10">▼</span> 1,200</span>
                       <span class="tag_red small">-0.81%</span>
                     </div>
-                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link_area">
                     <div class="prd_img">
                       <div class="img_area">
                         <img src="~assets/prd_logo.png" alt="profile"/>
@@ -54,15 +50,12 @@
                         </span>
                       </div>
                     </div>
-                    <div class="ico_area txt_blue1">
+                    <div class="ico_area block txt_blue1">
                       <div class="right font16 mgb4">352,100</div>
-                      <span class="font12 mgr4"><span class="font10">▲</span> 1,200</span>
                       <span class="tag_blue small">+29.24%</span>
                     </div>
-                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link_area">
                     <div class="prd_img">
                       <div class="img_area">
                         <img src="~assets/prd_logo.png" alt="profile"/>
@@ -74,12 +67,10 @@
                         </span>
                       </div>
                     </div>
-                    <div class="ico_area txt_red">
+                    <div class="ico_area block txt_red">
                       <div class="right font16 mgb4">52,100</div>
-                      <span class="font12 mgr4"><span class="font10">▼</span> 1,200</span>
                       <span class="tag_red small">-0.81%</span>
                     </div>
-                  </a>
                 </li>
                 
               </ul>

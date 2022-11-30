@@ -4,7 +4,7 @@
         <h2 class="line_type between">
           <span>가격대별 종목</span>
         </h2>
-        <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
+        <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs"/>
         <div class="tab_contents" v-if="tab1 == 'A'">
           <h3 class="between mgt16">
             <span>1,000원 미만</span>

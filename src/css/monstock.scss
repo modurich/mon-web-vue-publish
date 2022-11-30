@@ -53,7 +53,7 @@
 .bold{font-weight: 700 !important;}
 .line26{line-height: 26px;}
 .link_type1{color:#6ee0b0 !important;text-decoration: underline !important;}
-
+.break{word-break: break-all;}//영문,숫자 줄바꿈처리
 a.block{display: block;}
 
 .mob_only{display: none;}
@@ -1546,7 +1546,7 @@ button{
         .user_grade{
             display:inline-flex;
             align-items: center;
-            span{margin-right:8px;
+            span,button{margin-right:8px;
                 &:last-child{margin-right:0;}
             }
             .ico_level1{
@@ -1873,6 +1873,7 @@ button{
         justify-content: space-between;
         align-items: center;
         margin-bottom:22px;
+        &.end{align-items: flex-end;}
         &:last-child{margin-bottom: 0;}
         .tit_area{
             flex:1;
@@ -2979,17 +2980,17 @@ button{
 .bookmark{
     display: flex;
     align-items: center;
-    .txt_area{margin-right:4px}
+    .txt_area{margin-right:4px;color: $primary;}
     .ico_bookmark{
         display: inline-flex;
         width:24px;
         height: 24px;
-        background: url('~assets/btn_bookmark.svg')  no-repeat center center; 
+        background: url('~assets/btn_bookmark_p.svg')  no-repeat center center; 
     }
     &.active{
         color: $primary;
         .ico_bookmark{
-            background: url('~assets/btn_bookmark_p.svg')  no-repeat center center; 
+            background: url('~assets/btn_bookmark_p1.svg')  no-repeat center center; 
         }
     }
 }
@@ -3521,10 +3522,10 @@ button{
     }
 }
 
-.sticky_tab0{
+.sticky_tab2{
     @media (max-width: $breakpoint-xs-max) {
         position:sticky;
-        top:0px;
+        top:50px;
         background: #fff;
         z-index: 2;
         margin:0 -12px;

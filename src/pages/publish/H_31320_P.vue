@@ -140,7 +140,7 @@
               <!--E 투자 리스트-->
             </div>
            
-            <m-tabs class="line_type large sticky_tab" v-model="tab1" :items="tabs"/>
+            <m-tabs class="line_type large sticky_tab2" v-model="tab1" :items="tabs"/>
             <div class="tab_contents" v-if="tab1 == 'A'">
               <h3 class="between mgb32">
                 <span class="font16">D-27</span>
