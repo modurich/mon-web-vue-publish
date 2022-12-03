@@ -2,7 +2,7 @@
     <div class="centerarea_box1">
         <div class="con_box">
           <h2 class="line_type">콘텐츠 관리</h2>
-          <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
+          <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             <div class="right mgt16">
               <m-tabs class="card_type small" v-model="tab2" :items="tabs1" />
@@ -30,74 +30,85 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
+                </li>
+               
+                <li>
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
+                      </span>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
-                      </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="between font12">
@@ -107,74 +118,84 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="logo" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="logo" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -223,82 +244,92 @@
               <div class="divider1 small mga16"/>
               <ul class="list_type2 w100">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">CJ제일제당 장기 상승</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">CJ제일제당 장기 상승</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +15.29%
+                          <span class="txt_dk font16">(5%)</span>
+                        </span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +15.29%
-                        <span class="txt_dk font16">(5%)</span>
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +0.34%
+                          <span class="txt_dk font16">(10%)</span>
+                        </span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +0.34%
-                        <span class="txt_dk font16">(10%)</span>
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">고려산업, 식량 위기 테마</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">
+                          -2.58%
+                          <span class="txt_dk font16">(15%)</span>
+                        </span>
                       </span>
-                      <span class="font20 txt_red">
-                        -2.58%
-                        <span class="txt_dk font16">(15%)</span>
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">단기 눌림목 공략!</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">단기 눌림목 공략!</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">
+                          -1.79%
+                          <span class="txt_dk font16">(5%)</span>
+                        </span>
                       </span>
-                      <span class="font20 txt_red">
-                        -1.79%
-                        <span class="txt_dk font16">(5%)</span>
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <span class="ico_area mgb4">
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <span class="ico_area mgb4">
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +1000.42%
-                        <span class="txt_dk font16">(100%)</span>
+                      <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +1000.42%
+                          <span class="txt_dk font16">(100%)</span>
+                        </span>
                       </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -335,79 +366,89 @@
               <div class="divider1 small mga16"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+20.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+20.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp02.svg" alt="무효" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp02.svg" alt="무효" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">-23.15%</span>
                       </span>
-                      <span class="font20 txt_red">-23.15%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+20.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp03.svg" alt="매수실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp03.svg" alt="매수실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+20.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -435,10 +476,10 @@
                 <div class="top_wrap">
                   <div class="my_profile">
                     <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
+                      <a href="#"><img src="~assets/profile_img1.png" alt="profile"/></a>
                     </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#"><span class="txt_tit">몬스탁닉넴열글자까지</span></a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge confirm">인증</span>
@@ -468,19 +509,23 @@
                   </p>
                 </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <div class="list_box">
-                    <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
-                    <div class="txt_area">
-                      <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
-                      <div class="con">타이틀타이틀타이틀</div>
-                      <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                  </a>
+                  <a href="#">
+                    <div class="list_box">
+                      <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
+                      <div class="txt_area">
+                        <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
+                        <div class="con">타이틀타이틀타이틀</div>
+                        <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <p class="tag_area">
@@ -491,8 +536,8 @@
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <button class="ico_f ico_comment">7</button>
                     </span>
                     <span class="btn_area1">
                       1분 전
@@ -514,10 +559,10 @@
                 <div class="top_wrap">
                   <div class="my_profile">
                     <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
+                      <a href="#"><img src="~assets/profile_img1.png" alt="profile"/></a>
                     </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#"><span class="txt_tit">몬스탁닉넴열글자까지</span></a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge confirm">인증</span>
@@ -546,17 +591,19 @@
                   </p>
                 </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <button class="ico_f ico_comment">7</button>
                     </span>
                     <span class="btn_area1">
                       1분 전
@@ -609,74 +656,84 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <span class="txt01"> 0.2%</span>
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <span class="txt01"> 0.2%</span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="between font12">
@@ -686,74 +743,84 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -778,211 +845,225 @@
                 <m-button-3 size="large" color="primary"  class="full">BLASH 작성하기</m-button-3>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="ico_area">
-                    <span class="badge3 big red">자동매도</span>
-                    <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
-                  </span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">매도가</span>
-                    <span class="txt_red">₩ 1,000,000</span>
-                  </li>
-                  <li>
-                    <span class="font12">실현수익률</span>
-                    <span class="txt_blue1">+10%</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">투자비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">투자기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="ico_area">
+                      <span class="badge3 big red">자동매도</span>
+                      <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
+                    </span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">매도가</span>
+                      <span class="txt_red">₩ 1,000,000</span>
+                    </li>
+                    <li>
+                      <span class="font12">실현수익률</span>
+                      <span class="txt_blue1">+10%</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">투자비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">투자기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="ico_area">
-                    <span class="badge3 big red">매도</span>
-                    <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
-                  </span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">매도가</span>
-                    <span class="txt_red">₩ 1,000,000</span>
-                  </li>
-                  <li>
-                    <span class="font12">실현수익률</span>
-                    <span class="txt_red">-10%</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">투자비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">투자기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="ico_area">
+                      <span class="badge3 big red">매도</span>
+                      <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
+                    </span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">매도가</span>
+                      <span class="txt_red">₩ 1,000,000</span>
+                    </li>
+                    <li>
+                      <span class="font12">실현수익률</span>
+                      <span class="txt_red">-10%</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">투자비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">투자기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="ico_area">
-                    <span class="badge3 big orange">홀딩</span>
-                  </span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li class="col2">
-                    <span class="font12">평단가</span>
-                    <span class="txt_dk">₩ 1,000,000</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li class="col2">
-                    <span class="font12">추가기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="ico_area">
+                      <span class="badge3 big orange">홀딩</span>
+                    </span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li class="col2">
+                      <span class="font12">평단가</span>
+                      <span class="txt_dk">₩ 1,000,000</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li class="col2">
+                      <span class="font12">추가기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="ico_area">
-                    <span class="badge3 big green">1차추매</span>
-                    <span class="badge3 big orange icon"><i class="ico_result_type01"/></span>
-                    <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
-                  </span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">매수가</span>
-                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
-                  </li>
-                  <li>
-                    <span class="font12">평단가</span>
-                    <span class="txt_dk">₩ 1,000,000</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">추가비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">추가기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="ico_area">
+                      <span class="badge3 big green">1차추매</span>
+                      <span class="badge3 big orange icon"><i class="ico_result_type01"/></span>
+                      <!-- <button class="badge3 big orange icon"><i class="ico_result_type01"/></button> -->
+                    </span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">매수가</span>
+                      <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                    </li>
+                    <li>
+                      <span class="font12">평단가</span>
+                      <span class="txt_dk">₩ 1,000,000</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">추가비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">추가기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="badge3 big green">최초매수</span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li class="col2">
-                    <span class="font12">매수가</span>
-                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">투자비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">투자기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="badge3 big green">최초매수</span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li class="col2">
+                      <span class="font12">매수가</span>
+                      <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">투자비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">투자기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="badge3 big gray">추매취소</span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">매수가</span>
-                    <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
-                  </li>
-                  <li>
-                    <span class="font12">평단가</span>
-                    <span class="txt_dk">₩ 1,000,000</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">추가비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">추가기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="badge3 big gray">추매취소</span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">매수가</span>
+                      <span class="txt_blue1">₩ 1,000,000 ~ 1,000,000</span>
+                    </li>
+                    <li>
+                      <span class="font12">평단가</span>
+                      <span class="txt_dk">₩ 1,000,000</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">추가비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">추가기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="voting_list_wrap line">
-                <p class="logo_wrap">
-                  <img src="~assets/prd_logo.png" alt="profile" />
-                  삼성전자
-                </p>
-                <div class="between mgt10">
-                  <span class="badge3 big gray">취소</span>
-                  <span class="font12">2022.10.26 10:30</span>
-                </div>
-                <ul class="voting_list">
-                  <li class="col2">
-                    <span class="font12">매수가</span>
-                    <span class="txt_blue1">₩ ????? ~ ?????</span>
-                  </li>
-                </ul>
-                <ul class="voting_list">
-                  <li>
-                    <span class="font12">투자비중</span>
-                    <span class="txt_dk">100%</span>
-                  </li>
-                  <li>
-                    <span class="font12">투자기간</span>
-                    <span class="txt_dk">100일</span>
-                  </li>
-                </ul>
+                <a href="#">
+                  <p class="logo_wrap">
+                    <img src="~assets/prd_logo.png" alt="profile" />
+                    삼성전자
+                  </p>
+                  <div class="between mgt10">
+                    <span class="badge3 big gray">취소</span>
+                    <span class="font12">2022.10.26 10:30</span>
+                  </div>
+                  <ul class="voting_list">
+                    <li class="col2">
+                      <span class="font12">매수가</span>
+                      <span class="txt_blue1">₩ ????? ~ ?????</span>
+                    </li>
+                  </ul>
+                  <ul class="voting_list">
+                    <li>
+                      <span class="font12">투자비중</span>
+                      <span class="txt_dk">100%</span>
+                    </li>
+                    <li>
+                      <span class="font12">투자기간</span>
+                      <span class="txt_dk">100일</span>
+                    </li>
+                  </ul>
+                </a>
               </div>
               <div class="btn_wrap">
                 <m-button-3 size="large" class="font16 full" color="textPrimary">더보기</m-button-3>
@@ -996,77 +1077,87 @@
               <div class="divider1 small mga16"/>
               <ul class="list_type2 w100">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">CJ제일제당 장기 상승</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">CJ제일제당 장기 상승</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +15.29%
+                        </span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +15.29%
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">긴 횡보구간의 터널을 빠져나오다.</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +0.34%
+                        </span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +0.34%
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">고려산업, 식량 위기 테마</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">고려산업, 식량 위기 테마</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">
+                          -2.58%
+                        </span>
                       </span>
-                      <span class="font20 txt_red">
-                        -2.58%
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">단기 눌림목 공략!</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">단기 눌림목 공략!</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">
+                          -1.79%
+                        </span>
                       </span>
-                      <span class="font20 txt_red">
-                        -1.79%
-                      </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <span class="ico_area mgb4">
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <span class="ico_area mgb4">
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
                       </span>
-                      <span class="font20 txt_blue1">
-                        +1000.42%
+                      <p class="txt_tit">최대사십자최대사십자최대사십자최대사십자최대사십자최대사십자최대사사십자최대사십자최대사십자최대사십자최대사</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">
+                          +1000.42%
+                        </span>
                       </span>
-                    </span>
-                  </div>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -1082,82 +1173,92 @@
               <div class="divider1 small mga16"/>
               <ul class="list_type2">
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+20.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+20.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_red">-23.15%</span>
                       </span>
-                      <span class="font20 txt_red">-23.15%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp01.svg" alt="실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp01.svg" alt="실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">0.00%</span>
                       </span>
-                      <span class="font20 txt_blue1">0.00%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp03.svg" alt="매수실패" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp03.svg" alt="매수실패" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+0.26%</span>
                       </span>
-                      <span class="font20 txt_blue1">+0.26%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp02.svg" alt="무효" />
-                  </div>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp02.svg" alt="무효" />
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="l_area">
-                    <span class="ico_area mgb4">
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
-                    <span class="logo_area">
-                      <span>
-                        <img src="~assets/prd_logo.png" alt="profile" />
-                        삼성전자
+                  <a href="#">
+                    <div class="l_area">
+                      <span class="ico_area mgb4">
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
                       </span>
-                      <span class="font20 txt_blue1">+1000.42%</span>
-                    </span>
-                  </div>
-                  <div class="r_area">
-                    <img src="~assets/ico_stamp.svg" alt="성공" />
-                  </div>
+                      <p class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</p>
+                      <span class="logo_area">
+                        <span>
+                          <img src="~assets/prd_logo.png" alt="profile" />
+                          삼성전자
+                        </span>
+                        <span class="font20 txt_blue1">+1000.42%</span>
+                      </span>
+                    </div>
+                    <div class="r_area">
+                      <img src="~assets/ico_stamp.svg" alt="성공" />
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -1184,10 +1285,10 @@
                 <div class="top_wrap">
                   <div class="my_profile">
                     <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
+                      <a href="#"><img src="~assets/profile_img1.png" alt="profile"/></a>
                     </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#"><span class="txt_tit">몬스탁닉넴열글자까지</span></a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge confirm">인증</span>
@@ -1217,19 +1318,23 @@
                   </p>
                 </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <div class="list_box">
-                    <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
-                    <div class="txt_area">
-                      <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
-                      <div class="con">타이틀타이틀타이틀</div>
-                      <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                  </a>
+                  <a href="#">
+                    <div class="list_box">
+                      <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
+                      <div class="txt_area">
+                        <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
+                        <div class="con">타이틀타이틀타이틀</div>
+                        <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <p class="tag_area">
@@ -1240,8 +1345,8 @@
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <button class="ico_f ico_comment">7</button>
                     </span>
                     <span class="btn_area1">
                       1분 전
@@ -1263,10 +1368,10 @@
                 <div class="top_wrap">
                   <div class="my_profile">
                     <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
+                      <a href="#"><img src="~assets/profile_img1.png" alt="profile"/></a>
                     </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#"><span class="txt_tit">몬스탁닉넴열글자까지</span></a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge confirm">인증</span>
@@ -1295,17 +1400,19 @@
                   </p>
                 </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <button class="ico_f ico_comment">7</button>
                     </span>
                     <span class="btn_area1">
                       1분 전
@@ -1358,52 +1465,58 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type3">
                 <li>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 green">성공</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
-                    </span>
-                  </div>
+                  <a href="#">
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 green">성공</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 red">실패</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
-                    </span>
-                  </div>
+                  <a href="#">
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 red">실패</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 gray">진행중</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
-                    </span>
-                  </div>
+                  <a href="#">
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 gray">진행중</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -1433,55 +1546,61 @@
               <div class="divider1 xsmall"/>
               <ul class="list_type3">
                 <li>
-                  <span class="ico_area mgb4">
-                    <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                  </span>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 green">성공</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                  <a href="#">
+                    <span class="ico_area mgb4">
+                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
                     </span>
-                  </div>
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 green">성공</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 red">실패</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
-                    </span>
-                  </div>
+                  <a href="#">
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 red">실패</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="tit_wrap">
-                    <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
-                    <span class="badge3 gray">진행중</span>
-                  </div>
-                  <div class="logo_area">
-                    <img src="~assets/prd_logo.png" alt="profile" />
-                      삼성전자
-                  </div>
-                  <div class="txt_area">
-                    <span class="txt01">sMON보상 / 보팅량</span>
-                    <span class="txt_box">
-                      <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
-                    </span>
-                  </div>
+                  <a href="#">
+                    <div class="tit_wrap">
+                      <span class="txt_tit">몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지몬스탁닉넴열글자까지</span>
+                      <span class="badge3 gray">진행중</span>
+                    </div>
+                    <div class="logo_area">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                        삼성전자
+                    </div>
+                    <div class="txt_area">
+                      <span class="txt01">sMON보상 / 보팅량</span>
+                      <span class="txt_box">
+                        <span class="txt_blue1">0.9785300935</span> <span class="primary">/ 5VP</span>
+                      </span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap">

@@ -1036,6 +1036,12 @@ body{
     &.no_line{
         li{border-bottom:0;padding-bottom:0}
     }
+    a{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;  
+        width:100%;
+    }
     li{
         display:flex;
         justify-content: space-between;
@@ -2861,6 +2867,7 @@ button{
     display: inline-flex;
     align-items: center;
     margin-right:8px;
+    border:0 !important;
     &.active{color: $primary;}
     &::before{
         content: '';
@@ -2871,8 +2878,8 @@ button{
         margin-right:4px;
     }
 }
-.ico_thumbsUp{background: url('~assets/ico_thumbsUp.svg') no-repeat center left;
-    &.active{background: url('~assets/ico_thumbsUp_on.svg') no-repeat center left;}
+.ico_thumbsUp{background: url('~assets/ico_thumbsUp.svg') no-repeat center left !important;
+    &.active{background: url('~assets/ico_thumbsUp_on.svg') no-repeat center left !important;}
 }
 .ico_comment{background: url('~assets/ico_comment.svg') no-repeat center left;}
 .ico_view{background: url('~assets/ico_view.svg') no-repeat center left;}
