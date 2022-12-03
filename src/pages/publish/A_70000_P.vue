@@ -48,7 +48,7 @@
             <div class="pro_info_wrap">
               <div class="tit_area">
                 <span class="tit_txt">PRO 정보</span>
-                <span class="ico_info">PRO란?</span>
+                <button class="ico_info">PRO란?</button>
               </div>
               <ul class="pro_list">
                 <li>
