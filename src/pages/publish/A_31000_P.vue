@@ -13,7 +13,7 @@
             <button class="ico_info_gray"/>
           </div>
           <ul class="lucky_list">
-            <li>
+            <li class="active">
               <p>
                 <span class="badge3 primary">NEW</span>
                 <span class="txt_dk mgl8">브론즈+ 럭키박스 🎁</span>
@@ -30,7 +30,7 @@
                 <m-button-3 size="large" color="primary" class="full" >열기</m-button-3>
                </div>
             </li>
-            <li>
+            <li class="active">
               <p>
                 <span class="badge3 primary">NEW</span>
                 <span class="txt_dk mgl8">브론즈+ 럭키박스 🎁</span>
@@ -47,8 +47,6 @@
                 <m-button-3 size="large" color="primary" class="full" >열기</m-button-3>
                </div>
             </li>
-          </ul>
-          <ul class="lucky_list gray">
             <li>
               <p class="flex">
                 <span class="badge3 green">당첨</span>
