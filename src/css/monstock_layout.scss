@@ -439,16 +439,16 @@
                     background-size:contain ;
                     display: inline-flex;
                 }
-                &::after{
-                    content:'';
-                    background: url('~assets/arrow_right_b.svg') center center no-repeat;
-                    width:26px;
-                    height: 26px;
-                    position: absolute;
-                    right:0;
-                    background-size:contain ;
-                    display: inline-flex;
-                }
+                // &::after{
+                //     content:'';
+                //     background: url('~assets/arrow_right_b.svg') center center no-repeat;
+                //     width:26px;
+                //     height: 26px;
+                //     position: absolute;
+                //     right:0;
+                //     background-size:contain ;
+                //     display: inline-flex;
+                // }
                 span{color:$primary;margin-left:8px;font-size:16px;font-weight: 700;}
             }
             .alarm_info{
@@ -468,6 +468,19 @@
                     margin:32px 0;
                     text-align: center;
                     color: $txt_gray;
+                }
+                .arrow_wrap{
+                    position: relative;
+                    .dot_new{
+                        position: absolute;
+                        top:0;
+                        right:0;
+                        width:6px;
+                        height: 6px;
+                        border-radius: 6px;
+                        background: #fb1f1f;
+                        display: flex;
+                    }
                 }
             }
         }
