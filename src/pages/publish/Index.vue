@@ -1087,7 +1087,7 @@
                 <router-link to="/publish/H_12000_T">H_12000_T</router-link>
             </td>
             <td>오늘의 테마</td>
-            <td></td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
