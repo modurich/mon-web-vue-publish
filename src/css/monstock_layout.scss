@@ -48,7 +48,11 @@
                 position: absolute;
                 right:0;
             }
+            @media (max-width: $breakpoint-xs-max) {
+                font-size: 14px;
+             }
         }
+        
     }
     .mob_only{display:none}
     .header_area{

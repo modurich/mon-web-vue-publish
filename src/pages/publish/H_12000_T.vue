@@ -1,7 +1,6 @@
 <template>
     <div class="centerarea_box1">
         <div class="con_box">
-          <h2 class="line_type">프로필</h2>
           <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
           <div class="tab_contents" v-if="tab1 == 'A'">
             
@@ -9,7 +8,7 @@
           <div class="tab_contents" v-if="tab1 == 'B'">
            <!-- S 발견-->
             <!-- S 오늘의 테마 -->
-            <h3 class="between">
+            <h3 class="between mgt16">
               <span>오늘의 테마</span>
             </h3>
             <p class="mgt16">오늘 이슈가 되는 테마</p>
