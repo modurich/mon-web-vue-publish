@@ -243,11 +243,11 @@
  padding: 16px 16px 0 16px;
  box-sizing: border-box;
  .tab_contents{
-    padding: 16px 0px 0 0px;
+    padding: 0px 0px 0 0px;
  }
  //700보다 작아질때
     @media (max-width: $breakpoint-xs-max) {
-        padding: 16px 12px 0 12px;
+        padding: 0px 12px 0 12px;
         box-sizing: border-box;
     }
 

@@ -14,84 +14,96 @@
             <p class="mgt16">오늘 이슈가 되는 테마</p>
             <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1"/>
             <div class="tab_contents" v-if="tab2 == 'A'">
-              <ul class="thema_list1 mgt16">
+              <ul class="thema_list1">
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">비메모리반도체</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">비메모리반도체</span>
+                    <div class="ico_area">
+                      <span class="tag_blue">+7.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_blue">+7.64%</span>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">반도체설계계</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">반도체설계계</span>
+                    <div class="ico_area">
+                      <span class="tag_blue">+7.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_blue">+7.64%</span>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">반도체부품</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">반도체부품</span>
+                    <div class="ico_area">
+                      <span class="tag_blue">+7.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_blue">+7.64%</span>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">차량용반도체</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">차량용반도체</span>
+                    <div class="ico_area">
+                      <span class="tag_red">-3.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_red">-3.64%</span>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">반도체부품</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">반도체부품</span>
+                    <div class="ico_area">
+                      <span class="tag_blue">+7.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_blue">+7.64%</span>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="prd_img">
-                    <div class="badge_area">
-                      <span class="badge1 semiconductor">반도체</span>
+                  <a href="#" class="flex_link">
+                    <div class="prd_img">
+                      <div class="badge_area">
+                        <span class="badge1 semiconductor">반도체</span>
+                      </div>
+                      <div class="tit_area">
+                        <span class="txt01">차량용반도체</span>
+                      </div>
                     </div>
-                    <div class="tit_area">
-                      <span class="txt01">차량용반도체</span>
+                    <div class="ico_area">
+                      <span class="tag_blue">+7.64%</span>
                     </div>
-                  </div>
-                  <div class="ico_area">
-                    <span class="tag_blue">+7.64%</span>
-                  </div>
+                  </a>
                 </li>
               </ul>
               <div class="btn_wrap l_row_l">
@@ -108,9 +120,10 @@
             </h3>
             <m-tabs class="card_type small mgt32" v-model="tab3" :items="tabs2"/>
             <div class="tab_contents" v-if="tab3 == 'A'">
-              <m-select class="mgt16" v-model="select1" :options="options" />
+              <m-select class="mgt32" v-model="select1" :options="options" />
               <ul class="product_list">
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -125,11 +138,13 @@
                       <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
-                <li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -144,11 +159,34 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
+                </li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -163,11 +201,13 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -179,31 +219,13 @@
                   </div>
                   <div class="right flex">
                     <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
-                </li>
-                <li>
-                  <div class="prd_img">
-                    <div class="img_area small">
-                      <img src="~assets/prd_logo.png" alt="logo" />
-                    </div>
-                    <div>
-                      <div class="font16 txt_dk">삼성전자우</div>
-                      <div class="txt02">코스피 005930</div>
-                    </div>
-                  </div>
-                  <div class="right flex">
-                    <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
-                      <span class="font12">₩ 352,100</span>
-                    </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                     indeterminate-icon="help" />
-                  </div> 
                 </li>
               </ul>
             </div>
@@ -218,64 +240,74 @@
             <div class="swiper_wrap mgt32">
               <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
-                    <div class="recommend_list">
-                      <div class="img_area">
-                        <img src="~assets/profile_img2.png" alt="profile"/>
+                    <a href="#">
+                      <div class="recommend_list">
+                        <div class="img_area">
+                          <img src="~assets/profile_img2.png" alt="profile"/>
+                        </div>
+                        <div class="txt_tit">몬스탁닉넴열글자까지</div>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
                       </div>
-                      <div class="txt_tit">몬스탁닉넴열글자까지</div>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
+                    </a>
                   </swiper-slide>
                   <swiper-slide>
-                    <div class="recommend_list">
-                      <div class="img_area">
-                        <img src="~assets/profile_img3.png" alt="profile"/>
+                    <a href="#">
+                      <div class="recommend_list">
+                        <div class="img_area">
+                          <img src="~assets/profile_img3.png" alt="profile"/>
+                        </div>
+                        <div class="txt_tit">몬스탁닉네임02</div>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
                       </div>
-                      <div class="txt_tit">몬스탁닉네임02</div>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
+                    </a>
                   </swiper-slide>
                   <swiper-slide>
-                    <div class="recommend_list">
-                      <div class="img_area">
-                        <img src="~assets/profile_img4.png" alt="profile"/>
+                    <a href="#">
+                      <div class="recommend_list">
+                        <div class="img_area">
+                          <img src="~assets/profile_img4.png" alt="profile"/>
+                        </div>
+                        <div class="txt_tit">몬스탁닉네임03</div>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
                       </div>
-                      <div class="txt_tit">몬스탁닉네임03</div>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
+                    </a>
                   </swiper-slide>
                   <swiper-slide>
-                    <div class="recommend_list">
-                      <div class="img_area">
-                        <img src="~assets/profile_img1.png" alt="profile"/>
+                    <a href="#">
+                      <div class="recommend_list">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <div class="txt_tit">몬스탁닉네임04</div>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
                       </div>
-                      <div class="txt_tit">몬스탁닉네임04</div>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
+                    </a>
                   </swiper-slide>
                   <swiper-slide>
-                    <div class="recommend_list">
-                      <div class="img_area">
-                        <img src="~assets/profile_img1.png" alt="profile"/>
+                    <a href="#">
+                      <div class="recommend_list">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <div class="txt_tit">몬스탁닉네임05</div>
+                        <span class="badge_area">
+                          <span class="badge pro">PRO</span>
+                          <span class="badge pl1">PL1</span>
+                        </span>
                       </div>
-                      <div class="txt_tit">몬스탁닉네임05</div>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
+                    </a>
                   </swiper-slide>
               </swiper>
             </div>
@@ -286,67 +318,7 @@
             <p class="mgt16">관련 자산을 찾아봤어요</p>
             <ul class="product_list">
               <li>
-                <div class="prd_img">
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="logo" />
-                  </div>
-                  <div>
-                    <div class="font16 txt_dk">삼성전자우</div>
-                    <div class="txt02">코스피 005930</div>
-                  </div>
-                </div>
-                <div class="right flex">
-                  <span>
-                    <span class="tag_blue mgb4">+1.24%</span><br/>
-                    <span class="font12">₩ 352,100</span>
-                  </span>
-                </div> 
-              </li>
-              <li>
-                <div class="prd_img">
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="logo" />
-                  </div>
-                  <div>
-                    <div class="font16 txt_dk">삼성전자우</div>
-                    <div class="txt02">코스피 005930</div>
-                  </div>
-                </div>
-                <div class="right flex">
-                  <span>
-                    <span class="tag_red mgb4">-12.26%</span><br/>
-                    <span class="font12">₩ 352,100</span>
-                  </span>
-                </div> 
-              </li>
-              <li>
-                <div class="prd_img">
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="logo" />
-                  </div>
-                  <div>
-                    <div class="font16 txt_dk">삼성전자우</div>
-                    <div class="txt02">코스피 005930</div>
-                  </div>
-                </div>
-                <div class="right flex">
-                  <span>
-                    <span class="tag_red mgb4">-12.26%</span><br/>
-                    <span class="font12">₩ 352,100</span>
-                  </span>
-                </div> 
-              </li>
-            </ul>
-            <div class="divider"/>
-            <!-- S 인사이트 인기 종목 -->
-            <h3 class="between">
-              <span>인사이트 인기 종목</span>
-            </h3>
-            <p class="mgt16">관련 자산을 찾아봤어요</p>
-            <m-tabs class="card_type small mgt16" v-model="tab4" :items="tabs3"/>
-            <div class="tab_contents" v-if="tab4 == 'A'">
-              <ul class="product_list mgt16">
-                <li>
+                <a href="#" class="flex_link">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -361,11 +333,11 @@
                       <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
-                </li>
-                <li>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex_link">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -380,11 +352,11 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
-                </li>
-                <li>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex_link">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -399,9 +371,81 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                </a>
+              </li>
+            </ul>
+            <div class="divider"/>
+            <!-- S 인사이트 인기 종목 -->
+            <h3 class="between">
+              <span>인사이트 인기 종목</span>
+            </h3>
+            <p class="mgt16">상승하락 예측에 대한 의견이 많아요</p>
+            <m-tabs class="card_type small mgt16" v-model="tab4" :items="tabs3"/>
+            <div class="tab_contents pda0" v-if="tab4 == 'A'">
+             <ul class="product_list">
+                <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
+                </li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_red mgb4">-12.26%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
+                </li>
+                <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
               </ul>
               <div class="btn_wrap l_row_l">
@@ -416,17 +460,37 @@
               <span>인기태그</span>
             </h3>
             <p class="mgt16">인기많은 태그를 모았어요</p>
-            <ul class="tag_list">
-              <li>#삼성전자<span class="round_tag">3,266</span></li>
-              <li>#삼성전자<span class="round_tag">3,266</span></li>
-              <li>##삼성전자실적<span class="round_tag">3,266</span></li>
-              <li>##삼성전자매출<span class="round_tag">3,266</span></li>
-              <li>#삼성전자<span class="round_tag">3,266</span></li>
-              <li>#삼성전자실적<span class="round_tag">3,266</span></li>
-              <li>#삼성전자<span class="round_tag">3,266</span></li>
-              <li>#삼성전자<span class="round_tag">3,266</span></li>
-              <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
-            </ul>
+              <swiper class="swiper"
+            :options="this.swiperOption2"
+            >
+                <swiper-slide class="slide" >
+                    <ul class="tag_list">
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>##삼성전자실적<span class="round_tag">3,266</span></li>
+                      <li>##삼성전자매출<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자실적<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
+                    </ul>
+                </swiper-slide>
+                <swiper-slide class="slide">
+                    <ul class="tag_list">
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>##삼성전자실적<span class="round_tag">3,266</span></li>
+                      <li>##삼성전자매출<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자실적<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#삼성전자<span class="round_tag">3,266</span></li>
+                      <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
+                    </ul>
+                </swiper-slide>
+            </swiper>
+           
             <div class="btn_wrap l_row_l">
               <m-button-3 size="large" lined color="primary" class="full">모두보기</m-button-3>
             </div>
@@ -960,9 +1024,10 @@
             <p class="tit_txt mgt16">수익률의 변화가 많아요</p>
             <m-tabs class="card_type small mgt16" v-model="tab5" :items="tabs4"/>
             <div class="tab_contents" v-if="tab5 == 'A'">
-              <m-select class="mgt16" v-model="select1" :options="options" />
+              <m-select class="mgt32" v-model="select1" :options="options" />
               <ul class="product_list">
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -977,11 +1042,13 @@
                       <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
-                <li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -996,11 +1063,34 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
+                </li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1015,11 +1105,13 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1031,31 +1123,13 @@
                   </div>
                   <div class="right flex">
                     <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
-                </li>
-                <li>
-                  <div class="prd_img">
-                    <div class="img_area small">
-                      <img src="~assets/prd_logo.png" alt="logo" />
-                    </div>
-                    <div>
-                      <div class="font16 txt_dk">삼성전자우</div>
-                      <div class="txt02">코스피 005930</div>
-                    </div>
-                  </div>
-                  <div class="right flex">
-                    <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
-                      <span class="font12">₩ 352,100</span>
-                    </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                     indeterminate-icon="help" />
-                  </div> 
                 </li>
               </ul>
             </div>
@@ -1073,9 +1147,10 @@
             <p class="tit_txt mgt16">수익률의 변화가 많아요</p>
             <m-tabs class="card_type small mgt16" v-model="tab6" :items="tabs5"/>
             <div class="tab_contents" v-if="tab6 == 'A'">
-              <m-select class="mgt16" v-model="select1" :options="options" />
-              <ul class="product_list">
+              <m-select class="mgt32" v-model="select1" :options="options" />
+             <ul class="product_list">
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1090,11 +1165,13 @@
                       <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
-                <li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1109,11 +1186,34 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
+                  <div class="prd_img">
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="logo" />
+                    </div>
+                    <div>
+                      <div class="font16 txt_dk">삼성전자우</div>
+                      <div class="txt02">코스피 005930</div>
+                    </div>
+                  </div>
+                  <div class="right flex">
+                    <span>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
+                      <span class="font12">₩ 352,100</span>
+                    </span>
+                  </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
+                </li>
+                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1128,11 +1228,13 @@
                       <span class="tag_red mgb4">-12.26%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                    indeterminate-icon="help" />
                 </li>
                 <li>
+                  <a href="#" class="inflex_link ico_h">
                   <div class="prd_img">
                     <div class="img_area small">
                       <img src="~assets/prd_logo.png" alt="logo" />
@@ -1144,31 +1246,13 @@
                   </div>
                   <div class="right flex">
                     <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
+                      <span class="tag_blue mgb4">+1.24%</span><br/>
                       <span class="font12">₩ 352,100</span>
                     </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                    indeterminate-icon="help" />
                   </div> 
-                </li>
-                <li>
-                  <div class="prd_img">
-                    <div class="img_area small">
-                      <img src="~assets/prd_logo.png" alt="logo" />
-                    </div>
-                    <div>
-                      <div class="font16 txt_dk">삼성전자우</div>
-                      <div class="txt02">코스피 005930</div>
-                    </div>
-                  </div>
-                  <div class="right flex">
-                    <span>
-                      <span class="tag_red mgb4">-12.26%</span><br/>
-                      <span class="font12">₩ 352,100</span>
-                    </span>
-                    <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                  </a>
+                  <q-checkbox v-model="val" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
                     indeterminate-icon="help" />
-                  </div> 
                 </li>
               </ul>
             </div>
@@ -1186,20 +1270,22 @@
             <p class="tit_txt mgt16">팔로우 하고 소식 받아보세요</p>
             <m-tabs class="card_type small mgt16" v-model="tab7" :items="tabs6"/>
             <div class="tab_contents" v-if="tab7 == 'A'">
-              <ul class="follow_info_wrap mgt16">
+              <ul class="follow_info_wrap">
               <li>
-                <div class="my_profile">
-                  <div class="img_area">
-                    <img src="~assets/profile_img1.png" alt="profile"/>
+                <a href="#" class="inflex_link ico_h">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/profile_img1.png" alt="profile"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                    <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
-                    </span>
-                  </div>
-                </div>
+                </a>
                 <div class="follow_btn_wrap">
                   <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                     user추가
@@ -1215,18 +1301,20 @@
                 </div>
               </li>
               <li>
-                <div class="my_profile">
-                  <div class="img_area">
-                    <img src="~assets/profile_img2.png" alt="profile"/>
+                <a href="#" class="inflex_link ico_h">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/profile_img2.png" alt="profile"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                    <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
-                    </span>
-                  </div>
-                </div>
+                </a>
                 <div class="follow_btn_wrap">
                   <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                     user추가
@@ -1242,18 +1330,20 @@
                 </div>
               </li>
               <li>
-                <div class="my_profile">
-                  <div class="img_area">
-                    <img src="~assets/profile_img3.png" alt="profile"/>
+                <a href="#" class="inflex_link ico_h">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/profile_img3.png" alt="profile"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                    <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
-                    </span>
-                  </div>
-                </div>
+                </a>
                 <div class="follow_btn_wrap">
                   <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                     user추가
@@ -1269,18 +1359,20 @@
                 </div>
               </li>
               <li>
-                <div class="my_profile">
-                  <div class="img_area">
-                    <img src="~assets/profile_img4.png" alt="profile"/>
+                <a href="#" class="inflex_link ico_h">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/profile_img4.png" alt="profile"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                    <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
-                    </span>
-                  </div>
-                </div>
+                </a>
                 <div class="follow_btn_wrap">
                   <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                     user추가
@@ -1296,18 +1388,20 @@
                 </div>
               </li>
               <li>
-                <div class="my_profile">
-                  <div class="img_area">
-                    <img src="~assets/profile_img4.png" alt="profile"/>
+                <a href="#" class="inflex_link ico_h">
+                  <div class="my_profile">
+                    <div class="img_area">
+                      <img src="~assets/profile_img4.png" alt="profile"/>
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                    <span class="badge_area">
-                      <span class="badge pro">PRO</span>
-                      <span class="badge pl1">PL1</span>
-                    </span>
-                  </div>
-                </div>
+                </a>
                 <div class="follow_btn_wrap">
                   <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
                     user추가
@@ -1338,6 +1432,7 @@
             <ul class="thumb_list1">
               <li>
                 <div class="top_wrap">
+                  <a href="#" class="flex_link">
                   <div class="my_profile">
                     <div class="img_area">
                       <img src="~assets/prd_logo.png" alt="logo"/>
@@ -1347,26 +1442,28 @@
                     </div>
                   </div>
                   <span class="tag_blue">+1.24%</span>
+                  </a>
                 </div>
                 <div class="con_area">
-                  <p class="font12 mgt16">몬스탁닉넴열글자까지</p>
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <p class="img"><img src="~assets/test_img.png"></p>
+                  <a href="#">
+                    <p class="font12 mgt16">몬스탁닉넴열글자까지</p>
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                    <p class="img"><img src="~assets/test_img.png"></p>
+                  </a>
                   <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <!-- <a href="#" class="primary">＄관련종목</a> -->
+                    <a href="#" >#금리인상</a>
+                    <a href="#" >#친환경</a>
+                    <a href="#" >#로봇관련주</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
                       <span class="ico_f ico_comment">7</span>
                       <span class="ico_f ico_view">1.2</span>
                       <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
@@ -1378,77 +1475,37 @@
               </li>
               <li>
                 <div class="top_wrap">
+                  <a href="#" class="flex_link">
                   <div class="my_profile">
                     <div class="img_area">
                       <img src="~assets/prd_logo.png" alt="logo"/>
                     </div>
                     <div class="tit_area">
                       <span class="txt_tit txt_dk">삼성전자</span>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
                     </div>
                   </div>
                   <span class="tag_blue">+1.24%</span>
+                  </a>
                 </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
+                  <a href="#">
+                    <p class="font12 mgt16">몬스탁닉넴열글자까지</p>
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                  </a>
                   <div class="footer_area">
                   <p class="tag_area">
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" >#금리인상</a>
+                    <a href="#" >#친환경</a>
+                    <a href="#" >#로봇관련주</a>
+                    <a href="#" >#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
-                      <span class="ico_f ico_view">1.2</span>
-                      <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
-                    </span>
-                    <span class="font12">2분 전</span>
-                  </div>
-                </div>
-                </div>
-              </li>
-              <li>
-                <div class="top_wrap">
-                  <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/prd_logo.png" alt="logo"/>
-                    </div>
-                    <div class="tit_area">
-                      <span class="txt_tit txt_dk">삼성전자</span>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
-                  </div>
-                  <span class="tag_blue">+1.24%</span>
-                </div>
-                <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <div class="footer_area">
-                  <p class="tag_area">
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                  </p>
-                  <div class="ico_wrap">
-                    <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
                       <span class="ico_f ico_comment">7</span>
                       <span class="ico_f ico_view">1.2</span>
                       <!-- <span class="ico_f ico_star_s primary">4.7</span> -->
@@ -1459,7 +1516,7 @@
                 </div>
               </li>
             </ul>
-            <div class="btn_wrap l_row_l mgt32">
+            <div class="btn_wrap l_row_l">
               <m-button-3 size="large" lined color="primary" class="full">모두보기</m-button-3>
             </div>
             <!-- E 실시간 인기 토론 -->
@@ -1471,99 +1528,109 @@
             <p class="tit_txt mgt16">토론이 많은 자산을 모아봤어요</p>
             <ul class="product_list">
               <li>
-                <div class="prd_img">
-                  <span class="txt_number primary">1</span>
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="profile" />
+                <a href="#" class="flex_link">
+                  <div class="prd_img">
+                    <span class="txt_number primary">1</span>
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">
+                        코스피 005930
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">
-                      코스피 005930
-                    </span>
+                  <div class="ico_area">
+                    <a href="#" class="link_view bold">
+                      <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
+                    </a>
                   </div>
-                </div>
-                <div class="ico_area">
-                  <a href="#" class="link_view bold">
-                    <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                  </a>
-                </div>
+                </a>
               </li>
-              <li>
-                <div class="prd_img">
-                  <span class="txt_number primary">2</span>
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="profile" />
+               <li>
+                <a href="#" class="flex_link">
+                  <div class="prd_img">
+                    <span class="txt_number primary">2</span>
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">
+                        코스피 005930
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">
-                      코스피 005930
-                    </span>
+                  <div class="ico_area">
+                    <a href="#" class="link_view bold">
+                      <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
+                    </a>
                   </div>
-                </div>
-                <div class="ico_area">
-                  <a href="#" class="link_view bold">
-                    <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                  </a>
-                </div>
+                </a>
               </li>
-              <li>
-                <div class="prd_img">
-                  <span class="txt_number primary">3</span>
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="profile" />
+                <li>
+                <a href="#" class="flex_link">
+                  <div class="prd_img">
+                    <span class="txt_number primary">3</span>
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">
+                        코스피 005930
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">
-                      코스피 005930
-                    </span>
+                  <div class="ico_area">
+                    <a href="#" class="link_view bold">
+                      <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
+                    </a>
                   </div>
-                </div>
-                <div class="ico_area">
-                  <a href="#" class="link_view bold">
-                    <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                  </a>
-                </div>
+                </a>
               </li>
-              <li>
-                <div class="prd_img">
-                  <span class="txt_number primary">4</span>
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="profile" />
+                <li>
+                <a href="#" class="flex_link">
+                  <div class="prd_img">
+                    <span class="txt_number primary">4</span>
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">
+                        코스피 005930
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">
-                      코스피 005930
-                    </span>
+                  <div class="ico_area">
+                    <a href="#" class="link_view bold">
+                      <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
+                    </a>
                   </div>
-                </div>
-                <div class="ico_area">
-                  <a href="#" class="link_view bold">
-                    <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                  </a>
-                </div>
+                </a>
               </li>
-              <li>
-                <div class="prd_img">
-                  <span class="txt_number primary">5</span>
-                  <div class="img_area small">
-                    <img src="~assets/prd_logo.png" alt="profile" />
+                <li>
+                <a href="#" class="flex_link">
+                  <div class="prd_img">
+                    <span class="txt_number primary">5</span>
+                    <div class="img_area small">
+                      <img src="~assets/prd_logo.png" alt="profile" />
+                    </div>
+                    <div class="tit_area">
+                      <span class="txt01">삼성전자우</span>
+                      <span class="txt02">
+                        코스피 005930
+                      </span>
+                    </div>
                   </div>
-                  <div class="tit_area">
-                    <span class="txt01">삼성전자우</span>
-                    <span class="txt02">
-                      코스피 005930
-                    </span>
+                  <div class="ico_area">
+                    <a href="#" class="link_view bold">
+                      <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
+                    </a>
                   </div>
-                </div>
-                <div class="ico_area">
-                  <a href="#" class="link_view bold">
-                    <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                  </a>
-                </div>
+                </a>
               </li>
             </ul>
             <!-- E 인기 토론 자산 -->
@@ -1572,19 +1639,28 @@
             <h3 class="between">
               <span>인기 포스트</span>
             </h3>
-            <p class="tit_txt mgt16">이슈되는 정보를 확인해보세요</p>
-            <ul class="thumb_list post">
+            <p class="tit_txt mgt16 mgb0">이슈되는 정보를 확인해보세요</p>
+            <ul class="thumb_list post_new">
               <li>
+                 <div class="tit_wrap">
+                  <p class="badge_wrap">
+                    <span class="badge_area">
+                        <span class="badge3 red">공지</span>
+                        <span class="badge3 line black">📌 PIN</span>
+                    </span>
+                  </p>
+                </div>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
+                        <span class="badge operate">운영</span>
                         <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
@@ -1602,31 +1678,35 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                        <span class="badge3 gray">자유</span>
-                        <span class="badge3 line black">👋 NEW</span>
-                    </span>
-                  </p>
-                </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary">상세보기</button>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary">상세보기</button>
+                  </a>
+                   <a href="#">
+                    <div class="list_box">
+                      <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
+                      <div class="txt_area">
+                        <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
+                        <div class="con">타이틀타이틀타이틀</div>
+                        <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
                       <span class="ico_f ico_comment">7</span>
                     </span>
                     <span class="btn_area1">
@@ -1646,16 +1726,25 @@
                 </div>
               </li>
               <li>
+                 <div class="tit_wrap">
+                  <p class="badge_wrap">
+                    <span class="badge_area">
+                        <span class="badge3 red">공지</span>
+                        <span class="badge3 line black">📌 PIN</span>
+                    </span>
+                  </p>
+                </div>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
+                        <span class="badge operate">운영</span>
                         <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
@@ -1673,30 +1762,25 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                        <span class="badge3 gray">정보</span>
-                    </span>
-                  </p>
-                </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary">상세보기</button>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary">상세보기</button>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
                       <span class="ico_f ico_comment">7</span>
                     </span>
                     <span class="btn_area1">
@@ -1716,7 +1800,7 @@
                 </div>
               </li>
             </ul>
-            <div class="btn_wrap l_row_l mgt32">
+            <div class="btn_wrap l_row_l">
               <m-button-3 size="large" lined color="primary" class="full">모두보기</m-button-3>
             </div>
             <!-- E 인기 포스트 -->
@@ -1728,335 +1812,335 @@
             <p class="tit_txt mgt16 mgb32">인사이트를 확인하고 보팅해보세요</p>
             <div class="swiper_wrap mgt32">
               <swiper class="swiper" :options="swiperOption01">
+                <swiper-slide>
+                  <div class="thumb_list_new">
+                    <a href="#">
+                      <div class="top_wrap">
+                        <div class="my_profile">
+                          <div class="img_area">
+                            <img src="~assets/profile_img1.png" alt="profile"/>
+                          </div>
+                          <div class="tit_area">
+                            <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                            <span class="badge_area">
+                              <span class="badge pro">PRO</span>
+                              <span class="badge pl1">PL1</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tit_wrap">
+                        <p class="badge_wrap">
+                          <span class="badge_area">
+                              <span class="badge3 small brown">코인</span>
+                              <span class="badge3 small yellow">BEST</span>
+                          </span>
+                          <span class="txt01">D-120</span>
+                        </p>
+                        <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                          <p class="logo_wrap">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                            삼성전자 우
+                          </p>
+                      </div>
+                      <div class="blash_box">
+                        <div class="con_wrap">
+                          <div class="txt_area">
+                            <div class="tit_txt">
+                              <span class="txt01">목표가</span> 
+                              <span class="txt02">99999.99 %</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer_area">
+                        <p class="tag_area">
+                          <span class="primary">＄관련종목</span>
+                          <span>#금리인상</span>
+                          <span>#친환경</span>
+                          <span>#로봇관련주</span>
+                          <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                        </p>
+                        <div class="ico_wrap">
+                          <span class="ico_area">
+                            <span class="ico_f ico_thumbsUp">624</span>
+                            <span class="ico_f ico_comment">7</span>
+                            <span class="ico_f ico_view">1.2</span>
+                            <span class="ico_f ico_star_s primary">4.7</span>
+                          </span>
+                          <span class="txt_area">
+                            <span class="txt_date">2022.10.26</span>
+                            <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
+                          </span>
+                        </div>
+                      </div>
+                      </a>
+                      <m-button-3 color="primary"  size="small" class="full" ><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                    </div>
+                  </swiper-slide>
                   <swiper-slide>
+                  <div class="thumb_list_new">
                     <a href="#">
-                      <div class="thumb_list_new">
-                          <div class="top_wrap">
-                            <div class="my_profile">
-                              <div class="img_area">
-                                <img src="~assets/profile_img1.png" alt="profile"/>
-                              </div>
-                              <div class="tit_area">
-                                <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                                <span class="badge_area">
-                                  <span class="badge pro">PRO</span>
-                                  <span class="badge pl1">PL1</span>
-                                </span>
-                              </div>
-                            </div>
+                      <div class="top_wrap">
+                        <div class="my_profile">
+                          <div class="img_area">
+                            <img src="~assets/profile_img1.png" alt="profile"/>
                           </div>
-                          <div class="tit_wrap">
-                            <p class="badge_wrap">
-                              <span class="badge_area">
-                                  <span class="badge3 small brown">코인</span>
-                                  <span class="badge3 small yellow">BEST</span>
-                              </span>
-                              <span class="txt01">D-120</span>
-                            </p>
-                            <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                              <p class="logo_wrap">
-                                <img src="~assets/prd_logo.png" alt="profile" />
-                                삼성전자 우
-                              </p>
+                          <div class="tit_area">
+                            <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                            <span class="badge_area">
+                              <span class="badge pro">PRO</span>
+                              <span class="badge pl1">PL1</span>
+                            </span>
                           </div>
-                          <div class="blash_box">
-                            <div class="con_wrap">
-                              <div class="txt_area">
-                                <div class="tit_txt">
-                                  <span class="txt01">목표가</span> 
-                                  <span class="txt02">99999.99 %</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footer_area">
-                            <p class="tag_area">
-                              <span class="primary">＄관련종목</span>
-                              <span>#금리인상</span>
-                              <span>#친환경</span>
-                              <span>#로봇관련주</span>
-                              <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
-                            <div class="ico_wrap">
-                              <span class="ico_area">
-                                <span class="ico_f ico_thumbsUp">624</span>
-                                <span class="ico_f ico_comment">7</span>
-                                <span class="ico_f ico_view">1.2</span>
-                                <span class="ico_f ico_star_s primary">4.7</span>
-                              </span>
-                              <span class="txt_area">
-                               <span class="txt_date">2022.10.26</span>
-                               <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
-                              </span>
-                            </div>
-                            <m-button-3 color="primary"  size="small" class="full"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
-                          </div>
+                        </div>
                       </div>
-                    </a>
+                      <div class="tit_wrap">
+                        <p class="badge_wrap">
+                          <span class="badge_area">
+                              <span class="badge3 small brown">코인</span>
+                              <span class="badge3 small yellow">BEST</span>
+                          </span>
+                          <span class="txt01">D-120</span>
+                        </p>
+                        <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                          <p class="logo_wrap">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                            삼성전자 우
+                          </p>
+                      </div>
+                      <div class="blash_box">
+                        <div class="con_wrap">
+                          <div class="txt_area">
+                            <div class="tit_txt">
+                              <span class="txt01">목표가</span> 
+                              <span class="txt02">99999.99 %</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer_area">
+                        <p class="tag_area">
+                          <span class="primary">＄관련종목</span>
+                          <span>#금리인상</span>
+                          <span>#친환경</span>
+                          <span>#로봇관련주</span>
+                          <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                        </p>
+                        <div class="ico_wrap">
+                          <span class="ico_area">
+                            <span class="ico_f ico_thumbsUp">624</span>
+                            <span class="ico_f ico_comment">7</span>
+                            <span class="ico_f ico_view">1.2</span>
+                            <span class="ico_f ico_star_s primary">4.7</span>
+                          </span>
+                          <span class="txt_area">
+                            <span class="txt_date">2022.10.26</span>
+                            <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
+                          </span>
+                        </div>
+                      </div>
+                      </a>
+                      <m-button-3 color="primary"  size="small" class="full" ><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                    </div>
                   </swiper-slide>
-                    <swiper-slide>
+                  <swiper-slide>
+                  <div class="thumb_list_new">
                     <a href="#">
-                      <div class="thumb_list_new">
-                          <div class="top_wrap">
-                            <div class="my_profile">
-                              <div class="img_area">
-                                <img src="~assets/profile_img1.png" alt="profile"/>
-                              </div>
-                              <div class="tit_area">
-                                <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                                <span class="badge_area">
-                                  <span class="badge pro">PRO</span>
-                                  <span class="badge pl1">PL1</span>
-                                </span>
-                              </div>
-                            </div>
+                      <div class="top_wrap">
+                        <div class="my_profile">
+                          <div class="img_area">
+                            <img src="~assets/profile_img1.png" alt="profile"/>
                           </div>
-                          <div class="tit_wrap">
-                            <p class="badge_wrap">
-                              <span class="badge_area">
-                                  <span class="badge3 small brown">코인</span>
-                                  <span class="badge3 small yellow">BEST</span>
-                              </span>
-                              <span class="txt01">D-120</span>
-                            </p>
-                            <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                              <p class="logo_wrap">
-                                <img src="~assets/prd_logo.png" alt="profile" />
-                                삼성전자 우
-                              </p>
+                          <div class="tit_area">
+                            <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                            <span class="badge_area">
+                              <span class="badge pro">PRO</span>
+                              <span class="badge pl1">PL1</span>
+                            </span>
                           </div>
-                          <div class="blash_box">
-                            <div class="con_wrap">
-                              <div class="txt_area">
-                                <div class="tit_txt">
-                                  <span class="txt01">목표가</span> 
-                                  <span class="txt02">99999.99 %</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footer_area">
-                            <p class="tag_area">
-                              <span class="primary">＄관련종목</span>
-                              <span>#금리인상</span>
-                              <span>#친환경</span>
-                              <span>#로봇관련주</span>
-                              <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
-                            <div class="ico_wrap">
-                              <span class="ico_area">
-                                <span class="ico_f ico_thumbsUp">624</span>
-                                <span class="ico_f ico_comment">7</span>
-                                <span class="ico_f ico_view">1.2</span>
-                                <span class="ico_f ico_star_s primary">4.7</span>
-                              </span>
-                              <span class="txt_area">
-                               <span class="txt_date">2022.10.26</span>
-                               <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
-                              </span>
-                            </div>
-                            <m-button-3 color="primary"  size="small" class="full"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
-                          </div>
+                        </div>
                       </div>
-                    </a>
+                      <div class="tit_wrap">
+                        <p class="badge_wrap">
+                          <span class="badge_area">
+                              <span class="badge3 small brown">코인</span>
+                              <span class="badge3 small yellow">BEST</span>
+                          </span>
+                          <span class="txt01">D-120</span>
+                        </p>
+                        <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                          <p class="logo_wrap">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                            삼성전자 우
+                          </p>
+                      </div>
+                      <div class="blash_box">
+                        <div class="con_wrap">
+                          <div class="txt_area">
+                            <div class="tit_txt">
+                              <span class="txt01">목표가</span> 
+                              <span class="txt02">99999.99 %</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer_area">
+                        <p class="tag_area">
+                          <span class="primary">＄관련종목</span>
+                          <span>#금리인상</span>
+                          <span>#친환경</span>
+                          <span>#로봇관련주</span>
+                          <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                        </p>
+                        <div class="ico_wrap">
+                          <span class="ico_area">
+                            <span class="ico_f ico_thumbsUp">624</span>
+                            <span class="ico_f ico_comment">7</span>
+                            <span class="ico_f ico_view">1.2</span>
+                            <span class="ico_f ico_star_s primary">4.7</span>
+                          </span>
+                          <span class="txt_area">
+                            <span class="txt_date">2022.10.26</span>
+                            <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
+                          </span>
+                        </div>
+                      </div>
+                      </a>
+                      <m-button-3 color="primary"  size="small" class="full" ><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                    </div>
                   </swiper-slide>
-                    <swiper-slide>
+                  <swiper-slide>
+                  <div class="thumb_list_new">
                     <a href="#">
-                      <div class="thumb_list_new">
-                          <div class="top_wrap">
-                            <div class="my_profile">
-                              <div class="img_area">
-                                <img src="~assets/profile_img1.png" alt="profile"/>
-                              </div>
-                              <div class="tit_area">
-                                <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                                <span class="badge_area">
-                                  <span class="badge pro">PRO</span>
-                                  <span class="badge pl1">PL1</span>
-                                </span>
-                              </div>
-                            </div>
+                      <div class="top_wrap">
+                        <div class="my_profile">
+                          <div class="img_area">
+                            <img src="~assets/profile_img1.png" alt="profile"/>
                           </div>
-                          <div class="tit_wrap">
-                            <p class="badge_wrap">
-                              <span class="badge_area">
-                                  <span class="badge3 small brown">코인</span>
-                                  <span class="badge3 small yellow">BEST</span>
-                              </span>
-                              <span class="txt01">D-120</span>
-                            </p>
-                            <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                              <p class="logo_wrap">
-                                <img src="~assets/prd_logo.png" alt="profile" />
-                                삼성전자 우
-                              </p>
+                          <div class="tit_area">
+                            <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                            <span class="badge_area">
+                              <span class="badge pro">PRO</span>
+                              <span class="badge pl1">PL1</span>
+                            </span>
                           </div>
-                          <div class="blash_box">
-                            <div class="con_wrap">
-                              <div class="txt_area">
-                                <div class="tit_txt">
-                                  <span class="txt01">목표가</span> 
-                                  <span class="txt02">99999.99 %</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footer_area">
-                            <p class="tag_area">
-                              <span class="primary">＄관련종목</span>
-                              <span>#금리인상</span>
-                              <span>#친환경</span>
-                              <span>#로봇관련주</span>
-                              <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
-                            <div class="ico_wrap">
-                              <span class="ico_area">
-                                <span class="ico_f ico_thumbsUp">624</span>
-                                <span class="ico_f ico_comment">7</span>
-                                <span class="ico_f ico_view">1.2</span>
-                                <span class="ico_f ico_star_s primary">4.7</span>
-                              </span>
-                              <span class="txt_area">
-                               <span class="txt_date">2022.10.26</span>
-                               <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
-                              </span>
-                            </div>
-                            <m-button-3 color="primary"  size="small" class="full"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
-                          </div>
+                        </div>
                       </div>
-                    </a>
+                      <div class="tit_wrap">
+                        <p class="badge_wrap">
+                          <span class="badge_area">
+                              <span class="badge3 small brown">코인</span>
+                              <span class="badge3 small yellow">BEST</span>
+                          </span>
+                          <span class="txt01">D-120</span>
+                        </p>
+                        <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                          <p class="logo_wrap">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                            삼성전자 우
+                          </p>
+                      </div>
+                      <div class="blash_box">
+                        <div class="con_wrap">
+                          <div class="txt_area">
+                            <div class="tit_txt">
+                              <span class="txt01">목표가</span> 
+                              <span class="txt02">99999.99 %</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer_area">
+                        <p class="tag_area">
+                          <span class="primary">＄관련종목</span>
+                          <span>#금리인상</span>
+                          <span>#친환경</span>
+                          <span>#로봇관련주</span>
+                          <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                        </p>
+                        <div class="ico_wrap">
+                          <span class="ico_area">
+                            <span class="ico_f ico_thumbsUp">624</span>
+                            <span class="ico_f ico_comment">7</span>
+                            <span class="ico_f ico_view">1.2</span>
+                            <span class="ico_f ico_star_s primary">4.7</span>
+                          </span>
+                          <span class="txt_area">
+                            <span class="txt_date">2022.10.26</span>
+                            <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
+                          </span>
+                        </div>
+                      </div>
+                      </a>
+                      <m-button-3 color="primary"  size="small" class="full" ><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                    </div>
                   </swiper-slide>
-                    <swiper-slide>
+                  <swiper-slide>
+                  <div class="thumb_list_new">
                     <a href="#">
-                      <div class="thumb_list_new">
-                          <div class="top_wrap">
-                            <div class="my_profile">
-                              <div class="img_area">
-                                <img src="~assets/profile_img1.png" alt="profile"/>
-                              </div>
-                              <div class="tit_area">
-                                <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                                <span class="badge_area">
-                                  <span class="badge pro">PRO</span>
-                                  <span class="badge pl1">PL1</span>
-                                </span>
-                              </div>
-                            </div>
+                      <div class="top_wrap">
+                        <div class="my_profile">
+                          <div class="img_area">
+                            <img src="~assets/profile_img1.png" alt="profile"/>
                           </div>
-                          <div class="tit_wrap">
-                            <p class="badge_wrap">
-                              <span class="badge_area">
-                                  <span class="badge3 small brown">코인</span>
-                                  <span class="badge3 small yellow">BEST</span>
-                              </span>
-                              <span class="txt01">D-120</span>
-                            </p>
-                            <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                              <p class="logo_wrap">
-                                <img src="~assets/prd_logo.png" alt="profile" />
-                                삼성전자 우
-                              </p>
+                          <div class="tit_area">
+                            <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                            <span class="badge_area">
+                              <span class="badge pro">PRO</span>
+                              <span class="badge pl1">PL1</span>
+                            </span>
                           </div>
-                          <div class="blash_box">
-                            <div class="con_wrap">
-                              <div class="txt_area">
-                                <div class="tit_txt">
-                                  <span class="txt01">목표가</span> 
-                                  <span class="txt02">99999.99 %</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footer_area">
-                            <p class="tag_area">
-                              <span class="primary">＄관련종목</span>
-                              <span>#금리인상</span>
-                              <span>#친환경</span>
-                              <span>#로봇관련주</span>
-                              <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
-                            <div class="ico_wrap">
-                              <span class="ico_area">
-                                <span class="ico_f ico_thumbsUp">624</span>
-                                <span class="ico_f ico_comment">7</span>
-                                <span class="ico_f ico_view">1.2</span>
-                                <span class="ico_f ico_star_s primary">4.7</span>
-                              </span>
-                              <span class="txt_area">
-                               <span class="txt_date">2022.10.26</span>
-                               <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
-                              </span>
-                            </div>
-                            <m-button-3 color="primary"  size="small" class="full"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
-                          </div>
+                        </div>
                       </div>
-                    </a>
-                  </swiper-slide>
-                    <swiper-slide>
-                    <a href="#">
-                      <div class="thumb_list_new">
-                          <div class="top_wrap">
-                            <div class="my_profile">
-                              <div class="img_area">
-                                <img src="~assets/profile_img1.png" alt="profile"/>
-                              </div>
-                              <div class="tit_area">
-                                <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                                <span class="badge_area">
-                                  <span class="badge pro">PRO</span>
-                                  <span class="badge pl1">PL1</span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tit_wrap">
-                            <p class="badge_wrap">
-                              <span class="badge_area">
-                                  <span class="badge3 small brown">코인</span>
-                                  <span class="badge3 small yellow">BEST</span>
-                              </span>
-                              <span class="txt01">D-120</span>
-                            </p>
-                            <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                              <p class="logo_wrap">
-                                <img src="~assets/prd_logo.png" alt="profile" />
-                                삼성전자 우
-                              </p>
-                          </div>
-                          <div class="blash_box">
-                            <div class="con_wrap">
-                              <div class="txt_area">
-                                <div class="tit_txt">
-                                  <span class="txt01">목표가</span> 
-                                  <span class="txt02">99999.99 %</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footer_area">
-                            <p class="tag_area">
-                              <span class="primary">＄관련종목</span>
-                              <span>#금리인상</span>
-                              <span>#친환경</span>
-                              <span>#로봇관련주</span>
-                              <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
-                            <div class="ico_wrap">
-                              <span class="ico_area">
-                                <span class="ico_f ico_thumbsUp">624</span>
-                                <span class="ico_f ico_comment">7</span>
-                                <span class="ico_f ico_view">1.2</span>
-                                <span class="ico_f ico_star_s primary">4.7</span>
-                              </span>
-                              <span class="txt_area">
-                               <span class="txt_date">2022.10.26</span>
-                               <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
-                              </span>
-                            </div>
-                            <m-button-3 color="primary"  size="small" class="full"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
-                          </div>
+                      <div class="tit_wrap">
+                        <p class="badge_wrap">
+                          <span class="badge_area">
+                              <span class="badge3 small brown">코인</span>
+                              <span class="badge3 small yellow">BEST</span>
+                          </span>
+                          <span class="txt01">D-120</span>
+                        </p>
+                        <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                          <p class="logo_wrap">
+                            <img src="~assets/prd_logo.png" alt="profile" />
+                            삼성전자 우
+                          </p>
                       </div>
-                    </a>
+                      <div class="blash_box">
+                        <div class="con_wrap">
+                          <div class="txt_area">
+                            <div class="tit_txt">
+                              <span class="txt01">목표가</span> 
+                              <span class="txt02">99999.99 %</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer_area">
+                        <p class="tag_area">
+                          <span class="primary">＄관련종목</span>
+                          <span>#금리인상</span>
+                          <span>#친환경</span>
+                          <span>#로봇관련주</span>
+                          <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                        </p>
+                        <div class="ico_wrap">
+                          <span class="ico_area">
+                            <span class="ico_f ico_thumbsUp">624</span>
+                            <span class="ico_f ico_comment">7</span>
+                            <span class="ico_f ico_view">1.2</span>
+                            <span class="ico_f ico_star_s primary">4.7</span>
+                          </span>
+                          <span class="txt_area">
+                            <span class="txt_date">2022.10.26</span>
+                            <span class="txt_clock"><i class="ico_clock"/>보팅 2일 남음</span>
+                          </span>
+                        </div>
+                      </div>
+                      </a>
+                      <m-button-3 color="primary"  size="small" class="full" ><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                    </div>
                   </swiper-slide>
               </swiper>
               </div>
@@ -2363,6 +2447,17 @@ export default {
                         spaceBetween: 16
                     }
                 }
+            },
+            swiperOption2: {
+                effect: 'slide',
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                spaceBetween: 30,
+                centeredSlides: true,
+                
             },
         }
     },

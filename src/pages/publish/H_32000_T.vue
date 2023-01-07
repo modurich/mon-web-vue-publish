@@ -66,35 +66,8 @@
               <m-button-3 color="primary" size="large" class="full">
                 <i class="ico_pen_w"/>포스트 작성</m-button-3>
             </div>
-            <ul class="thumb_list post">
+            <ul class="thumb_list post_new line">
               <li class="active">
-                <div class="top_wrap">
-                  <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
-                    <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
-                    </div>
-                  </div>
-                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
-                    user추가
-                    <q-menu auto-close :offset="[30, 10]">
-                      <q-list style="min-width: 80px">
-                        <q-item clickable>
-                          <q-item-section>차단해제</q-item-section>
-                        </q-item>
-                        <q-separator />
-                      </q-list>
-                    </q-menu>
-                  </button>
-                </div>
                 <div class="tit_wrap">
                   <p class="badge_wrap">
                     <span class="badge_area">
@@ -104,44 +77,17 @@
                     </span>
                   </p>
                 </div>
-                <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <p class="img"><img src="~assets/test_img.png"></p>
-                </div>
-                <div class="footer_area">
-                  <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                  </p>
-                  <div class="ico_wrap">
-                    <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
-                      <span class="ico_f ico_comment">7</span>
-                      <span class="ico_f ico_view">1.2</span>
-                      <span class="ico_f ico_star_s primary">4.7</span>
-                    </span>
-                    <span>2022.10.26</span>
-                  </div>
-                </div>
-              </li>
-              <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
+                        <span class="badge operate">운영</span>
                         <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
@@ -159,46 +105,253 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                        <span class="badge3 small brown">코인</span>
-                        <span class="badge3 small yellow">BEST</span>
-                        <span class="badge3 small pink"><i class="ico_crown"/>프리미엄</span>
-                    </span>
-                  </p>
-                </div>
                 <div class="con_area">
-                  <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
-                  오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
-                  https://kr.investing.com/news/stock-market-news/article-760933
-                  </p>
-                  <button class="primary mgb16">상세보기</button>
-                  <div class="list_box">
-                    <span class="img_area"><img src="~assets/test_img.png" alt=""/></span>
-                    <div class="txt_area">
-                      <div class="tit">오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려</div>
-                      <div class="con">타이틀타이틀타이틀</div>
-                      <div class="link_txt"><a href="#">https://news.mt.co.kr/mtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtviewimtviewtviewtvimtviewtviewtvimtviewtview</a></div>
-                    </div>
-                  </div>
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary mgb16">상세보기</button>
+                    <p class="img"><img src="~assets/test_img.png"></p>
+                  </a>
                 </div>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
-                      <span class="ico_f ico_thumbsUp">624</span>
+                      <button class="ico_f ico_thumbsUp">624</button>
                       <span class="ico_f ico_comment">7</span>
                       <span class="ico_f ico_view">1.2</span>
                       <span class="ico_f ico_star_s primary">4.7</span>
                     </span>
                     <span>2022.10.26</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                 <div class="tit_wrap">
+                  <p class="badge_wrap">
+                    <span class="badge_area">
+                        <span class="badge3 red">공지</span>
+                        <span class="badge3 line black">📌 PIN</span>
+                    </span>
+                  </p>
+                </div>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge operate">운영</span>
+                        <span class="badge sup">SUP</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <div class="con_area">
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary">상세보기</button>
+                  </a>
+                </div>
+                <div class="footer_area">
+                  <p class="tag_area">
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                    </span>
+                    <span class="btn_area1">
+                      1분 전
+                      <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                        menu
+                        <q-menu auto-close :offset="[30, 10]">
+                          <q-list style="min-width: 80px">
+                            <q-item clickable>
+                              <q-item-section>신고</q-item-section>
+                            </q-item>
+                          </q-list>
+                        </q-menu>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                 <div class="tit_wrap">
+                  <p class="badge_wrap">
+                    <span class="badge_area">
+                        <span class="badge3 red">공지</span>
+                        <span class="badge3 line black">📌 PIN</span>
+                    </span>
+                  </p>
+                </div>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge operate">운영</span>
+                        <span class="badge sup">SUP</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <div class="con_area">
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary">상세보기</button>
+                  </a>
+                </div>
+                <div class="footer_area">
+                  <p class="tag_area">
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                    </span>
+                    <span class="btn_area1">
+                      1분 전
+                      <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                        menu
+                        <q-menu auto-close :offset="[30, 10]">
+                          <q-list style="min-width: 80px">
+                            <q-item clickable>
+                              <q-item-section>신고</q-item-section>
+                            </q-item>
+                          </q-list>
+                        </q-menu>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                 <div class="tit_wrap">
+                  <p class="badge_wrap">
+                    <span class="badge_area">
+                        <span class="badge3 red">공지</span>
+                        <span class="badge3 line black">📌 PIN</span>
+                    </span>
+                  </p>
+                </div>
+                <div class="top_wrap">
+                  <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge operate">운영</span>
+                        <span class="badge sup">SUP</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <div class="con_area">
+                  <a href="#">
+                    <p class="con_txt">[NEWS] 2022년 08월 16일 주요 뉴스<br/>
+                    오늘 미국장 움직일 이슈: 러시아 2월 침공설 언급한 백악관, 아마존 실적발표 명암, 미 고용 호조에 긴축 우려<br/>
+                    https://kr.investing.com/news/stock-market-news/article-760933
+                    </p>
+                    <button class="primary">상세보기</button>
+                  </a>
+                </div>
+                <div class="footer_area">
+                  <p class="tag_area">
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                    </span>
+                    <span class="btn_area1">
+                      1분 전
+                      <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                        menu
+                        <q-menu auto-close :offset="[30, 10]">
+                          <q-list style="min-width: 80px">
+                            <q-item clickable>
+                              <q-item-section>신고</q-item-section>
+                            </q-item>
+                          </q-list>
+                        </q-menu>
+                      </button>
+                    </span>
                   </div>
                 </div>
               </li>

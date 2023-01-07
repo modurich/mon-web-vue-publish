@@ -39,6 +39,7 @@
 .mga16{margin:16px 0 !important}
 .mga32{margin:32px 0 !important}
 .mga48{margin:48px 0 !important}
+.pda0{padding:0 !important}
 .pdt32{padding-top:32px !important}
 .font10{font-size:10px !important;line-height: 18px;}
 .font11{font-size:11px !important}
@@ -537,7 +538,7 @@ body{
 
 //follow
 .follow_info_wrap{
-    margin-bottom: 64px;
+    margin:32px 0;
     li{
         display:flex;
         justify-content: space-between;
@@ -1794,6 +1795,7 @@ button{
                 font-weight: 700;
                 text-align: center;
             }
+            .font16.txt_dk{font-weight: 500;}
             .font16{line-height: 30px;}
             .txt02{font-size:12px;line-height: 22px;margin-top:5px}
             .img_area{
@@ -1821,6 +1823,10 @@ button{
             }
         }
         .ico_area{
+            //인기 토론 자산 링크 여백 처리
+            .link_view.bold{
+                .txt_gray:first-child{margin-right:4px}
+            }
             &.wrap{
                 text-align: right;
                 justify-content: flex-end;
@@ -1903,7 +1909,10 @@ button{
     }
 }
 
-
+.flex_link{display: flex;width:100%;}
+.inflex_link{display:inline-flex;align-items:center;
+    &.ico_h{width:calc(100% - 40px)}
+}
 .thema_list1{
     margin: 32px 0;
     li{
@@ -1939,7 +1948,6 @@ button{
                 .txt01{
                     display:block;
                     font-size: 16px;
-                    font-weight: 700;
                     color: $txt_dk;
                 }
                 .txt02{font-size:12px}
@@ -2713,11 +2721,6 @@ button{
     }
     .footer_area{
         margin-top:16px;
-        button{
-            .point{color:#ffd165}
-            font-size:12px;
-            border-radius: 4px !important;
-        }
         .ico_wrap{
             display: flex;
             align-items: center;
@@ -2760,41 +2763,83 @@ button{
             }
         }
     }
+    button{
+        .point{color:#ffd165}
+        font-size:12px;
+        border-radius: 4px !important;
+    }
 }
 .thumb_list{
+    &.line{border-top:1px solid $com_line}
     &.post{
         .active{
             background: #f9f9ff;
-            border:1px solid #c1b7ff;
-            .top_wrap{
-                border-bottom:1px solid #c1b7ff !important;
-            }
+            .tit_wrap{margin-bottom:16px}
             .btn_area{
                 border-top:1px solid #c1b7ff !important;
             }
         }
     }
-    li{
-        border:1px solid $com_line;
-        padding:16px 12px;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        &.active{
-            border:1px solid $primary;
-            .top_wrap{
-                border-bottom:1px solid $primary !important;
-            }
+    &.post_new{
+        .active{
+            background: #f9f9ff;
+            .tit_wrap{margin-bottom:16px}
             .btn_area{
-                border-top:1px solid $primary !important;
+                border-top:1px solid #c1b7ff !important;
             }
         }
+       li{
+        &:last-child{border-bottom:0px}
+            border:0px;
+            border-bottom:1px solid $com_line;
+            border-radius:0px;
+            padding: 32px 12px;
+            margin-bottom: 0px;
+            .tit_wrap{margin-bottom:16px}
+            .top_wrap{
+                border-bottom:0px;
+                padding:0 12px 0px 12px;
+                .tit_area{
+                    .txt_tit{color: $txt_gray;margin:0 4px 0 4px}
+                }
+            }
+            .con_area{
+                .con_txt{
+                    color: $txt_dk;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                .list_box{margin-top:16px;border-radius:4px;}
+            }
+            .footer_area{
+                .tag_area{
+                    span,a{font-size:14px}
+                }
+            }
+            
+        }
+    }
+    li{
+        &:last-child{border-bottom: 0px;}
+        padding:32px 12px;
+        //margin-bottom: 16px;
+        border-bottom:1px solid $com_line;
+        // &.active{
+        //     border:1px solid $primary;
+        //     .top_wrap{
+        //         border-bottom:1px solid $primary !important;
+        //     }
+        //     .btn_area{
+        //         border-top:1px solid $primary !important;
+        //     }
+        // }
         .top_wrap{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom:1px solid $com_line;
+            //border-bottom:1px solid $com_line;
             margin:0 -12px 16px -12px;
-            padding:0 12px 16px 12px;
+            padding:0 12px 0px 12px;
             width:calc(100% + 24px);
             .ico_user_pl{width:20px;height:20px;background-size: contain !important;}
             .img_area{
@@ -2813,8 +2858,8 @@ button{
                 flex-wrap: wrap;
                 .txt_tit{
                     font-size: 12px;
-                    color: $txt_dk;
-                    margin:0 0 0 8px;
+                    color: $txt_gray;
+                    margin:0 4px 0 4px;
                     font-weight: 700;
                 }
                 .badge_area{
@@ -2967,9 +3012,9 @@ button{
         .defalut_box{
             .con_wrap{
                 position: relative;
-                border-top:1px dashed $com_line;
-                border-bottom:1px dashed $com_line;
-                padding:16px 32px;
+                // border-top:1px dashed $com_line;
+                // border-bottom:1px dashed $com_line;
+                //padding:16px 0px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -2978,7 +3023,7 @@ button{
                 }
                 .txt_area{
                     .tit_txt{
-                        color: $txt_dk;
+                        color: $txt_gray;
                         display: flex;
                         flex-wrap: wrap;
                         align-items: center;
@@ -2992,7 +3037,7 @@ button{
             }
             @media (max-width: $breakpoint-xs-max) {
                 .con_wrap{
-                    padding:16px 16px;
+                    padding:16px 0px;
                     .txt_area{flex:2}
                     .tit_txt{
                         justify-content: center;
@@ -3003,6 +3048,7 @@ button{
                     }
                     .txt_area{flex:1.8;
                         .txt02{
+                            font-size: 18px !important;
                              margin-left: 0px !important;
                         }
                     }
@@ -3010,6 +3056,7 @@ button{
                         display: flex;
                         justify-content: center;
                         flex:1;
+                        margin-left:16px;
                         .ico_graph_up,.ico_graph_down{width:132px;height:92px}
                     }
                 }
@@ -3018,7 +3065,8 @@ button{
         .con_area{
             .con_txt{
                 margin-top:10px;
-                font-size:12px;line-height: 18px;}
+                color:$txt_dk;
+                line-height: 26px;}
             .img{
                 img{width:100%;}
             }
@@ -3029,10 +3077,14 @@ button{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                font-size: 12px;
             }
             .btn_area1{display:flex;
                 font-size: 12px;
                 button{width: 20px;height: 20px;background-size: contain !important;}
+            }
+            .tag_area{
+                span,a{font-size:14px}
             }
             .btn_area{
                 display: flex;
@@ -3041,13 +3093,14 @@ button{
                 margin:16px -12px 0 -12px;
                 padding:16px 12px 0 12px;
                 width:calc(100% + 24px);
-                border-top:1px solid $com_line;
+                //border-top:1px solid $com_line;
                 .txt_area{
                     display: flex;
                     align-items: center;
                     color: $secondary;
                 }
                 button{
+                    border-radius: 4px !important;
                     .point{color: #ffd165;}
                 }
             }
@@ -3056,9 +3109,10 @@ button{
 }
 .thumb_list1{
     li{
-        padding:16px 0px 32px 0px;
+        &:last-child{border-bottom: 0px;}
+        padding:32px 0px 32px 0px;
         //border-radius: 8px;
-        margin-bottom: 16px;
+        //margin-bottom: 16px;
         border-bottom:1px solid $com_line;
         .top_wrap{
             display: flex;
@@ -3146,6 +3200,7 @@ button{
     padding:8px;
     border: 1px solid $com_line;
     display:flex;
+    border-radius: 4px;
     .img_area{
         img{width:57px;height:57px;margin-right:8px}
     }
@@ -3167,7 +3222,7 @@ button{
 }
 
 .tag_area{
-    span{margin-right:8px;color: $txt_dk;font-size: 12px;}
+    span,a{margin-right:8px;color: $txt_dk;font-size: 12px;}
 } 
 .ico_f{
     display: inline-flex;

@@ -657,7 +657,7 @@
                 <router-link to="/publish/H_31000_T">H_31000_T</router-link>
             </td>
             <td>예측 콘텐츠-인사이트</td>
-            <td></td>
+            <td>수정중 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -677,7 +677,7 @@
                 <router-link to="/publish/H_32000_T">H_32000_T</router-link>
             </td>
             <td>포스트</td>
-            <td></td>
+            <td>수정중 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
