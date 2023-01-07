@@ -2713,17 +2713,34 @@ button{
     }
     .footer_area{
         margin-top:16px;
+        button{
+            .point{color:#ffd165}
+            font-size:12px;
+            border-radius: 4px !important;
+        }
         .ico_wrap{
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             > span{width:100%}
             .ico_f{font-size: 12px;}
-            .txt_date{margin-top:10px;font-size: 12px;}
+            .txt_date{font-size: 12px;}
         }
         .btn_area1{display:flex;
             font-size: 12px;
             button{width: 20px;height: 20px;background-size: contain !important;}
+        }
+        .txt_area{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .txt_clock{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #ffa500;
+                margin:16px 0;
+            }
         }
         .btn_area{
             display: flex;
