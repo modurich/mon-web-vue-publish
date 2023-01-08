@@ -64,7 +64,8 @@
                 <span class="mgl8">보팅중만 보기</span>
               </div>
             </div>
-            <ul class="thumb_list line">
+            <div class="divider1 xxsmall"/>
+            <ul class="thumb_list">
               <!-- <li>
                 <div class="top_wrap">
                   <div class="my_profile">
@@ -306,15 +307,15 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
                     </div>
@@ -377,16 +378,16 @@
               </li>
               <li>
                 <div class="top_wrap">
-                  <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
+                <div class="my_profile">
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
                     </div>
@@ -454,15 +455,15 @@
                <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
                     </div>
@@ -530,15 +531,15 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
                     </div>
@@ -602,15 +603,15 @@
                <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile"/>
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
-                        <span class="badge confirm">인증</span>
-                        <span class="badge sup">SUP</span>
                         <span class="badge pl1">PL1</span>
                       </span>
                     </div>

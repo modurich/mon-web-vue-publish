@@ -66,7 +66,8 @@
               <m-button-3 color="primary" size="large" class="full">
                 <i class="ico_pen_w"/>포스트 작성</m-button-3>
             </div>
-            <ul class="thumb_list post_new line">
+            <div class="divider1 xxsmall"/>
+            <ul class="thumb_list post_new">
               <li class="active">
                 <div class="tit_wrap">
                   <p class="badge_wrap">
