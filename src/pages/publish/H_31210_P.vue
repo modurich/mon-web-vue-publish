@@ -158,7 +158,7 @@
             </div>
             <m-tabs class="line_type large sticky_tab2" v-model="tab1" :items="tabs" />
             <div class="tab_contents" v-if="tab1 == 'A'">
-              <h3 class="between mgb32">
+              <h3 class="between mga32">
                 <span class="font16">D-27</span>
                 <span class="font12 txt_gray medium flex">
                   <span class="badge3 short mgr4">단기</span>

@@ -465,28 +465,26 @@
             >
                 <swiper-slide class="slide" >
                     <ul class="tag_list">
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>##삼성전자실적<span class="round_tag">3,266</span></li>
-                      <li>##삼성전자매출<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자실적<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">##삼성전자실적<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">##삼성전자매출<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자실적<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></a></li>
                     </ul>
                 </swiper-slide>
                 <swiper-slide class="slide">
-                    <ul class="tag_list">
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>##삼성전자실적<span class="round_tag">3,266</span></li>
-                      <li>##삼성전자매출<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자실적<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#삼성전자<span class="round_tag">3,266</span></li>
-                      <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
+                     <ul class="tag_list">
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">##삼성전자실적<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">##삼성전자매출<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자실적<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#삼성전자<span class="round_tag">3,266</span></a></li>
+                      <li><a href="#">#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></a></li>
                     </ul>
                 </swiper-slide>
             </swiper>

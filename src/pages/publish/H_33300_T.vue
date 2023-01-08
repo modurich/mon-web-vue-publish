@@ -75,15 +75,18 @@
                 <span class="mgl8">프리미엄만 보기</span>
               </div>
             </div>
+            <div class="divider1 xxsmall"/>
             <ul class="thumb_list">
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -102,42 +105,44 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                    </span>
-                    <span>매수대기</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01">BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                      </span>
+                      <span>매수대기</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box">
+                    <div class="tit_wrap">
+                      <span class="txt01">BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt="" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt="" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
-                  <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                 <p class="tag_area">
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -155,11 +160,13 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -178,42 +185,44 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                    </span>
-                    <span>D-120</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01">BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                      </span>
+                      <span>D-120</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box">
+                    <div class="tit_wrap">
+                      <span class="txt01">BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt="" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt="" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -236,11 +245,13 @@
               <li class="active">
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -259,43 +270,45 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <span>D-120</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box premium">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                      </span>
+                      <span>D-120</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_upimg02.png" class="ico_upimg02" alt="" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg02.png" class="ico_upimg02" alt="" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -316,11 +329,13 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -339,43 +354,45 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <span>종료</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box premium">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                      </span>
+                      <span>종료</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_stamp.svg" alt="성공" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_stamp.svg" alt="성공" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
-                  <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                 <p class="tag_area">
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -393,11 +410,13 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -416,43 +435,45 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <span>종료</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box premium">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                      </span>
+                      <span>종료</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_stamp01.svg" alt="실패" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_stamp01.svg" alt="실패" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -468,11 +489,13 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -491,43 +514,45 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <span>종료</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box premium">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                      </span>
+                      <span>종료</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_stamp02.svg" alt="무효" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_stamp02.svg" alt="무효" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">
@@ -543,11 +568,13 @@
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
-                    <div class="img_area">
-                      <img src="~assets/profile_img1.png" alt="profile" />
-                    </div>
                     <div class="tit_area">
-                      <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
                       <span class="badge_area">
                         <span class="badge pro">PRO</span>
                         <span class="badge pl1">PL1</span>
@@ -566,43 +593,45 @@
                     </q-menu>
                   </button>
                 </div>
-                <div class="tit_wrap">
-                  <p class="badge_wrap">
-                    <span class="badge_area">
-                      <span class="badge3 small brown">코인</span>
-                      <span class="badge3 small yellow">BEST</span>
-                      <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
-                    </span>
-                    <span>종료</span>
-                  </p>
-                  <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
-                </div>
-                <div class="blash_box premium">
+                <a href="#">
                   <div class="tit_wrap">
-                    <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
-                    <span class="txt02">5 sMON</span>
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                        <span class="badge3 small brown">코인</span>
+                        <span class="badge3 small yellow">BEST</span>
+                        <span class="badge3 small pink"><i class="ico_crown" />프리미엄</span>
+                      </span>
+                      <span>종료</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
                   </div>
-                  <div class="con_wrap">
-                    <div class="txt_area">
-                      <div class="tit_txt">
-                        <span class="txt01">목표수익률</span>
-                        <span class="txt02">99999.99 %</span>
-                      </div>
-                      <div class="con_txt">
-                        <span class="col">비중 <span class="txt01">100%</span></span>
-                        <span class="col">기간 <span class="txt01">120일</span></span>
-                      </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown" />프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
                     </div>
-                    <div class="img_area"><img src="~assets/ico_stamp03.svg" alt="매수실패" /></div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span>
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_stamp03.svg" alt="매수실패" /></div>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <div class="footer_area">
                   <p class="tag_area">
-                    <span class="primary">＄관련종목</span>
-                    <span>#금리인상</span>
-                    <span>#친환경</span>
-                    <span>#로봇관련주</span>
-                    <span>#최대스무자최대스무자최대스무자최대스무자</span>
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
                   </p>
                   <div class="ico_wrap">
                     <span class="ico_area">

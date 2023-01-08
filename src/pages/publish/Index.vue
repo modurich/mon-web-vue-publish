@@ -667,7 +667,7 @@
                 <router-link to="/publish/H_35000_T">H_35000_T</router-link>
             </td>
             <td>예측 콘텐츠-BLASH</td>
-            <td></td>
+            <td>수정중 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -687,7 +687,7 @@
                 <router-link to="/publish/H_33100_T">H_33100_T</router-link>
             </td>
             <td>인사이트</td>
-            <td></td>
+            <td>수정중 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -697,7 +697,7 @@
                 <router-link to="/publish/H_33300_T">H_33300_T</router-link>
             </td>
             <td>blash</td>
-            <td>*****백드롭*****</td>
+            <td>수정중 2023-1-04 *****백드롭*****</td>
         </tr> 
         <!-- <tr>
             <td></td>

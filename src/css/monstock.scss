@@ -422,7 +422,7 @@ body{
 .btn_wrap{
     display:flex;
     align-items: center;
-    button + button{margin-left:16px}
+    button + button{margin-left:8px}
     &.center{
         justify-content: center;
     }
@@ -3305,8 +3305,10 @@ button{
     margin-bottom: 32px;
     display: flex;
     align-items: center;
+    .m-chip-list-wrappper{padding-right:40px}
     .m-chip-list{
         margin:0 !important;
+        .m-icon{display: flex;align-items: center;}
     }
     .ico,img{width:60px;height:60px;border-radius: 60px;box-sizing: border-box;
         background-size: cover !important;background-color:#f8f9fd ;display: flex;margin-bottom:4px;
