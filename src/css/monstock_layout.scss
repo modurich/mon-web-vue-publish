@@ -276,6 +276,7 @@
     .aside_box{
         padding:25px 20px;
         background: #fff;
+        &.no_pd{padding:0px;}
         .tit{color:$txt_dk;font-size:16px;font-weight: 700;}
         .main_tit{color:$txt_dk;margin: 0 0 10px;font-size:20px;font-weight: 700;}
         .info_txt{margin: 0 0 32px;}
@@ -295,6 +296,38 @@
         }
     }
     .aside_box + .aside_box{margin-top:20px}
+    .tag_slide{
+        height: 520px;
+    }
+    .product_slide{
+        height: 430px;
+    }
+    .product_list{
+        &.aside{
+            li{width:240px;
+                .img_area{width:40px;height:40px}
+            }
+        }
+    }
+    .tag_list01{
+        text-align: left;
+        margin-top:10px;
+        li {
+            margin-bottom:20px;
+            width: 240px;
+            box-sizing: border-box;
+            max-width:240px;
+            display: flex;
+            justify-content: flex-start;
+            a{display:flex;align-items: center;
+                justify-content: space-between;
+                color: $txt_dk;
+                .txt_num{display: inline-block;color:$txt_gray;font-size:16px;font-weight: 700;width:30px;text-align: left;}
+                .round_tag{margin-left:4px}
+            }
+        }
+    }
+    //플레이어 랭킹
     .ranking_list{
         width:240px;
         li{display:flex;align-items: center;
