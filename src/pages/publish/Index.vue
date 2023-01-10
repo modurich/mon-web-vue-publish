@@ -193,7 +193,7 @@
                 <router-link to="/publish/A_22100_P">A_22100_P</router-link>
             </td>
             <td>klip</td>
-            <td></td>
+            <td>수정 2023-1-10</td>
         </tr>   
         <tr>
             <td></td>
@@ -657,7 +657,7 @@
                 <router-link to="/publish/H_31000_T">H_31000_T</router-link>
             </td>
             <td>예측 콘텐츠-인사이트</td>
-            <td>수정중 2023-1-04</td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -667,7 +667,7 @@
                 <router-link to="/publish/H_35000_T">H_35000_T</router-link>
             </td>
             <td>예측 콘텐츠-BLASH</td>
-            <td>수정중 2023-1-04</td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -677,7 +677,7 @@
                 <router-link to="/publish/H_32000_T">H_32000_T</router-link>
             </td>
             <td>포스트</td>
-            <td>수정중 2023-1-04</td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -687,7 +687,7 @@
                 <router-link to="/publish/H_33100_T">H_33100_T</router-link>
             </td>
             <td>인사이트</td>
-            <td>수정중 2023-1-04</td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>
@@ -697,7 +697,7 @@
                 <router-link to="/publish/H_33300_T">H_33300_T</router-link>
             </td>
             <td>blash</td>
-            <td>수정중 2023-1-04 *****백드롭*****</td>
+            <td>수정 2023-1-04 *****백드롭*****</td>
         </tr> 
         <!-- <tr>
             <td></td>
@@ -1087,7 +1087,7 @@
                 <router-link to="/publish/H_12000_T">H_12000_T</router-link>
             </td>
             <td>오늘의 테마</td>
-            <td>수정중 2023-1-04</td>
+            <td>수정 2023-1-04</td>
         </tr> 
         <tr>
             <td></td>

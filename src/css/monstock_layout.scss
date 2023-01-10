@@ -276,7 +276,7 @@
     .aside_box{
         padding:25px 20px;
         background: #fff;
-        &.no_pd{padding:0px;}
+        &.no_pd{padding:0px 0 25px 0;}
         .tit{color:$txt_dk;font-size:16px;font-weight: 700;}
         .main_tit{color:$txt_dk;margin: 0 0 10px;font-size:20px;font-weight: 700;}
         .info_txt{margin: 0 0 32px;}
@@ -297,10 +297,11 @@
     }
     .aside_box + .aside_box{margin-top:20px}
     .tag_slide{
-        height: 520px;
+        height: 500px;
     }
+
     .product_slide{
-        height: 430px;
+        height: 400px;
     }
     .product_list{
         &.aside{

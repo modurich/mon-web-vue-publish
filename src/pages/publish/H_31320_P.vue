@@ -47,10 +47,9 @@
           <m-button-3  size="large" color="primary"><i class="ico_alarm_off_w"/><i class="ico_alarm_on_w"/>알림켜기</m-button-3 >
         </div>
         <div class="con_box">
-          
+          <h2 class="line_type">BLASH 미리보기</h2>
           <div class="box_contents pdt16"> 
             <div ref="s03" class="tit_type01">
-              <h2 class="line_type">BLASH 미리보기</h2>
               <p class="badge_wrap">
                 <span class="badge_area">
                   <span class="badge3 small green">주식</span>
@@ -142,7 +141,7 @@
            
             <m-tabs class="line_type large sticky_tab2" v-model="tab1" :items="tabs"/>
             <div class="tab_contents" v-if="tab1 == 'A'">
-              <h3 class="between mgb32">
+              <h3 class="between mga32">
                 <span class="font16">D-27</span>
                 <span class="font12 txt_gray medium flex">
                   <span class="badge3 short mgr4">단기</span>
