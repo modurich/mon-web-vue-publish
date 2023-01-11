@@ -18,7 +18,7 @@
                 <span class="font12">D-120</span>
               </div>
               <p class="ellipsis font18 txt_dk bold mgt8">제목은 2글자 이상 최대 40자입니다제목은 2글자 이상 최대 40자입니다제목은 2글자 이상 최대 40자입니다제목은 2글자 이상 최대 40자입니다</p>
-              <ul class="insight_list list6 mgt32">
+              <ul class="insight_list list6 mgt16">
                   <li>
                       <span class="txt01">누적 VP</span>
                       <span class="txt02 font14 primary">20,000</span>
@@ -44,7 +44,7 @@
                       <span class="txt02 font14">999,000 명</span>
                   </li>
               </ul>
-              <div class="divider1 xsmall"/>
+              <div class="divider1 xsmall mgt0"/>
               <div ref="s02" class="pro_header">
                 <span class="logo">
                   <img src="~assets/prd_logo.png" alt="profile" />
@@ -53,10 +53,10 @@
                 <span class="txt01">₩ 352,100</span> 
               </div>
               <div class="divider1 xsmall"/>
-              <div class="chart_list_wrap">
+              <div class="chart_list_wrap inline">
                 <div class="chart_area">
                   <!-- S 차트 들어가는 곳-->
-                  <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
+                  <div class="gaug_wrap small"><GaugeChart :fld01="100" :fld02="120"/></div>
                   <!-- E 차트 들어가는 곳-->
                 </div>
                 <div class="list_area">
@@ -64,7 +64,7 @@
                   <ul class="font12">
                     <li>
                       <span class="txt01">목표수익률</span>
-                      <span class="ico_area txt_blue1 font12">+00.00%</span>
+                      <span class="ico_area txt_blue1 font12 bold">+00.00%</span>
                     </li>
                     <li>
                       <span class="txt01">목표가</span>
@@ -126,7 +126,7 @@
 <script>
 import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-import GaugeChart from 'src/components/GaugeChart.vue';
+import GaugeChart from 'src/components/GaugeChart2.vue';
 export default {
   components: { MDialogBlank,GaugeChart },
   name: 'A_10000_P',

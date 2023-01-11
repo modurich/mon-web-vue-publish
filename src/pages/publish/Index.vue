@@ -817,7 +817,7 @@
                 <router-link to="/publish/A_217121_U">A_217121_U</router-link>
             </td>
             <td>매수성공-백드롭</td>
-            <td></td>
+            <td>수정 2023-01-11</td>
         </tr> 
         <tr>
             <td></td>
@@ -837,7 +837,7 @@
                 <router-link to="/publish/A_217221_U">A_217221_U</router-link>
             </td>
             <td>A_217221_U-백드롭</td>
-            <td></td>
+            <td>수정 2023-01-11</td>
         </tr> 
         <tr>
             <td></td>
@@ -857,7 +857,7 @@
                 <router-link to="/publish/A_217311_U">A_217311_U</router-link>
             </td>
             <td>A_217311_U-백드롭</td>
-            <td></td>
+            <td>수정 2023-01-11</td>
         </tr> 
         <tr>
             <td></td>
@@ -877,7 +877,7 @@
                 <router-link to="/publish/A_217321_U">A_217321_U</router-link>
             </td>
             <td>A_217321_U-백드롭</td>
-            <td></td>
+            <td>수정 2023-01-11</td>
         </tr> 
         <tr>
             <td></td>

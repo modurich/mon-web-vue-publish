@@ -787,11 +787,22 @@ body{
 }
 
 //
+// .insight_wrap{
+//     width:100%;
+//     display: flex;
+//     ul{flex:1;display:flex;
+//         li{flex:1;}
+//     }
+//     @media (max-width: $breakpoint-xs-max) {
+//        flex-wrap: wrap;
+//     }
+
+// }
 .insight_list{
     display:flex;
     flex-wrap: wrap;
     .txt01{line-height: 22px;margin-bottom:4px;font-size: 12px;}
-    .txt02{font-size:24px;color:$txt_dk;line-height: 40px;font-weight: 500;}
+    .txt02{font-size:24px;color:$txt_dk;line-height: 26px;font-weight: 500;}
    li{
         width:50%;
         text-align: center;
@@ -809,7 +820,8 @@ body{
     }
     &.list6{
         li{
-            width:calc(100% / 6);
+            flex:1;
+           // width:calc(100% / 6);
             border-left:1px solid #d4d9ea;
             &:nth-child(1){border-left:0}
         }  
@@ -817,6 +829,7 @@ body{
     @media (max-width: $breakpoint-xs-max) {
         &.list6{
             li{
+                flex:auto;
                 width:calc(100% / 3);
                 border-left:1px solid #d4d9ea;
                 &:nth-child(3n + 1){border-left:0}
@@ -3750,6 +3763,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     align-items:center;
+    &.inline{flex-wrap:nowrap}
     > div{flex:1}
     .insight_list{flex:1}
     .lcon_list{
@@ -3775,7 +3789,7 @@ button{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom:17px;
+            margin-bottom:8px;
             .txt01{font-size:12px}
             .ico_area{
                 display: flex;
@@ -3872,6 +3886,14 @@ button{
 
 .gaug_wrap{
     position: relative;
+    &.small{
+        .label_wrap{
+            margin-top: -26px;
+            .txt01{color: $txt_gray;font-size:12px}
+            .txt02{font-size: 16px;color: $txt_blue1;line-height: 30px;}
+            .txt03{font-size: 16px;color: $txt_red;line-height: 30px;}
+        }
+    }
     .label_wrap{
         position: absolute;
         margin-top:-35px;

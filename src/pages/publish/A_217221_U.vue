@@ -56,10 +56,10 @@
               <span class="txt01">₩ 352,100</span> 
             </div>
             <div class="divider1 xsmall"/>
-            <div class="chart_list_wrap">
+            <div class="chart_list_wrap inline">
               <div class="chart_area">
                 <!-- S 차트 들어가는 곳-->
-                <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
+                <div class="gaug_wrap small"><GaugeChart :fld01="100" :fld02="120"/></div>
                 <!-- E 차트 들어가는 곳-->
               </div>
               <div class="list_area">
@@ -67,7 +67,7 @@
                 <ul class="font12">
                   <li>
                     <span class="txt01">목표수익률</span>
-                    <span class="ico_area txt_blue1 font12">+00.00%</span>
+                    <span class="ico_area txt_blue1 font12 bold">+00.00%</span>
                   </li>
                   <li>
                     <span class="txt01">목표가</span>
@@ -97,7 +97,7 @@
                 <span class="txt02">YYYY.MM.DD hh:mm:ss</span>
               </li>
             </ul>
-            <div class="btn_wrap mgt32">
+            <div class="btn_wrap">
                 <m-button-3 color="primary" class="full">
                   BLASH 상세 보기
                 </m-button-3>
@@ -113,7 +113,7 @@
 <script>
 import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-import GaugeChart from 'src/components/GaugeChart.vue';
+import GaugeChart from 'src/components/GaugeChart2.vue';
 export default {
   components: { MDialogBlank,GaugeChart },
   name: 'A_10000_P',

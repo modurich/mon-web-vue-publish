@@ -78,8 +78,8 @@
               <li class="col2">
                 <span class="txt01">sMON 보상 (예상) / 보팅량</span>
                 <span class="txt02">
-                  <span class="txt_blue1">0.9785300935</span>
-                  <span class="primary mgl4">/ 5VP</span>
+                  <span class="txt_blue1 bold">0.9785300935</span>
+                  <span class="primary mgl4 bold">/ 5VP</span>
                 </span>
               </li>
             </ul>

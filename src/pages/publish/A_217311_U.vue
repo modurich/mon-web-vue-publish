@@ -52,18 +52,18 @@
               <span class="txt01">₩ 352,100</span> 
             </div>
             <div class="divider1 xsmall"/>
-            <div class="chart_list_wrap">
+            <div class="chart_list_wrap inline">
               <div class="chart_area">
                 <!-- S 차트 들어가는 곳-->
-                <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="120"/></div>
+                <div class="gaug_wrap small"><GaugeChart :fld01="100" :fld02="120"/></div>
                 <!-- E 차트 들어가는 곳-->
               </div>
               <div class="list_area">
                 <!-- S 리스트-->
                 <ul class="font12">
                   <li>
-                    <span class="txt01">목표수익률</span>
-                    <span class="ico_area txt_blue1 font12">+00.00%</span>
+                    <span class="txt01">상승목표</span>
+                    <span class="ico_area txt_blue1 font12 bold">+00.00%</span>
                   </li>
                   <li>
                     <span class="txt01">목표가</span>
@@ -81,10 +81,10 @@
                 <!-- E 리스트-->
               </div>
             </div>
-            <div class="chart_list_wrap">
+            <div class="chart_list_wrap inline">
               <div class="chart_area">
                 <!-- S 차트 들어가는 곳-->
-                <div class="gaug_wrap"><GaugeChart :fld01="100" :fld02="80"/></div>
+                <div class="gaug_wrap small"><GaugeChart :fld01="100" :fld02="80"/></div>
                 <!-- E 차트 들어가는 곳-->
               </div>
               <div class="list_area">
@@ -92,7 +92,7 @@
                 <ul class="font12">
                   <li>
                     <span class="txt01">하락목표</span>
-                    <span class="ico_area txt_red font12">-00.00%</span>
+                    <span class="ico_area txt_red font12 bold">-00.00%</span>
                   </li>
                   <li>
                     <span class="txt01">목표가</span>
@@ -113,14 +113,14 @@
             <div class="divider1 xsmall"/>
             <h3 class="between">
               <span class="font16 txt_dk">보팅</span>
-              <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>
+              <span class="secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>
             </h3>
             <ul class="list_type1 font12">
               <li class="col2">
                 <span class="txt01">sMON 보상 (예상) / 보팅량</span>
                 <span class="txt02">
-                  <span class="txt_blue1">0.9785300935</span>
-                  <span class="primary mgl4">/ 5VP</span>
+                  <span class="txt_blue1 bold">0.9785300935</span>
+                  <span class="primary mgl4 bold">/ 5VP</span>
                 </span>
               </li>
             </ul>
@@ -140,7 +140,7 @@
 <script>
 import { ref } from 'vue';
 import MDialogBlank from 'src/components/MDialogBlank.vue';
-import GaugeChart from 'src/components/GaugeChart.vue';
+import GaugeChart from 'src/components/GaugeChart2.vue';
 export default {
   components: { MDialogBlank,GaugeChart },
   name: 'A_10000_P',
