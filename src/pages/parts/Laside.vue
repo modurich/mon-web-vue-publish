@@ -29,7 +29,7 @@
                     <div class="user_img">
                         <div class="img_area"><img src="~assets/user_img.png" alt="profile"/></div>
                     </div>
-                    <p class="user_name">닉네임열두글자하나둘셋넷</p>
+                    <p class="user_name">닉네임열두글자하나둘셋넷<button class="ico_tit_check active"/></p>
                     <p class="user_grade">
                         <!-- <span class="ico_level1">level</span> -->
                         <span class="badge pro">PRO</span>

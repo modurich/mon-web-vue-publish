@@ -203,9 +203,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -223,9 +220,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -243,9 +237,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -263,9 +254,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -283,9 +271,91 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">6</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">7</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">8</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">9</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">10</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
                                 </div>
                                 </div>
                             </a>
@@ -296,111 +366,7 @@
                         </li>
                     </ul>
                 </q-carousel-slide>
-                <q-carousel-slide name="2" class="column no-wrap flex-center">
-                   <ul class="product_list aside">
-                        <li>
-                            <a href="#">
-                                <div class="prd_img">
-                                <span class="txt_number">1</span>
-                                <div class="img_area">
-                                    <img src="~assets/prd_logo.png" alt="profile" />
-                                </div>
-                                <div class="tit_area">
-                                    <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
-                                </div>
-                                </div>
-                            </a>
-                            <div class="ico_area">
-                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                                indeterminate-icon="help" />
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="prd_img">
-                                <span class="txt_number">2</span>
-                                <div class="img_area">
-                                    <img src="~assets/prd_logo.png" alt="profile" />
-                                </div>
-                                <div class="tit_area">
-                                    <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
-                                </div>
-                                </div>
-                            </a>
-                            <div class="ico_area">
-                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                                indeterminate-icon="help" />
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="prd_img">
-                                <span class="txt_number">3</span>
-                                <div class="img_area">
-                                    <img src="~assets/prd_logo.png" alt="profile" />
-                                </div>
-                                <div class="tit_area">
-                                    <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
-                                </div>
-                                </div>
-                            </a>
-                            <div class="ico_area">
-                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                                indeterminate-icon="help" />
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="prd_img">
-                                <span class="txt_number">4</span>
-                                <div class="img_area">
-                                    <img src="~assets/prd_logo.png" alt="profile" />
-                                </div>
-                                <div class="tit_area">
-                                    <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
-                                </div>
-                                </div>
-                            </a>
-                            <div class="ico_area">
-                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                                indeterminate-icon="help" />
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="prd_img">
-                                <span class="txt_number">5</span>
-                                <div class="img_area">
-                                    <img src="~assets/prd_logo.png" alt="profile" />
-                                </div>
-                                <div class="tit_area">
-                                    <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
-                                </div>
-                                </div>
-                            </a>
-                            <div class="ico_area">
-                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
-                                indeterminate-icon="help" />
-                            </div>
-                        </li>
-                    </ul>
-                </q-carousel-slide>
-                <q-carousel-slide name="3" class="column no-wrap flex-center">
+                 <q-carousel-slide name="2" class="column no-wrap flex-center">
                     <ul class="product_list aside">
                         <li>
                             <a href="#">
@@ -411,9 +377,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -431,9 +394,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -451,9 +411,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -471,9 +428,6 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
                                 </div>
                                 </div>
                             </a>
@@ -491,9 +445,265 @@
                                 </div>
                                 <div class="tit_area">
                                     <span class="txt01">삼성전자우</span>
-                                    <span class="txt02">
-                                    9,000,000명 추가
-                                    </span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">6</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">7</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">8</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">9</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">10</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                    </ul>
+                </q-carousel-slide>
+                 <q-carousel-slide name="3" class="column no-wrap flex-center">
+                    <ul class="product_list aside">
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">1</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">2</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">3</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">4</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">5</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">6</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">7</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">8</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">9</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
+                                </div>
+                                </div>
+                            </a>
+                            <div class="ico_area">
+                            <q-checkbox v-model="v_true" size="24" checked-icon="favorite" unchecked-icon="favorite_border"
+                                indeterminate-icon="help" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="prd_img">
+                                <span class="txt_number">10</span>
+                                <div class="img_area">
+                                    <img src="~assets/prd_logo.png" alt="profile" />
+                                </div>
+                                <div class="tit_area">
+                                    <span class="txt01">삼성전자우</span>
                                 </div>
                                 </div>
                             </a>

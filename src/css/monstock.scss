@@ -251,7 +251,15 @@ body{
 .ico_reward{
     background: url('~assets/ico_reward.png') center right no-repeat;
 }
-
+.ico_tit_check{
+    background: url('~assets/ico_tit_check.svg') no-repeat;
+    display: inline-flex;
+    width:19px;
+    height:18px;
+    &.active{
+        background: url('~assets/ico_tit_check_on.svg') no-repeat;
+    }
+}
 //badge
 .badge3{
     height: 18px;
@@ -512,6 +520,7 @@ body{
                 font-weight: 700;
                 color: $txt_dk;
                 margin-bottom: 8px;
+                i{margin-left:5px}
             }
         }
     }

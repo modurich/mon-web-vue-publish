@@ -87,6 +87,10 @@
                 background: url('~assets/ico_luckybox.svg') center right no-repeat;
                 background-size:contain;
             }
+            .ico_luckybox_new{
+                background: url('~assets/ico_luckybox_new.svg') center right no-repeat;
+                background-size:contain;
+            }
             .ico_alarm_new{
                 background: url('~assets/ico_alarm_new.svg') center right no-repeat;
                 background-size:contain;
@@ -109,11 +113,11 @@
                     .alarm_dot{
                         position: absolute;
                         display: flex;
-                        top:3px;
+                        top:4px;
                         right:-5px;
-                        width:12px;
-                        height: 12px;
-                        border-radius: 12px;
+                        width:11px;
+                        height: 11px;
+                        border-radius: 11px;
                         background-color: #fb1f1f;
                         text-indent: -999em;
                     }
@@ -297,16 +301,20 @@
     }
     .aside_box + .aside_box{margin-top:20px}
     .tag_slide{
-        height: 500px;
+        height: 510px;
     }
 
     .product_slide{
-        height: 400px;
+        height: 510px;
     }
     .product_list{
         &.aside{
-            li{width:240px;
-                .img_area{width:40px;height:40px}
+            li{width:240px;margin-bottom:5px;
+                .img_area{width:30px;height:30px}
+                .ico_area{
+                    .q-icon{top:0px}
+                }
+                .txt_number{text-align: left;margin-right: 0px;}
             }
         }
     }
@@ -383,7 +391,11 @@
                     img{width:100%;height: 100%;}
                 }
             }
-            .user_name{color:$txt_dk;margin:8px 0;font-weight: 700;}
+            .user_name{color:$txt_dk;margin:8px 0;font-weight: 700;display: flex;
+                align-items: center;
+                justify-content: center;
+                .ico_tit_check{margin-left:8px}
+            }
             .user_grade{
                 display:inline-flex;
                 align-items: center;
@@ -575,8 +587,10 @@
             color:$txt_gray;
             width:100%;
             li{
+                position: relative;
                 flex:1;
                 text-align: center;
+               
             }
             a{
                 display: inline-flex;
@@ -592,10 +606,23 @@
                 }
             }
             .ico{
+                position: relative;
                 display: inline-flex;
                 justify-content: center;
                 width:24px;
                 height: 24px;
+                .ico_new{position: absolute;
+                    top:-3px;
+                    right:-5px;
+                    width:8px;
+                    height: 8px;
+                    border-radius: 8px;
+                    display: inline-flex;
+                    border:1px solid red;
+                    background-color: #fb1f1f;
+                    font-size: 0;
+                    text-indent: -999em;
+                }
             }
             
             .top_menu01{

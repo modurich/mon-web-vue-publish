@@ -11,7 +11,7 @@
                   <img src="~assets/profile_img1.png" alt="profile"/>
                 </div>
                 <div class="tit_area">
-                  <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                  <span class="txt_tit">몬스탁닉넴열글자까지 <button class="ico_tit_check active"/></span>
                   <span class="badge_area">
                     <button class="badge pro">PRO</button>
                     <button class="badge pl1">PL1</button>
