@@ -434,7 +434,21 @@
               <m-button-3 lined color="primary" class="full">PIN코드 찾기</m-button-3>
               <m-button-3 lined color="primary" class="full">OTP 설정</m-button-3>
             </div>
-            <div class="between">
+            <p class="between">
+              <span>
+                <span class="font16 txt_dk">본인 인증 (KYC)</span>
+                <span class="badge3 gray mgl8">미인증</span>
+              </span>
+              <a href="#" class="link_view">인증</a>
+            </p>
+            <p class="between">
+              <span>
+                <span class="font16 txt_dk">OTP</span>
+                <span class="badge3 gray mgl8">미설정</span>
+              </span>
+              <a href="#" class="link_view">설정</a>
+            </p>
+            <div class="between mgt32">
               <a href="#" class="link_view gray">지갑해제</a>
               <a href="#" class="link_view gray">내역보기</a>
             </div>
