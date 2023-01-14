@@ -83,7 +83,7 @@ export default {
     box-sizing: border-box;
     position: relative;
     border-radius: 0;
-    padding: 0 20px;
+    padding: 0 10px;
     border: 1px solid transparent;
     // outline: none;
     &.full{width:100% !important}

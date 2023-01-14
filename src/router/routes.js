@@ -15,6 +15,8 @@ const routes = [
             { path: '/publish/A_11100_P', component: () => import('pages/publish/A_11100_P.vue') },
             { path: '/publish/A_11200_P', component: () => import('pages/publish/A_11200_P.vue') },
             { path: '/publish/A_12000_P', component: () => import('pages/publish/A_12000_P.vue') },
+            { path: '/publish/A_13000_P', component: () => import('pages/publish/A_13000_P.vue') },
+            { path: '/publish/A_14000_P', component: () => import('pages/publish/A_14000_P.vue') },
             { path: '/publish/A_12100_U', component: () => import('pages/publish/A_12100_U.vue') },
             { path: '/publish/A_12200_U', component: () => import('pages/publish/A_12200_U.vue') },
             { path: '/publish/A_21121_P', component: () => import('pages/publish/A_21121_P.vue') },
@@ -24,6 +26,7 @@ const routes = [
             { path: '/publish/A_21310_T', component: () => import('pages/publish/A_21310_T.vue') },
             { path: '/publish/A_21510_T', component: () => import('pages/publish/A_21510_T.vue') },
             { path: '/publish/A_21530_T', component: () => import('pages/publish/A_21530_T.vue') },
+            { path: '/publish/A_21131_P', component: () => import('pages/publish/A_21131_P.vue') },
             { path: '/publish/A_70000_P', component: () => import('pages/publish/A_70000_P.vue') },
             { path: '/publish/A_22923_P', component: () => import('pages/publish/A_22923_P.vue') },
             { path: '/publish/A_100_U', component: () => import('pages/publish/A_100_U.vue') },
@@ -123,6 +126,7 @@ const routes = [
             { path: '/publish/A_512132_P', component: () => import('pages/publish/A_512132_P.vue') },
             { path: '/publish/H_33200_T1', component: () => import('pages/publish/H_33200_T1.vue') },
             { path: '/publish/H_12920_T', component: () => import('pages/publish/H_12920_T.vue') },
+            { path: '/publish/M_40000_U', component: () => import('pages/publish/M_40000_U.vue') },
             
         ]
     },

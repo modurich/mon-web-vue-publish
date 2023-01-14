@@ -105,6 +105,26 @@
           <td>회원가입</td>
           <td>서비스 이용약관, 개인정보 처리방침, 게시물 작성규정</td>
         </tr>
+         <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <router-link to="/publish/A_14000_P">A_14000_P</router-link>
+          </td>
+          <td>회원가입</td>
+          <td></td>
+        </tr>
+         <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <router-link to="/publish/A_13000_P">A_13000_P</router-link>
+          </td>
+          <td>회원 가입 안내</td>
+          <td></td>
+        </tr>
         <tr>
           <td></td>
           <td></td>
@@ -115,6 +135,16 @@
           <td>가입완료</td>
           <td></td>
         </tr>
+         <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <router-link to="/publish/A_21131_P">A_21131_P</router-link>
+          </td>
+          <td>본인 인증 (KYC)</td>
+          <td></td>
+        </tr>
         <tr>
           <td></td>
           <td></td>
@@ -122,7 +152,7 @@
           <td>
             <router-link to="/publish/A_11200_P">A_11200_P</router-link>
           </td>
-          <td>휴면 해제,재가입 안내,임시 비밀번호 발급 완료</td>
+          <td>휴면 해제,재가입 안내,임시 비밀번호 발급 완료,가입불가,기 가입회원 안내,임시 비밀 번호 발급</td>
           <td></td>
         </tr>
         <tr>
@@ -1237,6 +1267,16 @@
                 <router-link to="/publish/H_12410_T">H_12410_T</router-link>
             </td>
             <td>인사이트 인기 종목</td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_40000_U">M_40000_U</router-link>
+            </td>
+            <td>공통모달</td>
             <td></td>
         </tr>
         

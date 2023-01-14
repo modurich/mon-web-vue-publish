@@ -68,77 +68,68 @@
             <!-- E 프로필 수정-->
           </div>
           <div class="tab_contents" v-if="tab1 == 'B'">
-            <!-- S 계정정보 수정-->
-            <ul class="my_list_wrap">
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">이름</span>
-                  <span class="txt02">홍길동</span>
-                </div>
-                <div class="btn_area"><button class="btn_view">비밀번호 변경</button></div>
-              </li>
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">휴대폰 번호</span>
-                  <span class="txt02">+82 010-1234-5678</span>
-                </div>
-                <div class="btn_area"><button class="btn_view" @click="dailog1 = true">휴대폰 번호 변경</button></div>
-                <!-- S 휴대폰 번호 변경 -->
-                <m-dialog v-model="dailog1">
-                  <div class="dailog_wrap">
-                    <div class="dailog_top">
-                        <q-btn icon="close" flat  v-close-popup />
-                    </div>
-                    <q-card-section class="dg_con">
-                        <p class="dialog_tit l_row_l">휴대폰 인증</p>
-                        <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
-                        <div class="l_row"><m-select v-model="select1" :options="options" /></div>
-                        <div class="l_row"><m-input filled v-model="text1" label="휴대폰 번호" class="round_type"/></div>
-                        <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송 (60s)</m-button-3></div>
-                        <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
-                    </q-card-section>
-                  </div>
-                </m-dialog>
-                <!-- E 휴대폰 번호 변경 -->
-              </li>
-              <li>
-                <div class="txt_area">
-                  <span class="txt01">이메일</span>
-                  <span class="txt02">example@monstock.com</span>
-                </div>
-                <div class="btn_area"><button class="btn_view" @click="dailog2 = true">이메일 등록 / 변경</button></div>
-                <!-- S 이메일 인증 -->
-                <m-dialog v-model="dailog2">
-                  <div class="dailog_wrap">
-                      <div class="dailog_top">
-                          <q-btn icon="close" flat  v-close-popup />
-                      </div>
-                      <q-card-section class="dailog_contents">
-                          <p class="dialog_tit l_row_l">이메일 인증</p>
-                          <div class="l_row"><m-input filled v-model="text1" label="생년월일 8자리" class="round_type"/></div>
-                          <div class="l_row"><m-input filled v-model="text1" label="이메일 주소" class="round_type"/></div>
-                          <!-- <div class="l_row_s"><m-input filled v-model="text1" label="인증번호" class="round_type"/></div> -->
-                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" class="full" disabled>인증번호 재발송</m-button-3></div>
-                          <div class="btn_wrap l_row_l"><m-button-3 color="primary" size="large" class="full">확인</m-button-3></div>
-                      </q-card-section>
-                    </div>
-                </m-dialog>
-                <!-- E 이메일 인증 -->
-              </li>
-            </ul>
-            <p class="secondary">
-              회원가입, 약관정책 변경 등 비마케팅성 정보는 수신동의 여부와 관계없이 발송됩니다.
-            </p>
-            <div class="check_wrap">
-              <div class="check_area"><m-checkbox size="md" v-model="check1" label="마케팅 정보 수신 동의 (선택)"/></div>
+            <div class="mgt16">
+              <div>
+                <p class="font16 txt_dk mgb8">이름</p>
+                <p>홍길동</p>
+              </div>
+              <div class="mgt32">
+                <p class="between mgb8">
+                  <span class="font16 txt_dk">휴대폰 번호</span>
+                  <a href="#" class="link_view">휴대폰 번호 변경</a>
+                </p>
+                <p>+82 &nbsp;&nbsp;&nbsp; 010-1234-5678</p>
+              </div>
+              <div class="mgt32">
+                <p><m-checkbox size="md" v-model="check1" label="마케팅 정보 수신 동의 (선택)"/></p>
+                회원가입, 약관정책 변경 등 비마케팅성 정보는 수신동의 여부와 관계없이 발송됩니다.
+              </div>
+              <div class="btn_wrap mgt32"><m-button-3 size="large" color="primary" class="full" disabled>저장</m-button-3></div>
             </div>
-            <p class="sub_info">
-              회원가입, 약관정책 변경 등 비마케팅성 정보는 수신동의 여부와 관계없이 발송됩니다.
-            </p>
-            <!-- E 계정정보 수정-->
           </div>
-         
+          <div class="tab_contents" v-if="tab1 == 'C'">
+            <div class="mgt16">
+              <div class="between">
+                <span class="font16 txt_dk">비밀번호</span>
+                <a href="#" class="link_view">변경</a>
+              </div>
+              <div class="between mgt32">
+                <span class="font16 txt_dk">이메일 2차 인증</span>
+                <a href="#" class="link_view">등록 / 변경</a>
+              </div>
+              <p class="mgt16 font12 txt_red">등록된 이메일이 없습니다.</p>
+              <p class="font12">이메일 주소를 등록하시면 로그인과 비밀번호 찾기를 이메일 인증으로 하실 수 있습니다.</p>
+              <div class="between mgt32">
+                <span>
+                  <span class="font16 txt_dk">본인 인증 (KYC)</span>
+                  <span class="badge3 gray mgl8">미인증</span>
+                  <span class="badge3 dark_green mgl8">인증완료</span>
+                </span>
+                <a href="#" class="link_view">인증</a>
+              </div>
+              <div class="between mgt32">
+                <span>
+                  <span class="font16 txt_dk">PIN코드</span>
+                  <span class="badge3 gray mgl8">미설정</span>
+                  <span class="badge3 dark_green mgl8">설정완료</span>
+                </span>
+                <a href="#" class="link_view">설정 / 초기화</a>
+              </div>
+              <div class="between mgt32">
+                <span>
+                  <span class="font16 txt_dk">OTP</span>
+                  <span class="badge3 gray mgl8">미설정</span>
+                  <span class="badge3 dark_green mgl8">설정완료</span>
+                </span>
+                <a href="#" class="link_view">설정 / 변경</a>
+              </div>
+               <div class="between mgt32">
+                <span class="font16 txt_dk">생체 인증 설정</span>
+                 <m-toggle v-model="toggle1" />
+              </div>
+              <p class="mgt16 font12 txt_red">생체 인증은 앱 전용 기능으로 웹에서는 사용할 수 없습니다.</p>
+            </div>
+          </div>
         </div>
       </q-form>
     </div>
@@ -153,6 +144,7 @@ export default {
     name: 'A_10000_P',
     data() {
         return {
+            toggle1: ref(false),
             text1:ref('호빵맨'),
             text2:ref(''),
             text3:ref(''),
@@ -165,8 +157,9 @@ export default {
             select1:ref(null),
             tab1:ref('A'),
             tabs:[
-                {label:'프로필 수정', value:'A', icon:'mail'},
-                {label:'계정정보 수정', value:'B', icon:'photo'}
+                {label:'프로필 수정', value:'A', icon:''},
+                {label:'계정정보 수정', value:'B', icon:''},
+                {label:'보안/인증', value:'C', icon:''}
             ],
             options:[
                 'South Korea (+82)', '선택1', '선택2', '선택3', '선택4'

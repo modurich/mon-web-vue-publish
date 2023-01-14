@@ -1,6 +1,36 @@
 <template>
     <div class="centerarea_box01">
         <div class="con_box">
+           <!-- S 가입뿔가 -->
+          <div class="ico_top">
+            <i class="ico_error"></i>
+          </div>
+          <h2 class="s_mg">가입불가</h2>
+          <p class="l_row_l main_info">
+           서비스 정책에 따라 회원가입이 불가합니다.<br/>
+            자세한 사항은 <a href="#" class="txt_blue1 underline">채널톡</a>으로 문의하시기 바랍니다.</p>
+            <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">서비스 둘러보기</m-button-3></div>
+           <!-- E 가입불가 -->
+            <!-- S 기 가입회원 안내 -->
+          <div class="ico_top">
+            <i class="ico_error"></i>
+          </div>
+          <h2 class="s_mg">기 가입회원 안내</h2>
+          <p class="l_row_l main_info">
+          이미 가입된 회원입니다.<br/>
+          비밀번호를 모르시는 경우 비밀번호 찾기를 해주세요.</p>
+            <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">비밀번호 찾기</m-button-3></div>
+           <!-- E 기 가입회원 안내 -->
+          <!-- S 임시 비밀 번호 발급-->
+          <div class="ico_top">
+            <i class="ico_error"></i>
+          </div>
+          <h2 class="s_mg">임시 비밀 번호 발급</h2>
+          <p class="l_row_l main_info">
+          임시 비밀 번호가 발급되었습니다.<br/>
+          로그인 후 비밀번호를 변경해주세요.
+            <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">로그인 하기</m-button-3></div>
+           <!-- E 임시 비밀 번호 발급 -->
           <!-- S 휴면 해제 -->
           <div class="ico_top">
             <i class="ico_error"></i>

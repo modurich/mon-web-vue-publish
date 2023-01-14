@@ -238,8 +238,14 @@
                 </ul>
 
                 <default-table tbl-type="1"/>
-
-
+                <div class="error_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message font16">
+                    종료된 인사이트가 없어요
+                  </div>
+                </div>
                 <div class="divider1" />
                 <div class="l_row_l between">
                   <span class="font16 txt_dk">진행중인 인사이트</span>
@@ -285,6 +291,14 @@
                 </div>
 
                 <default-table tbl-type="2"/>
+                 <div class="error_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message font16">
+                    작성된 인사이트가 없어요
+                  </div>
+                </div>
               </div>
 
               <div v-if="tab2 == 'B'">
@@ -329,6 +343,14 @@
                 </ul>
 
                 <default-table tbl-type="3"/>
+                 <div class="error_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message font16">
+                    종료된 BLASH가 없어요
+                  </div>
+                </div>
 
                 <div class="divider1"/>
                 <div class="l_row_l between">
@@ -376,7 +398,14 @@
 
 
                 <default-table tbl-type="4"/>
-
+                 <div class="error_wrap">
+                  <div class="ico_top">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="com_message font16">
+                    작성된 BLASH가 없어요
+                  </div>
+                </div>
 
               </div>
             <!-- E 통계 -->

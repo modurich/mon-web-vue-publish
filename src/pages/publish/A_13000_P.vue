@@ -1,23 +1,19 @@
 <template>
     <div class="centerarea_box01">
-      <div class="con_box">
-        <div class="ico_top">
-          <i class="ico_error"></i>
+        <div class="con_box">
+           <!-- S 가입뿔가 -->
+          <div class="ico_top">
+            <div class="monstock_logo"><img src="~assets/logo.svg" alt="monstock logo"/></div>
+          </div>
+          <h2 class="s_mg">회원 가입 안내</h2>
+          <p class="l_row_l main_info">
+           블록체인 기반 투자정보 커뮤니티 몬스탁입니다.<br/>
+            비밀번호 걱정없이 간편하게 몬스탁에 가입하고<br/>
+            다양한 혜택을 받아보세요.</p>
+            <div class="btn_wrap"><m-button-3 size="large" color="primary" class="full">내국인 본인인증 가입</m-button-3></div>
+            <div class="btn_wrap mgt16"><m-button-3 lined size="large" color="primary" class="full">해외 / 외국인 가입</m-button-3></div>
+           <!-- E 가입불가 -->
         </div>
-        <h2 class="s_mg mgb16">비밀번호 찾기</h2>
-        <p class="center txt_dk">대한민국 내국인 가입자라면</p>
-        <div class="btn_wrap l_row_s">
-          <m-button-3 size="large" color="primary" class="full">내국인 본인인증으로 찾기</m-button-3>
-        </div>
-         <p class="center txt_dk mgt16">이메일 2차 인증을 설정했다면</p>
-        <div class="btn_wrap l_row_s">
-          <m-button-3 size="large" color="primary" class="full">이메일 인증으로 찾기</m-button-3>
-        </div>
-         <p class="center txt_dk mgt16">해외 / 외국인 가입자라면</p>
-        <div class="btn_wrap l_row_s">
-          <m-button-3 size="large" color="primary" class="full">해외 휴대폰 번호 인증으로 찾기</m-button-3>
-        </div>
-      </div>
     </div>
 </template>
 
