@@ -131,6 +131,12 @@ const routes = [
             { path: '/publish/C_11121_U', component: () => import('pages/publish/C_11121_U.vue') },
             { path: '/publish/C_11122_U', component: () => import('pages/publish/C_11122_U.vue') },
             { path: '/publish/C_111231_T', component: () => import('pages/publish/C_111231_T.vue') },
+            { path: '/publish/C_111241_T', component: () => import('pages/publish/C_111241_T.vue') },
+            { path: '/publish/C_11111_U', component: () => import('pages/publish/C_11111_U.vue') },
+            { path: '/publish/C_11112_U', component: () => import('pages/publish/C_11112_U.vue') },
+            { path: '/publish/A_22130_U', component: () => import('pages/publish/A_22130_U.vue') },
+            { path: '/publish/C_111131_T', component: () => import('pages/publish/C_111131_T.vue') },
+            { path: '/publish/C_111141_T', component: () => import('pages/publish/C_111141_T.vue') },
             
         ]
     },

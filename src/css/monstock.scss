@@ -1049,6 +1049,36 @@ body{
             line-height: 26px;
         }
     }
+    &.line01{
+        a,button{
+            display: flex;width:100%;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:1px solid $com_line;
+            margin:0px;
+            padding:0 16px;
+            height:50px;
+            .txt_area{
+                .txt01{font-size: 16px;font-weight: 700;margin-right:16px}
+            }
+            .ico_area{
+                display: flex;
+                align-items: center;
+                span{margin-right:16px}
+            }
+            &.active{
+                border:1px solid $primary;
+                background: #f4f2ff;
+                .ico_check{ background: url('~assets/ico_check_on.svg') no-repeat center center; }
+            }
+            &.bg_gray{
+                background: #f8f9fd;
+            }
+        }
+        li{
+            margin:0px;
+        }
+    }
 }
 
 //
@@ -3313,6 +3343,17 @@ button{
     background-size: contain !important;
     background: url('~assets/ico_clock.svg') no-repeat center center; 
 }
+.ico_check{
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+    background-size: contain !important;
+    background: url('~assets/ico_check.svg') no-repeat center center; 
+}
+
 .ico_check01{
     content: '';
     display: inline-flex;
@@ -4343,6 +4384,20 @@ align-items: center;color: $txt_dk;
         height:calc(100vh - 200px);
      }
 }
+.setting_scroll{
+    height:calc(65vh - 250px);
+    overflow-y: auto;
+    @media (max-width: $breakpoint-xs-max) {
+        height:calc(100vh - 350px);
+     }
+}
+.setting_scroll01{
+    height:calc(65vh - 250px);
+    overflow-y: auto;
+    @media (max-width: $breakpoint-xs-max) {
+        height:calc(100vh - 370px);
+     }
+}
 .button_list{
     width:100%;
     display: flex;
@@ -4401,4 +4456,30 @@ align-items: center;color: $txt_dk;
 }
 
 .txt_info{font-size:14px;line-height: 26px;}
+.txt_info01{font-size:14px;
+    p{margin-bottom:4px;color:$txt_red1;position: relative;margin-left:24px;
+        &::before{
+            content: '';
+            position:absolute;
+            display: inline-flex;
+            top:3px;
+            left:-24px;
+            width:16px;
+            height:16px;
+            background-size: contain !important;
+            background: url('~assets/ico_error.png') center right no-repeat;
+        }
+    }
+}
 
+
+.input_wrap{
+    display: flex;
+    .m-input.q-field--outlined .q-field__control{height:56px !important;}
+    .q-field{width:calc(100%/6) !important;min-width: 0px !important;
+        margin-right: 8px;
+        height:56px !important;
+        input{height:56px !important;font-size: 20px !important;}
+        &:last-child{margin-right: 0px;}
+    }
+}

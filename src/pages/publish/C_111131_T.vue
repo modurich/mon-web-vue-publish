@@ -30,7 +30,7 @@
                   <div class="gray_box01">
                    <p class="between">
                     <span class="txt_label">목표가</span>
-                    <span class="txt_con">$ 0.1762</span>
+                    <span class="txt_con">₩ 52,000</span>
                    </p>
                    <p class="between">
                     <span class="txt_label">목표수익률</span>
@@ -70,15 +70,15 @@
               </div>
               <div v-if="tab1 == 'F'">
                 <div class="tab_add_scroll">
-                  <p class="txt_dk mga32">설정 가능 범위 : <span class="primary">0.1234567890 이하</span></p>
+                  <p class="txt_dk mga32">설정 가능 범위 : <span class="primary">210,000 이하</span></p>
                   <div class="stepper_wrap01">
                     <m-button-3 color="primary" lined>-</m-button-3>
                     <m-input filled v-model="text1" class="round_type"/>
                     <m-button-3 color="primary" lined>+</m-button-3>
                   </div>
                   <div class="btn_wrap l_row">
-                    <m-button-3 color="primary" lined class="full">+ 0.1%</m-button-3>
-                    <m-button-3 color="primary" lined class="full">+ 0.5%</m-button-3>
+                    <m-button-3 color="primary" lined class="full">+ 1호가</m-button-3>
+                    <m-button-3 color="primary" lined class="full">+ 5호가</m-button-3>
                     <m-button-3 color="primary" lined class="full">초기화</m-button-3>
                   </div>
                   <div class="gray_box01">
@@ -112,7 +112,7 @@ export default {
       tab1: ref('G'),
       tabs: [
         { label: '수익률 / %', value: 'G', icon: '' },
-        { label: '목표가 / $', value: 'F', icon: '' }
+        { label: '목표가 / 원', value: 'F', icon: '' }
       ],
     }
   },
