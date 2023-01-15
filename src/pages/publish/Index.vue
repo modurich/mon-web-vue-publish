@@ -1279,6 +1279,56 @@
             <td>공통모달</td>
             <td></td>
         </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22712_T">A_22712_T</router-link>
+            </td>
+            <td>은행,증권사</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11121_U">C_11121_U</router-link>
+            </td>
+            <td>매수고가 설정</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11122_U">C_11122_U</router-link>
+            </td>
+            <td>매수저가 설정</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_111231_T">C_111231_T,C_111232_T</router-link>
+            </td>
+            <td>목표 설정</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_111241_T">C_111241_T</router-link>
+            </td>
+            <td>손절 설정</td>
+            <td></td>
+        </tr> -->
         
       </tbody>
     </table>

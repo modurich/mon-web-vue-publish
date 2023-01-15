@@ -127,6 +127,10 @@ const routes = [
             { path: '/publish/H_33200_T1', component: () => import('pages/publish/H_33200_T1.vue') },
             { path: '/publish/H_12920_T', component: () => import('pages/publish/H_12920_T.vue') },
             { path: '/publish/M_40000_U', component: () => import('pages/publish/M_40000_U.vue') },
+            { path: '/publish/A_22712_T', component: () => import('pages/publish/A_22712_T.vue') },
+            { path: '/publish/C_11121_U', component: () => import('pages/publish/C_11121_U.vue') },
+            { path: '/publish/C_11122_U', component: () => import('pages/publish/C_11122_U.vue') },
+            { path: '/publish/C_111231_T', component: () => import('pages/publish/C_111231_T.vue') },
             
         ]
     },

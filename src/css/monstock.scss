@@ -35,7 +35,6 @@
 .mgr16{margin-right:16px !important}
 .mgr32{margin-right:32px !important}
 .mgr48{margin-right:48px !important}
-.mgb0{margin-bottom:0 !important}
 .mga16{margin:16px 0 !important}
 .mga32{margin:32px 0 !important}
 .mga48{margin:48px 0 !important}
@@ -2087,6 +2086,23 @@ button{
         font-size: 12px;
     }
 }
+.gray_box01{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fd;
+    padding: 16px;
+    margin:16px 0;
+    > p {
+        &:last-child{margin-bottom:0}
+    }
+    .txt_label{color: $txt_dk;}
+    .txt_con{
+        color: $txt_blue1;
+        font-size:16px;
+        font-weight: 700;}
+}
+
 
 
 .result_list{
@@ -4319,4 +4335,70 @@ align-items: center;color: $txt_dk;
     }
 }
 
+//은행,증권사
+.tab_add_scroll{
+    height:calc(80vh - 250px);
+    overflow-y: auto;
+    @media (max-width: $breakpoint-xs-max) {
+        height:calc(100vh - 200px);
+     }
+}
+.button_list{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+        width:calc(100% / 3 - 8px);
+        height:76px;
+        padding: 10px;
+        border:1px solid $com_line;
+        border-radius: 8px;
+        margin:0 9px 12px 0;
+        box-sizing: border-box;
+        img{width:56px;height:20px}
+        .txt_area{color:$txt_dk;width:100%;text-align: center;}
+        &:nth-child(3n){margin-right:0}
+        &.active{background: #f4f2ff;border:1px solid $primary;}
+    }
+}
+
+//stepper_wrap01
+.stepper_wrap01{
+    display: flex;
+    margin:32px 0;
+    .q-field{padding: 0 8px}
+    button{width:46px !important;min-width: 46px !important;}
+}
+.blash_small_wrap{display: flex;width:100%;
+    .blash_small_box + .blash_small_box{margin-left:16px}
+}
+//blash_small_box
+.blash_small_box{
+    border:1px solid $com_line;
+    font-size: 12px;
+    border-radius: 8px;
+    margin:16px 0;
+    overflow: hidden;
+    flex:1;
+    .tit_wrap{
+        background: #9ca8ba;
+        color:#fff;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .con_wrap{padding:0 12px;
+        .txt_con{font-size:14px;
+        font-weight: 700;
+        }
+    }
+}
+
+.txt_info{font-size:14px;line-height: 26px;}
 
