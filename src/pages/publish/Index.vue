@@ -200,9 +200,9 @@
           <td></td>
           <td></td>
           <td>
-            <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T</router-link>
+            <router-link to="/publish/A_21120_T">A_21120_T,A_21110_T,A_21130_T</router-link>
           </td>
-          <td>프로필수정,계정정보 수정</td>
+          <td>프로필수정,계정정보 수정,보안/인증</td>
           <td></td>
         </tr>
         <tr>
@@ -1378,6 +1378,26 @@
             </td>
             <td>PIN코드 입력</td>
             <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22200_P">A_22200_P</router-link>
+            </td>
+            <td>락업정보</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22300_P">A_22300_P</router-link>
+            </td>
+            <td>OTP등록 / 초기화</td>
+            <td>진행중</td>
         </tr>
         
       </tbody>

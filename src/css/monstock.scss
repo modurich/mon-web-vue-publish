@@ -1049,6 +1049,17 @@ body{
             line-height: 26px;
         }
     }
+    &.line2{
+        margin: 0;
+        li{border-bottom:1px solid $com_line;
+            // padding-top: 8px;
+            // margin-top: 8px;
+            // margin-bottom: 8px;
+            line-height: 58px;
+            margin:0px;
+            height: 58px;
+        }
+    }
     &.line01{
         a,button{
             display: flex;width:100%;
@@ -1410,6 +1421,14 @@ button{
         height: 30px;
         background-size: cover;
     }
+}
+.ico_token{
+    display: inline-flex;
+    text-indent: -999em;
+    width:24px;
+    height: 24px;
+    margin-right:8px;
+    background:url('~assets/ico_token.svg');
 }
 .sb_list{
     margin:0 auto;
@@ -4481,5 +4500,37 @@ align-items: center;color: $txt_dk;
         height:56px !important;
         input{height:56px !important;font-size: 20px !important;}
         &:last-child{margin-right: 0px;}
+    }
+}
+
+
+//lookup_wrap 
+.lookup_wrap {
+    border:1px solid $com_line;
+    border-radius: 8px;
+    padding: 32px 16px;
+    margin-bottom:32px;
+    .txt_info01{margin:32px 0 0 0;font-size: 12px;}
+    .ico_wrap{font-size:16px;font-weight: 700;color:$txt_dk;display: flex;justify-content: center;align-items: center;margin-bottom:32px}
+}
+
+.google_otp{
+    margin-top:32px;display: flex;
+    align-items:center;justify-content: center;
+    button{text-indent: -999em;}
+    button + button{margin-left:16px}
+    .btn_google{
+        display: inline-flex;
+        width:135px;
+        height:40px;
+        background-size: contain !important;
+        background: url('~assets/btn_google.svg') center right no-repeat;
+    }
+    .btn_app{
+        display: inline-flex;
+        width:120px;
+        height:40px;
+        background-size: contain !important;
+        background: url('~assets/btn_app.svg') center right no-repeat;
     }
 }
