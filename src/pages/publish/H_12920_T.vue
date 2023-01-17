@@ -2,7 +2,7 @@
     <div class="centerarea_box1">
         <div class="con_box">
           <h2 class="line_type">실시간 인기 토론</h2>
-          <div class="box_contents pdt16">  
+          <div class="box_contents">  
             <ul class="thumb_list1">
               <li>
                 <div class="top_wrap">
@@ -52,10 +52,6 @@
                     </div>
                     <div class="tit_area">
                       <span class="txt_tit txt_dk">삼성전자</span>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
                     </div>
                   </div>
                   <span class="tag_blue">+1.24%</span>
@@ -93,10 +89,6 @@
                     </div>
                     <div class="tit_area">
                       <span class="txt_tit txt_dk">삼성전자</span>
-                      <span class="badge_area">
-                        <span class="badge pro">PRO</span>
-                        <span class="badge pl1">PL1</span>
-                      </span>
                     </div>
                   </div>
                   <span class="tag_blue">+1.24%</span>
