@@ -365,7 +365,7 @@
             <td></td>
             <td>
                 <router-link to="/publish/A_51100_P">
-                  A_51100_P,A_51200_P,A_51300_P,A_51400_P,A_51500_P,A_51600_P
+                  A_51100_P,A_51200_P,A_51300_P,A_51400_P,A_51400_T,A_51500_P,A_51600_P
                 </router-link>
             </td>
             <td>검색</td>
@@ -927,6 +927,16 @@
                 <router-link to="/publish/H_11110_P">H_11110_P</router-link>
             </td>
             <td>관심그룹</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_11112_P">H_11112_P</router-link>
+            </td>
+            <td>관심그룹편집</td>
             <td></td>
         </tr> 
         <tr>

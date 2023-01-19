@@ -96,6 +96,18 @@
                   <button class="ico_lock">lock</button>
                   <span class="footer_box"></span>
                 </li>
+                <li>
+                  <button class="ico_plus">upload</button>
+                  <span class="footer_box"></span>
+                </li>
+                <li>
+                  <button class="ico_lock">lock</button>
+                  <span class="footer_box"></span>
+                </li>
+                <li>
+                  <button class="ico_lock">lock</button>
+                  <span class="footer_box"></span>
+                </li>
               </ul>
               <ul class="nft_wrap add_footer">
                 <li>

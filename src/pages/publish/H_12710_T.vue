@@ -8,7 +8,7 @@
         <m-tabs class="line_type large" v-model="tab1" :items="tabs"/>
         <div class="tab_contents" v-if="tab1 == 'A'">
           <m-select v-model="select1" :options="options"  />
-            <ul class="thumb_list mgt32">
+            <ul class="thumb_list">
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">

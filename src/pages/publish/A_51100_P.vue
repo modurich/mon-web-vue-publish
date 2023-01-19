@@ -149,7 +149,7 @@
             <h3>
               인사이트 / BLASH
             </h3>
-            <ul class="thumb_list mgt32">
+            <ul class="thumb_list">
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
@@ -466,7 +466,7 @@
               <h3>
                 추천종목
               </h3>
-              <ul class="thumb_list mgt32">
+              <ul class="thumb_list">
               <li>
                 <div class="top_wrap">
                   <div class="my_profile">
@@ -728,9 +728,251 @@
                 <!-- E 테마 -->
               </q-tab-panel>
               <q-tab-panel name="tab4">
-                <div>
-                  contents4
-                </div>                
+                <ul class="thumb_list">
+              <li>
+                <div class="top_wrap">
+                   <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <a href="#">
+                  <div class="tit_wrap">
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                          <span class="badge3 small brown">코인</span>
+                          <span class="badge3 small yellow">BEST</span>
+                      </span>
+                      <span>매수대기</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                  </div>
+                  <div class="blash_box">
+                    <div class="tit_wrap">
+                      <span class="txt01">일반 BLASH</span>
+                      <span class="txt02">5 sMON</span>
+                    </div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span> 
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt=""/></div>
+                    </div>
+                  </div>
+                </a>
+                <div class="footer_area">
+                  <p class="tag_area">
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <span class="ico_f ico_star_s primary">4.7</span>
+                    </span>
+                    <span>2022.10.26</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="top_wrap">
+                   <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <a href="#">
+                  <div class="tit_wrap">
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                          <span class="badge3 small brown">코인</span>
+                          <span class="badge3 small yellow">BEST</span>
+                      </span>
+                      <span>D-120</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                  </div>
+                  <div class="blash_box">
+                    <div class="tit_wrap">
+                      <span class="txt01">일반 BLASH</span>
+                      <span class="txt02">5 sMON</span>
+                    </div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span> 
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg01.png" class="ico_upimg01" alt=""/></div>
+                    </div>
+                  </div>
+                </a>
+                <div class="footer_area">
+                   <p class="tag_area">
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <span class="ico_f ico_star_s primary">4.7</span>
+                    </span>
+                    <span>2022.10.26</span>
+                  </div>
+                  <div class="btn_area">
+                    <span class="txt_area"><i class="ico_clock"/>보팅 2일 남음</span>
+                    <m-button-3 color="primary"  size="small"><i class="ico_vote"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                  </div>
+                </div>
+              </li>
+              <li class="active">
+                <div class="top_wrap">
+                   <div class="my_profile">
+                    <div class="tit_area">
+                      <a href="#" class="inflex_link">
+                        <div class="img_area">
+                          <img src="~assets/profile_img1.png" alt="profile"/>
+                        </div>
+                        <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                      </a>
+                      <span class="badge_area">
+                        <span class="badge pro">PRO</span>
+                        <span class="badge pl1">PL1</span>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                    user추가
+                    <q-menu auto-close :offset="[30, 10]">
+                      <q-list style="min-width: 80px">
+                        <q-item clickable>
+                          <q-item-section>차단해제</q-item-section>
+                        </q-item>
+                        <q-separator />
+                      </q-list>
+                    </q-menu>
+                  </button>
+                </div>
+                <a href="#">
+                  <div class="tit_wrap">
+                    <p class="badge_wrap">
+                      <span class="badge_area">
+                          <span class="badge3 small brown">코인</span>
+                          <span class="badge3 small yellow">BEST</span>
+                          <span class="badge3 small pink"><i class="ico_crown"/>프리미엄</span>
+                      </span>
+                      <span>D-120</span>
+                    </p>
+                    <p class="tit_txt">제목은 2글자 이상 최대 40자입니다</p>
+                  </div>
+                  <div class="blash_box premium">
+                    <div class="tit_wrap">
+                      <span class="txt01"><i class="ico_crown"/>프리미엄 BLASH</span>
+                      <span class="txt02">5 sMON</span>
+                    </div>
+                    <div class="con_wrap">
+                      <div class="txt_area">
+                        <div class="tit_txt">
+                          <span class="txt01">목표수익률</span> 
+                          <span class="txt02">99999.99 %</span>
+                        </div>
+                        <div class="con_txt">
+                          <span class="col">비중 <span class="txt01">100%</span></span>
+                          <span class="col">기간 <span class="txt01">120일</span></span>
+                        </div>
+                      </div>
+                      <div class="img_area"><img src="~assets/ico_upimg02.png" class="ico_upimg02" alt=""/></div>
+                    </div>
+                  </div>
+                </a>
+                <div class="footer_area">
+                   <p class="tag_area">
+                    <a href="#" class="primary">＄관련종목</a>
+                    <a href="#">#금리인상</a>
+                    <a href="#">#친환경</a>
+                    <a href="#">#로봇관련주</a>
+                    <a href="#">#최대스무자최대스무자최대스무자최대스무자</a>
+                  </p>
+                  <div class="ico_wrap">
+                    <span class="ico_area">
+                      <button class="ico_f ico_thumbsUp">624</button>
+                      <span class="ico_f ico_comment">7</span>
+                      <span class="ico_f ico_view">1.2</span>
+                      <span class="ico_f ico_star_s primary">4.7</span>
+                    </span>
+                    <span>2022.10.26</span>
+                  </div>
+                  <div class="btn_area">
+                    <span class="txt_area"><i class="ico_clock"/>보팅 2일 남음</span>
+                    <m-button-3 color="darkPurple"  size="small"><i class="ico_check01"/><span class="point">1,200</span> / 2000 VP</m-button-3>
+                  </div>
+                </div>
+              </li>
+            </ul>             
               </q-tab-panel>
               <q-tab-panel name="tab5">
               <ul class="ranking_user_list type1">

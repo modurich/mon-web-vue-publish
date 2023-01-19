@@ -497,6 +497,7 @@
               <li>
                 <span class="txt01">등록상태</span>
                 <span class="txt02 txt_blue">승인완료</span>
+                <!-- <span class="txt02 txt_red1">심사거절</span> -->
               </li>
               <li>
                 <span class="txt01">금융기관명</span>
@@ -516,7 +517,7 @@
               <m-button-3 lined color="primary" class="full">원화 출금 신청</m-button-3>
             </div>
             <div class="divider mgb0"/>
-            <m-tabs class="box_type large mg0" v-model="tab3" :items="tabs2"/>
+            <m-tabs class="box_type large type01" v-model="tab3" :items="tabs2"/>
             <div class="mgt32" v-if="tab3 == 'A'">
               <!-- S 코인 -->
               <ul class="coin_list">

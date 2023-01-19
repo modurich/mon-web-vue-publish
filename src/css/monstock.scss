@@ -494,10 +494,14 @@ body{
 }
 
 //mypage
+h2 + .box_contents{
+    .mypage_info_wrap{margin-top:0}
+}
 .mypage_info_wrap{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin-top:16px;
     .my_profile{
         display: flex;
         align-items: center;
@@ -983,8 +987,10 @@ body{
         }
     }
       //700보다 작아질때
-      @media (max-width: $breakpoint-xs-max) {
-        li{margin:0 12px 16px 0px;}
+      @media (max-width: 400px) {
+        li{margin:0 10px 16px 0px;
+            &:nth-child(3n){margin-right:0}
+        }
         
      }
 }
@@ -1868,6 +1874,9 @@ button{
 //product_list
 .product_list{
     margin: 32px 0;
+    a{
+        &.button_add{width:calc(100% - 35px)}
+    }
    > div, li{
         display:flex;
         justify-content: space-between;
@@ -2933,6 +2942,7 @@ button{
     }
     li{
         &:last-child{border-bottom: 0px;}
+        box-sizing: border-box;
         padding:32px 16px;
         border-bottom:16px solid #f8f9fd;
         margin:0 -16px !important;
@@ -4026,18 +4036,15 @@ button{
     }
 }
 
-.sticky_tab2{
+.m_chip_tab1{
     @media (max-width: $breakpoint-xs-max) {
-        position:sticky;
-        top:50px;
+        position:sticky !important;
+        top:0px;
+        padding: 12px 0 !important;
         background: #fff;
         z-index: 2;
-        margin:0 -12px;
     }
 }
-
-
-
 .sticky_tab1{
     @media (max-width: $breakpoint-xs-max) {
         position:sticky;

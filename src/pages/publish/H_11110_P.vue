@@ -3,19 +3,10 @@
       <div class="con_box">
         <h2 class="line_type between">
           <span>관심그룹 <span class="primary font14 medium">(총14개 종목)</span></span>
-          <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
-            menu
-            <q-menu auto-close :offset="[70, 10]">
-              <q-list style="min-width: 80px">
-                <q-item clickable>
-                  <q-item-section>새그룹 추가</q-item-section>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </button>
+          <button class="primary font14 medium">편집하기</button>
         </h2>
         <div class="box_contents"> 
-          <m-chip-list v-dragscroll class="mgt0">
+          <m-chip-list v-dragscroll class="mgt0 m_chip_tab1">
             <m-chip :to="''">기본</m-chip>
             <m-chip :to="''" :lined="true">그룹1</m-chip>
             <m-chip :to="``" :lined="true">그룹2</m-chip>
@@ -27,8 +18,8 @@
           <div class="between">
             <span>전체 10개</span>
             <div class="flex">
-              <div><m-checkbox size="md" v-model="check1" label="평단가 보기"/></div>
-              <button class="btn_setting mgl16"><i class="ico_setting"/> 설정
+              <div class="flex center"><m-toggle v-model="toggle1" :label="`Model is (flipped boolean)`" /><span class="mgl8">평단가보기</span></div>
+              <!-- <button class="btn_setting mgl16"><i class="ico_setting"/> 설정
                 <q-menu auto-close :offset="[60, 10]">
                     <q-list style="min-width: 80px">
                       <q-item clickable>
@@ -48,60 +39,30 @@
                       </q-item>
                     </q-list>
                   </q-menu>
-              </button>
+              </button> -->
             </div>
           </div>
           <!--S 관심그룹-->
           <ul class="product_list">
             <li>
-              <div class="prd_img">
-                <div class="img_area small">
-                  <img src="~assets/prd_logo.png" alt="logo" />
+              <a href="#" class="inflex_link button_add">
+                <div class="prd_img">
+                  <div class="img_area small">
+                    <img src="~assets/prd_logo.png" alt="logo" />
+                  </div>
+                  <div>
+                    <div class="font16 txt_dk">삼성전자우</div>
+                    <div class="txt02">코스피 005930</div>
+                  </div>
                 </div>
-                <div>
-                  <div class="font16 txt_dk">삼성전자우</div>
-                  <div class="txt02">코스피 005930</div>
-                </div>
-              </div>
-              <div class="right flex">
-                <span>
-                  <span class="tag_blue mgb4">+1.24%</span><br/>
-                  <span class="font12">₩ 352,100</span>
-                </span>
-                <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
-                  menu
-                  <q-menu auto-close :offset="[80, 10]">
-                    <q-list style="min-width: 80px">
-                      <q-item clickable>
-                        <q-item-section>인사이트 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>BLASH 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>평단가 수정</q-item-section>
-                      </q-item>
-                    </q-list>
-                  </q-menu>
-                </button>
-              </div> 
-            </li>
-            <li>
-              <div class="prd_img">
-                <div class="img_area small">
-                  <img src="~assets/prd_logo.png" alt="logo" />
-                </div>
-                <div>
-                  <div class="font16 txt_dk">삼성전자우</div>
-                  <div class="txt02">코스피 005930</div>
-                </div>
-              </div>
-              <div class="right flex">
-                <span>
-                  <span class="tag_red mgb4">-12.26%</span><br/>
-                  <span class="font12">₩ 352,100</span>
-                </span>
-                <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                <div class="right flex">
+                  <span>
+                    <span class="tag_blue mgb4">+1.24%</span><br/>
+                    <span class="font12">₩ 352,100</span>
+                  </span>
+                </div> 
+              </a>
+              <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
                 menu
                 <q-menu auto-close :offset="[80, 10]">
                   <q-list style="min-width: 80px">
@@ -117,11 +78,46 @@
                   </q-list>
                 </q-menu>
               </button>
-              </div> 
+            </li>
+            <li>
+              <a href="#" class="inflex_link button_add">
+                <div class="prd_img">
+                  <div class="img_area small">
+                    <img src="~assets/prd_logo.png" alt="logo" />
+                  </div>
+                  <div>
+                    <div class="font16 txt_dk">삼성전자우</div>
+                    <div class="txt02">코스피 005930</div>
+                  </div>
+                </div>
+                <div class="right flex">
+                  <span>
+                    <span class="tag_red mgb4">-12.26%</span><br/>
+                    <span class="font12">₩ 352,100</span>
+                  </span>
+                </div> 
+              </a>
+              <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                  menu
+                  <q-menu auto-close :offset="[80, 10]">
+                    <q-list style="min-width: 80px">
+                      <q-item clickable>
+                        <q-item-section>인사이트 작성</q-item-section>
+                      </q-item>
+                      <q-item clickable>
+                        <q-item-section>BLASH 작성</q-item-section>
+                      </q-item>
+                      <q-item clickable>
+                        <q-item-section>평단가 수정</q-item-section>
+                      </q-item>
+                    </q-list>
+                  </q-menu>
+                </button>
             </li>
           </ul>
           <ul class="product_list">
             <li>
+              <a href="#" class="inflex_link button_add">
               <div class="prd_img">
                 <div class="img_area small">
                   <img src="~assets/prd_logo.png" alt="logo" />
@@ -136,23 +132,24 @@
                   <span class="tag_blue mgb4">+1.24%</span><br/>
                   <span class="font12">₩ 352,100</span>
                 </span>
-                <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
-                  menu
-                  <q-menu auto-close :offset="[80, 10]">
-                    <q-list style="min-width: 80px">
-                      <q-item clickable>
-                        <q-item-section>인사이트 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>BLASH 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>평단가 수정</q-item-section>
-                      </q-item>
-                    </q-list>
-                  </q-menu>
-                </button>
               </div> 
+            </a>
+            <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                menu
+                <q-menu auto-close :offset="[80, 10]">
+                  <q-list style="min-width: 80px">
+                    <q-item clickable>
+                      <q-item-section>인사이트 작성</q-item-section>
+                    </q-item>
+                    <q-item clickable>
+                      <q-item-section>BLASH 작성</q-item-section>
+                    </q-item>
+                    <q-item clickable>
+                      <q-item-section>평단가 수정</q-item-section>
+                    </q-item>
+                  </q-list>
+                </q-menu>
+              </button>
               <div class="footer_list">
                 <div>
                   <span class="font12">평단가</span>
@@ -165,6 +162,7 @@
               </div>
             </li>
             <li>
+              <a href="#" class="inflex_link button_add">
               <div class="prd_img">
                 <div class="img_area small">
                   <img src="~assets/prd_logo.png" alt="logo" />
@@ -179,23 +177,24 @@
                   <span class="tag_red mgb4">-1.94%</span><br/>
                   <span class="font12">₩ 352,100</span>
                 </span>
-                <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
-                  menu
-                  <q-menu auto-close :offset="[80, 10]">
-                    <q-list style="min-width: 80px">
-                      <q-item clickable>
-                        <q-item-section>인사이트 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>BLASH 작성</q-item-section>
-                      </q-item>
-                      <q-item clickable>
-                        <q-item-section>평단가 수정</q-item-section>
-                      </q-item>
-                    </q-list>
-                  </q-menu>
-                </button>
               </div> 
+            </a>
+            <button class="ico_menu mgl8" color="secondary" label="Auto-Close Menu">
+                menu
+                <q-menu auto-close :offset="[80, 10]">
+                  <q-list style="min-width: 80px">
+                    <q-item clickable>
+                      <q-item-section>인사이트 작성</q-item-section>
+                    </q-item>
+                    <q-item clickable>
+                      <q-item-section>BLASH 작성</q-item-section>
+                    </q-item>
+                    <q-item clickable>
+                      <q-item-section>평단가 수정</q-item-section>
+                    </q-item>
+                  </q-list>
+                </q-menu>
+              </button>
               <div class="footer_list">
                 <div>
                   <span class="font12">평단가</span>

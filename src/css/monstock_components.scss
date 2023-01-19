@@ -214,6 +214,13 @@
         button{padding:0 10px;}
     }
     &.box_type{
+        &.type01{
+            margin:0 -16px !important;
+            @media (max-width: $breakpoint-xs-max) {
+                margin: 0 -12px !important;
+            }
+        }
+       
         .m-tabs-item.active {
             background-color: $primary !important;
             color: #fff !important;
@@ -594,6 +601,21 @@
 .m-chip-list {
     padding: 0 !important;
     margin:32px 0;
+}
+.m-chip-list .m-chip-list-wrappper{
+    .m-chip{
+        position: relative;
+        .ellipsis{overflow: visible;}
+        .ico_close_gray{
+            width:18px;
+            height: 18px;
+            position: absolute;
+            background-size: contain;
+            right:-4px;
+            top:0px;
+            z-index: 1;
+        }
+    }
 }
 .m-chip-list .m-chip-list-wrappper .m-chip + .m-chip {
     margin-left: 0px !important;
