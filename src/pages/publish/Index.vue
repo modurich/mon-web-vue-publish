@@ -1407,7 +1407,7 @@
                 <router-link to="/publish/A_22300_P">A_22300_P</router-link>
             </td>
             <td>OTP등록 / 초기화</td>
-            <td>진행중</td>
+            <td></td>
         </tr>
         <tr>
             <td></td>

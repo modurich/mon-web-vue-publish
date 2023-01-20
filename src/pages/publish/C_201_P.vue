@@ -20,7 +20,7 @@
                   <img src="~assets/img_qr1.svg"/>
                 </p>
                 <p>크롬 브라우저용 카이카스 사용자는 크롬 웹 스토어에서 카이카스를 설치해 주세요.</p>
-                <p class="underline">Kaikas 설치하기</p>
+                <a href="#" class="underline flex_link mgb32 center">Kaikas 설치하기</a>
               </div>
             </q-card-section>
           </div>

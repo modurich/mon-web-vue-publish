@@ -2912,10 +2912,14 @@ button{
        li{
         &:last-child{border-bottom:0px}
             border:0px;
-            border-bottom:1px solid $com_line;
+            border-bottom: 16px solid #f8f9fd;
+            margin: 0 -16px !important;
             border-radius:0px;
-            padding: 32px 12px;
+            padding: 32px 16px;
             margin-bottom: 0px;
+            @media (max-width: $breakpoint-xs-max) {
+                margin: 0 -12px !important;
+            }
             .tit_wrap{margin-bottom:16px}
             .top_wrap{
                 border-bottom:0px;
@@ -4569,7 +4573,28 @@ align-items: center;color: $txt_dk;
     }
     .txt_time{color: #ffd165;}
 }
-
+.qr_wrap02{
+    text-align: center;
+    border: 1px solid #d4d9ea;
+    margin:32px auto 0;
+    width:50%;
+    border-radius: 8px;
+    @media (max-width: $breakpoint-xs-max) {
+        width:100%
+     }
+    .qr_area{
+        width:155px;
+        height:155px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:16px auto;
+        text-align: center;
+        
+    }
+    button{margin:0 auto 32px}
+}
 .ico_wallet_w{
     display: inline-flex;
     width:24px;

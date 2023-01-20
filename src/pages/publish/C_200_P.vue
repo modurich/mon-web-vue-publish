@@ -19,7 +19,7 @@
                 <p class="qr_area">
                   <img src="~assets/img_qr1.svg"/>
                 </p>
-                <p class="underline">모바일에서 클립이 열리지 않는다면 여기를 클릭해주세요.</p>
+                <a href="#" class="underline flex_link mgb32">모바일에서 클립이 열리지 않는다면 여기를 클릭해주세요.</a>
               </div>
             </q-card-section>
           </div>

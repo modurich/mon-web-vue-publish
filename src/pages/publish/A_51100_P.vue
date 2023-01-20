@@ -86,7 +86,7 @@
               <m-button-3 lined color="primary" class="full">모두보기</m-button-3>
             </div>
             <!-- E 종목 -->
-            <div class="divider1 small" />
+            <div class="divider" />
             <!-- S 테마 -->
             <h3>
               테마
@@ -145,7 +145,7 @@
               <m-button-3 lined color="primary" class="full">모두보기</m-button-3>
             </div>
             <!-- E 테마 -->
-            <div class="divider1 small" />
+            <div class="divider" />
             <h3>
               인사이트 / BLASH
             </h3>
@@ -290,7 +290,7 @@
             <div class="btn_wrap l_row_l">
               <m-button-3 lined color="primary" class="full">모두보기</m-button-3>
             </div>
-            <div class="divider1 small" />
+            <div class="divider" />
             <h3>
               플레이어
             </h3>
@@ -386,7 +386,7 @@
             <div class="btn_wrap l_row_l">
               <m-button-3 lined color="primary" class="full">모두보기</m-button-3>
             </div>
-            <div class="divider1 small" />
+            <div class="divider" />
             <h3>
               태그
             </h3>
@@ -462,7 +462,7 @@
                   </div>
                 </li>
               </ul>
-              <div class="divider1 small" />
+              <div class="divider" />
               <h3>
                 추천종목
               </h3>
@@ -662,7 +662,7 @@
                     </div>
                   </li>
                 </ul>
-                <div class="divider1 small" />
+                <div class="divider" />
                 <h3>
                   추천 테마
                 </h3>
@@ -1064,7 +1064,7 @@
                   </div>
                 </li>
               </ul>
-              <div class="divider1 small" />
+              <div class="divider" />
               <h3>
                 추천 플레이어
               </h3>
@@ -1170,7 +1170,7 @@
                   <li>#삼성전자<span class="round_tag">3,266</span></li>
                   <li>#최대스무자최대스무자최대스무자최대스무자<span class="round_tag">3,266</span></li>
                 </ul>
-                <div class="divider1 small" />
+                <div class="divider" />
                 <h3>
                   추천 태그
                 </h3>

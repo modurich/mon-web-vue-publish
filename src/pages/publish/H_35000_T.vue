@@ -64,7 +64,7 @@
                 <span class="mgl8">보팅중만 보기</span>
               </div>
             </div>
-            <div class="divider1 xxsmall"/>
+            <div class="divider mgb0"/>
             <ul class="thumb_list">
               <li>
                 <div class="top_wrap">

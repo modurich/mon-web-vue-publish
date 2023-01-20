@@ -85,7 +85,7 @@
               아직 작성된 토론글이 없습니다
             </div>
           </div>
-          <div class="divider1 small mgb16"/>
+          <div class="divider mgt0 mgb0"/>
           <ul class="thumb_list1">
             <li>
               <div class="top_wrap">

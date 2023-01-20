@@ -12,6 +12,15 @@
             </div>
             <div class="divider"/>
             <h3 class="font16">2. QR코드 스캔 또는 설정 키를 입력해주세요.</h3>
+
+            <div class="qr_wrap02">
+              <p class="qr_area">
+                <img src="~assets/img_qr1.svg"/>
+              </p>
+              <button class="flex center">5MIIEIP2TS5AJIEPZOYFBAU2O2SZGPLC<i class="ico_copy"/></button>
+            </div>
+
+
             <div class="divider"/>
             <h3 class="font16">3. OTP 앱 화면에 생성된 인증번호를 입력해주세요.</h3>
             <div class="mgt32">
