@@ -140,6 +140,8 @@ const routes = [
             { path: '/publish/C_111141_T', component: () => import('pages/publish/C_111141_T.vue') },
             { path: '/publish/A_22200_P', component: () => import('pages/publish/A_22200_P.vue') },
             { path: '/publish/A_22300_P', component: () => import('pages/publish/A_22300_P.vue') },
+            { path: '/publish/C_200_P', component: () => import('pages/publish/C_200_P.vue') },
+            { path: '/publish/C_201_P', component: () => import('pages/publish/C_201_P.vue') },
             
         ]
     },

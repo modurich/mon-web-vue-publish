@@ -927,7 +927,7 @@
                 <router-link to="/publish/H_11110_P">H_11110_P</router-link>
             </td>
             <td>관심그룹</td>
-            <td></td>
+            <td>수정 2023-02-19</td>
         </tr> 
         <tr>
             <td></td>
@@ -1408,6 +1408,26 @@
             </td>
             <td>OTP등록 / 초기화</td>
             <td>진행중</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_200_P">C_200_P</router-link>
+            </td>
+            <td>Klip지갑연결</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_201_P">C_201_P</router-link>
+            </td>
+            <td>Kaikas 지갑 연결</td>
+            <td></td>
         </tr>
         
       </tbody>

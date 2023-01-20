@@ -132,6 +132,30 @@ export default {
             }
         }
     }
+    &.color-klip {
+        background-color: #216fea;
+        color: $white;
+        font-size:14px;
+        &:disabled {
+            color: $white;
+        }
+    }
+    &.color-kaikas {
+        background-color: #3366ff;
+        color: $white;
+        font-size:14px;
+        &:disabled {
+            color: $white;
+        }
+    }
+    &.color-wallet {
+        background-color: #3b99fc;
+        color: $white;
+        font-size:14px;
+        &:disabled {
+            color: $white;
+        }
+    }
     &.color-yellow{
         background-color: #fee500;
         color: #141414;

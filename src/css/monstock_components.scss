@@ -300,6 +300,16 @@
 //dialog
 .dailog_wrap{
     position:relative;
+    &.Klip_type,&.Kaikas_type{
+        .dialog_tit{color: #fff;display: flex;align-items: center;justify-content: center;
+            i{margin-right:8px;}
+        }
+        .dailog_contents{color: #fff;}
+    }
+    &.Klip_type{background: #216fea;}
+    &.Kaikas_type{
+        background: #3366ff;
+    }
     &.tit_add{
         .dailog_top{
             // border:1px solid red;

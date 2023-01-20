@@ -4555,3 +4555,39 @@ align-items: center;color: $txt_dk;
         background: url('~assets/btn_app.svg') center right no-repeat;
     }
 }
+.qr_wrap01{
+    text-align: center;
+    .qr_area{
+        width:140px;
+        height:140px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:32px auto;
+        text-align: center;
+    }
+    .txt_time{color: #ffd165;}
+}
+
+.ico_wallet_w{
+    display: inline-flex;
+    width:24px;
+    height:24px;
+    background-size: contain !important;
+    background: url('~assets/ico_wallet_w.svg') center right no-repeat;
+}
+.ico_klip_w{
+    display: inline-flex;
+    width:24px;
+    height:24px;
+    background-size: contain !important;
+    background: url('~assets/ico_klip_w.svg') center right no-repeat;
+}
+.ico_kaikas_w{
+    display: inline-flex;
+    width:24px;
+    height:24px;
+    background-size: contain !important;
+    background: url('~assets/ico_kaikas_w.svg') center right no-repeat;
+}
