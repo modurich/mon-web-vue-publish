@@ -17,7 +17,7 @@
               <p class="qr_area">
                 <img src="~assets/img_qr1.svg"/>
               </p>
-              <button class="flex center">5MIIEIP2TS5AJIEPZOYFBAU2O2SZGPLC<i class="ico_copy"/></button>
+              <button class="flex center">5MIIEIP2TS5AJIEPZOYFBAU2O2SZGPLC<i class="ico_copy_g"/></button>
             </div>
 
 
