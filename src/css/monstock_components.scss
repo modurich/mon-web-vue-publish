@@ -257,8 +257,17 @@
         padding: 16px 12px 0 12px;
         box-sizing: border-box;
     }
-
 }
+
+// h2{
+//     &.line_type + .box_contents{padding:0 16px;}
+//     //700보다 작아질때
+//     @media (max-width: $breakpoint-xs-max) {
+//         padding: 0px 12px 0 12px;
+//         box-sizing: border-box;
+//     }
+// }
+
 .q-tab__alert {
     height: 8px;
     width: 8px;

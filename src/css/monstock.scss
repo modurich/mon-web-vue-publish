@@ -24,6 +24,7 @@
 .mgb4{margin-bottom:4px !important}
 .mgb8{margin-bottom:8px !important}
 .mgb16{margin-bottom:16px !important}
+.mgb26{margin-bottom:26px !important}
 .mgb32{margin-bottom:32px !important}
 .mgb8{margin-bottom:8px !important}
 .mgl4{margin-left:4px !important}
@@ -1103,6 +1104,40 @@ h2 + .box_contents{
             margin:0px;
         }
     }
+    &.nft{
+        .txt02{display: flex;align-items: center;justify-content: flex-end;
+        width:70%;overflow: hidden;text-overflow: ellipsis;
+        white-space: nowrap;
+        .ellipsis{width:calc(100% - 50px);text-align: right;}
+        }
+    }
+    &.configure{
+        .error{
+            justify-content: flex-start;
+            color: $txt_red1;
+            margin-left:28px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width:20px;
+                height:20px;
+                left:-28px;
+                margin-right:8px;
+                background: url('~assets/ico_error.png');
+                background-size: contain;
+            }
+        }
+        .txt02{font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            button{
+                margin-left:8px
+            }
+            .small{margin-right:8px}
+        }
+    }
 }
 
 //
@@ -1333,7 +1368,7 @@ h2 + .box_contents{
     }
   }
 }
-.ico_copy,.ico_copy_w,.ico_copy_p{
+.ico_copy,.ico_copy_w,.ico_copy_p,.ico_copy_g{
     display: inline-flex;
     width:18px;
     height:18px;
@@ -1342,6 +1377,9 @@ h2 + .box_contents{
 }
 .ico_copy{
     background: url('~assets/ico_copy.svg') center right no-repeat;
+}
+.ico_copy_g{
+    background: url('~assets/ico_copy_g.svg') center right no-repeat;
 }
 .ico_copy_w{
     background: url('~assets/ico_copy_w.svg') center right no-repeat;
@@ -1478,11 +1516,19 @@ button{
 .sb_null{
     background:url('~assets/sb_null.svg');
 }
+//txt_input_wrap
+.txt_input_wrap{
+    position: relative;
+    width:100%;
+    margin-right:16px;
+    input{padding:0 50px 0 0 !important}
+    .txt_wrap{position: absolute;right:20px;top:13px;color:$txt_dk}
+}
 
 //search_input
 .search_input{
     display:flex;
-    .q-field{margin-right:16px}
+    .q-field{margin-right:16px !important}
     .m-button3{width:66px}
 }
 //search_list
@@ -2126,7 +2172,7 @@ button{
         }
     }
 }
-
+.klip_box + .gray_box{margin:32px 0}
 .gray_box{
     position: relative;
     border-radius: 8px;
@@ -4615,4 +4661,117 @@ align-items: center;color: $txt_dk;
     height:24px;
     background-size: contain !important;
     background: url('~assets/ico_kaikas_w.svg') center right no-repeat;
+}
+
+
+.list_info{
+    margin:32px 0;
+    &.small{margin:16px 0 32px 0}
+    p{position: relative;margin:0;line-height: 26px;margin-left:10px;
+        &::before{
+            content: 'ꞏ';
+            position: absolute;
+            left:-10px;
+        }
+    }
+}
+
+.flex_form{
+    display: flex;align-items: center;font-weight:bold;
+    input,label{min-width: 0 !important;}
+}
+
+.img_file_wrap{
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:32px;
+        .txt_list{color: $txt_dk;
+            position: relative;
+            display: flex;
+            align-items: center;
+            width:calc(100% - 120px);
+            margin-left:28px;
+            &::before{
+                content: '';
+                position: absolute;
+                display: inline-flex;
+                width:20px;
+                height:20px;
+                left:-28px;
+                background-size: contain !important;
+                background: url('~assets/ico_img.svg') center center no-repeat;
+            }
+        }
+        button{width:100px}
+    }
+}
+
+.hashtag_list_wrap{
+    li{border-bottom:1px solid $com_line;
+        &:last-child{border-bottom:0}
+        .txt02{color:$txt_dk}
+        .between{margin-bottom:8px}
+    }
+}
+
+.date_tit_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin:32px 0;
+    button{text-indent: -999em;}
+    .txt_date{font-size: 16px; font-weight: bold;color: $txt_dk;}
+    .ico_prev{
+        width:20px;
+        height:20px;
+        background: url('~assets/ico_prev.svg') center center no-repeat;
+    }
+    .ico_next{
+        width:20px;
+        height:20px;
+        background: url('~assets/ico_next.svg') center center no-repeat;
+    }
+}
+
+.hash_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    .item{width:45%;
+    display: flex;
+    align-items: center;
+    }
+    span{display: inline-block;}
+    .txt_label{margin-right:8px}
+    .text_label{width:80px}
+    .txt_hash{text-overflow: ellipsis;overflow: hidden;
+        white-space: nowrap;color: $txt_dk;width:calc(100% - 65px)}
+}
+
+.ico_arrow_right_p{
+    margin:0 8px;
+    width:20px;
+    height:20px;
+    background: url('~assets/ico_arrow_right_p.svg') center center no-repeat;
+}
+
+.nft_img_wrap{
+    margin:32px 0;
+    text-align: center;
+    img{width:200px;height: 200px;margin:0 auto;}
+}
+
+.ico_reflesh{
+    margin:0 8px;
+    width:20px;
+    height:20px;
+    background: url('~assets/ico_reflesh.svg') center center no-repeat;
+}
+
+.ico_configure{
+    width:20px;
+    height:20px;
+    background: url('~assets/ico_configure.svg') center center no-repeat;
 }
