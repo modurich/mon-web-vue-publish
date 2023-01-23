@@ -1379,7 +1379,7 @@ h2 + .box_contents{
     background: url('~assets/ico_copy.svg') center right no-repeat;
 }
 .ico_copy_g{
-    background: url('~assets/ico_copy_g.svg') center right no-repeat;
+    // background: url('~assets/ico_copy_g.svg') center right no-repeat;
 }
 .ico_copy_w{
     background: url('~assets/ico_copy_w.svg') center right no-repeat;
@@ -4701,7 +4701,7 @@ align-items: center;color: $txt_dk;
                 height:20px;
                 left:-28px;
                 background-size: contain !important;
-                background: url('~assets/ico_img.svg') center center no-repeat;
+               // background: url('~assets/ico_img.svg') center center no-repeat;
             }
         }
         button{width:100px}
@@ -4730,7 +4730,7 @@ align-items: center;color: $txt_dk;
     .ico_next{
         width:20px;
         height:20px;
-        background: url('~assets/ico_next.svg') center center no-repeat;
+       // background: url('~assets/ico_next.svg') center center no-repeat;
     }
 }
 
