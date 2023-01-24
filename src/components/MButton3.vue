@@ -278,6 +278,25 @@ export default {
         }
     }
 
+    &.color-lightGrey1 {
+        background-color: #d4d9ea;
+        color:#fff;
+        border:1px solid #d4d9ea;
+        &:disabled {
+            // background-color: $ghost-white;
+            //color: $white;
+        }
+        &.lined {
+            background-color: #ffffff;
+            color: #9CA8BA;
+            border: 1px solid #9ca8ba;
+            &:disabled {
+                // color: $ghost-white;
+                border: 1px solid $medium-grey;
+            }
+        }
+    }
+
     &.color-orange {
         background-color: $orange;
         color: $white;

@@ -1429,6 +1429,187 @@
             <td>Kaikas 지갑 연결</td>
             <td></td>
         </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22410_T">A_22410_T,A_22420_T</router-link>
+            </td>
+            <td>스왑</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22500_P">A_22500_P</router-link>
+            </td>
+            <td>보내기</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22600_P">A_22600_P</router-link>
+            </td>
+            <td>원화 출금</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22700_P">A_22700_P</router-link>
+            </td>
+            <td>출금계좌 등록 / 변경,사진등록후</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22810_T">A_22810_T</router-link>
+            </td>
+            <td>내역</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22910_P">A_22910_P</router-link>
+            </td>
+            <td>NFT 상세</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22921_P">A_22921_P</router-link>
+            </td>
+            <td>NFT 보내기</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/A_22922_P">A_22922_P</router-link>
+            </td>
+            <td>NFT 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11110_P">C_11110_P</router-link>
+            </td>
+            <td>BLASH 작성,에러메세지</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11120_P">C_11120_P</router-link>
+            </td>
+            <td>BLASH 작성,에러메세지</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11130_P">C_11130_P</router-link>
+            </td>
+            <td>1차 추가매수 시그널 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11150_P">C_11150_P</router-link>
+            </td>
+            <td>홀딩 시그널 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_11170_P">C_11170_P</router-link>
+            </td>
+            <td>매도 시그널 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_21110_P">C_21110_P</router-link>
+            </td>
+            <td>인사이트 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_30000_P">C_30000_P</router-link>
+            </td>
+            <td>포스트 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_41100_P">H_41100_P</router-link>
+            </td>
+            <td>예치</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_41200_P">H_41200_P</router-link>
+            </td>
+            <td>출금요청</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_41300_P">H_41300_P</router-link>
+            </td>
+            <td>출금내역</td>
+            <td></td>
+        </tr>
+        
         
       </tbody>
     </table>
