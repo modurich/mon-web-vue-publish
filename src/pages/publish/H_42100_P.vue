@@ -19,6 +19,10 @@
                       <span class="badge_area">
                         <span class="badge3 light_green">주식</span>
                         <span class="badge3 yellow">BEST</span>
+                        <span class="badge3 primary">반영완료</span>
+                      </span>
+                      <span class="badge_area">
+                        <span class="badge3 green">가결</span>
                       </span>
                   </span>
                   <p class="sub_tit mgt8">[식빵맨님의 BLASH]</p>
@@ -64,9 +68,10 @@
                 </div>
               </div>
               <div class="divider" />
-              <h3 class="mgb32">
+              <h3 class="mgb32 font16">
                 발의 대상
               </h3>
+              <!-- s 인사이트 -->
               <ul class="thumb_list gray_box small">
                 <li>
                   <div class="top_wrap">
@@ -127,6 +132,8 @@
                   </div>
                 </li>
             </ul>
+            <!-- e 인사이트 -->
+            <!-- s BLASH -->
             <a href="#">
               <div class="thumb_list_new full">
                   <div class="top_wrap">
@@ -191,9 +198,222 @@
                   </div>
               </div>
             </a>
+            <!-- e BLASH -->
+            <!-- S 통계 -->
+            <ul class="follow_info_wrap mga32">
+              <li>
+                <div class="my_profile">
+                  <div class="img_area">
+                    <img src="~assets/profile_img1.png" alt="profile"/>
+                  </div>
+                  <div class="tit_area">
+                    <span class="txt_tit">몬스탁닉넴열글자까지</span>
+                    <span class="badge_area">
+                      <span class="badge pro">PRO</span>
+                      <span class="badge pl1">PL1</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="follow_btn_wrap">
+                  <button class="ico_user_pl" color="secondary" label="Auto-Close Menu">
+                      user추가
+                      <q-menu auto-close :offset="[30, 10]">
+                        <q-list style="min-width: 80px">
+                          <q-item clickable>
+                            <q-item-section>차단해제</q-item-section>
+                          </q-item>
+                          <q-separator />
+                        </q-list>
+                      </q-menu>
+                    </button>
+                </div>
+              </li>
+            </ul>
+            <div class="divider1 small" />
+             <div class="add_tab_tit">
+              <h3>
+                <span>통계</span>
+              </h3>
+              <m-tabs class="card_type small" v-model="tab2" :items="tabs1" />
+            </div>
+              <div v-if="tab2 == 'A'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">종료된 인사이트</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
+                </div>
+                <ul class="insight_list">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_blue1">7.84%</span>
+                        <!-- 수익률 class txt_red,txt_blue1 -->
+                    </li>
+                </ul>
+
+                <default-table tbl-type="1"/>
+
+                <div class="divider1" />
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">진행중인 인사이트</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
+                </div>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions1"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
+                      </li>
+                      <li>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
+                      </li>
+                  </ul>
+                  </div>
+                </div>
+                
+                <default-table tbl-type="2"/>
+
+
+              </div>
+              <div v-if="tab2 == 'B'">
+                <div class="radio_wrap right">
+                    <m-radio v-model="rad1" val="A" label="전체"/>
+                    <m-radio v-model="rad1" val="B" label="주식"/>
+                    <m-radio v-model="rad1" val="C" label="코인"/>
+                </div>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">종료된 BLASH</span>
+                  <span>YYYY.MM.DD hh:mm:ss (UTC+9)</span>
+                </div>
+                <div class="mgb32">
+                  <m-select v-model="select1" :options="options" />
+                </div>
+                <ul class="insight_list list3">
+                    <li>
+                        <span class="txt01">총 예측 횟수</span>
+                        <span class="txt02">27건</span>
+                    </li>
+                    <li>
+                        <span class="txt01">성공률</span>
+                        <span class="txt02">72.61%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">평점</span>
+                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                    </li>
+                    <li>
+                        <span class="txt01">수익률</span>
+                        <span class="txt02 txt_blue1">3.84%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 익절</span>
+                        <span class="txt02 txt_blue1">18.05%</span>
+                    </li>
+                    <li>
+                        <span class="txt01">최대 손절</span>
+                        <span class="txt02 txt_red">-5.01%</span>
+                        <!-- 수익률 class txt_red,txt_blue -->
+                    </li>
+                </ul>
+                
+                <default-table tbl-type="3"/>
+                
+                <div class="divider1"/>
+                <div class="l_row_l between">
+                  <span class="font16 txt_dk">진행중인 BLASH</span>
+                  <!-- <span>22.09.20 ~ 22.09.20</span> -->
+                </div>
+                <div class="blash_wrap">
+                  <div class="blash_chart">
+                    <div class="chart_wrap">
+                      <div class="chart_area">
+                        <highcharts 
+                          :options="chartOptions1"
+                          >
+                        </highcharts>
+                      </div>
+                      <ul class="regend_box">
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#c1b7ff"/>단기</span>
+                          <span class="con"><span class="primary">3</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#8673ff"/>중기</span>
+                          <span class="con"><span class="primary">6</span>건</span>
+                        </li>
+                        <li>
+                          <span class="tit"><i class="dot" style="background:#4c34dc"/>장기</span>
+                          <span class="con"><span class="primary">31</span>건</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blash_list">
+                    <ul class="return_wrap">
+                      <li>
+                          <span class="txt01">상승 예측</span>
+                          <span class="txt02">12건</span>
+                      </li>
+                      <li>
+                          <span class="txt01">하락 예측</span>
+                          <span class="txt02">45건</span>
+                      </li>
+                  </ul>
+                  </div>
+                </div>
+                
+                <default-table tbl-type="4"/>
+
+              </div>
+            <!-- E 통계 -->
+
             <div class="divider" />
 
-            <h3 class="mgb32">
+            <h3 class="mgb32 font16">
               발의 이유
             </h3>
             <p>
@@ -205,7 +425,7 @@
 
             <div class="divider" />
 
-            <h3 class="mgb32">
+            <h3 class="mgb32 font16">
               의제 정보
             </h3>
             <div>
@@ -265,23 +485,238 @@
 
 <script>
 import { ref } from 'vue';
+import MDialogBlank from 'src/components/MDialogBlank.vue';
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+import VClamp from '@boyuai/vue-clamp';
+import MChipList from 'src/components/MChipList.vue';
+import MChip from 'src/components/MChip.vue';
+import GaugeChart from 'src/components/GaugeChart.vue';
+import DefaultTable from 'src/components/DefaultTeble.vue';
+
+
 export default {
-  data() {
+  components: { MDialogBlank, Swiper, SwiperSlide, VClamp, MChipList, MChip, GaugeChart, DefaultTable },
+    name: 'H_33200_T',
+    
+    data() {
         return {
-          select1: ref("전체"),
-          check1:'',
-          options: [
-            '전체', '선택1','선택2','선택3'
-          ],
-          tab1: ref('A'),
-          progress: 0.4
+            select1: ref("전체"),
+              options: [
+              '전체', '선택1','선택2','선택3',
+            ], 
+            progress: 0.4,       
+            ratingModel: ref(3),
+            ratingMode2: ref(0),
+            ratingMode3: ref(0),
+            ratingMode4: ref(0),
+            ratingMode5: ref(0),
+            textarea1: {
+              value: "",
+              counter: true,
+              minHeight: 100,
+              showError: true,
+              //bottomMessage: "바닥메시지"
+            },
+            toggle1: ref(false),
+            text1:ref('호빵맨'),
+            text2:ref(''),
+            text3:ref(''),
+            tab1:ref('A'),
+            tab2:ref('A'),
+            rad1:ref('A'),
+            current: ref(3),
+            v_true: ref(true),
+            tabs: [
+              { label: '투자정보', value: 'A', icon: '' },
+              { label: '작성자 통계', value: 'B', icon: '' }
+            ],
+            tabs1:[
+                {label:'인사이트', value:'A', icon:'mail'},
+                {label:'BLASH', value:'B', icon:'photo'}
+            ],
+            dailog1:ref(false),
+            polcyType:ref('01'),
+            chartOptions1: {
+            colors: ['#c1b7ff', '#8673ff', '#4c34dc', '#B37CD2'],
+            chart: {
+                type: 'pie'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '건'
+                }
+            },
+            credits: {
+              enabled: false
+            },
+              chartdata: { 'fil01': 100, 'fld02': 200, 'fld03': 200 },
+            
+            // title: {
+            //     text: 'February 2020 Norway passenger auto registrations'
+            // },
+            // subtitle: {
+            //     text: 'Source:<a href="https://cleantechnica.com/2020/03/07/pioneering-norway-rises-above-68-plug-in-vehicle-market-share-in-february/">cleantechnica</a>'
+            // },
+            // tooltip: {
+            //     pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            // },
+            title: {
+              text:'<div style="font-size: 20px;font-weight:700">30건</div>',
+              align:'center',
+              verticalAlign:'middle',
+              x:0,
+              y:25
+            },
+            plotOptions: {
+                pie: {
+                    //size: 100,
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        format: '{point.name}: {y} 건'
+                    },
+                    showInLegend: false
+                  }
+                },
+                legend: {
+                  align: 'right',
+                  verticalAlign: 'top',
+                  y: 50,
+                  layout: 'vertical',
+                  bubbleLegend: {
+                    enabled: true
+                  }
+                },
+                series: [{
+                  name: 'Registrations',
+                  colorByPoint: true,
+                  innerSize: '75%',
+                  data: [
+                  {
+                      name: '단기',
+                      y: 3
+                  }, 
+                  {
+                      name: '중기',
+                      y: 6
+                  }, 
+                  {
+                      name: '단기',
+                      y: 21
+                  }
+                ]
+              }]
+            },
         }
     },
     methods: {
-    }
+      scrollEvents:function(){
+        if(window.scrollY > 300){
+          document.querySelector('#dynamic').classList.add('show');
+        }else{
+          document.querySelector('#dynamic').classList.remove('show');
+        }
+      }
+    },
+    mounted() {
+      document.addEventListener('scroll', this.scrollEvents);
+    },
+    unmounted() {
+      document.removeEventListener('scroll', this.scrollEvents);
+    },
+    computed: {
+        chartOptions() {
+            const rating = this.rating || {
+                score1: 2,
+                score2: 3,
+                score3: 1,
+                score4: 4,
+                score5: 5
+            };
+            return {
+                title: {
+                    text: ''
+                },
+                chart: {
+                    polar: true,
+                    height: 221
+                },
+                credits: {
+                    enabled: false
+                },
+                xAxis: {
+                    categories: [
+                        this.$t('computed.chartOptions.xAxis.label1'),
+                        this.$t('computed.chartOptions.xAxis.label2'),
+                        this.$t('computed.chartOptions.xAxis.label3'),
+                        this.$t('computed.chartOptions.xAxis.label4'),
+                        this.$t('computed.chartOptions.xAxis.label5')
+                    ],
+                    tickmarkPlacement: 'on',
+                    lineWidth: 0,
+                    labels: {
+                        format: '<span class="f-12-b-lg">{value}</span>',
+                        useHTML: true
+                        /* style: {
+                            color: '#A8A8A8',
+                            fontSize: '12px',
+                            fontWeight: 'bold'
+                        }, */
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    },
+                    labels: {
+                        enabled: false
+                    },
+                    gridLineInterpolation: 'polygon',
+                    lineWidth: 0,
+                    min: 0,
+                    max: 5,
+                    endOnTick: true,
+                    showLastLabel: false,
+                    gridLineWidth: 1,
+                    minorTickInterval: 1,
+                    tickInterval: 1,
+                    minorGridLineWidth: 0
+                },
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: false
+                        },
+                        states: {
+                            hover: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    area: {
+                        lineColor: 'rgba(134, 115, 255, 1)',
+                        fillColor: 'rgba(134, 115, 255, 0.3)'
+                    }
+                },
+                tooltip: {
+                    enabled: false
+                },
+                legend: {
+                    enabled: false
+                },
+
+                series: [{
+                    type: 'area',
+                    data: [rating.score2, rating.score5, rating.score3, rating.score1, rating.score4],
+                    pointPlacement: 'on'
+                }]
+            };
+        }
+    },
 };
 </script>
 <style scoped>
 
 </style>
-
