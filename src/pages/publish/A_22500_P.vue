@@ -12,7 +12,28 @@
                   </span>
                   <button class="ico_copy_g">copy</button>
                </div>
-               <p class="mga32"> <m-select v-model="select1" :options="options" /></p>
+               <p class="mga32"> 
+                <m-select v-model="select1"
+                  :options="options"
+                  >
+                  <template v-slot:option="scope">
+                    <q-item
+                      v-bind="scope.itemProps"
+                      v-on="scope.itemEvents"
+                    >
+                      <q-item-section avatar>
+                        <q-avatar>
+                          <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                          <!-- <i class="ico_sb ico_klip_w"/> -->
+                        </q-avatar>
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label v-html="scope.opt.label"></q-item-label>
+                      </q-item-section>
+                    </q-item>
+                  </template>
+                </m-select>
+              </p>
               <div class="gray_box">
                 <p class="center txt_dk font16 mgb4">보유 수량 (락업 제외)</p>
                 <p class="center mgb4"><span class="font20 bold primary">9,000,000.9999999999</span> <span class="txt_dk">MON</span></p>
@@ -48,11 +69,13 @@ import { ref } from 'vue';
 export default {
   data() {
         return {
-          select1: ref("전체"),
+          select1: ref(1),
           check1:'',
           options: [
-            '전체', '선택1','선택2','선택3'
-          ],
+        { value: 1, label: "Klip", avatar: "mail" },
+        { value: 2, label: "Kaikas", avatar: "kaikas" },
+        { value: 3, label: "Walletconnect", avatar: "walletconnect" }
+      ],
           tab1: ref('A'),
           progress: 0.4
         }
