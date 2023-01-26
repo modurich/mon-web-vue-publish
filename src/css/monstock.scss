@@ -1923,6 +1923,14 @@ button{
     a{
         &.button_add{width:calc(100% - 35px)}
     }
+    
+     //700보다 작을때
+     @media (max-width: $breakpoint-xs-max) {
+        &.ranking{
+            .ico_area.wrap{flex:0.5}
+            .img_area.small + div{width:calc(100% - 90px) !important};
+        }
+     }
    > div, li{
         display:flex;
         justify-content: space-between;
@@ -1956,10 +1964,16 @@ button{
                 margin-right:10px;
                 img{width:100%;height:100%}
                 &.small{
-                    width:40px;
+                    width:40px !important;
                     height:40px;
                     border-radius: 40px;
+                    + div{width:calc(100% - 50px)}
                 }
+            }
+           
+            .q-checkbox + .img_area.small + div{width:calc(100% - 80px)};
+            //700보다 작을때
+            @media (max-width: $breakpoint-xs-max) {
             }
             .badge_area{span + span{margin-left:8px}}
             .tit_area{
@@ -2180,6 +2194,9 @@ button{
     border:1px solid $com_line;
     padding: 32px 16px;
     margin:16px 0;
+    &.small{padding:0px 16px;
+        li{padding:16px;}
+    }
     &.add_footer{
         padding:32px 16px 80px 16px;
     }
@@ -2282,7 +2299,43 @@ button{
          }
     }
 }
-
+.vote_wrap{
+    .badge_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+        .badge_area{
+            span + span{margin-left:8px}
+        }
+    }
+  
+    .sub_tit{font-size: 16px;line-height: 30px;color: #c79058;margin-bottom:2px}
+    .list_tit{
+        margin:32px 0;
+        display: flex;
+        justify-content: space-between;
+        .txt02{font-size: 16px;font-weight: bold;color:$txt_dk}
+    }
+    .gray_box{
+        padding:16px;
+        .list_type2{
+            display: flex;
+            justify-content: space-between;
+            .txt_con{
+                .txt_tit{font-size:18px;font-weight: 700}
+                span + span{margin-left:8px}
+            }
+            .r_area{
+                button{min-width: 100px;}
+            }
+        }
+    }
+    .gray_box + .gray_box{margin-top:32px}
+    //700보다 작을때
+    @media (max-width: $breakpoint-xs-max) {
+        
+    }
+}
 .half_select{
     width:50%;
     //700보다 작을때
@@ -2641,6 +2694,13 @@ button{
     padding:16px 12px;
     border-radius: 8px;
     margin-bottom: 16px;
+    &.full{width:100%;
+        .footer_area{
+            .ico_wrap{display: flex;flex-wrap: nowrap;justify-content: space-between;
+             > span{width:auto}
+            }
+        }
+    }
     &.active{
         border:1px solid $primary;
         .top_wrap{
@@ -4666,8 +4726,9 @@ align-items: center;color: $txt_dk;
 
 .list_info{
     margin:32px 0;
+    word-break: break-all;
     &.small{margin:16px 0 32px 0}
-    p{position: relative;margin:0;line-height: 26px;margin-left:10px;
+    p{position: relative;margin:0;line-height: 26px;margin-left:10px;word-break:break-all;
         &::before{
             content: 'ꞏ';
             position: absolute;
@@ -4774,4 +4835,19 @@ align-items: center;color: $txt_dk;
     width:20px;
     height:20px;
     background: url('~assets/ico_configure.svg') center center no-repeat;
+}
+.num_list_tit{
+    display: block;
+    margin:32px 0 16px 0;
+    font-weight: 700;
+    color:$txt_dk;
+}
+.num_list_wrap{
+    line-height: 26px;
+    position: relative;
+    margin-left:20px;
+    .txt_number{
+        position: absolute;
+        left:-20px;
+    }
 }

@@ -1127,7 +1127,7 @@
                 <router-link to="/publish/H_12000_T">H_12000_T</router-link>
             </td>
             <td>오늘의 테마</td>
-            <td>수정 2023-1-04</td>
+            <td>수정 2023-1-04<br/>2023-01-26 ranking  class 추가</td>
         </tr> 
         <tr>
             <td></td>
@@ -1137,7 +1137,7 @@
                 <router-link to="/publish/H_12310_T">H_12310_T</router-link>
             </td>
             <td>실시간 순위 TOP 100</td>
-            <td></td>
+             <td>2023-01-26 ranking  class 추가</td>
         </tr> 
         <tr>
             <td></td>
@@ -1277,7 +1277,7 @@
                 <router-link to="/publish/H_12410_T">H_12410_T</router-link>
             </td>
             <td>인사이트 인기 종목</td>
-            <td></td>
+            <td>2023-01-26 ranking  class 추가</td>
         </tr>
          <tr>
             <td></td>
@@ -1609,7 +1609,56 @@
             <td>출금내역</td>
             <td></td>
         </tr>
-        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_42100_P">H_42100_P</router-link>
+            </td>
+            <td>의제투표 상세</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_42200_P">H_42200_P</router-link>
+            </td>
+            <td>의제 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_42300_P">H_42300_P</router-link>
+            </td>
+            <td>의제 작성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/H_42400_P">H_42400_P</router-link>
+            </td>
+            <td>의제 작성</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_61000_T">M_61000_T</router-link>
+            </td>
+            <td>고객센터</td>
+            <td></td>
+        </tr> -->
         
       </tbody>
     </table>

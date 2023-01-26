@@ -160,6 +160,11 @@ const routes = [
             { path: '/publish/H_41100_P', component: () => import('pages/publish/H_41100_P.vue') },
             { path: '/publish/H_41200_P', component: () => import('pages/publish/H_41200_P.vue') },
             { path: '/publish/H_41300_P', component: () => import('pages/publish/H_41300_P.vue') },
+            { path: '/publish/H_42100_P', component: () => import('pages/publish/H_42100_P.vue') },
+            { path: '/publish/H_42200_P', component: () => import('pages/publish/H_42200_P.vue') },
+            { path: '/publish/H_42300_P', component: () => import('pages/publish/H_42300_P.vue') },
+            { path: '/publish/H_42400_P', component: () => import('pages/publish/H_42400_P.vue') },
+            // { path: '/publish/M_61000_T', component: () => import('pages/publish/M_61000_T.vue') },
             
         ]
     },

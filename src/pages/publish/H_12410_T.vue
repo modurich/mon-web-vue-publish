@@ -5,7 +5,7 @@
         <m-tabs class="line_type large sticky_tab1" v-model="tab1" :items="tabs" />
           <div class="tab_contents" v-if="tab1 == 'A'">
             <!-- S 전체 -->
-            <ul class="product_list mgt16">
+            <ul class="product_list ranking mgt16">
               <li>
                 <div class="prd_img">
                   <span class="txt_number">1</span>

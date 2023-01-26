@@ -7,7 +7,7 @@
             <!-- S 전체 -->
               <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
               <div v-if="tab2 == 'A'">
-                <ul class="product_list">
+                <ul class="product_list ranking">
                   <li>
                     <div class="prd_img">
                       <span class="txt_number primary">1</span>

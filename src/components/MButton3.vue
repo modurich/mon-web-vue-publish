@@ -88,7 +88,7 @@ export default {
     // outline: none;
     &.full{width:100% !important}
     &:disabled {
-        opacity: 0.2 !important;
+        opacity: 0.4 !important;
     }
 
     &.round {

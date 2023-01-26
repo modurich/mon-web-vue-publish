@@ -509,6 +509,22 @@
     .q-linear-progress__track--light {
         background:#f4f2ff;
     } 
+    &.blue{
+        &.q-linear-progress {
+            color: #6ee0b0;
+        }
+        .q-linear-progress__track--light {
+            background:#f8f9fd;
+        } 
+    }
+    &.red{
+        &.q-linear-progress {
+            color: #fb1f1f;
+        }
+        .q-linear-progress__track--light {
+            background:#f8f9fd;
+        } 
+    }
 }
 
 .progress_wrap{

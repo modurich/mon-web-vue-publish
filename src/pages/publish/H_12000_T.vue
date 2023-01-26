@@ -1524,7 +1524,7 @@
               <span>인기 토론 자산</span>
             </h3>
             <p class="tit_txt mgt16">토론이 많은 자산을 모아봤어요</p>
-            <ul class="product_list">
+            <ul class="product_list ranking">
               <li>
                 <a href="#" class="flex_link">
                   <div class="prd_img">
