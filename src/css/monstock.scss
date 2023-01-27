@@ -3879,6 +3879,29 @@ button{
     margin-left: 4px;
     background: url('~assets/ico_mon.svg')  no-repeat center center; 
 }
+.ico_mon1{
+    width:24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    background: url('~assets/ico_mon1.svg')  no-repeat center center; 
+}
+.ico_klay{
+    width:24px;
+    height: 24x;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    background: url('~assets/ico_klay.png')  no-repeat center center; 
+}
+.q-item__section--avatar {
+    color: inherit;
+    min-width: 0px; 
+    padding-right: 5px !important;
+}
 .ico_time_y{
     width:26px;
     height: 26px;

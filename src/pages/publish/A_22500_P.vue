@@ -22,9 +22,7 @@
                       v-on="scope.itemEvents"
                     >
                       <q-item-section avatar>
-                        <q-avatar>
-                          <img src="https://cdn.quasar.dev/img/boy-avatar.png">
-                          <!-- <i class="ico_sb ico_klip_w"/> -->
+                        <q-avatar :class="scope.opt.icon">
                         </q-avatar>
                       </q-item-section>
                       <q-item-section>
@@ -72,9 +70,8 @@ export default {
           select1: ref(1),
           check1:'',
           options: [
-        { value: 1, label: "Klip", avatar: "mail" },
-        { value: 2, label: "Kaikas", avatar: "kaikas" },
-        { value: 3, label: "Walletconnect", avatar: "walletconnect" }
+        { value: 1, label: "몬코인", icon: "ico_mon1" },
+        { value: 2, label: "klay", icon: "ico_klay" },
       ],
           tab1: ref('A'),
           progress: 0.4

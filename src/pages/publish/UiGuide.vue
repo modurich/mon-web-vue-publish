@@ -221,6 +221,9 @@
           <span class="ico_sb sb_metamask">metamask</span>
           <span class="ico_sb sb_dcent">dcent</span>
           <span class="ico_sb sb_null">null</span>
+          <span class="ico_sb ico_mon">mon</span>
+          <span class="ico_sb ico_mon1">mon</span>
+          <span class="ico_sb ico_klay">klay</span>
         </div>
       </div>
       <div class="box_wrap">
