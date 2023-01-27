@@ -310,10 +310,12 @@
     .product_list{
         &.aside{
             li{width:240px;margin-bottom:5px;
+                a{flex:1;}
                 .img_area{width:30px;height:30px}
                 .ico_area{
                     .q-icon{top:0px}
                 }
+                .tit_area{width:calc(100% - 70px)}
                 .txt_number{text-align: left;margin-right: 0px;}
             }
         }

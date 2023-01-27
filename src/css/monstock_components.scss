@@ -398,6 +398,35 @@
         min-width: 350px;
     }
 }
+
+.dialog-content{
+    .bottom-area{justify-content: flex-end !important;flex-wrap:nowrap;
+        button{width:100%}
+        button + button{margin-left:8px}
+        .m-button3.color-mediumGrey {
+            background-color: $primary ;
+            color: #ffffff;
+        }
+        .m-button3.color-mediumGrey.lined {
+            background-color: #ffffff;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+        margin-bottom: 5px !important;
+    }
+}
+
+.m-confirm .dialog-content .top-area {
+    margin-bottom: 20px !important;
+}
+.m-alert .dialog-content .top-area {
+    margin-bottom: 20px !important;
+}
+
+.m-alert .dialog-content .bottom-area {
+    margin-bottom: 5px !important;
+}
+
 //q-table
 .q-table{
     th{font-size: 14px;color:#9ca8ba}
