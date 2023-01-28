@@ -219,11 +219,43 @@
                 </div>
                 <ul class="insight_list">
                     <li>
-                        <span class="txt01">총 예측 횟수</span>
+                      <div class="txt01 tooltip_area">
+                         <button>평가<span class="ico_info_gray"/></button>
+                          <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[80, 80]">
+                            <ul class="result_list">
+                              <li>
+                                <span class="txt01">평가</span>
+                                <span class="txt02">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">성공</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">실패</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                            </ul>
+                          </q-tooltip>
+                      </div>
                         <span class="txt02">27건</span>
                     </li>
                     <li>
-                        <span class="txt01">평점</span>
+                        <div class="txt01 tooltip_area">
+                         <button>평점<span class="ico_info_gray"/></button>
+                          <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[100, 100]">
+                            <ul class="result_list">
+                              <li>
+                                <span class="txt01">인사이트</span>
+                                <span class="txt02">527 건<br>★ 4.60</span>
+                              </li>
+                              <li>
+                                <span class="txt01">BLASH</span>
+                                <span class="txt02">527 건<br>★ 4.60</span>
+                              </li>
+                            </ul>
+                          </q-tooltip>
+                      </div>
                         <span class="txt02 primary"><i class="ico_star"/>4.60</span>
                     </li>
                     <li>
@@ -316,19 +348,81 @@
                 </div>
                 <ul class="insight_list list3">
                     <li>
-                        <span class="txt01">총 예측 횟수</span>
-                        <span class="txt02">27건</span>
+                      <div class="txt01 tooltip_area">
+                         <button>종료 / 평가<span class="ico_info_gray"/></button>
+                          <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[165, 165]">
+                            <ul class="result_list">
+                              <li>
+                                <span class="txt01">종료</span>
+                                <span class="txt02">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">매수실패</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt01">평가</span>
+                                <span class="txt02">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">성공</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">무효(익절)</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">실패</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt03">진행중(매수성공)</span>
+                                <span class="txt04">527 건</span>
+                              </li>
+                            </ul>
+                          </q-tooltip>
+                      </div>
+                        <span class="txt02">27건 / 100건</span>
                     </li>
                     <li>
-                        <span class="txt01">성공률</span>
-                        <span class="txt02">72.61%</span>
+                        <span class="txt01">누적 수익률</span>
+                        <span class="txt02 txt_red1">-72.61%</span>
                     </li>
                     <li>
-                        <span class="txt01">평점</span>
-                        <span class="txt02 primary"><i class="ico_star"/>4.60</span>
+                      <div class="txt01 tooltip_area">
+                         <button>평점<span class="ico_info_gray"/></button>
+                          <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[100, 100]">
+                            <ul class="result_list">
+                              <li>
+                                <span class="txt01">인사이트</span>
+                                <span class="txt02">527 건<br>★ 4.60</span>
+                              </li>
+                              <li>
+                                <span class="txt01">BLASH</span>
+                                <span class="txt02">527 건<br>★ 4.60</span>
+                              </li>
+                            </ul>
+                          </q-tooltip>
+                      </div>
+                      <span class="txt02 primary"><i class="ico_star"/>4.60</span>
                     </li>
                     <li>
-                        <span class="txt01">수익률</span>
+                      <div class="txt01 tooltip_area">
+                         <button>성공률<span class="ico_info_gray"/></button>
+                          <q-tooltip :content-class="{ 'tooltip_type2':true}" anchor="bottom middle" self="bottom middle" :offset="[65, 65]">
+                            <ul class="result_list">
+                              <li>
+                                <span class="txt01">성공</span>
+                                <span class="txt02">527 건</span>
+                              </li>
+                              <li>
+                                <span class="txt01">실패</span>
+                                <span class="txt02">527 건</span>
+                              </li>
+                            </ul>
+                          </q-tooltip>
+                      </div>
                         <span class="txt02 txt_blue1">3.84%</span>
                     </li>
                     <li>

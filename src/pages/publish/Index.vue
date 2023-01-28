@@ -1649,7 +1649,7 @@
             <td>의제 작성</td>
             <td></td>
         </tr>
-        <!-- <tr>
+        <tr>
             <td></td>
             <td></td>
             <td></td>
@@ -1658,7 +1658,28 @@
             </td>
             <td>고객센터</td>
             <td></td>
-        </tr> -->
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_20000_P">M_20000_P</router-link>
+            </td>
+            <td>이벤트</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/F_11000_T">F_11000_T,F_12000_T,F_13000_T</router-link>
+            </td>
+            <td>약관</td>
+            <td></td>
+        </tr>
+       
         
       </tbody>
     </table>
