@@ -526,7 +526,7 @@
              <!-- S 스왑하기 -->
              <div class="title_type1">
               <div class="txt_area">
-                <span class="txt01"><span class="ico_sb sb_metamask"/><span class="bold">Metamask</span> 지갑 연결중</span>
+                <span class="txt01"><span class="ico_sb sb_wallet"/><span class="bold">Metamask</span> 지갑 연결중</span>
                 <a href="#" class="link_view">주소보기</a>
               </div>
               <button class="ico_menu" color="secondary" label="Auto-Close Menu">
