@@ -165,8 +165,15 @@ const routes = [
             { path: '/publish/H_42300_P', component: () => import('pages/publish/H_42300_P.vue') },
             { path: '/publish/H_42400_P', component: () => import('pages/publish/H_42400_P.vue') },
             { path: '/publish/M_61000_T', component: () => import('pages/publish/M_61000_T.vue') },
-            { path: '/publish/F_11000_T', component: () => import('pages/publish/F_11000_T.vue') },
             { path: '/publish/M_20000_P', component: () => import('pages/publish/M_20000_P.vue') },
+            { path: '/publish/M_50000_P', component: () => import('pages/publish/M_50000_P.vue') },
+            // { path: '/publish/M_71000_T', component: () => import('pages/publish/M_71000_T.vue') },
+            // { path: '/publish/M_71100_P', component: () => import('pages/publish/M_71100_P.vue') },
+            // { path: '/publish/M_71100_P1', component: () => import('pages/publish/M_71100_P1.vue') },
+            // { path: '/publish/M_71100_P2', component: () => import('pages/publish/M_71100_P2.vue') },
+            //{ path: '/publish/F_11000_T', component: () => import('pages/publish/F_11000_T.vue') },
+            // { path: '/publish/C_21120_P', component: () => import('pages/publish/C_21120_P.vue') },
+            
             
         ]
     },

@@ -1674,11 +1674,71 @@
             <td></td>
             <td></td>
             <td>
+                <router-link to="/publish/M_50000_P">M_50000_P</router-link>
+            </td>
+            <td>서비스 소개</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_71000_T">M_71000_T</router-link>
+            </td>
+            <td>NFT샵</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_71100_P">M_71100_P</router-link>
+            </td>
+            <td>NFT 상세</td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_71100_P1">M_71100_P1</router-link>
+            </td>
+            <td>NFT 상세-평생멤버십</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/M_71100_P2">M_71100_P2</router-link>
+            </td>
+            <td>NFT 상세-예정</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
                 <router-link to="/publish/F_11000_T">F_11000_T,F_12000_T,F_13000_T</router-link>
             </td>
             <td>약관</td>
             <td></td>
         </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <router-link to="/publish/C_21120_P">C_21120_P</router-link>
+            </td>
+            <td>인사이트 작성</td>
+            <td></td>
+        </tr> -->
        
         
       </tbody>

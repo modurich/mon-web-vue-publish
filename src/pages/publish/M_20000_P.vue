@@ -6,7 +6,7 @@
           <div class="box_contents"> 
             <div class="mgb32">
               <p class="font20 txt_dk center"><span class="font24 primary bold">몬스탁</span>은?</p>
-              <p class="txt_dk center mga32">투자 정보도 보고 암호화폐도 보상 받을 수 있는<br>
+              <p class="txt_dk center mgt16 mgb32">투자 정보도 보고 암호화폐도 보상 받을 수 있는<br>
               클레이튼 기반 투자 예측 플랫폼입니다</p>
               <div class="btn_wrap l_row_l">
                 <m-button-3 size="large" lined color="primary" class="full">퀵가이드</m-button-3>
@@ -121,26 +121,29 @@
               <div class="divider1 small"/>
               <h3 class="center font16">😎 친구추천 이벤트 랭킹</h3>
               <p class="right mgt32 mgb16">2022.12.22 09:58:15 KST 기준</p>
-              <ul class="product_list ranking">
+              <ul class="event_ranking_list">
                 <li>
                   <a href="#" class="flex_link">
-                    <div class="prd_img">
-                      <span class="txt_number primary">1</span>
-                      <div class="img_area small">
-                        <img src="~assets/prd_logo.png" alt="profile" />
+                    <div class="ranking_info">
+                      <span class="txt_number">1</span>
+                      <div class="img_area">
+                        <img src="~assets/ranking_pro1.png" alt="profile" />
                       </div>
-                      <div class="tit_area">
-                        <span class="txt01">삼성전자우</span>
-                        <span class="txt02">
-                          코스피 005930
-                        </span>
+                      <div class="tit_area">몬스탁닉넴열글자까지</div>
+                    </div>
+                    <div class="txt_people">32명</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex_link">
+                    <div class="ranking_info">
+                      <span class="txt_number">10</span>
+                      <div class="img_area">
+                        <img src="~assets/ranking_pro1.png" alt="profile" />
                       </div>
+                      <div class="tit_area">몬스탁닉넴열글자까지</div>
                     </div>
-                    <div class="ico_area">
-                      <a href="#" class="link_view bold">
-                        <span class="txt_gray">최근</span> 000<span class="txt_gray">개</span>
-                      </a>
-                    </div>
+                    <div class="txt_people">32명</div>
                   </a>
                 </li>
               </ul>
