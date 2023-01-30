@@ -112,7 +112,7 @@
                   <a href="#" class="link_flex">
                     <div class="img_area"><img src="~assets/nft_bronze.png" alt="" width="80px" height="80px" /></div>
                     <p class="txt_tit">웰컴 카드 - 브론즈</p>
-                    <p class="txt_con">-</p>
+                    <p class="txt_con"> - </p>
                     <span class="txt_date">낙찰취소</span>
                   </a>
                 </li>
@@ -120,7 +120,7 @@
                   <a href="#" class="link_flex">
                     <div class="img_area"><img src="~assets/nft_bronze.png" alt="" width="80px" height="80px" /></div>
                     <p class="txt_tit">웰컴 카드 - 브론즈</p>
-                    <p class="txt_con">-</p>
+                    <p class="txt_con"> - </p>
                     <span class="txt_date">낙찰취소</span>
                   </a>
                 </li>
@@ -128,7 +128,7 @@
                   <a href="#" class="link_flex">
                     <div class="img_area"><img src="~assets/nft_bronze.png" alt="" width="80px" height="80px" /></div>
                     <p class="txt_tit">웰컴 카드 - 브론즈</p>
-                    <p class="txt_con">-</p>
+                    <p class="txt_con"> - </p>
                     <span class="txt_date">낙찰취소</span>
                   </a>
                 </li>
@@ -136,7 +136,7 @@
                   <a href="#" class="link_flex">
                     <div class="img_area"><img src="~assets/nft_bronze.png" alt="" width="80px" height="80px" /></div>
                     <p class="txt_tit">웰컴 카드 - 브론즈</p>
-                    <p class="txt_con">-</p>
+                    <p class="txt_con"> - </p>
                     <span class="txt_date">낙찰취소</span>
                   </a>
                 </li>
