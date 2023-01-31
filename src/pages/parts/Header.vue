@@ -30,10 +30,10 @@
                 <!--럭키박스 스타일 ico_luckybox,ico_luckybox_new-->
                 <button class="ico_luckybox_new">luckybox</button>
                 <!--알람 스타일 ico_alarm_new, ico_alarm_off, ico_alarm_on-->
-                <button class="ico_alarm_on">alarm</button>
+                <button class="ico_alarm_new">alarm</button>
                 <div class="user_img">
                     <div class="img_area">
-                        <!-- <i class="alarm_dot">updated</i> -->
+                        <i class="alarm_dot">updated</i>
                         <!-- <img src="~assets/ico_user_noimg.svg" alt="profile"/> -->
                         <img src="~assets/user_img.png" alt="profile"/>
                     </div>

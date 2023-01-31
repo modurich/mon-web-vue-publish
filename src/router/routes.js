@@ -171,8 +171,8 @@ const routes = [
             { path: '/publish/M_71100_P', component: () => import('pages/publish/M_71100_P.vue') },
             { path: '/publish/M_71100_P1', component: () => import('pages/publish/M_71100_P1.vue') },
             { path: '/publish/M_71100_P2', component: () => import('pages/publish/M_71100_P2.vue') },
-            //{ path: '/publish/F_11000_T', component: () => import('pages/publish/F_11000_T.vue') },
-            // { path: '/publish/C_21120_P', component: () => import('pages/publish/C_21120_P.vue') },
+            { path: '/publish/F_11000_T', component: () => import('pages/publish/F_11000_T.vue') },
+            { path: '/publish/C_21120_P', component: () => import('pages/publish/C_21120_P.vue') },
             
             
         ]
