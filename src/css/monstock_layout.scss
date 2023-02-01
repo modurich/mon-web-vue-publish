@@ -178,6 +178,21 @@
                 a{
                     display: inline-flex;
                     align-items: center;
+                    position: relative;
+                    &.ico_new{
+                        &::after{
+                            content:'';
+                            position: absolute;
+                            display: flex;
+                            top: 0px;
+                            right: -15px;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 8px;
+                            background-color: #fb1f1f;
+                            text-indent: -999em;
+                        }
+                    }
                 }
                 .ico{
                     display: inline-flex;

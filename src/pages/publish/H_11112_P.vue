@@ -1,5 +1,9 @@
 <template>
   <div class="centerarea_box1">
+    <div class="fixed_con_bottom">
+        <span class="txt_dk">N개 삭제</span>
+        <m-button-3 size="small" color="primary">변경저장하기</m-button-3 >
+      </div>
       <div class="con_box">
         <h2 class="line_type between">
           <span>관심그룹편집</span>
@@ -14,6 +18,7 @@
             <m-chip :to="``" :lined="true"><button class="ico_close_gray">close</button>그룹4</m-chip>
             <m-chip :to="``" :lined="true"><button class="ico_close_gray">close</button>그룹5</m-chip>
             <m-chip :to="``" :lined="true"><button class="ico_close_gray">close</button>그룹6</m-chip>
+            <button class="primary font14 medium mgl16">+ 그룹추가</button>
           </m-chip-list>
           <div class="between">
             <span> <m-checkbox size="md" v-model="check1" class="mgr16"/> 전체 10개</span>

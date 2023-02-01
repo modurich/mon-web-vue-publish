@@ -7,10 +7,14 @@
             <div class="box_contents">
               <div class="klip_box mgt0">
                   <span class="text_wrap">
-                      <span class="ico_sb sb_klip">klip</span>
+                      <!-- <span class="ico_sb sb_klip">klip</span> -->
+                      <span class="ico_sb ico_wallet_g">wallet</span>
                       <span class="text_area">0xa590bc1aa0655d84f5e10xa590bc1aa0655d84f5e1</span>
                   </span>
                   <button class="ico_copy_g">copy</button>
+               </div>
+               <div class="txt_info01 mgt8">
+                <p>지갑 세션이 종료되었습니다.</p>
                </div>
                
               <div class="gray_box mgt32">

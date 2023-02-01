@@ -224,6 +224,8 @@
           <span class="ico_sb ico_mon">mon</span>
           <span class="ico_sb ico_mon1">mon</span>
           <span class="ico_sb ico_klay">klay</span>
+          <span class="ico_sb ico_wallet_g">wallet</span>
+          <span class="ico_sb sb_wallet" />
         </div>
       </div>
       <div class="box_wrap">

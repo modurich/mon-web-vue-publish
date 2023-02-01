@@ -839,7 +839,7 @@ h2 + .box_contents{
     &.list3{
         li{
             width:calc(100% / 3);
-            border-left:1px solid #d4d9ea;
+            border-left:1px solid #d4d9ea ;
             &:nth-child(3n + 1){border-left:0}
         }  
     }
@@ -858,9 +858,10 @@ h2 + .box_contents{
         }
         &.list3{
             li{
-                width:50%;
-                &:nth-child(odd){border-left:0}
-                &:nth-child(even){border-left:1px solid #d4d9ea}
+                border-left:1px solid #d4d9ea ;
+                // width:50%;
+                // &:nth-child(odd){border-left:0}
+                // &:nth-child(even){border-left:1px solid #d4d9ea}
             }  
         }
         &.list6{
@@ -1528,7 +1529,8 @@ button{
     background:url('~assets/sb_klaytn.svg');
 }
 .sb_wallet{
-    background:url('~assets/sb_wallet.svg');
+    background:url('~assets/sb_wallet.svg') no-repeat;
+    background-size: contain;
 }
 .sb_metamask{
     background:url('~assets/sb_metamask.svg');
@@ -4766,6 +4768,13 @@ align-items: center;color: $txt_dk;
     background-size: contain !important;
     background: url('~assets/ico_wallet_w.svg') center right no-repeat;
 }
+.ico_wallet_g{
+    display: inline-flex;
+    width:24px;
+    height:24px;
+    background-size: contain !important;
+    background: url('~assets/ico_wallet_g.svg') center right no-repeat;
+}
 .ico_klip_w{
     display: inline-flex;
     width:24px;
@@ -5207,3 +5216,5 @@ width:100%;margin-bottom:64px;text-align: center;
         }
     }
 }
+
+
