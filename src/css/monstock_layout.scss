@@ -184,6 +184,17 @@
                     width:24px;
                     height: 24px;
                     margin-right:10px;
+                    .ico_new{position: relative;
+                        right: -20px;
+                        width:8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        display: inline-flex;
+                        border:1px solid red;
+                        background-color: #fb1f1f;
+                        font-size: 0;
+                        text-indent: -999em;
+                    }
                 }
                 
                 .top_menu01{
