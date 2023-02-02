@@ -30,6 +30,9 @@
         </q-tr>
       </template>
       <template v-slot:body="props">
+        <q-tr class="dim_i">
+          <q-td><i class="ico_info_w"/>임시차단</q-td>
+        </q-tr>
         <q-tr :props="props"  v-if="tblType == 1 || tblType == 3">
           <q-td key="fld01" :props="props" v-if="tblType == 1">
             {{ props.row.fld01 }}

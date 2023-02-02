@@ -1876,6 +1876,18 @@ button{
         background: url('~assets/ico_info.svg') center center no-repeat;
     }
 }
+.ico_info_w{ 
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    width:18px;
+    height:18px;
+    margin-right: 8px;
+    
+    background: url('~assets/ico_info_w.svg') center center no-repeat;
+}
+
 .ico_info_bk{ 
     color: $txt_dk;
     display: inline-flex;
