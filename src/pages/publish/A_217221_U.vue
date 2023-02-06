@@ -8,6 +8,7 @@
         <!-- S 평단가수정 -->
         <q-dialog v-model="dailog1" position="bottom">
           <div class="bottom_sheet_wrap">
+            <div class="close_wrap"><button class="ico_close">닫기</button></div>
             <div class="flex right mgb16">
               <m-toggle v-model="toggle1" :label="`Model is (flipped boolean)`" />
               <span class="mgl8">알림받기</span>

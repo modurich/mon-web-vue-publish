@@ -649,6 +649,7 @@
         </div>
         <q-dialog v-model="dailog1" position="bottom">
           <div class="bottom_sheet_wrap">
+            <div class="close_wrap"><button class="ico_close">닫기</button></div>
             <h3 class="between">
               <span class="font16 txt_dk">보팅</span>
               <span class="font12 secondary medium flex"><i class="ico_time_y"/>2일 23:53:06</span>

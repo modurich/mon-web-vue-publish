@@ -8,6 +8,7 @@
         <!-- S 평단가수정 -->
         <q-dialog v-model="dailog1" position="bottom">
           <div class="bottom_sheet_wrap">
+            <div class="close_wrap"><button class="ico_close">닫기</button></div>
             <div class="top_wrap1">
               <div class="my_profile">
                 <div class="img_area">

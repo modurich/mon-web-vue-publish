@@ -1884,7 +1884,7 @@ button{
     width:18px;
     height:18px;
     margin-right: 8px;
-    
+
     background: url('~assets/ico_info_w.svg') center center no-repeat;
 }
 
@@ -4202,20 +4202,31 @@ button{
 
 
 .bottom_sheet_wrap {
-    padding: 32px 16px;
+    padding: 50px 16px 30px 16px;
     border-top-left-radius:16px !important; 
     border-top-right-radius:16px !important; 
     background-color: #fff;
+    .close_wrap{
+        position: fixed;
+        margin: -50px 0 0 0;
+        height: 50px;
+        border: -62px solid red;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: calc(100% - 32px);}
 }
-@media (min-width: 700px){
+@media (min-width: 692px){
     .bottom_sheet_wrap {
         max-width: 692px;
         width: 692px !important; 
         max-width: 692px !important; 
         box-sizing: border-box;
-        padding: 32px 16px;
+        padding: 60px 16px 30px 16px;
         border-top-left-radius:16px ;
         border-top-right-radius:16px ;
+        .close_wrap{ width: calc(692px - 32px);height: 60px;margin: -60px 0 0 0;}
     }
 }
 
