@@ -546,13 +546,13 @@
                             </div>
                           </div>
                           <div class="footer_area">
-                            <p class="tag_area">
+                            <!-- <p class="tag_area">
                               <span class="primary">＄관련종목</span>
                               <span>#금리인상</span>
                               <span>#친환경</span>
                               <span>#로봇관련주</span>
                               <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
+                            </p> -->
                             <div class="ico_wrap">
                               <span class="ico_area">
                                 <span class="ico_f ico_thumbsUp">624</span>
@@ -612,13 +612,13 @@
                             </div>
                           </div>
                           <div class="footer_area">
-                            <p class="tag_area">
+                            <!-- <p class="tag_area">
                               <span class="primary">＄관련종목</span>
                               <span>#금리인상</span>
                               <span>#친환경</span>
                               <span>#로봇관련주</span>
                               <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
+                            </p> -->
                             <div class="ico_wrap">
                               <span class="ico_area">
                                 <span class="ico_f ico_thumbsUp">624</span>
@@ -678,13 +678,13 @@
                             </div>
                           </div>
                           <div class="footer_area">
-                            <p class="tag_area">
+                            <!-- <p class="tag_area">
                               <span class="primary">＄관련종목</span>
                               <span>#금리인상</span>
                               <span>#친환경</span>
                               <span>#로봇관련주</span>
                               <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
+                            </p> -->
                             <div class="ico_wrap">
                               <span class="ico_area">
                                 <span class="ico_f ico_thumbsUp">624</span>
@@ -744,13 +744,13 @@
                             </div>
                           </div>
                           <div class="footer_area">
-                            <p class="tag_area">
+                            <!-- <p class="tag_area">
                               <span class="primary">＄관련종목</span>
                               <span>#금리인상</span>
                               <span>#친환경</span>
                               <span>#로봇관련주</span>
                               <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
+                            </p> -->
                             <div class="ico_wrap">
                               <span class="ico_area">
                                 <span class="ico_f ico_thumbsUp">624</span>
@@ -810,13 +810,13 @@
                             </div>
                           </div>
                           <div class="footer_area">
-                            <p class="tag_area">
+                            <!-- <p class="tag_area">
                               <span class="primary">＄관련종목</span>
                               <span>#금리인상</span>
                               <span>#친환경</span>
                               <span>#로봇관련주</span>
                               <span>#최대스무자최대스무자최대스무자최대스무자</span>
-                            </p>
+                            </p> -->
                             <div class="ico_wrap">
                               <span class="ico_area">
                                 <span class="ico_f ico_thumbsUp">624</span>
