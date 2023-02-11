@@ -346,7 +346,7 @@
                 <div class="mgb32">
                   <m-select v-model="select1" :options="options" />
                 </div>
-                <ul class="insight_list list3">
+                <ul class="insight_list list3 m2"><!-- 20230211 수정-->
                     <li>
                       <div class="txt01 tooltip_area">
                          <button>종료 / 평가<span class="ico_info_gray"/></button>

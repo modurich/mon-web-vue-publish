@@ -292,8 +292,19 @@
                   default-opened
                   label="관심자산"
                 >
-                <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" />
-                <div v-if="tab2 == 'A'">
+                <m-chip-list v-dragscroll class="mgt16"><!-- 20230211 수정-->
+                  <m-chip :to="''">기본</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                  <m-chip :to="''" :lined="true">그룹</m-chip>
+                </m-chip-list>
+                <!-- <m-tabs class="card_type small mgt16" v-model="tab2" :items="tabs1" /> -->
+                <div>
                   <div class="no_data_wrap">
                     <div class="ico_top">
                       <i class="ico_error"></i>
@@ -392,9 +403,6 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-                <div v-if="tab2 == 'B'">
-                  contents2
                 </div>
                 </q-expansion-item>
               </div>

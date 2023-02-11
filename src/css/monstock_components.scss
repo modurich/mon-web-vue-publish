@@ -137,6 +137,20 @@
 //tab
 .q-tabs{
     &.line_type{
+        &.q-tabs{
+            height: 58px !important;
+            flex: auto;
+            min-width: 80px;
+            border: none;
+            margin: 0 1px;
+            .q-tab__label{ font-size: 18px !important;}
+            .q-tab--inactive {
+                color: $txt_gray !important;
+            }
+            .q-tab__indicator {
+                height: 2px !important;
+            }
+        }    
         .q-tabs__content {
             display: flex;
             position: relative;
@@ -168,6 +182,19 @@
             .q-tab__label{
             color: $primary !important;
             }
+        }
+    }
+}
+
+.line_type{
+    &.m-tabs{
+        .m-tabs-item {
+            height: 58px !important;
+            font-size: 18px;
+            flex: auto;
+            min-width: 80px;
+            border: none;
+            margin: 0 1px;
         }
     }
 }
@@ -659,7 +686,7 @@
 .m-chip .m-chip-inner.lined {
     border: 0 !important;
     background: #ffffff !important;
-    color: $txt_gray;
+    color: $txt_gray !important;
     font-weight: 500;
 }
 .m-chip-list {

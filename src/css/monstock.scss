@@ -815,10 +815,11 @@ h2 + .box_contents{
 .insight_list{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .txt01{line-height: 22px;margin-bottom:4px;font-size: 12px;}
     .txt02{font-size:22px;color:$txt_dk;line-height: 26px;font-weight: 500;}
    li{
-        width:25%;
+        flex:1;
         text-align: center;
         margin-bottom: 16px;
         border-left:1px solid #d4d9ea;
@@ -838,6 +839,7 @@ h2 + .box_contents{
     }
     &.list3{
         li{
+            flex:auto;
             width:calc(100% / 3);
             border-left:1px solid #d4d9ea ;
             &:nth-child(3n + 1){border-left:0}
@@ -852,7 +854,7 @@ h2 + .box_contents{
         }  
     }
     @media (max-width: $breakpoint-xs-max) {
-        li{width:50%;
+        li{width:50%;flex:auto;
             &:nth-child(odd){border-left:0}
             &:nth-child(even){border-left:1px solid #d4d9ea}
         }
@@ -863,6 +865,13 @@ h2 + .box_contents{
                 // &:nth-child(odd){border-left:0}
                 // &:nth-child(even){border-left:1px solid #d4d9ea}
             }  
+            &.m2{
+                li{
+                     width:50%;
+                    &:nth-child(odd){border-left:0}
+                    &:nth-child(even){border-left:1px solid #d4d9ea}
+                }
+            }
         }
         &.list6{
             li{
@@ -1561,19 +1570,20 @@ button{
 .search_list{
     margin-top:16px;
     li{
+        position: relative;
         display: flex;
         justify-content: space-between;
-        margin-bottom:16px;
+        margin:0 0 16px 25px;
         &:last-child{margin-bottom:0;}
         .search_name{
         display: flex;
         align-items: center;
             &::before{
                 content:'';
-                display: inline-flex;
-                align-items: center;
+                position:absolute;
                 width:20px;
                 height:20px;
+                left:-25px;
                 background-size:contain !important;
                 background: url('~assets/ico_search.svg');
                 margin-right:8px;
@@ -2016,6 +2026,7 @@ button{
             }
             .badge_area{span + span{margin-left:8px}}
             .tit_area{
+                flex:1;
                 .txt01{
                     display:block;
                     font-size: 16px;
@@ -3739,7 +3750,7 @@ button{
             background: url('~assets/btn_chart.svg')  no-repeat center center; 
         }
         .btn_naver{
-            background: url('~assets/btn_naver.png')  no-repeat center center; 
+            background: url('~assets/btn_naver.svg')  no-repeat center center; 
         }
         .btn_coinmarket{
             background: url('~assets/btn_coinmarket.svg')  no-repeat center center; 
@@ -4266,7 +4277,7 @@ button{
         padding:16px;
         display: none;
         background-color: #fff;
-        z-index: 1;
+        z-index: 2;
         &.show{display: flex;position: sticky;top:0}
         .logo{
             display: flex;
@@ -4324,7 +4335,7 @@ button{
     display: flex;
     bottom:0;
     width:692px;
-    z-index: 1;
+    z-index: 3;
     height:56px;
     background: #fff;
     button{

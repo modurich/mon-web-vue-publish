@@ -213,7 +213,7 @@
                 <router-link to="/publish/A_21000_T">A_21000_T,A_22000_T</router-link>
             </td>
             <td>프로필</td>
-            <td></td>
+            <td>20230211 수정</td>
         </tr>  
         <tr>
             <td></td>
@@ -587,7 +587,7 @@
                 <router-link to="/publish/H_10000_P">H_10000_P</router-link>
             </td>
             <td>내종목,발견</td>
-            <td>accodion</td>
+            <td>accodion<br>20230211 tab 수정</td>
         </tr> 
         <tr>
             <td></td>
