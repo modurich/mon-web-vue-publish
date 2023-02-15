@@ -311,10 +311,10 @@
         .main_tit{color:$txt_dk;margin: 0 0 10px;font-size:20px;font-weight: 700;}
         .info_txt{margin: 0 0 32px;}
         .number_wrap{
-            font-size: 16px;
+            font-size: 14px;
             .blue{color:#2c80ff}
             .red{color:#fb1f1f}
-            .txt01{font-size:24px;font-weight: 700;}
+            .txt01{font-size:20px;font-weight: 700;}
             .txt03{
                 padding:2px 5px;
                 display: inline-flex;
@@ -322,7 +322,7 @@
                 &.blue{background:#eef5ff}
                 &.red{background:#fff0f0}
             }
-            span + span{margin-left:10px}
+            span + span{margin-left:8px}
         }
     }
     .aside_box + .aside_box{margin-top:20px}
